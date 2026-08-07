@@ -1,0 +1,51 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Validate skills, manifests, and README links
+        run: ruby scripts/validate.rb
+
+      - name: Build skill zips
+        run: ./scripts/build-skill-zips.sh
+
+      - name: Verify zip count matches skill count
+        run: |
+          skill_count=$(find plugins -name SKILL.md | wc -l | tr -d ' ')
+          zip_count=$(find dist -name '*.zip' | wc -l | tr -d ' ')
+          echo "Skills: $skill_count  Zips: $zip_count"
+          if [ "$skill_count" != "$zip_count" ]; then
+            echo "::error::Zip count ($zip_count) does not match skill count ($skill_count)"
+            exit 1
+          fi
+
+      - name: Verify every zip has the skill's own folder as its root
+        run: |
+          fail=0
+          for zip in dist/*.zip; do
+            root=$(unzip -Z1 "$zip" | head -1 | sed 's:/$::')
+            if [ -z "$(find plugins -type d -path '*/skills/*' -name "$root")" ]; then
+              echo "::error::$zip: root folder '$root' is not a real skill folder name"
+              fail=1
+            fi
+            if ! unzip -Z1 "$zip" | grep -qx "$root/SKILL.md"; then
+              echo "::error::$zip: missing $root/SKILL.md at the zip root"
+              fail=1
+            fi
+          done
+          exit $fail
