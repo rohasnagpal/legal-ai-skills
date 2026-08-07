@@ -78,10 +78,10 @@ Once it's running, type these two lines **into the Claude Code prompt itself**
 ```
 
 The first line registers this repository as a source — do that once, ever.
-The second installs all ten `contracts` skills in a single step. Other
+The second installs all ten `contracts` skills in a single step. All 24
 practice packs install the same way — `/plugin install <category>@rohas-legal`,
-for example `arbitration` or `advisory` — as they're built; see
-[Contents](#contents) for what's linked and ready.
+for example `arbitration` or `advisory`; see
+[Contents](#contents) for the full list.
 
 ---
 
@@ -245,7 +245,7 @@ governing jurisdiction before it relies on any specific rule.
 [tax](#tax) ·
 [verify](#verify)
 
-**Linked** skill names are built and ready to install. Unlinked names are planned and not yet written.
+All 160 skills below are built and linked to their `SKILL.md`.
 
 ---
 
