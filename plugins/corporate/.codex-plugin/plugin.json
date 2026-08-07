@@ -1,6 +1,6 @@
 {
   "name": "corporate",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Corporate governance, transactions, restructuring, diligence, and India compliance skills.",
   "author": {
     "name": "Rohas Nagpal",
@@ -12,14 +12,14 @@
   "keywords": ["legal", "corporate", "governance", "transactions", "compliance"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Rohas Legal: Corporate",
+    "displayName": "Rohas Legal AI: Corporate",
     "shortDescription": "Corporate legal workflows",
     "longDescription": "Eight reusable legal workflows covering resolutions, minutes, M&A diligence, shareholder agreements, restructurings, listing obligations, related parties, and secretarial compliance.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
-    "brandColor": "#1E3A5F",
+    "brandColor": "#264653",
     "composerIcon": "./assets/composer-icon.svg",
     "logo": "./assets/logo.svg",
     "defaultPrompt": [

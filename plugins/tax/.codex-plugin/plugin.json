@@ -1,6 +1,6 @@
 {
   "name": "tax",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "FEMA, GST, tax appeal and assessment-reply, tax opinion, transfer pricing, and treaty-analysis skills.",
   "author": {
     "name": "Rohas Nagpal",
@@ -12,14 +12,14 @@
   "keywords": ["legal", "tax", "gst", "fema", "transfer-pricing", "treaty"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Rohas Legal: Tax",
+    "displayName": "Rohas Legal AI: Tax",
     "shortDescription": "Tax law workflows",
     "longDescription": "Seven reusable tax workflows covering FEMA analysis, GST compliance, tax appeal grounds, assessment replies, formal tax opinions, transfer pricing documentation, and treaty entitlement analysis.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
-    "brandColor": "#1E3A5F",
+    "brandColor": "#166534",
     "composerIcon": "./assets/composer-icon.svg",
     "logo": "./assets/logo.svg",
     "defaultPrompt": [

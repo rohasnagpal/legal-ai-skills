@@ -1,6 +1,6 @@
 {
   "name": "arbitration",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Legal arbitration drafting, procedure, tribunal-constitution, interim-relief, and award-analysis skills.",
   "author": {
     "name": "Rohas Nagpal",
@@ -12,14 +12,14 @@
   "keywords": ["legal", "arbitration", "disputes", "pleadings", "awards"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Rohas Legal: Arbitration",
+    "displayName": "Rohas Legal AI: Arbitration",
     "shortDescription": "Arbitration workflows",
     "longDescription": "Ten reusable legal workflows covering arbitration clauses, commencement, appointment, pleadings, interim and emergency relief, procedural orders, awards, and challenges.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
-    "brandColor": "#1E3A5F",
+    "brandColor": "#6D597A",
     "composerIcon": "./assets/composer-icon.svg",
     "logo": "./assets/logo.svg",
     "defaultPrompt": [

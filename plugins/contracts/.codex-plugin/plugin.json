@@ -1,6 +1,6 @@
 {
   "name": "contracts",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Legal contract drafting, review, comparison, negotiation, extraction, and risk-analysis skills.",
   "author": {
     "name": "Rohas Nagpal",
@@ -12,7 +12,7 @@
   "keywords": ["legal", "contracts", "drafting", "review", "negotiation"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Rohas Legal: Contracts",
+    "displayName": "Rohas Legal AI: Contracts",
     "shortDescription": "Contract drafting and review",
     "longDescription": "Ten reusable legal workflows covering contract drafting, review, comparison, summarisation, obligations, liability, termination, negotiation, and redlines.",
     "developerName": "Rohas Nagpal",

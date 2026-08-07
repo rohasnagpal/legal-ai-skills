@@ -1,6 +1,6 @@
 {
   "name": "consumer",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Consumer complaint drafting, deficiency and product liability analysis, compensation quantification, and opposite-party reply skills.",
   "author": {
     "name": "Rohas Nagpal",
@@ -12,14 +12,14 @@
   "keywords": ["legal", "consumer", "product-liability", "complaints", "compensation"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Rohas Legal: Consumer",
+    "displayName": "Rohas Legal AI: Consumer",
     "shortDescription": "Consumer law workflows",
     "longDescription": "Five reusable legal workflows covering consumer complaint drafting, deficiency and unfair-trade-practice analysis, compensation quantification, opposite-party replies, and product liability exposure.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
-    "brandColor": "#1E3A5F",
+    "brandColor": "#E76F51",
     "composerIcon": "./assets/composer-icon.svg",
     "logo": "./assets/logo.svg",
     "defaultPrompt": [

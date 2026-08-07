@@ -1,6 +1,6 @@
 {
   "name": "employment",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Employment agreements, policies, discipline, investigations, separation, and India compliance skills.",
   "author": {
     "name": "Rohas Nagpal",
@@ -12,14 +12,14 @@
   "keywords": ["legal", "employment", "labour", "workplace", "compliance"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Rohas Legal: Employment",
+    "displayName": "Rohas Legal AI: Employment",
     "shortDescription": "Employment law workflows",
     "longDescription": "Seven reusable legal workflows covering employment agreements, handbooks, discipline, separation, investigations, India labour compliance, and POSH governance.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
-    "brandColor": "#1E3A5F",
+    "brandColor": "#3A5A40",
     "composerIcon": "./assets/composer-icon.svg",
     "logo": "./assets/logo.svg",
     "defaultPrompt": [

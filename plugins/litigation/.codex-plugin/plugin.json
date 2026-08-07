@@ -1,6 +1,6 @@
 {
   "name": "litigation",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Appeals, authorities, chronologies, evidence, witnesses, interim relief, limitation, pleadings, and submissions skills.",
   "author": {
     "name": "Rohas Nagpal",
@@ -12,14 +12,14 @@
   "keywords": ["legal", "litigation", "evidence", "appeals", "procedure"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Rohas Legal: Litigation",
+    "displayName": "Rohas Legal AI: Litigation",
     "shortDescription": "Litigation workflows",
     "longDescription": "Ten reusable litigation workflows covering appeals, case law, chronologies, cross-examination, evidence, interim applications, limitation, pleadings, witness statements, and written submissions.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
-    "brandColor": "#1E3A5F",
+    "brandColor": "#1D4ED8",
     "composerIcon": "./assets/composer-icon.svg",
     "logo": "./assets/logo.svg",
     "defaultPrompt": [

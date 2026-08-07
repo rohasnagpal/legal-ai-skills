@@ -1,6 +1,6 @@
 {
   "name": "privacy",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Privacy breach, transfer, processing-contract, India DPDP, DPIA, and notice skills.",
   "author": {
     "name": "Rohas Nagpal",
@@ -12,14 +12,14 @@
   "keywords": ["legal", "privacy", "data-protection", "DPDP", "GDPR"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Rohas Legal: Privacy",
+    "displayName": "Rohas Legal AI: Privacy",
     "shortDescription": "Privacy law workflows",
     "longDescription": "Six reusable privacy workflows covering breach response, cross-border transfers, data-processing agreements, India's DPDP framework, DPIAs, and accurate layered privacy notices.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
-    "brandColor": "#1E3A5F",
+    "brandColor": "#312E81",
     "composerIcon": "./assets/composer-icon.svg",
     "logo": "./assets/logo.svg",
     "defaultPrompt": [

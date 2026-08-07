@@ -1,6 +1,6 @@
 {
   "name": "advisory",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Client intake, communication, opinion, risk-assessment, engagement-letter, and notice drafting and reply skills for day-to-day advisory work.",
   "author": {
     "name": "Rohas Nagpal",
@@ -12,14 +12,14 @@
   "keywords": ["legal", "advisory", "client-communication", "opinions", "notices"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Rohas Legal: Advisory",
+    "displayName": "Rohas Legal AI: Advisory",
     "shortDescription": "Everyday legal advisory",
     "longDescription": "Eight reusable legal workflows covering client intake, status updates, engagement letters, plain-language explanation, formal opinions, risk assessment, demand notices, and notice replies.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
-    "brandColor": "#1E3A5F",
+    "brandColor": "#355070",
     "composerIcon": "./assets/composer-icon.svg",
     "logo": "./assets/logo.svg",
     "defaultPrompt": [
