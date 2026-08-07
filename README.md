@@ -30,8 +30,9 @@ to choose the workflow yourself.
 
 **Where skills work.** The skill folders use the open Agent Skills format.
 They can be installed individually in supported Claude and ChatGPT surfaces,
-or bundled into the `contracts` practice-pack plugin for Claude Code, ChatGPT,
-and Codex. Installations do not automatically sync between products.
+or bundled into a practice-pack plugin — `contracts`, `litigation`, `tax`,
+and 21 others — for Claude Code, ChatGPT, and Codex. Installations do not
+automatically sync between products.
 
 ## What is a plugin?
 

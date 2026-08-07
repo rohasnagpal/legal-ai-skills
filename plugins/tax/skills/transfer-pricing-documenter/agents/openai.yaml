@@ -1,0 +1,4 @@
+interface:
+  display_name: "Transfer Pricing Documenter"
+  short_description: "Document intercompany transactions and benchmarking"
+  default_prompt: "Use $transfer-pricing-documenter to document this intercompany transaction, with a functional analysis and benchmarking record."

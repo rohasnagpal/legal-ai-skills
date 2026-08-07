@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Opinion Drafter"
+  short_description: "Draft formal, reasoned legal opinions"
+  default_prompt: "Use $legal-opinion-drafter to draft a formal opinion answering this question, with facts, analysis, conclusion, and caveats."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Client Intake"
+  short_description: "Structure a messy client narrative into fact and assumption"
+  default_prompt: "Use $client-intake to turn this client narrative into a structured matter summary, separating confirmed facts from assumptions."

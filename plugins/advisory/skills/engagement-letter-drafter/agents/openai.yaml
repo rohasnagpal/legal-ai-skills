@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engagement Letter Drafter"
+  short_description: "Draft client engagement letters with scope and fees"
+  default_prompt: "Use $engagement-letter-drafter to draft an engagement letter covering scope, fees, exclusions, and the conflict position."

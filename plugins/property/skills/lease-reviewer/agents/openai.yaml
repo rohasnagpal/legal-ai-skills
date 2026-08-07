@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lease Reviewer"
+  short_description: "Review leases and licences: term, rent, exit"
+  default_prompt: "Use $lease-reviewer to review this lease from the tenant's side, including term, rent, and exit terms."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Notice Reply Drafter"
+  short_description: "Reply to a legal notice allegation by allegation"
+  default_prompt: "Use $notice-reply-drafter to draft our reply to this notice, addressing each allegation and stating our position."

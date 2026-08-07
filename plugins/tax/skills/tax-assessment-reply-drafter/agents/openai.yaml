@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tax Assessment Reply Drafter"
+  short_description: "Reply to tax assessment and scrutiny notices"
+  default_prompt: "Use $tax-assessment-reply-drafter to draft our reply to this scrutiny notice before the deadline."

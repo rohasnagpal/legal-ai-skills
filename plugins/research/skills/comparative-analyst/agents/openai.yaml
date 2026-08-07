@@ -1,0 +1,4 @@
+interface:
+  display_name: "Comparative Analyst"
+  short_description: "Compare a legal question across named jurisdictions"
+  default_prompt: "Use $comparative-analyst to compare how these named jurisdictions treat this specific question."

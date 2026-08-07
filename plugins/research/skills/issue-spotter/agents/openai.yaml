@@ -1,0 +1,4 @@
+interface:
+  display_name: "Issue Spotter"
+  short_description: "Spot issues, causes of action, and threshold problems"
+  default_prompt: "Use $issue-spotter to read these facts and spot every issue, cause of action, and threshold problem."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Demand Notice Drafter"
+  short_description: "Draft particularised pre-litigation demand notices"
+  default_prompt: "Use $demand-notice-drafter to draft a demand notice on these facts, with the claim quantified and a firm deadline."

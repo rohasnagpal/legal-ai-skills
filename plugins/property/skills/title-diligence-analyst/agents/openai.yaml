@@ -1,0 +1,4 @@
+interface:
+  display_name: "Title Diligence Analyst"
+  short_description: "Trace title chain and flag what remains unverified"
+  default_prompt: "Use $title-diligence-analyst to trace the chain of title on these documents and flag any gap."

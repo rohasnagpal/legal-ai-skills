@@ -1,0 +1,4 @@
+interface:
+  display_name: "ESOP Scheme Drafter"
+  short_description: "Draft ESOP scheme documents and grant letters"
+  default_prompt: "Use $esop-scheme-drafter to draft our ESOP scheme document and a grant letter template."

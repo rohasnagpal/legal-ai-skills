@@ -1,0 +1,4 @@
+interface:
+  display_name: "Contract Drafter"
+  short_description: "Draft agreements from a term sheet or instructions"
+  default_prompt: "Use $contract-drafter to draft an agreement from this term sheet, in the specified drafting posture."

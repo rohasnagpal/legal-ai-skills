@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stamp Duty Analyst"
+  short_description: "Calculate stamp duty and registration cost from supplied rates"
+  default_prompt: "Use $stamp-duty-analyst to calculate stamp duty and registration cost on this transaction using these rates."

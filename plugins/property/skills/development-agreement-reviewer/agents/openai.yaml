@@ -1,0 +1,4 @@
+interface:
+  display_name: "Development Agreement Reviewer"
+  short_description: "Review land development and JDA agreements"
+  default_prompt: "Use $development-agreement-reviewer to review this joint development agreement from the landowner's side."

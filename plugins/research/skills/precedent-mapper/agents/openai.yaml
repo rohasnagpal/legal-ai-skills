@@ -1,0 +1,4 @@
+interface:
+  display_name: "Precedent Mapper"
+  short_description: "Map the authorities on a point and how they relate"
+  default_prompt: "Use $precedent-mapper to map the authorities on this point and how they relate to each other."

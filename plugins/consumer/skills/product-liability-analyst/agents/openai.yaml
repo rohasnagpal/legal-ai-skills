@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Liability Analyst"
+  short_description: "Assess product liability exposure and supply-chain risk"
+  default_prompt: "Use $product-liability-analyst to assess our product liability exposure on these facts, including who in the supply chain is exposed."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deficiency Analyst"
+  short_description: "Test facts against deficiency and unfair-trade-practice thresholds"
+  default_prompt: "Use $deficiency-analyst to test whether these facts amount to deficiency in service or an unfair trade practice."

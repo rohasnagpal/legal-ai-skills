@@ -1,0 +1,4 @@
+interface:
+  display_name: "RERA Compliance Checker"
+  short_description: "Check India RERA registration and disclosure obligations"
+  default_prompt: "Use $rera-compliance-checker to check whether this project needs RERA registration and what it must disclose."

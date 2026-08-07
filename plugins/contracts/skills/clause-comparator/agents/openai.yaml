@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clause Comparator"
+  short_description: "Compare the same clause across drafts or a standard"
+  default_prompt: "Use $clause-comparator to compare this clause across these drafts and report what actually changed."

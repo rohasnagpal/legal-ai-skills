@@ -1,0 +1,4 @@
+interface:
+  display_name: "Founders' Agreement Drafter"
+  short_description: "Draft founder agreements: vesting, roles, exit, IP"
+  default_prompt: "Use $founders-agreement-drafter to draft a founders' agreement covering vesting, IP assignment, and exit."

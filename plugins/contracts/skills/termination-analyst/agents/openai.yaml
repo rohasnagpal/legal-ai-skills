@@ -1,0 +1,4 @@
+interface:
+  display_name: "Termination Analyst"
+  short_description: "Map exit rights, notice, and consequences on both sides"
+  default_prompt: "Use $termination-analyst to work out how each party can actually get out of this contract, and what survives."

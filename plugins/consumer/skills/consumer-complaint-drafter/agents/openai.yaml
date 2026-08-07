@@ -1,0 +1,4 @@
+interface:
+  display_name: "Consumer Complaint Drafter"
+  short_description: "Draft consumer complaints with jurisdiction and relief"
+  default_prompt: "Use $consumer-complaint-drafter to draft a consumer complaint on these facts, with jurisdiction, the deficiency alleged, and relief sought."

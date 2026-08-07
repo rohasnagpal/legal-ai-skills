@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mediation Opening Drafter"
+  short_description: "Draft spoken opening statements for a joint session"
+  default_prompt: "Use $mediation-opening-drafter to draft our opening statement for the mediation."

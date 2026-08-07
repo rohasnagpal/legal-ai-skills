@@ -1,0 +1,4 @@
+interface:
+  display_name: "Startup Compliance Checker"
+  short_description: "Check India startup compliance by stage and structure"
+  default_prompt: "Use $startup-compliance-checker to check our compliance obligations at our current stage and structure."

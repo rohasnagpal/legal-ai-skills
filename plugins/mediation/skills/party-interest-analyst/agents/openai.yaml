@@ -1,0 +1,4 @@
+interface:
+  display_name: "Party Interest Analyst"
+  short_description: "Separate stated positions from underlying interests"
+  default_prompt: "Use $party-interest-analyst to map both parties' positions and their underlying interests."

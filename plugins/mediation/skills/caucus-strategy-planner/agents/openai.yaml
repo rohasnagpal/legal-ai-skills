@@ -1,0 +1,4 @@
+interface:
+  display_name: "Caucus Strategy Planner"
+  short_description: "Plan what to disclose or hold back in private session"
+  default_prompt: "Use $caucus-strategy-planner to help us plan what to disclose in this mediation caucus, and what to hold back."

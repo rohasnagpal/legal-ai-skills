@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Risk Assessor"
+  short_description: "Weigh options with the risk and likely outcome of each"
+  default_prompt: "Use $legal-risk-assessor to lay out our options here, with the risk and likely outcome of each."

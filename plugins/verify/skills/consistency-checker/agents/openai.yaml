@@ -1,0 +1,4 @@
+interface:
+  display_name: "Consistency Checker"
+  short_description: "Check facts, dates, and figures across a document set"
+  default_prompt: "Use $consistency-checker to check these documents for consistency before we file them."

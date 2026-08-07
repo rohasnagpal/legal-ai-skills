@@ -1,0 +1,4 @@
+interface:
+  display_name: "Contract Summariser"
+  short_description: "Plain, neutral summary of what an agreement does"
+  default_prompt: "Use $contract-summariser to give me the plain-language gist of what this contract actually does."

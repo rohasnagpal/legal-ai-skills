@@ -1,0 +1,4 @@
+interface:
+  display_name: "GST Compliance Analyst"
+  short_description: "Check GST treatment and compliance obligations"
+  default_prompt: "Use $gst-compliance-analyst to check the GST treatment of this supply and our compliance obligations."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compensation Quantifier"
+  short_description: "Build a compensation claim head by head"
+  default_prompt: "Use $compensation-quantifier to quantify this compensation claim head by head from the figures supplied."

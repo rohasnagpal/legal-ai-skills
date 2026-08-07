@@ -1,0 +1,4 @@
+interface:
+  display_name: "Encumbrance Analyst"
+  short_description: "Read encumbrance certificates for charges and gaps"
+  default_prompt: "Use $encumbrance-analyst to read this encumbrance certificate and flag any subsisting charge or gap."

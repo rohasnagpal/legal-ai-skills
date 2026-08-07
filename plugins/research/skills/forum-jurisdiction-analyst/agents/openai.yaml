@@ -1,0 +1,4 @@
+interface:
+  display_name: "Forum & Jurisdiction Analyst"
+  short_description: "Work out which forum, and what turns on the choice"
+  default_prompt: "Use $forum-jurisdiction-analyst to work out which forum we should sue in and what actually turns on the choice."

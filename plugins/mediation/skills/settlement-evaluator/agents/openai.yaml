@@ -1,0 +1,4 @@
+interface:
+  display_name: "Settlement Evaluator"
+  short_description: "Test an offer against the litigation alternative"
+  default_prompt: "Use $settlement-evaluator to test this settlement offer against our realistic litigation alternative."

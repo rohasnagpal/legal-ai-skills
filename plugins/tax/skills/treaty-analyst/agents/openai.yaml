@@ -1,0 +1,4 @@
+interface:
+  display_name: "Treaty Analyst"
+  short_description: "Analyse treaty entitlement and relief on given facts"
+  default_prompt: "Use $treaty-analyst to analyse our treaty entitlement and relief on this cross-border payment."

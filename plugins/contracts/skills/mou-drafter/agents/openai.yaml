@@ -1,0 +1,4 @@
+interface:
+  display_name: "MOU Drafter"
+  short_description: "Draft MOUs with binding parts made explicit"
+  default_prompt: "Use $mou-drafter to draft an MOU for this deal, making clear exactly which parts are binding."

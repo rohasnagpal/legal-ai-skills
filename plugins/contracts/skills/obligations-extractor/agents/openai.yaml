@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obligations Extractor"
+  short_description: "Pull every obligation and deadline into a ledger"
+  default_prompt: "Use $obligations-extractor to pull every obligation, deadline, and notice requirement out of this contract."

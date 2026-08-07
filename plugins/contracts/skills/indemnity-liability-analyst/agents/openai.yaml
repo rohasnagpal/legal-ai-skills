@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indemnity & Liability Analyst"
+  short_description: "Work out real exposure once cap carve-outs are applied"
+  default_prompt: "Use $indemnity-liability-analyst to work out our real exposure under this indemnity, once the cap's carve-outs are applied."

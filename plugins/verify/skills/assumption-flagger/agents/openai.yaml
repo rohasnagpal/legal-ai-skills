@@ -1,0 +1,4 @@
+interface:
+  display_name: "Assumption Flagger"
+  short_description: "Surface every assumption a draft depends on"
+  default_prompt: "Use $assumption-flagger to surface every assumption this draft depends on."

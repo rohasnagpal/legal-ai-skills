@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sale Deed Drafter"
+  short_description: "Draft sale deeds and conveyances"
+  default_prompt: "Use $sale-deed-drafter to draft the sale deed for this property transfer."

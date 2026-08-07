@@ -1,0 +1,4 @@
+interface:
+  display_name: "Client Update Drafter"
+  short_description: "Draft honest, plain-language client status updates"
+  default_prompt: "Use $client-update-drafter to draft a status update for the client, stating any bad news or delay plainly."

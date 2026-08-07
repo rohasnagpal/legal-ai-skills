@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cap Table Analyst"
+  short_description: "Work through dilution and ownership on supplied numbers"
+  default_prompt: "Use $cap-table-analyst to model what this round does to our ownership and dilution."

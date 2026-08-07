@@ -1,0 +1,4 @@
+interface:
+  display_name: "Citation Integrity Checker"
+  short_description: "Check every citation for integrity before relying on it"
+  default_prompt: "Use $citation-integrity-checker to check every citation in this document before we rely on it."

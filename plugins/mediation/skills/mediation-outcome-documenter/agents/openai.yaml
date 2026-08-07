@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mediation Outcome Documenter"
+  short_description: "Record what a mediation session actually agreed"
+  default_prompt: "Use $mediation-outcome-documenter to record what we agreed today, and what remains open."

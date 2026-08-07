@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Synthesiser"
+  short_description: "Weave scattered research into one traceable position"
+  default_prompt: "Use $research-synthesiser to pull this scattered research together into a single reasoned position."

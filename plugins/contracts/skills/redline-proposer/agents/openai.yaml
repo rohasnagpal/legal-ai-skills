@@ -1,0 +1,4 @@
+interface:
+  display_name: "Redline Proposer"
+  short_description: "Draft alternative wording from aggressive to fallback"
+  default_prompt: "Use $redline-proposer to redline this clause, from an aggressive opening position to a fallback we could live with."

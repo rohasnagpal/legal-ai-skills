@@ -1,0 +1,4 @@
+interface:
+  display_name: "Investment Agreement Reviewer"
+  short_description: "Review SHA/SSA terms from the founder's or investor's side"
+  default_prompt: "Use $investment-agreement-reviewer to review this SHA and SSA from the founder's side."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Statutory Interpreter"
+  short_description: "Interpret a provision using the accepted canons"
+  default_prompt: "Use $statutory-interpreter to interpret this provision using the accepted canons, showing the reasoning."

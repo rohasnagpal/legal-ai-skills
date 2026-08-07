@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legislative History Analyst"
+  short_description: "Trace how a provision reached its current form"
+  default_prompt: "Use $legislative-history-analyst to trace how this provision reached its current form."

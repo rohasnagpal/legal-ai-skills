@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tax Appeal Grounds Drafter"
+  short_description: "Draft grounds of appeal against a tax order"
+  default_prompt: "Use $tax-appeal-grounds-drafter to draft grounds of appeal against this assessment order."

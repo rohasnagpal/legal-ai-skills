@@ -1,0 +1,4 @@
+interface:
+  display_name: "Opposite Party Reply Drafter"
+  short_description: "Reply to a consumer complaint for the respondent"
+  default_prompt: "Use $opposite-party-reply-drafter to draft our reply to this consumer complaint, addressing each allegation."

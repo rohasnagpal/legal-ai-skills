@@ -1,0 +1,4 @@
+interface:
+  display_name: "SaaS Terms Drafter"
+  short_description: "Draft SaaS terms of service and customer agreements"
+  default_prompt: "Use $saas-terms-drafter to draft our SaaS terms of service for this product."

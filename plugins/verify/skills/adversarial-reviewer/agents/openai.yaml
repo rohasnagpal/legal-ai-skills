@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adversarial Reviewer"
+  short_description: "Attack a draft the way opposing counsel would"
+  default_prompt: "Use $adversarial-reviewer to attack this draft the way opposing counsel would before we send it."
