@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Contracts",
-    "shortDescription": "Contract drafting, review, and negotiation workflows.",
+    "shortDescription": "Contract drafting and review",
     "longDescription": "Ten reusable legal workflows covering contract drafting, review, comparison, summarisation, obligations, liability, termination, negotiation, and redlines.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Review this contract from my client's side.",
       "Draft an agreement from these commercial terms.",

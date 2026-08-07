@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Startup",
-    "shortDescription": "Cap table, ESOP, founders, financing, and SaaS terms workflows.",
+    "shortDescription": "Startup legal workflows",
     "longDescription": "Seven reusable startup workflows covering cap table dilution modelling, ESOP scheme drafting, founders' agreements, SHA/SSA review, SaaS terms of service, India startup compliance, and term sheet review.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Model the dilution from this new financing round.",
       "Review this term sheet for off-market or founder-adverse terms.",

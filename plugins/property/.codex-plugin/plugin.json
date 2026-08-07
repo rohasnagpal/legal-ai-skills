@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Property",
-    "shortDescription": "Development, lease, title, RERA, and conveyancing workflows.",
+    "shortDescription": "Property law workflows",
     "longDescription": "Seven reusable property workflows covering development agreement review, encumbrance certificate analysis, lease review, RERA compliance, sale deed drafting, stamp duty calculation, and title diligence.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Review this joint development agreement from the landowner's side.",
       "Trace the chain of title on these property documents and flag gaps.",

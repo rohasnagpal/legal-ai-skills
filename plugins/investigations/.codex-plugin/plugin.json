@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Investigations",
-    "shortDescription": "Evidence-led investigation and tracing workflows.",
+    "shortDescription": "Legal investigation workflows",
     "longDescription": "Seven reusable workflows covering chain of custody, digital evidence, fraud patterns, investigation reports, OSINT, transaction tracing, and whistleblower triage.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Build or audit a defensible evidence record for this investigation.",
       "Analyse this digital, transactional, or open-source material and identify evidential gaps.",

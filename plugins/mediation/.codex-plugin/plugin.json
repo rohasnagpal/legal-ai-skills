@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Mediation",
-    "shortDescription": "Caucus, brief, opening, outcome, interests, and settlement workflows.",
+    "shortDescription": "Mediation workflows",
     "longDescription": "Six reusable mediation workflows covering caucus strategy, mediation briefs, opening statements, outcome documentation, party-interest analysis, and settlement evaluation against the litigation alternative.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Help us plan what to disclose in this mediation caucus.",
       "Map both parties' positions and underlying interests.",

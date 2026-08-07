@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Litigation",
-    "shortDescription": "Record-led litigation preparation workflows.",
+    "shortDescription": "Litigation workflows",
     "longDescription": "Ten reusable litigation workflows covering appeals, case law, chronologies, cross-examination, evidence, interim applications, limitation, pleadings, witness statements, and written submissions.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Analyse this record and organise the live issues, evidence, authorities, and deadlines.",
       "Prepare this appeal, interim application, witness evidence, or written submissions.",

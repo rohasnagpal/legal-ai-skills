@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Insolvency",
-    "shortDescription": "India insolvency process and plan workflows.",
+    "shortDescription": "Insolvency law workflows",
     "longDescription": "Six reusable Indian insolvency workflows covering avoidance transactions, CIRP calendars, claim verification, liquidation, operational-creditor filings, and resolution-plan review.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Audit this CIRP timeline, claims, and compliance record.",
       "Analyse these transactions or liquidation steps under the current IBC.",

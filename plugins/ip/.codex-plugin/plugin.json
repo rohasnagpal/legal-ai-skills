@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: IP",
-    "shortDescription": "IP protection, transactions, and enforcement.",
+    "shortDescription": "IP law workflows",
     "longDescription": "Six reusable intellectual-property workflows covering enforcement notices, infringement analysis, assignments, portfolio audits, licensing, and Indian trademark opposition and rectification proceedings.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Analyse this IP right, accused conduct, evidence, defences, and remedies.",
       "Draft or review this IP assignment, licence, or enforcement notice.",

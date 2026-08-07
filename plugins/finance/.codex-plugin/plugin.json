@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Finance",
-    "shortDescription": "Lending, security, recovery, and compliance.",
+    "shortDescription": "Finance law workflows",
     "longDescription": "Six reusable legal workflows covering guarantees, loan review, security documentation, debt recovery, Indian SARFAESI enforcement, and securities compliance.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Review this loan, guarantee, and security package for risk.",
       "Build a lawful recovery or SARFAESI enforcement strategy.",

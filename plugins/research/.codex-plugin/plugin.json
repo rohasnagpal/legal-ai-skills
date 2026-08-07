@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Research",
-    "shortDescription": "Comparative, precedent, interpretation, and synthesis workflows.",
+    "shortDescription": "Legal research workflows",
     "longDescription": "Seven reusable legal research workflows covering comparative jurisdiction analysis, forum selection, issue-spotting, legislative history, precedent mapping, research synthesis, and statutory interpretation — all built around sourcing discipline rather than asserting legal facts from memory.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Spot every issue and threshold problem in this fact pattern.",
       "Map the authorities on this specific point.",

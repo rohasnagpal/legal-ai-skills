@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Regulatory",
-    "shortDescription": "Evidence-led regulatory compliance workflows.",
+    "shortDescription": "Regulatory law workflows",
     "longDescription": "Six reusable regulatory workflows covering applicability, examinations and show-cause responses, licences, change monitoring, filings, and reproducible sanctions screening.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Identify the current regulatory framework for this activity and document what remains unverified.",
       "Prepare this regulatory response, licence application, or filing from authoritative requirements and evidence.",

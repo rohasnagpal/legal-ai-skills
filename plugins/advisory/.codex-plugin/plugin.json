@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Advisory",
-    "shortDescription": "Client intake, updates, opinions, risk and notice workflows.",
+    "shortDescription": "Everyday legal advisory",
     "longDescription": "Eight reusable legal workflows covering client intake, status updates, engagement letters, plain-language explanation, formal opinions, risk assessment, demand notices, and notice replies.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Turn this client call transcript into a structured matter summary.",
       "Draft a formal opinion answering this question, with reasoning and caveats.",

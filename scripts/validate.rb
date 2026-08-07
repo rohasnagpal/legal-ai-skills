@@ -59,9 +59,92 @@ end
 
 # ---- 2. .codex-plugin/plugin.json ----
 Dir.glob('plugins/*/.codex-plugin/plugin.json').sort.each do |f|
-  JSON.parse(File.read(f))
-rescue => e
-  errors << "#{f}: invalid JSON -- #{e.message}"
+  begin
+    data = JSON.parse(File.read(f))
+  rescue => e
+    errors << "#{f}: invalid JSON -- #{e.message}"
+    next
+  end
+
+  plugin_root = File.expand_path('../..', f)
+  folder_name = File.basename(plugin_root)
+  name = data['name']
+  version = data['version']
+  iface = data['interface']
+
+  errors << "#{f}: name '#{name}' does not match folder '#{folder_name}'" unless name == folder_name
+  errors << "#{f}: version '#{version}' is not strict semver" unless version.to_s.match?(/\A\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?\z/)
+
+  unless iface.is_a?(Hash)
+    errors << "#{f}: missing interface object"
+    next
+  end
+
+  {
+    'displayName' => 30,
+    'shortDescription' => 30,
+    'longDescription' => 4000,
+    'developerName' => 80
+  }.each do |key, limit|
+    value = iface[key]
+    errors << "#{f}: interface.#{key} is required" if value.to_s.strip.empty?
+    errors << "#{f}: interface.#{key} too long (#{value.length}, max #{limit})" if value.is_a?(String) && value.length > limit
+  end
+
+  prompts = iface['defaultPrompt']
+  unless prompts.is_a?(Array) && !prompts.empty?
+    errors << "#{f}: interface.defaultPrompt must be a non-empty array"
+  else
+    errors << "#{f}: interface.defaultPrompt has #{prompts.length} entries (max 3)" if prompts.length > 3
+    prompts.each_with_index do |prompt, index|
+      errors << "#{f}: interface.defaultPrompt[#{index}] must be a string" unless prompt.is_a?(String)
+      errors << "#{f}: interface.defaultPrompt[#{index}] too long (#{prompt.length}, max 128)" if prompt.is_a?(String) && prompt.length > 128
+    end
+  end
+
+  %w[composerIcon logo].each do |key|
+    relative_path = iface[key]
+    if relative_path.to_s.empty?
+      errors << "#{f}: interface.#{key} is required"
+      next
+    end
+
+    unless relative_path.start_with?('./')
+      errors << "#{f}: interface.#{key} must begin with ./"
+      next
+    end
+
+    asset_path = File.expand_path(relative_path, plugin_root)
+    unless asset_path.start_with?("#{plugin_root}#{File::SEPARATOR}") && File.file?(asset_path)
+      errors << "#{f}: interface.#{key} does not reference a file inside the plugin"
+      next
+    end
+
+    extension = File.extname(asset_path).downcase
+    errors << "#{f}: interface.#{key} uses unsupported image type '#{extension}'" unless %w[.png .jpg .jpeg .webp .svg].include?(extension)
+    errors << "#{f}: interface.#{key} exceeds 5 MiB" if File.size(asset_path) > 5 * 1024 * 1024
+
+    next unless extension == '.svg'
+
+    svg = File.read(asset_path, encoding: 'UTF-8')
+    unless svg.match?(/<svg\b/i)
+      errors << "#{f}: interface.#{key} is not a valid SVG document"
+      next
+    end
+
+    width = svg[/<svg\b[^>]*\bwidth=["']([0-9.]+)["']/i, 1]&.to_f
+    height = svg[/<svg\b[^>]*\bheight=["']([0-9.]+)["']/i, 1]&.to_f
+    view_box = svg[/<svg\b[^>]*\bviewBox=["']([^"']+)["']/i, 1]&.split&.map(&:to_f)
+    if width && height
+      errors << "#{f}: interface.#{key} must be square" unless width == height
+      errors << "#{f}: interface.#{key} must be at least 48x48" if width < 48 || height < 48
+    elsif view_box&.length == 4
+      errors << "#{f}: interface.#{key} viewBox must be square" unless view_box[2] == view_box[3]
+      errors << "#{f}: interface.#{key} viewBox must be at least 48x48" if view_box[2] < 48 || view_box[3] < 48
+    else
+      errors << "#{f}: interface.#{key} needs numeric width/height or a viewBox"
+    end
+  end
 end
 
 # ---- 3. agents/openai.yaml, where present ----

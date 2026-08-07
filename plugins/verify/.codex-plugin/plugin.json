@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Verify",
-    "shortDescription": "Adversarial review, assumptions, citations, and consistency checks.",
+    "shortDescription": "Legal quality-control checks",
     "longDescription": "Four reusable quality-control workflows: attacking a draft the way opposing counsel would, surfacing every assumption it depends on, checking every citation for integrity, and cross-checking a document set for internal consistency.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Attack this draft the way opposing counsel would before we send it.",
       "Surface every assumption this opinion depends on.",

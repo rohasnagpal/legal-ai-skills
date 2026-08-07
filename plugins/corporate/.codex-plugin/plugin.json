@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Corporate",
-    "shortDescription": "Corporate governance, transactions, and compliance.",
+    "shortDescription": "Corporate legal workflows",
     "longDescription": "Eight reusable legal workflows covering resolutions, minutes, M&A diligence, shareholder agreements, restructurings, listing obligations, related parties, and secretarial compliance.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Draft the corporate resolutions required for this action.",
       "Build a risk-ranked diligence plan for this transaction.",

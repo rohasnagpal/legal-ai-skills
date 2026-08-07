@@ -13,12 +13,15 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Rohas Legal: Consumer",
-    "shortDescription": "Consumer complaint, deficiency, and product liability workflows.",
+    "shortDescription": "Consumer law workflows",
     "longDescription": "Five reusable legal workflows covering consumer complaint drafting, deficiency and unfair-trade-practice analysis, compensation quantification, opposite-party replies, and product liability exposure.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
     "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#1E3A5F",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
     "defaultPrompt": [
       "Draft a consumer complaint over this defective product.",
       "Test whether these facts amount to deficiency in service.",
