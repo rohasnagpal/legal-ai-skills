@@ -18,32 +18,47 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 
 ---
 
-## 1. Install on Claude
+## 1. Install on Claude Web
 
-Skills are grouped into practice packs. Install the packs your practice needs;
-Claude then uses the right skill automatically when your request matches it.
+1. Click **Plugins → Add → Add marketplace**
 
-Before you start, make sure **Skills** and **Cowork** are both enabled in your
-Claude settings. On Team and Enterprise plans these are org-level settings and
-may need an owner to turn them on.
+<img width="946" height="491" alt="image" src="https://github.com/user-attachments/assets/2d7989eb-a762-4ac7-878a-52cbea24ff80" />
 
-### 1.1 Claude web and desktop
+---
 
-1. Open **Settings → Customize → plugins**
-2. Click **Add marketplace**, then **Add from a repository**
-3. Enter `rohasnagpal/legal-ai-skills`
-4. The marketplace appears under your personal plugins with all 24 packs listed
-5. Click **+** on each pack you want
+2. Click **Add from a repository**
 
-Run step 3 once. After that, adding another pack is a single click.
+<img width="708" height="274" alt="image" src="https://github.com/user-attachments/assets/0c4b66fd-8fe6-41e4-b120-c7ca30e2a597" />
 
-### 1.2 Claude Code
+---
+
+3. Enter **https://github.com/rohasnagpal/legal-ai-skills**
+
+<img width="703" height="387" alt="image" src="https://github.com/user-attachments/assets/72c8703f-2680-4ec2-98c9-1a8eeeca3e4a" />
+
+---
+
+4. Click **+** for the plugins you need.
+
+<img width="1006" height="690" alt="image" src="https://github.com/user-attachments/assets/7bb12216-2c32-430e-9f14-a4bb19fd1035" />
+
+---
+
+**One skill at a time**
+
+If you only want a single skill rather than a whole pack:
+
+1. Open the [latest release](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/latest)
+2. Download the zip for the skill you want
+3. In Claude, go to **Customize → Skills → Upload a skill**
+
+## 2. Install on Claude Code
 
 ```
 /plugin marketplace add rohasnagpal/legal-ai-skills
+
 /plugin install contracts@rohas-legal
 ```
-
 Replace `contracts` with any category name from the contents list below. Run
 the marketplace command once; after that you can install as many packs as you
 like.
@@ -53,31 +68,9 @@ To pull in changes after the repo updates:
 ```
 /plugin marketplace update rohas-legal
 ```
-
-### 1.3 One skill at a time
-
-If you only want a single skill rather than a whole pack:
-
-1. Open the [latest release](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/latest)
-2. Download the zip for the skill you want
-3. In Claude, go to **Settings → Customize → Skills → Add** and upload it
-
-### 1.4 If something does not work
-
-**Marketplace will not add.** Use the `owner/repo` form with no trailing
-slash. If you are giving a full URL instead, include the `.git` suffix.
-
-**Packs install but no skill ever fires.** Check that Skills are enabled in
-your settings. Skills load on their own when your request matches — you do not
-invoke them by name, and there is no mode to switch into.
-
-**A pack is missing after a repo update.** Refresh the marketplace rather than
-re-adding it: `/plugin marketplace update rohas-legal` in Claude Code, or
-remove and re-add the marketplace in the web app.
-
 ---
 
-## 2. Install on ChatGPT
+## 3. Install on ChatGPT
 
 Skills are grouped into plugins. Install the plugins your practice needs;
 ChatGPT then uses the right skill automatically when your request matches it.
