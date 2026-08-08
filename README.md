@@ -80,11 +80,34 @@ remove and re-add the marketplace in the web app.
 
 ## 2. Install on ChatGPT
 
-1. Open ChatGPT on the web.
-2. Switch from **Chat** to **Work**.
-3. Open **Plugins**.
-4. Search for **Rohas Legal: Contracts**, select the plus button, and start a
-   new Work chat.
+Skills are grouped into practice packs. Install the packs your practice needs;
+ChatGPT then uses the right skill automatically when your request matches it.
+
+### 2.1 ChatGPT web and desktop
+
+1. Open ChatGPT and switch from **Chat** to **Work**
+2. Open **Plugins**
+3. Search for **Rohas Legal AI**
+4. Click **+** on each pack you want
+5. Start a new Work chat
+
+ChatGPT and Codex use the same public plugin directory. In the desktop app you
+can also select **Codex**, open **Plugins**, and install the same packs there.
+
+### 2.2 Using a pack
+
+Ask for the work normally. ChatGPT chooses the relevant installed skill when
+your request matches it. To choose a particular pack yourself, type `@` in the
+composer and select it from the list; you do not need to type its full name.
+
+### 2.3 If something does not work
+
+**Plugins are not visible.** Make sure you are in **Work**, not an ordinary
+Chat conversation. On a managed workspace, an administrator may also need to
+allow the plugin.
+
+**A pack does not appear in search.** Public packs appear after OpenAI approves
+and publishes them. Try again after the listing is live.
 
 ---
 
