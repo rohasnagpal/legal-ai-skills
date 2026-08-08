@@ -1,3 +1,5 @@
+# Legal AI Skills
+
 An open collection of Legal AI Skills for Claude and ChatGPT.
 
 A skill is a reusable set of written instructions for an AI assistant.Each skill teaches an AI assistant how to handle one kind of legal task properly. 
@@ -25,6 +27,7 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 4. [Contents](#4-contents)
 5. [Before you use these](#5-before-you-use-these)
 6. [Contributing](#6-contributing)
+7. [Licence](#7-licence)
 
 # 1. Install on Claude Web
 
@@ -389,6 +392,6 @@ Contributions are accepted under the MIT licence.
 
 ---
 
-## Licence
+# 7. Licence
 
 MIT. See [LICENSE](LICENSE).
