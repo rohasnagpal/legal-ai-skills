@@ -1,116 +1,84 @@
 An open collection of Agent Skills for legal work, compatible with Claude,
 ChatGPT, and Codex.
 
-Each skill teaches an AI assistant how to handle one kind of legal task
-properly: what to ask for first, what the output should contain, and what to
-refuse to guess at. Install the ones your practice needs and the assistant can
+A skill is a reusable set of written instructions for an AI assistant.Each skill teaches an AI assistant how to handle one kind of legal task properly. 
+
+Skills are also bundled into plugins. A plugin is an installable practice pack containing several skills. Install the ones you need and the AI assistant can
 use them automatically when the work matches.
 
-Built and maintained by [Rohas Nagpal](https://rohasnagpal.com).
+**Who this is for:** Practising lawyers, in-house counsel, and law students who already know the
+law and want the drafting and analysis work to go faster. These skills assume
+professional judgment on your side. They are not built for people seeking
+legal help without a lawyer.
+
+**Jurisdiction:** Most skills are jurisdiction-neutral and work anywhere. Skills that turn on
+Indian statutes are marked **(India)**. Every skill is written to confirm the
+governing jurisdiction before it relies on any specific rule.
+
+Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com).
 
 ---
 
-## What is a skill?
+## 1. Install on Claude
 
-A skill is a reusable set of written instructions for an AI assistant.
+Skills are grouped into practice packs. Install the packs your practice needs;
+Claude then uses the right skill automatically when your request matches it.
 
-Think of it as the note you would leave for a junior colleague: *when someone
-hands you a judgment, here is how to read it, here is what the note should
-contain, and here is what not to assume.* You write it once and reuse it across
-matters.
+Before you start, make sure **Skills** and **Cowork** are both enabled in your
+Claude settings. On Team and Enterprise plans these are org-level settings and
+may need an owner to turn them on.
 
-A skill is a folder containing a file called `SKILL.md`. The top of that file
-says what the skill does and when to use it. The rest is the instructions.
-Some skills also carry reference material or small scripts alongside.
+### 1.1 Claude web and desktop
 
-**How the assistant decides to use one.** The assistant reads the short
-description of every installed skill and can load the full instructions when a
-request matches. ChatGPT and Codex also allow explicit invocation when you want
-to choose the workflow yourself.
+1. Open **Settings → Customize → plugins**
+2. Click **Add marketplace**, then **Add from a repository**
+3. Enter `rohasnagpal/legal-ai-skills`
+4. The marketplace appears under your personal plugins with all 24 packs listed
+5. Click **+** on each pack you want
 
-**Where skills work.** The skill folders use the open Agent Skills format.
-They can be installed individually in supported Claude and ChatGPT surfaces,
-or bundled into a practice-pack plugin — `contracts`, `litigation`, `tax`,
-and 21 others — for Claude Code, ChatGPT, and Codex. Installations do not
-automatically sync between products.
+Run step 3 once. After that, adding another pack is a single click.
 
-## What is a plugin?
-
-A plugin is an installable practice pack containing several skills.
-
-Here the skills are grouped into practice packs (e.g. arbitration, contracts,
-privacy, etc.) and each pack installs with a single command. A criminal
-defence lawyer takes the criminal and litigation packs and ignores the rest.
-
-This repository provides compatible plugin manifests for Claude Code and for
-ChatGPT/Codex. Individual skill ZIPs remain available for surfaces that accept
-one skill at a time.
-
----
-
-## Install
-
-### Claude.ai (web, desktop, or mobile app)
-
-No terminal, no git — just download and upload:
-
-1. Open the [latest release](https://github.com/rohasnagpal/legal-ai-skills/releases/latest)
-   and download the zip for the skill you want (for example
-   `contracts-contract-reviewer.zip`).
-2. In Claude, go to **Settings → Customize → Skills → Add**, and upload the
-   zip you just downloaded.
-3. Repeat for each skill you want — skills install one at a time here, there
-   is no "install the whole pack" option on this surface.
-
-Your account needs code execution turned on for Skills to work; Claude will
-prompt you if it isn't.
-
-### Claude Code (the command-line tool)
-
-Claude Code is a separate terminal app from claude.ai. If you don't have it
-yet, install it first from the [quickstart guide](https://code.claude.com/docs/en/quickstart).
-
-Once it's running, type these two lines **into the Claude Code prompt itself**
-(not your regular terminal):
+### 1.2 Claude Code
 
 ```
 /plugin marketplace add rohasnagpal/legal-ai-skills
 /plugin install contracts@rohas-legal
 ```
 
-The first line registers this repository as a source — do that once, ever.
-The second installs all ten `contracts` skills in a single step. All 24
-practice packs install the same way — `/plugin install <category>@rohas-legal`,
-for example `arbitration` or `advisory`; see
-[Contents](#contents) for the full list.
+Replace `contracts` with any category name from the contents list below. Run
+the marketplace command once; after that you can install as many packs as you
+like.
+
+To pull in changes after the repo updates:
+
+```
+/plugin marketplace update rohas-legal
+```
+
+### 1.3 One skill at a time
+
+If you only want a single skill rather than a whole pack:
+
+1. Open the [latest release](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/latest)
+2. Download the zip for the skill you want
+3. In Claude, go to **Settings → Customize → Skills → Add** and upload it
+
+### 1.4 If something does not work
+
+**Marketplace will not add.** Use the `owner/repo` form with no trailing
+slash. If you are giving a full URL instead, include the `.git` suffix.
+
+**Packs install but no skill ever fires.** Check that Skills are enabled in
+your settings. Skills load on their own when your request matches — you do not
+invoke them by name, and there is no mode to switch into.
+
+**A pack is missing after a repo update.** Refresh the marketplace rather than
+re-adding it: `/plugin marketplace update rohas-legal` in Claude Code, or
+remove and re-add the marketplace in the web app.
 
 ---
 
-### ChatGPT and Codex
-
-There is no single installation method across ChatGPT and Codex surfaces. The
-important distinction is between a **published plugin** for ordinary users and
-the **source version in this GitHub repository** for developers and testers.
-
-**Which route applies?**
-
-| Product | Can it use this repository now? | Installation route |
-| --- | --- | --- |
-| ChatGPT on the web, in **Work** | Not directly from GitHub | Install from **Plugins** after this pack is published in OpenAI's public Plugins Directory |
-| ChatGPT in ordinary **Chat**, or ChatGPT mobile | No | Plugins are not supported on these surfaces |
-| ChatGPT desktop, in **Work**, or Codex desktop | Yes, as a source/test installation | Add the GitHub marketplace with Codex CLI, then install from **Plugins** |
-| Codex CLI | Yes | Add the GitHub marketplace, then install the pack |
-| Codex IDE extension | Not as a plugin | Install individual skill folders locally instead |
-| Codex Cloud | No | Skills and plugins are not currently supported in Codex Cloud |
-| ChatGPT Workspace Agent | Only in eligible managed workspaces | Upload individual skill ZIPs in the agent builder |
-
-OpenAI's current surface list is documented in
-[Plugins](https://learn.chatgpt.com/docs/plugins) and
-[Build skills](https://learn.chatgpt.com/docs/build-skills).
-
-**ChatGPT web: what an ordinary user does**
-
-The normal end-user flow is:
+## 2. Install on ChatGPT
 
 1. Open ChatGPT on the web.
 2. Switch from **Chat** to **Work**.
@@ -118,108 +86,9 @@ The normal end-user flow is:
 4. Search for **Rohas Legal: Contracts**, select the plus button, and start a
    new Work chat.
 
-**Current status:** this pack has not yet been published in OpenAI's public
-Plugins Directory, so it will not appear in that search yet. A normal ChatGPT
-web user cannot install the current GitHub version and does not need to clone
-this repository or run terminal commands.
-
-For that end-user flow to become available, the maintainer must submit this
-skills-only plugin through OpenAI's
-[plugin submission portal](https://platform.openai.com/plugins), pass review,
-and publish the approved version. OpenAI documents that process in
-[Submit plugins](https://developers.openai.com/plugins/deploy/submission).
-
-**ChatGPT desktop or Codex: install the source version**
-
-This is the practical route for developers and testers before public release.
-Install [Codex CLI](https://learn.chatgpt.com/docs/codex-cli), then run:
-
-```bash
-codex plugin marketplace add rohasnagpal/legal-ai-skills
-codex plugin add contracts@rohas-legal
-```
-
-Alternatively, after adding the marketplace, start `codex`, enter `/plugins`,
-choose **Rohas Legal**, and install **Rohas Legal: Contracts**.
-
-In the ChatGPT desktop app, restart the app, select ChatGPT and switch to
-**Work** (or select Codex), open **Plugins**, choose **Rohas Legal**, and install
-**Rohas Legal: Contracts**. Start a new chat or Codex session after installation.
-
-This GitHub marketplace is a source-development and testing channel. It is not
-the public ChatGPT web distribution channel.
-
-**Codex IDE extension: install standalone skills**
-
-The IDE extension does not support plugins. Copy only the skill folders you
-want from `plugins/contracts/skills/` into one of these locations:
-
-- `.agents/skills/` inside a project, to share the skills with that project; or
-- `~/.agents/skills/`, to make them available to your local Codex user across
-  projects.
-
-For example, from a checkout of this repository:
-
-```bash
-mkdir -p ~/.agents/skills
-cp -R plugins/contracts/skills/contract-reviewer ~/.agents/skills/
-```
-
-Restart Codex if the skill does not appear. This standalone-skill route also
-works in Codex CLI, but the plugin installation above is simpler when you want
-all ten contract skills.
-
-**Codex Cloud**
-
-Codex Cloud is not currently a supported surface for skills or plugins. There
-is therefore no legitimate installation command for this pack in Codex Cloud.
-Use Codex locally through the desktop app, CLI, or IDE extension when the task
-needs these workflows.
-
-**ChatGPT Workspace Agent: selected skills**
-
-Workspace Agents are currently a research-preview feature for ChatGPT
-Business, Enterprise, and Edu workspaces where an administrator has enabled
-them. This is not the ordinary ChatGPT web plugin flow.
-
-To give an eligible Workspace Agent particular workflows, open the agent
-builder, select **Add skill**, and upload the ZIP for each skill you want. You
-can build the ZIPs yourself from a checkout of this repository with
-`./scripts/build-skill-zips.sh` (written to `dist/`), or download
-them from the [latest release](https://github.com/rohasnagpal/legal-ai-skills/releases/latest).
-See OpenAI's [Workspace Agent guide](https://developers.openai.com/cookbook/articles/chatgpt-agents-sales-meeting-prep)
-for workspace permissions and availability.
-
-## Usage
-
-Once a skill or pack is installed, ask for the work normally — *"review this
-NDA from our side," "draft a services agreement from this term sheet," "what's
-our exposure under this indemnity clause"* — and the assistant can match the
-request to the right skill automatically.
-
-In ChatGPT Work, type `@` and select the plugin or a bundled skill when you want
-to invoke it explicitly. In Codex CLI or the IDE extension, use `/skills` or
-type `$` and select the skill. Explicit invocation is useful where several
-contract workflows overlap; otherwise natural-language matching is sufficient.
-
 ---
 
-## Who this is for
-
-Practising lawyers, in-house counsel, and law students who already know the
-law and want the drafting and analysis work to go faster. These skills assume
-professional judgment on your side. They are not built for people seeking
-legal help without a lawyer.
-
-## Jurisdiction
-
-Most skills are jurisdiction-neutral and work anywhere. Skills that turn on
-Indian statutes are marked **(India)**. Every skill is written to confirm the
-governing jurisdiction before it relies on any specific rule.
-
----
-
-## Contents
+## 3. Contents
 
 [advisory](#advisory) ·
 [arbitration](#arbitration) ·
