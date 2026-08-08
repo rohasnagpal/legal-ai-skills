@@ -39,13 +39,13 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 
 2. Click **Add from a repository**
 
-<img width="708" height="274" alt="image" src="https://github.com/user-attachments/assets/0c4b66fd-8fe6-41e4-b120-c7ca30e2a597" />
+<img width="698" height="174" alt="image" src="https://github.com/user-attachments/assets/38e3483d-bf3e-4a93-a88d-d890b7f90878" />
 
 ---
 
-3. Enter **https://github.com/rohasnagpal/legal-ai-skills**
+3. Enter https://github.com/rohasnagpal/legal-ai-skills
 
-<img width="703" height="387" alt="image" src="https://github.com/user-attachments/assets/72c8703f-2680-4ec2-98c9-1a8eeeca3e4a" />
+<img width="697" height="217" alt="image" src="https://github.com/user-attachments/assets/837ab6ee-ac93-4f9e-a103-74b697b81285" />
 
 ---
 
@@ -62,6 +62,8 @@ If you only want a single skill rather than a whole pack:
 1. Open the [latest release](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/latest)
 2. Download the zip for the skill you want
 3. In Claude, go to **Customize → Skills → Upload a skill**
+
+---
 
 # 2. Install on Claude Code
 
