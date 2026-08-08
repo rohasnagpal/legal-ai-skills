@@ -1,5 +1,4 @@
-An open collection of Agent Skills for legal work, compatible with Claude,
-ChatGPT, and Codex.
+An open collection of Legal AI Skills for Claude and ChatGPT.
 
 A skill is a reusable set of written instructions for an AI assistant.Each skill teaches an AI assistant how to handle one kind of legal task properly. 
 
