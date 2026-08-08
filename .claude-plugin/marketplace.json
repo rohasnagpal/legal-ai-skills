@@ -10,168 +10,312 @@
       "name": "contracts",
       "source": "./plugins/contracts",
       "description": "Contract review, drafting, comparison, negotiation and risk-analysis skills covering the full contract lifecycle.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "arbitration",
       "source": "./plugins/arbitration",
       "description": "Arbitration clause, commencement, appointment, pleading, interim-relief, procedure and award-analysis skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "advisory",
       "source": "./plugins/advisory",
       "description": "Client intake, updates, opinions, risk assessment, engagement letters and notice drafting and reply skills for day-to-day advisory work.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "conciliation",
       "source": "./plugins/conciliation",
       "description": "Conciliation proposals, neutral briefs, India pre-institution mediation advice and complete settlement-documentation skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "consumer",
       "source": "./plugins/consumer",
       "description": "Consumer complaint drafting, deficiency and product liability analysis, compensation quantification, and opposite-party reply skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "corporate",
       "source": "./plugins/corporate",
       "description": "Corporate resolutions, minutes, diligence, restructuring, shareholder-agreement review and India compliance skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "criminal",
       "source": "./plugins/criminal",
       "description": "Criminal defence, bail, prosecution-record, quashing, strategy and sentencing skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "verify",
       "source": "./plugins/verify",
       "description": "Adversarial review, assumption flagging, citation integrity checking, and cross-document consistency skills — a quality-control pass for a finished draft from any practice area.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "employment",
       "source": "./plugins/employment",
       "description": "Employment agreements, handbooks, discipline, investigations, separation, and India labour and POSH compliance skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "tax",
       "source": "./plugins/tax",
       "description": "FEMA, GST, tax appeal and assessment-reply, tax opinion, transfer pricing, and treaty-analysis skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "family",
       "source": "./plugins/family",
       "description": "Custody, maintenance, matrimonial, family settlement, India succession, and will-drafting skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "finance",
       "source": "./plugins/finance",
       "description": "Loan, guarantee, security, recovery, SARFAESI, and India securities-compliance skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "insolvency",
       "source": "./plugins/insolvency",
       "description": "India CIRP, claims, avoidance, liquidation, creditor-application, and resolution-plan skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "startup",
       "source": "./plugins/startup",
       "description": "Cap table, ESOP, founders' agreement, investment agreement review, SaaS terms, India startup compliance, and term sheet review skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "investigations",
       "source": "./plugins/investigations",
       "description": "Evidence handling, digital review, fraud analysis, OSINT, tracing, reporting, and whistleblower skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "ip",
       "source": "./plugins/ip",
       "description": "IP enforcement, infringement, assignment, portfolio, licensing, and India trademark-proceeding skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "litigation",
       "source": "./plugins/litigation",
       "description": "Appeals, authorities, chronologies, evidence, witnesses, interim relief, limitation, pleadings, and submissions skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "mediation",
       "source": "./plugins/mediation",
       "description": "Caucus strategy, mediation brief and opening, outcome documentation, party-interest analysis, and settlement evaluation skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "practice",
       "source": "./plugins/practice",
       "description": "Counsel briefing, matter closure, conflicts, legal budgeting, and time-entry skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "privacy",
       "source": "./plugins/privacy",
       "description": "Privacy breach, transfer, processing-contract, India DPDP, DPIA, and notice skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "property",
       "source": "./plugins/property",
       "description": "Development agreement review, encumbrance analysis, lease review, RERA compliance, sale deed drafting, stamp duty, and title diligence skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "public",
       "source": "./plugins/public",
       "description": "Government contract, India PIL and RTI, policy-note, and tender-compliance skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "regulatory",
       "source": "./plugins/regulatory",
       "description": "Regulatory applicability, examinations, licences, change, filings, and sanctions-screening skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     },
     {
       "name": "research",
       "source": "./plugins/research",
       "description": "Comparative analysis, forum/jurisdiction analysis, issue-spotting, legislative history, precedent mapping, research synthesis, and statutory interpretation skills.",
-      "skills": ["./skills/"],
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
       "strict": false
     }
   ]
