@@ -17,6 +17,14 @@ governing jurisdiction before it relies on any specific rule.
 Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com).
 
 ---
+**Table of Contents**
+
+1. [Install on Claude Web](#1-install-on-claude-web)
+2. [Install on Claude Code](#2-install-on-claude-code)
+3. [Install on ChatGPT Web](#3-install-on-chatgpt-web)
+4. [Contents](#4-contents)
+5. [Before you use these](#5-before-you-use-these)
+6. [Contributing](#6-contributing)
 
 # 1. Install on Claude Web
 
