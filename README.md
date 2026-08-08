@@ -80,34 +80,34 @@ remove and re-add the marketplace in the web app.
 
 ## 2. Install on ChatGPT
 
-Skills are grouped into practice packs. Install the packs your practice needs;
+Skills are grouped into plugins. Install the plugins your practice needs;
 ChatGPT then uses the right skill automatically when your request matches it.
 
 ### 2.1 ChatGPT web and desktop
 
-1. Open ChatGPT and switch from **Chat** to **Work**
-2. Open **Plugins**
-3. Search for **Rohas Legal AI**
-4. Click **+** on each pack you want
-5. Start a new Work chat
+1. Open ChatGPT
+2. Click **Plugins** in the left menu
+3. Search for [**Rohas Legal AI**](https://chatgpt.com/plugins?q=rohas+legal+ai)
+4. Click **+** on each plugin you want
+5. Start a new chat
 
 ChatGPT and Codex use the same public plugin directory. In the desktop app you
-can also select **Codex**, open **Plugins**, and install the same packs there.
+can also select **Codex**, open **Plugins**, and install the same plugins there.
 
-### 2.2 Using a pack
+### 2.2 Using a plugin
 
 Ask for the work normally. ChatGPT chooses the relevant installed skill when
-your request matches it. To choose a particular pack yourself, type `@` in the
+your request matches it. To choose a particular plugin yourself, type `@` in the
 composer and select it from the list; you do not need to type its full name.
 
 ### 2.3 If something does not work
 
-**Plugins are not visible.** Make sure you are in **Work**, not an ordinary
-Chat conversation. On a managed workspace, an administrator may also need to
-allow the plugin.
+**Plugins are not visible.** Open the
+[Plugins page](https://chatgpt.com/plugins) directly. On a managed workspace,
+an administrator may also need to allow the plugin.
 
-**A pack does not appear in search.** Public packs appear after OpenAI approves
-and publishes them. Try again after the listing is live.
+**A plugin does not appear in search.** Public plugins appear after OpenAI
+approves and publishes them. Try again after the listing is live.
 
 ---
 
