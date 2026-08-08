@@ -88,7 +88,7 @@ ChatGPT and Codex use the same public plugin directory.
 
 ---
 
-## 4. Contents
+# 4. Contents
 
 [advisory](#advisory) ·
 [arbitration](#arbitration) ·
@@ -352,7 +352,7 @@ All 159 skills below are built and linked to their `SKILL.md`.
 
 ---
 
-## 5. Before you use these
+# 5. Before you use these
 
 These skills are drafting and analysis aids. They do not give legal advice and
 they are not a substitute for professional judgment.
@@ -368,7 +368,7 @@ you install it, as you would any code you run.
 
 ---
 
-## 6. Contributing
+# 6. Contributing
 
 Corrections, bug reports and suggestions are welcome: please open an issue.
 
