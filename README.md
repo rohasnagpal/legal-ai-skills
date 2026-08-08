@@ -18,7 +18,7 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 
 ---
 
-## 1. Install on Claude Web
+# 1. Install on Claude Web
 
 1. Click **Plugins → Add → Add marketplace**
 
@@ -52,7 +52,7 @@ If you only want a single skill rather than a whole pack:
 2. Download the zip for the skill you want
 3. In Claude, go to **Customize → Skills → Upload a skill**
 
-## 2. Install on Claude Code
+# 2. Install on Claude Code
 
 ```
 /plugin marketplace add rohasnagpal/legal-ai-skills
@@ -70,40 +70,25 @@ To pull in changes after the repo updates:
 ```
 ---
 
-## 3. Install on ChatGPT
+# 3. Install on ChatGPT Web
 
-Skills are grouped into plugins. Install the plugins your practice needs;
-ChatGPT then uses the right skill automatically when your request matches it.
+1. Click **Plugins** in the left menu
+2. Search for [**Rohas Legal AI**](https://chatgpt.com/plugins?q=rohas+legal+ai)
+3. Click **+** on each plugin you want
 
-### 2.1 ChatGPT web and desktop
+Here's an example of how to use the plugin. Type @rohas to see the plugins you have installed
 
-1. Open ChatGPT
-2. Click **Plugins** in the left menu
-3. Search for [**Rohas Legal AI**](https://chatgpt.com/plugins?q=rohas+legal+ai)
-4. Click **+** on each plugin you want
-5. Start a new chat
+<img width="794" height="251" alt="image" src="https://github.com/user-attachments/assets/79e88db7-13ad-4d0d-9432-b804901daa07" />
 
-ChatGPT and Codex use the same public plugin directory. In the desktop app you
-can also select **Codex**, open **Plugins**, and install the same plugins there.
+Select the relevant plugin and enter the prompt
 
-### 2.2 Using a plugin
+<img width="798" height="155" alt="image" src="https://github.com/user-attachments/assets/f475e50f-a053-46eb-b6be-adfdaa846c70" />
 
-Ask for the work normally. ChatGPT chooses the relevant installed skill when
-your request matches it. To choose a particular plugin yourself, type `@` in the
-composer and select it from the list; you do not need to type its full name.
-
-### 2.3 If something does not work
-
-**Plugins are not visible.** Open the
-[Plugins page](https://chatgpt.com/plugins) directly. On a managed workspace,
-an administrator may also need to allow the plugin.
-
-**A plugin does not appear in search.** Public plugins appear after OpenAI
-approves and publishes them. Try again after the listing is live.
+ChatGPT and Codex use the same public plugin directory. 
 
 ---
 
-## 3. Contents
+## 4. Contents
 
 [advisory](#advisory) ·
 [arbitration](#arbitration) ·
@@ -367,7 +352,7 @@ All 159 skills below are built and linked to their `SKILL.md`.
 
 ---
 
-## 4. Before you use these
+## 5. Before you use these
 
 These skills are drafting and analysis aids. They do not give legal advice and
 they are not a substitute for professional judgment.
@@ -383,7 +368,7 @@ you install it, as you would any code you run.
 
 ---
 
-## 5. Contributing
+## 6. Contributing
 
 Corrections, bug reports and suggestions are welcome: please open an issue.
 
