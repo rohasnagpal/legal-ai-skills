@@ -246,7 +246,7 @@ governing jurisdiction before it relies on any specific rule.
 [tax](#tax) ·
 [verify](#verify)
 
-All 160 skills below are built and linked to their `SKILL.md`.
+All 159 skills below are built and linked to their `SKILL.md`.
 
 ---
 
@@ -334,7 +334,6 @@ All 160 skills below are built and linked to their `SKILL.md`.
 
 ### family
 
-- **[custody-arrangement-planner](plugins/family/skills/custody-arrangement-planner/SKILL.md)**: custody and access arrangements with the child's interest reasoned
 - **[maintenance-calculator](plugins/family/skills/maintenance-calculator/SKILL.md)**: works through a maintenance claim on supplied income and needs
 - **[matrimonial-petition-drafter](plugins/family/skills/matrimonial-petition-drafter/SKILL.md)**: matrimonial petitions with grounds properly pleaded **(India)**
 - **[settlement-deed-drafter](plugins/family/skills/settlement-deed-drafter/SKILL.md)**: settlement and separation deeds

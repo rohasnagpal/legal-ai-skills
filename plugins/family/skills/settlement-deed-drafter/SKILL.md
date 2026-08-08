@@ -13,7 +13,7 @@ Record a voluntary, informed settlement without exceeding what the parties can l
 - Parties, children, legal representatives and signing capacity
 - Full agreed heads plus expressly unresolved issues
 - Financial disclosure, assets, debts, income, tax and valuation material
-- Child arrangements, support, education and health costs
+- Child arrangements, support, education and specified direct costs
 - Property title, possession, loans, security interests and transfer mechanics
 - Claims, complaints, protective orders and implementation deadlines
 - Safety, coercion, independent-advice and confidentiality concerns
@@ -24,7 +24,7 @@ Do not draft a final deed from headline terms if essential mechanics remain unde
 
 1. **Confirm authority and consent.** Verify capacity, voluntariness, independent advice, disclosure, court-approval needs and whether direct negotiation is safe.
 2. **Define scope and status.** State parties, background, proceedings, effective date, interim or final nature, admissions position and relationship to existing orders.
-3. **Draft child terms.** Specify care, contact, decisions, travel, information, support and review while preserving the court's welfare jurisdiction and the child's independent rights.
+3. **Draft child terms.** Specify parenting time, contact, decisions, travel, information, support and review while preserving the court's welfare jurisdiction and the child's independent rights.
 4. **Draft support terms.** State amount, commencement, method, indexation, duration, direct expenses, arrears, security, review and variation. Reconcile the calculation schedule.
 5. **Draft property implementation.** Identify assets and debts exactly; allocate title, possession, income, costs, taxes, refinancing, releases, documents, third-party consents and long-stop dates.
 6. **Address personal property and benefits.** Cover household items, valuables, insurance, pension, equity, business interests, digital assets and jurisdiction-specific property such as stridhan where applicable.
@@ -41,6 +41,6 @@ Produce a clean deed, schedule of assets and payments, child and support schedul
 
 - Do not conceal assets, fabricate consent or use threats, coercion or unsafe joint meetings.
 - Do not waive child support, protection, criminal reporting or other non-waivable rights.
-- Do not use confidentiality or non-disparagement clauses to suppress lawful reporting of abuse.
+- Do not use confidentiality or non-disparagement clauses to suppress lawful safety reporting or reports of legally protected misconduct.
 - Flag tax, pension, insolvency, property-title, immigration and cross-border enforcement issues.
 - Require independent local legal advice for each party before execution where appropriate.

@@ -1,7 +1,7 @@
 {
   "name": "family",
-  "version": "0.2.1",
-  "description": "Family arrangements, maintenance, matrimonial, settlement, succession, and will-drafting skills.",
+  "version": "0.2.3",
+  "description": "Family maintenance, matrimonial, settlement, succession, and will-drafting skills.",
   "author": {
     "name": "Rohas Nagpal",
     "url": "https://rohasnagpal.com"
@@ -14,7 +14,7 @@
   "interface": {
     "displayName": "Rohas Legal AI: Family",
     "shortDescription": "Family law workflows",
-    "longDescription": "Six reusable legal workflows covering custody arrangements, maintenance, Indian matrimonial petitions and succession, family settlements, and wills.",
+    "longDescription": "Five reusable legal workflows covering maintenance, Indian matrimonial petitions and succession, family settlements, and wills.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
@@ -23,7 +23,7 @@
     "composerIcon": "./assets/composer-icon.svg",
     "logo": "./assets/logo.svg",
     "defaultPrompt": [
-      "Build a child-focused custody and maintenance proposal.",
+      "Model a transparent family maintenance proposal from these figures.",
       "Draft the matrimonial or family settlement documents for these facts.",
       "Map the succession position or prepare a will from these instructions."
     ]

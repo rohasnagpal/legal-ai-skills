@@ -23,10 +23,10 @@ Obtain instructions directly from the testator where possible and record who is 
 ## Method
 
 1. **Fix governing law.** Verify testamentary capacity, form, permitted dispositions, family-provision or forced-share rules, revocation, witnesses, registration and conflict-of-laws requirements.
-2. **Assess capacity and influence.** Record understanding of the document, estate, beneficiaries and consequences. Escalate concerns about cognition, dependency, coercion, interpreters or beneficiary involvement.
+2. **Assess capacity and influence.** Record understanding of the document, estate, beneficiaries and consequences. Escalate concerns about decision-making, dependency, coercion, interpreters or beneficiary involvement.
 3. **Map ownership.** Identify what the testator can dispose of, including shares in joint, marital, community, family, trust or business property. Reconcile nominations and survivorship arrangements.
 4. **Design dispositions.** Draft specific, pecuniary and charitable gifts, substitutions, survivorship periods, residue and failure-of-gift rules. Avoid gaps that create unintended partial intestacy.
-5. **Protect beneficiaries.** Use age, disability, education, maintenance or discretionary trusts only with clear trustees, vesting, powers and remainder provisions. Address guardian wishes without overstating binding effect.
+5. **Protect beneficiaries.** Use age-based, education, maintenance, protective or discretionary trusts only with clear trustees, vesting, powers and remainder provisions. Address guardian wishes without overstating binding effect.
 6. **Appoint fiduciaries.** Name executors, trustees and alternates; address conflicts, bond, compensation, resignation, replacement and administrative powers under local law.
 7. **Allocate liabilities.** Address debts, taxes, expenses, secured property, business obligations and apportionment without promising an unavailable tax outcome.
 8. **Draft revocation and interpretation.** Revoke prior wills to the intended extent, define key terms, handle later-born or omitted persons and resolve conflicts across clauses.

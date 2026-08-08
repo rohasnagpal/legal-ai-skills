@@ -1,4 +1,0 @@
-interface:
-  display_name: "Custody Arrangement Planner"
-  short_description: "Plan child-focused custody and parenting terms"
-  default_prompt: "Use $custody-arrangement-planner to build a child-focused parenting arrangement with schedules, safeguards, decisions, and review points."
