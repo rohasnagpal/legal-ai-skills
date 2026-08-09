@@ -45,6 +45,16 @@ If a schedule, annexure or incorporated document referred to in the main agreeme
 
 Keep the total length to roughly half a page for a routine contract. Offer a longer or more detailed summary only if the user asks for one, rather than defaulting to length.
 
+## Evidence and document controls
+
+- Cite exact clause numbers, headings or document locations for every document-derived finding where available; headings never substitute for operative language.
+- Distinguish document facts, user-supplied facts, assumptions and legal inferences. State when a conclusion depends on governing law, disputed facts, claims classification or material outside the contract.
+- Check relevant definitions, order of precedence, incorporated documents, related provisions and survival language before concluding.
+- Name missing schedules, annexures, policies, referenced agreements and unreadable material. Never invent clauses, quotations, authorities, defined terms, dates or commercial facts.
+- Warn when scans, OCR, truncation, tracked changes or incomplete extraction may affect accuracy.
+- Preserve confidentiality. Do not send contract contents to an external service unless the user expressly requests that connected workflow.
+
+
 ## Do not
 
 Do not grade a clause as favourable, risky, or one-sided, and do not take a position for either party. That is contract-reviewer's job, not this one's.

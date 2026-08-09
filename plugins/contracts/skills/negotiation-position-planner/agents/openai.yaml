@@ -1,4 +1,4 @@
 interface:
   display_name: "Negotiation Position Planner"
   short_description: "Plan opening, fallback, and walk-away positions"
-  default_prompt: "Use $negotiation-position-planner to plan our opening, fallback, and walk-away position on these open points."
+  default_prompt: "Use $negotiation-position-planner to plan our opening, fallback, minimum acceptable, and walk-away positions on this open point."

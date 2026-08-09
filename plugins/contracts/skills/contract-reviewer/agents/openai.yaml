@@ -1,4 +1,4 @@
 interface:
   display_name: "Contract Reviewer"
-  short_description: "Clause-by-clause contract review with graded risk"
-  default_prompt: "Use $contract-reviewer to review this contract from our side, with every issue graded and redlined."
+  short_description: "Rank contract risks from one identified party's side"
+  default_prompt: "Use $contract-reviewer to review this agreement from the Buyer's side and rank the 10 most important legal and commercial risks."

@@ -11,13 +11,15 @@ Turns a term sheet, a set of instructions, or a negotiated set of heads of terms
 
 ## Before you start
 
-**Which side is being drafted for, and the posture.** Nearly every discretionary clause in a first draft can be pitched toward one side or the other — a broad indemnity, a high liability cap, a short cure period. Establish whose side you are drafting from and how the draft should be pitched: an opening position favouring that side (the normal function of a first draft), a balanced position because both sides are expected to negotiate from a market-standard start, or a genuinely neutral document because the parties are drafting together — a joint venture framework, an MOU, a document with no natural "drafting side". Do not guess; ask, and do not draft a protective clause until you know.
+**Which side is being drafted for, and the posture.** Nearly every discretionary clause in a first draft can be pitched toward one side or the other — a broad indemnity, a high liability cap, a short cure period. Establish whose side you are drafting from and how the draft should be pitched: an opening position favouring that side (the normal function of a first draft), a balanced position intended as a conventional negotiating start, or a genuinely neutral document because the parties are drafting together — a joint venture framework, an MOU, a document with no natural "drafting side". Do not guess; ask, and do not draft a protective clause until you know.
 
 **Governing law and jurisdiction.** Drafting conventions, default rules, and execution formalities differ by system — what makes a liquidated damages clause enforceable rather than a penalty, whether a non-compete of a given duration is likely to stand, what a valid signature or attestation requires, whether stamp duty or registration is triggered. Ask which law governs, unless the user has already said. This determines what verification points you will need to flag later, not what you draft now.
 
 **The commercial deal.** The term sheet, heads of terms, or instructions setting out what the parties have actually agreed — parties, price, term, deliverables, exclusivity, territory, any conditions. This is the blocking input: do not begin drafting operative clauses without it. Once you have it, treat any single term it leaves open as a placeholder within the draft rather than a reason to stop the whole exercise — see Method step 2.
 
-Not blocking, ask once and proceed without it if unanswered: **an existing precedent or template.** A house form, a prior agreement of this type, or a specific market-standard document to follow. Its absence does not stop the draft — proceed on the conventional structure for the agreement type and say plainly that no house precedent was used, so the user knows to check the result against their own before relying on it.
+Not blocking, ask once and proceed without it if unanswered: **an existing precedent or template.** A house form, a prior agreement of this type, or a specific identified external model to follow. Its absence does not stop the draft — proceed on the conventional structure for the agreement type and say plainly that no house precedent was used, so the user knows to check the result against their own before relying on it.
+
+**External precedents.** If the user asks for sample agreements, public precedents, model forms or external benchmarking, read [references/public-contract-sources.md](references/public-contract-sources.md) in full and follow its source, attribution and non-inference controls. Do not load that reference for an ordinary draft based on the user's terms or precedent.
 
 ## Method
 
@@ -52,6 +54,16 @@ Not blocking, ask once and proceed without it if unanswered: **an existing prece
 **4. Open points and placeholders.** A single consolidated list of every bracketed placeholder in the draft and what instruction or figure is needed to resolve it.
 
 **5. Points requiring verification.** Every drafting choice from Method step 8 that depends on the governing law rather than the parties' agreement — named as a specific question, with where to check it: the current statutory text, local counsel, the client's usual precedent bank. Do not answer these here; leave them open.
+
+## Evidence and document controls
+
+- Cite exact clause numbers, headings or document locations for every document-derived finding where available; headings never substitute for operative language.
+- Distinguish document facts, user-supplied facts, assumptions and legal inferences. State when a conclusion depends on governing law, disputed facts, claims classification or material outside the contract.
+- Check relevant definitions, order of precedence, incorporated documents, related provisions and survival language before concluding.
+- Name missing schedules, annexures, policies, referenced agreements and unreadable material. Never invent clauses, quotations, authorities, defined terms, dates or commercial facts.
+- Warn when scans, OCR, truncation, tracked changes or incomplete extraction may affect accuracy.
+- Preserve confidentiality. Do not send contract contents to an external service unless the user expressly requests that connected workflow.
+
 
 ## Do not
 

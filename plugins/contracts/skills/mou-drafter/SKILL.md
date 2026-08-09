@@ -19,6 +19,8 @@ Drafts a memorandum of understanding or letter of intent, treating the line betw
 
 Not blocking, ask once and proceed on a reasonable default without it: **whether the definitive agreement type is already known** (an SPA, a JV agreement, a supply contract). Knowing this helps keep the MOU from drifting into premature detail that belongs in the later document. **An existing precedent**, if the user has one.
 
+**External precedents.** If the user asks for model MOUs, public examples, comparable provisions or benchmarking, read [references/public-contract-sources.md](references/public-contract-sources.md) in full and follow its source, attribution and non-inference controls. Do not load that reference for an ordinary MOU based on the user's instructions or precedent.
+
 ## Method
 
 **1. Classify the task** — drafting from scratch, completing a partial draft, or converting negotiated heads of terms into an MOU — in one line before drafting anything.
@@ -52,6 +54,16 @@ Not blocking, ask once and proceed on a reasonable default without it: **whether
 **5. Open points and placeholders.** Every bracketed placeholder and what is needed to resolve it.
 
 **6. Points requiring verification.** Whether the governing law will give effect to the non-binding label, whether the exclusivity period or scope is customary for a transaction of this kind, and any other question that depends on law or market practice rather than the parties' own instructions.
+
+## Evidence and document controls
+
+- Cite exact clause numbers, headings or document locations for every document-derived finding where available; headings never substitute for operative language.
+- Distinguish document facts, user-supplied facts, assumptions and legal inferences. State when a conclusion depends on governing law, disputed facts, claims classification or material outside the contract.
+- Check relevant definitions, order of precedence, incorporated documents, related provisions and survival language before concluding.
+- Name missing schedules, annexures, policies, referenced agreements and unreadable material. Never invent clauses, quotations, authorities, defined terms, dates or commercial facts.
+- Warn when scans, OCR, truncation, tracked changes or incomplete extraction may affect accuracy.
+- Preserve confidentiality. Do not send contract contents to an external service unless the user expressly requests that connected workflow.
+
 
 ## Do not
 

@@ -17,6 +17,8 @@ Takes the same clause, or the same clause type, as it appears in two or more pla
 
 Not blocking, ask once and proceed without it if unanswered: **which side the user acts for.** Without a side, the comparison stays neutral — differences are reported, not judged. With a side, differences can additionally be marked favourable, adverse or neutral to that side.
 
+**External comparators.** If the user asks for public agreements, market examples, clause benchmarking or an external model, read [references/public-contract-sources.md](references/public-contract-sources.md) in full and follow its source, attribution and non-inference controls. Do not load that reference for comparisons limited to user-supplied drafts or precedents.
+
 ## Method
 
 **1. Classify the comparison.** State in one line what is being compared against what — draft-to-draft within one negotiation, one document's clause against a supplied standard, or the same clause type across a portfolio of separate agreements. Each of these needs a slightly different frame, and saying which one you are running avoids conflating "this changed between drafts" with "this differs from your usual position".
@@ -52,6 +54,16 @@ Not blocking, ask once and proceed without it if unanswered: **which side the us
 **6. Points requiring verification.** Anything whose actual effect turns on the governing law rather than the words alone — for instance, whether a wording change that looks cosmetic actually changes enforceability. Name the question; do not answer it from memory.
 
 Keep every row on a single line so the tables render.
+
+## Evidence and document controls
+
+- Cite exact clause numbers, headings or document locations for every document-derived finding where available; headings never substitute for operative language.
+- Distinguish document facts, user-supplied facts, assumptions and legal inferences. State when a conclusion depends on governing law, disputed facts, claims classification or material outside the contract.
+- Check relevant definitions, order of precedence, incorporated documents, related provisions and survival language before concluding.
+- Name missing schedules, annexures, policies, referenced agreements and unreadable material. Never invent clauses, quotations, authorities, defined terms, dates or commercial facts.
+- Warn when scans, OCR, truncation, tracked changes or incomplete extraction may affect accuracy.
+- Preserve confidentiality. Do not send contract contents to an external service unless the user expressly requests that connected workflow.
+
 
 ## Do not
 

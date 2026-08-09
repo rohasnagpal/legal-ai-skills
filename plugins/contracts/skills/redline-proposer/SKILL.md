@@ -19,6 +19,8 @@ Takes a clause the user has identified as a problem and drafts a spectrum of rep
 
 Not blocking, but note where relevant: **governing law**, where the proposed wording's actual effectiveness depends on it — a liquidated damages formula that needs to avoid being read as a penalty, an exclusion clause that needs specific wording to catch a particular head of loss under the applicable case law. Extract it from the document if stated; ask if it is not.
 
+**External wording.** If the user asks for public clauses, model-form language, comparable provisions or benchmarking, read [references/public-contract-sources.md](references/public-contract-sources.md) in full and follow its source, attribution and non-inference controls. Do not load that reference when redlining solely against the supplied contract and instructions.
+
 ## Method
 
 **1. Classify what has been supplied** — a single clause in isolation, a clause with its dependencies, or a full contract with an instruction to focus on one clause — in one line.
@@ -27,11 +29,11 @@ Not blocking, but note where relevant: **governing law**, where the proposed wor
 
 **3. State the diagnosis before drafting** — what the current wording does, and why it does not serve the client, in one or two sentences. A redline needs a stated target; drafting a change for its own sake without one produces wording nobody can evaluate.
 
-**4. Draft the aggressive position.** The strongest version of the wording that remains a credible ask — not a position so extreme the other side will dismiss it without engaging. Draft it in the defined terms, numbering convention and drafting register of the document being edited, not your own style.
+**4. Draft the strongest credible position.** Use the strongest wording that remains a credible ask — not a position so extreme the other side will dismiss it without engaging. Draft it in the defined terms, numbering convention and drafting register of the document being edited, not your own style.
 
-**5. Draft one or more intermediate positions where the gap between the aggressive position and the fallback is wide enough to justify a step in between.** Use judgment on how many steps: a narrow gap needs only the two ends; a genuinely open point may need three positions to reflect realistic negotiation movement.
+**5. Draft a balanced position where the gap justifies it.** Use wording that preserves the client's core protection while addressing the counterparty's likely legitimate concern. If the gap is narrow, say that a separate balanced version would be artificial and omit it.
 
-**6. Draft the fallback, and say explicitly what makes it tolerable.** Not "less aggressive than the opening ask" but the specific reason this floor still protects the client's actual interest — this is what makes the fallback usable at the table rather than an arbitrary lesser demand.
+**6. Draft the minimum acceptable fallback, and say explicitly what makes it tolerable.** State the specific reason this floor still protects the client's actual interest and the concession it represents.
 
 **7. Write the full replacement clause for each position, not just the words that changed.** A fragment cannot be checked for internal consistency, and the user needs text that can be pasted directly into the document.
 
@@ -45,11 +47,27 @@ Not blocking, but note where relevant: **governing law**, where the proposed wor
 
 **1. Parameters.** Side, clause(s) addressed with reference, current wording quoted from the document, diagnosis and target outcome, governing law, date.
 
-**2. Positions per clause.** For each clause: Position (Aggressive / Intermediate / Fallback) | Proposed wording (full replacement text) | What it achieves | Why the other side might accept it — the last column matters most for the fallback.
+**2. Replacement wording, organised by clause.** For each clause, use separate headings rather than a large table:
+
+- **Strongest credible position.** Full replacement clause text, followed by a concise statement of its material legal effect.
+- **Balanced position.** Full replacement clause text and effect, where a genuine middle position exists.
+- **Minimum acceptable fallback.** Full replacement clause text, its effect, the concession made and why the result remains tolerable.
+
+Keep negotiating rationale and drafting instructions outside the clause text. Do not repeat the same analysis in a summary table and again below the wording.
 
 **3. Conforming changes.** Any other clause that needs a matching edit if a given redline is adopted, named specifically — "if adopting the lower cap, also amend clause 14.2's carve-out reference".
 
 **4. Points requiring verification.** Any question of whether the proposed wording will actually be effective under the governing law, named specifically. Do not answer it here.
+
+## Evidence and document controls
+
+- Cite exact clause numbers, headings or document locations for every document-derived finding where available; headings never substitute for operative language.
+- Distinguish document facts, user-supplied facts, assumptions and legal inferences. State when a conclusion depends on governing law, disputed facts, claims classification or material outside the contract.
+- Check relevant definitions, order of precedence, incorporated documents, related provisions and survival language before concluding.
+- Name missing schedules, annexures, policies, referenced agreements and unreadable material. Never invent clauses, quotations, authorities, defined terms, dates or commercial facts.
+- Warn when scans, OCR, truncation, tracked changes or incomplete extraction may affect accuracy.
+- Preserve confidentiality. Do not send contract contents to an external service unless the user expressly requests that connected workflow.
+
 
 ## Do not
 
@@ -57,7 +75,7 @@ Do not describe a change in prose instead of drafting the actual replacement wor
 
 Do not redline a clause without checking the definitions and related clauses it depends on.
 
-Do not draft only one position when the stated or inferred room to move justifies more than one.
+Do not draft only one position when the stated or inferred room to move justifies more than one, and do not manufacture a balanced version that has no materially different effect.
 
 Do not draft a fallback without saying what makes it tolerable. An unexplained floor is not usable at the table.
 

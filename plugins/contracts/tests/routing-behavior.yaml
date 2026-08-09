@@ -1,0 +1,158 @@
+version: 1
+plugin: contracts
+cases:
+  - id: reviewer-quick-direct
+    prompt: "Review this entire MSA from the Buyer's side."
+    expected_skill: contract-reviewer
+    expected_behavior: "Use quick review by default and rank the 10–15 most material risks."
+  - id: reviewer-quick-indirect
+    prompt: "We are the Customer. What are the main things we should push back on across this agreement?"
+    expected_skill: contract-reviewer
+    expected_behavior: "Use quick review and identify assumptions or missing documents."
+  - id: reviewer-full
+    prompt: "Conduct an exhaustive audit of this agreement."
+    expected_skill: contract-reviewer
+    expected_behavior: "Use full-audit mode after identifying the client party."
+  - id: reviewer-focused
+    prompt: "Review only the IP and confidentiality provisions for the Supplier."
+    expected_skill: contract-reviewer
+    expected_behavior: "Use focused mode and inspect only necessary related definitions and provisions."
+  - id: reviewer-incomplete
+    prompt: "Review this agreement for us."
+    expected_skill: contract-reviewer
+    expected_behavior: "Ask which identified party 'us' means before grading risk."
+  - id: reviewer-follow-up
+    prompt: "Now give me the full clause-by-clause audit."
+    context: "A quick Buyer-side review of the same agreement was just completed."
+    expected_skill: contract-reviewer
+    expected_behavior: "Continue in full-audit mode without repeating completed intake."
+
+  - id: summariser-direct
+    prompt: "Give me the two-minute version of this agreement."
+    expected_skill: contract-summariser
+    expected_behavior: "Produce a short neutral summary without grading risk."
+  - id: summariser-indirect
+    prompt: "Brief our operations team on what this deal actually does."
+    expected_skill: contract-summariser
+    expected_behavior: "Summarise the supplied agreement in plain language."
+  - id: summariser-missing-document
+    prompt: "Summarise the agreement; Schedule 2 is referenced but not attached."
+    expected_skill: contract-summariser
+    expected_behavior: "Summarise supplied material and identify Schedule 2 as not covered without guessing."
+
+  - id: obligations-direct
+    prompt: "List everything the Supplier must do and every deadline."
+    expected_skill: obligations-extractor
+    expected_behavior: "Create a neutral obligations ledger and separate rights and notice windows."
+  - id: obligations-indirect
+    prompt: "Turn this signed services agreement into a compliance calendar."
+    expected_skill: obligations-extractor
+    expected_behavior: "Extract obligations, triggers, deadlines, recurring items and notice windows."
+  - id: obligations-incomplete
+    prompt: "Build the deadline ledger, but the service-level schedule is missing."
+    expected_skill: obligations-extractor
+    expected_behavior: "Proceed on supplied documents and mark schedule-dependent items unreviewable."
+
+  - id: liability-direct
+    prompt: "What is the Supplier's exposure under clause 12?"
+    expected_skill: indemnity-liability-analyst
+    expected_behavior: "Analyse warranties, indemnities, exclusions, caps and insurance requirements together."
+  - id: liability-carve-outs
+    prompt: "Does the cap still protect us after applying the carve-outs? We are the Customer."
+    expected_skill: indemnity-liability-analyst
+    expected_behavior: "Report stated and functional caps, capped and apparently uncapped categories, and dependencies."
+  - id: liability-unsupported-insurance
+    prompt: "Will our insurance definitely pay this claim? No policy is attached."
+    expected_skill: indemnity-liability-analyst
+    expected_behavior: "State that coverage cannot be determined from the contract and identify policy materials needed."
+  - id: liability-unquantifiable
+    prompt: "Give me the exact maximum liability, but the fee schedule is missing."
+    expected_skill: indemnity-liability-analyst
+    expected_behavior: "Show supported formulas and separate unquantifiable exposure; do not invent a maximum."
+
+  - id: comparator-direct
+    prompt: "What changed between versions 2 and 3?"
+    expected_skill: clause-comparator
+    expected_behavior: "Compare wording and legal effect, including affected definitions."
+  - id: comparator-indirect
+    prompt: "Did their latest draft weaken the termination clause?"
+    expected_skill: clause-comparator
+    expected_behavior: "Compare the supplied versions and characterise effect only for an identified side."
+  - id: comparator-missing
+    prompt: "Compare this with our standard wording."
+    expected_skill: clause-comparator
+    expected_behavior: "Ask for the standard wording or a retrievable identified comparator; do not invent it."
+
+  - id: redline-direct
+    prompt: "Rewrite clause 12 in the Customer's favour."
+    expected_skill: redline-proposer
+    expected_behavior: "Provide full strongest credible, balanced and minimum acceptable wording under separate headings."
+  - id: redline-indirect
+    prompt: "Give me wording we can live with for this indemnity."
+    expected_skill: redline-proposer
+    expected_behavior: "Clarify the favoured side and inspect related cap and definitions before drafting."
+
+  - id: termination-direct
+    prompt: "Can the Customer terminate immediately?"
+    expected_skill: termination-analyst
+    expected_behavior: "Analyse triggers, notice, cure, notices mechanics, consequences and survival."
+  - id: termination-indirect
+    prompt: "What do we need to do to get out of this MSA for breach? We are the Supplier."
+    expected_skill: termination-analyst
+    expected_behavior: "Map the Supplier's exit route and distinguish document terms from supplied facts."
+
+  - id: negotiation-one-issue
+    prompt: "Give me opening, fallback, minimum acceptable and walk-away positions on the liability cap."
+    expected_skill: negotiation-position-planner
+    expected_behavior: "Produce a one-issue negotiation ladder without requiring multiple issues."
+  - id: negotiation-multiple
+    prompt: "Plan our positions and trades across liability, exclusivity and termination."
+    expected_skill: negotiation-position-planner
+    expected_behavior: "Also address priorities, sequencing, tradeable points, packages and dependencies."
+  - id: negotiation-incomplete
+    prompt: "Set our walk-away line on exclusivity."
+    expected_skill: negotiation-position-planner
+    expected_behavior: "Ask for the client's alternative and underlying priority; do not invent a line."
+
+  - id: contract-drafter-direct
+    prompt: "Draft a complete SaaS agreement from these terms."
+    expected_skill: contract-drafter
+    expected_behavior: "Draft a definitive agreement and use placeholders for unresolved commercial terms."
+  - id: contract-drafter-missing
+    prompt: "Draft a services agreement."
+    expected_skill: contract-drafter
+    expected_behavior: "Ask for the commercial deal, drafting side and governing law before operative drafting."
+  - id: mou-drafter-direct
+    prompt: "Draft a non-binding LOI with binding confidentiality and exclusivity."
+    expected_skill: mou-drafter
+    expected_behavior: "Draft a pre-contractual document with an explicit binding/non-binding architecture."
+  - id: mou-drafter-incomplete
+    prompt: "Draft an MOU for our proposed joint venture."
+    expected_skill: mou-drafter
+    expected_behavior: "Ask for the commercial understanding, binding provisions and governing law."
+
+  - id: external-public-agreements
+    prompt: "Find five public SaaS agreements with customer-friendly liability caps."
+    expected_skill: clause-comparator
+    expected_behavior: "Use the public-source workflow, verify and attribute each source, and do not call examples market standard."
+  - id: external-no-internet
+    prompt: "Benchmark this clause against current public filings, but live internet access is unavailable."
+    expected_skill: clause-comparator
+    expected_behavior: "State that sources could not be checked and do not invent comparators."
+
+  - id: negative-current-law
+    prompt: "Tell me the current law on employment termination in France."
+    expected_skill: null
+    expected_behavior: "Do not activate the Contracts plugin unless a contract is being analysed."
+  - id: negative-criminal
+    prompt: "Draft a criminal complaint."
+    expected_skill: null
+    expected_behavior: "Do not activate the Contracts plugin."
+  - id: negative-news
+    prompt: "Summarise this newspaper article."
+    expected_skill: null
+    expected_behavior: "Do not activate the Contracts plugin."
+  - id: negative-general-negotiation
+    prompt: "Help me negotiate the price of a used car; there is no contract or term sheet."
+    expected_skill: null
+    expected_behavior: "Do not activate the Contracts plugin solely for general negotiation advice."

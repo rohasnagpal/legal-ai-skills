@@ -175,9 +175,9 @@ All 159 skills below are built and linked to their `SKILL.md`.
 
 - **[clause-comparator](plugins/contracts/skills/clause-comparator/SKILL.md)**: compares the same clause across drafts or against a standard
 - **[contract-drafter](plugins/contracts/skills/contract-drafter/SKILL.md)**: drafts an agreement from a term sheet or instructions
-- **[contract-reviewer](plugins/contracts/skills/contract-reviewer/SKILL.md)**: clause-by-clause review from one side's position, with risk rated
+- **[contract-reviewer](plugins/contracts/skills/contract-reviewer/SKILL.md)**: quick, focused or full agreement review from one side, with risks ranked
 - **[contract-summariser](plugins/contracts/skills/contract-summariser/SKILL.md)**: short factual summary of what an agreement actually does
-- **[indemnity-liability-analyst](plugins/contracts/skills/indemnity-liability-analyst/SKILL.md)**: indemnity, limitation and cap provisions and how they interact
+- **[indemnity-liability-analyst](plugins/contracts/skills/indemnity-liability-analyst/SKILL.md)**: warranties, indemnities, caps, carve-outs and insurance requirements as one system
 - **[mou-drafter](plugins/contracts/skills/mou-drafter/SKILL.md)**: MOUs and letters of intent, with binding and non-binding parts made explicit
 - **[negotiation-position-planner](plugins/contracts/skills/negotiation-position-planner/SKILL.md)**: opening, fallback and walk-away positions on the open points
 - **[obligations-extractor](plugins/contracts/skills/obligations-extractor/SKILL.md)**: pulls every obligation, deadline and condition into a table

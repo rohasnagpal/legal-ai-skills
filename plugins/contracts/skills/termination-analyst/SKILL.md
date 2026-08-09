@@ -61,6 +61,16 @@ Not blocking, ask once and proceed on what is answered: **posture** — negotiat
 
 **9. Points requiring verification.** Every question that turns on the governing law rather than the document's words — the effect of a defective notice, whether the termination clause is exhaustive of the parties' rights, penalty-doctrine exposure on a termination payment, and whether the insolvency definitions track current company law. Name the question; do not answer it here.
 
+## Evidence and document controls
+
+- Cite exact clause numbers, headings or document locations for every document-derived finding where available; headings never substitute for operative language.
+- Distinguish document facts, user-supplied facts, assumptions and legal inferences. State when a conclusion depends on governing law, disputed facts, claims classification or material outside the contract.
+- Check relevant definitions, order of precedence, incorporated documents, related provisions and survival language before concluding.
+- Name missing schedules, annexures, policies, referenced agreements and unreadable material. Never invent clauses, quotations, authorities, defined terms, dates or commercial facts.
+- Warn when scans, OCR, truncation, tracked changes or incomplete extraction may affect accuracy.
+- Preserve confidentiality. Do not send contract contents to an external service unless the user expressly requests that connected workflow.
+
+
 ## Do not
 
 Do not read the termination clause apart from the cure period, notices clause and survival clause. They function as one system.

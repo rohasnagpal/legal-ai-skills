@@ -1,13 +1,13 @@
 ---
 name: contract-reviewer
-description: Reviews a draft or executed contract from one party's side and produces a clause-by-clause risk analysis with proposed redlines and fallback positions. Use this whenever a user uploads or pastes an agreement and asks to review it, mark it up, check it, tell them what is wrong with it, flag the risks, identify one-sided or unusual terms, prepare comments for the other side, or advise on whether terms are acceptable — including phrasings like "we've been sent this MSA, what should I push back on", "review this SPA from the buyer's side", "what's my exposure under this indemnity", "is this cap reasonable", "turn this into a redline", or "prepare an issues list for the client". Fires for any commercial agreement type — services, supply, distribution, licensing, employment, lease, shareholders, loan, NDA, SaaS, construction.
+description: Reviews an entire draft or executed commercial contract, or an expressly scoped set of related provisions, from one identified party's perspective and produces ranked risks, exact clause citations and negotiation recommendations. Use for prompts such as "review this MSA from the Buyer's side", "what should we push back on across this agreement", "review only the IP and confidentiality provisions", or "conduct an exhaustive audit". Quick review is the default; focused and full-audit modes follow the user's scope. Do not use for a neutral summary, obligation extraction, version comparison, a single-clause rewrite, a focused liability or exit outcome question, or negotiation strategy.
 ---
 
 # Contract Reviewer
 
 ## What this does
 
-Takes a contract and produces a clause-by-clause review from the perspective of one identified party: what each operative clause does, where it sits against the position that party wants, and what to propose instead. Output is an issues list graded by severity, an obligations and dates ledger, and specific redline language with a fallback for each point. It reviews the document supplied — it does not reconstruct missing schedules, annexures or incorporated documents from memory.
+Takes an entire contract, or an expressly scoped group of related provisions, and reviews it from one identified party's perspective. It ranks the legal and commercial issues, explains their practical effect, and recommends a negotiation position and fallback. It reviews only the supplied material and never reconstructs missing schedules, annexures or incorporated documents from memory.
 
 ## Before you start
 
@@ -29,11 +29,19 @@ The rest are useful but not blocking. Ask for them once, in the same message. If
 
 **Posture and dates.** Is this a first draft we are marking up, a counterparty's draft we are responding to, a final for signature, or an executed contract now in dispute? An executed contract gets a different review — what it means and what it exposes us to — rather than what to negotiate. If it is executed, ask for the execution date, the effective date, and any amendments or variations. If it is in negotiation, ask for the negotiating leverage and the deadline.
 
-**Prior versions**, if the user wants a comparison. Do not attempt to infer what changed from a single version.
+**Prior versions.** A request to determine what changed belongs to clause-comparator. If a full review also needs known drafting changes considered, use the supplied comparison or compare the supplied versions first; never infer a change from a single version.
+
+## Select the review mode
+
+**Quick review — default.** Use for an ordinary request to review an agreement. Produce an executive summary and the 10–15 most material risks, each with grade, exact clause reference, practical effect, recommended position and fallback. Include material missing information and assumptions. Do not run or report the complete coverage matrix, obligations ledger or full redline set unless the user asks.
+
+**Full audit.** Use only when the user asks for an exhaustive, comprehensive or clause-by-clause audit, or when the stated purpose clearly requires one. Run the complete method below and include the comprehensive issue checklist, obligations and deadlines, liability structure, termination position, missing-clause analysis and detailed amendments. Where a specialist liability, termination, comparison, extraction or negotiation workflow would materially improve the answer, identify that handoff instead of silently substituting a shallow specialist analysis.
+
+**Focused review.** Use when the user asks for a side-specific risk review limited to identified areas such as payment, intellectual property, data protection, confidentiality, liability, indemnities, termination, exclusivity, change control or dispute resolution. Follow that scope and review the definitions, schedules and related provisions needed to interpret it safely. A targeted outcome question — for example, whether a cap protects a party or whether a party can terminate now — belongs to the relevant specialist skill. Do not expand into an unsolicited whole-contract audit.
 
 ## Method
 
-Work in this order. Complete the whole analytical process before drafting the issues list — an issue graded before the cap, the carve-outs, the exit and the coverage sweep have been worked is graded on incomplete information.
+Record the selected mode before starting. Apply every step that is relevant to a quick or focused review; apply the complete method in full-audit mode. Complete the necessary analysis before grading an issue — especially the interacting provisions that qualify liability, payment or exit.
 
 **1. Classify what you have been given.** Establish whether this is a complete executed agreement, a complete draft, an excerpt, a single clause, a term sheet, a purchase order, a set of standard terms, or something that is not a contract at all. Say which, in one line, before anything else. If it is an excerpt or a single clause, say plainly that the assessment is limited to the words supplied and that a clause read outside its contract may be qualified, disapplied or contradicted elsewhere in the document you have not seen. If it is not a legally operative document, say so and stop rather than forcing the framework onto it.
 
@@ -51,9 +59,9 @@ Then check execution and authority. Who is stated to sign for each party, in wha
 
 **5. Check cross-reference integrity.** Follow every internal reference to its target. Clause 8.3 referring to clause 7.2 when clause 7 has no sub-clauses is a defect that survives into the signed document and creates argument later. Do the same for references to schedules, to statutes, and to external documents.
 
-**6. Build the obligations ledger.** For each operative obligation, record who owes it, what it is, when it falls due, what triggers it, and what happens if it is not performed. This is the step a mediocre review skips, and it is where the real problems surface: obligations with no deadline, deadlines with no consequence, payment triggers that depend on an acceptance that the other side is never obliged to give, notice periods that run from an event nobody is obliged to notify. Separately record every date, period and notice requirement in one place — the user will need it for the diary regardless of the outcome of the negotiation.
+**6. Check obligations and deadlines proportionately.** In every mode, identify obligations or dates that create a material issue. Build the complete ledger only in full-audit mode or when the user asks; otherwise route a request for every obligation, deadline and notice requirement to obligations-extractor.
 
-**7. Work the risk allocation as a single system.** Read the warranties, indemnities, exclusions, cap, insurance and termination clauses together, not one at a time. Establish, in this order: what is warranted and for how long; what is indemnified and whether the indemnity is drafted as a first-party or third-party protection; what heads of loss are excluded; what the cap is, what it is a multiple of, and whether it is per-claim or aggregate; what is carved out of the cap and whether the carve-outs swallow it; and whether the insurance obligation is capable of responding to the liabilities actually assumed. State the worst realistic exposure in money terms where the contract allows it to be calculated, and say plainly where it is uncapped. Note where the operation of any of these clauses depends on the governing law rather than the words — for example whether an exclusion of indirect loss captures lost profits, or whether a stipulated damages figure is enforceable — and mark that as a point requiring verification under the governing law, naming the specific question rather than answering it from general knowledge.
+**7. Work the risk allocation as a single system.** Read the warranties, indemnities, exclusions, cap, insurance and termination clauses together, not one at a time. Establish what is warranted and for how long; what is indemnified; what heads of loss are excluded; the stated cap, its basis and whether it is aggregate or per claim; every separate cap or sub-cap; and every carve-out. Report the functional cap after applying the carve-outs, quantifiable capped exposure, apparently uncapped categories, remedies that may operate outside the damages cap, and exposure that cannot be quantified from the documents. Do not infer that insurance exists or covers a liability from the contractual insurance requirement. Without the policy wording, schedules, exclusions and endorsements, report only the contractual requirement, obvious alignment gaps and the policy questions requiring verification. Route a request focused on this system to indemnity-liability-analyst.
 
 **8. Test the exit.** Work out how each party gets out: termination for convenience, for breach, for insolvency, for change of control, on notice, on expiry. For each route, identify the notice required, any cure period, and the consequences — what survives, what must be returned or deleted, what fees fall due, whether there is a wind-down or transition obligation, and whether any licence granted survives. A one-sided termination right or an absent transition obligation is often a more serious issue than the clause the client asked about.
 
@@ -61,7 +69,7 @@ Then check execution and authority. Who is stated to sign for each party, in wha
 
 **10. Read the boilerplate as if it will be litigated.** Assignment and change of control, subcontracting, notices (including whether email is valid service and to which address), entire agreement, variation, waiver, severance, third-party rights, dispute resolution and escalation, and the governing law and forum pairing. Check that the dispute resolution clause is internally coherent — an arbitration clause plus an exclusive court jurisdiction clause is a common and expensive defect. Check the notices clause names a real address and a real recipient.
 
-**11. Run the coverage sweep.** Work the supplied documents against the 41 CUAD parameters below, in this order, recording a status and a clause reference for each. This is a presence-and-location check and a backstop against what you missed. It is not the review: finding a clause says nothing about whether it is acceptable.
+**11. Run the coverage sweep in full-audit mode.** Work the supplied documents against the 41 CUAD parameters below, in this order, recording a status and a clause reference for each. In quick or focused mode, use the list only as an internal prompt for relevant material issues and do not produce the matrix. This is a presence-and-location check and a backstop against what you missed. It is not the review: finding a clause says nothing about whether it is acceptable.
 
 Document Name; Parties; Agreement Date; Effective Date; Expiration Date; Renewal Term; Notice Period to Terminate Renewal; Governing Law; Most Favoured Nation; Non-Compete; Exclusivity; No-Solicit of Customers; Competitive Restriction Exception; No-Solicit of Employees; Non-Disparagement; Termination for Convenience; ROFR / ROFO / ROFN; Change of Control; Anti-Assignment; Revenue / Profit Sharing; Price Restrictions; Minimum Commitment; Volume Restriction; IP Ownership Assignment; Joint IP Ownership; Licence Grant; Non-Transferable Licence; Affiliate Licence — Licensor; Affiliate Licence — Licensee; Unlimited / All-You-Can-Eat Licence; Irrevocable or Perpetual Licence; Source Code Escrow; Post-Termination Services; Audit Rights; Uncapped Liability; Cap on Liability; Liquidated Damages; Warranty Duration; Insurance; Covenant Not to Sue; Third Party Beneficiary.
 
@@ -75,23 +83,23 @@ Flag a provision as absent only where it is relevant to this transaction. A one-
 
 **13. Grade every issue.** Use three grades and apply them consistently. **Critical** — creates potentially uncapped or disproportionate exposure, defeats a central commercial objective, or is unworkable as drafted; requires escalation and resolution before execution. **Material** — worth negotiating, with a fallback that is acceptable. **Minor** — drafting, consistency and housekeeping; take if cheap. Do not inflate. A review where everything is critical tells the client nothing.
 
-**14. Draft the redlines.** For each Critical and Material issue, write the actual replacement or inserted wording, in the drafting register of the document you are working in. Then write the fallback — the position to accept if the other side refuses the primary ask — and say what makes the fallback tolerable. An issues list without wording puts the work back on the user.
+**14. Draft redlines only when the selected mode or user request calls for them.** Keep negotiation strategy in the issues table, but place full replacement clauses in a separate redlines section organised by clause. For each included Critical or Material issue, provide the actual replacement wording and a fallback in the document's register, and state what makes the fallback tolerable. Route a request solely to rewrite one identified clause or a short related group to redline-proposer.
 
 **15. Check that the full review is what the user actually wants.** This skill runs an adversarial, side-specific review, which is more than some requests need. If the user wants a neutral summary of the key terms, an extraction of obligations and dates on their own, or a comparison of one version against another, use the narrower workflow the user asked for rather than forcing the complete adversarial-review framework onto it and burying the answer inside.
 
 ## Output
 
-Produce these sections in this order.
+Produce only the sections required by the selected mode. Quick review uses sections 1–3 and 8–9, with section 7 only when requested. Focused review uses the same structure but only for the stated scope. Full audit uses every applicable section below.
 
-**1. Review parameters.** Open with the classification from step 1 in a single line — what the document is, and whether it is complete. Then: governing law as stated in the contract and as confirmed by the user; party we act for; documents reviewed, listed by name and version; documents referred to but not supplied; posture; date of review. Any assumption you were forced to make, stated as an assumption.
+**1. Review parameters.** Open with the classification and selected mode in a single line — what the document is, whether it is complete, and whether the review is Quick, Focused or Full audit. Then: governing law as stated in the contract and as confirmed by the user; party we act for; documents reviewed, listed by name and version; documents referred to but not supplied; posture; date of review. Distinguish document facts, user-supplied facts, assumptions and legal inferences.
 
 **2. Executive summary.** No more than fifteen lines. The three to five things that matter, the overall exposure position, and whether any Critical findings remain open.
 
-**3. Issues list.** A table, ordered by grade and then by clause number, with these columns: Ref | Clause | Issue | Effect on us | Grade | Proposed change | Fallback. Keep the Issue and Effect columns factual and specific to the words in the clause. Where the posture recorded in section 1 is an executed contract being reviewed for meaning and exposure rather than a document open for negotiation, replace Proposed change and Fallback with a single Consequence column stating what the clause as written now exposes the client to — there is nothing left to negotiate on a signed document unless the user is preparing to seek a variation or waiver.
+**3. Issues list.** A table, ordered by grade and then by clause number: Ref | Clause | Issue | Effect on client | Grade | Recommended position | Fallback position. Keep each row concise and do not put full replacement clauses in table cells. For a quick review, report the 10–15 most material issues. For an executed contract being reviewed for meaning and exposure, replace the last two columns with Consequence unless the user is preparing a variation or waiver.
 
 **4. Obligations and dates ledger.** A table: Clause | Obligor | Obligation | Trigger | Deadline or period | Consequence of failure. Follow it with a short list of every hard date and notice period, ordered chronologically.
 
-**5. Risk allocation summary.** Prose, not a table. The warranty position, the indemnity position, the exclusions, the cap and its carve-outs, the insurance, and the resulting worst-case exposure. State clearly where exposure is uncapped.
+**5. Risk allocation summary.** Prose, not a table. State the contractual cap, functional cap after carve-outs, quantifiable capped exposure, separate caps or sub-caps, apparently uncapped categories, remedies potentially outside the damages cap, unquantifiable exposure and dependencies on facts, governing law, claims classification or external documents. Treat contractual insurance requirements as requirements, not evidence of coverage.
 
 **6. Coverage sweep and absent provisions.** Run all 41 parameters internally. Report only the rows that carry weight on this deal: every Present row that materially affects the risk allocation, the money or the exit; every Ambiguous row; every Unreviewable row; and every material absence. Omit rows that are plainly irrelevant to a contract of this type. On a short contract this may be eight rows; on a complex licence it may be thirty. Produce the complete 41-row matrix only when the user asks for a comprehensive coverage matrix, and offer it in one line at the end of the section.
 
@@ -101,15 +109,25 @@ Where the contract type falls outside the list's coverage, follow the table with
 
 Then, in prose, take the Absent and Ambiguous rows that actually matter on this deal and set out what the user should decide about each. Do not repeat the whole table in prose, and do not carry Not applicable rows into the discussion.
 
-**7. Proposed redlines.** For each Critical and Material issue, the clause reference, the current wording quoted from the document, the proposed wording in full, and the fallback wording. Quote only from the supplied document. Omit this section entirely where the posture is an executed contract and the user has not asked for variation, amendment or waiver wording — there is no draft to redline, and manufacturing alternative wording for a signed document invites it to be mistaken for something the client can still negotiate. Produce it, addressed as proposed variation language, only if the user asks.
+**7. Proposed redlines.** Keep full wording outside the issues table and organise it by clause. For each included issue, show the clause reference, current wording quoted from the document, recommended wording in full and fallback wording in full, followed by a concise explanation of their differing legal effect. Omit this section for an executed contract unless the user asks for variation, amendment or waiver wording.
 
 **8. Points requiring verification.** A single consolidated list. Every point in the review that rests on anything other than the words of the supplied documents goes here — every question of enforceability under the governing law, every reference to a statute or regulation, every statement about what is customary, every limitation or prescription period, every regulatory consent or filing requirement. Each entry states the question, why it matters to this contract, and where the user should verify it: the current official text of the named statute, the client's own precedents, the client's insurance broker, local counsel in the relevant jurisdiction. Do not answer these questions in the body of the review and repeat them here — leave them open.
 
 **9. Questions for the client.** Commercial questions the review cannot resolve.
 
-If the user expressly asks for the complete review in one response, produce every section unless output limits make that impossible. Otherwise, on a long contract — roughly 25 pages or more, or where the issues list runs past 15 entries — deliver sections 1 to 3 first and stop there. Say that the coverage sweep, the obligations ledger, the risk allocation summary and the drafted redlines follow on request, and produce them when asked. Never break off inside a table.
+If the user expressly asks for the complete full audit in one response, produce every section unless output limits make that impossible. Otherwise, deliver the selected mode without automatically expanding it. On a long full audit, deliver sections 1–3 first and continue the remaining requested sections in a later response; never break off inside a table.
 
 Mark every finding in sections 3 to 6 as drawn from the document, by clause reference. If a statement in those sections is not traceable to a clause reference, it belongs in section 8.
+
+## Evidence and document controls
+
+- Cite exact clause numbers, headings or document locations for every document-derived finding where available; headings never substitute for operative language.
+- Distinguish document facts, user-supplied facts, assumptions and legal inferences. State when a conclusion depends on governing law, disputed facts, claims classification or material outside the contract.
+- Check relevant definitions, order of precedence, incorporated documents, related provisions and survival language before concluding.
+- Name missing schedules, annexures, policies, referenced agreements and unreadable material. Never invent clauses, quotations, authorities, defined terms, dates or commercial facts.
+- Warn when scans, OCR, truncation, tracked changes or incomplete extraction may affect accuracy.
+- Preserve confidentiality. Do not send contract contents to an external service unless the user expressly requests that connected workflow.
+
 
 ## Do not
 

@@ -1,0 +1,93 @@
+version: 1
+plugin: contracts
+purpose: "Portal-ready representative cases; the broader routing-behavior.yaml fixture covers additional boundaries and follow-ups."
+cases:
+  - id: submit-contract-reviewer
+    kind: positive
+    prompt: "Review this entire MSA from the Buyer's side."
+    expected_skill: contract-reviewer
+    expected_behavior: "Activate quick review by default, identify material limitations, and rank the 10–15 most important risks."
+    expected_result_shape: "Review parameters, executive summary, concise issues table, verification points, and client questions."
+    fixture_data: "A complete draft MSA with Buyer and Supplier defined, governing law stated, and at least one material issue each in payment, IP, liability, and termination."
+  - id: submit-contract-summariser
+    kind: positive
+    prompt: "Give me the two-minute version of this agreement."
+    expected_skill: contract-summariser
+    expected_behavior: "Produce a short, factual, neutral summary without grading risk or proposing wording."
+    expected_result_shape: "Headline, key facts, what each party gives and gets, notable provisions, and missing material."
+    fixture_data: "A complete executed commercial agreement with parties, dates, consideration, term, renewal, governing law, and one referenced schedule."
+  - id: submit-obligations-extractor
+    kind: positive
+    prompt: "List everything the Supplier must do and every deadline."
+    expected_skill: obligations-extractor
+    expected_behavior: "Extract obligations neutrally and keep rights, options, and notice windows separate."
+    expected_result_shape: "Obligations ledger, rights and procedural deadlines table, chronological list, conditional obligations, and extraction gaps."
+    fixture_data: "A services agreement with recurring reporting, payment, service-level, audit, renewal, and termination-notice provisions."
+  - id: submit-liability-analyst
+    kind: positive
+    prompt: "Does the liability cap still protect the Supplier after applying every carve-out?"
+    expected_skill: indemnity-liability-analyst
+    expected_behavior: "Analyse the liability system, distinguish stated and functional caps, and avoid unsupported insurance conclusions."
+    expected_result_shape: "Parameters, executive summary, indemnity table, cap analysis, exposure categories, insurance position, claims mechanics, and verification points."
+    fixture_data: "A complete draft containing warranties, multiple indemnities, a general cap, a sub-cap, carve-outs, excluded losses, insurance requirements, and fee figures."
+  - id: submit-clause-comparator
+    kind: positive
+    prompt: "Compare versions 2 and 3 and identify every substantive change in wording and legal effect."
+    expected_skill: clause-comparator
+    expected_behavior: "Produce a mechanical diff before interpreting changes and check affected defined terms."
+    expected_result_shape: "Comparison header, mechanical diff, substantive differences table, cosmetic differences, and verification points."
+    fixture_data: "Two labelled versions of the same agreement with changed definitions, cap wording, notice period, formatting, and clause numbering."
+  - id: submit-redline-proposer
+    kind: positive
+    prompt: "Rewrite clause 12 in the Customer's favour and give me a balanced fallback."
+    expected_skill: redline-proposer
+    expected_behavior: "Check related provisions and provide usable full replacement wording under separate positions."
+    expected_result_shape: "Parameters and diagnosis followed by strongest credible, balanced, and minimum acceptable full clauses, conforming changes, and verification points."
+    fixture_data: "Clause 12 plus its defined terms, related indemnity, limitation-of-liability provisions, governing-law clause, and confirmation that the client is the Customer."
+  - id: submit-termination-analyst
+    kind: positive
+    prompt: "Can the Customer terminate this agreement immediately, and what notice and cure requirements apply?"
+    expected_skill: termination-analyst
+    expected_behavior: "Map contractual exit routes and apply the supplied facts separately from the document analysis."
+    expected_result_shape: "Parameters, executive summary, exit-routes table, consequences, survival cross-check, live-scenario analysis, issues, and verification points."
+    fixture_data: "A complete executed agreement with breach, cure, convenience, insolvency, notices, termination-consequence, and survival provisions plus a stated breach scenario."
+  - id: submit-negotiation-planner
+    kind: positive
+    prompt: "Give me opening, fallback, minimum acceptable, and walk-away positions on the liability cap."
+    expected_skill: negotiation-position-planner
+    expected_behavior: "Create a one-issue ladder tied to the client's priority and alternative without requiring multiple open points."
+    expected_result_shape: "Parameters, issue priority and interest, four-position ladder, concession sequence, assumptions, and missing client inputs."
+    fixture_data: "The current cap wording, the client's preferred and minimum cap positions, deal value, negotiating leverage, and alternative if no deal is reached."
+  - id: submit-contract-drafter
+    kind: positive
+    prompt: "Draft a complete SaaS agreement from these agreed commercial terms."
+    expected_skill: contract-drafter
+    expected_behavior: "Draft a definitive agreement, preserve confirmed terms, and use visible placeholders rather than inventing missing terms."
+    expected_result_shape: "Drafting parameters, complete agreement, drafting notes, consolidated open points, and verification points."
+    fixture_data: "A term sheet identifying parties, Customer-side drafting posture, services, fees, term, service levels, IP position, governing law, and unresolved renewal mechanics."
+  - id: submit-mou-drafter
+    kind: positive
+    prompt: "Draft a non-binding LOI with binding confidentiality and exclusivity."
+    expected_skill: mou-drafter
+    expected_behavior: "Create an explicit binding/non-binding architecture and avoid obligation language in non-binding provisions."
+    expected_result_shape: "Drafting parameters, complete LOI, binding-status map, drafting notes, placeholders, and verification points."
+    fixture_data: "Principal transaction terms, parties, governing law, definitive-agreement type, exclusivity period, and confirmation that confidentiality and exclusivity are binding."
+
+  - id: submit-negative-current-law
+    kind: negative
+    prompt: "Tell me the current law on employment termination in France."
+    expected_behavior: "Do not activate a Contracts skill; route to an appropriate current-law research workflow."
+    reason: "The request concerns general employment law and does not ask to analyse or draft a contract."
+    fixture_data: "None."
+  - id: submit-negative-criminal
+    kind: negative
+    prompt: "Draft a criminal complaint."
+    expected_behavior: "Do not activate the Contracts plugin."
+    reason: "A criminal complaint is outside commercial contracting workflows."
+    fixture_data: "None."
+  - id: submit-negative-news
+    kind: negative
+    prompt: "Summarise this newspaper article."
+    expected_behavior: "Do not activate the Contracts plugin."
+    reason: "The source is not a contract and the request is ordinary article summarisation."
+    fixture_data: "A short newspaper article unrelated to a contract."

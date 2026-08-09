@@ -1,13 +1,13 @@
 ---
 name: indemnity-liability-analyst
-description: Reads the warranty, indemnity, exclusion, cap and insurance clauses in a contract as a single interacting system, for one identified party, and reports what is actually covered, what is carved out of the cap, and the real worst-case exposure — not just what the cap clause states in isolation. Use this whenever a user wants the liability position worked through in depth rather than as one part of a full review — including phrasings like "what's our exposure under this indemnity", "does this cap actually protect us once you account for the carve-outs", "work out our worst-case liability under this MSA", "is our insurance enough to cover what we've agreed to indemnify", or "does the IP indemnity sit inside or outside the cap". Distinct from contract-reviewer, which covers this as one part of a whole-agreement review — this goes deep on liability alone. Fires for any contract with warranty, indemnity or exclusion clauses.
+description: Analyses the warranty, indemnity, exclusion, cap and insurance provisions in a contract as one interacting system for one identified party. Use for focused prompts such as "what is our exposure under this indemnity", "does the cap still protect the Supplier after the carve-outs", "which liabilities are capped or uncapped", or "does the IP indemnity sit inside the cap". Reports stated and functional caps, sub-caps, quantifiable exposure, apparently uncapped categories and unquantifiable dependencies. It does not infer insurance coverage without the actual policy. Distinct from contract-reviewer, which ranks issues across an agreement.
 ---
 
 # Indemnity & Liability Analyst
 
 ## What this does
 
-Reads every clause that touches liability — warranties, indemnities, exclusions, the cap, insurance, notification and claims mechanics — as one interacting system for a single identified party, and reports what is actually covered, what is genuinely capped, and what the worst realistic exposure is once every carve-out has been applied. It goes deep on this one system rather than reviewing the whole agreement; a stated cap figure is a starting point for the analysis, not its conclusion.
+Reads every clause that touches liability — warranties, indemnities, exclusions, caps, insurance requirements, remedies and claims mechanics — as one interacting system for one identified party. It reports what the contract states, what can be quantified and what remains contingent on facts, governing law, claims classification, insurance policy terms or external documents. A stated cap figure is a starting point, not the conclusion.
 
 ## Before you start
 
@@ -29,11 +29,11 @@ Not blocking, ask once and proceed without it if unanswered: **the posture** —
 
 **4. Analyse each indemnity separately before looking at the cap.** For each one: who indemnifies whom, what triggers it, whether it protects against a third party's claim or against the counterparty's own loss, what it covers, and — critically — whether the indemnity clause itself states that it sits inside or outside the general liability cap. An indemnity silent on this point is not necessarily inside the cap; check whether the cap clause's own wording extends to indemnity claims or only to "liability under or in connection with this Agreement" in a way the indemnity may or may not fall within.
 
-**5. Work out the real, functional cap, not the headline figure.** Take the stated cap and apply every carve-out in sequence. Where indemnities, IP infringement, breach of confidentiality, fraud, and death or personal injury are all carved out, say plainly that the cap protects only the residual categories of ordinary breach, and name exactly what remains uncapped as a result.
+**5. Work out the functional cap, not only the headline figure.** Take each stated cap and apply every carve-out in sequence. Distinguish the general cap, separate caps or sub-caps, quantifiable capped exposure, categories expressly outside the cap, categories apparently outside the cap because the drafting is silent or ambiguous, and remedies that may operate outside a damages cap. Do not label a category definitively uncapped where that conclusion depends on governing law or claims classification; state the dependency.
 
-**6. State the worst-case exposure in money terms wherever the contract's own figures allow it** — the cap amount, or the formula it is a multiple of, applied to the actual numbers in the document or supplied by the user (a rate card, an annual contract value). Where a figure needed to complete the calculation was not supplied, show the formula and name the missing input rather than estimating it.
+**6. Quantify only what the available documents support.** Calculate the stated cap and functional capped exposure from actual figures in the documents or supplied by the user. Show the formula and every input. Separately list exposure that cannot be quantified because a figure, fact, claims classification, governing-law conclusion, schedule, policy or other external document is missing. Do not collapse capped and potentially uncapped categories into a single invented maximum.
 
-**7. Check whether the insurance obligation can actually respond to the exposure just identified.** A public or product liability policy commonly does not respond to a contractual indemnity for IP infringement or for pure economic loss; check what type of policy and what sum insured the contract requires, and flag any mismatch between what must be insured and what is actually exposed. If the user has not supplied the actual policy, limit this to what the contract requires and say the adequacy of what is actually held cannot be assessed without it.
+**7. Separate contractual insurance requirements from actual coverage.** Without the actual policy wording, schedule, exclusions and endorsements, report only the types and limits the contract requires, whether those limits appear aligned with the assumed contractual liabilities, obvious gaps between required insurance and assumed liabilities, and the policy questions requiring review. State expressly that the contract is not evidence that insurance exists or that a policy will cover a claim. If the actual policy is supplied, cite the relevant policy provisions and keep any coverage conclusion within those words and the supplied facts.
 
 **8. Check the claims mechanics.** Notification periods for making a claim, conditions precedent to recovery (a duty to mitigate, a right for the indemnifying party to conduct the defence, a requirement to obtain consent before settling), and any contractual limitation period the document itself sets. Report a contractual limitation period as what the document says; do not state a statutory limitation or prescription period as fact — that belongs in section 9.
 
@@ -45,21 +45,31 @@ Not blocking, ask once and proceed without it if unanswered: **the posture** —
 
 **1. Parameters.** Side analysed, governing law, documents reviewed, posture, date.
 
-**2. Executive summary.** The worst-case exposure headline, whether the stated cap is functionally real or substantially hollowed out by carve-outs, and the single biggest concern, in no more than ten lines.
+**2. Executive summary.** The stated cap, the functional cap after carve-outs, the principal capped and apparently uncapped categories, what cannot be quantified, and the single biggest concern, in no more than ten lines.
 
 **3. Indemnity-by-indemnity breakdown.** A table: Clause | Indemnity | Indemnifier | Indemnified party | Trigger | Scope | Inside or outside cap.
 
 **4. Cap and exclusions analysis.** Prose. The stated cap, what it is a multiple of, aggregate or per-claim, every carve-out and whether together they swallow the cap, and what types of loss are excluded.
 
-**5. Worst-case exposure.** The calculated figure or the formula, with every input named, and a plain list of what remains uncapped.
+**5. Exposure analysis.** Quantifiable capped exposure and formulas; separate caps or sub-caps; categories outside or apparently outside the cap; remedies that may operate outside the damages cap; unquantifiable exposure; and dependencies on facts, governing law, claims classification or external documents.
 
-**6. Insurance adequacy.** Whether the required insurance would respond to the exposure identified; note explicitly if actual policy terms were not supplied and the check is therefore limited to the contractual requirement.
+**6. Insurance position.** Contractual insurance requirements, apparent alignment with assumed liabilities, obvious gaps, actual policy materials reviewed, and matters requiring policy review. Without the complete policy, do not state that coverage exists or will respond.
 
 **7. Claims mechanics.** Notification periods, conditions precedent, and any contractual limitation period, listed plainly.
 
 **8. Issues and grading.** A table: Ref | Clause | Issue | Effect on the analysed party | Grade | Proposed change | Fallback. Where the posture is an executed contract not under negotiation, replace the last two columns with a single Consequence column — there is nothing to negotiate on a signed document unless the user is preparing to seek a variation.
 
 **9. Points requiring verification.** Every question that turns on the governing law rather than the document's words — enforceability of the exclusions, penalty-doctrine exposure on any liquidated or stipulated indemnity sum, mandatory non-excludable liabilities, the applicable limitation period. Name the question; do not answer it here.
+
+## Evidence and document controls
+
+- Cite exact clause numbers, headings or document locations for every document-derived finding where available; headings never substitute for operative language.
+- Distinguish document facts, user-supplied facts, assumptions and legal inferences. State when a conclusion depends on governing law, disputed facts, claims classification or material outside the contract.
+- Check relevant definitions, order of precedence, incorporated documents, related provisions and survival language before concluding.
+- Name missing schedules, annexures, policies, referenced agreements and unreadable material. Never invent clauses, quotations, authorities, defined terms, dates or commercial facts.
+- Warn when scans, OCR, truncation, tracked changes or incomplete extraction may affect accuracy.
+- Preserve confidentiality. Do not send contract contents to an external service unless the user expressly requests that connected workflow.
+
 
 ## Do not
 
@@ -69,9 +79,9 @@ Do not analyse the warranty, indemnity, exclusion, cap and insurance clauses ind
 
 Do not state that a cap, exclusion or indemnity is enforceable under the governing law from memory. Name it as a verification point.
 
-Do not calculate a worst-case exposure using a figure that is not in the document or supplied by the user. Show the formula and name the missing input.
+Do not calculate a maximum exposure using a figure that is not in the document or supplied by the user. Show the formula, name missing inputs and keep unquantifiable categories separate.
 
-Do not assess insurance adequacy against a policy you have not been shown. Limit the check to what the contract requires and say so.
+Do not state that insurance exists, covers a liability or will respond unless the complete relevant policy wording, schedule, exclusions and endorsements were supplied and support that conclusion. Contractual insurance requirements are not evidence of coverage.
 
 Do not produce a negotiating position or fallback wording for an executed contract that is not under negotiation. State the consequence instead.
 
