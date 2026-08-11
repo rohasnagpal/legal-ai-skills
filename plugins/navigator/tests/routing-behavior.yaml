@@ -1,0 +1,73 @@
+cases:
+  - id: advisory-opinion
+    prompt: "Draft a formal legal opinion on whether this clause is enforceable."
+    expected_behavior: "Select Rohas Legal AI: Advisory and return only the instruction line and prompt."
+  - id: arbitration-notice
+    prompt: "Draft a notice invoking the arbitration clause in this agreement."
+    expected_behavior: "Select Rohas Legal AI: Arbitration and return only the instruction line and prompt."
+  - id: conciliation-settlement
+    prompt: "Turn these agreed points into complete settlement terms after conciliation."
+    expected_behavior: "Select Rohas Legal AI: Conciliation and return only the instruction line and prompt."
+  - id: consumer-deficiency
+    prompt: "Does this service failure amount to deficiency, and can you draft the consumer complaint?"
+    expected_behavior: "Select Rohas Legal AI: Consumer and return only the instruction line and prompt."
+  - id: contracts-termination
+    prompt: "Can we terminate this distribution agreement for repeated breach?"
+    expected_behavior: "Select Rohas Legal AI: Contracts and return only the instruction line and prompt."
+  - id: corporate-board
+    prompt: "Draft the board and shareholder resolutions required for this corporate restructuring."
+    expected_behavior: "Select Rohas Legal AI: Corporate and return only the instruction line and prompt."
+  - id: criminal-bail
+    prompt: "Prepare an anticipatory bail strategy and application from these facts."
+    expected_behavior: "Select Rohas Legal AI: Criminal and return only the instruction line and prompt."
+  - id: employment-contract
+    prompt: "Draft an employment agreement for this senior employee."
+    expected_behavior: "Select Rohas Legal AI: Employment, not Contracts, and return only the instruction line and prompt."
+  - id: family-succession
+    prompt: "Advise who inherits this estate and what succession documents are needed."
+    expected_behavior: "Select Rohas Legal AI: Family and return only the instruction line and prompt."
+  - id: finance-sarfaesi
+    prompt: "Plan the lender's SARFAESI enforcement steps for this defaulted loan."
+    expected_behavior: "Select Rohas Legal AI: Finance and return only the instruction line and prompt."
+  - id: insolvency-cirp
+    prompt: "Audit the deadlines and compliance record in this CIRP."
+    expected_behavior: "Select Rohas Legal AI: Insolvency and return only the instruction line and prompt."
+  - id: investigations-tracing
+    prompt: "Trace these suspicious payments and prepare neutral source-linked findings."
+    expected_behavior: "Select Rohas Legal AI: Investigations and return only the instruction line and prompt."
+  - id: ip-licence
+    prompt: "Review this trademark licence for scope, quality control, royalties, and exit risk."
+    expected_behavior: "Select Rohas Legal AI: IP and return only the instruction line and prompt."
+  - id: litigation-cross-examination
+    prompt: "Build a cross-examination plan for this witness in our commercial suit."
+    expected_behavior: "Select Rohas Legal AI: Litigation and return only the instruction line and prompt."
+  - id: mediation-caucus
+    prompt: "Help us decide what to disclose in the mediation caucus."
+    expected_behavior: "Select Rohas Legal AI: Mediation and return only the instruction line and prompt."
+  - id: practice-conflict
+    prompt: "Run a confidentiality-preserving conflict check before we accept this matter."
+    expected_behavior: "Select Rohas Legal AI: Practice and return only the instruction line and prompt."
+  - id: privacy-dpa
+    prompt: "Review this data processing agreement from the controller's side."
+    expected_behavior: "Select Rohas Legal AI: Privacy, not Contracts, and return only the instruction line and prompt."
+  - id: property-title
+    prompt: "Trace the chain of title and identify gaps in these property documents."
+    expected_behavior: "Select Rohas Legal AI: Property and return only the instruction line and prompt."
+  - id: public-tender
+    prompt: "Check our bid against every mandatory condition in this government tender."
+    expected_behavior: "Select Rohas Legal AI: Public and return only the instruction line and prompt."
+  - id: regulatory-licence
+    prompt: "Prepare the evidence and application for this regulatory licence."
+    expected_behavior: "Select Rohas Legal AI: Regulatory and return only the instruction line and prompt."
+  - id: research-precedents
+    prompt: "Map the authorities on this legal point and show which cases remain good law."
+    expected_behavior: "Select Rohas Legal AI: Research and return only the instruction line and prompt."
+  - id: startup-term-sheet
+    prompt: "Review this seed-round term sheet from the founders' side."
+    expected_behavior: "Select Rohas Legal AI: Startup and return only the instruction line and prompt."
+  - id: tax-fema
+    prompt: "Analyse the FEMA route, pricing, and filing requirements for this inbound investment."
+    expected_behavior: "Select Rohas Legal AI: Tax and return only the instruction line and prompt."
+  - id: verify-citations
+    prompt: "Check whether every citation in this finished opinion exists and supports its proposition."
+    expected_behavior: "Select Rohas Legal AI: Verify and return only the instruction line and prompt."

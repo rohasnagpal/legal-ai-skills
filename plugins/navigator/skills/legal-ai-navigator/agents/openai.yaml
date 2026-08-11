@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal AI Navigator"
+  short_description: "Choose the right Rohas legal plugin and prompt"
+  default_prompt: "Use $legal-ai-navigator to choose the right Rohas Legal AI plugin and create the prompt I should paste into it."

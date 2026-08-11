@@ -317,6 +317,19 @@
         "./skills/"
       ],
       "strict": false
+    },
+    {
+      "name": "navigator",
+      "source": "./plugins/navigator",
+      "description": "Routes a legal task to one of the 24 Rohas Legal AI plugins and creates a ready-to-paste prompt.",
+      "author": {
+        "name": "Rohas Nagpal",
+        "url": "https://rohasnagpal.com"
+      },
+      "skills": [
+        "./skills/"
+      ],
+      "strict": false
     }
   ]
 }

@@ -118,6 +118,7 @@ ChatGPT and Codex use the same public plugin directory. Installation and use can
 [ip](#ip) ·
 [litigation](#litigation) ·
 [mediation](#mediation) ·
+[navigator](#navigator) ·
 [practice](#practice) ·
 [privacy](#privacy) ·
 [property](#property) ·
@@ -128,7 +129,7 @@ ChatGPT and Codex use the same public plugin directory. Installation and use can
 [tax](#tax) ·
 [verify](#verify)
 
-All 159 skills below are built and linked to their `SKILL.md`.
+All 160 skills below are built and linked to their `SKILL.md`.
 
 ---
 
@@ -280,6 +281,10 @@ All 159 skills below are built and linked to their `SKILL.md`.
 - **[mediation-outcome-documenter](plugins/mediation/skills/mediation-outcome-documenter/SKILL.md)**: records what was agreed and what remains open
 - **[party-interest-analyst](plugins/mediation/skills/party-interest-analyst/SKILL.md)**: separates stated positions from underlying interests on both sides
 - **[settlement-evaluator](plugins/mediation/skills/settlement-evaluator/SKILL.md)**: tests a settlement offer against the litigation alternative
+
+### navigator
+
+- **[legal-ai-navigator](plugins/navigator/skills/legal-ai-navigator/SKILL.md)**: selects the right Rohas Legal AI plugin and creates the prompt to paste into it
 
 ### practice
 
