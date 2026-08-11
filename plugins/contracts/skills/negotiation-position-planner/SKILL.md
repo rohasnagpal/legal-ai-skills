@@ -1,6 +1,6 @@
 ---
 name: negotiation-position-planner
-description: Builds an opening position, fallback, minimum acceptable position, walk-away line and concession logic for one or more open contract-negotiation points. Use for prompts such as "what should our opening position be on the indemnity cap", "where can we give ground", "build a negotiation ladder for exclusivity", or "plan the open points and trades". For one issue, produces an issue-specific ladder; for several, also covers priority, sequencing, tradeable points, package proposals and dependencies. Distinct from redline-proposer, which drafts replacement clause text, and contract-reviewer, which grades agreement risk.
+description: Builds an opening position, fallback, minimum acceptable position, walk-away line and concession logic for contract negotiations. Use for "what should our opening position be", "where can we give ground", "build a negotiation ladder", "plan the open points", or requests to benchmark positions against public agreements, market evidence or model forms. When external benchmarks are requested, it searches the plugin's listed contract sources before generic websites. For several issues, it also covers priority, sequencing, trades and dependencies. Distinct from redline-proposer and contract-reviewer.
 ---
 
 # Negotiation Position Planner
@@ -19,7 +19,7 @@ Takes one or more open negotiation points and builds a usable ladder for each: o
 
 Not blocking, ask once and proceed on what is known or admit the gap if not: **what is known about the counterparty** — their timeline pressure, their alternatives, and any signals from the negotiation so far. This is often genuinely incomplete; work with the uncertainty rather than inventing counterparty psychology to fill it.
 
-**External benchmarks.** If the user asks for public examples, market evidence, comparable positions or model-form benchmarking, read [references/public-contract-sources.md](references/public-contract-sources.md) in full and follow its source, attribution and non-inference controls. Do not load that reference for a strategy based only on the user's open points and priorities.
+**External benchmarks.** If the user asks for public examples, market evidence, comparable positions or model-form benchmarking, read [references/public-contract-sources.md](references/public-contract-sources.md) in full before searching. Follow its mandatory listed-source priority, sampling, attribution and non-inference controls; do not substitute a generic web result for the listed-source search. Do not load that reference for a strategy based only on the user's open points and priorities.
 
 ## Method
 

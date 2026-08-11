@@ -1,6 +1,6 @@
 ---
 name: contract-drafter
-description: Drafts a contract from a term sheet, negotiated heads of terms, or plain instructions, producing a complete agreement — parties, recitals, definitions, operative clauses, schedules and boilerplate — in a specified drafting posture and matched to an existing precedent where one is supplied. Use this whenever a user wants a document produced rather than reviewed — including phrasings like "draft us a services agreement on these terms", "turn this term sheet into a contract", "prepare a first draft NDA for this deal", "draft an SPA based on our standard template", "put together a supply agreement favouring the seller", or "draft the framework agreement, we'll add the SOWs later". Distinct from contract-reviewer, which analyses an existing agreement — this produces one. Fires for any commercial agreement type — services, supply, distribution, licensing, employment, lease, shareholders, loan, NDA, SaaS, construction, joint venture.
+description: Drafts a complete contract from a term sheet, negotiated heads or plain instructions — parties, recitals, definitions, operative clauses, schedules and boilerplate — in a specified posture and matched to a supplied or requested precedent. Use for "draft a services agreement", "turn this term sheet into a contract", "prepare an NDA", "draft an SPA from our template", or requests to draft using public agreements, model forms or market examples. When external precedents are requested, it searches the plugin's listed contract sources before generic websites. Distinct from contract-reviewer, which analyses an existing agreement. Fires for any commercial agreement type.
 ---
 
 # Contract Drafter
@@ -19,7 +19,7 @@ Turns a term sheet, a set of instructions, or a negotiated set of heads of terms
 
 Not blocking, ask once and proceed without it if unanswered: **an existing precedent or template.** A house form, a prior agreement of this type, or a specific identified external model to follow. Its absence does not stop the draft — proceed on the conventional structure for the agreement type and say plainly that no house precedent was used, so the user knows to check the result against their own before relying on it.
 
-**External precedents.** If the user asks for sample agreements, public precedents, model forms or external benchmarking, read [references/public-contract-sources.md](references/public-contract-sources.md) in full and follow its source, attribution and non-inference controls. Do not load that reference for an ordinary draft based on the user's terms or precedent.
+**External precedents.** If the user asks for sample agreements, public precedents, model forms or external benchmarking, read [references/public-contract-sources.md](references/public-contract-sources.md) in full before searching. Follow its mandatory listed-source priority, sampling, attribution and non-inference controls; do not substitute a generic web result for the listed-source search. Do not load that reference for an ordinary draft based on the user's terms or precedent.
 
 ## Method
 

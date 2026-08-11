@@ -1,6 +1,6 @@
 ---
 name: clause-comparator
-description: Compares the same clause or provision as it appears across two or more places — draft rounds of one agreement, a counterparty's version against the user's own precedent, or the same clause type across a portfolio of agreements — and reports exactly what changed in wording and in effect. Use this whenever a user wants to know what moved between versions rather than a full risk review — including phrasings like "what changed between this draft and the last one", "how does their indemnity compare to our standard wording", "redline this against our template", "compare the liability cap across our last five SaaS agreements", "did they weaken the termination clause", or "track what each round of negotiation changed". Distinct from contract-reviewer, which grades a whole agreement for risk from one side's position — this stays neutral on whether a change is good or bad unless a side is given. Fires for any clause type, in any commercial agreement.
+description: Compares the same clause or provision across draft rounds, precedents, public agreements or a portfolio and reports what differs in wording and effect. Use for version-change requests and external clause benchmarking, including "what changed between drafts", "compare their indemnity with ours", "compare liability caps across these SaaS agreements", "what indemnity approach is most common in public SaaS agreements", "what is typical", "what is prevalent" or "is this market standard". External frequency claims require a disclosed multi-document sample, not one precedent. Distinct from contract-reviewer, which grades an agreement for risk; this stays neutral unless a side is given. Fires for any clause type in any commercial agreement.
 ---
 
 # Clause Comparator
@@ -11,13 +11,13 @@ Takes the same clause, or the same clause type, as it appears in two or more pla
 
 ## Before you start
 
-**What is being compared, and against what.** At minimum this means: how many items are being compared, where each is drawn from (document name, version or date, clause number), and whether the comparator is another draft of the same agreement, a different agreement, or a standard the user is supplying. This is blocking — do not start diffing until you know what the two (or more) things actually are.
+**What is being compared, and against what.** At minimum this means whether the comparator is another draft, a supplied precedent or an external portfolio. For user-supplied material, identify each document, version or date and clause number before diffing. For an external portfolio benchmark, the user need only identify the clause type and target population, such as public SaaS agreements; discover the documents using the default sample and source rules in [references/public-contract-sources.md](references/public-contract-sources.md) rather than asking the user to name them.
 
-**The comparator text itself, where it is a "standard".** If the user asks to compare a clause against their firm's standard, a market position, or "what's usual", that standard has to arrive as actual text — a template clause, a precedent document, a pasted example. Do not reconstruct a market-standard clause from memory to use as the baseline; general commercial understanding of what a clause "usually" says is not a substitute for the user's own precedent. If no comparator text is supplied and none is asked for, say the comparison is limited to the items actually supplied.
+**The comparator text itself, where it is a supplied "standard".** If the user asks to compare against their firm's standard, obtain its actual text — a template clause, precedent document or pasted example. If the user instead asks for an external market benchmark, collect the actual clause text from the public documents found under the external-source rules. Never reconstruct a market-standard clause from memory.
 
 Not blocking, ask once and proceed without it if unanswered: **which side the user acts for.** Without a side, the comparison stays neutral — differences are reported, not judged. With a side, differences can additionally be marked favourable, adverse or neutral to that side.
 
-**External comparators.** If the user asks for public agreements, market examples, clause benchmarking or an external model, read [references/public-contract-sources.md](references/public-contract-sources.md) in full and follow its source, attribution and non-inference controls. Do not load that reference for comparisons limited to user-supplied drafts or precedents.
+**External comparators.** If the user asks for public agreements, market examples, clause benchmarking, an external model, or what is "most common", "typical", "prevalent", "usual" or "market standard", read [references/public-contract-sources.md](references/public-contract-sources.md) in full before searching. Follow its mandatory listed-source priority, sampling, attribution and non-inference controls. Never answer a prevalence question from one agreement, company or publisher. Do not load that reference for comparisons limited to user-supplied drafts or precedents.
 
 ## Method
 
@@ -53,6 +53,8 @@ Not blocking, ask once and proceed without it if unanswered: **which side the us
 
 **6. Points requiring verification.** Anything whose actual effect turns on the governing law rather than the words alone — for instance, whether a wording change that looks cosmetic actually changes enforceability. Name the question; do not answer it from memory.
 
+**External portfolio benchmark.** Where the request asks what is common, typical, prevalent or market standard across public agreements, replace the pairwise mechanical diff and change history with the reference's source log and evidence table, a clause-feature matrix, numerator/denominator tallies, observed patterns and limitations. Quote or summarise the operative text accurately, but do not force eight or more agreements into consecutive pairwise redlines.
+
 Keep every row on a single line so the tables render.
 
 ## Evidence and document controls
@@ -67,7 +69,7 @@ Keep every row on a single line so the tables render.
 
 ## Do not
 
-Do not invent a market-standard clause from memory to use as the comparator. If the user wants a standard-position comparison, ask for the actual text.
+Do not invent a market-standard clause from memory. Obtain the user's standard text for a house-position comparison, or collect actual public clauses under the external-source rules for a market benchmark.
 
 Do not match clauses by number alone. The same clause number in two documents can govern different subjects, and the same provision can appear at different numbers or be split differently across documents.
 

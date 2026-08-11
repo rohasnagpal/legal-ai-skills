@@ -1,8 +1,8 @@
 # Legal AI Skills
 
-An open collection of Legal AI Skills for Claude and ChatGPT.
+An open collection of Legal AI Skills for Claude, ChatGPT and Codex.
 
-A skill is a reusable set of written instructions for an AI assistant.Each skill teaches an AI assistant how to handle one kind of legal task properly. 
+A skill is a reusable set of written instructions for an AI assistant. Each skill teaches an AI assistant how to handle one kind of legal task properly.
 
 Skills are also bundled into plugins. A plugin is an installable practice pack containing several skills. Install the ones you need and the AI assistant can
 use them automatically when the work matches.
@@ -23,7 +23,7 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 
 1. [Install on Claude Web](#1-install-on-claude-web)
 2. [Install on Claude Code](#2-install-on-claude-code)
-3. [Install on ChatGPT Web](#3-install-on-chatgpt-web)
+3. [Install on ChatGPT or Codex](#3-install-on-chatgpt-or-codex)
 4. [Contents](#4-contents)
 5. [Before you use these](#5-before-you-use-these)
 6. [Contributing](#6-contributing)
@@ -31,7 +31,9 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 
 # 1. Install on Claude Web
 
-1. Click **Plugins → Add → Add marketplace**
+Plugins are available on Claude's paid plans. Make sure **Code execution and file creation** is enabled. For an organisation-managed marketplace, an owner must also enable **Cowork** and **Skills**.
+
+1. Open **Customize → Plugins**. Under **Personal plugins**, click **+ → Add marketplace**.
 
 <img width="946" height="491" alt="image" src="https://github.com/user-attachments/assets/2d7989eb-a762-4ac7-878a-52cbea24ff80" />
 
@@ -49,19 +51,9 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 
 ---
 
-4. Click **+** for the plugins you need.
+4. Find **Contracts** and click **+** to install it. Installed plugins are enabled automatically.
 
 <img width="1006" height="690" alt="image" src="https://github.com/user-attachments/assets/7bb12216-2c32-430e-9f14-a4bb19fd1035" />
-
----
-
-**One skill at a time**
-
-If you only want a single skill rather than a whole pack:
-
-1. Open the [latest release](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/latest)
-2. Download the zip for the skill you want
-3. In Claude, go to **Customize → Skills → Upload a skill**
 
 ---
 
@@ -83,7 +75,9 @@ To pull in changes after the repo updates:
 ```
 ---
 
-# 3. Install on ChatGPT Web
+# 3. Install on ChatGPT or Codex
+
+## ChatGPT
 
 1. Click **Plugins** in the left menu
 2. Search for [**Rohas Legal AI**](https://chatgpt.com/plugins?q=rohas+legal+ai)
@@ -97,7 +91,13 @@ Select the relevant plugin and enter the prompt
 
 <img width="798" height="155" alt="image" src="https://github.com/user-attachments/assets/f475e50f-a053-46eb-b6be-adfdaa846c70" />
 
-ChatGPT and Codex use the same public plugin directory. 
+## Codex
+
+1. Open the **Plugin directory** in Codex.
+2. Search for **Rohas Legal AI: Contracts**.
+3. Review the listing and install the plugin.
+
+ChatGPT and Codex use the same public plugin directory. Installation and use can depend on your plan, region, role and workspace settings. Directory updates can take up to six hours to appear in Codex.
 
 ---
 
@@ -181,7 +181,7 @@ All 159 skills below are built and linked to their `SKILL.md`.
 - **[mou-drafter](plugins/contracts/skills/mou-drafter/SKILL.md)**: MOUs and letters of intent, with binding and non-binding parts made explicit
 - **[negotiation-position-planner](plugins/contracts/skills/negotiation-position-planner/SKILL.md)**: opening, fallback and walk-away positions on the open points
 - **[obligations-extractor](plugins/contracts/skills/obligations-extractor/SKILL.md)**: pulls every obligation, deadline and condition into a table
-- **[redline-proposer](plugins/contracts/skills/redline-proposer/SKILL.md)**: alternative wording for a problem clause, from aggressive to acceptable
+- **[redline-proposer](plugins/contracts/skills/redline-proposer/SKILL.md)**: complete replacement wording from the strongest credible position to the minimum acceptable fallback
 - **[termination-analyst](plugins/contracts/skills/termination-analyst/SKILL.md)**: termination rights, notice requirements and consequences
 
 ### corporate

@@ -1,6 +1,6 @@
 ---
 name: redline-proposer
-description: Produces alternative wording for a single problem clause, or a short list of them, across a spectrum from the strongest credible position to the minimum acceptable fallback — full replacement clause text, not a description of what should change. Use this whenever a user wants wording for a specific clause rather than a whole-document review or a multi-point negotiation strategy — including phrasings like "redline this liability clause", "give me an aggressive and a fallback version of this indemnity", "rewrite this termination clause in our favour", "what's a wording we could actually live with here", or "propose alternative language for clause 9". Distinct from contract-reviewer, which grades a whole agreement, and from negotiation-position-planner, which plans strategy across many open points — this drafts wording for the clause actually identified. Fires for any single clause or small group of related clauses in any commercial agreement.
+description: Produces complete replacement wording for one problem clause or a short related group, from the strongest credible position to the minimum acceptable fallback. Use for "redline this liability clause", "give me alternatives for this indemnity", "rewrite this termination clause", "propose language for clause 9", or requests for wording based on public clauses, model forms or market examples. When external wording is requested, it searches the plugin's listed contract sources before generic websites. Distinct from contract-reviewer and negotiation-position-planner. Fires for any clause type in any commercial agreement.
 ---
 
 # Redline Proposer
@@ -19,7 +19,7 @@ Takes a clause the user has identified as a problem and drafts a spectrum of rep
 
 Not blocking, but note where relevant: **governing law**, where the proposed wording's actual effectiveness depends on it — a liquidated damages formula that needs to avoid being read as a penalty, an exclusion clause that needs specific wording to catch a particular head of loss under the applicable case law. Extract it from the document if stated; ask if it is not.
 
-**External wording.** If the user asks for public clauses, model-form language, comparable provisions or benchmarking, read [references/public-contract-sources.md](references/public-contract-sources.md) in full and follow its source, attribution and non-inference controls. Do not load that reference when redlining solely against the supplied contract and instructions.
+**External wording.** If the user asks for public clauses, model-form language, comparable provisions or benchmarking, read [references/public-contract-sources.md](references/public-contract-sources.md) in full before searching. Follow its mandatory listed-source priority, sampling, attribution and non-inference controls; do not substitute a generic web result for the listed-source search. Do not load that reference when redlining solely against the supplied contract and instructions.
 
 ## Method
 

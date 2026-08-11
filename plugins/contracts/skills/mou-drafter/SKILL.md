@@ -1,6 +1,6 @@
 ---
 name: mou-drafter
-description: Drafts a memorandum of understanding or letter of intent from a term sheet or instructions, with the binding and non-binding parts of the document made explicit rather than left to interpretation — the central risk in this document type is ambiguity about whether it creates a binding contract at all. Use this whenever a user wants a pre-definitive-agreement document produced — including phrasings like "draft an MOU for this joint venture", "prepare a non-binding letter of intent for the acquisition", "draft heads of terms with exclusivity binding but the rest non-binding", "turn these principal terms into an MOU", or "we need something signed before due diligence starts, not the full agreement yet". Distinct from contract-drafter, which produces a definitive, fully binding agreement — this manages the boundary between intent and obligation. Fires for MOUs, letters of intent, heads of terms and term sheets intended as a step toward a later definitive agreement.
+description: Drafts an MOU, letter of intent, heads of terms or term sheet from instructions, making the binding and non-binding parts explicit. Use for "draft an MOU for this joint venture", "prepare an LOI for the acquisition", "draft heads with binding exclusivity", "turn these terms into an MOU", or requests to draft using public MOUs, model forms or comparable provisions. When external precedents are requested, it searches the plugin's listed contract sources before generic websites. Distinct from contract-drafter, which produces a definitive agreement.
 ---
 
 # MOU Drafter
@@ -19,7 +19,7 @@ Drafts a memorandum of understanding or letter of intent, treating the line betw
 
 Not blocking, ask once and proceed on a reasonable default without it: **whether the definitive agreement type is already known** (an SPA, a JV agreement, a supply contract). Knowing this helps keep the MOU from drifting into premature detail that belongs in the later document. **An existing precedent**, if the user has one.
 
-**External precedents.** If the user asks for model MOUs, public examples, comparable provisions or benchmarking, read [references/public-contract-sources.md](references/public-contract-sources.md) in full and follow its source, attribution and non-inference controls. Do not load that reference for an ordinary MOU based on the user's instructions or precedent.
+**External precedents.** If the user asks for model MOUs, public examples, comparable provisions or benchmarking, read [references/public-contract-sources.md](references/public-contract-sources.md) in full before searching. Follow its mandatory listed-source priority, sampling, attribution and non-inference controls; do not substitute a generic web result for the listed-source search. Do not load that reference for an ordinary MOU based on the user's instructions or precedent.
 
 ## Method
 

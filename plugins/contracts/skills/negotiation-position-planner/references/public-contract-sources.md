@@ -18,6 +18,18 @@ Treat public agreements as evidence that wording was used in a particular transa
 
 Do not imply that an SEC-filed agreement is regulator-approved or that a government model suits a private transaction. Do not fabricate agreements, clauses, parties, dates or links. If live internet access is unavailable, say that the sources could not be checked. Do not send confidential contract contents to an external service unless the user expressly requests that connected workflow.
 
+## Mandatory search order
+
+Begin with the credible starting points listed below. Check every listed source relevant to the requested agreement type, clause, jurisdiction and period before using an unlisted website. Keep a source log naming each listed source checked and whether it produced usable material, was unavailable or was irrelevant. Do not replace this first-pass search with a generic web result. Use an unlisted source only as a clearly labelled supplement after the relevant listed sources have been checked, and explain why it was needed.
+
+For public-agreement questions, prioritise executed agreements and filed exhibits. Keep model forms and guidance in a separate category; they show a recommended drafting position, not how frequently a term appears in negotiated agreements.
+
+## Frequency and market-practice claims
+
+Treat "most common", "typical", "prevalent", "usual", "market standard" and equivalent language as a portfolio benchmark. Unless the user specifies a smaller closed set, examine at least eight distinct agreements involving at least five unrelated organisations. Check at least three relevant listed source collections where available, even if some yield no usable agreement. Do not count duplicate filings, amendments of the same agreement or multiple copies of one model as independent evidence.
+
+Return an evidence table with: agreement or model | parties or publisher | date | jurisdiction | document status | listed source | direct URL | clause pattern. Then tally each pattern with a numerator and denominator. A single agreement, company, publisher or search result can be an example but can never support a frequency or market-practice conclusion. If the minimum sample cannot be assembled, say the evidence is insufficient, identify the sample actually reviewed and describe only the observed patterns without calling any of them common, typical or standard.
+
 ## Credible starting points
 
 ### SEC EDGAR
@@ -26,10 +38,10 @@ Do not imply that an SEC-filed agreement is regulator-approved or that a governm
 - Use: Executed commercial agreements filed as exhibits, including material contracts commonly filed under EX-10.
 - Limits: Primarily US-focused; filings may be old, amended, redacted or transaction-specific; filing is not approval or evidence of fairness.
 
-### UK Contracts Finder
+### Find a Tender
 
-- URL: https://www.contractsfinder.service.gov.uk/search
-- Use: UK public-sector procurement notices and available contract documents.
+- URL: https://www.find-tender.service.gov.uk/Search
+- Use: The UK's central digital platform for current public-procurement notices and available procurement documents.
 - Limits: Some records contain notices only; the executed contract may be unavailable; public-procurement terms may not transfer to private deals.
 
 ### UK Government Standard Contracts for Procurement
@@ -55,11 +67,5 @@ Do not imply that an SEC-filed agreement is regulator-approved or that a governm
 - URL: https://nvca.org/model-legal-documents/
 - Use: US venture-financing model documents.
 - Limits: US venture-capital context; not a general commercial-contract precedent; tailor the selected form to the transaction.
-
-### World Commerce & Contracting guides and templates
-
-- URL: https://www.worldcc.com/knowledge-insights/guides-templates.html
-- Use: Contracting principles, guides, checklists and negotiation guidance.
-- Limits: Some content requires membership; guidance is not a drafting precedent or proof of market practice.
 
 Do not add or reproduce proprietary material from Practical Law, Westlaw, LexisNexis or similar services without authorised access and permission consistent with the applicable licence.
