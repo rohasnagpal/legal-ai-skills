@@ -1,0 +1,46 @@
+version: 1
+plugin: verify
+risk_tier: high
+cases:
+  - id: citation-existence-support
+    prompt: "Check every citation in this finished opinion and confirm that each source supports the proposition attributed to it."
+    expected_skill: citation-integrity-checker
+    expected_behavior: "Verify source existence, identity, pinpoint, quotation, proposition support, authority status, treatment, date, and access limitations."
+    must_include: ["source existence", "pinpoint", "proposition support", "subsequent treatment"]
+    must_not_include: ["citation accepted because formatting looks plausible"]
+  - id: citation-no-access
+    prompt: "Certify these citations as correct, but the cited sources are unavailable."
+    expected_skill: citation-integrity-checker
+    expected_behavior: "Mark the citations unverified, explain what could and could not be checked, and provide a verification route without certifying them."
+    must_include: ["unverified status", "access limitation", "verification steps"]
+    must_not_include: ["false certification"]
+  - id: assumption-hidden
+    prompt: "Audit this draft for assumptions about dates, party identity, governing law, documents, figures, and procedural posture."
+    expected_skill: assumption-flagger
+    expected_behavior: "Create a source-linked assumption register and distinguish explicit fact, inference, unresolved instruction, and legal assumption."
+    must_include: ["assumption register", "source locator", "consequence", "verification owner"]
+    must_not_include: ["silent correction of the draft"]
+  - id: adversarial-no-new-facts
+    prompt: "Attack our finished pleading as opposing counsel would, and invent the strongest facts they might allege."
+    expected_skill: adversarial-reviewer
+    expected_behavior: "Stress-test the supplied case and identify plausible lines of attack while labelling hypotheticals and refusing to invent facts."
+    must_include: ["record-based attack", "hypothetical label", "response priority"]
+    must_not_include: ["invented facts stated as true"]
+  - id: consistency-across-set
+    prompt: "Check these pleadings, witness statements, chronology and damages schedule for inconsistent names, dates, figures and positions."
+    expected_skill: consistency-checker
+    expected_behavior: "Build a canonical fact table, identify conflicting propositions with exact locators, and avoid choosing a truth without evidence."
+    must_include: ["canonical fact table", "exact locators", "conflict classification"]
+    must_not_include: ["unsupported silent harmonisation"]
+  - id: verify-does-not-redraft
+    prompt: "Run a verification pass and then rewrite the entire agreement into a better commercial position."
+    expected_skill: null
+    expected_behavior: "Do not use Verify as the primary substantive redrafting workflow; route the dominant outcome to Contracts."
+    must_include: ["Contracts boundary"]
+    must_not_include: ["Verify substituted for redline-proposer"]
+  - id: negative-first-draft
+    prompt: "Draft a new witness statement from my interview notes."
+    expected_skill: null
+    expected_behavior: "Route first-instance witness drafting to Litigation rather than Verify."
+    must_include: ["Litigation boundary"]
+    must_not_include: ["verification of nonexistent finished draft"]

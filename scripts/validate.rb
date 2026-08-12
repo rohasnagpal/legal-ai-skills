@@ -205,7 +205,37 @@ Dir.glob('plugins/*/tests/*.{yaml,yml}').sort.each do |f|
   end
   ids.group_by { |id| id }.each { |id, occ| errors << "#{f}: duplicate case id '#{id}'" if occ.length > 1 }
 
-  if f == 'plugins/contracts/tests/routing-behavior.yaml'
+  if File.basename(f) == 'behavioral-evals.yaml'
+    plugin_name = f.split('/')[1]
+    errors << "#{f}: version must be 1" unless data['version'] == 1
+    errors << "#{f}: plugin '#{data['plugin']}' does not match folder '#{plugin_name}'" unless data['plugin'] == plugin_name
+    errors << "#{f}: risk_tier must be high" unless data['risk_tier'] == 'high'
+
+    plugin_skills = Dir.glob("plugins/#{plugin_name}/skills/*/SKILL.md").map { |path| File.basename(File.dirname(path)) }
+    positive_count = 0
+    negative_count = 0
+
+    cases.each_with_index do |test_case, index|
+      next unless test_case.is_a?(Hash)
+
+      errors << "#{f}: case #{index + 1} must declare expected_skill (use null for a negative case)" unless test_case.key?('expected_skill')
+      expected_skill = test_case['expected_skill']
+      if expected_skill.nil?
+        negative_count += 1
+      else
+        positive_count += 1
+        errors << "#{f}: case #{test_case['id']} references unknown skill '#{expected_skill}'" unless plugin_skills.include?(expected_skill)
+      end
+
+      %w[must_include must_not_include].each do |key|
+        value = test_case[key]
+        errors << "#{f}: case #{test_case['id']} #{key} must be a non-empty string array" unless value.is_a?(Array) && !value.empty? && value.all? { |item| item.is_a?(String) && !item.strip.empty? }
+      end
+    end
+
+    errors << "#{f}: needs at least 5 positive cases" if positive_count < 5
+    errors << "#{f}: needs at least 1 negative case" if negative_count < 1
+  elsif f == 'plugins/contracts/tests/routing-behavior.yaml'
     contract_skills = Dir.glob('plugins/contracts/skills/*/SKILL.md').map { |path| File.basename(File.dirname(path)) }
     covered_skills = cases.map { |test_case| test_case['expected_skill'] }.compact.uniq
     missing_skills = contract_skills - covered_skills

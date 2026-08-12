@@ -129,7 +129,7 @@ ChatGPT and Codex use the same public plugin directory. Installation and use can
 [tax](#tax) ·
 [verify](#verify)
 
-All 160 skills below are built and linked to their `SKILL.md`.
+All 166 skills below are built and linked to their `SKILL.md`.
 
 ---
 
@@ -266,10 +266,16 @@ All 160 skills below are built and linked to their `SKILL.md`.
 - **[case-law-analyst](plugins/litigation/skills/case-law-analyst/SKILL.md)**: verified holdings, ratio, obiter, treatment, application and distinction
 - **[chronology-builder](plugins/litigation/skills/chronology-builder/SKILL.md)**: sourced event, knowledge and procedural chronologies with conflicts and gaps
 - **[cross-examination-planner](plugins/litigation/skills/cross-examination-planner/SKILL.md)**: ethical issue-led questioning, contradictions and admissible impeachment
+- **[disclosure-request-drafter](plugins/litigation/skills/disclosure-request-drafter/SKILL.md)**: proportionate issue-linked disclosure, discovery and inspection requests
+- **[document-review-protocol-builder](plugins/litigation/skills/document-review-protocol-builder/SKILL.md)**: defensible review coding, privilege, quality control and escalation protocols
 - **[evidence-organizer](plugins/litigation/skills/evidence-organizer/SKILL.md)**: evidence mapped to facts, elements, witnesses, foundations and objections
 - **[interim-application-drafter](plugins/litigation/skills/interim-application-drafter/SKILL.md)**: evidence-backed urgent relief, candour, undertakings and workable orders
+- **[legal-hold-planner](plugins/litigation/skills/legal-hold-planner/SKILL.md)**: preservation triggers, custodians, sources, notices, monitoring and release controls
 - **[limitation-checker](plugins/litigation/skills/limitation-checker/SKILL.md)**: competing deadline scenarios, accrual, exclusions, extensions and forum issues
 - **[pleadings-analyst](plugins/litigation/skills/pleadings-analyst/SKILL.md)**: claims, defences, admissions, inconsistencies, particulars and live issues
+- **[privilege-log-builder](plugins/litigation/skills/privilege-log-builder/SKILL.md)**: supportable privilege entries, family reconciliation, waiver flags and challenges
+- **[production-set-checker](plugins/litigation/skills/production-set-checker/SKILL.md)**: pre-release scope, file, metadata, privilege, redaction and delivery quality control
+- **[redaction-reviewer](plugins/litigation/skills/redaction-reviewer/SKILL.md)**: legal-basis, consistency and technical-permanence review of redactions
 - **[witness-statement-drafter](plugins/litigation/skills/witness-statement-drafter/SKILL.md)**: witness-owned factual evidence, exhibits, uncertainty and formalities
 - **[written-submissions-drafter](plugins/litigation/skills/written-submissions-drafter/SKILL.md)**: issue-led, authority-verified and record-linked written advocacy
 

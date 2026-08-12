@@ -31,7 +31,7 @@ Apply these rules after identifying the user's principal deliverable. Select exa
 - Route tax notices and tax appeals to Tax.
 - Route regulator notices, examinations, licences, filings, and sanctions screening to Regulatory.
 - Route RTI, PIL, government procurement, and public-law deliverables to Public.
-- Route general civil or commercial court pleadings, evidence, limitation, witnesses, submissions, appeals, and cross-examination to Litigation.
+- Route general civil or commercial court preservation and legal holds, disclosure or discovery requests, document-review protocols, privilege logs, production checking, redaction review, pleadings, evidence, limitation, witnesses, submissions, appeals, and cross-examination to Litigation.
 - Route evidence collection, forensic review, fraud analysis, OSINT, transaction tracing, chain of custody, and investigation reports to Investigations, even if litigation may follow.
 
 ## Settlement routing
@@ -55,6 +55,7 @@ Apply these rules after identifying the user's principal deliverable. Select exa
 - Shareholder governance agreement outside a venture financing context: Corporate.
 - Debt enforcement before IBC: Finance; CIRP, liquidation, claims, avoidance, or resolution plans: Insolvency.
 - Workplace investigation: Employment; fraud, digital evidence, OSINT, tracing, or whistleblower investigation: Investigations.
+- Litigation preservation, disclosure, privilege logs, production QC, or legal redaction review: Litigation; forensic acquisition, authenticity, integrity, or chain of custody: Investigations.
 - Family succession or will: Family; title transfer, sale deed, lease, or encumbrance: Property.
 - FEMA: Tax, because that capability is packaged there in this catalogue.
 - Securities compliance: Finance; listed-company governance obligations: Corporate.

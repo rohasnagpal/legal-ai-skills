@@ -217,7 +217,7 @@
     {
       "name": "litigation",
       "source": "./plugins/litigation",
-      "description": "Appeals, authorities, chronologies, evidence, witnesses, interim relief, limitation, pleadings, and submissions skills.",
+      "description": "Litigation analysis, drafting, preservation, disclosure, document review, privilege, redaction, production, evidence, and hearing skills.",
       "author": {
         "name": "Rohas Nagpal",
         "url": "https://rohasnagpal.com"

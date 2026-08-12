@@ -110,9 +110,9 @@ Internal capabilities: infringement analysis; cease-and-desist drafting; IP assi
 
 **Display name:** Rohas Legal AI: Litigation
 
-Use for general civil or commercial court litigation: appeals, authorities applied to a case, chronologies, evidence organisation, cross-examination, interim applications, limitation, pleadings analysis, witness statements, and written submissions. Yield to a specialised procedural plugin such as Criminal, Arbitration, Consumer, Tax, or Public when applicable.
+Use for general civil or commercial court litigation: preservation and legal holds, disclosure or discovery requests, document-review protocols, privilege logs, production checking, redaction review, appeals, authorities applied to a case, chronologies, evidence organisation, cross-examination, interim applications, limitation, pleadings analysis, witness statements, and written submissions. Yield to a specialised procedural plugin such as Criminal, Arbitration, Consumer, Tax, or Public when applicable.
 
-Internal capabilities: appeal grounds; case-law analysis; chronologies; cross-examination plans; evidence organisation; interim applications; limitation checks; pleadings analysis; witness statements; written submissions.
+Internal capabilities: legal-hold planning; disclosure-request drafting; document-review protocols; privilege logs; production-set checking; redaction review; appeal grounds; case-law analysis; chronologies; cross-examination plans; evidence organisation; interim applications; limitation checks; pleadings analysis; witness statements; written submissions.
 
 ## Mediation
 
