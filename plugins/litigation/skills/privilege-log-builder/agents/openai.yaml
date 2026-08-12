@@ -1,0 +1,4 @@
+interface:
+  display_name: "Privilege Log Builder"
+  short_description: "Build supportable privilege logs"
+  default_prompt: "Use -log-builder to prepare a privilege log with defensible entries, document families, asserted grounds, redaction treatment, and verification gaps."

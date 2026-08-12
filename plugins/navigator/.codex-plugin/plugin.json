@@ -1,6 +1,6 @@
 {
   "name": "navigator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Routes a legal task to exactly one of the 24 Rohas Legal AI plugins and creates a ready-to-paste prompt for that plugin.",
   "author": {
     "name": "Rohas Nagpal",

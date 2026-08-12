@@ -1,0 +1,4 @@
+interface:
+  display_name: "Redaction Reviewer"
+  short_description: "Review legal redactions and disclosure risk"
+  default_prompt: "Use -reviewer to assess proposed redactions, legal basis, consistency, reversibility, metadata leakage, and the need for a clean or confidential version."

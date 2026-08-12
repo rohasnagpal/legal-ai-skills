@@ -1,0 +1,4 @@
+interface:
+  display_name: "Disclosure Request Drafter"
+  short_description: "Draft proportionate disclosure requests"
+  default_prompt: "Use -request-drafter to draft targeted disclosure requests tied to the pleaded issues, custodians, sources, time periods, and applicable procedure."

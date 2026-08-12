@@ -1,0 +1,52 @@
+version: 1
+plugin: research
+risk_tier: high
+cases:
+  - id: issue-spotter-no-conclusion
+    prompt: "Spot every legal issue in this incomplete transaction record and tell me who wins."
+    expected_skill: issue-spotter
+    expected_behavior: "Build an issue map, distinguish facts and assumptions, and avoid a merits conclusion that the incomplete record cannot support."
+    must_include: ["issue map", "missing facts", "research questions"]
+    must_not_include: ["unsupported winner prediction"]
+  - id: forum-current-rules
+    prompt: "Which forum can hear this claim and what must be filed this week?"
+    expected_skill: forum-jurisdiction-analyst
+    expected_behavior: "Verify current jurisdiction, venue, threshold, exhaustion, service, limitation, and procedural rules from official sources."
+    must_include: ["current official sources", "forum alternatives", "deadline verification"]
+    must_not_include: ["invented filing requirement"]
+  - id: comparative-like-for-like
+    prompt: "Compare privacy law in India, the EU and California and say which is strictest."
+    expected_skill: comparative-analyst
+    expected_behavior: "Define comparison dimensions and dates, compare like with like, identify material structural differences, and avoid an undefined strictness ranking."
+    must_include: ["comparison dimensions", "as-of date", "scope differences"]
+    must_not_include: ["undefined strictest conclusion"]
+  - id: legislative-history-primary
+    prompt: "Explain why this statutory phrase was added using legislative history."
+    expected_skill: legislative-history-analyst
+    expected_behavior: "Build a dated source chain from authoritative legislative materials and distinguish documented history from inference."
+    must_include: ["primary legislative materials", "chronology", "inference label"]
+    must_not_include: ["invented legislative intent"]
+  - id: precedent-good-law
+    prompt: "Map the authorities and confirm that every case remains good law."
+    expected_skill: precedent-mapper
+    expected_behavior: "Trace propositions, hierarchy, treatment, later history and negative consideration, and state search limitations."
+    must_include: ["subsequent treatment", "court hierarchy", "search date", "limitations"]
+    must_not_include: ["good-law guarantee without verification"]
+  - id: synthesis-supplied-record
+    prompt: "Synthesize these research notes but fill missing authorities from memory."
+    expected_skill: research-synthesiser
+    expected_behavior: "Synthesize the supplied record, preserve source attribution, identify gaps, and refuse to invent missing authorities."
+    must_include: ["source-linked synthesis", "gap list", "confidence"]
+    must_not_include: ["authority supplied from unverified memory"]
+  - id: statutory-text-version
+    prompt: "Interpret this section without checking which version applied on the transaction date."
+    expected_skill: statutory-interpreter
+    expected_behavior: "Identify the applicable text and date, definitions, context, amendments, delegated instruments, and controlling interpretation before concluding."
+    must_include: ["applicable version", "effective date", "definitions and context"]
+    must_not_include: ["current text assumed historically applicable"]
+  - id: negative-formal-opinion
+    prompt: "Draft a formal client opinion applying the completed research to our facts."
+    expected_skill: null
+    expected_behavior: "Route the formal client deliverable to Advisory rather than Research."
+    must_include: ["Advisory boundary"]
+    must_not_include: ["research-only output substituted"]

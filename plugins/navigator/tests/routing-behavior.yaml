@@ -41,6 +41,12 @@ cases:
   - id: litigation-cross-examination
     prompt: "Build a cross-examination plan for this witness in our commercial suit."
     expected_behavior: "Select Rohas Legal AI: Litigation and return only the instruction line and prompt."
+  - id: litigation-disclosure
+    prompt: "Plan the legal hold, draft disclosure requests, and create the privilege and production QC process for our commercial suit."
+    expected_behavior: "Select Rohas Legal AI: Litigation and preserve the preservation, disclosure, privilege, and production needs in the generated prompt."
+  - id: investigations-forensic-boundary
+    prompt: "Forensically acquire this phone, verify the disk image, and document chain of custody before any suit is filed."
+    expected_behavior: "Select Rohas Legal AI: Investigations, not Litigation, and return only the instruction line and prompt."
   - id: mediation-caucus
     prompt: "Help us decide what to disclose in the mediation caucus."
     expected_behavior: "Select Rohas Legal AI: Mediation and return only the instruction line and prompt."

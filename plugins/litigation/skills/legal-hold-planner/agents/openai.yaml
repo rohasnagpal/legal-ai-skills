@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Hold Planner"
+  short_description: "Plan defensible preservation and legal holds"
+  default_prompt: "Use -hold-planner to define custodians, sources, scope, notices, collection safeguards, monitoring, and release for this anticipated dispute."

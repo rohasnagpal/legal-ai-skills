@@ -1,7 +1,7 @@
 {
   "name": "litigation",
-  "version": "0.2.1",
-  "description": "Appeals, authorities, chronologies, evidence, witnesses, interim relief, limitation, pleadings, and submissions skills.",
+  "version": "0.3.0",
+  "description": "Litigation analysis, drafting, preservation, disclosure, review, privilege, redaction, production, evidence, and hearing skills.",
   "author": {
     "name": "Rohas Nagpal",
     "url": "https://rohasnagpal.com"
@@ -14,7 +14,7 @@
   "interface": {
     "displayName": "Rohas Legal AI: Litigation",
     "shortDescription": "Litigation workflows",
-    "longDescription": "Ten reusable litigation workflows covering appeals, case law, chronologies, cross-examination, evidence, interim applications, limitation, pleadings, witness statements, and written submissions.",
+    "longDescription": "Sixteen litigation workflows covering appeals, case law, chronologies, cross-examination, evidence, interim applications, limitation, pleadings, witnesses, submissions, legal holds, disclosure requests, document review, privilege logs, redactions, and production quality control.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
@@ -23,7 +23,7 @@
     "composerIcon": "./assets/composer-icon.svg",
     "logo": "./assets/logo.svg",
     "defaultPrompt": [
-      "Analyse this record and organise the live issues, evidence, authorities, and deadlines.",
+      "Plan preservation, disclosure, review, privilege, redaction, and production for this dispute.",
       "Prepare this appeal, interim application, witness evidence, or written submissions.",
       "Build a sourced chronology, proof matrix, or cross-examination plan for this hearing."
     ]

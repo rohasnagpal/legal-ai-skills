@@ -1,0 +1,4 @@
+interface:
+  display_name: "Production Set Checker"
+  short_description: "Check disclosure productions before release"
+  default_prompt: "Use -set-checker to audit this production set for scope, completeness, metadata, numbering, redactions, privilege, confidentiality, and delivery defects."

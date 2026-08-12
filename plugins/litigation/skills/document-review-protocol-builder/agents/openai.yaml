@@ -1,0 +1,4 @@
+interface:
+  display_name: "Document Review Protocol Builder"
+  short_description: "Design defensible document review protocols"
+  default_prompt: "Use -review-protocol-builder to create a review protocol covering scope, responsiveness, issues, privilege, confidentiality, quality control, and escalation."
