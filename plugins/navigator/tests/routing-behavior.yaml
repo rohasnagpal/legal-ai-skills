@@ -56,6 +56,9 @@ cases:
   - id: privacy-dpa
     prompt: "Review this data processing agreement from the controller's side."
     expected_behavior: "Select Rohas Legal AI: Privacy, not Contracts, and return only the instruction line and prompt."
+  - id: privacy-project-policy
+    prompt: "Go through the website frontend and backend in this Codex project and create the proper privacy policy. Do not ask me for a URL first."
+    expected_behavior: "Select Rohas Legal AI: Privacy and generate a prompt that preserves the current Codex project as the evidence source, instructs Privacy to inspect relevant project files before requesting a URL, derives an evidence-backed data-flow inventory, distinguishes confirmed facts from inference and unresolved operational facts, and creates the privacy policy artifact."
   - id: property-title
     prompt: "Trace the chain of title and identify gaps in these property documents."
     expected_behavior: "Select Rohas Legal AI: Property and return only the instruction line and prompt."

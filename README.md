@@ -290,7 +290,7 @@ All 166 skills below are built and linked to their `SKILL.md`.
 
 ### navigator
 
-- **[legal-ai-navigator](plugins/navigator/skills/legal-ai-navigator/SKILL.md)**: selects the right Rohas Legal AI plugin and creates the prompt to paste into it
+- **[legal-ai-navigator](plugins/navigator/skills/legal-ai-navigator/SKILL.md)**: selects the right Rohas Legal AI plugin and creates a context-aware prompt that preserves project and evidence sources
 
 ### practice
 
@@ -307,7 +307,7 @@ All 166 skills below are built and linked to their `SKILL.md`.
 - **[data-processing-agreement-reviewer](plugins/privacy/skills/data-processing-agreement-reviewer/SKILL.md)**: roles, instructions, security, subprocessors, audits, transfers and deletion
 - **[dpdp-compliance-checker](plugins/privacy/skills/dpdp-compliance-checker/SKILL.md)**: commenced DPDP duties, evidence and implementation readiness **(India)**
 - **[dpia-documenter](plugins/privacy/skills/dpia-documenter/SKILL.md)**: necessity, proportionality, individual risk, safeguards and residual approval
-- **[privacy-policy-drafter](plugins/privacy/skills/privacy-policy-drafter/SKILL.md)**: accurate layered notices matched to verified processing
+- **[privacy-policy-drafter](plugins/privacy/skills/privacy-policy-drafter/SKILL.md)**: project-aware code audits and accurate layered notices matched to verified processing
 
 ### property
 

@@ -134,9 +134,9 @@ Internal capabilities: briefs to counsel; closure reports; conflict checks; cost
 
 **Display name:** Rohas Legal AI: Privacy
 
-Use for privacy incidents, cross-border data transfers, data-processing agreements, Indian DPDP compliance, DPIAs, and privacy policies or notices.
+Use for privacy incidents, cross-border data transfers, data-processing agreements, Indian DPDP compliance, DPIAs, and privacy policies or notices, including project-aware audits that derive data flows from website or application code.
 
-Internal capabilities: breach response; cross-border transfer analysis; DPA review; DPDP compliance; DPIA documentation; privacy policy drafting.
+Internal capabilities: breach response; cross-border transfer analysis; DPA review; DPDP compliance; DPIA documentation; privacy policy drafting from supplied inventories, deployed services, or current Codex project files.
 
 ## Property
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "Privacy Policy Drafter"
-  short_description: "Draft accurate layered privacy notices"
-  default_prompt: "Use $privacy-policy-drafter to produce a clear privacy notice matched to the organisation's verified data flows, legal bases, sharing, transfers, retention, rights, and contact routes."
+  short_description: "Audit project data flows and draft notices"
+  default_prompt: "Use $privacy-policy-drafter to inspect this project's website or application code, derive its actual data flows, identify unresolved operational facts, and create an accurate privacy policy."

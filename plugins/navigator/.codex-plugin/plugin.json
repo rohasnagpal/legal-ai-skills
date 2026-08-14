@@ -1,7 +1,7 @@
 {
   "name": "navigator",
-  "version": "0.1.1",
-  "description": "Routes a legal task to exactly one of the 24 Rohas Legal AI plugins and creates a ready-to-paste prompt for that plugin.",
+  "version": "0.1.2",
+  "description": "Routes a legal task to exactly one of the 24 Rohas Legal AI plugins and creates a context-aware, ready-to-paste prompt for that plugin.",
   "author": {
     "name": "Rohas Nagpal",
     "url": "https://rohasnagpal.com"
@@ -14,7 +14,7 @@
   "interface": {
     "displayName": "Rohas Legal AI: Navigator",
     "shortDescription": "Find the right legal plugin",
-    "longDescription": "A closed-world router for the 24 Rohas Legal AI practice plugins. It identifies the single best plugin for the user's intended legal outcome and produces a complete prompt to paste after selecting that plugin with @rohas.",
+    "longDescription": "A closed-world router for the 24 Rohas Legal AI practice plugins. It identifies the single best plugin for the user's intended legal outcome and produces a complete prompt that preserves available project, document, and evidence context.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],

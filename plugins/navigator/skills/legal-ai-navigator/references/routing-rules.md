@@ -18,6 +18,9 @@ Apply these rules after identifying the user's principal deliverable. Select exa
 - Route founders' agreements, venture term sheets, SHA/SSA investment documents, ESOPs, startup SaaS terms, and startup compliance to Startup.
 - Route established-company shareholder agreements, governance, M&A diligence, restructuring, board matters, listing obligations, and secretarial compliance to Corporate.
 - Route DPAs and privacy-governance documents to Privacy.
+- Route requests to inspect a website or application project and create its privacy
+  policy to Privacy. Preserve the current Codex project as the evidence source and
+  instruct Privacy to inspect it before requesting a public URL.
 - Route IP assignments, licences, infringement, and trademark proceedings to IP.
 - Route leases, sale deeds, development agreements, title, encumbrances, RERA, and stamp duty to Property.
 - Route government contracts and tender compliance to Public.

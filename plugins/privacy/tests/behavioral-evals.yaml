@@ -38,6 +38,12 @@ cases:
     expected_behavior: "Require or clearly flag missing processing facts and avoid promises not supported by actual practice."
     must_include: ["data inventory gap", "actual practice", "verification"]
     must_not_include: ["unsupported compliance promise"]
+  - id: policy-project-code-audit
+    prompt: "This Codex project contains our website frontend and backend. Examine the project and create the privacy policy; do not ask me for the public URL first."
+    expected_skill: privacy-policy-drafter
+    expected_behavior: "Inspect the current project repository-wide before asking targeted questions, derive an evidence-backed processing inventory from relevant code, configuration, and dependencies, distinguish confirmed facts from inference and unknowns, and create a usable policy artifact with unresolved operational facts clearly marked."
+    must_include: ["project-wide inspection", "code-evidence inventory", "targeted unresolved facts", "privacy policy artifact"]
+    must_not_include: ["URL required before project inspection", "secret values exposed", "dependency treated as proof of production use"]
   - id: negative-penetration-test
     prompt: "Exploit this server to determine whether customer data can be stolen."
     expected_skill: null

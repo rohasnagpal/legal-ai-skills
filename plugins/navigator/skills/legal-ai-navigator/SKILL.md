@@ -43,12 +43,18 @@ Include only relevant elements from this checklist:
 - the user's party, role, or reviewing perspective;
 - material facts, figures, dates, and constraints supplied by the user;
 - the documents or evidence to analyse;
+- the current Codex project or workspace as an evidence source when the user asks
+  the selected plugin to inspect available project files;
 - the expected deliverable and useful structure;
 - source, citation, verification, or current-law requirements appropriate to the task;
 - a direction to distinguish supplied facts, assumptions, inferences, and unresolved points;
 - a direction to request materially missing information before relying on it.
 
 Preserve the user's facts and terminology. Never invent a jurisdiction, party position, document, deadline, authority, or commercial term. Do not pad the prompt with legal boilerplate unrelated to the task.
+
+When the user identifies the current Codex project or workspace as the source,
+preserve that instruction explicitly. Do not replace it with a request for a URL,
+upload, or generic questionnaire.
 
 Do not put an `@` mention inside the generated prompt. The instruction line tells the user how to select the plugin.
 
