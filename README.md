@@ -1,11 +1,10 @@
 # Legal AI Skills
 
-An open collection of Legal AI Skills for Claude, ChatGPT and Codex.
+An open collection of Legal AI Skills for ChatGPT and Claude.
 
 A skill is a reusable set of written instructions for an AI assistant. Each skill teaches an AI assistant how to handle one kind of legal task properly.
 
-Skills are also bundled into plugins. A plugin is an installable practice pack containing several skills. Install the ones you need and the AI assistant can
-use them automatically when the work matches.
+Skills are also bundled into plugins. A plugin is an installable practice pack containing several skills. Install the ones you need and the AI assistant can use them automatically when the work matches.
 
 **Who this is for:** Practising lawyers, in-house counsel, and law students who already know the
 law and want the drafting and analysis work to go faster. These skills assume
@@ -18,6 +17,7 @@ governing jurisdiction before it relies on any specific rule.
 
 Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com).
 
+[![Watch the video](https://github.com/user-attachments/assets/dfb5665c-175d-482b-8673-4d96f039640c)](https://youtu.be/LJDxwzmIKbg)
 ---
 **Table of Contents**
 
