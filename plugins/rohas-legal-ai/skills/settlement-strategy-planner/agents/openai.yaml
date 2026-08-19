@@ -1,0 +1,4 @@
+interface:
+  display_name: "Settlement Strategy Planner"
+  short_description: "Build a BATNA/WATNA-grounded settlement negotiating strategy"
+  default_prompt: "Use $settlement-strategy-planner to build our BATNA, WATNA, and negotiating range before talks start."

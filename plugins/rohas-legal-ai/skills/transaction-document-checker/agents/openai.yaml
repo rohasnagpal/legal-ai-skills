@@ -1,0 +1,4 @@
+interface:
+  display_name: "Transaction Document Checker"
+  short_description: "Check a closing set against the CP checklist"
+  default_prompt: "Use $transaction-document-checker to check this closing set against our conditions-precedent checklist and tell us what's still missing."

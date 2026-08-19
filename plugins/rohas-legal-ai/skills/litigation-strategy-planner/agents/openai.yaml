@@ -1,0 +1,4 @@
+interface:
+  display_name: "Litigation Strategy Planner"
+  short_description: "Build an integrated whole-matter litigation strategy"
+  default_prompt: "Use $litigation-strategy-planner to pull together where this case stands and map out our sequenced strategy from here."

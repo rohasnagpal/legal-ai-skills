@@ -136,7 +136,7 @@ Gemini CLI reads skills from a project or user-level `skills/` directory, and it
 [tax](#tax) ·
 [verify](#verify)
 
-All 150 skills below live in one plugin — `plugins/rohas-legal-ai/skills/` — grouped here by practice area for browsing, and linked to their `SKILL.md`.
+All 160 skills below live in one plugin — `plugins/rohas-legal-ai/skills/` — grouped here by practice area for browsing, and linked to their `SKILL.md`.
 
 ---
 
@@ -147,6 +147,7 @@ All 150 skills below live in one plugin — `plugins/rohas-legal-ai/skills/` —
 - **[demand-notice-drafter](plugins/rohas-legal-ai/skills/demand-notice-drafter/SKILL.md)**: pre-litigation demand notices with the claim properly particularised
 - **[engagement-letter-drafter](plugins/rohas-legal-ai/skills/engagement-letter-drafter/SKILL.md)**: scope, fees, exclusions and conflict position in a client engagement letter
 - **[legal-explainer](plugins/rohas-legal-ai/skills/legal-explainer/SKILL.md)**: restates a legal position in language a client can actually act on
+- **[legal-notice-analyser](plugins/rohas-legal-ai/skills/legal-notice-analyser/SKILL.md)**: analyses a received notice's allegations, deadlines and evidence needs before replying
 - **[legal-opinion-drafter](plugins/rohas-legal-ai/skills/legal-opinion-drafter/SKILL.md)**: structured written legal or tax opinion with question, analysis, conclusion and caveats — tax opinions add a risk-characterisation and exposure step
 - **[legal-risk-assessor](plugins/rohas-legal-ai/skills/legal-risk-assessor/SKILL.md)**: sets out the options on a decision, with the risk and likely outcome of each
 - **[notice-reply-drafter](plugins/rohas-legal-ai/skills/notice-reply-drafter/SKILL.md)**: replies to a legal notice, dealing with each allegation in turn
@@ -172,6 +173,7 @@ All 150 skills below live in one plugin — `plugins/rohas-legal-ai/skills/` —
 - **[pre-institution-mediation-advisor](plugins/rohas-legal-ai/skills/pre-institution-mediation-advisor/SKILL.md)**: mandatory pre-institution mediation requirements **(India)**
 - **[settlement-documenter](plugins/rohas-legal-ai/skills/settlement-documenter/SKILL.md)**: records a session outcome, or drafts complete binding settlement terms, once agreement is reached
 - **[settlement-evaluator](plugins/rohas-legal-ai/skills/settlement-evaluator/SKILL.md)**: tests a settlement offer against the litigation alternative
+- **[settlement-strategy-planner](plugins/rohas-legal-ai/skills/settlement-strategy-planner/SKILL.md)**: builds BATNA/WATNA, negotiating range and concession sequencing before any offer exists
 
 ### consumer
 
@@ -195,6 +197,7 @@ All 150 skills below live in one plugin — `plugins/rohas-legal-ai/skills/` —
 ### corporate
 
 - **[board-resolution-drafter](plugins/rohas-legal-ai/skills/board-resolution-drafter/SKILL.md)**: board and shareholder resolutions in correct form
+- **[deal-structure-analyst](plugins/rohas-legal-ai/skills/deal-structure-analyst/SKILL.md)**: compares alternative transaction structures and their legal consequences before drafting
 - **[investment-and-shareholder-agreement-reviewer](plugins/rohas-legal-ai/skills/investment-and-shareholder-agreement-reviewer/SKILL.md)**: term sheets, SHAs, SSAs, JV and constitutional rights packages, from any party's side
 - **[listing-obligations-checker](plugins/rohas-legal-ai/skills/listing-obligations-checker/SKILL.md)**: continuous disclosure and listing obligations **(India)**
 - **[m-and-a-diligence-checker](plugins/rohas-legal-ai/skills/m-and-a-diligence-checker/SKILL.md)**: diligence checklist and issue log for a transaction
@@ -202,6 +205,7 @@ All 150 skills below live in one plugin — `plugins/rohas-legal-ai/skills/` —
 - **[related-party-analyst](plugins/rohas-legal-ai/skills/related-party-analyst/SKILL.md)**: identifies related party transactions and the approvals required **(India)**
 - **[restructuring-documenter](plugins/rohas-legal-ai/skills/restructuring-documenter/SKILL.md)**: documentation trail for a corporate restructuring
 - **[secretarial-compliance-checker](plugins/rohas-legal-ai/skills/secretarial-compliance-checker/SKILL.md)**: secretarial and filing obligations for a company **(India)**
+- **[transaction-document-checker](plugins/rohas-legal-ai/skills/transaction-document-checker/SKILL.md)**: checks a closing set against the term sheet and conditions-precedent checklist
 
 ### criminal
 
@@ -272,13 +276,16 @@ IP licence review lives inside **contract-reviewer** as a specialist reference �
 - **[appeal-grounds-drafter](plugins/rohas-legal-ai/skills/appeal-grounds-drafter/SKILL.md)**: record-linked grounds, preserved errors, standards of review and relief
 - **[case-law-analyst](plugins/rohas-legal-ai/skills/case-law-analyst/SKILL.md)**: verified holdings, ratio, obiter, treatment, application and distinction
 - **[chronology-builder](plugins/rohas-legal-ai/skills/chronology-builder/SKILL.md)**: sourced event, knowledge and procedural chronologies with conflicts and gaps
+- **[court-order-compliance-checker](plugins/rohas-legal-ai/skills/court-order-compliance-checker/SKILL.md)**: turns an order into tracked obligations, deadlines and contempt-risk assessment
 - **[cross-examination-planner](plugins/rohas-legal-ai/skills/cross-examination-planner/SKILL.md)**: ethical issue-led questioning, contradictions and admissible impeachment
+- **[damages-quantifier](plugins/rohas-legal-ai/skills/damages-quantifier/SKILL.md)**: general commercial/civil damages head by head — expectation, reliance, lost profits, interest, mitigation
 - **[disclosure-request-drafter](plugins/rohas-legal-ai/skills/disclosure-request-drafter/SKILL.md)**: proportionate issue-linked disclosure, discovery and inspection requests
 - **[document-review-protocol-builder](plugins/rohas-legal-ai/skills/document-review-protocol-builder/SKILL.md)**: defensible review coding, privilege, quality control and escalation protocols
 - **[evidence-organizer](plugins/rohas-legal-ai/skills/evidence-organizer/SKILL.md)**: evidence mapped to facts, elements, witnesses, foundations and objections
 - **[interim-application-drafter](plugins/rohas-legal-ai/skills/interim-application-drafter/SKILL.md)**: evidence-backed urgent relief, candour, undertakings and workable orders
 - **[legal-hold-planner](plugins/rohas-legal-ai/skills/legal-hold-planner/SKILL.md)**: preservation triggers, custodians, sources, notices, monitoring and release controls
 - **[limitation-checker](plugins/rohas-legal-ai/skills/limitation-checker/SKILL.md)**: competing deadline scenarios, accrual, exclusions, extensions and forum issues
+- **[litigation-strategy-planner](plugins/rohas-legal-ai/skills/litigation-strategy-planner/SKILL.md)**: integrates claims, evidence, limitation, forum, interim relief and cost into one sequenced strategy
 - **[pleadings-analyst](plugins/rohas-legal-ai/skills/pleadings-analyst/SKILL.md)**: claims, defences, admissions, inconsistencies, particulars and live issues
 - **[privilege-log-builder](plugins/rohas-legal-ai/skills/privilege-log-builder/SKILL.md)**: supportable privilege entries, family reconciliation, waiver flags and challenges
 - **[production-set-checker](plugins/rohas-legal-ai/skills/production-set-checker/SKILL.md)**: pre-release scope, file, metadata, privilege, redaction and delivery quality control
@@ -325,6 +332,7 @@ Lease and leave-and-licence review lives inside **contract-reviewer** as a speci
 
 ### regulatory
 
+- **[compliance-obligations-mapper](plugins/rohas-legal-ai/skills/compliance-obligations-mapper/SKILL.md)**: turns a regulation's text into an owners-and-deadlines obligations register
 - **[examination-response-drafter](plugins/rohas-legal-ai/skills/examination-response-drafter/SKILL.md)**: evidence-led examination, deficiency and show-cause responses with credible remediation
 - **[licence-application-drafter](plugins/rohas-legal-ai/skills/licence-application-drafter/SKILL.md)**: complete licence and registration applications with requirements, evidence and conditions
 - **[regulatory-applicability-analyst](plugins/rohas-legal-ai/skills/regulatory-applicability-analyst/SKILL.md)**: regulator and instrument mapping from current official text, with verification gaps reported
@@ -337,6 +345,7 @@ Lease and leave-and-licence review lives inside **contract-reviewer** as a speci
 - **[comparative-analyst](plugins/rohas-legal-ai/skills/comparative-analyst/SKILL.md)**: compares the position across jurisdictions or statutes
 - **[forum-jurisdiction-analyst](plugins/rohas-legal-ai/skills/forum-jurisdiction-analyst/SKILL.md)**: which forum, which jurisdiction, and what turns on the choice
 - **[issue-spotter](plugins/rohas-legal-ai/skills/issue-spotter/SKILL.md)**: reads a fact pattern for issues, causes of action and threshold problems
+- **[legal-research-planner](plugins/rohas-legal-ai/skills/legal-research-planner/SKILL.md)**: breaks a broad question into sub-questions, source hierarchy and a search strategy before research starts
 - **[legislative-history-analyst](plugins/rohas-legal-ai/skills/legislative-history-analyst/SKILL.md)**: traces how a provision reached its current form
 - **[precedent-mapper](plugins/rohas-legal-ai/skills/precedent-mapper/SKILL.md)**: maps the authorities on a point and how they relate
 - **[research-synthesiser](plugins/rohas-legal-ai/skills/research-synthesiser/SKILL.md)**: pulls scattered research into a single reasoned position
@@ -366,6 +375,7 @@ Formal tax opinions now live in **legal-opinion-drafter** (Advisory) — see abo
 
 - **[adversarial-reviewer](plugins/rohas-legal-ai/skills/adversarial-reviewer/SKILL.md)**: attacks your own draft the way opposing counsel would
 - **[assumption-flagger](plugins/rohas-legal-ai/skills/assumption-flagger/SKILL.md)**: surfaces every assumption a draft depends on
+- **[authority-validator](plugins/rohas-legal-ai/skills/authority-validator/SKILL.md)**: tests whether a cited authority actually supports the point, is still good law, and binds this forum
 - **[citation-integrity-checker](plugins/rohas-legal-ai/skills/citation-integrity-checker/SKILL.md)**: flags every citation with what must be verified and how
 - **[consistency-checker](plugins/rohas-legal-ai/skills/consistency-checker/SKILL.md)**: checks facts, dates, defined terms and figures across a document set
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Damages Quantifier"
+  short_description: "Build a commercial or civil damages claim head by head"
+  default_prompt: "Use $damages-quantifier to work out our lost profits and wasted expenditure claim from this breach, with interest and mitigation applied."
