@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bail Advisor and Drafter"
+  short_description: "Assess anticipatory or post-arrest bail strategy and draft the application"
+  default_prompt: "Use $bail-advisor-and-drafter to assess our anticipatory bail prospects on these facts and draft the application if it's worth filing."

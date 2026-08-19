@@ -1,0 +1,4 @@
+interface:
+  display_name: "Investment and Shareholder Agreement Reviewer"
+  short_description: "Review term sheets, SHAs, SSAs and JV agreements from one party's side"
+  default_prompt: "Use $investment-and-shareholder-agreement-reviewer to review this shareholders' agreement from the founder's side and flag anything that concedes more control or economics than the term sheet suggests."

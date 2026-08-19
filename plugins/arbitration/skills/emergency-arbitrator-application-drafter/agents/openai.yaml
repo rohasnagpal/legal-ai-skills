@@ -1,4 +1,0 @@
-interface:
-  display_name: "Emergency Arbitrator Application Drafter"
-  short_description: "Draft urgent relief under institutional rules"
-  default_prompt: "Use $emergency-arbitrator-application-drafter to prepare an emergency relief application under the applicable rules."

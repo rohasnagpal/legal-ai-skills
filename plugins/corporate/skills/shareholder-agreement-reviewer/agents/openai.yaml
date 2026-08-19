@@ -1,4 +1,0 @@
-interface:
-  display_name: "Shareholder Agreement Reviewer"
-  short_description: "Review control, transfer, exit, and deadlock terms"
-  default_prompt: "Use $shareholder-agreement-reviewer to review this shareholders agreement from the position of the identified party."

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Tax Opinion Drafter"
-  short_description: "Draft tax opinions with the position and risk stated"
-  default_prompt: "Use $tax-opinion-drafter to draft a tax opinion on this position, with the risk graded alongside the legal conclusion."

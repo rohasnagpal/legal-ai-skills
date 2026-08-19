@@ -1,0 +1,4 @@
+interface:
+  display_name: "Consumer Pleading Drafter"
+  short_description: "Draft a consumer complaint or the opposite party's reply"
+  default_prompt: "Use $consumer-pleading-drafter to draft a consumer complaint against this repair shop for deficiency in service."

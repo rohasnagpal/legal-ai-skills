@@ -1,4 +1,0 @@
-interface:
-  display_name: "Licensing Agreement Reviewer"
-  short_description: "Review IP licence scope, economics, and control"
-  default_prompt: "Use $licensing-agreement-reviewer to review this IP licence for scope, exclusivity, territory, royalties, quality control, improvements, enforcement, and termination effects."

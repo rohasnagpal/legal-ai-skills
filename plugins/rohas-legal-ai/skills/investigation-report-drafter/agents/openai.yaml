@@ -1,0 +1,4 @@
+interface:
+  display_name: "Investigation Report Drafter"
+  short_description: "Draft a neutral, evidence-led investigation report"
+  default_prompt: "Use $investigation-report-drafter to write up this workplace misconduct investigation from the evidence log and interview notes."

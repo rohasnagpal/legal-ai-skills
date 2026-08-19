@@ -1,0 +1,4 @@
+interface:
+  display_name: "ADR Brief Drafter"
+  short_description: "Draft a mediation or conciliation brief for the neutral"
+  default_prompt: "Use $adr-brief-drafter to draft a confidential mediation brief setting out our position, facts, and interests."

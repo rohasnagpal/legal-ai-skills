@@ -1,4 +1,0 @@
-interface:
-  display_name: "Statement of Claim Drafter"
-  short_description: "Draft arbitral claims, relief, and quantum"
-  default_prompt: "Use $statement-of-claim-drafter to prepare a statement of claim from this record and requested relief."

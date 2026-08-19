@@ -1,4 +1,0 @@
-interface:
-  display_name: "Bail Application Drafter"
-  short_description: "Draft India bail applications and conditions"
-  default_prompt: "Use $bail-application-drafter to prepare a fact-grounded bail application under the currently applicable Indian procedure."

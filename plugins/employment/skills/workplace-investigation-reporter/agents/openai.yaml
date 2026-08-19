@@ -1,4 +1,0 @@
-interface:
-  display_name: "Workplace Investigation Reporter"
-  short_description: "Write fair evidence-led investigation reports"
-  default_prompt: "Use $workplace-investigation-reporter to structure the evidence, findings, credibility analysis, and recommendations for this workplace investigation."

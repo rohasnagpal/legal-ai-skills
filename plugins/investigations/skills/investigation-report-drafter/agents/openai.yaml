@@ -1,4 +1,0 @@
-interface:
-  display_name: "Investigation Report Drafter"
-  short_description: "Write evidence-led investigation findings"
-  default_prompt: "Use $investigation-report-drafter to prepare a neutral report separating allegations, evidence, analysis, findings, limitations, and recommendations."

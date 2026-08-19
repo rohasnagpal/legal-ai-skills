@@ -1,4 +1,0 @@
-interface:
-  display_name: "Mediation Brief Drafter"
-  short_description: "Draft mediation briefs for the mediator or the other side"
-  default_prompt: "Use $mediation-brief-drafter to draft our mediation brief, setting out position, facts, and interests."

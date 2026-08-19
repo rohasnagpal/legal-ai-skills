@@ -1,4 +1,0 @@
-interface:
-  display_name: "Term Sheet Reviewer"
-  short_description: "Flag off-market and founder-adverse term sheet terms"
-  default_prompt: "Use $term-sheet-reviewer to review this term sheet and flag anything off-market or founder-adverse."

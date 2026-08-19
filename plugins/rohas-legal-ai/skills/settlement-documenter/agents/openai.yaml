@@ -1,0 +1,4 @@
+interface:
+  display_name: "Settlement Documenter"
+  short_description: "Record a settlement session outcome or draft full settlement terms"
+  default_prompt: "Use $settlement-documenter to draft the full settlement agreement now that we've agreed terms in mediation."

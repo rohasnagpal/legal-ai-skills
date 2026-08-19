@@ -1,4 +1,0 @@
-interface:
-  display_name: "Conciliator Brief Drafter"
-  short_description: "Prepare confidential briefs for conciliators"
-  default_prompt: "Use $conciliator-brief-drafter to prepare a confidential conciliator brief from this dispute record."

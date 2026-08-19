@@ -1,4 +1,0 @@
-interface:
-  display_name: "Settlement Terms Drafter"
-  short_description: "Draft complete and workable settlement terms"
-  default_prompt: "Use $settlement-terms-drafter to turn this settlement into complete, enforceable written terms."
