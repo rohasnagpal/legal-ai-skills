@@ -6,7 +6,7 @@ A skill is a reusable set of written instructions for an AI assistant. Each skil
 
 All skills ship as **one installable plugin: Rohas Legal AI.** It contains the complete skill library — contracts, disputes and litigation, arbitration and ADR, corporate, regulatory, privacy, criminal, employment, property, tax, finance, insolvency, IP, startup, public law, research, investigations, and practice management. Install it once, then describe your legal task in plain language. The assistant selects the right skill from the library automatically — you don't need to know or invoke any individual skill by name.
 
-The **[Contents](#4-contents)** section below groups the library by practice area purely so you can browse what's in it. Those groupings are categories, not separate installs — there is nothing else to add.
+The **[Contents](#7-contents)** section below groups the library by practice area purely so you can browse what's in it. Those groupings are categories, not separate installs — there is nothing else to add.
 
 **Who this is for:** Practising lawyers, in-house counsel, and law students who already know the
 law and want the drafting and analysis work to go faster. These skills assume
@@ -26,36 +26,22 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 1. [Install on Claude Web](#1-install-on-claude-web)
 2. [Install on Claude Code](#2-install-on-claude-code)
 3. [Install on ChatGPT or Codex](#3-install-on-chatgpt-or-codex)
-4. [Contents](#4-contents)
-5. [Before you use these](#5-before-you-use-these)
-6. [Contributing](#6-contributing)
-7. [Licence](#7-licence)
+4. [Install on Grok Build](#4-install-on-grok-build)
+5. [Install on Cursor](#5-install-on-cursor)
+6. [Install on Gemini CLI](#6-install-on-gemini-cli)
+7. [Contents](#7-contents)
+8. [Before you use these](#8-before-you-use-these)
+9. [Contributing](#9-contributing)
+10. [Licence](#10-licence)
 
 # 1. Install on Claude Web
 
 Plugins are available on Claude's paid plans. Make sure **Code execution and file creation** is enabled. For an organisation-managed marketplace, an owner must also enable **Cowork** and **Skills**.
 
 1. Open **Customize → Plugins**. Under **Personal plugins**, click **+ → Add marketplace**.
-
-<img width="946" height="491" alt="image" src="https://github.com/user-attachments/assets/2d7989eb-a762-4ac7-878a-52cbea24ff80" />
-
----
-
-2. Click **Add from a repository**
-
-<img width="698" height="174" alt="image" src="https://github.com/user-attachments/assets/38e3483d-bf3e-4a93-a88d-d890b7f90878" />
-
----
-
-3. Enter https://github.com/rohasnagpal/legal-ai-skills
-
-<img width="697" height="217" alt="image" src="https://github.com/user-attachments/assets/837ab6ee-ac93-4f9e-a103-74b697b81285" />
-
----
-
+2. Click **Add from a repository**.
+3. Enter `https://github.com/rohasnagpal/legal-ai-skills`.
 4. Find **Rohas Legal AI** and click **+** to install it. That's the only entry in the marketplace — one plugin, the complete library. It's enabled automatically once installed.
-
-<img width="1006" height="690" alt="image" src="https://github.com/user-attachments/assets/7bb12216-2c32-430e-9f14-a4bb19fd1035" />
 
 ---
 
@@ -79,17 +65,10 @@ To pull in changes after the repo updates:
 
 ## ChatGPT
 
-1. Click **Plugins** in the left menu
-2. Search for [**Rohas Legal AI**](https://chatgpt.com/plugins?q=rohas+legal+ai)
-3. Click **+** to install it
-
-Here's an example of how to use the plugin. Type @rohas to see it in your installed plugins
-
-<img width="794" height="251" alt="image" src="https://github.com/user-attachments/assets/79e88db7-13ad-4d0d-9432-b804901daa07" />
-
-Select it and enter your prompt — the right skill is picked automatically
-
-<img width="798" height="155" alt="image" src="https://github.com/user-attachments/assets/f475e50f-a053-46eb-b6be-adfdaa846c70" />
+1. Click **Plugins** in the left menu.
+2. Search for [**Rohas Legal AI**](https://chatgpt.com/plugins?q=rohas+legal+ai).
+3. Click **+** to install it.
+4. Type `@rohas` in a chat to bring it in, then describe your task — the right skill is picked automatically.
 
 ## Codex
 
@@ -101,7 +80,37 @@ ChatGPT and Codex use the same public plugin directory. Installation and use can
 
 ---
 
-# 4. Contents
+# 4. Install on Grok Build
+
+Grok Build reads Claude Code plugin marketplaces and `SKILL.md` files directly, so this repo works there with no format changes on our side.
+
+1. If Grok Build is already pointed at a `.claude-plugin/marketplace.json`-style catalogue (its Claude Code compatibility layer), add `rohasnagpal/legal-ai-skills` the same way you would in Claude Code, and install **Rohas Legal AI**.
+2. If you'd rather install skills directly without the marketplace flow: clone this repository, then copy `plugins/rohas-legal-ai/skills/` into your project's `.grok/skills/` directory (or `~/.grok/skills/` to make it available globally).
+3. Restart or start a new Grok Build session — skills are loaded at session start, so a skill added mid-session won't be picked up until the next one.
+
+---
+
+# 5. Install on Cursor
+
+Cursor reads `SKILL.md` files from a skills directory it walks recursively, so category subfolders are fine.
+
+1. Clone this repository.
+2. Copy `plugins/rohas-legal-ai/skills/` into your project's `.cursor/skills/` directory (or `~/.cursor/skills/` to make it available across all your projects).
+3. Reload Cursor. Skills are discovered automatically and offered to Agent; you can also invoke one directly by typing `/` in Agent chat and searching for its name.
+
+---
+
+# 6. Install on Gemini CLI
+
+Gemini CLI reads skills from a project or user-level `skills/` directory, and its `skill install` command can pull straight from a Git source.
+
+1. Clone this repository, then copy `plugins/rohas-legal-ai/skills/` into `.gemini/skills/` in your project root (or `~/.gemini/skills/` for every project).
+2. Alternatively, try `gemini skill install https://github.com/rohasnagpal/legal-ai-skills` — Gemini CLI's installer can handle Git sources directly, though for a multi-skill repository like this one the manual copy in step 1 is the more reliable path.
+3. Gemini CLI picks up skills placed in either directory automatically on the next session.
+
+---
+
+# 7. Contents
 
 [advisory](#advisory) ·
 [arbitration](#arbitration) ·
@@ -362,7 +371,7 @@ Formal tax opinions now live in **legal-opinion-drafter** (Advisory) — see abo
 
 ---
 
-# 5. Before you use these
+# 8. Before you use these
 
 These skills are drafting and analysis aids. They do not give legal advice and
 they are not a substitute for professional judgment.
@@ -378,7 +387,7 @@ you install it, as you would any code you run.
 
 ---
 
-# 6. Contributing
+# 9. Contributing
 
 Corrections, bug reports and suggestions are welcome: please open an issue.
 
@@ -391,7 +400,7 @@ Contributions are accepted under the MIT licence.
 
 ---
 
-# 7. Licence
+# 10. Licence
 
 MIT. See [LICENSE](LICENSE).
 
