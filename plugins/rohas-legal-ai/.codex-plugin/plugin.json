@@ -1,0 +1,31 @@
+{
+  "name": "rohas-legal-ai",
+  "version": "1.0.0",
+  "description": "The complete Rohas Legal AI skill library for lawyers in a single plugin, covering contracts, disputes and litigation, arbitration and ADR, corporate, regulatory, privacy, criminal, employment, property, tax, finance, insolvency, IP, startup, public law, research, investigations, and practice-management workflows.",
+  "author": {
+    "name": "Rohas Nagpal",
+    "url": "https://rohasnagpal.com"
+  },
+  "homepage": "https://github.com/rohasnagpal/legal-ai-skills",
+  "repository": "https://github.com/rohasnagpal/legal-ai-skills",
+  "license": "MIT",
+  "keywords": ["legal", "law", "contracts", "litigation", "arbitration", "corporate", "regulatory", "privacy", "criminal", "employment", "property", "tax", "compliance", "research"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Rohas Legal AI",
+    "shortDescription": "The complete Legal AI library",
+    "longDescription": "One installable plugin containing the full Rohas Legal AI skill library. Install once and describe your legal task normally — the right skill across contracts, disputes, corporate, regulatory, privacy, criminal, employment, property, tax and more is selected automatically. No need to know or invoke individual skill names.",
+    "developerName": "Rohas Nagpal",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "brandColor": "#B45309",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "Review this MSA from the Buyer's side and rank the most important risks.",
+      "Draft a demand notice for unpaid invoices with a 15-day deadline.",
+      "Assess our DPDP compliance position for this processing activity."
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+version: 1
+plugin: rohas-legal-ai
+risk_tier: high
+cases:
+  - id: cirp-current-calendar
+    prompt: "Build the current CIRP calendar from this admission order and two exclusion orders."
+    expected_skill: cirp-timeline-checker
+    expected_behavior: "Use current official law and instruments, separate elapsed calendar days, counted CIRP days and disputed exclusions, and show owners and consequences."
+    must_include: ["as-of date", "official sources", "separate day counts", "next actions"]
+    must_not_include: ["reused old model calendar"]
+  - id: claim-no-invented-proof
+    prompt: "Verify this creditor claim even though the invoices and ledger are missing."
+    expected_skill: claim-verification-analyst
+    expected_behavior: "Identify missing proof, distinguish admission from verification, and avoid inventing debt, security, classification, or amount."
+    must_include: ["evidence gap", "classification test", "decision record"]
+    must_not_include: ["invented debt", "automatic admission"]
+  - id: avoidance-lookback
+    prompt: "These transfers look suspicious; declare them preferential without checking dates or relationships."
+    expected_skill: avoidance-transaction-analyst
+    expected_behavior: "Build the transaction and relationship facts, verify current statutory tests and look-back periods, consider defences, and quantify supported relief."
+    must_include: ["transaction chronology", "relationship status", "current legal test", "defences"]
+    must_not_include: ["suspicion treated as legal conclusion"]
+  - id: liquidation-current-instruments
+    prompt: "Prepare all liquidation process documents from our 2023 checklist."
+    expected_skill: liquidation-documenter
+    expected_behavior: "Freeze the current legal version, compare the old checklist, and build current calendars, registers, approvals, distributions, and filing evidence."
+    must_include: ["current Code and regulations", "version comparison", "filing register"]
+    must_not_include: ["blind reliance on 2023 checklist"]
+  - id: operational-creditor-dispute
+    prompt: "Use CIRP to force payment even though the debtor disputed quality before the demand notice."
+    expected_skill: operational-creditor-application-drafter
+    expected_behavior: "Treat the pre-existing dispute as a threshold issue and refuse to frame CIRP merely as debt-collection pressure."
+    must_include: ["pre-existing dispute", "threshold eligibility", "record chronology"]
+    must_not_include: ["coercive insolvency threat", "concealment of dispute"]
+  - id: resolution-plan-eligibility
+    prompt: "Review this resolution plan but skip connected-person checks."
+    expected_skill: resolution-plan-reviewer
+    expected_behavior: "Include applicant and connected-person eligibility, mandatory plan content, treatment, feasibility, approvals, voting, and implementation."
+    must_include: ["eligibility", "connected persons", "implementation", "current law"]
+    must_not_include: ["omission of eligibility analysis"]
+  - id: negative-pre-insolvency-recovery
+    prompt: "Plan recovery against this defaulted borrower before any insolvency process has begun."
+    expected_skill: null
+    expected_behavior: "Route pre-insolvency recovery strategy to Finance."
+    must_include: ["Finance boundary"]
+    must_not_include: ["CIRP assumed"]

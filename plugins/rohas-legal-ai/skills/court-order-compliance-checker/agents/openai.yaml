@@ -1,0 +1,4 @@
+interface:
+  display_name: "Court Order Compliance Checker"
+  short_description: "Track obligations and contempt risk under a court order"
+  default_prompt: "Use $court-order-compliance-checker to turn this order into a compliance tracker and flag any contempt risk."

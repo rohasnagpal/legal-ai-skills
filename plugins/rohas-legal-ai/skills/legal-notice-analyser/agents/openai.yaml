@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Notice Analyser"
+  short_description: "Analyse a received legal notice before replying"
+  default_prompt: "Use $legal-notice-analyser to work through this notice's allegations, deadlines, and evidence needs before we draft a reply."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Arbitration Pleading Drafter"
+  short_description: "Draft statements of claim, defence, counterclaim and reply"
+  default_prompt: "Use $arbitration-pleading-drafter to draft our statement of defence and counterclaim in response to the attached statement of claim."

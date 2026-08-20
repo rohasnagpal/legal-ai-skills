@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deal Structure Analyst"
+  short_description: "Compare transaction structures before drafting begins"
+  default_prompt: "Use $deal-structure-analyst to compare an asset deal against a share deal for this acquisition before we draft anything."

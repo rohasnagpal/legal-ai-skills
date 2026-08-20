@@ -1,4 +1,0 @@
-interface:
-  display_name: "Anticipatory Bail Advisor"
-  short_description: "Assess India pre-arrest bail grounds and strategy"
-  default_prompt: "Use $anticipatory-bail-advisor to assess pre-arrest bail strategy, forum, risks, conditions, and evidence for this matter."

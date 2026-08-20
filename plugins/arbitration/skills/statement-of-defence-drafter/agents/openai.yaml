@@ -1,4 +1,0 @@
-interface:
-  display_name: "Statement of Defence Drafter"
-  short_description: "Draft defences, objections, and counterclaims"
-  default_prompt: "Use $statement-of-defence-drafter to prepare the defence, jurisdictional objections, and any counterclaim."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Authority Validator"
+  short_description: "Test whether cited authorities actually support and bind"
+  default_prompt: "Use $authority-validator to check whether every case cited in this opinion actually supports the point it's cited for and is still good law."

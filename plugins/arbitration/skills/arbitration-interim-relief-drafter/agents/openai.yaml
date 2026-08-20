@@ -1,4 +1,0 @@
-interface:
-  display_name: "Arbitration Interim Relief Drafter"
-  short_description: "Draft India arbitration interim-relief applications"
-  default_prompt: "Use $arbitration-interim-relief-drafter to prepare an India-focused interim protection application from these facts."

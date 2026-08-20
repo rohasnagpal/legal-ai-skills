@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Research Planner"
+  short_description: "Scope a broad legal question into a research plan"
+  default_prompt: "Use $legal-research-planner to break this broad question into sub-questions and a source-hierarchy research plan before we start."

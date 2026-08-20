@@ -1,4 +1,0 @@
-interface:
-  display_name: "Loan Agreement Reviewer"
-  short_description: "Review facility terms, covenants, and defaults"
-  default_prompt: "Use $loan-agreement-reviewer to review this facility agreement for economics, conditions, covenants, defaults, transfer, security, and enforcement risk."

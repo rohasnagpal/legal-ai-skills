@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compliance Obligations Mapper"
+  short_description: "Turn a regulation into an owners-and-deadlines register"
+  default_prompt: "Use $compliance-obligations-mapper to turn this new regulation into an obligations register with owners, evidence, and deadlines."

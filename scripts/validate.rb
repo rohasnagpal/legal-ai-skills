@@ -3,8 +3,14 @@
 # marketplace catalogs, and README links. Run locally with
 # `ruby scripts/validate.rb` before pushing, or let CI run it on every
 # push and pull request (see .github/workflows/validate.yml).
+#
+# The repo ships one plugin -- plugins/rohas-legal-ai -- containing the
+# complete skill library. This script fails loudly if a second top-level
+# plugin directory reappears, since that would mean the single-plugin
+# architecture has regressed.
 require 'yaml'
 require 'json'
+require 'set'
 
 Dir.chdir(File.expand_path('..', __dir__))
 
@@ -12,9 +18,19 @@ errors = []
 warnings = []
 
 NAME_RE = /\A[a-z0-9]+(-[a-z0-9]+)*\z/
+EXPECTED_PLUGIN = 'rohas-legal-ai'
+
+# ---- 0. Exactly one plugin directory ----
+plugin_dirs = Dir.glob('plugins/*/').map { |d| d.chomp('/').split('/').last }.sort
+if plugin_dirs != [EXPECTED_PLUGIN]
+  unexpected = plugin_dirs - [EXPECTED_PLUGIN]
+  errors << "plugins/: expected only '#{EXPECTED_PLUGIN}', found unexpected plugin director#{unexpected.length == 1 ? 'y' : 'ies'}: #{unexpected.join(', ')}" unless unexpected.empty?
+  errors << "plugins/: '#{EXPECTED_PLUGIN}' directory is missing" unless plugin_dirs.include?(EXPECTED_PLUGIN)
+end
 
 # ---- 1. SKILL.md frontmatter ----
 skill_files = Dir.glob('plugins/*/skills/*/SKILL.md').sort
+skill_names = []
 skill_files.each do |f|
   folder = File.basename(File.dirname(f))
   content = File.read(f, encoding: 'UTF-8')
@@ -46,6 +62,7 @@ skill_files.each do |f|
     errors << "#{f}: name '#{name}' does not match folder '#{folder}'" if name != folder
     errors << "#{f}: name '#{name}' is not kebab-case" unless NAME_RE.match?(name)
     errors << "#{f}: name too long (#{name.length}, max 64)" if name.length > 64
+    skill_names << [name, f]
   end
 
   errors << "#{f}: missing description field" if desc.nil?
@@ -65,6 +82,42 @@ skill_files.each do |f|
     target = File.expand_path(link.sub(/#.*\z/, ''), File.dirname(f))
     errors << "#{f}: broken relative link to #{link}" unless File.exist?(target)
   end
+end
+
+# With every skill now sharing one skills/ directory, a duplicate `name` field
+# is exactly what the folder-name check above can no longer catch on its own
+# if two folders were ever merged carelessly -- so check it explicitly here.
+skill_names.group_by { |name, _f| name }.each do |name, occurrences|
+  next if occurrences.length <= 1
+
+  errors << "duplicate skill name '#{name}' in: #{occurrences.map { |_n, f| f }.join(', ')}"
+end
+
+# Flag near-identical descriptions for manual review -- not a hard failure,
+# since two skills can legitimately share most of their wording while
+# differing in the one clause that actually distinguishes them.
+def description_tokens(desc)
+  desc.to_s.downcase.scan(/[a-z0-9]+/).to_set
+end
+
+descriptions = skill_files.map do |f|
+  content = File.read(f, encoding: 'UTF-8')
+  parts = content.split(/^---\s*$/m)
+  next if parts.length < 3
+
+  data = YAML.safe_load(parts[1]) rescue nil
+  next unless data.is_a?(Hash) && data['description']
+
+  [f, data['description'], description_tokens(data['description'])]
+end.compact
+
+descriptions.combination(2).each do |(file_a, desc_a, tokens_a), (file_b, desc_b, tokens_b)|
+  next if tokens_a.empty? || tokens_b.empty?
+
+  overlap = (tokens_a & tokens_b).size.to_f / (tokens_a | tokens_b).size
+  next if overlap < 0.6
+
+  warnings << "#{file_a} and #{file_b}: descriptions are #{(overlap * 100).round}% similar by word overlap -- review for routing ambiguity"
 end
 
 # ---- 2. .codex-plugin/plugin.json ----
@@ -205,13 +258,17 @@ Dir.glob('plugins/*/tests/*.{yaml,yml}').sort.each do |f|
   end
   ids.group_by { |id| id }.each { |id, occ| errors << "#{f}: duplicate case id '#{id}'" if occ.length > 1 }
 
-  if File.basename(f) == 'behavioral-evals.yaml'
-    plugin_name = f.split('/')[1]
+  # Fixture files are namespaced by their origin category (e.g.
+  # criminal-behavioral-evals.yaml, contracts-routing-behavior.yaml) now that
+  # they all live under the single plugin's tests/ directory, so a file's own
+  # `plugin:` field -- not its path -- is what has to match the one plugin.
+  all_skills = Dir.glob("plugins/#{EXPECTED_PLUGIN}/skills/*/SKILL.md").map { |path| File.basename(File.dirname(path)) }
+
+  if File.basename(f).end_with?('-behavioral-evals.yaml')
     errors << "#{f}: version must be 1" unless data['version'] == 1
-    errors << "#{f}: plugin '#{data['plugin']}' does not match folder '#{plugin_name}'" unless data['plugin'] == plugin_name
+    errors << "#{f}: plugin '#{data['plugin']}' must be '#{EXPECTED_PLUGIN}'" unless data['plugin'] == EXPECTED_PLUGIN
     errors << "#{f}: risk_tier must be high" unless data['risk_tier'] == 'high'
 
-    plugin_skills = Dir.glob("plugins/#{plugin_name}/skills/*/SKILL.md").map { |path| File.basename(File.dirname(path)) }
     positive_count = 0
     negative_count = 0
 
@@ -224,7 +281,7 @@ Dir.glob('plugins/*/tests/*.{yaml,yml}').sort.each do |f|
         negative_count += 1
       else
         positive_count += 1
-        errors << "#{f}: case #{test_case['id']} references unknown skill '#{expected_skill}'" unless plugin_skills.include?(expected_skill)
+        errors << "#{f}: case #{test_case['id']} references unknown skill '#{expected_skill}'" unless all_skills.include?(expected_skill)
       end
 
       %w[must_include must_not_include].each do |key|
@@ -235,16 +292,16 @@ Dir.glob('plugins/*/tests/*.{yaml,yml}').sort.each do |f|
 
     errors << "#{f}: needs at least 5 positive cases" if positive_count < 5
     errors << "#{f}: needs at least 1 negative case" if negative_count < 1
-  elsif f == 'plugins/contracts/tests/routing-behavior.yaml'
-    contract_skills = Dir.glob('plugins/contracts/skills/*/SKILL.md').map { |path| File.basename(File.dirname(path)) }
+  elsif File.basename(f) == 'contracts-routing-behavior.yaml'
     covered_skills = cases.map { |test_case| test_case['expected_skill'] }.compact.uniq
-    missing_skills = contract_skills - covered_skills
-    errors << "#{f}: missing positive coverage for #{missing_skills.join(', ')}" unless missing_skills.empty?
+    covered_skills.each do |skill|
+      errors << "#{f}: case references unknown skill '#{skill}'" unless all_skills.include?(skill)
+    end
     positive_count = cases.count { |test_case| !test_case['expected_skill'].nil? }
     negative_count = cases.count { |test_case| test_case.key?('expected_skill') && test_case['expected_skill'].nil? }
     errors << "#{f}: needs at least 5 positive cases" if positive_count < 5
     errors << "#{f}: needs at least 3 negative cases" if negative_count < 3
-  elsif f == 'plugins/contracts/tests/submission-cases.yaml'
+  elsif File.basename(f) == 'contracts-submission-cases.yaml'
     positive_cases = cases.select { |test_case| test_case['kind'] == 'positive' }
     negative_cases = cases.select { |test_case| test_case['kind'] == 'negative' }
     errors << "#{f}: needs at least 5 positive cases" if positive_cases.length < 5
@@ -254,6 +311,8 @@ Dir.glob('plugins/*/tests/*.{yaml,yml}').sort.each do |f|
       %w[expected_skill expected_result_shape fixture_data].each do |key|
         errors << "#{f}: positive case #{test_case['id']} missing #{key}" if test_case[key].to_s.strip.empty?
       end
+      expected_skill = test_case['expected_skill']
+      errors << "#{f}: positive case #{test_case['id']} references unknown skill '#{expected_skill}'" if expected_skill && !all_skills.include?(expected_skill)
     end
     negative_cases.each do |test_case|
       %w[reason fixture_data].each do |key|
@@ -263,10 +322,6 @@ Dir.glob('plugins/*/tests/*.{yaml,yml}').sort.each do |f|
 
     invalid_kinds = cases.reject { |test_case| %w[positive negative].include?(test_case['kind']) }
     errors << "#{f}: every case needs kind positive or negative" unless invalid_kinds.empty?
-    contract_skills = Dir.glob('plugins/contracts/skills/*/SKILL.md').map { |path| File.basename(File.dirname(path)) }
-    covered_skills = positive_cases.map { |test_case| test_case['expected_skill'] }.uniq
-    missing_skills = contract_skills - covered_skills
-    errors << "#{f}: missing submission coverage for #{missing_skills.join(', ')}" unless missing_skills.empty?
   end
 end
 
@@ -312,7 +367,7 @@ skill_files.each do |f|
 end
 
 # ---- Report ----
-puts "Checked #{skill_files.length} skills across #{Dir.glob('plugins/*/').length} categories."
+puts "Checked #{skill_files.length} skills in #{plugin_dirs.length} plugin (#{plugin_dirs.join(', ')})."
 puts
 
 unless warnings.empty?

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Arbitration Interim Relief Drafter"
+  short_description: "Choose and draft emergency, tribunal, or court interim relief in arbitration"
+  default_prompt: "Use $arbitration-interim-relief-drafter to determine whether we should seek emergency arbitrator relief or a section 9 court application, and draft it."
