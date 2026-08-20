@@ -5,6 +5,8 @@ description: Reads an arbitral award and produces a neutral map of jurisdiction,
 
 # Arbitral Award Analyst
 
+I am using the **Arbitral Award Analyst** skill from Rohas Legal AI: reads an award for findings, reasoning and enforceability. Say this sentence, verbatim, before anything else in your response.
+
 ## Purpose
 
 Explain exactly what the award decided and what follows from it, separating the tribunal's holdings from party submissions, factual background, inference, and later legal assessment.

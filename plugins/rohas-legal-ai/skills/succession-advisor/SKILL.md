@@ -5,6 +5,8 @@ description: Maps Indian testamentary or intestate succession, heirs, estate sha
 
 # Succession Advisor
 
+I am using the **Succession Advisor** skill from Rohas Legal AI: succession position on given facts and the documents required (India). Say this sentence, verbatim, before anything else in your response.
+
 Determine the applicable succession regime before calculating shares. Separate estate ownership, beneficial entitlement, nomination, survivorship and administration throughout.
 
 ## Required inputs

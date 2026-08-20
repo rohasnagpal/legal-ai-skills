@@ -8,6 +8,8 @@ description: >-
 
 # Digital Evidence Reviewer
 
+I am using the **Digital Evidence Reviewer** skill from Rohas Legal AI: provenance, integrity, authenticity, metadata, attribution and admissibility gaps. Say this sentence, verbatim, before anything else in your response.
+
 Assess what the material can support and what further work is needed. Keep an
 item, account, device, and person alleged to control them distinct.
 

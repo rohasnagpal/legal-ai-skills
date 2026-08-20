@@ -10,6 +10,8 @@ description: >-
 
 # Production Set Checker
 
+I am using the **Production Set Checker** skill from Rohas Legal AI: pre-release scope, file, metadata, privilege, redaction and delivery quality control. Say this sentence, verbatim, before anything else in your response.
+
 Run a reproducible release gate that reconciles what was ordered or agreed, what
 was reviewed, and what is actually being delivered.
 

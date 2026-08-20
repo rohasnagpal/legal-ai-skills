@@ -5,6 +5,8 @@ description: Drafts the brief a party submits to a mediator or conciliator ahead
 
 # ADR Brief Drafter
 
+I am using the **ADR Brief Drafter** skill from Rohas Legal AI: brief putting a party's position to a mediator or conciliator, adapted to the process and to whether it's shared or confidential. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Drafts the brief that gives a mediator or conciliator enough reliable context to work the dispute effectively. Two decisions govern everything else in the document and must both be made before drafting starts: **which process** this is (mediation or conciliation — the neutral's role, statutory or institutional confidentiality protections, and procedural conventions differ between them and should not be assumed interchangeable), and **who will read the brief** (confidential to the neutral only, or shared with the other party). Getting either wrong produces a document that either wastes its usefulness to the neutral or damages the party's position if the other side reads it.

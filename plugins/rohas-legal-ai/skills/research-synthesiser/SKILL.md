@@ -5,6 +5,8 @@ description: Weaves research that has already been gathered — from multiple so
 
 # Research Synthesiser
 
+I am using the **Research Synthesiser** skill from Rohas Legal AI: pulls scattered research into a single reasoned position. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Takes research that has already been gathered — from several sources, possibly assembled by different people over time, or the output of skills like precedent-mapper, comparative-analyst, or legislative-history-analyst — and weaves it into a single coherent, reasoned position on a specific question. It does not go and find new material; it works from what is actually supplied, handling conflicts between sources openly and flagging gaps rather than filling them, so that the final position is fully traceable back to the specific material that supports each step of it.

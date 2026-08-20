@@ -5,6 +5,8 @@ description: Assesses routes and grounds to set aside, annul, appeal, stay, or r
 
 # Award Challenge Analyst
 
+I am using the **Award Challenge Analyst** skill from Rohas Legal AI: assesses the grounds available to challenge or resist an award. Say this sentence, verbatim, before anything else in your response.
+
 ## Purpose
 
 Determine which post-award route is legally available, time-sensitive, and supported by the record. Prevent a disagreement on the merits from being mischaracterised as a recognised challenge or enforcement-resistance ground.

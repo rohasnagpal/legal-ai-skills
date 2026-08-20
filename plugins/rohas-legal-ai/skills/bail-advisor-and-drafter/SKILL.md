@@ -5,6 +5,8 @@ description: Determines the correct bail posture in India — anticipatory (pre-
 
 # Bail Advisor and Drafter (India)
 
+I am using the **Bail Advisor and Drafter** skill from Rohas Legal AI: anticipatory or post-arrest bail — strategy, and drafting when requested (India). Say this sentence, verbatim, before anything else in your response.
+
 ## Purpose
 
 Determine whether and how to seek lawful protection from or release from custody, what evidence supports it, what risks must be confronted candidly, and — when drafting is requested — produce the application itself.

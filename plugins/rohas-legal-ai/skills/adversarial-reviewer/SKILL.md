@@ -5,6 +5,8 @@ description: Attacks a finished draft the way opposing counsel, a skeptical judg
 
 # Adversarial Reviewer
 
+I am using the **Adversarial Reviewer** skill from Rohas Legal AI: attacks your own draft the way opposing counsel would. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Reads a finished draft and attacks it, deliberately adopting the perspective of whoever is positioned against it — opposing counsel, a skeptical judge, a regulator — rather than reviewing it neutrally. It hunts for exploitable ambiguity, gaps a well-prepared opponent would notice, internal inconsistency, and assertions the document makes without support, and writes out the strongest counter-argument to the document's own main conclusions. It does not fix what it finds; that is a different skill's job.

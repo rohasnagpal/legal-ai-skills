@@ -5,6 +5,8 @@ description: Produces complete replacement wording for one problem clause or a s
 
 # Redline Proposer
 
+I am using the **Redline Proposer** skill from Rohas Legal AI: complete replacement wording from the strongest credible position to the minimum acceptable fallback. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Takes a clause the user has identified as a problem and drafts a spectrum of replacement wording for it — an aggressive position that remains credible, one or more intermediate positions if the gap justifies them, and a fallback the client should genuinely be prepared to accept — each written as complete, usable clause text in the register of the document it belongs to. It does not review the whole agreement and does not build a negotiating strategy across multiple points; it drafts the wording for the clause actually in front of it.

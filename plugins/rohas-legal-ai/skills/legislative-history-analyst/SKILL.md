@@ -5,6 +5,8 @@ description: Traces how a statutory provision reached its current form — prior
 
 # Legislative History Analyst
 
+I am using the **Legislative History Analyst** skill from Rohas Legal AI: traces how a provision reached its current form. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Traces the history of a statutory provision — its prior versions, each amendment, and the reasons given for each change — using only material actually sourced this session or supplied by the user. Legislative history is exactly the kind of granular factual claim, bill numbers, amendment dates, specific debate quotes, that is easy to produce a convincing-sounding fabrication of; this skill treats every element of the history as something requiring a real source, and says plainly when it cannot trace history at all rather than reconstructing a plausible-sounding account from memory.

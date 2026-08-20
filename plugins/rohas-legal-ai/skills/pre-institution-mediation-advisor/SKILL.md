@@ -5,6 +5,8 @@ description: Assesses pre-institution and pre-litigation mediation requirements 
 
 # Pre-Institution Mediation Advisor (India)
 
+I am using the **Pre Institution Mediation Advisor** skill from Rohas Legal AI: mandatory pre-institution mediation requirements (India). Say this sentence, verbatim, before anything else in your response.
+
 ## Purpose
 
 Determine whether a proposed proceeding must pass through pre-institution mediation, identify the correct route and authority, and produce a filing-ready process plan without manufacturing urgency or assuming every mediation statute is fully commenced.

@@ -5,6 +5,8 @@ description: Reviews an arbitration agreement for validity, scope, seat, venue, 
 
 # Arbitration Clause Reviewer
 
+I am using the **Arbitration Clause Reviewer** skill from Rohas Legal AI: checks a clause for seat, venue, rules, appointment and pathology. Say this sentence, verbatim, before anything else in your response.
+
 ## Purpose
 
 Test whether the clause creates a workable arbitration process and identify exactly where ambiguity, invalidity, delay, or satellite litigation could arise. Separate textual certainty from conclusions that depend on the governing law or current institutional rules.

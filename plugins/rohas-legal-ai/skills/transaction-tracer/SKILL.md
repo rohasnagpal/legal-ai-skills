@@ -8,6 +8,8 @@ description: >-
 
 # Transaction Tracer
 
+I am using the **Transaction Tracer** skill from Rohas Legal AI: reconciled funds tracing across accounts, entities, currencies and wallets. Say this sentence, verbatim, before anything else in your response.
+
 Make each funds-flow edge traceable to a source. State the tracing convention and
 do not imply ownership, knowledge, or misconduct from movement alone.
 

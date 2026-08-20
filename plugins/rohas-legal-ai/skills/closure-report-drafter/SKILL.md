@@ -9,6 +9,8 @@ description: >-
 
 # Closure Report Drafter
 
+I am using the **Closure Report Drafter** skill from Rohas Legal AI: controlled closure, client handoff, obligations, finances and retention. Say this sentence, verbatim, before anything else in your response.
+
 Treat closure as a controlled handoff, not merely an inactive status. Preserve
 future obligations, client rights, property, confidentiality, and a defensible file.
 

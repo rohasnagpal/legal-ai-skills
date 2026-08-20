@@ -5,6 +5,8 @@ description: Reads every termination, notice, cure and survival clause in a cont
 
 # Termination Analyst
 
+I am using the **Termination Analyst** skill from Rohas Legal AI: termination rights, notice requirements and consequences. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Reads the termination, notice, cure and survival provisions in a contract as one system, for one identified party, and reports exactly how each party can get out, on what notice, subject to what conditions, and what happens once they do. Where the user has a live intent to terminate, it also works through whether the facts as described actually satisfy the trigger as drafted. It does not review the whole agreement; it goes deep on the exit alone.

@@ -5,6 +5,8 @@ description: Plans what a party should disclose, hold back, or route through the
 
 # Caucus Strategy Planner
 
+I am using the **Caucus Strategy Planner** skill from Rohas Legal AI: what to disclose and hold back in private session. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Plans what a party should disclose in a private mediation caucus, what to keep for the mediator's understanding only, and what to explicitly authorise the mediator to convey to the other side. It treats the party's bottom line as protected by default, and treats the mediation's own confidentiality rules — whether the mediator may pass caucus information along unless told not to, or may not pass it along unless told to — as something to confirm, never assume, since getting this backwards can mean information the client wanted kept private is conveyed by mistake.

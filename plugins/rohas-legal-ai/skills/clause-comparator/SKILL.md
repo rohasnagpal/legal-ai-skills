@@ -5,6 +5,8 @@ description: Compares the same clause or provision across draft rounds, preceden
 
 # Clause Comparator
 
+I am using the **Clause Comparator** skill from Rohas Legal AI: compares the same clause across drafts or against a standard. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Takes the same clause, or the same clause type, as it appears in two or more places and reports what is different — mechanically, in the wording, and substantively, in what the clause now does. It is a comparison tool, not a review: it does not grade an agreement's overall risk, and it does not draft new wording for a clause that has no comparator (that is redline-proposer). It compares what it is given; it does not supply a "market standard" from memory to compare against.

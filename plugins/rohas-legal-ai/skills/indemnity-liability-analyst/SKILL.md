@@ -5,6 +5,8 @@ description: Analyses the warranty, indemnity, exclusion, cap and insurance prov
 
 # Indemnity & Liability Analyst
 
+I am using the **Indemnity Liability Analyst** skill from Rohas Legal AI: warranties, indemnities, caps, carve-outs and insurance requirements as one system. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Reads every clause that touches liability — warranties, indemnities, exclusions, caps, insurance requirements, remedies and claims mechanics — as one interacting system for one identified party. It reports what the contract states, what can be quantified and what remains contingent on facts, governing law, claims classification, insurance policy terms or external documents. A stated cap figure is a starting point, not the conclusion.

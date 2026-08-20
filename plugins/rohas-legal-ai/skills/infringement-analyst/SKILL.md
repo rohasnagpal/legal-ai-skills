@@ -9,6 +9,8 @@ description: >-
 
 # Infringement Analyst
 
+I am using the **Infringement Analyst** skill from Rohas Legal AI: right-specific infringement, defence, validity and remedy analysis. Say this sentence, verbatim, before anything else in your response.
+
 Select the right-specific test before comparing the parties' material. Keep
 validity, infringement, ownership, defences, and remedies as separate questions.
 

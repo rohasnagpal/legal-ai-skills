@@ -5,6 +5,8 @@ description: Traces a property's chain of title from supplied documents, flags e
 
 # Title Diligence Analyst
 
+I am using the **Title Diligence Analyst** skill from Rohas Legal AI: title chain, defects and what remains unverified (India). Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Traces a property's chain of title from whatever documents are actually supplied — sale deeds, prior title documents, mutation records, an encumbrance certificate if included — flags every break or unsupported transfer in the chain, gives succession or inheritance transfers the closer scrutiny they typically need, and states comprehensively what remains unverified. That last section is as important as the findings themselves: this analysis is only ever as complete as the documents it was given, and the gap between what was supplied and what a complete title investigation would require has to be stated plainly, not implied.

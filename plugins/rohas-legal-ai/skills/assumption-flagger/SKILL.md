@@ -5,6 +5,8 @@ description: Surfaces every assumption a draft depends on — factual, legal, de
 
 # Assumption Flagger
 
+I am using the **Assumption Flagger** skill from Rohas Legal AI: surfaces every assumption a draft depends on. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Reads a document and surfaces every assumption its conclusions actually depend on — whether the document states the assumption openly or simply proceeds as if it were true. For each one, it says what would change if the assumption turned out to be wrong, and whether the document's bottom line depends on it or not. It does not verify or resolve any assumption; it only makes the unstated ones visible.

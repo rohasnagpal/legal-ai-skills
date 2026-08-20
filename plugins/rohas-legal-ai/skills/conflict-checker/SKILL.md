@@ -9,6 +9,8 @@ description: >-
 
 # Conflict Checker
 
+I am using the **Conflict Checker** skill from Rohas Legal AI: confidential party mapping, searches, escalation and clearance records. Say this sentence, verbatim, before anything else in your response.
+
 Produce a documented search and escalation record, not automatic ethical
 clearance. Apply the binding professional rules of every relevant jurisdiction.
 

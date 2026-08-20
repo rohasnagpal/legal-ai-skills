@@ -5,6 +5,8 @@ description: Analyses a supply for its GST treatment — classification as goods
 
 # GST Compliance Analyst
 
+I am using the **GST Compliance Analyst** skill from Rohas Legal AI: GST treatment and compliance obligations (India). Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Analyses a supply of goods or services for its GST treatment: classification, place and time of supply, applicable rate and reverse charge position, input tax credit eligibility, and any registration or compliance obligation the transaction triggers. GST rates, HSN and SAC classifications, reverse charge coverage, and registration thresholds are all set by notifications that change periodically and can vary by state or category, so this skill treats their current content as a verification point rather than something to assert from memory.

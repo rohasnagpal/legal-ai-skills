@@ -5,6 +5,8 @@ description: Assesses and plans Indian secured-creditor enforcement under the SA
 
 # SARFAESI Advisor
 
+I am using the **SARFAESI Advisor** skill from Rohas Legal AI: SARFAESI enforcement steps and timelines (India). Say this sentence, verbatim, before anything else in your response.
+
 Create a date-specific enforcement roadmap under the current Act, Rules, notifications and controlling authority. Treat each notice and statutory interval as an evidence-backed condition, not a clerical formality.
 
 ## Required inputs

@@ -5,6 +5,8 @@ description: Prepares lawful, internally consistent documents for resignation, t
 
 # Separation Documenter
 
+I am using the **Separation Documenter** skill from Rohas Legal AI: resignation, termination and severance documentation. Say this sentence, verbatim, before anything else in your response.
+
 Document the real exit route and required process. Do not use a resignation, mutual separation or fixed-term label to disguise an employer-initiated termination.
 
 ## Required inputs

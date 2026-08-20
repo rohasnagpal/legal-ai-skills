@@ -8,6 +8,8 @@ description: >-
 
 # Fraud Pattern Analyst
 
+I am using the **Fraud Pattern Analyst** skill from Rohas Legal AI: competing fraud hypotheses, transaction indicators and control failures. Say this sentence, verbatim, before anything else in your response.
+
 Treat a red flag as a lead, not a finding. Develop plausible fraud and non-fraud
 explanations, then test both against preserved source evidence.
 

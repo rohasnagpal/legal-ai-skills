@@ -5,6 +5,8 @@ description: Builds a settlement negotiation strategy before any offer is on the
 
 # Settlement Strategy Planner
 
+I am using the **Settlement Strategy Planner** skill from Rohas Legal AI: builds BATNA/WATNA, negotiating range and concession sequencing before any offer exists. Say this sentence, verbatim, before anything else in your response.
+
 ## Purpose
 
 Prepare a party to enter settlement negotiations with a clear-eyed view of their own best and worst alternatives to a negotiated agreement, a defensible negotiating range, and a plan for how concessions will be sequenced — before any specific offer exists to react to.

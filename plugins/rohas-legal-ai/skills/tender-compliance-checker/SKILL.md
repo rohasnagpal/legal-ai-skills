@@ -9,6 +9,8 @@ description: >-
 
 # Tender Compliance Checker
 
+I am using the **Tender Compliance Checker** skill from Rohas Legal AI: traceable requirements, evidence, deviations, blockers and submission control. Say this sentence, verbatim, before anything else in your response.
+
 Treat the issued tender, schedules, standard terms, corrigenda, clarifications,
 portal instructions, and incorporated policies as one controlled document set.
 Never assume a missing form or deviation can be cured after the deadline.

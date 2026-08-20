@@ -9,6 +9,8 @@ description: >-
 
 # Pleadings Analyst
 
+I am using the **Pleadings Analyst** skill from Rohas Legal AI: claims, defences, admissions, inconsistencies, particulars and live issues. Say this sentence, verbatim, before anything else in your response.
+
 Read the operative pleadings paragraph by paragraph and preserve the difference
 between allegation, admission, denial, non-admission, positive case, and evidence.
 

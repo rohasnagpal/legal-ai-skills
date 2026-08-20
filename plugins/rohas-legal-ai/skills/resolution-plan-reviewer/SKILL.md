@@ -5,6 +5,8 @@ description: Reviews Indian corporate resolution plans for eligibility, statutor
 
 # Resolution Plan Reviewer
 
+I am using the **Resolution Plan Reviewer** skill from Rohas Legal AI: resolution plans for compliance and commercial effect (India). Say this sentence, verbatim, before anything else in your response.
+
 Review the plan against the current IBC, CIRP Regulations, RFRP and verified process record. Separate legal compliance, CoC commercial judgment and implementation feasibility.
 
 ## Required inputs

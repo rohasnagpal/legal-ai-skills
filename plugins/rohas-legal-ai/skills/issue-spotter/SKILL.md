@@ -5,6 +5,8 @@ description: Reads a fact pattern and spots every legally relevant issue, potent
 
 # Issue Spotter
 
+I am using the **Issue Spotter** skill from Rohas Legal AI: reads a fact pattern for issues, causes of action and threshold problems. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Reads a fact pattern and spots everything legally relevant in it: the issues, the potential causes of action they might support, and the threshold problems — limitation, standing, jurisdiction, procedural preconditions — that could dispose of an otherwise strong claim before its merits are ever reached. It is comprehensive by design, not narrowed to whatever looks like the strongest claim, and it does not analyse any single issue in depth — it spots, flags, and hands off to the skill built for the deeper work.

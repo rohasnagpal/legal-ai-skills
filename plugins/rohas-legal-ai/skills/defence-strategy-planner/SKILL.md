@@ -5,6 +5,8 @@ description: Builds a lawful, evidence-led criminal defence theory and action pl
 
 # Defence Strategy Planner
 
+I am using the **Defence Strategy Planner** skill from Rohas Legal AI: defence theory, lines of attack and evidence needed. Say this sentence, verbatim, before anything else in your response.
+
 Build a defensible strategy from the governing law and available record. Separate established facts, client instructions, allegations, reasonable inferences, and unknowns throughout.
 
 ## Required inputs

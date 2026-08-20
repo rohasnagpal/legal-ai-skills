@@ -5,6 +5,8 @@ description: Drafts the merits pleadings in arbitration — statement of claim, 
 
 # Arbitration Pleading Drafter
 
+I am using the **Arbitration Pleading Drafter** skill from Rohas Legal AI: statement of claim, statement of defence, counterclaim and reply to counterclaim. Say this sentence, verbatim, before anything else in your response.
+
 ## Purpose
 
 Produce a coherent merits pleading — for whichever side and stage is in play — in which every material allegation advances or answers an identified claim, every claim or defence connects to evidence and law, and every item of relief follows from the pleaded case and quantum record.

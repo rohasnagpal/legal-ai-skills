@@ -9,6 +9,8 @@ description: >-
 
 # Trademark Opposition Drafter
 
+I am using the **Trademark Opposition Drafter** skill from Rohas Legal AI: opposition, counterstatement and rectification materials (India). Say this sentence, verbatim, before anything else in your response.
+
 Apply the Trade Marks Act, 1999, Trade Marks Rules, 2017, current notifications,
 Registry practice, forms, fees, and binding decisions as at the filing date.
 

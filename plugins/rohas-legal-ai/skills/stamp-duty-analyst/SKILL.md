@@ -5,6 +5,8 @@ description: Calculates stamp duty and registration cost for a property transact
 
 # Stamp Duty Analyst
 
+I am using the **Stamp Duty Analyst** skill from Rohas Legal AI: stamp duty and registration position on supplied rates (India). Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Calculates the stamp duty and registration cost for a property transaction, using only the rates the user actually supplies or that are sourced this session. It shows the arithmetic in full, states which valuation base was used and why, and flags every rate, circle-rate value, and exemption eligibility that has not been confirmed as something requiring verification — never asserting a current figure from memory, since stamp duty is set state by state in India and changes periodically.

@@ -5,6 +5,8 @@ description: Drafts the two sides of a consumer-forum pleading — the complaint
 
 # Consumer Pleading Drafter
 
+I am using the **Consumer Pleading Drafter** skill from Rohas Legal AI: consumer complaint (complainant side) or reply (opposite-party side). Say this sentence, verbatim, before anything else in your response.
+
 ## Before you start
 
 Determine which side is being drafted for: **complainant** (drafting the complaint) or **opposite party / respondent** (drafting the reply or written statement). Ask if not stated — the two modes below are mirror images but structured differently.

@@ -5,6 +5,8 @@ description: Maps the contractual, institutional, and statutory process for cons
 
 # Arbitrator Appointment Advisor
 
+I am using the **Arbitrator Appointment Advisor** skill from Rohas Legal AI: appointment mechanics, eligibility and independence disclosure. Say this sentence, verbatim, before anything else in your response.
+
 ## Purpose
 
 Turn the arbitration agreement and applicable framework into a reliable appointment sequence, then assess candidate suitability and challenge risk without making unsupported conclusions about independence.

@@ -5,6 +5,8 @@ description: Analyses which forum and which jurisdiction's law could apply to a 
 
 # Forum & Jurisdiction Analyst
 
+I am using the **Forum Jurisdiction Analyst** skill from Rohas Legal AI: which forum, which jurisdiction, and what turns on the choice. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Analyses which forum could plausibly hear a dispute and what practically turns on that choice — differences in substantive law, procedure, available remedies, and the practical question of whether a judgment from that forum would actually be enforceable where it matters. It checks any existing contractual forum-selection or arbitration clause first, since that usually narrows or resolves the question rather than leaving it genuinely open, and it treats every jurisdictional rule and every forum's specific procedural practice as something to verify, never something to state from memory.

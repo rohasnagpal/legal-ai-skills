@@ -8,6 +8,8 @@ description: >-
 
 # Chronology Builder
 
+I am using the **Chronology Builder** skill from Rohas Legal AI: sourced event, knowledge and procedural chronologies with conflicts and gaps. Say this sentence, verbatim, before anything else in your response.
+
 Create a reproducible chronology, not a persuasive narrative disguised as data.
 Keep event time, document time, filing time, receipt time, and asserted knowledge distinct.
 

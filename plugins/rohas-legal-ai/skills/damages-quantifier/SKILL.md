@@ -5,6 +5,8 @@ description: Builds a general civil or commercial damages claim head by head, us
 
 # Damages Quantifier
 
+I am using the **Damages Quantifier** skill from Rohas Legal AI: general commercial/civil damages head by head — expectation, reliance, lost profits, interest, mitigation. Say this sentence, verbatim, before anything else in your response.
+
 ## Purpose
 
 Build the quantum of a civil or commercial damages claim head by head, showing the arithmetic for every figure, using only what the user actually supplies — never inventing a rate, a profit margin, or a mitigation figure to fill a gap.

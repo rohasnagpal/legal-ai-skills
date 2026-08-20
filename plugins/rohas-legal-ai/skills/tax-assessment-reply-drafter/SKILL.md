@@ -5,6 +5,8 @@ description: Drafts a reply to a tax assessment or scrutiny notice — before an
 
 # Tax Assessment Reply Drafter
 
+I am using the **Tax Assessment Reply Drafter** skill from Rohas Legal AI: replies to assessment and scrutiny notices (India). Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Drafts a reply to a tax assessment or scrutiny notice issued before any order has been passed — addressing every query the notice raises, referencing the client's own supporting documents, and keeping a factual, cooperative tone appropriate to a fact-gathering stage rather than an adversarial one. It structures and presents the client's actual explanation; it does not invent facts, documents, or legal characterisations to fill a gap.

@@ -5,6 +5,8 @@ description: Builds an opening position, fallback, minimum acceptable position, 
 
 # Negotiation Position Planner
 
+I am using the **Negotiation Position Planner** skill from Rohas Legal AI: opening, fallback and walk-away positions on the open points. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Takes one or more open negotiation points and builds a usable ladder for each: opening, fallback, minimum acceptable position and walk-away line, tied to the client's priorities and alternative to the deal. For several issues it also builds the trade and sequencing plan. It does not draft clause wording unless the user expressly asks for both strategy and wording; replacement text belongs primarily in redline-proposer.

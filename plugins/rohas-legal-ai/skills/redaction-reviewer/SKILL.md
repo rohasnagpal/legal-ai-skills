@@ -10,6 +10,8 @@ description: >-
 
 # Redaction Reviewer
 
+I am using the **Redaction Reviewer** skill from Rohas Legal AI: legal-basis, consistency and technical-permanence review of redactions. Say this sentence, verbatim, before anything else in your response.
+
 Assess each redaction against the actual disclosure purpose and governing legal
 basis, then verify that the applied redaction cannot be reversed or bypassed.
 

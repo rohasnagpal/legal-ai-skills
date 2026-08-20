@@ -5,6 +5,8 @@ description: Determines the correct interim-protection route for a dispute conne
 
 # Arbitration Interim Relief Drafter
 
+I am using the **Arbitration Interim Relief Drafter** skill from Rohas Legal AI: chooses the route — emergency arbitrator, tribunal, or court (India) — and drafts the application. Say this sentence, verbatim, before anything else in your response.
+
 ## Purpose
 
 Select the correct interim-protection route — emergency arbitrator, tribunal, or court — without treating urgency as a substitute for jurisdiction, evidence, or a remedy tailored to the threatened harm, then draft the application for the route chosen.

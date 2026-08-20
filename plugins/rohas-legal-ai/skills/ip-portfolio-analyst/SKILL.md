@@ -9,6 +9,8 @@ description: >-
 
 # IP Portfolio Analyst
 
+I am using the **IP Portfolio Analyst** skill from Rohas Legal AI: ownership, coverage, deadlines, exploitation, encumbrance and risk audits. Say this sentence, verbatim, before anything else in your response.
+
 Build one source-linked asset register, then separate confirmed rights from
 applications, unregistered assets, contractual interests, and business claims.
 

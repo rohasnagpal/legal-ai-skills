@@ -8,6 +8,8 @@ description: >-
 
 # Evidence Organizer
 
+I am using the **Evidence Organizer** skill from Rohas Legal AI: evidence mapped to facts, elements, witnesses, foundations and objections. Say this sentence, verbatim, before anything else in your response.
+
 Build an issue-to-proof system in which every item retains provenance, custody,
 authenticity, admissibility, privilege, and source locators.
 

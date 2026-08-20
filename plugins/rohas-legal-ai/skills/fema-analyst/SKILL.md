@@ -5,6 +5,8 @@ description: Analyses a cross-border transaction against India's foreign exchang
 
 # FEMA Analyst
 
+I am using the **FEMA Analyst** skill from Rohas Legal AI: FEMA position on a cross-border transaction (India). Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Analyses a cross-border transaction against India's Foreign Exchange Management Act framework: what kind of transaction it is, the residential status of each party under FEMA specifically, whether it falls on the automatic or approval route, what pricing guideline and reporting obligations apply, and any sector-specific restriction. Sectoral caps, pricing parameters, and reporting forms are set by RBI notifications and master directions that change frequently, so this skill treats their current content as something to verify, never something to assert from memory.

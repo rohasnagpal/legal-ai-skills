@@ -5,6 +5,8 @@ description: Designs, drafts and closes security packages over transaction asset
 
 # Security Documenter
 
+I am using the **Security Documenter** skill from Rohas Legal AI: security creation, perfection and registration documentation. Say this sentence, verbatim, before anything else in your response.
+
 Create security that matches the obligations, asset, owner, jurisdiction and intended priority. Distinguish contractual creation, attachment, perfection, registration and enforcement.
 
 ## Required inputs

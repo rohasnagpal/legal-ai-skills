@@ -5,6 +5,8 @@ description: Builds a compensation or damages claim head by head, using only the
 
 # Compensation Quantifier
 
+I am using the **Compensation Quantifier** skill from Rohas Legal AI: builds a compensation claim head by head from supplied figures. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Builds a compensation claim as a set of individual heads — cost of the defective good or service, consequential loss, mental agony or harassment, litigation costs, interest, and any other head the claimant wants included — using only the figures actually supplied, with the arithmetic shown for anything calculated rather than given as a flat sum. It does not assess whether the claim succeeds; it quantifies what the claim totals if each head is allowed.

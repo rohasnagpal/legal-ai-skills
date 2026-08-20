@@ -5,6 +5,8 @@ description: Tests whether given facts actually satisfy the legal threshold for 
 
 # Deficiency Analyst
 
+I am using the **Deficiency Analyst** skill from Rohas Legal AI: tests whether the facts amount to deficiency in service or unfair trade practice. Say this sentence, verbatim, before anything else in your response.
+
 ## What this does
 
 Tests a set of facts against the legal threshold for deficiency in service, defect in goods, or unfair trade practice — the categories that most consumer protection regimes build around, most precisely defined in statutes such as India's Consumer Protection Act 2019, though comparable concepts exist elsewhere under different names. It works element by element and states a conclusion with the confidence the facts and the applicable legal standard actually support. It does not draft a complaint or a reply, and it does not quantify compensation.

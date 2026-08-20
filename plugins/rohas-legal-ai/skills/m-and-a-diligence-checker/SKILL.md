@@ -5,6 +5,8 @@ description: Plans and performs legal due diligence for acquisitions, investment
 
 # M&A Diligence Checker
 
+I am using the **M&A Diligence Checker** skill from Rohas Legal AI: diligence checklist and issue log for a transaction. Say this sentence, verbatim, before anything else in your response.
+
 ## Purpose
 
 Turn the deal structure and risk allocation into a focused diligence process that distinguishes verified fact, document gap, legal issue, commercial concern, and recommended transaction response.

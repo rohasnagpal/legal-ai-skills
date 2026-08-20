@@ -5,6 +5,8 @@ description: Analyses guarantee and indemnity scope, liability triggers, defence
 
 # Guarantee Analyst
 
+I am using the **Guarantee Analyst** skill from Rohas Legal AI: guarantee and indemnity obligations and how they can be enforced. Say this sentence, verbatim, before anything else in your response.
+
 Analyse the executed instrument with the underlying obligations and transaction history. Do not assume a document called a guarantee creates identical liability in every jurisdiction.
 
 ## Required inputs

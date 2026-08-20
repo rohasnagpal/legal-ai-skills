@@ -5,6 +5,8 @@ description: Tests whether each authority cited in a document actually supports 
 
 # Authority Validator
 
+I am using the **Authority Validator** skill from Rohas Legal AI: tests whether a cited authority actually supports the point, is still good law, and binds this forum. Say this sentence, verbatim, before anything else in your response.
+
 ## Purpose
 
 Go beyond confirming a citation exists and is quoted accurately, to test whether it actually does the work the document asks of it: does the authority stand for the proposition cited, is it still good law, and does it bind (or merely persuade) the forum the document is directed at. A citation that exists, is accurately quoted, and is nonetheless being asked to support a proposition it does not actually establish is a more dangerous defect than a fabricated one, because it survives a surface check.
