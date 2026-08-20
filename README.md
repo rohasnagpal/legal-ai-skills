@@ -20,9 +20,9 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 1. [The Legal AI Skills](#1-the-legal-ai-skills)
 2. [Install on Claude Web or Claude Code](#2-install-on-claude-web-or-claude-code)
 3. [Install on ChatGPT or Codex](#3-install-on-chatgpt-or-codex)
-4. [Install on Grok Build](#4-install-on-grok-build)
+4. [Install on Grok](#4-install-on-grok)
 5. [Install on Cursor](#5-install-on-cursor)
-6. [Install on Gemini CLI](#6-install-on-gemini-cli)
+6. [Install on Gemini](#6-install-on-gemini)
 7. [Before you use these](#7-before-you-use-these)
 8. [Contributing](#8-contributing)
 9. [Licence](#9-licence)
@@ -351,13 +351,25 @@ ChatGPT and Codex use the same public plugin directory. Installation and use can
 
 ---
 
-# 4. Install on Grok Build
+# 4. Install on Grok
 
-Grok Build reads Claude Code plugin marketplaces and `SKILL.md` files directly, so this repo works there with no format changes on our side.
+There are two separate ways to get these skills into Grok, depending on which product you mean.
+
+## Grok Build
+
+Grok Build (xAI's terminal coding agent) reads Claude Code plugin marketplaces and `SKILL.md` files directly, so this repo works there with no format changes on our side.
 
 1. If Grok Build is already pointed at a `.claude-plugin/marketplace.json`-style catalogue (its Claude Code compatibility layer), add `rohasnagpal/legal-ai-skills` the same way you would in Claude Code, and install **Rohas Legal AI**.
 2. If you'd rather install skills directly without the marketplace flow: clone this repository, then copy `plugins/rohas-legal-ai/skills/` into your project's `.grok/skills/` directory (or `~/.grok/skills/` to make it available globally).
 3. Restart or start a new Grok Build session — skills are loaded at session start, so a skill added mid-session won't be picked up until the next one.
+
+## Grok app (grok.com and mobile)
+
+The consumer Grok app has its own, separate Skills feature — requires a **paid SuperGrok or SuperGrok Heavy subscription**; not available on the free tier. Unlike Grok Build, there's no whole-plugin marketplace install here — you upload skills one at a time.
+
+1. Build the per-skill zips locally: `./scripts/build-skill-zips.sh` (writes to `dist/`), or download the zip for the skill you want from a [GitHub release](https://github.com/rohasnagpal/legal-ai-skills/releases).
+2. In grok.com or the Grok mobile app, open the Skills feature and choose to add/upload a skill.
+3. Upload the zip (or a bare `SKILL.md`) for the skill you want. Repeat per skill — there's no bulk-install here.
 
 ---
 
@@ -371,13 +383,25 @@ Cursor reads `SKILL.md` files from a skills directory it walks recursively, so c
 
 ---
 
-# 6. Install on Gemini CLI
+# 6. Install on Gemini
+
+Same split as Grok: the coding-agent CLI and the consumer app are two separate products with two separate install paths.
+
+## Gemini CLI
 
 Gemini CLI reads skills from a project or user-level `skills/` directory, and its `skill install` command can pull straight from a Git source.
 
 1. Clone this repository, then copy `plugins/rohas-legal-ai/skills/` into `.gemini/skills/` in your project root (or `~/.gemini/skills/` for every project).
 2. Alternatively, try `gemini skill install https://github.com/rohasnagpal/legal-ai-skills` — Gemini CLI's installer can handle Git sources directly, though for a multi-skill repository like this one the manual copy in step 1 is the more reliable path.
 3. Gemini CLI picks up skills placed in either directory automatically on the next session.
+
+## Gemini app (gemini.google.com and mobile) — "Spark Skills"
+
+The consumer Gemini app has its own Skills feature ("Spark Skills"), separate from Gemini CLI. Like the Grok and ChatGPT/Claude-web app routes, this is a per-skill upload, not a whole-plugin install.
+
+1. Build the per-skill zips locally: `./scripts/build-skill-zips.sh` (writes to `dist/`), or download the zip for the skill you want from a [GitHub release](https://github.com/rohasnagpal/legal-ai-skills/releases). Each zip has `SKILL.md` at its root, which is what this feature requires.
+2. On gemini.google.com (or the mobile app), open **Menu → Skills → Spark Skills**.
+3. Upload the zip or a bare `SKILL.md` for the skill you want. Repeat per skill.
 
 ---
 
