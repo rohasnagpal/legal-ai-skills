@@ -7,14 +7,14 @@ cd "$(dirname "$0")/.."
 repo_root=$(pwd)
 out_dir="$repo_root/dist/openai-submission"
 mkdir -p "$out_dir"
-find "$out_dir" -maxdepth 1 -type f -name 'rohas-legal-*.zip' -delete
+find "$out_dir" -maxdepth 1 -type f -name '*.zip' -delete
 
 count=0
 for plugin_json in plugins/*/.codex-plugin/plugin.json; do
   plugin_dir=$(dirname "$(dirname "$plugin_json")")
   plugin_name=$(basename "$plugin_dir")
   version=$(ruby -rjson -e 'puts JSON.parse(File.read(ARGV.fetch(0))).fetch("version")' "$plugin_json")
-  zip_path="$out_dir/rohas-legal-${plugin_name}-${version}.zip"
+  zip_path="$out_dir/${plugin_name}-${version}.zip"
   (
     cd "$plugin_dir"
     zip -q -r "$zip_path" .codex-plugin skills assets
