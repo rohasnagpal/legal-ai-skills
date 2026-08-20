@@ -1,7 +1,7 @@
 {
   "name": "rohas-legal-ai",
   "version": "1.0.0",
-  "description": "The complete Rohas Legal AI skill library for lawyers in a single plugin, covering contracts, disputes and litigation, arbitration and ADR, corporate, regulatory, privacy, criminal, employment, property, tax, finance, insolvency, IP, startup, public law, research, investigations, and practice-management workflows.",
+  "description": "160+ Legal AI Skills for ChatGPT, Claude, Grok, Cursor & Gemini in 1 plugin. Install it once, then describe your legal task in plain language. The assistant selects the right skill from the library automatically. You don't need to know or invoke any individual skill by name.",
   "author": {
     "name": "Rohas Nagpal",
     "url": "https://rohasnagpal.com"
@@ -14,7 +14,7 @@
   "interface": {
     "displayName": "Rohas Legal AI",
     "shortDescription": "The complete Legal AI library",
-    "longDescription": "One installable plugin containing the full Rohas Legal AI skill library. Install once and describe your legal task normally — the right skill across contracts, disputes, corporate, regulatory, privacy, criminal, employment, property, tax and more is selected automatically. No need to know or invoke individual skill names.",
+    "longDescription": "160+ Legal AI Skills for ChatGPT, Claude, Grok, Cursor & Gemini in 1 plugin. Install it once, then describe your legal task in plain language. The assistant selects the right skill from the library automatically. You don't need to know or invoke any individual skill by name.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
