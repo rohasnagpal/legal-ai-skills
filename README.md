@@ -4,11 +4,9 @@ An open collection of 160+ Legal AI Skills for ChatGPT, Claude, Grok, Cursor & G
 
 A skill is a reusable set of written instructions for an AI assistant. Each skill teaches an AI assistant how to handle one kind of legal task properly.
 
-All skills ship as one installable plugin: **Rohas Legal AI.** 
+All skills ship as one installable plugin: **Rohas Legal AI.** It contains the complete skill library: contracts, disputes and litigation, arbitration and ADR, corporate, regulatory, privacy, criminal, employment, property, tax, finance, insolvency, IP, startup, public law, research, investigations, and practice management. 
 
-It contains the complete skill library: contracts, disputes and litigation, arbitration and ADR, corporate, regulatory, privacy, criminal, employment, property, tax, finance, insolvency, IP, startup, public law, research, investigations, and practice management. 
-
-Install it once, then describe your legal task in plain language. The assistant selects the right skill from the library automatically — you don't need to know or invoke any individual skill by name.
+Install it once, then describe your legal task in plain language. The assistant selects the right skill from the library automatically. You don't need to know or invoke any individual skill by name.
 
 **Who this is for:** Practising lawyers, in-house counsel, and law students.
 
