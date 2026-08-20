@@ -57,7 +57,7 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 [tax](#tax) ·
 [verify](#verify)
 
-All 161 skills below live in one plugin — `plugins/rohas-legal-ai/skills/` — grouped here by practice area for browsing, and linked to their `SKILL.md`.
+All 162 skills below live in one plugin — `plugins/rohas-legal-ai/skills/` — grouped here by practice area for browsing, and linked to their `SKILL.md`.
 
 ---
 
@@ -195,6 +195,7 @@ IP licence review lives inside **contract-reviewer** as a specialist reference �
 ### learning
 
 - **[learn-law-with-rohas](plugins/rohas-legal-ai/skills/learn-law-with-rohas/SKILL.md)**: interactive legal tutor — structured lessons, hypotheticals, quizzes, adaptive difficulty and a final assessment on a law or topic of your choice
+- **[legal-exam-prep-with-rohas](plugins/rohas-legal-ai/skills/legal-exam-prep-with-rohas/SKILL.md)**: exam-focused revision — study plans, mock exams, adaptive quizzes, answer-structure coaching and weak-area tracking for a specific examination
 
 For a one-off plain-language explanation instead of a structured course, see **legal-explainer** under Advisory above.
 

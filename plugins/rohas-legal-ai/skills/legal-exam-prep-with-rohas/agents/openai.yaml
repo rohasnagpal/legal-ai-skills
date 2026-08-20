@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Exam Prep"
+  short_description: "Study plans, mock exams and adaptive quizzes for law exams"
+  default_prompt: "Use $legal-exam-prep-with-rohas to build a revision plan for my contract law exam and quiz me on weak areas."
