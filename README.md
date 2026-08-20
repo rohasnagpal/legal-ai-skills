@@ -1,10 +1,10 @@
 # Legal AI Skills
 
-An open collection of 100+ Legal AI Skills for ChatGPT, Claude, Grok, Cursor and Gemini.
+An open collection of 150+ Legal AI Skills for ChatGPT, Claude, Grok, Cursor and Gemini.
 
 A skill is a reusable set of written instructions for an AI assistant. Each skill teaches an AI assistant how to handle one kind of legal task properly.
 
-All skills ship as **one installable plugin: Rohas Legal AI.** 
+All skills ship as one installable plugin: **Rohas Legal AI.** 
 
 It contains the complete skill library: contracts, disputes and litigation, arbitration and ADR, corporate, regulatory, privacy, criminal, employment, property, tax, finance, insolvency, IP, startup, public law, research, investigations, and practice management. 
 
@@ -25,10 +25,9 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 4. [Install on Grok Build](#4-install-on-grok-build)
 5. [Install on Cursor](#5-install-on-cursor)
 6. [Install on Gemini CLI](#6-install-on-gemini-cli)
-7. [Contents](#7-contents)
-8. [Before you use these](#8-before-you-use-these)
-9. [Contributing](#9-contributing)
-10. [Licence](#10-licence)
+7. [Before you use these](#7-before-you-use-these)
+8. [Contributing](#8-contributing)
+9. [Licence](#9-licence)
 
 # 1. The Legal AI skills
 
@@ -383,12 +382,7 @@ Gemini CLI reads skills from a project or user-level `skills/` directory, and it
 
 ---
 
-# 7. Contents
-
-
----
-
-# 8. Before you use these
+# 7. Before you use these
 
 These skills are drafting and analysis aids. They do not give legal advice and
 they are not a substitute for professional judgment.
@@ -404,7 +398,7 @@ you install it, as you would any code you run.
 
 ---
 
-# 9. Contributing
+# 8. Contributing
 
 Corrections, bug reports and suggestions are welcome: please open an issue.
 
@@ -417,7 +411,7 @@ Contributions are accepted under the MIT licence.
 
 ---
 
-# 10. Licence
+# 9. Licence
 
 MIT. See [LICENSE](LICENSE).
 
