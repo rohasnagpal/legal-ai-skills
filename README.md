@@ -1,6 +1,6 @@
 # Legal AI Skills
 
-An open collection of 150+ Legal AI Skills for ChatGPT, Claude, Grok, Cursor and Gemini.
+An open collection of 160+ Legal AI Skills for ChatGPT, Claude, Grok, Cursor & Gemini.
 
 A skill is a reusable set of written instructions for an AI assistant. Each skill teaches an AI assistant how to handle one kind of legal task properly.
 
