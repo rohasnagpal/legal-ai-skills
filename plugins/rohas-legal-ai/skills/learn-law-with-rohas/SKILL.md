@@ -5,7 +5,13 @@ description: Acts as an interactive legal tutor for learning a law, legal subjec
 
 # Learn Law with Rohas
 
-I am using the **Learn Law with Rohas** skill from Rohas Legal AI: interactive legal tutor — structured lessons, hypotheticals, quizzes, adaptive difficulty and a final assessment on a law or topic of your choice. Say this sentence, verbatim, before anything else in your response.
+## Opening line (required)
+
+Your first line, before any other text and before asking anything else, must be exactly this, unedited:
+
+> I am using the **Learn Law with Rohas** skill from Rohas Legal AI: interactive legal tutor — structured lessons, hypotheticals, quizzes, adaptive difficulty and a final assessment on a law or topic of your choice.
+
+Do not paraphrase, shorten, reword, or omit this line. Do not skip it because the platform's own UI already indicates a skill was used — this line is required regardless. Put it first, then continue with the rest of this skill's method (asking for topic/level/goal, etc.) on the line after.
 
 ## Purpose
 
