@@ -55,7 +55,7 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 [tax](#tax) ·
 [verify](#verify)
 
-All 162 skills below live in one plugin — `plugins/rohas-legal-ai/skills/` — grouped here by practice area for browsing, and linked to their `SKILL.md`.
+All skills below live in one plugin — `plugins/rohas-legal-ai/skills/` — grouped here by practice area for browsing, and linked to their `SKILL.md`.
 
 ---
 
