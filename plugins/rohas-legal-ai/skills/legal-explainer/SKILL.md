@@ -1,54 +1,200 @@
 ---
 name: legal-explainer
-description: Restates an existing legal position — an opinion, a judgment, a contractual provision, counsel's advice — in plain language a client can actually act on, without changing its substance. Use this whenever a user has a legal position already worked out and needs it translated for a non-lawyer — including phrasings like "explain this opinion to the client in plain English", "what does this ruling actually mean for us", "translate this clause into something the board can understand", "make this advice readable for someone without a legal background", or "what's the plain-English version of what counsel just told us". This is a translation skill, not a fresh analysis — it does not add a conclusion, authority, or caveat the source does not contain, and does not drop one the source does. Use legal-opinion-drafter first if the formal analysis does not exist yet. Fires for any existing legal position needing a lay-readable restatement, in any practice area.
+description: Explains laws, legal concepts, judgments, clauses, rights, obligations, procedures, and legal positions in clear plain language without losing legal accuracy. Use when a user asks "what does this mean?", "explain this law simply", "explain this clause", "what does this judgment actually say", "explain this to a client", or wants a practical explanation of a legal issue. Adapt the explanation to the user's level and purpose. Do not use for a formal legal opinion, exhaustive research memorandum, litigation strategy, or structured teaching course with quizzes; use learn-law-with-rohas for the latter.
 ---
 
 # Legal Explainer
 
-## What this does
+## Purpose
 
-Takes a legal position that already exists — a written opinion, a judgment, a clause, advice already given — and restates it in language a client can actually use to decide or act, without adding to or subtracting from what the source actually says. It is a translation exercise. The bottom line, the reasoning, the caveats, and the source's own level of confidence all have to survive the translation intact; only the register changes.
+Turn complex legal material into an accurate, understandable explanation that the intended reader can use.
 
-## Before you start
+The objective is clarity without oversimplifying away legally important distinctions.
 
-**The source material to translate.** The actual opinion, judgment, clause, or advice — supplied by the user, not reconstructed from a general sense of what it probably says. This is the only blocking input; there is nothing to translate without it.
+This skill can explain:
 
-Not blocking, ask once and proceed on a reasonable default without it: **the audience** — an individual client, a business client, a board. This shapes register and how much background to supply, not the substance of what is said.
+* statutes, rules and regulations;
+* legal concepts and doctrines;
+* judgments and orders;
+* contractual clauses;
+* rights and obligations;
+* legal procedures;
+* regulatory requirements;
+* legal terminology;
+* a lawyer's analysis or position;
+* the practical effect of legal documents.
+
+## Determine the explanation needed
+
+Identify from the request, where possible:
+
+* the topic or material to explain;
+* jurisdiction, if legally relevant;
+* who the explanation is for;
+* the reader's existing level of legal knowledge;
+* whether the user wants a short explanation or a deeper one;
+* whether practical examples would help.
+
+Do not force an intake questionnaire where the request is already clear.
+
+If the user provides legal text, work from the supplied text first.
+
+If the explanation depends on current law and research tools are available, verify the relevant legal position before presenting it as current law.
+
+## Explanation levels
+
+Adapt automatically unless the user specifies a level.
+
+### Simple
+
+Use for clients, non-lawyers and quick explanations.
+
+Prefer:
+
+* ordinary words;
+* short sentences;
+* concrete examples;
+* minimal legal terminology.
+
+Where a legal term is necessary, define it immediately.
+
+### Practitioner
+
+Use for lawyers or legally informed users.
+
+Preserve:
+
+* legal terminology;
+* doctrinal distinctions;
+* procedural consequences;
+* material exceptions and qualifications.
+
+Still avoid unnecessary jargon.
+
+### Deep explanation
+
+Use when the user wants to understand how the rule works rather than merely what it says.
+
+Explain:
+
+* the rule;
+* why it matters;
+* its elements or conditions;
+* exceptions;
+* how courts or regulators apply it;
+* practical consequences;
+* unresolved or jurisdiction-dependent issues.
 
 ## Method
 
-**1. Read the whole source once before restating anything.** A caveat or qualification stated once, early in a document, routinely governs a conclusion stated later — translating section by section on a first pass loses exactly the nuance this skill exists to preserve.
+1. **Identify the core question.**
+   State internally what the user actually needs to understand before explaining surrounding material.
 
-**2. State the bottom line first, in one or two plain sentences** — what this actually means for the client, practically, before any of the reasoning.
+2. **Start with the answer.**
+   Give the simplest accurate explanation first. Do not begin with legislative history or technical qualifications unless they are necessary to avoid misleading the reader.
 
-**3. Translate each material element of the source's reasoning into plain language**, including the conditions and caveats it places on its own conclusion. Do not drop a caveat because it complicates an otherwise clean explanation — the caveat is often the part the client most needs.
+3. **Break complex rules into components.**
+   Where useful, explain:
 
-**4. Preserve the source's own level of confidence exactly.** If the source says a position is "likely" or "arguable," the explanation says the same, in plain words — not "yes" or "you're covered." If the source is definitive, do not hedge it into false uncertainty either. Getting this wrong in either direction misrepresents the advice.
+   * who the rule applies to;
+   * what it requires or prohibits;
+   * when it applies;
+   * exceptions;
+   * consequences of non-compliance.
 
-**5. Do not add a legal conclusion, statute, or authority the source does not contain.** This is a restatement, not a fresh analysis. If the client's actual question is not answered by the source, say that plainly rather than filling the gap with an inference of your own.
+4. **Translate legal language, not legal meaning.**
+   Replace jargon with ordinary language while preserving distinctions that change the outcome.
 
-**6. State what the client needs to do or decide, if the source implies an action**, as its own distinct point — separate from the explanation of what the position means, so it cannot be missed inside the narrative.
+5. **Use examples where they materially improve understanding.**
+   Prefer short hypotheticals closely tied to the concept.
 
-**7. Flag it, rather than silently resolve it, if the source itself is unclear, outdated, or internally inconsistent on the point the client is asking about.** Do not pick one reading and present it as the only one.
+6. **Explain interaction between provisions where necessary.**
+   Do not explain a clause or statutory section in isolation if another provision materially changes its effect.
+
+7. **Separate text from interpretation.**
+   Make clear whether a point comes directly from:
+
+   * the supplied document;
+   * statutory text;
+   * a judgment;
+   * a legal inference;
+   * general explanation.
+
+8. **Flag uncertainty.**
+   Say where the answer depends on:
+
+   * jurisdiction;
+   * facts not supplied;
+   * current case law;
+   * commencement or amendment status;
+   * another document or provision.
+
+9. **Give practical effect.**
+   Where useful, answer:
+
+   * what does this mean for the user;
+   * what can or cannot be done;
+   * what should be checked next.
+
+## Explaining legislation
+
+When explaining a statute, rule or regulation:
+
+* identify the relevant provision;
+* explain it in ordinary language;
+* identify prerequisites and exceptions;
+* explain defined terms that materially affect it;
+* distinguish the text of the law from interpretation;
+* verify current commencement and amendments where relevant.
+
+Do not paraphrase a provision so loosely that a legal condition disappears.
+
+## Explaining judgments
+
+When explaining a judgment:
+
+* identify the court and issue;
+* explain the material facts only to the extent necessary;
+* state what the court decided;
+* distinguish the holding from wider observations where relevant;
+* explain the practical significance;
+* avoid saying a case establishes a proposition broader than its actual holding.
+
+Use `case-law-analyst` where the user needs a full precedent analysis.
+
+## Explaining contracts
+
+When explaining a clause:
+
+* explain what the clause does;
+* identify who benefits and who bears the obligation or risk;
+* explain triggers, deadlines and consequences;
+* identify important interaction with related clauses where visible;
+* state when the conclusion is limited because the rest of the contract was not supplied.
+
+Use `contract-reviewer` when the user wants an adversarial or risk-ranked contract review.
 
 ## Output
 
-**1. Bottom line.** One or two plain sentences, stated first.
+Use the lightest structure appropriate to the request.
 
-**2. What this means.** The reasoning and its conditions, in plain language, with the source's caveats and confidence level preserved exactly.
+A useful default is:
 
-**3. What you need to do or decide.** Only if the source implies an action; stated separately from the explanation.
+1. **In simple terms**
+2. **How it works**
+3. **Example**
+4. **Why it matters**
+5. **Anything that needs checking**
 
-**4. What this doesn't cover.** If the client's actual question reaches beyond what the source addresses, say so plainly rather than extending the source's conclusion to cover it.
+Do not force all five sections for a simple question.
 
-## Do not
+## Guardrails
 
-Do not add a legal conclusion, authority, or statute that is not present in the source material.
-
-Do not upgrade or downgrade the source's stated level of confidence when translating it into plain language.
-
-Do not drop a material caveat or qualification to make the explanation read more cleanly.
-
-Do not silently resolve an ambiguity or internal inconsistency in the source. Flag it instead.
-
-Do not answer a question the source does not actually address. Say plainly that it isn't covered.
+* Do not sacrifice accuracy merely to make an explanation shorter.
+* Do not invent a legal rule, authority, deadline or exception.
+* Do not present an analogy as the legal rule itself.
+* Do not describe an unsettled position as settled.
+* Do not treat a headnote, summary or secondary source as though it were the judgment or legislation.
+* Do not overwhelm a non-lawyer with every possible exception where only a few materially affect the explanation.
+* Do not turn a request for explanation into unsolicited legal strategy.
+* If current legal accuracy matters, verify before relying on remembered law.

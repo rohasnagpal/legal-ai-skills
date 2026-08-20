@@ -1,0 +1,4 @@
+interface:
+  display_name: "Learn Law with Rohas"
+  short_description: "Interactive legal tutor with quizzes and adaptive teaching"
+  default_prompt: "Use $learn-law-with-rohas to teach me contract law step by step and quiz me as we go."

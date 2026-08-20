@@ -1,4 +1,4 @@
 interface:
   display_name: "Legal Explainer"
-  short_description: "Restate a legal position in plain, actionable language"
-  default_prompt: "Use $legal-explainer to translate this legal position into plain language the client can act on, without changing its substance."
+  short_description: "Explain law, clauses or judgments in plain language"
+  default_prompt: "Use $legal-explainer to explain this clause in plain language for a client without a legal background."

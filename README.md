@@ -125,6 +125,7 @@ Gemini CLI reads skills from a project or user-level `skills/` directory, and it
 [insolvency](#insolvency) ·
 [investigations](#investigations) ·
 [ip](#ip) ·
+[learning](#learning) ·
 [litigation](#litigation) ·
 [practice](#practice) ·
 [privacy](#privacy) ·
@@ -136,7 +137,7 @@ Gemini CLI reads skills from a project or user-level `skills/` directory, and it
 [tax](#tax) ·
 [verify](#verify)
 
-All 160 skills below live in one plugin — `plugins/rohas-legal-ai/skills/` — grouped here by practice area for browsing, and linked to their `SKILL.md`.
+All 161 skills below live in one plugin — `plugins/rohas-legal-ai/skills/` — grouped here by practice area for browsing, and linked to their `SKILL.md`.
 
 ---
 
@@ -146,7 +147,7 @@ All 160 skills below live in one plugin — `plugins/rohas-legal-ai/skills/` —
 - **[client-update-drafter](plugins/rohas-legal-ai/skills/client-update-drafter/SKILL.md)**: plain, honest status updates for a client on a running matter
 - **[demand-notice-drafter](plugins/rohas-legal-ai/skills/demand-notice-drafter/SKILL.md)**: pre-litigation demand notices with the claim properly particularised
 - **[engagement-letter-drafter](plugins/rohas-legal-ai/skills/engagement-letter-drafter/SKILL.md)**: scope, fees, exclusions and conflict position in a client engagement letter
-- **[legal-explainer](plugins/rohas-legal-ai/skills/legal-explainer/SKILL.md)**: restates a legal position in language a client can actually act on
+- **[legal-explainer](plugins/rohas-legal-ai/skills/legal-explainer/SKILL.md)**: explains a law, clause, judgment, or legal concept in clear plain language, adapted to the reader's level
 - **[legal-notice-analyser](plugins/rohas-legal-ai/skills/legal-notice-analyser/SKILL.md)**: analyses a received notice's allegations, deadlines and evidence needs before replying
 - **[legal-opinion-drafter](plugins/rohas-legal-ai/skills/legal-opinion-drafter/SKILL.md)**: structured written legal or tax opinion with question, analysis, conclusion and caveats — tax opinions add a risk-characterisation and exposure step
 - **[legal-risk-assessor](plugins/rohas-legal-ai/skills/legal-risk-assessor/SKILL.md)**: sets out the options on a decision, with the risk and likely outcome of each
@@ -270,6 +271,12 @@ Loan and facility agreement review lives inside **contract-reviewer** as a speci
 - **[trademark-opposition-drafter](plugins/rohas-legal-ai/skills/trademark-opposition-drafter/SKILL.md)**: opposition, counterstatement and rectification materials **(India)**
 
 IP licence review lives inside **contract-reviewer** as a specialist reference — see Contracts above.
+
+### learning
+
+- **[learn-law-with-rohas](plugins/rohas-legal-ai/skills/learn-law-with-rohas/SKILL.md)**: interactive legal tutor — structured lessons, hypotheticals, quizzes, adaptive difficulty and a final assessment on a law or topic of your choice
+
+For a one-off plain-language explanation instead of a structured course, see **legal-explainer** under Advisory above.
 
 ### litigation
 
