@@ -1,30 +1,26 @@
 # Legal AI Skills
 
-An open collection of Legal AI Skills for ChatGPT and Claude.
+An open collection of 100+ Legal AI Skills for ChatGPT, Claude, Grok, Cursor and Gemini.
 
 A skill is a reusable set of written instructions for an AI assistant. Each skill teaches an AI assistant how to handle one kind of legal task properly.
 
-All skills ship as **one installable plugin: Rohas Legal AI.** It contains the complete skill library — contracts, disputes and litigation, arbitration and ADR, corporate, regulatory, privacy, criminal, employment, property, tax, finance, insolvency, IP, startup, public law, research, investigations, and practice management. Install it once, then describe your legal task in plain language. The assistant selects the right skill from the library automatically — you don't need to know or invoke any individual skill by name.
+All skills ship as **one installable plugin: Rohas Legal AI.** 
 
-The **[Contents](#7-contents)** section below groups the library by practice area purely so you can browse what's in it. Those groupings are categories, not separate installs — there is nothing else to add.
+It contains the complete skill library: contracts, disputes and litigation, arbitration and ADR, corporate, regulatory, privacy, criminal, employment, property, tax, finance, insolvency, IP, startup, public law, research, investigations, and practice management. 
 
-**Who this is for:** Practising lawyers, in-house counsel, and law students who already know the
-law and want the drafting and analysis work to go faster. These skills assume
-professional judgment on your side. They are not built for people seeking
-legal help without a lawyer.
+Install it once, then describe your legal task in plain language. The assistant selects the right skill from the library automatically — you don't need to know or invoke any individual skill by name.
 
-**Jurisdiction:** Most skills are jurisdiction-neutral and work anywhere. Skills that turn on
-Indian statutes are marked **(India)**. Every skill is written to confirm the
-governing jurisdiction before it relies on any specific rule.
+**Who this is for:** Practising lawyers, in-house counsel, and law students.
+
+**Jurisdiction:** Most skills are jurisdiction-neutral and work anywhere. Skills that turn on Indian statutes are marked **(India)**. Every skill is written to confirm the governing jurisdiction before it relies on any specific rule.
 
 Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com).
 
-[![Watch the video](https://github.com/user-attachments/assets/dfb5665c-175d-482b-8673-4d96f039640c)](https://youtu.be/LJDxwzmIKbg)
 ---
 **Table of Contents**
 
-1. [Install on Claude Web](#1-install-on-claude-web)
-2. [Install on Claude Code](#2-install-on-claude-code)
+1. [The Legal AI Skills](#1-the-legal-ai-skills)
+2. [Install on Claude Web or Claude Code](#2-install-on-claude-web-or-claude-code)
 3. [Install on ChatGPT or Codex](#3-install-on-chatgpt-or-codex)
 4. [Install on Grok Build](#4-install-on-grok-build)
 5. [Install on Cursor](#5-install-on-cursor)
@@ -34,83 +30,8 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 9. [Contributing](#9-contributing)
 10. [Licence](#10-licence)
 
-# 1. Install on Claude Web
+# 1. The Legal AI skills
 
-Plugins are available on Claude's paid plans. Make sure **Code execution and file creation** is enabled. For an organisation-managed marketplace, an owner must also enable **Cowork** and **Skills**.
-
-1. Open **Customize → Plugins**. Under **Personal plugins**, click **+ → Add marketplace**.
-2. Click **Add from a repository**.
-3. Enter `https://github.com/rohasnagpal/legal-ai-skills`.
-4. Find **Rohas Legal AI** and click **+** to install it. That's the only entry in the marketplace — one plugin, the complete library. It's enabled automatically once installed.
-
----
-
-# 2. Install on Claude Code
-
-```
-/plugin marketplace add rohasnagpal/legal-ai-skills
-
-/plugin install rohas-legal-ai@rohas-legal
-```
-That's it — one install brings in the whole library. Just describe your task afterwards; there's no separate pack to pick.
-
-To pull in changes after the repo updates:
-
-```
-/plugin marketplace update rohas-legal
-```
----
-
-# 3. Install on ChatGPT or Codex
-
-## ChatGPT
-
-1. Click **Plugins** in the left menu.
-2. Search for [**Rohas Legal AI**](https://chatgpt.com/plugins?q=rohas+legal+ai).
-3. Click **+** to install it.
-4. Type `@rohas` in a chat to bring it in, then describe your task — the right skill is picked automatically.
-
-## Codex
-
-1. Open the **Plugin directory** in Codex.
-2. Search for **Rohas Legal AI**.
-3. Review the listing and install the plugin.
-
-ChatGPT and Codex use the same public plugin directory. Installation and use can depend on your plan, region, role and workspace settings. Directory updates can take up to six hours to appear in Codex.
-
----
-
-# 4. Install on Grok Build
-
-Grok Build reads Claude Code plugin marketplaces and `SKILL.md` files directly, so this repo works there with no format changes on our side.
-
-1. If Grok Build is already pointed at a `.claude-plugin/marketplace.json`-style catalogue (its Claude Code compatibility layer), add `rohasnagpal/legal-ai-skills` the same way you would in Claude Code, and install **Rohas Legal AI**.
-2. If you'd rather install skills directly without the marketplace flow: clone this repository, then copy `plugins/rohas-legal-ai/skills/` into your project's `.grok/skills/` directory (or `~/.grok/skills/` to make it available globally).
-3. Restart or start a new Grok Build session — skills are loaded at session start, so a skill added mid-session won't be picked up until the next one.
-
----
-
-# 5. Install on Cursor
-
-Cursor reads `SKILL.md` files from a skills directory it walks recursively, so category subfolders are fine.
-
-1. Clone this repository.
-2. Copy `plugins/rohas-legal-ai/skills/` into your project's `.cursor/skills/` directory (or `~/.cursor/skills/` to make it available across all your projects).
-3. Reload Cursor. Skills are discovered automatically and offered to Agent; you can also invoke one directly by typing `/` in Agent chat and searching for its name.
-
----
-
-# 6. Install on Gemini CLI
-
-Gemini CLI reads skills from a project or user-level `skills/` directory, and its `skill install` command can pull straight from a Git source.
-
-1. Clone this repository, then copy `plugins/rohas-legal-ai/skills/` into `.gemini/skills/` in your project root (or `~/.gemini/skills/` for every project).
-2. Alternatively, try `gemini skill install https://github.com/rohasnagpal/legal-ai-skills` — Gemini CLI's installer can handle Git sources directly, though for a multi-skill repository like this one the manual copy in step 1 is the more reliable path.
-3. Gemini CLI picks up skills placed in either directory automatically on the next session.
-
----
-
-# 7. Contents
 
 [advisory](#advisory) ·
 [arbitration](#arbitration) ·
@@ -385,6 +306,85 @@ Formal tax opinions now live in **legal-opinion-drafter** (Advisory) — see abo
 - **[authority-validator](plugins/rohas-legal-ai/skills/authority-validator/SKILL.md)**: tests whether a cited authority actually supports the point, is still good law, and binds this forum
 - **[citation-integrity-checker](plugins/rohas-legal-ai/skills/citation-integrity-checker/SKILL.md)**: flags every citation with what must be verified and how
 - **[consistency-checker](plugins/rohas-legal-ai/skills/consistency-checker/SKILL.md)**: checks facts, dates, defined terms and figures across a document set
+
+# 2. Install on Claude Web or Claude Code
+
+## Claude Web
+
+Plugins are available on Claude's paid plans. Make sure **Code execution and file creation** is enabled. For an organisation-managed marketplace, an owner must also enable **Cowork** and **Skills**.
+
+1. Open **Customize → Plugins**. Under **Personal plugins**, click **+ → Add marketplace**.
+2. Click **Add from a repository**.
+3. Enter `https://github.com/rohasnagpal/legal-ai-skills`.
+4. Find **Rohas Legal AI** and click **+** to install it. That's the only entry in the marketplace — one plugin, the complete library. It's enabled automatically once installed.
+
+## Claude Code
+
+```
+/plugin marketplace add rohasnagpal/legal-ai-skills
+
+/plugin install rohas-legal-ai@rohas-legal
+```
+That's it — one install brings in the whole library. Just describe your task afterwards; there's no separate pack to pick.
+
+To pull in changes after the repo updates:
+
+```
+/plugin marketplace update rohas-legal
+```
+---
+
+# 3. Install on ChatGPT or Codex
+
+## ChatGPT
+
+1. Click **Plugins** in the left menu.
+2. Search for [**Rohas Legal AI**](https://chatgpt.com/plugins?q=rohas+legal+ai).
+3. Click **+** to install it.
+4. Type `@rohas` in a chat to bring it in, then describe your task — the right skill is picked automatically.
+
+## Codex
+
+1. Open the **Plugin directory** in Codex.
+2. Search for **Rohas Legal AI**.
+3. Review the listing and install the plugin.
+
+ChatGPT and Codex use the same public plugin directory. Installation and use can depend on your plan, region, role and workspace settings. Directory updates can take up to six hours to appear in Codex.
+
+---
+
+# 4. Install on Grok Build
+
+Grok Build reads Claude Code plugin marketplaces and `SKILL.md` files directly, so this repo works there with no format changes on our side.
+
+1. If Grok Build is already pointed at a `.claude-plugin/marketplace.json`-style catalogue (its Claude Code compatibility layer), add `rohasnagpal/legal-ai-skills` the same way you would in Claude Code, and install **Rohas Legal AI**.
+2. If you'd rather install skills directly without the marketplace flow: clone this repository, then copy `plugins/rohas-legal-ai/skills/` into your project's `.grok/skills/` directory (or `~/.grok/skills/` to make it available globally).
+3. Restart or start a new Grok Build session — skills are loaded at session start, so a skill added mid-session won't be picked up until the next one.
+
+---
+
+# 5. Install on Cursor
+
+Cursor reads `SKILL.md` files from a skills directory it walks recursively, so category subfolders are fine.
+
+1. Clone this repository.
+2. Copy `plugins/rohas-legal-ai/skills/` into your project's `.cursor/skills/` directory (or `~/.cursor/skills/` to make it available across all your projects).
+3. Reload Cursor. Skills are discovered automatically and offered to Agent; you can also invoke one directly by typing `/` in Agent chat and searching for its name.
+
+---
+
+# 6. Install on Gemini CLI
+
+Gemini CLI reads skills from a project or user-level `skills/` directory, and its `skill install` command can pull straight from a Git source.
+
+1. Clone this repository, then copy `plugins/rohas-legal-ai/skills/` into `.gemini/skills/` in your project root (or `~/.gemini/skills/` for every project).
+2. Alternatively, try `gemini skill install https://github.com/rohasnagpal/legal-ai-skills` — Gemini CLI's installer can handle Git sources directly, though for a multi-skill repository like this one the manual copy in step 1 is the more reliable path.
+3. Gemini CLI picks up skills placed in either directory automatically on the next session.
+
+---
+
+# 7. Contents
+
 
 ---
 
