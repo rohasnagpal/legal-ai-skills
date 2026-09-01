@@ -4,9 +4,10 @@
   "description": "160+ Legal AI Skills for ChatGPT, Claude, Grok, Cursor & Gemini in 1 plugin. Install it once, then describe your legal task in plain language. The assistant selects the right skill from the library automatically. You don't need to know or invoke any individual skill by name.",
   "author": {
     "name": "Rohas Nagpal",
+    "email": "rohasnagpal@gmail.com",
     "url": "https://rohasnagpal.com"
   },
-  "homepage": "https://github.com/rohasnagpal/legal-ai-skills",
+  "homepage": "https://www.rohasnagpal.com/legal-ai-skills.php",
   "repository": "https://github.com/rohasnagpal/legal-ai-skills",
   "license": "MIT",
   "keywords": ["legal", "law", "contracts", "litigation", "arbitration", "corporate", "regulatory", "privacy", "criminal", "employment", "property", "tax", "compliance", "research"],
@@ -18,7 +19,8 @@
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
-    "websiteURL": "https://github.com/rohasnagpal/legal-ai-skills",
+    "websiteURL": "https://www.rohasnagpal.com/legal-ai-skills.php",
+    "privacyPolicyURL": "https://www.rohasnagpal.com/privacy-policy.php",
     "brandColor": "#B45309",
     "composerIcon": "./assets/composer-icon.svg",
     "logo": "./assets/logo.svg",
