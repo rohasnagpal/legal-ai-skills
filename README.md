@@ -14,6 +14,8 @@ Install it once, then describe your legal task in plain language. The assistant 
 
 For installation instructions, see: [https://www.rohasnagpal.com/legal-ai-skills.php](https://www.rohasnagpal.com/legal-ai-skills.php)
 
+**Windows:** Download [Rohas-Legal-AI-Installer.exe](https://github.com/rohasnagpal/legal-ai-skills/releases/latest/download/Rohas-Legal-AI-Installer.exe), run it, then restart ChatGPT/Codex. The installer contains the complete plugin and does not require Git. Windows may show an "Unknown publisher" warning until release signing is configured.
+
 Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com).
 
 ---

@@ -1,0 +1,20 @@
+{
+  "name": "rohas-legal-windows",
+  "interface": {
+    "displayName": "Rohas Legal AI for Windows"
+  },
+  "plugins": [
+    {
+      "name": "rohas-legal-ai",
+      "source": {
+        "source": "local",
+        "path": "./plugins/rohas-legal-ai"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

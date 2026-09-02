@@ -21,6 +21,16 @@ jobs:
       - name: Validate skills, manifests, and README links
         run: ruby scripts/validate.rb
 
+      - name: Validate Windows installer payload and PowerShell
+        shell: pwsh
+        run: |
+          $payloadRoot = Join-Path $env:RUNNER_TEMP 'rohas-installer-payload'
+          New-Item (Join-Path $payloadRoot '.agents/plugins') -ItemType Directory -Force | Out-Null
+          New-Item (Join-Path $payloadRoot 'plugins') -ItemType Directory -Force | Out-Null
+          Copy-Item 'installer/windows/marketplace.json' (Join-Path $payloadRoot '.agents/plugins/marketplace.json')
+          Copy-Item 'plugins/rohas-legal-ai' (Join-Path $payloadRoot 'plugins/rohas-legal-ai') -Recurse
+          ./installer/windows/install-plugin.ps1 -MarketplaceRoot $payloadRoot -SelfTest
+
       - name: Build skill zips
         run: ./scripts/build-skill-zips.sh
 

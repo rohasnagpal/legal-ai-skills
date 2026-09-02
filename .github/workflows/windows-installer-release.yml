@@ -1,0 +1,136 @@
+name: Build and release Windows installer
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  windows-installer:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify release version
+        id: version
+        shell: pwsh
+        run: |
+          $manifest = Get-Content 'plugins/rohas-legal-ai/.codex-plugin/plugin.json' -Raw | ConvertFrom-Json
+          if ('${{ github.ref_type }}' -eq 'tag') {
+            $tagVersion = '${{ github.ref_name }}' -replace '^v', ''
+            if ($manifest.version -ne $tagVersion) {
+              throw "Tag version $tagVersion does not match plugin version $($manifest.version)."
+            }
+          }
+          "version=$($manifest.version)" >> $env:GITHUB_OUTPUT
+
+      - name: Install Inno Setup
+        shell: pwsh
+        run: choco install innosetup --no-progress -y
+
+      - name: Build installer
+        shell: pwsh
+        run: |
+          $iscc = Get-Command ISCC.exe -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source -First 1
+          if (-not $iscc) {
+            $iscc = 'C:\Program Files (x86)\Inno Setup 6\ISCC.exe'
+          }
+          & $iscc "/DMyAppVersion=${{ steps.version.outputs.version }}" 'installer/windows/Rohas-Legal-AI-Installer.iss'
+          if ($LASTEXITCODE -ne 0) {
+            throw "Inno Setup exited with code $LASTEXITCODE."
+          }
+          if (-not (Test-Path 'dist/Rohas-Legal-AI-Installer.exe')) {
+            throw 'The installer was not created.'
+          }
+
+      - name: Sign installer when a certificate is configured
+        shell: pwsh
+        env:
+          CERTIFICATE_BASE64: ${{ secrets.WINDOWS_CODE_SIGNING_CERTIFICATE_BASE64 }}
+          CERTIFICATE_PASSWORD: ${{ secrets.WINDOWS_CODE_SIGNING_CERTIFICATE_PASSWORD }}
+        run: |
+          if ([string]::IsNullOrWhiteSpace($env:CERTIFICATE_BASE64)) {
+            Write-Host 'No code-signing certificate is configured; publishing an unsigned installer.'
+            exit 0
+          }
+          $certificatePath = Join-Path $env:RUNNER_TEMP 'rohas-code-signing.pfx'
+          try {
+            [IO.File]::WriteAllBytes($certificatePath, [Convert]::FromBase64String($env:CERTIFICATE_BASE64))
+            $signTool = Get-ChildItem "${env:ProgramFiles(x86)}\Windows Kits\10\bin\*\x64\signtool.exe" |
+              Sort-Object FullName -Descending |
+              Select-Object -ExpandProperty FullName -First 1
+            if (-not $signTool) {
+              throw 'signtool.exe was not found on the runner.'
+            }
+            & $signTool sign /fd SHA256 /td SHA256 /tr http://timestamp.digicert.com /f $certificatePath /p $env:CERTIFICATE_PASSWORD 'dist/Rohas-Legal-AI-Installer.exe'
+            if ($LASTEXITCODE -ne 0) {
+              throw "signtool.exe exited with code $LASTEXITCODE."
+            }
+          }
+          finally {
+            Remove-Item -LiteralPath $certificatePath -Force -ErrorAction SilentlyContinue
+          }
+
+      - name: Build per-skill ZIPs for a tagged release
+        if: github.ref_type == 'tag'
+        shell: pwsh
+        run: |
+          $skillFiles = @(Get-ChildItem 'plugins' -Filter 'SKILL.md' -File -Recurse | Where-Object {
+            $_.Directory.Parent.Name -eq 'skills'
+          })
+          foreach ($skillFile in $skillFiles) {
+            $skillDirectory = $skillFile.Directory
+            $pluginDirectory = $skillDirectory.Parent.Parent
+            $zipName = "$($pluginDirectory.Name)-$($skillDirectory.Name).zip"
+            Compress-Archive -LiteralPath $skillDirectory.FullName -DestinationPath (Join-Path 'dist' $zipName) -CompressionLevel Optimal
+          }
+          if ($skillFiles.Count -eq 0) {
+            throw 'No skill ZIPs were created.'
+          }
+          Write-Host "Created $($skillFiles.Count) skill ZIPs."
+
+      - name: Create checksums
+        shell: pwsh
+        run: |
+          $checksumLines = Get-ChildItem 'dist' -File |
+            Where-Object Name -ne 'SHA256SUMS.txt' |
+            Sort-Object Name |
+            ForEach-Object {
+              $hash = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+              "$hash  $($_.Name)"
+            }
+          $checksumLines | Set-Content 'dist/SHA256SUMS.txt' -Encoding ascii
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rohas-legal-ai-windows-${{ steps.version.outputs.version }}
+          path: dist/*
+          if-no-files-found: error
+
+      - name: Publish GitHub release
+        if: github.ref_type == 'tag'
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $tag = '${{ github.ref_name }}'
+          $assets = Get-ChildItem 'dist' -File | Select-Object -ExpandProperty FullName
+          gh release view $tag *> $null
+          if ($LASTEXITCODE -eq 0) {
+            gh release upload $tag @assets --clobber
+          }
+          else {
+            gh release create $tag @assets --verify-tag --generate-notes --title "Rohas Legal AI $tag"
+          }
+          if ($LASTEXITCODE -ne 0) {
+            throw "GitHub release publishing exited with code $LASTEXITCODE."
+          }

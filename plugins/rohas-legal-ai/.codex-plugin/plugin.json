@@ -1,6 +1,6 @@
 {
   "name": "rohas-legal-ai",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "160+ Legal AI Skills for ChatGPT, Claude, Grok, Cursor & Gemini in 1 plugin. Install it once, then describe your legal task in plain language. The assistant selects the right skill from the library automatically. You don't need to know or invoke any individual skill by name.",
   "author": {
     "name": "Rohas Nagpal",
