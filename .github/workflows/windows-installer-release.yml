@@ -107,7 +107,8 @@ jobs:
               $hash = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
               "$hash  $($_.Name)"
             }
-          $checksumLines | Set-Content 'dist/SHA256SUMS.txt' -Encoding ascii
+          $checksumPath = Join-Path (Resolve-Path 'dist').Path 'SHA256SUMS.txt'
+          [IO.File]::WriteAllText($checksumPath, (($checksumLines -join "`n") + "`n"), [Text.Encoding]::ASCII)
 
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v4
