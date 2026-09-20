@@ -4,12 +4,12 @@
     "name": "Rohas Nagpal",
     "url": "https://rohasnagpal.com"
   },
-  "description": "vCLO — a free, open-source AI legal team powered by 160+ professional legal skills.",
+  "description": "vCLO — a free, open-source AI legal team powered by 162 specialist legal skills.",
   "plugins": [
     {
       "name": "vclo-by-rohas",
       "source": "./plugins/vclo-by-rohas",
-      "description": "vCLO combines 160+ Legal AI Skills with specialist virtual lawyers, multi-step workflows, built-in company-registry access and connector-ready business tools. Host support for orchestration and integrations varies; the core skills remain portable.",
+      "description": "vCLO is an AI legal team with one virtual Chief Legal Officer, eight specialist virtual lawyers, 162 specialist legal skills, coordinated workflows and company-registry access.",
       "author": {
         "name": "Rohas Nagpal",
         "url": "https://rohasnagpal.com"

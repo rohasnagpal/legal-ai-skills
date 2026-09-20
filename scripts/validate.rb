@@ -420,9 +420,7 @@ vclo_required_files = %w[
   plugins/vclo-by-rohas/integrations/legal-research.md
   plugins/vclo-by-rohas/integrations/github.md
   plugins/vclo-by-rohas/.mcp.json
-  plugins/vclo-by-rohas/.mcp.windows.json
   plugins/vclo-by-rohas/mcp/launch-company-registry
-  plugins/vclo-by-rohas/mcp/launch-company-registry.cmd
   plugins/vclo-by-rohas/mcp/company-registry-server.mjs
   plugins/vclo-by-rohas/mcp/company-registry-server.test.mjs
   plugins/vclo-by-rohas/mcp/README.md

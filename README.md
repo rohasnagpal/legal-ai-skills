@@ -1,8 +1,8 @@
 # vCLO
 
-**A free, open-source AI legal team powered by 160+ professional legal skills.**
+**A free, open-source AI legal team powered by 162 specialist legal skills.**
 
-vCLO helps lawyers, in-house teams, startups and businesses handle legal work using reusable legal skills, specialist virtual lawyers, multi-step workflows, built-in company-registry access and connector-ready business tools.
+vCLO helps lawyers, in-house teams, startups and businesses handle legal work using specialist virtual lawyers, coordinated workflows, official company registries and authorised documents and services.
 
 It can help with:
 
@@ -13,19 +13,13 @@ It can help with:
 - privacy and regulatory compliance;
 - IP review, investigations and evidence handling.
 
-Install it once and describe the legal task in plain language. For a simple task, vCLO uses the relevant skill directly. For a complex matter, it can coordinate specialist workstreams, use available connected systems, verify important findings and produce one consolidated legal work product.
+Install it once and describe the legal task in plain language. For a simple task, vCLO uses the relevant legal skill. For a complex matter, it coordinates the appropriate specialists and produces one consolidated work product.
 
-In Codex, just say `Hello vCLO`, ask for “vCLO”, a “virtual Chief Legal Officer” or an “AI legal team”, or explicitly invoke **[$vclo-by-rohas:ask-vclo](plugins/vclo-by-rohas/skills/ask-vclo/SKILL.md)**. The internal `ask-vclo` name keeps vCLO reliably discoverable in large skill libraries; its visible name remains **vCLO**.
+## Install vCLO
 
-The product name is **vCLO by Rohas** and its technical plugin identifier is **`vclo-by-rohas`**.
+Tell Codex: `Install vCLO from https://github.com/rohasnagpal/legal-ai-skills. Register the repository as a plugin source and install vclo-by-rohas@rohas-legal.`
 
-Existing users upgrading from the former `rohas-legal-ai` identifier should remove the old plugin and install `vclo-by-rohas@rohas-legal`. The Windows installer performs this migration automatically.
-
-**Installation:** See the [installation guide](https://www.rohasnagpal.com/legal-ai-skills.php).
-
-**Install directly from GitHub in Codex:** tell Codex: `Install vCLO from https://github.com/rohasnagpal/legal-ai-skills. Register the repository as a plugin source and install vclo-by-rohas@rohas-legal.` Approve the installation, start a new task, and say `Hello vCLO`. No public plugin-directory listing is required.
-
-**Windows:** Download [Rohas-Legal-AI-Installer.exe](https://github.com/rohasnagpal/legal-ai-skills/releases/latest/download/Rohas-Legal-AI-Installer.exe), run it, then restart ChatGPT/Codex. The installer contains the complete plugin and does not require Git. Windows may show an "Unknown publisher" warning until release signing is configured.
+Approve the installation, start a new task, and say `Hello vCLO`.
 
 **Who this is for:** Practising lawyers, in-house counsel, startups, businesses and law students.
 
@@ -35,66 +29,27 @@ Existing users upgrading from the former `rohas-legal-ai` identifier should remo
 
 ```text
 vCLO
-├── 160+ Legal Skills
+├── 1 Virtual Chief Legal Officer
 ├── 8 Specialist Virtual Lawyers
-├── Multi-step Workflows
-└── Connector-ready Integrations
+├── 162 Specialist Legal Skills
+└── 6 Coordinated Legal Workflows
 ```
 
-A request for M&A legal due diligence can be split into corporate, contracts, employment, IP, litigation and compliance workstreams, checked against the same evidence set, and consolidated into one issue register and report. If subagents are unavailable, vCLO follows the same workflow sequentially. If no connected system is available, it works from uploaded or local files and identifies external checks that remain outstanding.
+A request for M&A legal due diligence, for example, can be divided among corporate, contracts, employment, IP, litigation and compliance specialists, then consolidated into one issue register and report.
 
-Capabilities such as subagents, tool connections and MCP integrations depend on the host AI environment. The core skills remain portable across ChatGPT, Codex, Claude, Grok, Cursor and Gemini; no platform is assumed to support every vCLO feature.
+## Documents and connected services
 
-## Connector-ready document and business systems in Codex
+vCLO can work with documents you provide and, where you authorise access in Codex, services such as Google Drive and Docs, Gmail, Google Calendar, SharePoint, OneDrive, Outlook, GitHub and legal-research tools. If a source is unavailable, vCLO will identify what remains to be checked.
 
-vCLO is connector-ready: it can use supported document, email, calendar, cloud-storage, GitHub and legal-research tools when the user connects and authorises them. vCLO does not store service credentials or require any particular provider. A Codex user can give it access to Google Drive and Docs, Gmail, Google Calendar, SharePoint, OneDrive, Outlook, GitHub or another system by installing a compatible plugin or connecting a trusted [MCP server](https://learn.chatgpt.com/docs/extend/mcp).
+## Company registries
 
-### Codex desktop app
+vCLO includes read-only access to three official sources:
 
-1. Open **Settings → MCP servers**.
-2. Select **Add server**.
-3. Enter a name, choose **STDIO** or **Streamable HTTP**, and provide the trusted server's command or URL.
-4. Save and restart Codex.
-5. If the server uses OAuth, select **Authenticate** and sign in to the relevant account.
-6. Enter `/mcp` in the composer to confirm that the server and its tools are available.
+- **SEC EDGAR** — US SEC filer profiles and filings; no account required.
+- **GLEIF** — global Legal Entity Identifier records; no account required.
+- **UK Companies House** — UK company profiles, filings, officers, persons with significant control and charges. Companies House may require a free access key.
 
-### Codex CLI
-
-Add the provider's MCP server using the command or URL supplied by that provider:
-
-```bash
-codex mcp add <server-name> -- <stdio-server-command>
-codex mcp add <server-name> --url <https-server-url>
-```
-
-For an OAuth-enabled server, authenticate and then confirm the connection:
-
-```bash
-codex mcp login <server-name>
-codex mcp list
-```
-
-The Codex desktop app, CLI and IDE extension share MCP configuration for the same Codex host. The IDE extension also provides **Settings → MCP servers → Add server**.
-
-### What vCLO can do after connection
-
-Available actions depend on the provider and the permissions granted. Typical read capabilities include searching selected folders or repositories, listing files, retrieving document content and metadata, locating relevant email, and reading calendar events. vCLO should use only the sources, folders, accounts, custodians, repositories and date ranges authorised for the matter.
-
-OpenAI's documented Google Drive connector currently uses `drive.readonly` for listing drives, searching files, finding recent documents and fetching content. It can therefore retrieve Google Docs stored in Drive, but it does not provide document creation or editing. Editing requires a separately configured, trusted tool that expressly exposes write actions. See the [official connector capability list](https://developers.openai.com/api/docs/guides/tools-connectors-mcp).
-
-If a connection is unavailable, vCLO continues from uploaded or local files and identifies the external checks that remain outstanding. Never place OAuth tokens, API keys or other credentials in this repository.
-
-### Built-in free company-registry connectors
-
-vCLO includes a read-only MCP server for three free official data sources:
-
-- **SEC EDGAR** — US SEC filer profiles and filings; no API key required.
-- **GLEIF** — global Legal Entity Identifier records; no API key required.
-- **UK Companies House** — company profiles, filings, officers, persons with significant control and charges; a free Companies House developer API key is required.
-
-The MCP server is installed with the plugin. Restart Codex and begin a new task after installation so the tools are discovered. SEC and GLEIF work without account configuration. To enable Companies House, create a free API key in the [Companies House Developer Hub](https://developer.company-information.service.gov.uk/), set it as `COMPANIES_HOUSE_API_KEY` in the environment that launches Codex, and restart Codex. Optionally set `VCLO_SEC_USER_AGENT` to your application or organisation name and contact email.
-
-Ask vCLO to “search the available official registries for *company name* in *jurisdiction*.” vCLO will select the relevant bundled source and report its coverage. These connectors do not provide universal registry coverage: SEC covers SEC filers, GLEIF covers entities with an LEI, and Companies House covers the UK. An empty result is not proof of non-existence or good standing.
+Ask vCLO to “search the available official registries for *company name* in *jurisdiction*.” Registry coverage is not universal, and an empty result is not proof that an entity does not exist or is in good standing.
 
 Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com).
 
@@ -134,12 +89,13 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 [tax](#tax) ·
 [verify](#verify)
 
-All skills below live in one plugin — `plugins/vclo-by-rohas/skills/` — grouped here by practice area for browsing, and linked to their `SKILL.md`.
+The skills are grouped below by practice area.
 
 ---
 
 ### advisory
 
+- **[vCLO](plugins/vclo-by-rohas/skills/ask-vclo/SKILL.md)**: coordinates the appropriate virtual lawyers and legal skills for a matter and delivers one consolidated work product
 - **[client-intake](plugins/vclo-by-rohas/skills/client-intake/SKILL.md)**: turns a messy client narrative into a structured matter summary, separating facts from assumptions
 - **[client-update-drafter](plugins/vclo-by-rohas/skills/client-update-drafter/SKILL.md)**: plain, honest status updates for a client on a running matter
 - **[demand-notice-drafter](plugins/vclo-by-rohas/skills/demand-notice-drafter/SKILL.md)**: pre-litigation demand notices with the claim properly particularised
@@ -397,9 +353,6 @@ written to mark what it has verified and what it has not: but that marking is
 itself generated text. **Check every output against primary sources before
 relying on it.**
 
-Skills are instructions that an AI assistant may follow. Read a skill before
-you install it, as you would any code you run.
-
 ---
 
 # 3. Contributing
@@ -418,7 +371,3 @@ Contributions are accepted under the MIT licence.
 # 4. Licence
 
 MIT. See [LICENSE](LICENSE).
-
----
-
-*The earlier 24-plugin, practice-pack architecture (v0.1.0–v0.3.0) remains available through [GitHub Releases](https://github.com/rohasnagpal/legal-ai-skills/releases) for anyone who needs it.*

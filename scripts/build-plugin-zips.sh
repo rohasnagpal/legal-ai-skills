@@ -19,7 +19,6 @@ for plugin_json in plugins/*/.codex-plugin/plugin.json; do
     cd "$plugin_dir"
     package_entries=(.codex-plugin skills assets)
     [[ -f .mcp.json ]] && package_entries+=(.mcp.json)
-    [[ -f .mcp.windows.json ]] && package_entries+=(.mcp.windows.json)
     for optional_entry in agents workflows integrations mcp; do
       if [[ -d "$optional_entry" ]]; then
         package_entries+=("$optional_entry")
