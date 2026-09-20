@@ -3,7 +3,7 @@
 import readline from "node:readline";
 import { pathToFileURL } from "node:url";
 
-const VERSION = "2.1.0";
+const VERSION = "2.1.1";
 const REQUEST_TIMEOUT_MS = 30_000;
 const SEC_BASE = "https://data.sec.gov";
 const SEC_WWW = "https://www.sec.gov";
@@ -153,9 +153,13 @@ function normalizeCompanyNumber(value) {
   return number;
 }
 
+export function secUserAgent(override = process.env.VCLO_SEC_USER_AGENT) {
+  return override?.trim() || `vCLO-by-Rohas/${VERSION} (+https://github.com/rohasnagpal/legal-ai-skills)`;
+}
+
 function secHeaders() {
   return {
-    "User-Agent": process.env.VCLO_SEC_USER_AGENT || "vCLO-open-source/2.1.0 rohasnagpal@gmail.com",
+    "User-Agent": secUserAgent(),
     "Accept-Encoding": "gzip, deflate"
   };
 }
@@ -225,27 +229,59 @@ export function formatSecSearchRecord(item) {
   };
 }
 
+export function filterSecTickerRecords(data, query, limit = 10) {
+  const rawNeedle = String(query || "").trim();
+  if (!rawNeedle) return { total_results: 0, results: [] };
+
+  const grouped = new Map();
+  const values = Array.isArray(data) ? data : Object.values(data || {});
+  for (const item of values) {
+    const record = formatSecSearchRecord(item);
+    const existing = grouped.get(record.cik);
+    if (existing) {
+      if (record.ticker && !existing.tickers.includes(record.ticker)) existing.tickers.push(record.ticker);
+      continue;
+    }
+    grouped.set(record.cik, {
+      ...record,
+      tickers: record.ticker ? [record.ticker] : []
+    });
+  }
+
+  const cikNeedle = rawNeedle.replace(/^cik[\s:#-]*/i, "");
+  let matches;
+  if (/^\d{1,10}$/.test(cikNeedle)) {
+    const cik = cikNeedle.padStart(10, "0");
+    matches = grouped.has(cik) ? [grouped.get(cik)] : [];
+  } else {
+    const needle = rawNeedle.toLowerCase();
+    const exact = [];
+    const partial = [];
+    for (const record of grouped.values()) {
+      const name = String(record.legal_name || "").toLowerCase();
+      const tickers = record.tickers.map(ticker => ticker.toLowerCase());
+      if (name === needle || tickers.includes(needle)) exact.push(record);
+      else if (name.includes(needle) || tickers.some(ticker => ticker.includes(needle))) partial.push(record);
+    }
+    matches = [...exact, ...partial];
+  }
+
+  return {
+    total_results: matches.length,
+    results: matches.slice(0, clampLimit(limit, 10, 20))
+  };
+}
+
 async function secSearch(query, limit) {
   const url = `${SEC_WWW}/files/company_tickers.json`;
   if (!secTickersCache || Date.now() - secTickersCachedAt > 15 * 60 * 1000) {
     secTickersCache = await fetchJson(url, { headers: secHeaders() });
     secTickersCachedAt = Date.now();
   }
-  const data = secTickersCache;
-  const needle = query.trim().toLowerCase().replace(/^cik\s*/i, "");
-  const values = Array.isArray(data) ? data : Object.values(data);
-  const exact = [];
-  const partial = [];
-  for (const item of values) {
-    const record = formatSecSearchRecord(item);
-    const fields = [record.cik, String(Number(record.cik)), record.legal_name, record.ticker].filter(Boolean).map(value => String(value).toLowerCase());
-    if (fields.some(value => value === needle)) exact.push(record);
-    else if (fields.some(value => value.includes(needle))) partial.push(record);
-  }
+  const matches = filterSecTickerRecords(secTickersCache, query, limit);
   return {
     ...retrievalMetadata("sec", url),
-    total_results: exact.length + partial.length,
-    results: [...exact, ...partial].slice(0, limit)
+    ...matches
   };
 }
 

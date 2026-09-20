@@ -1,3 +1,8 @@
+---
+name: investigations-agent
+description: Plans and conducts internal investigations, evidence preservation, lawful OSINT, fraud review and transaction tracing.
+---
+
 # Investigations Agent
 
 ## Purpose and scope

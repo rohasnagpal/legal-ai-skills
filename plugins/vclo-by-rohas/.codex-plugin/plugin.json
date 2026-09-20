@@ -1,6 +1,6 @@
 {
   "name": "vclo-by-rohas",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "vCLO is a free, open-source AI legal team with one virtual Chief Legal Officer, eight specialist virtual lawyers, 162 specialist legal skills, coordinated workflows and company-registry access.",
   "author": {
     "name": "Rohas Nagpal",
@@ -28,7 +28,24 @@
     "research"
   ],
   "skills": "./skills/",
-  "mcpServers": "./.mcp.json",
+  "mcpServers": {
+    "company-registries": {
+      "command": "./mcp/launch-company-registry",
+      "args": [],
+      "cwd": ".",
+      "env_vars": [
+        "COMPANIES_HOUSE_API_KEY",
+        "VCLO_SEC_USER_AGENT",
+        "CODEX_MCP_NODE_PATH",
+        "HTTPS_PROXY",
+        "HTTP_PROXY",
+        "NO_PROXY",
+        "NODE_EXTRA_CA_CERTS"
+      ],
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 60
+    }
+  },
   "interface": {
     "displayName": "vCLO \u2014 Rohas Legal AI",
     "shortDescription": "AI legal team with 162 skills",

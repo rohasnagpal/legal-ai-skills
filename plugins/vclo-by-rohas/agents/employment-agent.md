@@ -1,3 +1,8 @@
+---
+name: employment-agent
+description: Handles employment agreements, workplace policies, disciplinary matters, separation, labour compliance and POSH matters.
+---
+
 # Employment Agent
 
 ## Purpose and scope

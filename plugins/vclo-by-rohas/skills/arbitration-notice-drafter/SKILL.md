@@ -1,6 +1,6 @@
 ---
 name: arbitration-notice-drafter
-description: Drafts a notice invoking arbitration or request for arbitration, framing the disputes, contractual basis, relief, tribunal-appointment step, and service record without prematurely narrowing the claimant's case. Use when a user wants to commence arbitration, invoke an arbitration clause, submit an institutional request, nominate an arbitrator, or respond to a defective commencement notice. Distinct from statement-of-claim-drafter, which pleads the merits after commencement, and arbitration-clause-reviewer, which diagnoses the clause rather than activates it.
+description: Drafts a notice invoking arbitration or request for arbitration, framing the disputes, contractual basis, relief, tribunal-appointment step, and service record without prematurely narrowing the claimant's case. Use when a user wants to commence arbitration, invoke an arbitration clause, submit an institutional request, nominate an arbitrator, or respond to a defective commencement notice. Distinct from arbitration-pleading-drafter, which pleads the merits after commencement, and arbitration-clause-reviewer, which diagnoses the clause rather than activates it.
 ---
 
 # Arbitration Notice Drafter

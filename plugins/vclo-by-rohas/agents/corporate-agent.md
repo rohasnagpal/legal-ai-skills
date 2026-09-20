@@ -1,3 +1,8 @@
+---
+name: corporate-agent
+description: Handles M&A, corporate diligence, governance, capitalization, shareholder arrangements, approvals and transaction closing.
+---
+
 # Corporate Agent
 
 ## Purpose and scope

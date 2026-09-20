@@ -1,20 +1,10 @@
 {
   "mcpServers": {
     "company-registries": {
-      "command": "./mcp/launch-company-registry",
-      "args": [],
-      "cwd": ".",
-      "env_vars": [
-        "COMPANIES_HOUSE_API_KEY",
-        "VCLO_SEC_USER_AGENT",
-        "CODEX_MCP_NODE_PATH",
-        "HTTPS_PROXY",
-        "HTTP_PROXY",
-        "NO_PROXY",
-        "NODE_EXTRA_CA_CERTS"
-      ],
-      "startup_timeout_sec": 20,
-      "tool_timeout_sec": 60
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/mcp/company-registry-server.mjs"
+      ]
     }
   }
 }

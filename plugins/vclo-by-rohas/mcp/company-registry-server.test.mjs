@@ -2,10 +2,12 @@ import assert from "node:assert/strict";
 import { spawn } from "node:child_process";
 import { test } from "node:test";
 import {
+  filterSecTickerRecords,
   formatGleifRecord,
   formatSecFilings,
   formatSecSearchRecord,
-  resolveAutoSources
+  resolveAutoSources,
+  secUserAgent
 } from "./company-registry-server.mjs";
 
 test("auto source routing respects jurisdiction and UK credentials", () => {
@@ -36,6 +38,29 @@ test("SEC search and filing records include official locators", () => {
     } }
   }, 10);
   assert.equal(filings[0].filing_url, "https://www.sec.gov/Archives/edgar/data/320193/000032019326000001/a10-k.htm");
+});
+
+test("SEC search treats numeric input as an exact CIK and deduplicates issuers", () => {
+  const tickers = {
+    0: { cik_str: 1, ticker: "ONE", title: "One Holdings" },
+    1: { cik_str: 10, ticker: "TEN", title: "Ten Holdings" },
+    2: { cik_str: 1, ticker: "ONE.A", title: "One Holdings" }
+  };
+
+  const numeric = filterSecTickerRecords(tickers, "1", 10);
+  assert.equal(numeric.total_results, 1);
+  assert.equal(numeric.results[0].cik, "0000000001");
+  assert.deepEqual(numeric.results[0].tickers, ["ONE", "ONE.A"]);
+
+  const alternateTicker = filterSecTickerRecords(tickers, "one.a", 10);
+  assert.equal(alternateTicker.total_results, 1);
+  assert.equal(alternateTicker.results[0].cik, "0000000001");
+});
+
+test("SEC user agent has no hardcoded personal email and permits an override", () => {
+  assert.match(secUserAgent(""), /^vCLO-by-Rohas\/2\.1\.1/);
+  assert.equal(secUserAgent("Example Legal legal@example.test"), "Example Legal legal@example.test");
+  assert.doesNotMatch(secUserAgent(""), /rohasnagpal@gmail\.com/);
 });
 
 test("GLEIF records retain verification fields", () => {

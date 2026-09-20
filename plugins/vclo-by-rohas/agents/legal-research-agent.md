@@ -1,3 +1,8 @@
+---
+name: legal-research-agent
+description: Researches and verifies legislation, cases, precedent, legislative history and jurisdiction-specific legal propositions.
+---
+
 # Legal Research Agent
 
 ## Purpose and scope

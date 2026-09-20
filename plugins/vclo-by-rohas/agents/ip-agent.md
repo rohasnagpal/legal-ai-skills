@@ -1,3 +1,8 @@
+---
+name: ip-agent
+description: Handles intellectual-property ownership, assignments, portfolios, licensing, infringement and trademark matters.
+---
+
 # IP Agent
 
 ## Purpose and scope

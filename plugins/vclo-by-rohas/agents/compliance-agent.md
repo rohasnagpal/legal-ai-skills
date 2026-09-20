@@ -1,3 +1,8 @@
+---
+name: compliance-agent
+description: Handles regulatory applicability, privacy, sanctions, licences, regulatory change, incident response and compliance controls.
+---
+
 # Compliance Agent
 
 ## Purpose and scope

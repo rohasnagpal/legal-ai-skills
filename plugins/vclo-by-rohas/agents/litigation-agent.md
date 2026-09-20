@@ -1,3 +1,8 @@
+---
+name: litigation-agent
+description: Handles disputes, pleadings, chronology, evidence, disclosure, witnesses, limitation, damages and litigation strategy.
+---
+
 # Litigation Agent
 
 ## Purpose and scope

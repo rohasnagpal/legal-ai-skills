@@ -1,3 +1,8 @@
+---
+name: chief-legal-officer
+description: Orchestrates complex legal matters across vCLO's specialist virtual lawyers and delivers one verified, coherent work product.
+---
+
 # vCLO — Chief Legal Officer
 
 ## Purpose

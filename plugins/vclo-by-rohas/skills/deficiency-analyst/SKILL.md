@@ -1,6 +1,6 @@
 ---
 name: deficiency-analyst
-description: Tests whether given facts actually satisfy the legal threshold for deficiency in service, defect in goods, or unfair trade practice, working element by element rather than asserting a conclusion. Use this whenever a user wants to know if a set of facts clears that threshold — including phrasings like "does this actually count as deficiency in service", "is this an unfair trade practice or just a bad experience", "test whether we have a viable consumer complaint here", "what's our exposure if a customer alleges deficiency", or "walk through whether these facts meet the test". Can run for either side — testing whether a consumer has a claim, or whether an opposite party has exposure — ask which. Distinct from consumer-complaint-drafter, which states the allegation as instructed; this tests whether it actually holds up. Fires wherever the deficiency, defect, or unfair-trade-practice threshold is the question, in any jurisdiction with a consumer protection regime.
+description: Tests whether given facts actually satisfy the legal threshold for deficiency in service, defect in goods, or unfair trade practice, working element by element rather than asserting a conclusion. Use this whenever a user wants to know if a set of facts clears that threshold — including phrasings like "does this actually count as deficiency in service", "is this an unfair trade practice or just a bad experience", "test whether we have a viable consumer complaint here", "what's our exposure if a customer alleges deficiency", or "walk through whether these facts meet the test". Can run for either side — testing whether a consumer has a claim, or whether an opposite party has exposure — ask which. Distinct from consumer-pleading-drafter, which states the allegation as instructed; this tests whether it actually holds up. Fires wherever the deficiency, defect, or unfair-trade-practice threshold is the question, in any jurisdiction with a consumer protection regime.
 ---
 
 # Deficiency Analyst
@@ -35,7 +35,7 @@ Not blocking, ask once and proceed on a reasonable default without it: **which s
 
 **7. Flag what additional fact or document would materially change the assessment.**
 
-**8. Stop at the threshold question.** Do not quantify compensation or draft a complaint or reply — hand off to compensation-quantifier or consumer-complaint-drafter for those.
+**8. Stop at the threshold question.** Do not quantify compensation or draft a complaint or reply — hand off to compensation-quantifier or consumer-pleading-drafter for those.
 
 ## Output
 

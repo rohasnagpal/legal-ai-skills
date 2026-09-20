@@ -1,6 +1,6 @@
 ---
 name: conciliation-proposal-drafter
-description: Drafts a structured settlement proposal for use in conciliation or mediation, converting a party's interests, priorities, valuation, non-monetary needs, and authorised concessions into clear conditional terms without accidentally creating a concluded settlement. Use when a user wants to make, revise, compare, or package an offer for a facilitated settlement process, including opening proposals, option packages, staged payments, reciprocal concessions, or mediator-transmitted terms. Distinct from settlement-terms-drafter, which documents a deal after agreement rather than proposing one.
+description: Drafts a structured settlement proposal for use in conciliation or mediation, converting a party's interests, priorities, valuation, non-monetary needs, and authorised concessions into clear conditional terms without accidentally creating a concluded settlement. Use when a user wants to make, revise, compare, or package an offer for a facilitated settlement process, including opening proposals, option packages, staged payments, reciprocal concessions, or mediator-transmitted terms. Distinct from settlement-documenter, which documents a deal after agreement rather than proposing one.
 ---
 
 # Conciliation Proposal Drafter

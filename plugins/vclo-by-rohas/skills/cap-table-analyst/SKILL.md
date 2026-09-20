@@ -1,6 +1,6 @@
 ---
 name: cap-table-analyst
-description: Works through dilution and ownership on a cap table using only the share counts, valuations, and round terms actually supplied — showing the arithmetic for every calculation and flagging option-pool timing, conversion order, or preference terms that were not specified rather than assuming a standard treatment. Use this whenever a user needs a cap table calculation worked through — including phrasings like "what does this round do to our ownership", "model the dilution from this SAFE conversion", "work out the post-money cap table", "how much does the option pool top-up dilute existing holders", or "run the liquidation waterfall on these preference terms". A quantification tool, not a fairness assessment — it does not judge whether the round terms are good; pair it with term-sheet-reviewer or investment-agreement-reviewer for that. Fires for any priced round, conversion, or waterfall calculation on a startup cap table.
+description: Works through dilution and ownership on a cap table using only the share counts, valuations, and round terms actually supplied — showing the arithmetic for every calculation and flagging option-pool timing, conversion order, or preference terms that were not specified rather than assuming a standard treatment. Use this whenever a user needs a cap table calculation worked through — including phrasings like "what does this round do to our ownership", "model the dilution from this SAFE conversion", "work out the post-money cap table", "how much does the option pool top-up dilute existing holders", or "run the liquidation waterfall on these preference terms". A quantification tool, not a fairness assessment — it does not judge whether the round terms are good; pair it with investment-and-shareholder-agreement-reviewer for that. Fires for any priced round, conversion, or waterfall calculation on a startup cap table.
 ---
 
 # Cap Table Analyst
@@ -9,7 +9,7 @@ I am using the **Cap Table Analyst** skill from Rohas Legal AI: works through di
 
 ## What this does
 
-Works through the arithmetic of a cap table: ownership before and after a financing round, dilution to each existing holder, option pool effects, conversion of SAFEs or convertible notes, and — where asked — a liquidation waterfall. Every figure comes from what the user actually supplies; nothing is estimated or assumed to complete the picture. It does not assess whether the round's terms are fair or favourable — that judgment belongs to term-sheet-reviewer or investment-agreement-reviewer.
+Works through the arithmetic of a cap table: ownership before and after a financing round, dilution to each existing holder, option pool effects, conversion of SAFEs or convertible notes, and — where asked — a liquidation waterfall. Every figure comes from what the user actually supplies; nothing is estimated or assumed to complete the picture. It does not assess whether the round's terms are fair or favourable — that judgment belongs to investment-and-shareholder-agreement-reviewer.
 
 ## Before you start
 
@@ -61,6 +61,6 @@ Do not assume standard option pool timing (pre- or post-money) without it being 
 
 Do not assume a standard liquidation preference structure without confirmation.
 
-Do not assess whether the round's terms are fair or favourable. That is term-sheet-reviewer's or investment-agreement-reviewer's job; this skill only calculates.
+Do not assess whether the round's terms are fair or favourable. That is investment-and-shareholder-agreement-reviewer's job; this skill only calculates.
 
 Do not round figures for presentation in a way that makes the calculation impossible to audit.

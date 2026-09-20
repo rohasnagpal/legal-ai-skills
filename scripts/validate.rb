@@ -93,6 +93,19 @@ skill_names.group_by { |name, _f| name }.each do |name, occurrences|
   errors << "duplicate skill name '#{name}' in: #{occurrences.map { |_n, f| f }.join(', ')}"
 end
 
+known_skill_names = skill_names.map(&:first).to_set
+skill_reference_suffixes = %w[
+  advisor analyst assessor builder calculator checker collector comparator documenter
+  drafter estimator explainer extractor flagger interpreter mapper monitor organizer
+  planner preparer quantifier reviewer summariser synthesiser tracer validator
+]
+skill_reference_re = /\b[a-z0-9]+(?:-[a-z0-9]+)+-(?:#{skill_reference_suffixes.join('|')})\b/
+skill_files.each do |f|
+  File.read(f, encoding: 'UTF-8').scan(skill_reference_re).uniq.each do |reference|
+    errors << "#{f}: references unknown skill '#{reference}'" unless known_skill_names.include?(reference)
+  end
+end
+
 # Flag near-identical descriptions for manual review -- not a hard failure,
 # since two skills can legitimately share most of their wording while
 # differing in the one clause that actually distinguishes them.
@@ -147,9 +160,9 @@ Dir.glob('plugins/*/.codex-plugin/plugin.json').sort.each do |f|
   end
 
   mcp_path = data['mcpServers']
-  if mcp_path
-    unless mcp_path == './.mcp.json'
-      errors << "#{f}: mcpServers must point to ./.mcp.json"
+  if mcp_path.is_a?(String)
+    unless mcp_path.start_with?('./')
+      errors << "#{f}: mcpServers must be a relative path beginning with ./"
     else
       resolved_mcp_path = File.expand_path(mcp_path, plugin_root)
       if !File.file?(resolved_mcp_path)
@@ -181,6 +194,27 @@ Dir.glob('plugins/*/.codex-plugin/plugin.json').sort.each do |f|
         end
       end
     end
+  elsif mcp_path.is_a?(Hash)
+    if mcp_path.empty?
+      errors << "#{f}: mcpServers must not be empty"
+    else
+      mcp_path.each do |server_name, server|
+        unless server.is_a?(Hash)
+          errors << "#{f}: MCP server '#{server_name}' must be an object"
+          next
+        end
+        command = server['command']
+        if command.to_s.start_with?('./')
+          command_path = File.expand_path(command, plugin_root)
+          errors << "#{f}: MCP server '#{server_name}' command does not exist" unless File.file?(command_path)
+          errors << "#{f}: MCP server '#{server_name}' command is not executable" if File.file?(command_path) && !File.executable?(command_path)
+        elsif command.to_s.empty? && server['url'].to_s.empty?
+          errors << "#{f}: MCP server '#{server_name}' needs a command or URL"
+        end
+      end
+    end
+  elsif !mcp_path.nil?
+    errors << "#{f}: mcpServers must be a path or object"
   end
 
   unless iface.is_a?(Hash)
@@ -261,9 +295,44 @@ Dir.glob('plugins/*/skills/*/agents/openai.yaml').sort.each do |f|
   iface = data['interface']
   unless iface && iface['display_name'] && iface['short_description'] && iface['default_prompt']
     errors << "#{f}: missing a required interface key (display_name, short_description, default_prompt)"
+    next
   end
+  skill_name = File.basename(File.dirname(File.dirname(f)))
+  prompt = iface['default_prompt'].to_s
+  expected_invocation = /\$(?:[a-z0-9-]+:)?#{Regexp.escape(skill_name)}\b/
+  errors << "#{f}: default_prompt must invoke $#{skill_name}" unless prompt.match?(expected_invocation)
 rescue => e
   errors << "#{f}: YAML parse error -- #{e.message}"
+end
+
+# ---- 3a. Claude Code MCP manifest ----
+claude_mcp_path = 'plugins/vclo-by-rohas/.mcp.json'
+begin
+  claude_mcp = JSON.parse(File.read(claude_mcp_path, encoding: 'UTF-8'))
+  claude_servers = claude_mcp['mcpServers']
+  if !claude_servers.is_a?(Hash) || claude_servers.empty?
+    errors << "#{claude_mcp_path}: mcpServers must be a non-empty object"
+  else
+    claude_servers.each do |server_name, server|
+      unless server.is_a?(Hash)
+        errors << "#{claude_mcp_path}: server '#{server_name}' must be an object"
+        next
+      end
+      unsupported = server.keys & %w[cwd env_vars startup_timeout_sec tool_timeout_sec]
+      errors << "#{claude_mcp_path}: server '#{server_name}' uses Codex-only keys: #{unsupported.join(', ')}" unless unsupported.empty?
+      errors << "#{claude_mcp_path}: server '#{server_name}' must use command 'node' for cross-platform startup" unless server['command'] == 'node'
+      args = server['args']
+      script_arg = args.is_a?(Array) && args.find { |arg| arg.is_a?(String) && arg.start_with?('${CLAUDE_PLUGIN_ROOT}/') }
+      if script_arg.nil?
+        errors << "#{claude_mcp_path}: server '#{server_name}' needs a ${CLAUDE_PLUGIN_ROOT}/... script argument"
+      else
+        resolved_script = script_arg.sub('${CLAUDE_PLUGIN_ROOT}', File.expand_path('plugins/vclo-by-rohas'))
+        errors << "#{claude_mcp_path}: server '#{server_name}' script does not exist" unless File.file?(resolved_script)
+      end
+    end
+  end
+rescue => e
+  errors << "#{claude_mcp_path}: invalid MCP JSON -- #{e.message}"
 end
 
 # ---- 4. Routing and behaviour fixtures, where present ----
@@ -455,6 +524,19 @@ end
 agent_headings = ['## Purpose', '## Inputs', '## Output', '## Verification']
 Dir.glob('plugins/vclo-by-rohas/agents/*.md').sort.each do |f|
   content = File.read(f, encoding: 'UTF-8')
+  parts = content.split(/^---\s*$/m)
+  if parts.length < 3
+    errors << "#{f}: missing YAML frontmatter"
+  else
+    begin
+      metadata = YAML.safe_load(parts[1])
+      expected_name = File.basename(f, '.md')
+      errors << "#{f}: frontmatter name must be '#{expected_name}'" unless metadata.is_a?(Hash) && metadata['name'] == expected_name
+      errors << "#{f}: frontmatter description is required" unless metadata.is_a?(Hash) && !metadata['description'].to_s.strip.empty?
+    rescue => e
+      errors << "#{f}: invalid YAML frontmatter -- #{e.message}"
+    end
+  end
   agent_headings.each do |heading|
     errors << "#{f}: missing required agent section beginning '#{heading}'" unless content.include?(heading)
   end
