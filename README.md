@@ -1,6 +1,18 @@
-# vCLO
+# vCLO: Virtual Chief Legal Officer
 
-**A free, open-source AI legal team powered by 168 specialist legal skills.**
+**AI legal team with 9 specialist virtual lawyers and 168 legal skills, built to handle real legal work 24×7.**
+
+Imagine having a team of 9 specialist lawyers.
+Available 24 × 7 × 365.
+For free.
+
+That’s the idea behind vCLO: an open-source AI legal team built to handle real legal work.
+
+Contracts. Corporate. Litigation. Compliance. Employment. IP. Investigations. Legal research. And more.
+
+Give vCLO a legal matter. It brings in the relevant specialists, works through the documents and issues, checks the work, and brings everything together into one coherent output.
+
+Under the hood are 160+ Legal AI Skills covering everyday legal work as well as complex matters such as M&A due diligence, contract negotiations, litigation preparation and internal investigations.
 
 vCLO helps lawyers, in-house teams, startups and businesses handle legal work using specialist virtual lawyers, coordinated workflows, official company registries and authorised documents and services.
 
@@ -17,9 +29,13 @@ Install it once and describe the legal task in plain language. For a simple task
 
 ## Install vCLO
 
-Tell Codex: `Install vCLO from https://github.com/rohasnagpal/legal-ai-skills. Register the repository as a plugin source and install vclo-by-rohas@rohas-legal.`
+Tell Codex: 
 
-Approve the installation, start a new task, and say `Hello vCLO`.
+`Install vCLO from https://github.com/rohasnagpal/legal-ai-skills. Register the repository as a plugin source and install vclo-by-rohas@rohas-legal.`
+
+Approve the installation, start a new task, and say 
+
+`Hello vCLO`.
 
 **Who this is for:** Practising lawyers, in-house counsel, startups, businesses and law students.
 
