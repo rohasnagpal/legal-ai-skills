@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "company-registries": {
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/s",
+        "/c",
+        ".\\mcp\\launch-company-registry.cmd"
+      ],
+      "cwd": ".",
+      "env_vars": [
+        "COMPANIES_HOUSE_API_KEY",
+        "VCLO_SEC_USER_AGENT",
+        "CODEX_MCP_NODE_PATH",
+        "HTTPS_PROXY",
+        "HTTP_PROXY",
+        "NO_PROXY",
+        "NODE_EXTRA_CA_CERTS"
+      ],
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 60
+    }
+  }
+}

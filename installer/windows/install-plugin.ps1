@@ -6,8 +6,9 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$PluginSelector = 'rohas-legal-ai@rohas-legal-windows'
-$LegacyPluginSelector = 'rohas-legal-ai@rohas-legal'
+$PluginSelector = 'vclo-by-rohas@rohas-legal-windows'
+$LegacyWindowsPluginSelector = 'rohas-legal-ai@rohas-legal-windows'
+$LegacyGitPluginSelector = 'rohas-legal-ai@rohas-legal'
 $MarketplaceName = 'rohas-legal-windows'
 $LogPath = Join-Path $PSScriptRoot 'install.log'
 
@@ -15,7 +16,7 @@ function Test-Payload {
     param([string]$Root)
 
     $marketplaceManifest = Join-Path $Root '.agents\plugins\marketplace.json'
-    $pluginManifest = Join-Path $Root 'plugins\rohas-legal-ai\.codex-plugin\plugin.json'
+    $pluginManifest = Join-Path $Root 'plugins\vclo-by-rohas\.codex-plugin\plugin.json'
     if (-not (Test-Path -LiteralPath $marketplaceManifest -PathType Leaf)) {
         throw "Marketplace manifest is missing: $marketplaceManifest"
     }
@@ -28,7 +29,7 @@ function Test-Payload {
     if ($marketplace.name -ne $MarketplaceName) {
         throw "Unexpected marketplace name '$($marketplace.name)'."
     }
-    if ($plugin.name -ne 'rohas-legal-ai') {
+    if ($plugin.name -ne 'vclo-by-rohas') {
         throw "Unexpected plugin name '$($plugin.name)'."
     }
 }
@@ -142,7 +143,8 @@ try {
     # previously installed from the Git marketplace. Keep that marketplace itself:
     # older releases may have installed other plugins from it.
     Invoke-Codex -Arguments @('plugin', 'remove', $PluginSelector, '--json') -AllowFailure | Out-Null
-    Invoke-Codex -Arguments @('plugin', 'remove', $LegacyPluginSelector, '--json') -AllowFailure | Out-Null
+    Invoke-Codex -Arguments @('plugin', 'remove', $LegacyWindowsPluginSelector, '--json') -AllowFailure | Out-Null
+    Invoke-Codex -Arguments @('plugin', 'remove', $LegacyGitPluginSelector, '--json') -AllowFailure | Out-Null
     Invoke-Codex -Arguments @('plugin', 'marketplace', 'remove', $MarketplaceName, '--json') -AllowFailure | Out-Null
     Invoke-Codex -Arguments @('plugin', 'marketplace', 'add', $MarketplaceRoot, '--json') | Out-Null
     Invoke-Codex -Arguments @('plugin', 'add', $PluginSelector, '--json') | Out-Null

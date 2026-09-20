@@ -1,5 +1,5 @@
 version: 1
-plugin: rohas-legal-ai
+plugin: vclo-by-rohas
 risk_tier: high
 cases:
   - id: anticipatory-bail-imminent-arrest

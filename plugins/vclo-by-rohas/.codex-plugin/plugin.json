@@ -1,0 +1,53 @@
+{
+  "name": "vclo-by-rohas",
+  "version": "2.1.0",
+  "description": "vCLO is a free, open-source AI legal team powered by 160+ professional legal skills, eight specialist virtual lawyers, coordinated workflows, built-in company-registry access and connector-ready business tools. Simple tasks use the relevant skill directly; complex matters produce one verified legal work product.",
+  "author": {
+    "name": "Rohas Nagpal",
+    "email": "rohasnagpal@gmail.com",
+    "url": "https://rohasnagpal.com"
+  },
+  "homepage": "https://www.rohasnagpal.com/legal-ai-skills.php",
+  "repository": "https://github.com/rohasnagpal/legal-ai-skills",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "law",
+    "vclo",
+    "chief-legal-officer",
+    "contracts",
+    "litigation",
+    "arbitration",
+    "corporate",
+    "regulatory",
+    "privacy",
+    "employment",
+    "ip",
+    "investigations",
+    "compliance",
+    "research"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "vCLO \u2014 Rohas Legal AI",
+    "shortDescription": "AI legal team with 160+ skills",
+    "longDescription": "vCLO is a free, open-source AI legal team with one virtual Chief Legal Officer, eight specialist virtual lawyers and 160+ professional legal skills. It coordinates complex matters such as M&A due diligence, contract negotiation, litigation preparation, compliance reviews, data breach response and internal investigations. It includes free company-registry connectors and can use authorised document, email, calendar, cloud-storage, GitHub and legal-research tools available in the host environment.",
+    "developerName": "Rohas Nagpal",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://www.rohasnagpal.com/legal-ai-skills.php",
+    "privacyPolicyURL": "https://www.rohasnagpal.com/privacy-policy.php",
+    "brandColor": "#B45309",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "Run buyer-side legal due diligence on this acquisition and consolidate the key risks.",
+      "Review this MSA for the customer, propose redlines, and prepare negotiation positions.",
+      "Prepare our litigation case strategy from these pleadings, evidence, and deadlines."
+    ]
+  }
+}

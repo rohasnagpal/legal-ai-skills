@@ -1,0 +1,8 @@
+interface:
+  display_name: "vCLO"
+  short_description: "Virtual Chief Legal Officer and AI legal team"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:ask-vclo to coordinate this legal matter as my virtual Chief Legal Officer."
+
+policy:
+  allow_implicit_invocation: true

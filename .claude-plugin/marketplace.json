@@ -4,12 +4,12 @@
     "name": "Rohas Nagpal",
     "url": "https://rohasnagpal.com"
   },
-  "description": "Claude skills for legal work, packaged as one plugin covering the full practice-area library.",
+  "description": "vCLO — a free, open-source AI legal team powered by 160+ professional legal skills.",
   "plugins": [
     {
-      "name": "rohas-legal-ai",
-      "source": "./plugins/rohas-legal-ai",
-      "description": "160+ Legal AI Skills for ChatGPT, Claude, Grok, Cursor & Gemini in 1 plugin. Install it once, then describe your legal task in plain language. The assistant selects the right skill from the library automatically. You don't need to know or invoke any individual skill by name.",
+      "name": "vclo-by-rohas",
+      "source": "./plugins/vclo-by-rohas",
+      "description": "vCLO combines 160+ Legal AI Skills with specialist virtual lawyers, multi-step workflows, built-in company-registry access and connector-ready business tools. Host support for orchestration and integrations varies; the core skills remain portable.",
       "author": {
         "name": "Rohas Nagpal",
         "url": "https://rohasnagpal.com"

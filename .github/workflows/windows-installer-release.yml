@@ -23,7 +23,7 @@ jobs:
         id: version
         shell: pwsh
         run: |
-          $manifest = Get-Content 'plugins/rohas-legal-ai/.codex-plugin/plugin.json' -Raw | ConvertFrom-Json
+          $manifest = Get-Content 'plugins/vclo-by-rohas/.codex-plugin/plugin.json' -Raw | ConvertFrom-Json
           if ('${{ github.ref_type }}' -eq 'tag') {
             $tagVersion = '${{ github.ref_name }}' -replace '^v', ''
             if ($manifest.version -ne $tagVersion) {
@@ -97,6 +97,28 @@ jobs:
           }
           Write-Host "Created $($skillFiles.Count) skill ZIPs."
 
+      - name: Build complete vCLO plugin ZIP for a tagged release
+        if: github.ref_type == 'tag'
+        shell: pwsh
+        run: |
+          $pluginRoot = (Resolve-Path 'plugins/vclo-by-rohas').Path
+          $entries = @(
+            '.codex-plugin',
+            'skills',
+            'assets',
+            '.mcp.json',
+            '.mcp.windows.json',
+            'agents',
+            'workflows',
+            'integrations',
+            'mcp'
+          ) | ForEach-Object { Join-Path $pluginRoot $_ }
+          $zipPath = Join-Path (Resolve-Path 'dist').Path 'vclo-by-rohas-${{ steps.version.outputs.version }}.zip'
+          Compress-Archive -LiteralPath $entries -DestinationPath $zipPath -CompressionLevel Optimal
+          if (-not (Test-Path -LiteralPath $zipPath -PathType Leaf)) {
+            throw 'The complete vCLO plugin ZIP was not created.'
+          }
+
       - name: Create checksums
         shell: pwsh
         run: |
@@ -113,7 +135,7 @@ jobs:
       - name: Upload workflow artifact
         uses: actions/upload-artifact@v4
         with:
-          name: rohas-legal-ai-windows-${{ steps.version.outputs.version }}
+          name: vclo-by-rohas-windows-${{ steps.version.outputs.version }}
           path: dist/*
           if-no-files-found: error
 
@@ -130,7 +152,7 @@ jobs:
             gh release upload $tag @assets --clobber
           }
           else {
-            gh release create $tag @assets --verify-tag --generate-notes --title "Rohas Legal AI $tag"
+            gh release create $tag @assets --verify-tag --generate-notes --title "vCLO by Rohas $tag"
           }
           if ($LASTEXITCODE -ne 0) {
             throw "GitHub release publishing exited with code $LASTEXITCODE."

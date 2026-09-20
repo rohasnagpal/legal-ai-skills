@@ -1,14 +1,14 @@
 {
   "name": "rohas-legal",
   "interface": {
-    "displayName": "Rohas Legal"
+    "displayName": "vCLO — Rohas Legal AI"
   },
   "plugins": [
     {
-      "name": "rohas-legal-ai",
+      "name": "vclo-by-rohas",
       "source": {
         "source": "local",
-        "path": "./plugins/rohas-legal-ai"
+        "path": "./plugins/vclo-by-rohas"
       },
       "policy": {
         "installation": "AVAILABLE",

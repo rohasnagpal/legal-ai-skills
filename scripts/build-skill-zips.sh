@@ -9,8 +9,8 @@ set -euo pipefail
 
 cd "$(dirname "$0")/.."
 OUT_DIR="dist"
-rm -rf "$OUT_DIR"
 mkdir -p "$OUT_DIR"
+find "$OUT_DIR" -maxdepth 1 -type f -name '*.zip' -delete
 
 count=0
 for skill_md in plugins/*/skills/*/SKILL.md; do

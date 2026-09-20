@@ -1,5 +1,5 @@
 version: 1
-plugin: rohas-legal-ai
+plugin: vclo-by-rohas
 cases:
   - id: reviewer-quick-direct
     prompt: "Review this entire MSA from the Buyer's side."

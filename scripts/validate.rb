@@ -4,7 +4,7 @@
 # `ruby scripts/validate.rb` before pushing, or let CI run it on every
 # push and pull request (see .github/workflows/validate.yml).
 #
-# The repo ships one plugin -- plugins/rohas-legal-ai -- containing the
+# The repo ships one plugin -- plugins/vclo-by-rohas -- containing the
 # complete skill library. This script fails loudly if a second top-level
 # plugin directory reappears, since that would mean the single-plugin
 # architecture has regressed.
@@ -18,7 +18,7 @@ errors = []
 warnings = []
 
 NAME_RE = /\A[a-z0-9]+(-[a-z0-9]+)*\z/
-EXPECTED_PLUGIN = 'rohas-legal-ai'
+EXPECTED_PLUGIN = 'vclo-by-rohas'
 
 # ---- 0. Exactly one plugin directory ----
 plugin_dirs = Dir.glob('plugins/*/').map { |d| d.chomp('/').split('/').last }.sort
@@ -144,6 +144,43 @@ Dir.glob('plugins/*/.codex-plugin/plugin.json').sort.each do |f|
   else
     resolved_skills_path = File.expand_path(skills_path, plugin_root)
     errors << "#{f}: skills path does not resolve to a directory" unless Dir.exist?(resolved_skills_path)
+  end
+
+  mcp_path = data['mcpServers']
+  if mcp_path
+    unless mcp_path == './.mcp.json'
+      errors << "#{f}: mcpServers must point to ./.mcp.json"
+    else
+      resolved_mcp_path = File.expand_path(mcp_path, plugin_root)
+      if !File.file?(resolved_mcp_path)
+        errors << "#{f}: mcpServers path does not resolve to a file"
+      else
+        begin
+          mcp_data = JSON.parse(File.read(resolved_mcp_path, encoding: 'UTF-8'))
+          servers = mcp_data['mcpServers']
+          unless servers.is_a?(Hash) && !servers.empty?
+            errors << "#{resolved_mcp_path}: mcpServers must be a non-empty object"
+          else
+            servers.each do |server_name, server|
+              unless server.is_a?(Hash)
+                errors << "#{resolved_mcp_path}: server '#{server_name}' must be an object"
+                next
+              end
+              command = server['command']
+              if command.to_s.start_with?('./')
+                command_path = File.expand_path(command, plugin_root)
+                errors << "#{resolved_mcp_path}: server '#{server_name}' command does not exist" unless File.file?(command_path)
+                errors << "#{resolved_mcp_path}: server '#{server_name}' command is not executable" if File.file?(command_path) && !File.executable?(command_path)
+              elsif command.to_s.empty? && server['url'].to_s.empty?
+                errors << "#{resolved_mcp_path}: server '#{server_name}' needs a command or URL"
+              end
+            end
+          end
+        rescue => e
+          errors << "#{resolved_mcp_path}: invalid MCP JSON -- #{e.message}"
+        end
+      end
+    end
   end
 
   unless iface.is_a?(Hash)
@@ -357,7 +394,83 @@ if claude_mp && agents_mp
   end
 end
 
-# ---- 6. README links to plugins/ resolve, and every skill is linked ----
+# ---- 6. vCLO orchestration structure and links ----
+vclo_required_files = %w[
+  plugins/vclo-by-rohas/skills/ask-vclo/SKILL.md
+  plugins/vclo-by-rohas/skills/ask-vclo/agents/openai.yaml
+  plugins/vclo-by-rohas/agents/chief-legal-officer.md
+  plugins/vclo-by-rohas/agents/contracts-agent.md
+  plugins/vclo-by-rohas/agents/corporate-agent.md
+  plugins/vclo-by-rohas/agents/litigation-agent.md
+  plugins/vclo-by-rohas/agents/compliance-agent.md
+  plugins/vclo-by-rohas/agents/employment-agent.md
+  plugins/vclo-by-rohas/agents/ip-agent.md
+  plugins/vclo-by-rohas/agents/investigations-agent.md
+  plugins/vclo-by-rohas/agents/legal-research-agent.md
+  plugins/vclo-by-rohas/workflows/m-and-a-due-diligence.md
+  plugins/vclo-by-rohas/workflows/contract-review-and-negotiation.md
+  plugins/vclo-by-rohas/workflows/litigation-preparation.md
+  plugins/vclo-by-rohas/workflows/regulatory-compliance-review.md
+  plugins/vclo-by-rohas/workflows/data-breach-response.md
+  plugins/vclo-by-rohas/workflows/internal-investigation.md
+  plugins/vclo-by-rohas/integrations/README.md
+  plugins/vclo-by-rohas/integrations/document-sources.md
+  plugins/vclo-by-rohas/integrations/email-and-calendar.md
+  plugins/vclo-by-rohas/integrations/company-registries.md
+  plugins/vclo-by-rohas/integrations/legal-research.md
+  plugins/vclo-by-rohas/integrations/github.md
+  plugins/vclo-by-rohas/.mcp.json
+  plugins/vclo-by-rohas/.mcp.windows.json
+  plugins/vclo-by-rohas/mcp/launch-company-registry
+  plugins/vclo-by-rohas/mcp/launch-company-registry.cmd
+  plugins/vclo-by-rohas/mcp/company-registry-server.mjs
+  plugins/vclo-by-rohas/mcp/company-registry-server.test.mjs
+  plugins/vclo-by-rohas/mcp/README.md
+  plugins/vclo-by-rohas/assets/vclo/due-diligence-report-template.md
+  plugins/vclo-by-rohas/assets/vclo/issue-register-template.md
+  plugins/vclo-by-rohas/assets/vclo/legal-matter-summary-template.md
+  plugins/vclo-by-rohas/assets/vclo/verification-status-template.md
+  plugins/vclo-by-rohas/tests/vclo/m-and-a-due-diligence.md
+  plugins/vclo-by-rohas/tests/vclo/contract-review.md
+  plugins/vclo-by-rohas/tests/vclo/litigation-preparation.md
+  plugins/vclo-by-rohas/tests/vclo/graceful-degradation.md
+  plugins/vclo-by-rohas/tests/vclo/welcome.md
+]
+
+vclo_required_files.each do |f|
+  errors << "vCLO: required file is missing: #{f}" unless File.file?(f)
+end
+
+vclo_markdown_files = Dir.glob('plugins/vclo-by-rohas/{agents,workflows,integrations,assets/vclo,tests/vclo}/**/*.md').sort
+vclo_markdown_files.each do |f|
+  content = File.read(f, encoding: 'UTF-8')
+  errors << "#{f}: empty Markdown document" if content.strip.empty?
+
+  content.scan(/\[[^\]]+\]\(([^)]+)\)/).flatten.each do |link|
+    next if link.match?(%r{\A(?:https?://|mailto:|#)})
+
+    target = File.expand_path(link.sub(/#.*\z/, ''), File.dirname(f))
+    errors << "#{f}: broken relative link to #{link}" unless File.exist?(target)
+  end
+end
+
+agent_headings = ['## Purpose', '## Inputs', '## Output', '## Verification']
+Dir.glob('plugins/vclo-by-rohas/agents/*.md').sort.each do |f|
+  content = File.read(f, encoding: 'UTF-8')
+  agent_headings.each do |heading|
+    errors << "#{f}: missing required agent section beginning '#{heading}'" unless content.include?(heading)
+  end
+end
+
+workflow_headings = ['## Trigger', '## Required inputs', '## Verification', '## Deliverable', '## Fallback behaviour']
+Dir.glob('plugins/vclo-by-rohas/workflows/*.md').sort.each do |f|
+  content = File.read(f, encoding: 'UTF-8')
+  workflow_headings.each do |heading|
+    errors << "#{f}: missing required workflow section beginning '#{heading}'" unless content.include?(heading)
+  end
+end
+
+# ---- 7. README links to plugins/ resolve, and every skill is linked ----
 readme = File.read('README.md', encoding: 'UTF-8')
 readme.scan(%r{\]\((plugins/[^)]+)\)}).flatten.each do |link|
   errors << "README.md: broken link to #{link}" unless File.exist?(link)

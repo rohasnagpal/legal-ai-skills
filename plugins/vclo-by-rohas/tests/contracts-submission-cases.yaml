@@ -1,5 +1,5 @@
 version: 1
-plugin: rohas-legal-ai
+plugin: vclo-by-rohas
 purpose: "Portal-ready representative cases; the broader routing-behavior.yaml fixture covers additional boundaries and follow-ups."
 cases:
   - id: submit-contract-reviewer

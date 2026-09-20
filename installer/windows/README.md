@@ -8,7 +8,7 @@ If the same plugin was previously installed from the Git marketplace, setup remo
 
 ## Publishing a release
 
-1. Update `version` in `plugins/rohas-legal-ai/.codex-plugin/plugin.json`.
+1. Update `version` in `plugins/vclo-by-rohas/.codex-plugin/plugin.json`.
 2. Commit and push the change.
 3. Create and push the matching tag, for example `v1.0.1`.
 4. `.github/workflows/windows-installer-release.yml` builds the EXE on a Windows runner and attaches the EXE, per-skill ZIPs, and `SHA256SUMS.txt` to the GitHub release.

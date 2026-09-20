@@ -39,10 +39,12 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [InstallDelete]
 Type: filesandordirs; Name: "{app}\marketplace\plugins\rohas-legal-ai"
+Type: filesandordirs; Name: "{app}\marketplace\plugins\vclo-by-rohas"
 
 [Files]
 Source: "{#SourcePath}\marketplace.json"; DestDir: "{app}\marketplace\.agents\plugins"; Flags: ignoreversion
-Source: "{#MarketplaceRoot}\plugins\rohas-legal-ai\*"; DestDir: "{app}\marketplace\plugins\rohas-legal-ai"; Excludes: ".DS_Store"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#MarketplaceRoot}\plugins\vclo-by-rohas\*"; DestDir: "{app}\marketplace\plugins\vclo-by-rohas"; Excludes: ".DS_Store,.mcp.windows.json"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#MarketplaceRoot}\plugins\vclo-by-rohas\.mcp.windows.json"; DestDir: "{app}\marketplace\plugins\vclo-by-rohas"; DestName: ".mcp.json"; Flags: ignoreversion overwritereadonly
 Source: "{#SourcePath}\install-plugin.ps1"; DestDir: "{app}"; Flags: ignoreversion
 
 [UninstallRun]
