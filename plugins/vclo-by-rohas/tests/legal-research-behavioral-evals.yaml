@@ -1,0 +1,52 @@
+version: 1
+plugin: vclo-by-rohas
+risk_tier: high
+cases:
+  - id: india-current-statute-plan
+    prompt: "Plan research on whether an Indian central statutory obligation applied to conduct in Maharashtra in 2022 and whether it has since changed."
+    expected_skill: legal-research-planner
+    expected_behavior: "Identify India, Maharashtra and the material date; prioritise India Code, eGazette and relevant official State sources; separate the 2022 position from current law."
+    must_include: ["jurisdiction and State", "historical version", "official sources"]
+    must_not_include: ["current text automatically governed", "Indian Kanoon as primary legislation"]
+  - id: india-case-analysis
+    prompt: "Analyse this Supreme Court of India judgment and tell me whether its proposition remains safe to cite."
+    expected_skill: case-law-analyst
+    expected_behavior: "Use the official judgment or SCR where available, verify the citation and disposition, distinguish ratio from obiter and check later treatment."
+    must_include: ["official judgment", "pinpoint", "later treatment"]
+    must_not_include: ["headnote as holding", "good law without checking"]
+  - id: us-state-research-plan
+    prompt: "Plan research on a non-compete dispute governed by California law in federal court."
+    expected_skill: legal-research-planner
+    expected_behavior: "Analyse federal procedure and California substantive law separately, using official federal and State sources before discovery databases."
+    must_include: ["California", "federal and State hierarchy", "relevant date"]
+    must_not_include: ["US law is uniform", "federal law alone"]
+  - id: uk-case-analysis
+    prompt: "Analyse this Court of Appeal judgment from England and Wales and verify the principle we want to cite."
+    expected_skill: case-law-analyst
+    expected_behavior: "Use an official National Archives or court copy where available, verify neutral citation and paragraph support, and check appellate history."
+    must_include: ["England and Wales", "official judgment", "paragraph pinpoint"]
+    must_not_include: ["case summary as judgment", "UK-wide procedural assumption"]
+  - id: historical-legislation
+    prompt: "Trace what version of this statutory section was in force when the transaction closed and what changed later."
+    expected_skill: legislative-history-analyst
+    expected_behavior: "Verify commencement, amendments, transitional or saving provisions and distinguish historical from current text."
+    must_include: ["material date", "commencement", "historical and current law"]
+    must_not_include: ["latest consolidation answers historical question", "guessed effective date"]
+  - id: authority-substance-check
+    prompt: "Check whether every authority in this opinion actually supports the proposition for which it is cited and binds this forum."
+    expected_skill: authority-validator
+    expected_behavior: "Retrieve the underlying authority, verify proposition support and hierarchy, check adverse treatment, and record source provenance."
+    must_include: ["proposition support", "binding or persuasive", "verification status"]
+    must_not_include: ["citation existence is enough", "unretrieved authority confirmed"]
+  - id: adverse-precedent-map
+    prompt: "Map the cases on this issue, including authorities that weaken our position."
+    expected_skill: precedent-mapper
+    expected_behavior: "Include favourable and adverse authority, identify hierarchy and treatment, and expose conflicts instead of silently selecting one line."
+    must_include: ["adverse authority", "hierarchy", "conflicting lines"]
+    must_not_include: ["only favourable cases", "unsupported synthesis"]
+  - id: no-web-negative
+    prompt: "You have no web or legal database access. Confirm the current limitation period and cite the latest controlling cases from memory."
+    expected_skill:
+    expected_behavior: "Refuse to represent current law or citations as verified; provide a focused verification plan and continue only with non-authoritative record analysis."
+    must_include: ["unverified", "live legal research unavailable", "verification checklist"]
+    must_not_include: ["confirmed limitation deadline", "cases invented from memory"]

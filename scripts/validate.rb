@@ -525,6 +525,9 @@ vclo_required_files = %w[
   plugins/vclo-by-rohas/integrations/email-and-calendar.md
   plugins/vclo-by-rohas/integrations/company-registries.md
   plugins/vclo-by-rohas/integrations/legal-research.md
+  plugins/vclo-by-rohas/integrations/legal-research-sources/india.md
+  plugins/vclo-by-rohas/integrations/legal-research-sources/united-states.md
+  plugins/vclo-by-rohas/integrations/legal-research-sources/united-kingdom.md
   plugins/vclo-by-rohas/integrations/github.md
   plugins/vclo-by-rohas/.mcp.json
   plugins/vclo-by-rohas/mcp/launch-company-registry
@@ -544,6 +547,56 @@ vclo_required_files = %w[
 
 vclo_required_files.each do |f|
   errors << "vCLO: required file is missing: #{f}" unless File.file?(f)
+end
+
+# The legal-source registry is maintained product behavior, not a loose list of
+# links. Keep the core safeguards and authoritative starting points from being
+# accidentally removed in later edits.
+legal_research_policy_path = 'plugins/vclo-by-rohas/integrations/legal-research.md'
+if File.file?(legal_research_policy_path)
+  legal_research_policy = File.read(legal_research_policy_path, encoding: 'UTF-8')
+  [
+    '## Jurisdiction and temporal scope',
+    '## Source hierarchy',
+    '## Source provenance',
+    '## Source failure and no-web mode',
+    'material adverse authority',
+    'UNVERIFIED — LIVE LEGAL RESEARCH UNAVAILABLE'
+  ].each do |requirement|
+    errors << "#{legal_research_policy_path}: missing required research safeguard '#{requirement}'" unless legal_research_policy.include?(requirement)
+  end
+end
+
+legal_source_requirements = {
+  'plugins/vclo-by-rohas/integrations/legal-research-sources/india.md' => %w[
+    https://indiacode.gov.in/
+    https://egazette.gov.in/
+    https://www.sci.gov.in/
+    https://scr.sci.gov.in/scrsearch/
+    https://indiankanoon.org/
+  ],
+  'plugins/vclo-by-rohas/integrations/legal-research-sources/united-states.md' => %w[
+    https://uscode.house.gov/
+    https://www.congress.gov/
+    https://www.govinfo.gov/
+    https://www.ecfr.gov/
+    https://www.supremecourt.gov/opinions/opinions.aspx
+    https://www.courtlistener.com/
+  ],
+  'plugins/vclo-by-rohas/integrations/legal-research-sources/united-kingdom.md' => %w[
+    https://www.legislation.gov.uk/
+    https://caselaw.nationalarchives.gov.uk/
+    https://www.supremecourt.uk/cases
+    https://www.bailii.org/
+  ]
+}
+legal_source_requirements.each do |path, required_urls|
+  next unless File.file?(path)
+
+  content = File.read(path, encoding: 'UTF-8')
+  required_urls.each do |url|
+    errors << "#{path}: missing maintained source #{url}" unless content.include?(url)
+  end
 end
 
 vclo_markdown_files = Dir.glob('plugins/vclo-by-rohas/{agents,workflows,integrations,assets/vclo,tests/vclo}/**/*.md').sort

@@ -41,7 +41,7 @@ The specialist virtual lawyers cover contracts, corporate, court litigation, dis
 
 ## Documents and connected services
 
-vCLO can work with documents you provide and, where you authorise access in Codex, services such as Google Drive and Docs, Gmail, Google Calendar, SharePoint, OneDrive, Outlook, GitHub and legal-research tools. If a source is unavailable, vCLO will identify what remains to be checked.
+vCLO can work with documents you provide and, where you authorise access in Codex, services such as Google Drive and Docs, Gmail, Google Calendar, SharePoint, OneDrive, Outlook, GitHub and legal-research tools. Its legal-research guidance includes maintained official-source-first guides for India, the United States and the United Kingdom. If a source is unavailable, vCLO will identify what remains to be checked instead of presenting it as verified.
 
 ## Company registries
 

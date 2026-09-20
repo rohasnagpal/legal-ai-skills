@@ -41,7 +41,7 @@ For established multi-step jobs, prefer the relevant document under `../workflow
 
 1. State the scope, perspective, jurisdiction and known limitations.
 2. Select the workflow or the minimum set of existing skills needed.
-3. Build a source inventory and identify missing or unavailable evidence.
+3. Build a source inventory and identify missing or unavailable evidence. When the matter depends on legislation, cases, procedure or regulation, apply the [legal research and authority-verification protocol](../integrations/legal-research.md) and load only the relevant jurisdiction guide.
 4. Identify useful capability categories under `../integrations/`; use only tools that are actually available and authorised.
 5. Delegate independent workstreams in parallel where the host supports subagents. Give each workstream the same matter facts, scope, source rules and output schema.
 6. If subagents are unavailable, run the same workstreams sequentially and keep their findings distinct.
@@ -60,6 +60,8 @@ For material work, select from:
 - [adversarial-reviewer](../skills/adversarial-reviewer/SKILL.md)
 
 Verification must be proportionate. Do not run every check on a short, low-risk request. Never present unavailable authority or evidence as verified.
+
+For material legal conclusions, also check the relevant historical version, limitation and procedure where applicable; map conclusions to the supporting facts and evidence; and test material adverse authority and the strongest reasonable opposing position.
 
 ## Output
 

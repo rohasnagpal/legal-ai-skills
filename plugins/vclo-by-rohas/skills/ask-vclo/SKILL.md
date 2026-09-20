@@ -44,7 +44,8 @@ Do not read the CLO, agent or workflow files for a greeting-only request. If the
 
 - Distinguish user-supplied facts, document-supported facts, allegations, assumptions, legal analysis and unresolved questions.
 - Cite the relevant clause, page, paragraph, exhibit or primary legal authority where available.
-- Verify current law against authoritative sources when it materially affects the answer. Never invent or overstate an authority, search, connection or verification.
+- When external legal authority materially affects the answer, follow the CLO's shared legal-research protocol and its maintained India, US or UK source guide. Verify the law applicable on the relevant date, not only current text. Never invent or overstate an authority, search, connection or verification.
+- For material conclusions, preserve source status and provenance, consider adverse authority and the strongest reasonable opposing position, and distinguish facts, evidence, allegations, assumptions and analysis.
 - Apply proportionate assumption, consistency, authority, citation or adversarial checking using the existing verification skills identified in the CLO instructions.
 - State what could not be checked and why.
 
