@@ -106,6 +106,43 @@ skill_files.each do |f|
   end
 end
 
+# India-only skills must fail closed when the governing jurisdiction is foreign
+# or unclear. README's (India) marker is the public scope declaration; the
+# corresponding in-skill gate is the enforceable behavior.
+readme = File.read('README.md', encoding: 'UTF-8')
+india_skill_names = readme.scan(%r{skills/([^/]+)/SKILL\.md\)\*\*:.*?\*\*\(India\)\*\*}).flatten.to_set
+india_guard_heading = '## Jurisdiction gate'
+india_guard_text = 'If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules.'
+india_skill_names.each do |name|
+  skill_path = "plugins/#{EXPECTED_PLUGIN}/skills/#{name}/SKILL.md"
+  unless File.file?(skill_path)
+    errors << "README.md: India-specific skill '#{name}' does not exist"
+    next
+  end
+  content = File.read(skill_path, encoding: 'UTF-8')
+  errors << "#{skill_path}: India-specific skill is missing '#{india_guard_heading}'" unless content.include?(india_guard_heading)
+  errors << "#{skill_path}: India-specific skill is missing the non-India stop rule" unless content.include?(india_guard_text)
+end
+
+hybrid_india_references = %w[
+  arbitration-interim-relief-drafter
+  deficiency-analyst
+  product-liability-analyst
+]
+skill_files.each do |f|
+  content = File.read(f, encoding: 'UTF-8')
+  parts = content.split(/^---\s*$/m)
+  metadata = YAML.safe_load(parts[1]) rescue nil
+  next unless metadata.is_a?(Hash)
+  name = metadata['name']
+  description = metadata['description'].to_s
+  explicitly_india_scoped = description.match?(/\b(?:Indian|India-specific)\b/i)
+  next unless explicitly_india_scoped
+  next if india_skill_names.include?(name) || hybrid_india_references.include?(name)
+
+  errors << "#{f}: description is India-specific but README does not mark the skill (India)"
+end
+
 # Flag near-identical descriptions for manual review -- not a hard failure,
 # since two skills can legitimately share most of their wording while
 # differing in the one clause that actually distinguishes them.
@@ -470,6 +507,7 @@ vclo_required_files = %w[
   plugins/vclo-by-rohas/agents/chief-legal-officer.md
   plugins/vclo-by-rohas/agents/contracts-agent.md
   plugins/vclo-by-rohas/agents/corporate-agent.md
+  plugins/vclo-by-rohas/agents/dispute-resolution-agent.md
   plugins/vclo-by-rohas/agents/litigation-agent.md
   plugins/vclo-by-rohas/agents/compliance-agent.md
   plugins/vclo-by-rohas/agents/employment-agent.md

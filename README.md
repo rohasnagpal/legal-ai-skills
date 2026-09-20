@@ -1,6 +1,6 @@
 # vCLO
 
-**A free, open-source AI legal team powered by 162 specialist legal skills.**
+**A free, open-source AI legal team powered by 168 specialist legal skills.**
 
 vCLO helps lawyers, in-house teams, startups and businesses handle legal work using specialist virtual lawyers, coordinated workflows, official company registries and authorised documents and services.
 
@@ -8,7 +8,7 @@ It can help with:
 
 - contract review, drafting and redlining;
 - M&A legal due diligence;
-- litigation preparation and legal research;
+- court litigation, arbitration, mediation and legal research;
 - corporate, secretarial and employment work;
 - privacy and regulatory compliance;
 - IP review, investigations and evidence handling.
@@ -30,12 +30,14 @@ Approve the installation, start a new task, and say `Hello vCLO`.
 ```text
 vCLO
 ├── 1 Virtual Chief Legal Officer
-├── 8 Specialist Virtual Lawyers
-├── 162 Specialist Legal Skills
+├── 9 Specialist Virtual Lawyers
+├── 168 Specialist Legal Skills
 └── 6 Coordinated Legal Workflows
 ```
 
 A request for M&A legal due diligence, for example, can be divided among corporate, contracts, employment, IP, litigation and compliance specialists, then consolidated into one issue register and report.
+
+The specialist virtual lawyers cover contracts, corporate, court litigation, dispute resolution, compliance, employment, intellectual property, investigations and legal research.
 
 ## Documents and connected services
 
@@ -165,6 +167,8 @@ The skills are grouped below by practice area.
 
 - **[bail-advisor-and-drafter](plugins/vclo-by-rohas/skills/bail-advisor-and-drafter/SKILL.md)**: anticipatory or post-arrest bail — strategy, and drafting when requested **(India)**
 - **[chargesheet-analyst](plugins/vclo-by-rohas/skills/chargesheet-analyst/SKILL.md)**: reads a chargesheet for gaps, contradictions and legal infirmity **(India)**
+- **[cheque-dishonour-complaint-drafter](plugins/vclo-by-rohas/skills/cheque-dishonour-complaint-drafter/SKILL.md)**: section 138 complaint after notice, service and non-payment are established **(India)**
+- **[cheque-dishonour-notice-drafter](plugins/vclo-by-rohas/skills/cheque-dishonour-notice-drafter/SKILL.md)**: section 138 statutory demand notice and deadline check **(India)**
 - **[defence-strategy-planner](plugins/vclo-by-rohas/skills/defence-strategy-planner/SKILL.md)**: defence theory, lines of attack and evidence needed
 - **[quashing-petition-drafter](plugins/vclo-by-rohas/skills/quashing-petition-drafter/SKILL.md)**: petitions to quash proceedings **(India)**
 - **[sentencing-analyst](plugins/vclo-by-rohas/skills/sentencing-analyst/SKILL.md)**: mitigating and aggravating factors and reasoned sentencing scenarios
@@ -189,12 +193,13 @@ The skills are grouped below by practice area.
 ### finance
 
 - **[guarantee-analyst](plugins/vclo-by-rohas/skills/guarantee-analyst/SKILL.md)**: guarantee and indemnity obligations and how they can be enforced
+- **[loan-agreement-reviewer](plugins/vclo-by-rohas/skills/loan-agreement-reviewer/SKILL.md)**: loan and facility agreement review covering pricing, covenants, default, security and applicable lending rules **(India)**
 - **[recovery-strategy-planner](plugins/vclo-by-rohas/skills/recovery-strategy-planner/SKILL.md)**: recovery routes for a defaulted exposure, with sequence and cost
 - **[sarfaesi-advisor](plugins/vclo-by-rohas/skills/sarfaesi-advisor/SKILL.md)**: SARFAESI enforcement steps and timelines **(India)**
 - **[securities-compliance-checker](plugins/vclo-by-rohas/skills/securities-compliance-checker/SKILL.md)**: securities law obligations on an issue or transaction **(India)**
 - **[security-documenter](plugins/vclo-by-rohas/skills/security-documenter/SKILL.md)**: security creation, perfection and registration documentation
 
-Loan and facility agreement review lives inside **contract-reviewer** as a specialist reference — see Contracts above.
+General financing contracts can still use **contract-reviewer**; use **loan-agreement-reviewer** where Indian lending regulation and finance mechanics are material.
 
 ### insolvency
 
@@ -240,6 +245,7 @@ For a one-off plain-language explanation instead of a structured course, see **l
 - **[court-order-compliance-checker](plugins/vclo-by-rohas/skills/court-order-compliance-checker/SKILL.md)**: turns an order into tracked obligations, deadlines and contempt-risk assessment
 - **[cross-examination-planner](plugins/vclo-by-rohas/skills/cross-examination-planner/SKILL.md)**: ethical issue-led questioning, contradictions and admissible impeachment
 - **[damages-quantifier](plugins/vclo-by-rohas/skills/damages-quantifier/SKILL.md)**: general commercial/civil damages head by head — expectation, reliance, lost profits, interest, mitigation
+- **[decree-execution-and-enforcement-drafter](plugins/vclo-by-rohas/skills/decree-execution-and-enforcement-drafter/SKILL.md)**: executable-decree analysis, enforcement mode and execution application **(India)**
 - **[disclosure-request-drafter](plugins/vclo-by-rohas/skills/disclosure-request-drafter/SKILL.md)**: proportionate issue-linked disclosure, discovery and inspection requests
 - **[document-review-protocol-builder](plugins/vclo-by-rohas/skills/document-review-protocol-builder/SKILL.md)**: defensible review coding, privilege, quality control and escalation protocols
 - **[evidence-organizer](plugins/vclo-by-rohas/skills/evidence-organizer/SKILL.md)**: evidence mapped to facts, elements, witnesses, foundations and objections
@@ -248,10 +254,12 @@ For a one-off plain-language explanation instead of a structured course, see **l
 - **[limitation-checker](plugins/vclo-by-rohas/skills/limitation-checker/SKILL.md)**: competing deadline scenarios, accrual, exclusions, extensions and forum issues
 - **[litigation-strategy-planner](plugins/vclo-by-rohas/skills/litigation-strategy-planner/SKILL.md)**: integrates claims, evidence, limitation, forum, interim relief and cost into one sequenced strategy
 - **[pleadings-analyst](plugins/vclo-by-rohas/skills/pleadings-analyst/SKILL.md)**: claims, defences, admissions, inconsistencies, particulars and live issues
+- **[plaint-drafter](plugins/vclo-by-rohas/skills/plaint-drafter/SKILL.md)**: civil and commercial plaints with jurisdiction, limitation, valuation and relief properly pleaded **(India)**
 - **[privilege-log-builder](plugins/vclo-by-rohas/skills/privilege-log-builder/SKILL.md)**: supportable privilege entries, family reconciliation, waiver flags and challenges
 - **[production-set-checker](plugins/vclo-by-rohas/skills/production-set-checker/SKILL.md)**: pre-release scope, file, metadata, privilege, redaction and delivery quality control
 - **[redaction-reviewer](plugins/vclo-by-rohas/skills/redaction-reviewer/SKILL.md)**: legal-basis, consistency and technical-permanence review of redactions
 - **[witness-statement-drafter](plugins/vclo-by-rohas/skills/witness-statement-drafter/SKILL.md)**: witness-owned factual evidence, exhibits, uncertainty and formalities
+- **[written-statement-drafter](plugins/vclo-by-rohas/skills/written-statement-drafter/SKILL.md)**: civil and commercial defences with specific admissions, denials and affirmative case **(India)**
 - **[written-submissions-drafter](plugins/vclo-by-rohas/skills/written-submissions-drafter/SKILL.md)**: issue-led, authority-verified and record-linked written advocacy
 
 ### practice

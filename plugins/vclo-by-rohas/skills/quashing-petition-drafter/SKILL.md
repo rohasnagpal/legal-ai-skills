@@ -5,6 +5,13 @@ description: Assesses and drafts Indian petitions to quash criminal proceedings,
 
 # Quashing Petition Drafter
 
+## Jurisdiction gate
+
+This skill applies Indian law and procedure only. Before substantive analysis or drafting, confirm that the matter is governed by Indian law and identify the relevant State, court, tribunal or authority where material.
+
+If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
+
+
 I am using the **Quashing Petition Drafter** skill from Rohas Legal AI: petitions to quash proceedings (India). Say this sentence, verbatim, before anything else in your response.
 
 Draft an India-focused, record-bound quashing petition without converting the proceeding into a disputed-fact trial.

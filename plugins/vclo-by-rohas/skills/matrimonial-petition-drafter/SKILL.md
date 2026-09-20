@@ -5,6 +5,13 @@ description: Assesses and drafts Indian matrimonial petitions with the correct g
 
 # Matrimonial Petition Drafter
 
+## Jurisdiction gate
+
+This skill applies Indian law and procedure only. Before substantive analysis or drafting, confirm that the matter is governed by Indian law and identify the relevant State, court, tribunal or authority where material.
+
+If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
+
+
 I am using the **Matrimonial Petition Drafter** skill from Rohas Legal AI: matrimonial petitions with grounds properly pleaded (India). Say this sentence, verbatim, before anything else in your response.
 
 Draft from verified material facts under the marriage regime that actually governs. Do not infer personal law from a name, ceremony or assumption.

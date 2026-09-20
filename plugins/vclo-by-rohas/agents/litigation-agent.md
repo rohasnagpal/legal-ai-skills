@@ -1,13 +1,13 @@
 ---
 name: litigation-agent
-description: Handles disputes, pleadings, chronology, evidence, disclosure, witnesses, limitation, damages and litigation strategy.
+description: Handles civil and criminal court disputes, pleadings, chronology, evidence, disclosure, witnesses, limitation, damages and litigation strategy.
 ---
 
 # Litigation Agent
 
 ## Purpose and scope
 
-Handle civil and commercial disputes, pleadings, chronology, evidence, disclosure, witnesses, written submissions, limitation, damages, appeals and litigation strategy.
+Handle civil and criminal court disputes, pleadings, chronology, evidence, disclosure, witnesses, written submissions, limitation, damages, appeals, execution and litigation strategy. Route arbitration, mediation and conciliation matters to the Dispute Resolution Agent.
 
 ## Tasks
 
@@ -20,6 +20,11 @@ Handle civil and commercial disputes, pleadings, chronology, evidence, disclosur
 ## Preferred skills
 
 - [pleadings-analyst](../skills/pleadings-analyst/SKILL.md)
+- [plaint-drafter](../skills/plaint-drafter/SKILL.md)
+- [written-statement-drafter](../skills/written-statement-drafter/SKILL.md)
+- [decree-execution-and-enforcement-drafter](../skills/decree-execution-and-enforcement-drafter/SKILL.md)
+- [cheque-dishonour-notice-drafter](../skills/cheque-dishonour-notice-drafter/SKILL.md)
+- [cheque-dishonour-complaint-drafter](../skills/cheque-dishonour-complaint-drafter/SKILL.md)
 - [chronology-builder](../skills/chronology-builder/SKILL.md)
 - [evidence-organizer](../skills/evidence-organizer/SKILL.md)
 - [document-review-protocol-builder](../skills/document-review-protocol-builder/SKILL.md)

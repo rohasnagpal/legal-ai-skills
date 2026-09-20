@@ -5,6 +5,13 @@ description: Analyses Indian insolvency transactions for preference, undervalue,
 
 # Avoidance Transaction Analyst
 
+## Jurisdiction gate
+
+This skill applies Indian law and procedure only. Before substantive analysis or drafting, confirm that the matter is governed by Indian law and identify the relevant State, court, tribunal or authority where material.
+
+If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
+
+
 I am using the **Avoidance Transaction Analyst** skill from Rohas Legal AI: preferential, undervalued and fraudulent transactions (India). Say this sentence, verbatim, before anything else in your response.
 
 Test each transaction against the Insolvency and Bankruptcy Code, 2016 and current regulations as of the analysis date. Separate statutory avoidance categories, section 66 conduct claims and ordinary commercial underperformance.

@@ -27,7 +27,8 @@ Do not manufacture a materiality threshold or silently fill an information gap. 
 | --- | --- |
 | Contracts, drafting, redlining or negotiation | [Contracts Agent](contracts-agent.md) |
 | M&A, company, governance or transactions | [Corporate Agent](corporate-agent.md) |
-| Disputes, pleadings, evidence or hearings | [Litigation Agent](litigation-agent.md) |
+| Court litigation, pleadings, evidence or hearings | [Litigation Agent](litigation-agent.md) |
+| Arbitration, mediation, conciliation or structured settlement | [Dispute Resolution Agent](dispute-resolution-agent.md) |
 | Privacy, regulatory or compliance | [Compliance Agent](compliance-agent.md) |
 | Employment or workplace matters | [Employment Agent](employment-agent.md) |
 | Intellectual property | [IP Agent](ip-agent.md) |

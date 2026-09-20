@@ -21,6 +21,14 @@ jobs:
       - name: Validate skills, manifests, and README links
         run: ruby scripts/validate.rb
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Test company-registry MCP server
+        run: node --test plugins/vclo-by-rohas/mcp/company-registry-server.test.mjs
+
       - name: Build skill zips
         run: ./scripts/build-skill-zips.sh
 

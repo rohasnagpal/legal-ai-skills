@@ -16,8 +16,8 @@ When the user's request is only or primarily a greeting addressed to vCLO, inclu
 > Your vCLO includes:
 >
 > - **1 virtual Chief Legal Officer**
-> - **8 specialist virtual lawyers** covering contracts, corporate, litigation, compliance, employment, intellectual property, investigations and legal research
-> - **162 specialist legal skills**
+> - **9 specialist virtual lawyers** covering contracts, corporate, court litigation, dispute resolution, compliance, employment, intellectual property, investigations and legal research
+> - **168 specialist legal skills**
 > - **6 coordinated legal workflows**
 > - built-in company-registry access through **SEC EDGAR, GLEIF and UK Companies House**
 > - secure connections to your **documents, email, calendars, cloud storage, GitHub and legal-research services**

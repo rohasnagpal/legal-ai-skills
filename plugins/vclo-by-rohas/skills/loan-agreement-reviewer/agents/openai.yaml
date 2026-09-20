@@ -1,0 +1,4 @@
+interface:
+  display_name: "Loan Agreement Reviewer"
+  short_description: "Review Indian loan and facility agreements"
+  default_prompt: "Use $loan-agreement-reviewer to review this Indian facility agreement from the identified party's perspective and propose redlines."

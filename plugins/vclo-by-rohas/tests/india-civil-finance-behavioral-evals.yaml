@@ -1,0 +1,58 @@
+version: 1
+plugin: vclo-by-rohas
+risk_tier: high
+cases:
+  - id: cheque-notice-positive
+    prompt: "Our Indian customer cheque was returned unpaid yesterday. Check the section 138 timeline and draft the notice."
+    expected_skill: cheque-dishonour-notice-drafter
+    expected_behavior: "Confirm Indian scope, verify the statutory sequence and draft only from the cheque, return and debt evidence."
+    must_include: ["jurisdiction gate", "dated timeline", "service evidence"]
+    must_not_include: ["invented receipt", "automatic director liability"]
+  - id: cheque-complaint-positive
+    prompt: "The section 138 notice was delivered and the payment period expired. Draft the complaint from this record."
+    expected_skill: cheque-dishonour-complaint-drafter
+    expected_behavior: "Audit notice, service, accrual, limitation and territorial jurisdiction before drafting."
+    must_include: ["maintainability", "limitation", "role-specific facts"]
+    must_not_include: ["designation alone", "fabricated service"]
+  - id: plaint-positive
+    prompt: "Draft an Indian commercial recovery suit plaint from these invoices, contract and notices."
+    expected_skill: plaint-drafter
+    expected_behavior: "Confirm India and the State/forum, then plead material facts, jurisdiction, limitation, valuation and relief."
+    must_include: ["jurisdiction", "limitation", "court-fee verification"]
+    must_not_include: ["invented cause of action", "filing-ready without local checks"]
+  - id: written-statement-positive
+    prompt: "We represent the defendant in this Indian commercial suit. Draft the written statement to the attached plaint."
+    expected_skill: written-statement-drafter
+    expected_behavior: "Calculate the applicable deadline and provide specific admissions, denials and the affirmative defence case."
+    must_include: ["paragraph-response matrix", "deadline", "affirmative case"]
+    must_not_include: ["omnibus denial", "silent waiver"]
+  - id: execution-positive
+    prompt: "The judgment debtor has not paid this Indian money decree. Prepare the execution application."
+    expected_skill: decree-execution-and-enforcement-drafter
+    expected_behavior: "Verify executability, stay, limitation, balance and assets before selecting a proportionate execution mode."
+    must_include: ["unsatisfied decree", "asset evidence", "execution mode"]
+    must_not_include: ["speculative attachment", "relitigate merits"]
+  - id: loan-review-positive
+    prompt: "Review this Indian NBFC facility agreement for the borrower and propose redlines."
+    expected_skill: loan-agreement-reviewer
+    expected_behavior: "Classify the lender and product, reconcile economics and apply only current rules for that regulatory perimeter."
+    must_include: ["represented party", "pricing", "RBI verification"]
+    must_not_include: ["assume all lenders are regulated", "market standard without sources"]
+  - id: cheque-notice-not-complaint
+    prompt: "The cheque just bounced and no notice has been sent. File a section 138 complaint today."
+    expected_skill: cheque-dishonour-notice-drafter
+    expected_behavior: "Do not draft a premature complaint; identify and complete the statutory notice stage first."
+    must_include: ["notice stage", "timeline", "non-payment trigger"]
+    must_not_include: ["complaint accrued", "immediate filing"]
+  - id: foreign-plaint-negative
+    prompt: "Draft a California state-court complaint for breach of contract."
+    expected_skill:
+    expected_behavior: "Do not invoke the India-only plaint drafter."
+    must_include: ["California", "appropriate jurisdiction"]
+    must_not_include: ["CPC", "Indian court fees"]
+  - id: unclear-jurisdiction-negative
+    prompt: "Draft a statement of defence, but I have not said where the case is filed."
+    expected_skill:
+    expected_behavior: "Ask for the governing jurisdiction and forum; do not apply Indian procedure."
+    must_include: ["jurisdiction", "forum"]
+    must_not_include: ["Order VIII applies", "Indian deadline"]

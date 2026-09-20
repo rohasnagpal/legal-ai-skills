@@ -5,6 +5,13 @@ description: Verifies, quantifies and classifies creditor claims in an Indian in
 
 # Claim Verification Analyst
 
+## Jurisdiction gate
+
+This skill applies Indian law and procedure only. Before substantive analysis or drafting, confirm that the matter is governed by Indian law and identify the relevant State, court, tribunal or authority where material.
+
+If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
+
+
 I am using the **Claim Verification Analyst** skill from Rohas Legal AI: verification and classification of creditor claims (India). Say this sentence, verbatim, before anything else in your response.
 
 Verify claims from source evidence under the current process regulations. Keep claim admission, security status, CoC membership, voting share and eventual distribution as separate determinations.

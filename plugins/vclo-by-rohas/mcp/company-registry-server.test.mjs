@@ -58,7 +58,7 @@ test("SEC search treats numeric input as an exact CIK and deduplicates issuers",
 });
 
 test("SEC user agent has no hardcoded personal email and permits an override", () => {
-  assert.match(secUserAgent(""), /^vCLO-by-Rohas\/2\.1\.1/);
+  assert.match(secUserAgent(""), /^vCLO-by-Rohas\/2\.1\.2/);
   assert.equal(secUserAgent("Example Legal legal@example.test"), "Example Legal legal@example.test");
   assert.doesNotMatch(secUserAgent(""), /rohasnagpal@gmail\.com/);
 });
