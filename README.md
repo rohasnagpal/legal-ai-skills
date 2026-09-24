@@ -2,12 +2,12 @@
 
 You get:
 
-1 Virtual Chief Legal Officer
-9 Specialist Virtual Lawyers
-3 Jurisdiction-specific Lawyers
-185 Specialist Legal Skills
-10 workflows
-8 official legal research sources and connectors
+- 1 Virtual Chief Legal Officer
+- 9 Specialist Virtual Lawyers
+- 3 Jurisdiction-specific Lawyers
+- 185 Specialist Legal Skills
+- 10 workflows
+- 8 official legal research sources and connectors
 
 **Virtual Chief Legal Officer (vCLO):** Coordinates specialist virtual lawyers, jurisdiction-specific counsel, legal skills and end-to-end workflows to handle each matter.
 
