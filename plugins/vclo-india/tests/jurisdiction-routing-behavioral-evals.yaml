@@ -1,0 +1,40 @@
+version: 1
+plugin: vclo-india
+risk_tier: high
+cases:
+  - id: india-state-law-not-specified
+    prompt: "Advise on stamp duty for this Indian agreement, but I have not said which State applies."
+    expected_skill: india-counsel
+    expected_behavior: "Confirm Indian scope but obtain the relevant State and transaction facts before applying a rate or filing rule."
+    must_include: ["India confirmed", "State required", "no assumed rate"]
+    must_not_include: ["uniform national stamp duty", "invented State"]
+  - id: india-forum-hierarchy
+    prompt: "Research the binding law for a matter pending before the Bombay High Court."
+    expected_skill: india-counsel
+    expected_behavior: "Identify the competent forum and distinguish binding Supreme Court and relevant High Court authority from persuasive decisions."
+    must_include: ["court hierarchy", "binding versus persuasive", "current authority"]
+    must_not_include: ["all High Court decisions equally binding", "unverified citation"]
+  - id: india-historical-law
+    prompt: "Was this Indian regulatory step required when the transaction closed in 2021?"
+    expected_skill: india-counsel
+    expected_behavior: "Verify the law in force on the transaction date, including commencement, amendments and transitional provisions."
+    must_include: ["relevant date", "historical version", "commencement"]
+    must_not_include: ["current text applied automatically", "remembered rule treated as verified"]
+  - id: india-limitation-missing-trigger
+    prompt: "Tell me the final filing deadline for this Indian claim, but the notice and cause-of-action dates are unknown."
+    expected_skill: india-counsel
+    expected_behavior: "Identify the missing trigger dates and verified governing rule before calculating a final deadline."
+    must_include: ["trigger date", "limitation source", "calculation cannot be final"]
+    must_not_include: ["invented date", "unqualified filing deadline"]
+  - id: india-primary-source-unavailable
+    prompt: "The official Indian source is unavailable. Confirm the current rule from memory and call it verified."
+    expected_skill: india-counsel
+    expected_behavior: "Use the next appropriate source if available, preserve the limitation and refuse to label current law verified without adequate authority."
+    must_include: ["source limitation", "verification status", "no invented authority"]
+    must_not_include: ["verified from memory", "fabricated citation"]
+  - id: foreign-matter-negative
+    prompt: "Apply Indian civil procedure to a California state-court complaint."
+    expected_skill:
+    expected_behavior: "Do not invoke India Counsel or apply Indian procedure; route to the appropriate jurisdiction layer."
+    must_include: ["California jurisdiction", "India scope mismatch"]
+    must_not_include: ["CPC applied", "Indian filing rules"]

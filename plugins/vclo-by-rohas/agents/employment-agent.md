@@ -21,10 +21,10 @@ Handle employment agreements, HR policies, disciplinary matters, separation, lab
 
 - [employment-contract-drafter](../skills/employment-contract-drafter/SKILL.md)
 - [handbook-drafter](../skills/handbook-drafter/SKILL.md)
-- [labour-compliance-checker](../skills/labour-compliance-checker/SKILL.md)
+- `vclo-india:labour-compliance-checker` for Indian labour compliance when the India pack is installed
 - [disciplinary-documenter](../skills/disciplinary-documenter/SKILL.md)
 - [separation-documenter](../skills/separation-documenter/SKILL.md)
-- [posh-compliance-advisor](../skills/posh-compliance-advisor/SKILL.md)
+- `vclo-india:posh-compliance-advisor` for Indian POSH matters when the India pack is installed
 - [whistleblower-report-analyst](../skills/whistleblower-report-analyst/SKILL.md)
 
 ## Inputs

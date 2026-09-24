@@ -33,7 +33,7 @@ Install it once and describe the legal task in plain language. For a simple task
 
 Tell Codex: 
 
-`Install vCLO from https://github.com/rohasnagpal/legal-ai-skills. Register the repository as a plugin source and install vclo-by-rohas@rohas-legal.`
+`Install vCLO from https://github.com/rohasnagpal/legal-ai-skills. Register the repository as a plugin source and install vclo-by-rohas@rohas-legal and vclo-india@rohas-legal.`
 
 Approve the installation, start a new task, and say 
 
@@ -49,13 +49,17 @@ Then run:
 
 `/plugin install vclo-by-rohas@rohas-legal`
 
+Then install India Counsel:
+
+`/plugin install vclo-india@rohas-legal`
+
 Approve the installation, start a new session, and say:
 
 `Hello vCLO`.
 
 **Who this is for:** Practising lawyers, in-house counsel, startups, businesses and law students.
 
-**Jurisdiction:** Most skills are jurisdiction-neutral and work anywhere. Skills that turn on Indian statutes are marked **(India)**. Every skill is written to confirm the governing jurisdiction before relying on a specific rule.
+**Jurisdiction:** The core contains jurisdiction-neutral skills. India Counsel is a separate jurisdiction pack containing the skills marked **(India)**. It confirms that Indian law applies before using Indian rules and checks the relevant State, forum, authority, effective date and procedure.
 
 ## How vCLO works
 
@@ -63,17 +67,18 @@ Approve the installation, start a new session, and say:
 vCLO
 ├── 1 Virtual Chief Legal Officer
 ├── 9 Specialist Virtual Lawyers
+├── India Counsel (39 India-specific skills)
 ├── 168 Specialist Legal Skills
 └── 6 Coordinated Legal Workflows
 ```
 
 A request for M&A legal due diligence, for example, can be divided among corporate, contracts, employment, IP, litigation and compliance specialists, then consolidated into one issue register and report.
 
-The specialist virtual lawyers cover contracts, corporate, court litigation, dispute resolution, compliance, employment, intellectual property, investigations and legal research.
+The specialist virtual lawyers cover contracts, corporate, court litigation, dispute resolution, compliance, employment, intellectual property, investigations and legal research. India Counsel supplies the local-law layer for Indian matters; future jurisdiction packs can use the same architecture without duplicating the neutral skill library.
 
 ## Documents and connected services
 
-vCLO can work with documents you provide and, where you authorise access in Codex, services such as Google Drive and Docs, Gmail, Google Calendar, SharePoint, OneDrive, Outlook, GitHub and legal-research tools. Its legal-research guidance includes maintained official-source-first guides for India, the United States and the United Kingdom. If a source is unavailable, vCLO will identify what remains to be checked instead of presenting it as verified.
+vCLO can work with documents you provide and, where you authorise access in the host, services such as Google Drive and Docs, Gmail, Google Calendar, SharePoint, OneDrive, Outlook, GitHub and legal-research tools. Its legal-research guidance includes maintained official-source-first guides for India, the United States and the United Kingdom. The India guide and Indian verification rules are owned by India Counsel. If a source is unavailable, vCLO will identify what remains to be checked instead of presenting it as verified.
 
 ## Company registries
 
@@ -111,6 +116,7 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 [insolvency](#insolvency) ·
 [investigations](#investigations) ·
 [ip](#ip) ·
+[jurisdiction-counsel](#jurisdiction-counsel) ·
 [learning](#learning) ·
 [litigation](#litigation) ·
 [practice](#practice) ·
@@ -126,6 +132,10 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com)
 The skills are grouped below by practice area.
 
 ---
+
+### jurisdiction counsel
+
+- **[India Counsel](plugins/vclo-india/skills/india-counsel/SKILL.md)**: confirms Indian jurisdiction, applies Central and State law checks, verifies authorities and effective dates, checks forum, limitation and procedure, and routes the 39 India-specific skills
 
 ### advisory
 
@@ -158,7 +168,7 @@ The skills are grouped below by practice area.
 - **[conciliation-proposal-drafter](plugins/vclo-by-rohas/skills/conciliation-proposal-drafter/SKILL.md)**: settlement proposals framed for a conciliation
 - **[mediation-opening-drafter](plugins/vclo-by-rohas/skills/mediation-opening-drafter/SKILL.md)**: opening statement for a mediation
 - **[party-interest-analyst](plugins/vclo-by-rohas/skills/party-interest-analyst/SKILL.md)**: separates stated positions from underlying interests on both sides
-- **[pre-institution-mediation-advisor](plugins/vclo-by-rohas/skills/pre-institution-mediation-advisor/SKILL.md)**: mandatory pre-institution mediation requirements **(India)**
+- **[pre-institution-mediation-advisor](plugins/vclo-india/skills/pre-institution-mediation-advisor/SKILL.md)**: mandatory pre-institution mediation requirements **(India)**
 - **[settlement-documenter](plugins/vclo-by-rohas/skills/settlement-documenter/SKILL.md)**: records a session outcome, or drafts complete binding settlement terms, once agreement is reached
 - **[settlement-evaluator](plugins/vclo-by-rohas/skills/settlement-evaluator/SKILL.md)**: tests a settlement offer against the litigation alternative
 - **[settlement-strategy-planner](plugins/vclo-by-rohas/skills/settlement-strategy-planner/SKILL.md)**: builds BATNA/WATNA, negotiating range and concession sequencing before any offer exists
@@ -187,22 +197,22 @@ The skills are grouped below by practice area.
 - **[board-resolution-drafter](plugins/vclo-by-rohas/skills/board-resolution-drafter/SKILL.md)**: board and shareholder resolutions in correct form
 - **[deal-structure-analyst](plugins/vclo-by-rohas/skills/deal-structure-analyst/SKILL.md)**: compares alternative transaction structures and their legal consequences before drafting
 - **[investment-and-shareholder-agreement-reviewer](plugins/vclo-by-rohas/skills/investment-and-shareholder-agreement-reviewer/SKILL.md)**: term sheets, SHAs, SSAs, JV and constitutional rights packages, from any party's side
-- **[listing-obligations-checker](plugins/vclo-by-rohas/skills/listing-obligations-checker/SKILL.md)**: continuous disclosure and listing obligations **(India)**
+- **[listing-obligations-checker](plugins/vclo-india/skills/listing-obligations-checker/SKILL.md)**: continuous disclosure and listing obligations **(India)**
 - **[m-and-a-diligence-checker](plugins/vclo-by-rohas/skills/m-and-a-diligence-checker/SKILL.md)**: diligence checklist and issue log for a transaction
 - **[minutes-drafter](plugins/vclo-by-rohas/skills/minutes-drafter/SKILL.md)**: minutes that record decisions and dissent properly
-- **[related-party-analyst](plugins/vclo-by-rohas/skills/related-party-analyst/SKILL.md)**: identifies related party transactions and the approvals required **(India)**
+- **[related-party-analyst](plugins/vclo-india/skills/related-party-analyst/SKILL.md)**: identifies related party transactions and the approvals required **(India)**
 - **[restructuring-documenter](plugins/vclo-by-rohas/skills/restructuring-documenter/SKILL.md)**: documentation trail for a corporate restructuring
-- **[secretarial-compliance-checker](plugins/vclo-by-rohas/skills/secretarial-compliance-checker/SKILL.md)**: secretarial and filing obligations for a company **(India)**
+- **[secretarial-compliance-checker](plugins/vclo-india/skills/secretarial-compliance-checker/SKILL.md)**: secretarial and filing obligations for a company **(India)**
 - **[transaction-document-checker](plugins/vclo-by-rohas/skills/transaction-document-checker/SKILL.md)**: checks a closing set against the term sheet and conditions-precedent checklist
 
 ### criminal
 
-- **[bail-advisor-and-drafter](plugins/vclo-by-rohas/skills/bail-advisor-and-drafter/SKILL.md)**: anticipatory or post-arrest bail — strategy, and drafting when requested **(India)**
-- **[chargesheet-analyst](plugins/vclo-by-rohas/skills/chargesheet-analyst/SKILL.md)**: reads a chargesheet for gaps, contradictions and legal infirmity **(India)**
-- **[cheque-dishonour-complaint-drafter](plugins/vclo-by-rohas/skills/cheque-dishonour-complaint-drafter/SKILL.md)**: section 138 complaint after notice, service and non-payment are established **(India)**
-- **[cheque-dishonour-notice-drafter](plugins/vclo-by-rohas/skills/cheque-dishonour-notice-drafter/SKILL.md)**: section 138 statutory demand notice and deadline check **(India)**
+- **[bail-advisor-and-drafter](plugins/vclo-india/skills/bail-advisor-and-drafter/SKILL.md)**: anticipatory or post-arrest bail — strategy, and drafting when requested **(India)**
+- **[chargesheet-analyst](plugins/vclo-india/skills/chargesheet-analyst/SKILL.md)**: reads a chargesheet for gaps, contradictions and legal infirmity **(India)**
+- **[cheque-dishonour-complaint-drafter](plugins/vclo-india/skills/cheque-dishonour-complaint-drafter/SKILL.md)**: section 138 complaint after notice, service and non-payment are established **(India)**
+- **[cheque-dishonour-notice-drafter](plugins/vclo-india/skills/cheque-dishonour-notice-drafter/SKILL.md)**: section 138 statutory demand notice and deadline check **(India)**
 - **[defence-strategy-planner](plugins/vclo-by-rohas/skills/defence-strategy-planner/SKILL.md)**: defence theory, lines of attack and evidence needed
-- **[quashing-petition-drafter](plugins/vclo-by-rohas/skills/quashing-petition-drafter/SKILL.md)**: petitions to quash proceedings **(India)**
+- **[quashing-petition-drafter](plugins/vclo-india/skills/quashing-petition-drafter/SKILL.md)**: petitions to quash proceedings **(India)**
 - **[sentencing-analyst](plugins/vclo-by-rohas/skills/sentencing-analyst/SKILL.md)**: mitigating and aggravating factors and reasoned sentencing scenarios
 
 ### employment
@@ -210,37 +220,37 @@ The skills are grouped below by practice area.
 - **[disciplinary-documenter](plugins/vclo-by-rohas/skills/disciplinary-documenter/SKILL.md)**: the paper trail for a disciplinary proceeding
 - **[employment-contract-drafter](plugins/vclo-by-rohas/skills/employment-contract-drafter/SKILL.md)**: employment contracts with restraint, IP and termination terms
 - **[handbook-drafter](plugins/vclo-by-rohas/skills/handbook-drafter/SKILL.md)**: employee handbooks and HR policies
-- **[labour-compliance-checker](plugins/vclo-by-rohas/skills/labour-compliance-checker/SKILL.md)**: applicable labour law obligations for an establishment **(India)**
-- **[posh-compliance-advisor](plugins/vclo-by-rohas/skills/posh-compliance-advisor/SKILL.md)**: POSH committee, procedure and reporting obligations **(India)**
+- **[labour-compliance-checker](plugins/vclo-india/skills/labour-compliance-checker/SKILL.md)**: applicable labour law obligations for an establishment **(India)**
+- **[posh-compliance-advisor](plugins/vclo-india/skills/posh-compliance-advisor/SKILL.md)**: POSH committee, procedure and reporting obligations **(India)**
 - **[separation-documenter](plugins/vclo-by-rohas/skills/separation-documenter/SKILL.md)**: resignation, termination and severance documentation
 
 ### family
 
 - **[maintenance-calculator](plugins/vclo-by-rohas/skills/maintenance-calculator/SKILL.md)**: works through a maintenance claim on supplied income and needs
-- **[matrimonial-petition-drafter](plugins/vclo-by-rohas/skills/matrimonial-petition-drafter/SKILL.md)**: matrimonial petitions with grounds properly pleaded **(India)**
+- **[matrimonial-petition-drafter](plugins/vclo-india/skills/matrimonial-petition-drafter/SKILL.md)**: matrimonial petitions with grounds properly pleaded **(India)**
 - **[settlement-deed-drafter](plugins/vclo-by-rohas/skills/settlement-deed-drafter/SKILL.md)**: family and separation settlement deeds, with child welfare and non-waivable rights preserved
-- **[succession-advisor](plugins/vclo-by-rohas/skills/succession-advisor/SKILL.md)**: succession position on given facts and the documents required **(India)**
+- **[succession-advisor](plugins/vclo-india/skills/succession-advisor/SKILL.md)**: succession position on given facts and the documents required **(India)**
 - **[will-drafter](plugins/vclo-by-rohas/skills/will-drafter/SKILL.md)**: wills, with execution and attestation requirements set out
 
 ### finance
 
 - **[guarantee-analyst](plugins/vclo-by-rohas/skills/guarantee-analyst/SKILL.md)**: guarantee and indemnity obligations and how they can be enforced
-- **[loan-agreement-reviewer](plugins/vclo-by-rohas/skills/loan-agreement-reviewer/SKILL.md)**: loan and facility agreement review covering pricing, covenants, default, security and applicable lending rules **(India)**
+- **[loan-agreement-reviewer](plugins/vclo-india/skills/loan-agreement-reviewer/SKILL.md)**: loan and facility agreement review covering pricing, covenants, default, security and applicable lending rules **(India)**
 - **[recovery-strategy-planner](plugins/vclo-by-rohas/skills/recovery-strategy-planner/SKILL.md)**: recovery routes for a defaulted exposure, with sequence and cost
-- **[sarfaesi-advisor](plugins/vclo-by-rohas/skills/sarfaesi-advisor/SKILL.md)**: SARFAESI enforcement steps and timelines **(India)**
-- **[securities-compliance-checker](plugins/vclo-by-rohas/skills/securities-compliance-checker/SKILL.md)**: securities law obligations on an issue or transaction **(India)**
+- **[sarfaesi-advisor](plugins/vclo-india/skills/sarfaesi-advisor/SKILL.md)**: SARFAESI enforcement steps and timelines **(India)**
+- **[securities-compliance-checker](plugins/vclo-india/skills/securities-compliance-checker/SKILL.md)**: securities law obligations on an issue or transaction **(India)**
 - **[security-documenter](plugins/vclo-by-rohas/skills/security-documenter/SKILL.md)**: security creation, perfection and registration documentation
 
 General financing contracts can still use **contract-reviewer**; use **loan-agreement-reviewer** where Indian lending regulation and finance mechanics are material.
 
 ### insolvency
 
-- **[avoidance-transaction-analyst](plugins/vclo-by-rohas/skills/avoidance-transaction-analyst/SKILL.md)**: preferential, undervalued and fraudulent transactions **(India)**
-- **[cirp-timeline-checker](plugins/vclo-by-rohas/skills/cirp-timeline-checker/SKILL.md)**: CIRP steps and statutory timelines for a matter **(India)**
-- **[claim-verification-analyst](plugins/vclo-by-rohas/skills/claim-verification-analyst/SKILL.md)**: verification and classification of creditor claims **(India)**
-- **[liquidation-documenter](plugins/vclo-by-rohas/skills/liquidation-documenter/SKILL.md)**: liquidation process documentation **(India)**
-- **[operational-creditor-application-drafter](plugins/vclo-by-rohas/skills/operational-creditor-application-drafter/SKILL.md)**: operational creditor insolvency applications **(India)**
-- **[resolution-plan-reviewer](plugins/vclo-by-rohas/skills/resolution-plan-reviewer/SKILL.md)**: resolution plans for compliance and commercial effect **(India)**
+- **[avoidance-transaction-analyst](plugins/vclo-india/skills/avoidance-transaction-analyst/SKILL.md)**: preferential, undervalued and fraudulent transactions **(India)**
+- **[cirp-timeline-checker](plugins/vclo-india/skills/cirp-timeline-checker/SKILL.md)**: CIRP steps and statutory timelines for a matter **(India)**
+- **[claim-verification-analyst](plugins/vclo-india/skills/claim-verification-analyst/SKILL.md)**: verification and classification of creditor claims **(India)**
+- **[liquidation-documenter](plugins/vclo-india/skills/liquidation-documenter/SKILL.md)**: liquidation process documentation **(India)**
+- **[operational-creditor-application-drafter](plugins/vclo-india/skills/operational-creditor-application-drafter/SKILL.md)**: operational creditor insolvency applications **(India)**
+- **[resolution-plan-reviewer](plugins/vclo-india/skills/resolution-plan-reviewer/SKILL.md)**: resolution plans for compliance and commercial effect **(India)**
 
 ### investigations
 
@@ -258,7 +268,7 @@ General financing contracts can still use **contract-reviewer**; use **loan-agre
 - **[infringement-analyst](plugins/vclo-by-rohas/skills/infringement-analyst/SKILL.md)**: right-specific infringement, defence, validity and remedy analysis
 - **[ip-assignment-drafter](plugins/vclo-by-rohas/skills/ip-assignment-drafter/SKILL.md)**: precise IP ownership transfers, schedules and recordal steps
 - **[ip-portfolio-analyst](plugins/vclo-by-rohas/skills/ip-portfolio-analyst/SKILL.md)**: ownership, coverage, deadlines, exploitation, encumbrance and risk audits
-- **[trademark-opposition-drafter](plugins/vclo-by-rohas/skills/trademark-opposition-drafter/SKILL.md)**: opposition, counterstatement and rectification materials **(India)**
+- **[trademark-opposition-drafter](plugins/vclo-india/skills/trademark-opposition-drafter/SKILL.md)**: opposition, counterstatement and rectification materials **(India)**
 
 IP licence review lives inside **contract-reviewer** as a specialist reference — see Contracts above.
 
@@ -277,7 +287,7 @@ For a one-off plain-language explanation instead of a structured course, see **l
 - **[court-order-compliance-checker](plugins/vclo-by-rohas/skills/court-order-compliance-checker/SKILL.md)**: turns an order into tracked obligations, deadlines and contempt-risk assessment
 - **[cross-examination-planner](plugins/vclo-by-rohas/skills/cross-examination-planner/SKILL.md)**: ethical issue-led questioning, contradictions and admissible impeachment
 - **[damages-quantifier](plugins/vclo-by-rohas/skills/damages-quantifier/SKILL.md)**: general commercial/civil damages head by head — expectation, reliance, lost profits, interest, mitigation
-- **[decree-execution-and-enforcement-drafter](plugins/vclo-by-rohas/skills/decree-execution-and-enforcement-drafter/SKILL.md)**: executable-decree analysis, enforcement mode and execution application **(India)**
+- **[decree-execution-and-enforcement-drafter](plugins/vclo-india/skills/decree-execution-and-enforcement-drafter/SKILL.md)**: executable-decree analysis, enforcement mode and execution application **(India)**
 - **[disclosure-request-drafter](plugins/vclo-by-rohas/skills/disclosure-request-drafter/SKILL.md)**: proportionate issue-linked disclosure, discovery and inspection requests
 - **[document-review-protocol-builder](plugins/vclo-by-rohas/skills/document-review-protocol-builder/SKILL.md)**: defensible review coding, privilege, quality control and escalation protocols
 - **[evidence-organizer](plugins/vclo-by-rohas/skills/evidence-organizer/SKILL.md)**: evidence mapped to facts, elements, witnesses, foundations and objections
@@ -286,12 +296,12 @@ For a one-off plain-language explanation instead of a structured course, see **l
 - **[limitation-checker](plugins/vclo-by-rohas/skills/limitation-checker/SKILL.md)**: competing deadline scenarios, accrual, exclusions, extensions and forum issues
 - **[litigation-strategy-planner](plugins/vclo-by-rohas/skills/litigation-strategy-planner/SKILL.md)**: integrates claims, evidence, limitation, forum, interim relief and cost into one sequenced strategy
 - **[pleadings-analyst](plugins/vclo-by-rohas/skills/pleadings-analyst/SKILL.md)**: claims, defences, admissions, inconsistencies, particulars and live issues
-- **[plaint-drafter](plugins/vclo-by-rohas/skills/plaint-drafter/SKILL.md)**: civil and commercial plaints with jurisdiction, limitation, valuation and relief properly pleaded **(India)**
+- **[plaint-drafter](plugins/vclo-india/skills/plaint-drafter/SKILL.md)**: civil and commercial plaints with jurisdiction, limitation, valuation and relief properly pleaded **(India)**
 - **[privilege-log-builder](plugins/vclo-by-rohas/skills/privilege-log-builder/SKILL.md)**: supportable privilege entries, family reconciliation, waiver flags and challenges
 - **[production-set-checker](plugins/vclo-by-rohas/skills/production-set-checker/SKILL.md)**: pre-release scope, file, metadata, privilege, redaction and delivery quality control
 - **[redaction-reviewer](plugins/vclo-by-rohas/skills/redaction-reviewer/SKILL.md)**: legal-basis, consistency and technical-permanence review of redactions
 - **[witness-statement-drafter](plugins/vclo-by-rohas/skills/witness-statement-drafter/SKILL.md)**: witness-owned factual evidence, exhibits, uncertainty and formalities
-- **[written-statement-drafter](plugins/vclo-by-rohas/skills/written-statement-drafter/SKILL.md)**: civil and commercial defences with specific admissions, denials and affirmative case **(India)**
+- **[written-statement-drafter](plugins/vclo-india/skills/written-statement-drafter/SKILL.md)**: civil and commercial defences with specific admissions, denials and affirmative case **(India)**
 - **[written-submissions-drafter](plugins/vclo-by-rohas/skills/written-submissions-drafter/SKILL.md)**: issue-led, authority-verified and record-linked written advocacy
 
 ### practice
@@ -307,28 +317,28 @@ For a one-off plain-language explanation instead of a structured course, see **l
 - **[breach-response-planner](plugins/vclo-by-rohas/skills/breach-response-planner/SKILL.md)**: containment, evidence, harm assessment, notification and remediation
 - **[cross-border-transfer-analyst](plugins/vclo-by-rohas/skills/cross-border-transfer-analyst/SKILL.md)**: transfer maps, mechanisms, destination risk and supplementary safeguards
 - **[data-processing-agreement-reviewer](plugins/vclo-by-rohas/skills/data-processing-agreement-reviewer/SKILL.md)**: roles, instructions, security, subprocessors, audits, transfers and deletion
-- **[dpdp-compliance-checker](plugins/vclo-by-rohas/skills/dpdp-compliance-checker/SKILL.md)**: commenced DPDP duties, evidence and implementation readiness **(India)**
+- **[dpdp-compliance-checker](plugins/vclo-india/skills/dpdp-compliance-checker/SKILL.md)**: commenced DPDP duties, evidence and implementation readiness **(India)**
 - **[dpia-documenter](plugins/vclo-by-rohas/skills/dpia-documenter/SKILL.md)**: necessity, proportionality, individual risk, safeguards and residual approval
 - **[privacy-policy-drafter](plugins/vclo-by-rohas/skills/privacy-policy-drafter/SKILL.md)**: project-aware code audits and accurate layered notices matched to verified processing
 
 ### property
 
 - **[development-agreement-reviewer](plugins/vclo-by-rohas/skills/development-agreement-reviewer/SKILL.md)**: development and joint venture agreements for land
-- **[encumbrance-analyst](plugins/vclo-by-rohas/skills/encumbrance-analyst/SKILL.md)**: reads encumbrance records for charges, gaps and risk **(India)**
-- **[rera-compliance-checker](plugins/vclo-by-rohas/skills/rera-compliance-checker/SKILL.md)**: RERA registration and disclosure obligations **(India)**
+- **[encumbrance-analyst](plugins/vclo-india/skills/encumbrance-analyst/SKILL.md)**: reads encumbrance records for charges, gaps and risk **(India)**
+- **[rera-compliance-checker](plugins/vclo-india/skills/rera-compliance-checker/SKILL.md)**: RERA registration and disclosure obligations **(India)**
 - **[sale-deed-drafter](plugins/vclo-by-rohas/skills/sale-deed-drafter/SKILL.md)**: sale deeds and conveyances
-- **[stamp-duty-analyst](plugins/vclo-by-rohas/skills/stamp-duty-analyst/SKILL.md)**: stamp duty and registration position on supplied rates **(India)**
-- **[title-diligence-analyst](plugins/vclo-by-rohas/skills/title-diligence-analyst/SKILL.md)**: title chain, defects and what remains unverified **(India)**
+- **[stamp-duty-analyst](plugins/vclo-india/skills/stamp-duty-analyst/SKILL.md)**: stamp duty and registration position on supplied rates **(India)**
+- **[title-diligence-analyst](plugins/vclo-india/skills/title-diligence-analyst/SKILL.md)**: title chain, defects and what remains unverified **(India)**
 
 Lease and leave-and-licence review lives inside **contract-reviewer** as a specialist reference — see Contracts above.
 
 ### public
 
 - **[government-contract-reviewer](plugins/vclo-by-rohas/skills/government-contract-reviewer/SKILL.md)**: authority, procurement hierarchy, fiscal controls, performance, transparency and disputes
-- **[pil-drafter](plugins/vclo-by-rohas/skills/pil-drafter/SKILL.md)**: maintainable public interest litigation with bona fides, public injury and workable relief **(India)**
+- **[pil-drafter](plugins/vclo-india/skills/pil-drafter/SKILL.md)**: maintainable public interest litigation with bona fides, public injury and workable relief **(India)**
 - **[policy-note-drafter](plugins/vclo-by-rohas/skills/policy-note-drafter/SKILL.md)**: decision-ready policy and cabinet notes with options, impacts, consultation and implementation
-- **[rti-appeal-drafter](plugins/vclo-by-rohas/skills/rti-appeal-drafter/SKILL.md)**: remedy selection, limitation, grounds and relief for RTI appeals and complaints **(India)**
-- **[rti-application-drafter](plugins/vclo-by-rohas/skills/rti-application-drafter/SKILL.md)**: focused requests for identifiable records held by the correct public authority **(India)**
+- **[rti-appeal-drafter](plugins/vclo-india/skills/rti-appeal-drafter/SKILL.md)**: remedy selection, limitation, grounds and relief for RTI appeals and complaints **(India)**
+- **[rti-application-drafter](plugins/vclo-india/skills/rti-application-drafter/SKILL.md)**: focused requests for identifiable records held by the correct public authority **(India)**
 - **[tender-compliance-checker](plugins/vclo-by-rohas/skills/tender-compliance-checker/SKILL.md)**: traceable requirements, evidence, deviations, blockers and submission control
 
 ### regulatory
@@ -357,16 +367,16 @@ Lease and leave-and-licence review lives inside **contract-reviewer** as a speci
 - **[cap-table-analyst](plugins/vclo-by-rohas/skills/cap-table-analyst/SKILL.md)**: works through dilution and ownership on supplied numbers
 - **[esop-scheme-drafter](plugins/vclo-by-rohas/skills/esop-scheme-drafter/SKILL.md)**: ESOP scheme documents and grant letters
 - **[founders-agreement-drafter](plugins/vclo-by-rohas/skills/founders-agreement-drafter/SKILL.md)**: founder agreements: vesting, roles, exit, IP
-- **[startup-compliance-checker](plugins/vclo-by-rohas/skills/startup-compliance-checker/SKILL.md)**: compliance obligations by stage and structure **(India)**
+- **[startup-compliance-checker](plugins/vclo-india/skills/startup-compliance-checker/SKILL.md)**: compliance obligations by stage and structure **(India)**
 
 Term sheet and SHA/SSA review now lives in **investment-and-shareholder-agreement-reviewer** (Corporate), and SaaS terms drafting lives inside **contract-drafter** as a specialist reference (Contracts) — see above.
 
 ### tax
 
-- **[fema-analyst](plugins/vclo-by-rohas/skills/fema-analyst/SKILL.md)**: FEMA position on a cross-border transaction **(India)**
-- **[gst-compliance-analyst](plugins/vclo-by-rohas/skills/gst-compliance-analyst/SKILL.md)**: GST treatment and compliance obligations **(India)**
-- **[tax-appeal-grounds-drafter](plugins/vclo-by-rohas/skills/tax-appeal-grounds-drafter/SKILL.md)**: grounds of appeal against an assessment or order **(India)**
-- **[tax-assessment-reply-drafter](plugins/vclo-by-rohas/skills/tax-assessment-reply-drafter/SKILL.md)**: replies to assessment and scrutiny notices **(India)**
+- **[fema-analyst](plugins/vclo-india/skills/fema-analyst/SKILL.md)**: FEMA position on a cross-border transaction **(India)**
+- **[gst-compliance-analyst](plugins/vclo-india/skills/gst-compliance-analyst/SKILL.md)**: GST treatment and compliance obligations **(India)**
+- **[tax-appeal-grounds-drafter](plugins/vclo-india/skills/tax-appeal-grounds-drafter/SKILL.md)**: grounds of appeal against an assessment or order **(India)**
+- **[tax-assessment-reply-drafter](plugins/vclo-india/skills/tax-assessment-reply-drafter/SKILL.md)**: replies to assessment and scrutiny notices **(India)**
 - **[transfer-pricing-documenter](plugins/vclo-by-rohas/skills/transfer-pricing-documenter/SKILL.md)**: transfer pricing documentation and benchmarking record
 - **[treaty-analyst](plugins/vclo-by-rohas/skills/treaty-analyst/SKILL.md)**: treaty entitlement and relief on given facts
 

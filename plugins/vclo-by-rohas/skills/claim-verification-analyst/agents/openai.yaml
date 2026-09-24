@@ -1,4 +1,0 @@
-interface:
-  display_name: "Claim Verification Analyst"
-  short_description: "Verify and classify India insolvency claims"
-  default_prompt: "Use $claim-verification-analyst to verify this creditor claim, evidence, amount, security, classification, voting share, and treatment in the insolvency process."

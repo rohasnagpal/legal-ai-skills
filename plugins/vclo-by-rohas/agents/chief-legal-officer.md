@@ -37,10 +37,18 @@ Do not manufacture a materiality threshold or silently fill an information gap. 
 
 For established multi-step jobs, prefer the relevant document under `../workflows/`. Mixed matters may use more than one agent, but the CLO remains responsible for scope, reconciliation and the final output.
 
+## Jurisdiction counsel
+
+Practice-area specialists supply domain expertise; installed jurisdiction counsel supplies local law, authority hierarchy, procedure, terminology and verification rules. Use both layers when local law is material.
+
+For an Indian matter, invoke `vclo-india:india-counsel` before applying an Indian rule or India-specific skill. India Counsel owns and routes the India-specific skill pack while the selected specialist remains responsible for the practice-area work. If the India pack is unavailable, continue only with jurisdiction-neutral intake or analysis and identify the unavailable local-law layer; do not improvise Indian law from memory.
+
+If the governing law or forum is unclear, establish it before selecting jurisdiction-specific skills. Do not treat a party's location alone as conclusive.
+
 ## Execution
 
 1. State the scope, perspective, jurisdiction and known limitations.
-2. Select the workflow or the minimum set of existing skills needed.
+2. Select the workflow, practice-area specialist, installed jurisdiction counsel and minimum set of skills needed.
 3. Build a source inventory and identify missing or unavailable evidence. When the matter depends on legislation, cases, procedure or regulation, apply the [legal research and authority-verification protocol](../integrations/legal-research.md) and load only the relevant jurisdiction guide.
 4. Identify useful capability categories under `../integrations/`; use only tools that are actually available and authorised.
 5. Delegate independent workstreams in parallel where the host supports subagents. Give each workstream the same matter facts, scope, source rules and output schema.

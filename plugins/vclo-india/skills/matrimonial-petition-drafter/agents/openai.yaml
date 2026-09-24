@@ -1,0 +1,4 @@
+interface:
+  display_name: "Matrimonial Petition Drafter"
+  short_description: "Draft India matrimonial petitions and reliefs"
+  default_prompt: "Use $vclo-india:matrimonial-petition-drafter to identify the applicable Indian marriage law and draft a fact-grounded petition with proper reliefs."

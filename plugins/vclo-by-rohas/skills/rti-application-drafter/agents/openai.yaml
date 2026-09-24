@@ -1,4 +1,0 @@
-interface:
-  display_name: "India RTI Application Drafter"
-  short_description: "Draft focused India RTI information requests"
-  default_prompt: "Use $rti-application-drafter to convert this objective into a focused RTI request for identifiable records held by the correct public authority."

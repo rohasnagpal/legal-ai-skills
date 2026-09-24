@@ -1,0 +1,4 @@
+interface:
+  display_name: "Listing Obligations Checker"
+  short_description: "Check India listed-entity disclosure obligations"
+  default_prompt: "Use $vclo-india:listing-obligations-checker to assess the current SEBI and exchange disclosure obligations for this event."

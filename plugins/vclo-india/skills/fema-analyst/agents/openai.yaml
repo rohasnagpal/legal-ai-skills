@@ -1,0 +1,4 @@
+interface:
+  display_name: "FEMA Analyst"
+  short_description: "Work out the FEMA position on a cross-border transaction"
+  default_prompt: "Use $vclo-india:fema-analyst to work out our FEMA position on this cross-border investment."

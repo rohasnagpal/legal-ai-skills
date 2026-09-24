@@ -26,7 +26,7 @@ Handle regulatory applicability, privacy, sanctions, licences, regulatory change
 - [regulatory-filing-preparer](../skills/regulatory-filing-preparer/SKILL.md)
 - [licence-application-drafter](../skills/licence-application-drafter/SKILL.md)
 - [sanctions-screening-documenter](../skills/sanctions-screening-documenter/SKILL.md)
-- [dpdp-compliance-checker](../skills/dpdp-compliance-checker/SKILL.md)
+- `vclo-india:dpdp-compliance-checker` for India's DPDP regime when the India pack is installed
 - [dpia-documenter](../skills/dpia-documenter/SKILL.md)
 - [cross-border-transfer-analyst](../skills/cross-border-transfer-analyst/SKILL.md)
 - [breach-response-planner](../skills/breach-response-planner/SKILL.md)

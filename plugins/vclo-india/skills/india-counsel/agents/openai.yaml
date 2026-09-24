@@ -1,0 +1,8 @@
+interface:
+  display_name: "India Counsel"
+  short_description: "Indian law, procedure and verification"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-india:india-counsel to apply Indian law, procedure and verification rules to this matter."
+
+policy:
+  allow_implicit_invocation: true

@@ -4,10 +4,9 @@
 # `ruby scripts/validate.rb` before pushing, or let CI run it on every
 # push and pull request (see .github/workflows/validate.yml).
 #
-# The repo ships one plugin -- plugins/vclo-by-rohas -- containing the
-# complete skill library. This script fails loudly if a second top-level
-# plugin directory reappears, since that would mean the single-plugin
-# architecture has regressed.
+# The repository ships a neutral vCLO core plus independently installable
+# jurisdiction packs. Validators must preserve plugin namespaces so future
+# jurisdiction packs can add local skills without duplicating the core.
 require 'yaml'
 require 'json'
 require 'set'
@@ -18,14 +17,17 @@ errors = []
 warnings = []
 
 NAME_RE = /\A[a-z0-9]+(-[a-z0-9]+)*\z/
-EXPECTED_PLUGIN = 'vclo-by-rohas'
+CORE_PLUGIN = 'vclo-by-rohas'
+INDIA_PLUGIN = 'vclo-india'
+EXPECTED_PLUGINS = [CORE_PLUGIN, INDIA_PLUGIN].sort.freeze
 
-# ---- 0. Exactly one plugin directory ----
+# ---- 0. Expected plugin directories ----
 plugin_dirs = Dir.glob('plugins/*/').map { |d| d.chomp('/').split('/').last }.sort
-if plugin_dirs != [EXPECTED_PLUGIN]
-  unexpected = plugin_dirs - [EXPECTED_PLUGIN]
-  errors << "plugins/: expected only '#{EXPECTED_PLUGIN}', found unexpected plugin director#{unexpected.length == 1 ? 'y' : 'ies'}: #{unexpected.join(', ')}" unless unexpected.empty?
-  errors << "plugins/: '#{EXPECTED_PLUGIN}' directory is missing" unless plugin_dirs.include?(EXPECTED_PLUGIN)
+if plugin_dirs != EXPECTED_PLUGINS
+  unexpected = plugin_dirs - EXPECTED_PLUGINS
+  missing = EXPECTED_PLUGINS - plugin_dirs
+  errors << "plugins/: unexpected plugin director#{unexpected.length == 1 ? 'y' : 'ies'}: #{unexpected.join(', ')}" unless unexpected.empty?
+  errors << "plugins/: missing plugin director#{missing.length == 1 ? 'y' : 'ies'}: #{missing.join(', ')}" unless missing.empty?
 end
 
 # ---- 1. SKILL.md frontmatter ----
@@ -84,25 +86,33 @@ skill_files.each do |f|
   end
 end
 
-# With every skill now sharing one skills/ directory, a duplicate `name` field
-# is exactly what the folder-name check above can no longer catch on its own
-# if two folders were ever merged carelessly -- so check it explicitly here.
-skill_names.group_by { |name, _f| name }.each do |name, occurrences|
-  next if occurrences.length <= 1
-
-  errors << "duplicate skill name '#{name}' in: #{occurrences.map { |_n, f| f }.join(', ')}"
-end
-
 known_skill_names = skill_names.map(&:first).to_set
+known_skill_ids = skill_names.map do |name, path|
+  plugin = path.split('/')[1]
+  "#{plugin}:#{name}"
+end.to_set
 skill_reference_suffixes = %w[
   advisor analyst assessor builder calculator checker collector comparator documenter
   drafter estimator explainer extractor flagger interpreter mapper monitor organizer
   planner preparer quantifier reviewer summariser synthesiser tracer validator
 ]
 skill_reference_re = /\b[a-z0-9]+(?:-[a-z0-9]+)+-(?:#{skill_reference_suffixes.join('|')})\b/
+skills_by_plugin = skill_names.each_with_object(Hash.new { |hash, key| hash[key] = Set.new }) do |(name, path), index|
+  index[path.split('/')[1]] << name
+end
 skill_files.each do |f|
-  File.read(f, encoding: 'UTF-8').scan(skill_reference_re).uniq.each do |reference|
-    errors << "#{f}: references unknown skill '#{reference}'" unless known_skill_names.include?(reference)
+  content = File.read(f, encoding: 'UTF-8')
+  current_plugin = f.split('/')[1]
+  content.scan(skill_reference_re).uniq.each do |reference|
+    unless known_skill_names.include?(reference)
+      errors << "#{f}: references unknown skill '#{reference}'"
+      next
+    end
+    next if skills_by_plugin[current_plugin].include?(reference)
+
+    owning_plugins = skills_by_plugin.select { |_plugin, names| names.include?(reference) }.keys
+    namespaced = owning_plugins.any? { |plugin| content.include?("#{plugin}:#{reference}") }
+    errors << "#{f}: cross-plugin skill '#{reference}' must use an explicit plugin namespace" unless namespaced
   end
 end
 
@@ -114,7 +124,7 @@ india_skill_names = readme.scan(%r{skills/([^/]+)/SKILL\.md\)\*\*:.*?\*\*\(India
 india_guard_heading = '## Jurisdiction gate'
 india_guard_text = 'If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules.'
 india_skill_names.each do |name|
-  skill_path = "plugins/#{EXPECTED_PLUGIN}/skills/#{name}/SKILL.md"
+  skill_path = "plugins/#{INDIA_PLUGIN}/skills/#{name}/SKILL.md"
   unless File.file?(skill_path)
     errors << "README.md: India-specific skill '#{name}' does not exist"
     next
@@ -127,6 +137,7 @@ end
 hybrid_india_references = %w[
   arbitration-interim-relief-drafter
   deficiency-analyst
+  india-counsel
   product-liability-analyst
 ]
 skill_files.each do |f|
@@ -141,6 +152,39 @@ skill_files.each do |f|
   next if india_skill_names.include?(name) || hybrid_india_references.include?(name)
 
   errors << "#{f}: description is India-specific but README does not mark the skill (India)"
+end
+
+# India Counsel owns every India-only skill through one machine-readable map.
+india_map_path = "plugins/#{INDIA_PLUGIN}/jurisdiction/skill-map.yaml"
+begin
+  india_map = YAML.safe_load(File.read(india_map_path, encoding: 'UTF-8'))
+  mapped_india_skills = india_map.fetch('skills').values.flatten
+  errors << "#{india_map_path}: jurisdiction must be india" unless india_map['jurisdiction'] == 'india'
+  errors << "#{india_map_path}: agent must be india-counsel" unless india_map['agent'] == 'india-counsel'
+  errors << "#{india_map_path}: skill_count does not match mapped skills" unless india_map['skill_count'] == mapped_india_skills.length
+  errors << "#{india_map_path}: duplicate skill entries" unless mapped_india_skills.uniq.length == mapped_india_skills.length
+
+  actual_india_skills = Dir.glob("plugins/#{INDIA_PLUGIN}/skills/*/SKILL.md").map { |path| File.basename(File.dirname(path)) } - ['india-counsel']
+  missing_from_map = actual_india_skills - mapped_india_skills
+  missing_from_plugin = mapped_india_skills - actual_india_skills
+  errors << "#{india_map_path}: India skills missing from map: #{missing_from_map.sort.join(', ')}" unless missing_from_map.empty?
+  errors << "#{india_map_path}: mapped skills missing from plugin: #{missing_from_plugin.sort.join(', ')}" unless missing_from_plugin.empty?
+
+  readme_only = india_skill_names.to_a - mapped_india_skills
+  map_only = mapped_india_skills - india_skill_names.to_a
+  errors << "#{india_map_path}: README India skills missing from map: #{readme_only.sort.join(', ')}" unless readme_only.empty?
+  errors << "#{india_map_path}: mapped India skills not marked (India) in README: #{map_only.sort.join(', ')}" unless map_only.empty?
+
+  counsel_link = '[India Counsel instructions](../../agents/india-counsel.md)'
+  mapped_india_skills.each do |name|
+    path = "plugins/#{INDIA_PLUGIN}/skills/#{name}/SKILL.md"
+    next unless File.file?(path)
+
+    content = File.read(path, encoding: 'UTF-8')
+    errors << "#{path}: does not load India Counsel" unless content.include?(counsel_link)
+  end
+rescue => e
+  errors << "#{india_map_path}: invalid jurisdiction skill map -- #{e.message}"
 end
 
 # Flag near-identical descriptions for manual review -- not a hard failure,
@@ -335,9 +379,13 @@ Dir.glob('plugins/*/skills/*/agents/openai.yaml').sort.each do |f|
     next
   end
   skill_name = File.basename(File.dirname(File.dirname(f)))
+  plugin_name = f.split('/')[1]
   prompt = iface['default_prompt'].to_s
   expected_invocation = /\$(?:[a-z0-9-]+:)?#{Regexp.escape(skill_name)}\b/
   errors << "#{f}: default_prompt must invoke $#{skill_name}" unless prompt.match?(expected_invocation)
+  if plugin_name != CORE_PLUGIN
+    errors << "#{f}: jurisdiction-pack default_prompt must invoke $#{plugin_name}:#{skill_name}" unless prompt.include?("$#{plugin_name}:#{skill_name}")
+  end
 rescue => e
   errors << "#{f}: YAML parse error -- #{e.message}"
 end
@@ -373,6 +421,13 @@ rescue => e
 end
 
 # ---- 4. Routing and behaviour fixtures, where present ----
+def known_skill_reference?(reference, current_plugin, known_skill_ids)
+  return false if reference.to_s.empty?
+
+  skill_id = reference.include?(':') ? reference : "#{current_plugin}:#{reference}"
+  known_skill_ids.include?(skill_id)
+end
+
 Dir.glob('plugins/*/tests/*.{yaml,yml}').sort.each do |f|
   begin
     data = YAML.safe_load(File.read(f, encoding: 'UTF-8'))
@@ -401,15 +456,11 @@ Dir.glob('plugins/*/tests/*.{yaml,yml}').sort.each do |f|
   end
   ids.group_by { |id| id }.each { |id, occ| errors << "#{f}: duplicate case id '#{id}'" if occ.length > 1 }
 
-  # Fixture files are namespaced by their origin category (e.g.
-  # criminal-behavioral-evals.yaml, contracts-routing-behavior.yaml) now that
-  # they all live under the single plugin's tests/ directory, so a file's own
-  # `plugin:` field -- not its path -- is what has to match the one plugin.
-  all_skills = Dir.glob("plugins/#{EXPECTED_PLUGIN}/skills/*/SKILL.md").map { |path| File.basename(File.dirname(path)) }
+  current_plugin = f.split('/')[1]
 
   if File.basename(f).end_with?('-behavioral-evals.yaml')
     errors << "#{f}: version must be 1" unless data['version'] == 1
-    errors << "#{f}: plugin '#{data['plugin']}' must be '#{EXPECTED_PLUGIN}'" unless data['plugin'] == EXPECTED_PLUGIN
+    errors << "#{f}: plugin '#{data['plugin']}' must be '#{current_plugin}'" unless data['plugin'] == current_plugin
     errors << "#{f}: risk_tier must be high" unless data['risk_tier'] == 'high'
 
     positive_count = 0
@@ -424,7 +475,7 @@ Dir.glob('plugins/*/tests/*.{yaml,yml}').sort.each do |f|
         negative_count += 1
       else
         positive_count += 1
-        errors << "#{f}: case #{test_case['id']} references unknown skill '#{expected_skill}'" unless all_skills.include?(expected_skill)
+        errors << "#{f}: case #{test_case['id']} references unknown skill '#{expected_skill}'" unless known_skill_reference?(expected_skill, current_plugin, known_skill_ids)
       end
 
       %w[must_include must_not_include].each do |key|
@@ -438,7 +489,7 @@ Dir.glob('plugins/*/tests/*.{yaml,yml}').sort.each do |f|
   elsif File.basename(f) == 'contracts-routing-behavior.yaml'
     covered_skills = cases.map { |test_case| test_case['expected_skill'] }.compact.uniq
     covered_skills.each do |skill|
-      errors << "#{f}: case references unknown skill '#{skill}'" unless all_skills.include?(skill)
+      errors << "#{f}: case references unknown skill '#{skill}'" unless known_skill_reference?(skill, current_plugin, known_skill_ids)
     end
     positive_count = cases.count { |test_case| !test_case['expected_skill'].nil? }
     negative_count = cases.count { |test_case| test_case.key?('expected_skill') && test_case['expected_skill'].nil? }
@@ -455,7 +506,7 @@ Dir.glob('plugins/*/tests/*.{yaml,yml}').sort.each do |f|
         errors << "#{f}: positive case #{test_case['id']} missing #{key}" if test_case[key].to_s.strip.empty?
       end
       expected_skill = test_case['expected_skill']
-      errors << "#{f}: positive case #{test_case['id']} references unknown skill '#{expected_skill}'" if expected_skill && !all_skills.include?(expected_skill)
+      errors << "#{f}: positive case #{test_case['id']} references unknown skill '#{expected_skill}'" if expected_skill && !known_skill_reference?(expected_skill, current_plugin, known_skill_ids)
     end
     negative_cases.each do |test_case|
       %w[reason fixture_data].each do |key|
@@ -525,7 +576,6 @@ vclo_required_files = %w[
   plugins/vclo-by-rohas/integrations/email-and-calendar.md
   plugins/vclo-by-rohas/integrations/company-registries.md
   plugins/vclo-by-rohas/integrations/legal-research.md
-  plugins/vclo-by-rohas/integrations/legal-research-sources/india.md
   plugins/vclo-by-rohas/integrations/legal-research-sources/united-states.md
   plugins/vclo-by-rohas/integrations/legal-research-sources/united-kingdom.md
   plugins/vclo-by-rohas/integrations/github.md
@@ -543,6 +593,15 @@ vclo_required_files = %w[
   plugins/vclo-by-rohas/tests/vclo/litigation-preparation.md
   plugins/vclo-by-rohas/tests/vclo/graceful-degradation.md
   plugins/vclo-by-rohas/tests/vclo/welcome.md
+  plugins/vclo-india/.codex-plugin/plugin.json
+  plugins/vclo-india/agents/india-counsel.md
+  plugins/vclo-india/skills/india-counsel/SKILL.md
+  plugins/vclo-india/skills/india-counsel/agents/openai.yaml
+  plugins/vclo-india/jurisdiction/operating-rules.md
+  plugins/vclo-india/jurisdiction/authoritative-sources.md
+  plugins/vclo-india/jurisdiction/integrations.md
+  plugins/vclo-india/jurisdiction/skill-map.yaml
+  plugins/vclo-india/tests/jurisdiction-routing-behavioral-evals.yaml
 ]
 
 vclo_required_files.each do |f|
@@ -568,7 +627,7 @@ if File.file?(legal_research_policy_path)
 end
 
 legal_source_requirements = {
-  'plugins/vclo-by-rohas/integrations/legal-research-sources/india.md' => %w[
+  'plugins/vclo-india/jurisdiction/authoritative-sources.md' => %w[
     https://indiacode.gov.in/
     https://egazette.gov.in/
     https://www.sci.gov.in/
@@ -599,7 +658,7 @@ legal_source_requirements.each do |path, required_urls|
   end
 end
 
-vclo_markdown_files = Dir.glob('plugins/vclo-by-rohas/{agents,workflows,integrations,assets/vclo,tests/vclo}/**/*.md').sort
+vclo_markdown_files = Dir.glob('plugins/*/{agents,workflows,integrations,jurisdiction,assets/vclo,tests/vclo}/**/*.md').sort
 vclo_markdown_files.each do |f|
   content = File.read(f, encoding: 'UTF-8')
   errors << "#{f}: empty Markdown document" if content.strip.empty?
@@ -613,7 +672,7 @@ vclo_markdown_files.each do |f|
 end
 
 agent_headings = ['## Purpose', '## Inputs', '## Output', '## Verification']
-Dir.glob('plugins/vclo-by-rohas/agents/*.md').sort.each do |f|
+Dir.glob('plugins/*/agents/*.md').sort.each do |f|
   content = File.read(f, encoding: 'UTF-8')
   parts = content.split(/^---\s*$/m)
   if parts.length < 3
@@ -651,7 +710,7 @@ skill_files.each do |f|
 end
 
 # ---- Report ----
-puts "Checked #{skill_files.length} skills in #{plugin_dirs.length} plugin (#{plugin_dirs.join(', ')})."
+puts "Checked #{skill_files.length} skills in #{plugin_dirs.length} plugin#{plugin_dirs.length == 1 ? '' : 's'} (#{plugin_dirs.join(', ')})."
 puts
 
 unless warnings.empty?

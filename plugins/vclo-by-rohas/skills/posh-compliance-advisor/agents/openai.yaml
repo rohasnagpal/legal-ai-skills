@@ -1,4 +1,0 @@
-interface:
-  display_name: "POSH Compliance Advisor"
-  short_description: "Check India POSH governance and procedure"
-  default_prompt: "Use $posh-compliance-advisor to assess this workplace’s POSH committee, policy, inquiry process, training, and reporting compliance."

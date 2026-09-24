@@ -18,7 +18,7 @@ For past events, determine the version in force at the relevant time. Record lat
 
 Load only the guide relevant to the matter:
 
-- [India](legal-research-sources/india.md)
+- **India** — invoke `vclo-india:india-counsel` and use the India pack's maintained authoritative-source guide
 - [United States](legal-research-sources/united-states.md)
 - [United Kingdom](legal-research-sources/united-kingdom.md)
 

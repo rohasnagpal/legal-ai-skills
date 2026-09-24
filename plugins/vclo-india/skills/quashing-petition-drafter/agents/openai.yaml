@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quashing Petition Drafter"
+  short_description: "Draft India criminal quashing petitions"
+  default_prompt: "Use $vclo-india:quashing-petition-drafter to assess and draft a record-based petition to quash these criminal proceedings."

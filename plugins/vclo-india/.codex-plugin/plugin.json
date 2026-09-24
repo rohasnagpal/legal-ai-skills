@@ -1,0 +1,33 @@
+{
+  "name": "vclo-india",
+  "version": "1.0.0",
+  "description": "India Counsel for vCLO, with Indian-law operating rules, authoritative-source verification and 39 India-specific legal skills.",
+  "author": {
+    "name": "Rohas Nagpal",
+    "email": "rohasnagpal@gmail.com",
+    "url": "https://rohasnagpal.com"
+  },
+  "homepage": "https://www.rohasnagpal.com/legal-ai-skills.php",
+  "repository": "https://github.com/rohasnagpal/legal-ai-skills",
+  "license": "MIT",
+  "keywords": ["legal", "law", "vclo", "india", "indian-law", "jurisdiction-counsel"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "vCLO India Counsel",
+    "shortDescription": "Indian law and procedure",
+    "longDescription": "India Counsel adds Indian-law routing, authoritative-source priorities, current-law verification, Central and State law checks, court and regulator hierarchy, procedural safeguards and 39 India-specific legal skills to vCLO.",
+    "developerName": "Rohas Nagpal",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://www.rohasnagpal.com/legal-ai-skills.php",
+    "privacyPolicyURL": "https://www.rohasnagpal.com/privacy-policy.php",
+    "brandColor": "#B45309",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "Apply India Counsel to this Indian legal matter and verify the governing law.",
+      "Check the Indian forum, procedure and deadlines for this matter.",
+      "Route this matter to the appropriate India-specific legal skill."
+    ]
+  }
+}

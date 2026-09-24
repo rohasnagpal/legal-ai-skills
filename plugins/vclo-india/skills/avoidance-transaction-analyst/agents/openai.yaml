@@ -1,0 +1,4 @@
+interface:
+  display_name: "Avoidance Transaction Analyst"
+  short_description: "Analyse India insolvency avoidance exposure"
+  default_prompt: "Use $vclo-india:avoidance-transaction-analyst to test these transactions for preference, undervalue, extortionate credit, and fraudulent or wrongful trading exposure."

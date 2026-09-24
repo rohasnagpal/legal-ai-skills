@@ -37,7 +37,7 @@ Not blocking, ask once and proceed on what is confirmed: **whether the property 
 
 **7. Draft the possession delivery clause** — when and how possession passes.
 
-**8. Flag registration, stamp duty, and any other formality as a jurisdiction-specific verification point.** Do not assert that the deed satisfies current stamp duty or registration requirements; point to stamp-duty-analyst for the substantive stamp duty determination rather than asserting compliance here.
+**8. Flag registration, stamp duty, and any other formality as a jurisdiction-specific verification point.** Do not assert that the deed satisfies current stamp duty or registration requirements; for an Indian matter, point to `vclo-india:stamp-duty-analyst` for the substantive stamp duty determination rather than asserting compliance here.
 
 **9. Check consistency with any prior agreement to sell**, where one exists, and flag any discrepancy between the deed's terms and that agreement's terms rather than resolving it silently.
 
@@ -49,7 +49,7 @@ Not blocking, ask once and proceed on what is confirmed: **whether the property 
 
 **3. Drafting notes.** Judgment calls made, especially around formal language choices.
 
-**4. Points requiring verification.** Jurisdiction-specific formal requirements for a valid conveyance, stamp duty and registration (pointing to stamp-duty-analyst), and any discrepancy with a prior agreement to sell.
+**4. Points requiring verification.** Jurisdiction-specific formal requirements for a valid conveyance, stamp duty and registration (for India, pointing to `vclo-india:stamp-duty-analyst`), and any discrepancy with a prior agreement to sell.
 
 ## Do not
 
@@ -61,4 +61,4 @@ Do not draft a title covenant representing something not actually instructed as 
 
 Do not gloss over an existing encumbrance. Address it precisely.
 
-Do not assert stamp duty or registration compliance. Flag it and point to stamp-duty-analyst.
+Do not assert stamp duty or registration compliance. Flag it and, for India, point to `vclo-india:stamp-duty-analyst`.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SARFAESI Advisor"
+  short_description: "Plan compliant India secured-asset enforcement"
+  default_prompt: "Use $vclo-india:sarfaesi-advisor to test SARFAESI applicability and build a compliant demand, possession, valuation, sale, and challenge timeline."

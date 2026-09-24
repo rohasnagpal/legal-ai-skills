@@ -7,7 +7,7 @@ vCLO works from uploaded or local files and does not require a proprietary backe
 - [Document sources](document-sources.md)
 - [Email and calendar](email-and-calendar.md)
 - [Company registries](company-registries.md) — bundled SEC EDGAR, GLEIF and optional-key Companies House tools
-- [Legal research](legal-research.md) — official-source-first protocol and maintained India, US and UK source guides
+- [Legal research](legal-research.md) — official-source-first protocol, with US and UK guides in the core and the India guide in the India Counsel pack
 - [GitHub](github.md)
 
 An agent or workflow should request a capability, such as “search authorised matter documents,” rather than require a named vendor. A provider may be used only when the host exposes an executable tool and the user has authorised the relevant scope.

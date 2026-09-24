@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Builds one public-submission zip per plugin. Each archive opens directly
-# to the plugin metadata, skills, agents, workflows, integrations, and assets.
+# to the plugin metadata, skills, agents, workflows, jurisdiction rules,
+# integrations, licence, and assets.
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -18,8 +19,9 @@ for plugin_json in plugins/*/.codex-plugin/plugin.json; do
   (
     cd "$plugin_dir"
     package_entries=(.codex-plugin skills assets)
+    [[ -f LICENSE ]] && package_entries+=(LICENSE)
     [[ -f .mcp.json ]] && package_entries+=(.mcp.json)
-    for optional_entry in agents workflows integrations mcp; do
+    for optional_entry in agents workflows integrations jurisdiction mcp; do
       if [[ -d "$optional_entry" ]]; then
         package_entries+=("$optional_entry")
       fi

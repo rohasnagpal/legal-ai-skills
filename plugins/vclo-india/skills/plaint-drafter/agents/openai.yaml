@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plaint Drafter"
+  short_description: "Draft Indian civil and commercial plaints"
+  default_prompt: "Use $vclo-india:plaint-drafter to test maintainability and draft an Indian civil plaint from these facts and documents."

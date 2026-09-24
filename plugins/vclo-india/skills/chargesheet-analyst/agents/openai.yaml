@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chargesheet Analyst"
+  short_description: "Analyse India police reports and prosecution gaps"
+  default_prompt: "Use $vclo-india:chargesheet-analyst to map this chargesheet against each offence, witness, exhibit, and procedural requirement."

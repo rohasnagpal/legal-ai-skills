@@ -22,7 +22,7 @@ Handle IP ownership, assignments, portfolio review, infringement, licensing, tra
 - [ip-portfolio-analyst](../skills/ip-portfolio-analyst/SKILL.md)
 - [ip-assignment-drafter](../skills/ip-assignment-drafter/SKILL.md)
 - [infringement-analyst](../skills/infringement-analyst/SKILL.md)
-- [trademark-opposition-drafter](../skills/trademark-opposition-drafter/SKILL.md)
+- `vclo-india:trademark-opposition-drafter` for Indian trademark proceedings when the India pack is installed
 - [contract-reviewer](../skills/contract-reviewer/SKILL.md) for IP licences and commercial terms
 - [cease-desist-drafter](../skills/cease-desist-drafter/SKILL.md) where enforcement correspondence is requested
 

@@ -26,8 +26,8 @@ Handle M&A, corporate diligence, governance, capitalization, shareholder arrange
 - [transaction-document-checker](../skills/transaction-document-checker/SKILL.md)
 - [board-resolution-drafter](../skills/board-resolution-drafter/SKILL.md)
 - [minutes-drafter](../skills/minutes-drafter/SKILL.md)
-- [related-party-analyst](../skills/related-party-analyst/SKILL.md)
-- [secretarial-compliance-checker](../skills/secretarial-compliance-checker/SKILL.md)
+- `vclo-india:related-party-analyst` for Indian related-party matters when the India pack is installed
+- `vclo-india:secretarial-compliance-checker` for Indian company compliance when the India pack is installed
 
 ## Inputs
 

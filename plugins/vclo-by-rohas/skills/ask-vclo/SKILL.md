@@ -17,6 +17,7 @@ When the user's request is only or primarily a greeting addressed to vCLO, inclu
 >
 > - **1 virtual Chief Legal Officer**
 > - **9 specialist virtual lawyers** covering contracts, corporate, court litigation, dispute resolution, compliance, employment, intellectual property, investigations and legal research
+> - **India Counsel**, the first jurisdiction counsel, with 39 India-specific skills and Indian-law verification rules
 > - **168 specialist legal skills**
 > - **6 coordinated legal workflows**
 > - built-in company-registry access through **SEC EDGAR, GLEIF and UK Companies House**
@@ -29,22 +30,23 @@ Do not read the CLO, agent or workflow files for a greeting-only request. If the
 ## Route the matter
 
 1. Establish the objective, represented party, jurisdiction, governing law or forum, material dates, available evidence, intended audience and requested deliverable. Identify any missing input that materially limits the work; do not silently supply it.
-2. For a focused request, select the smallest suitable specialist skill and produce one coherent answer.
-3. For a genuinely multi-step matter, read the relevant workflow:
+2. Select the relevant practice-area specialist. When local law is material, also select the installed jurisdiction counsel. For an Indian matter, invoke `vclo-india:india-counsel` before applying Indian rules; if that pack is unavailable, do not improvise Indian law.
+3. For a focused request, select the smallest suitable neutral and/or jurisdiction-specific skill and produce one coherent answer.
+4. For a genuinely multi-step matter, read the relevant workflow:
    - [Contract review and negotiation](../../workflows/contract-review-and-negotiation.md)
    - [M&A legal due diligence](../../workflows/m-and-a-due-diligence.md)
    - [Litigation preparation](../../workflows/litigation-preparation.md)
    - [Regulatory compliance review](../../workflows/regulatory-compliance-review.md)
    - [Data breach response](../../workflows/data-breach-response.md)
    - [Internal investigation](../../workflows/internal-investigation.md)
-4. Read only the specialist role files and skill instructions required by that workflow. If the host supports subagents and separate workstreams materially improve the result, they may run independently; otherwise execute them sequentially and preserve their separate findings.
-5. Reconcile the workstreams, remove duplication, resolve or disclose contradictions, and deliver one consolidated work product.
+5. Read only the specialist role files, jurisdiction-counsel instructions and skill instructions required by that workflow. If the host supports subagents and separate workstreams materially improve the result, they may run independently; otherwise execute them sequentially and preserve their separate findings.
+6. Reconcile the workstreams, remove duplication, resolve or disclose contradictions, and deliver one consolidated work product.
 
 ## Evidence and verification
 
 - Distinguish user-supplied facts, document-supported facts, allegations, assumptions, legal analysis and unresolved questions.
 - Cite the relevant clause, page, paragraph, exhibit or primary legal authority where available.
-- When external legal authority materially affects the answer, follow the CLO's shared legal-research protocol and its maintained India, US or UK source guide. Verify the law applicable on the relevant date, not only current text. Never invent or overstate an authority, search, connection or verification.
+- When external legal authority materially affects the answer, follow the CLO's shared legal-research protocol and the applicable installed jurisdiction guide. India research must use the India Counsel pack. Verify the law applicable on the relevant date, not only current text. Never invent or overstate an authority, search, connection or verification.
 - For material conclusions, preserve source status and provenance, consider adverse authority and the strongest reasonable opposing position, and distinguish facts, evidence, allegations, assumptions and analysis.
 - Apply proportionate assumption, consistency, authority, citation or adversarial checking using the existing verification skills identified in the CLO instructions.
 - State what could not be checked and why.

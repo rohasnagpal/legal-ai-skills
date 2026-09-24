@@ -20,11 +20,10 @@ Handle civil and criminal court disputes, pleadings, chronology, evidence, discl
 ## Preferred skills
 
 - [pleadings-analyst](../skills/pleadings-analyst/SKILL.md)
-- [plaint-drafter](../skills/plaint-drafter/SKILL.md)
-- [written-statement-drafter](../skills/written-statement-drafter/SKILL.md)
-- [decree-execution-and-enforcement-drafter](../skills/decree-execution-and-enforcement-drafter/SKILL.md)
-- [cheque-dishonour-notice-drafter](../skills/cheque-dishonour-notice-drafter/SKILL.md)
-- [cheque-dishonour-complaint-drafter](../skills/cheque-dishonour-complaint-drafter/SKILL.md)
+- `vclo-india:plaint-drafter` for Indian civil and commercial plaints when the India pack is installed
+- `vclo-india:written-statement-drafter` for Indian civil and commercial defences when the India pack is installed
+- `vclo-india:decree-execution-and-enforcement-drafter` for Indian decree enforcement when the India pack is installed
+- `vclo-india:cheque-dishonour-notice-drafter` and `vclo-india:cheque-dishonour-complaint-drafter` for Indian section 138 matters
 - [chronology-builder](../skills/chronology-builder/SKILL.md)
 - [evidence-organizer](../skills/evidence-organizer/SKILL.md)
 - [document-review-protocol-builder](../skills/document-review-protocol-builder/SKILL.md)

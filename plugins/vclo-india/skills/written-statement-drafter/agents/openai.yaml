@@ -1,0 +1,4 @@
+interface:
+  display_name: "Written Statement Drafter"
+  short_description: "Draft Indian civil written statements"
+  default_prompt: "Use $vclo-india:written-statement-drafter to build specific admissions, denials and defences to this Indian civil plaint."
