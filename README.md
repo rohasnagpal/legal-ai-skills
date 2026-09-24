@@ -74,11 +74,14 @@ $0 + your ChatGPT or Claude subscription.
 ### 6. Who this is for
 Practising lawyers, in-house counsel, startups, businesses and law students.
 
-### 7. Jurisdiction:
+### 7. Jurisdiction
 vCLO includes jurisdiction-neutral skills plus jurisdiction specific agents in the same installation. Each jurisdiction lawyer confirms that its law applies before using local rules and checks the relevant territory or State, forum, authority, effective date and procedure.
 
-### 8. Languages:
+### 8. Languages
 vCLO can accept instructions and produce work in languages supported by the selected Codex or Claude model. The maintained skill instructions and legal-source guides are primarily in English, and quality can vary by language. For legal work, verify translations, defined terms, quotations, citations and court or regulator filing-language requirements against authoritative sources or qualified local counsel.
+
+### 9. For law firms
+Need help setting up or customising vCLO? Contact [Rohas Nagpal](https://rohasnagpal.com) at rohasnagpal@gmail.com.
 
 # Install vCLO
 
