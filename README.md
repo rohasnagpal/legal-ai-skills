@@ -9,19 +9,19 @@ You get:
 10 workflows
 8 official legal research sources and connectors
 
-Virtual Chief Legal Officer (vCLO) coordinates specialist virtual lawyers, jurisdiction-specific counsel, legal skills and end-to-end workflows to handle each matter.
+**Virtual Chief Legal Officer (vCLO):** Coordinates specialist virtual lawyers, jurisdiction-specific counsel, legal skills and end-to-end workflows to handle each matter.
 
-9 Specialist Virtual Lawyers: Dedicated expertise across contracts, corporate, dispute resolution, litigation, compliance, employment, IP, investigations and legal research.
+**9 Specialist Virtual Lawyers:** Dedicated expertise across contracts, corporate, dispute resolution, litigation, compliance, employment, IP, investigations and legal research.
 
-3 Jurisdiction-specific Lawyers: 🇮🇳 India, 🇺🇸 US and 🇬🇧 UK legal guidance with local laws, procedures, authorities and verification rules.
+**3 Jurisdiction-specific Lawyers:** 🇮🇳 India, 🇺🇸 US and 🇬🇧 UK legal guidance with local laws, procedures, authorities and verification rules.
 
-185 Specialist Legal Skills: Focused capabilities for legal research, analysis, drafting, review, compliance, due diligence and matter management.
+**185 Specialist Legal Skills:** Focused capabilities for legal research, analysis, drafting, review, compliance, due diligence and matter management.
 
-10 Coordinated Legal Workflows: End-to-end processes that combine the right virtual lawyers, jurisdiction counsel and legal skills for complex matters.
+**10 Coordinated Legal Workflows:** End-to-end processes that combine the right virtual lawyers, jurisdiction counsel and legal skills for complex matters.
 
-8 official legal research sources and connectors connecting vCLO to US, UK and Indian legislation, case law, court records and regulatory materials.
+**8 official legal research sources and connectors:** Connecting vCLO to US, UK and Indian legislation, case law, court records and regulatory materials.
 
-How long does setup take?
+### How long does setup take?
 Less than 60 seconds.
 
 ## Install vCLO
