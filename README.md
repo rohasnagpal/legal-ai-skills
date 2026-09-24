@@ -24,6 +24,49 @@ You get:
 ### How long does setup take?
 Less than 60 seconds.
 
+### Where does it run?
+Inside your Codex or Claude.
+
+### What does it cost?
+$0 + your ChatGPT or Claude subscription.
+
+### What can it handle?
+
+- Arbitration
+- Commercial contracts
+- Consumer and product-liability matters
+- Corporate governance and company secretarial work
+- Criminal-law matters
+- Data protection, privacy and breach response
+- Employment and labour matters
+- Family and succession matters
+- Finance, lending, security and debt recovery
+- Insolvency and restructuring
+- Intellectual property
+- Internal investigations, fraud and evidence
+- Legal research and opinions
+- Litigation
+- M&A, investments and transaction due diligence
+- Mediation, conciliation and settlement
+- Property and real-estate matters
+- Public law, government contracts and procurement
+- Regulatory compliance
+- Tax and cross-border regulatory matters
+
+### The coordinated legal workflows
+
+1. Contract review and negotiation
+2. M&A due diligence
+3. Litigation preparation
+4. Regulatory compliance review
+5. Data-breach response
+6. Internal investigation
+7. Commercial-dispute lifecycle
+8. Arbitration lifecycle
+9. Financing transaction
+10. Dispute Viability Assessment
+
+
 ## Install vCLO
 
 ### Codex
