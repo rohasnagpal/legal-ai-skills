@@ -1,6 +1,6 @@
 # Build an entire AI-powered law firm in 60 seconds.
 
-You get:
+Install this into your Codex or Claude and you get:
 
 - 1 Virtual Chief Legal Officer
 - 9 Specialist Virtual Lawyers
