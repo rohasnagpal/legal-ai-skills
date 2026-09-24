@@ -1,31 +1,28 @@
-# vCLO: Virtual Chief Legal Officer
+# Build an entire AI-powered law firm in 60 seconds.
 
-**AI legal team with 9 specialist virtual lawyers and 185 legal skills, built to handle real legal work 24×7.**
+You get:
 
-Imagine having a team of 9 specialist lawyers.
-Available 24 × 7 × 365.
-For free.
+1 Virtual Chief Legal Officer
+9 Specialist Virtual Lawyers
+3 Jurisdiction-specific Lawyers
+185 Specialist Legal Skills
+10 workflows
+8 official legal research sources and connectors
 
-That’s the idea behind vCLO: an open-source AI legal team built to handle real legal work.
+Virtual Chief Legal Officer (vCLO) coordinates specialist virtual lawyers, jurisdiction-specific counsel, legal skills and end-to-end workflows to handle each matter.
 
-Contracts. Corporate. Litigation. Compliance. Employment. IP. Investigations. Legal research. And more.
+9 Specialist Virtual Lawyers: Dedicated expertise across contracts, corporate, dispute resolution, litigation, compliance, employment, IP, investigations and legal research.
 
-Give vCLO a legal matter. It brings in the relevant specialists, works through the documents and issues, checks the work, and brings everything together into one coherent output.
+3 Jurisdiction-specific Lawyers: 🇮🇳 India, 🇺🇸 US and 🇬🇧 UK legal guidance with local laws, procedures, authorities and verification rules.
 
-Under the hood are 185 Legal AI Skills covering everyday legal work as well as complex matters such as M&A due diligence, contract negotiations, litigation viability, litigation preparation and internal investigations.
+185 Specialist Legal Skills: Focused capabilities for legal research, analysis, drafting, review, compliance, due diligence and matter management.
 
-vCLO helps lawyers, in-house teams, startups and businesses handle legal work using specialist virtual lawyers, coordinated workflows, official company registries, legal-research sources and authorised documents and services.
+10 Coordinated Legal Workflows: End-to-end processes that combine the right virtual lawyers, jurisdiction counsel and legal skills for complex matters.
 
-It can help with:
+8 official legal research sources and connectors connecting vCLO to US, UK and Indian legislation, case law, court records and regulatory materials.
 
-- contract review, drafting and redlining;
-- M&A legal due diligence;
-- court litigation, arbitration, mediation and legal research;
-- corporate, secretarial and employment work;
-- privacy and regulatory compliance;
-- IP review, investigations and evidence handling.
-
-Install it once and describe the legal task in plain language. For a simple task, vCLO uses the relevant legal skill. For a complex matter, it coordinates the appropriate specialists and produces one consolidated work product.
+How long does setup take?
+Less than 60 seconds.
 
 ## Install vCLO
 
