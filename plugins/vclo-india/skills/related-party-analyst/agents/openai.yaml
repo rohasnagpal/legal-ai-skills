@@ -1,4 +1,0 @@
-interface:
-  display_name: "Related Party Analyst"
-  short_description: "Assess India related-party status and approvals"
-  default_prompt: "Use $vclo-india:related-party-analyst to determine whether this is a related-party transaction and map the required approvals."

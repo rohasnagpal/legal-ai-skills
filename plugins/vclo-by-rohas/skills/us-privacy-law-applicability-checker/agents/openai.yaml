@@ -1,0 +1,8 @@
+interface:
+  display_name: "US Privacy-Law Applicability Checker"
+  short_description: "US: Privacy-Law Applicability Checker"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:us-privacy-law-applicability-checker to maps potentially applicable us federal, state and sectoral privacy and data-security laws to an identified entity, data set and processing activity."
+
+policy:
+  allow_implicit_invocation: true

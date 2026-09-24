@@ -4,9 +4,8 @@
 # `ruby scripts/validate.rb` before pushing, or let CI run it on every
 # push and pull request (see .github/workflows/validate.yml).
 #
-# The repository ships a neutral vCLO core plus independently installable
-# jurisdiction packs. Validators must preserve plugin namespaces so future
-# jurisdiction packs can add local skills without duplicating the core.
+# The repository ships one installable vCLO plugin. Jurisdiction modules live
+# inside that plugin so users get the complete legal team in one installation.
 require 'yaml'
 require 'json'
 require 'set'
@@ -18,8 +17,7 @@ warnings = []
 
 NAME_RE = /\A[a-z0-9]+(-[a-z0-9]+)*\z/
 CORE_PLUGIN = 'vclo-by-rohas'
-INDIA_PLUGIN = 'vclo-india'
-EXPECTED_PLUGINS = [CORE_PLUGIN, INDIA_PLUGIN].sort.freeze
+EXPECTED_PLUGINS = [CORE_PLUGIN].freeze
 
 # ---- 0. Expected plugin directories ----
 plugin_dirs = Dir.glob('plugins/*/').map { |d| d.chomp('/').split('/').last }.sort
@@ -117,21 +115,36 @@ skill_files.each do |f|
 end
 
 # India-only skills must fail closed when the governing jurisdiction is foreign
-# or unclear. README's (India) marker is the public scope declaration; the
+# or unclear. The internal jurisdiction map is the scope declaration; the
 # corresponding in-skill gate is the enforceable behavior.
-readme = File.read('README.md', encoding: 'UTF-8')
-india_skill_names = readme.scan(%r{skills/([^/]+)/SKILL\.md\)\*\*:.*?\*\*\(India\)\*\*}).flatten.to_set
+india_map_path = "plugins/#{CORE_PLUGIN}/jurisdictions/india/skill-map.yaml"
+india_module_readme_path = "plugins/#{CORE_PLUGIN}/jurisdictions/india/README.md"
+india_map = nil
+mapped_india_skills = []
+begin
+  india_map = YAML.safe_load(File.read(india_map_path, encoding: 'UTF-8'))
+  mapped_india_skills = india_map.fetch('skills').values.flatten
+  errors << "#{india_map_path}: jurisdiction must be india" unless india_map['jurisdiction'] == 'india'
+  errors << "#{india_map_path}: agent must be india-counsel" unless india_map['agent'] == 'india-counsel'
+  errors << "#{india_map_path}: skill_count does not match mapped skills" unless india_map['skill_count'] == mapped_india_skills.length
+  errors << "#{india_map_path}: duplicate skill entries" unless mapped_india_skills.uniq.length == mapped_india_skills.length
+rescue => e
+  errors << "#{india_map_path}: invalid jurisdiction skill map -- #{e.message}"
+end
+india_skill_names = mapped_india_skills.to_set
 india_guard_heading = '## Jurisdiction gate'
 india_guard_text = 'If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules.'
 india_skill_names.each do |name|
-  skill_path = "plugins/#{INDIA_PLUGIN}/skills/#{name}/SKILL.md"
+  skill_path = "plugins/#{CORE_PLUGIN}/skills/#{name}/SKILL.md"
   unless File.file?(skill_path)
-    errors << "README.md: India-specific skill '#{name}' does not exist"
+    errors << "#{india_map_path}: India-specific skill '#{name}' does not exist"
     next
   end
   content = File.read(skill_path, encoding: 'UTF-8')
   errors << "#{skill_path}: India-specific skill is missing '#{india_guard_heading}'" unless content.include?(india_guard_heading)
   errors << "#{skill_path}: India-specific skill is missing the non-India stop rule" unless content.include?(india_guard_text)
+  counsel_link = '[India Counsel instructions](../../agents/india-counsel.md)'
+  errors << "#{skill_path}: does not load India Counsel" unless content.include?(counsel_link)
 end
 
 hybrid_india_references = %w[
@@ -151,40 +164,67 @@ skill_files.each do |f|
   next unless explicitly_india_scoped
   next if india_skill_names.include?(name) || hybrid_india_references.include?(name)
 
-  errors << "#{f}: description is India-specific but README does not mark the skill (India)"
+  errors << "#{f}: description is India-specific but the India jurisdiction map does not include it"
 end
 
-# India Counsel owns every India-only skill through one machine-readable map.
-india_map_path = "plugins/#{INDIA_PLUGIN}/jurisdiction/skill-map.yaml"
-begin
-  india_map = YAML.safe_load(File.read(india_map_path, encoding: 'UTF-8'))
-  mapped_india_skills = india_map.fetch('skills').values.flatten
-  errors << "#{india_map_path}: jurisdiction must be india" unless india_map['jurisdiction'] == 'india'
-  errors << "#{india_map_path}: agent must be india-counsel" unless india_map['agent'] == 'india-counsel'
-  errors << "#{india_map_path}: skill_count does not match mapped skills" unless india_map['skill_count'] == mapped_india_skills.length
-  errors << "#{india_map_path}: duplicate skill entries" unless mapped_india_skills.uniq.length == mapped_india_skills.length
-
-  actual_india_skills = Dir.glob("plugins/#{INDIA_PLUGIN}/skills/*/SKILL.md").map { |path| File.basename(File.dirname(path)) } - ['india-counsel']
-  missing_from_map = actual_india_skills - mapped_india_skills
-  missing_from_plugin = mapped_india_skills - actual_india_skills
-  errors << "#{india_map_path}: India skills missing from map: #{missing_from_map.sort.join(', ')}" unless missing_from_map.empty?
-  errors << "#{india_map_path}: mapped skills missing from plugin: #{missing_from_plugin.sort.join(', ')}" unless missing_from_plugin.empty?
-
-  readme_only = india_skill_names.to_a - mapped_india_skills
-  map_only = mapped_india_skills - india_skill_names.to_a
-  errors << "#{india_map_path}: README India skills missing from map: #{readme_only.sort.join(', ')}" unless readme_only.empty?
-  errors << "#{india_map_path}: mapped India skills not marked (India) in README: #{map_only.sort.join(', ')}" unless map_only.empty?
-
-  counsel_link = '[India Counsel instructions](../../agents/india-counsel.md)'
+# India Counsel owns every India-only skill through one machine-readable map,
+# and the internal India catalogue must expose every mapped capability.
+if File.file?(india_module_readme_path)
+  india_module_readme = File.read(india_module_readme_path, encoding: 'UTF-8')
   mapped_india_skills.each do |name|
-    path = "plugins/#{INDIA_PLUGIN}/skills/#{name}/SKILL.md"
-    next unless File.file?(path)
-
-    content = File.read(path, encoding: 'UTF-8')
-    errors << "#{path}: does not load India Counsel" unless content.include?(counsel_link)
+    link = "../../skills/#{name}/SKILL.md"
+    errors << "#{india_module_readme_path}: missing mapped skill link #{link}" unless india_module_readme.include?("(#{link})")
   end
-rescue => e
-  errors << "#{india_map_path}: invalid jurisdiction skill map -- #{e.message}"
+end
+
+# Every jurisdiction module must have one counsel agent, one callable gateway,
+# a source guide, operating rules, integrations and a valid ownership map.
+Dir.glob("plugins/#{CORE_PLUGIN}/jurisdictions/*/skill-map.yaml").sort.each do |map_path|
+  jurisdiction = File.basename(File.dirname(map_path))
+  begin
+    jurisdiction_map = YAML.safe_load(File.read(map_path, encoding: 'UTF-8'))
+    mapped_skills = jurisdiction_map.fetch('skills').values.flatten
+    expected_agent = "#{jurisdiction}-counsel"
+    errors << "#{map_path}: jurisdiction must be #{jurisdiction}" unless jurisdiction_map['jurisdiction'] == jurisdiction
+    errors << "#{map_path}: agent must be #{expected_agent}" unless jurisdiction_map['agent'] == expected_agent
+    errors << "#{map_path}: skill_count does not match mapped skills" unless jurisdiction_map['skill_count'] == mapped_skills.length
+    errors << "#{map_path}: duplicate skill entries" unless mapped_skills.uniq.length == mapped_skills.length
+    errors << "#{map_path}: missing counsel agent" unless File.file?("plugins/#{CORE_PLUGIN}/agents/#{expected_agent}.md")
+    counsel_skill_path = "plugins/#{CORE_PLUGIN}/skills/#{expected_agent}/SKILL.md"
+    errors << "#{map_path}: missing counsel skill" unless File.file?(counsel_skill_path)
+    %w[README.md operating-rules.md authoritative-sources.md integrations.md].each do |required|
+      path = File.join(File.dirname(map_path), required)
+      errors << "#{map_path}: missing jurisdiction resource #{required}" unless File.file?(path)
+    end
+
+    local_rule_names = { 'india' => 'Indian', 'us' => 'US', 'uk' => 'UK' }
+    local_rule_name = local_rule_names[jurisdiction]
+    if local_rule_name
+      stop_rule = "If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply #{local_rule_name} rules."
+      counsel_link = "[#{jurisdiction == 'us' ? 'US' : jurisdiction.upcase == 'UK' ? 'UK' : 'India'} Counsel instructions](../../agents/#{expected_agent}.md)"
+      if File.file?(counsel_skill_path)
+        counsel_content = File.read(counsel_skill_path, encoding: 'UTF-8')
+        errors << "#{counsel_skill_path}: missing jurisdiction gate" unless counsel_content.include?('## Jurisdiction gate')
+        errors << "#{counsel_skill_path}: missing non-local stop rule" unless counsel_content.include?(stop_rule)
+      end
+    end
+
+    mapped_skills.each do |name|
+      path = "plugins/#{CORE_PLUGIN}/skills/#{name}/SKILL.md"
+      unless File.file?(path)
+        errors << "#{map_path}: mapped skill '#{name}' does not exist"
+        next
+      end
+      next unless local_rule_name
+
+      content = File.read(path, encoding: 'UTF-8')
+      errors << "#{path}: missing jurisdiction gate" unless content.include?('## Jurisdiction gate')
+      errors << "#{path}: missing non-local stop rule" unless content.include?(stop_rule)
+      errors << "#{path}: does not load #{expected_agent}" unless content.include?(counsel_link)
+    end
+  rescue => e
+    errors << "#{map_path}: invalid jurisdiction skill map -- #{e.message}"
+  end
 end
 
 # Flag near-identical descriptions for manual review -- not a hard failure,
@@ -383,9 +423,6 @@ Dir.glob('plugins/*/skills/*/agents/openai.yaml').sort.each do |f|
   prompt = iface['default_prompt'].to_s
   expected_invocation = /\$(?:[a-z0-9-]+:)?#{Regexp.escape(skill_name)}\b/
   errors << "#{f}: default_prompt must invoke $#{skill_name}" unless prompt.match?(expected_invocation)
-  if plugin_name != CORE_PLUGIN
-    errors << "#{f}: jurisdiction-pack default_prompt must invoke $#{plugin_name}:#{skill_name}" unless prompt.include?("$#{plugin_name}:#{skill_name}")
-  end
 rescue => e
   errors << "#{f}: YAML parse error -- #{e.message}"
 end
@@ -576,8 +613,6 @@ vclo_required_files = %w[
   plugins/vclo-by-rohas/integrations/email-and-calendar.md
   plugins/vclo-by-rohas/integrations/company-registries.md
   plugins/vclo-by-rohas/integrations/legal-research.md
-  plugins/vclo-by-rohas/integrations/legal-research-sources/united-states.md
-  plugins/vclo-by-rohas/integrations/legal-research-sources/united-kingdom.md
   plugins/vclo-by-rohas/integrations/github.md
   plugins/vclo-by-rohas/.mcp.json
   plugins/vclo-by-rohas/mcp/launch-company-registry
@@ -593,15 +628,33 @@ vclo_required_files = %w[
   plugins/vclo-by-rohas/tests/vclo/litigation-preparation.md
   plugins/vclo-by-rohas/tests/vclo/graceful-degradation.md
   plugins/vclo-by-rohas/tests/vclo/welcome.md
-  plugins/vclo-india/.codex-plugin/plugin.json
-  plugins/vclo-india/agents/india-counsel.md
-  plugins/vclo-india/skills/india-counsel/SKILL.md
-  plugins/vclo-india/skills/india-counsel/agents/openai.yaml
-  plugins/vclo-india/jurisdiction/operating-rules.md
-  plugins/vclo-india/jurisdiction/authoritative-sources.md
-  plugins/vclo-india/jurisdiction/integrations.md
-  plugins/vclo-india/jurisdiction/skill-map.yaml
-  plugins/vclo-india/tests/jurisdiction-routing-behavioral-evals.yaml
+  plugins/vclo-by-rohas/agents/india-counsel.md
+  plugins/vclo-by-rohas/skills/india-counsel/SKILL.md
+  plugins/vclo-by-rohas/skills/india-counsel/agents/openai.yaml
+  plugins/vclo-by-rohas/jurisdictions/india/README.md
+  plugins/vclo-by-rohas/jurisdictions/india/operating-rules.md
+  plugins/vclo-by-rohas/jurisdictions/india/authoritative-sources.md
+  plugins/vclo-by-rohas/jurisdictions/india/integrations.md
+  plugins/vclo-by-rohas/jurisdictions/india/skill-map.yaml
+  plugins/vclo-by-rohas/tests/jurisdiction-routing-behavioral-evals.yaml
+  plugins/vclo-by-rohas/agents/us-counsel.md
+  plugins/vclo-by-rohas/skills/us-counsel/SKILL.md
+  plugins/vclo-by-rohas/skills/us-counsel/agents/openai.yaml
+  plugins/vclo-by-rohas/jurisdictions/us/README.md
+  plugins/vclo-by-rohas/jurisdictions/us/operating-rules.md
+  plugins/vclo-by-rohas/jurisdictions/us/authoritative-sources.md
+  plugins/vclo-by-rohas/jurisdictions/us/integrations.md
+  plugins/vclo-by-rohas/jurisdictions/us/skill-map.yaml
+  plugins/vclo-by-rohas/tests/us-jurisdiction-routing-behavioral-evals.yaml
+  plugins/vclo-by-rohas/agents/uk-counsel.md
+  plugins/vclo-by-rohas/skills/uk-counsel/SKILL.md
+  plugins/vclo-by-rohas/skills/uk-counsel/agents/openai.yaml
+  plugins/vclo-by-rohas/jurisdictions/uk/README.md
+  plugins/vclo-by-rohas/jurisdictions/uk/operating-rules.md
+  plugins/vclo-by-rohas/jurisdictions/uk/authoritative-sources.md
+  plugins/vclo-by-rohas/jurisdictions/uk/integrations.md
+  plugins/vclo-by-rohas/jurisdictions/uk/skill-map.yaml
+  plugins/vclo-by-rohas/tests/uk-jurisdiction-routing-behavioral-evals.yaml
 ]
 
 vclo_required_files.each do |f|
@@ -627,14 +680,14 @@ if File.file?(legal_research_policy_path)
 end
 
 legal_source_requirements = {
-  'plugins/vclo-india/jurisdiction/authoritative-sources.md' => %w[
+  'plugins/vclo-by-rohas/jurisdictions/india/authoritative-sources.md' => %w[
     https://indiacode.gov.in/
     https://egazette.gov.in/
     https://www.sci.gov.in/
     https://scr.sci.gov.in/scrsearch/
     https://indiankanoon.org/
   ],
-  'plugins/vclo-by-rohas/integrations/legal-research-sources/united-states.md' => %w[
+  'plugins/vclo-by-rohas/jurisdictions/us/authoritative-sources.md' => %w[
     https://uscode.house.gov/
     https://www.congress.gov/
     https://www.govinfo.gov/
@@ -642,7 +695,7 @@ legal_source_requirements = {
     https://www.supremecourt.gov/opinions/opinions.aspx
     https://www.courtlistener.com/
   ],
-  'plugins/vclo-by-rohas/integrations/legal-research-sources/united-kingdom.md' => %w[
+  'plugins/vclo-by-rohas/jurisdictions/uk/authoritative-sources.md' => %w[
     https://www.legislation.gov.uk/
     https://caselaw.nationalarchives.gov.uk/
     https://www.supremecourt.uk/cases
@@ -658,7 +711,7 @@ legal_source_requirements.each do |path, required_urls|
   end
 end
 
-vclo_markdown_files = Dir.glob('plugins/*/{agents,workflows,integrations,jurisdiction,assets/vclo,tests/vclo}/**/*.md').sort
+vclo_markdown_files = Dir.glob('plugins/*/{agents,workflows,integrations,jurisdictions,assets/vclo,tests/vclo}/**/*.md').sort
 vclo_markdown_files.each do |f|
   content = File.read(f, encoding: 'UTF-8')
   errors << "#{f}: empty Markdown document" if content.strip.empty?
@@ -693,20 +746,57 @@ Dir.glob('plugins/*/agents/*.md').sort.each do |f|
 end
 
 workflow_headings = ['## Trigger', '## Required inputs', '## Verification', '## Deliverable', '## Fallback behaviour']
-Dir.glob('plugins/vclo-by-rohas/workflows/*.md').sort.each do |f|
+workflow_files = Dir.glob('plugins/vclo-by-rohas/workflows/*.md').sort
+errors << "vCLO: expected 9 coordinated workflows, found #{workflow_files.length}" unless workflow_files.length == 9
+workflow_files.each do |f|
   content = File.read(f, encoding: 'UTF-8')
   workflow_headings.each do |heading|
     errors << "#{f}: missing required workflow section beginning '#{heading}'" unless content.include?(heading)
   end
 end
 
-# ---- 7. README links to plugins/ resolve, and every skill is linked ----
+workflow_test_names = {
+  'contract-review-and-negotiation' => 'contract-review'
+}
+workflow_files.each do |workflow|
+  workflow_name = File.basename(workflow, '.md')
+  test_name = workflow_test_names.fetch(workflow_name, workflow_name)
+  test_path = "plugins/vclo-by-rohas/tests/vclo/#{test_name}.md"
+  unless File.file?(test_path)
+    errors << "#{workflow}: missing end-to-end scenario test #{test_path}"
+    next
+  end
+  test_content = File.read(test_path, encoding: 'UTF-8')
+  relative_workflow_link = "../../workflows/#{workflow_name}.md"
+  errors << "#{test_path}: does not link to its workflow" unless test_content.include?(relative_workflow_link)
+end
+
+# Every jurisdiction-owned local skill needs at least one positive behavioural
+# routing case. This prevents high-risk local skills from shipping untested.
+covered_behavioral_skills = Dir.glob('plugins/vclo-by-rohas/tests/*-behavioral-evals.yaml').flat_map do |path|
+  data = YAML.safe_load(File.read(path, encoding: 'UTF-8'))
+  Array(data['cases']).map { |test_case| test_case['expected_skill']&.split(':')&.last }.compact
+end.to_set
+Dir.glob("plugins/#{CORE_PLUGIN}/jurisdictions/*/skill-map.yaml").sort.each do |map_path|
+  jurisdiction_map = YAML.safe_load(File.read(map_path, encoding: 'UTF-8'))
+  jurisdiction_map.fetch('skills').values.flatten.each do |skill|
+    errors << "#{map_path}: mapped skill '#{skill}' has no positive behavioural routing case" unless covered_behavioral_skills.include?(skill)
+  end
+end
+
+# ---- 7. Public and jurisdiction catalogue links resolve, and every skill is linked ----
 readme = File.read('README.md', encoding: 'UTF-8')
 readme.scan(%r{\]\((plugins/[^)]+)\)}).flatten.each do |link|
   errors << "README.md: broken link to #{link}" unless File.exist?(link)
 end
+catalogue_text = readme
+Dir.glob("plugins/#{CORE_PLUGIN}/jurisdictions/*/README.md").sort.each do |catalogue|
+  catalogue_text += File.read(catalogue, encoding: 'UTF-8')
+end
 skill_files.each do |f|
-  warnings << "README.md: #{f} is not linked anywhere" unless readme.include?("(#{f})")
+  relative_from_india_catalogue = "../../skills/#{File.basename(File.dirname(f))}/SKILL.md"
+  linked = readme.include?("(#{f})") || catalogue_text.include?("(#{relative_from_india_catalogue})")
+  warnings << "catalogues: #{f} is not linked anywhere" unless linked
 end
 
 # ---- Report ----

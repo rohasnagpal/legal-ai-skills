@@ -1,0 +1,8 @@
+interface:
+  display_name: "UK Counsel"
+  short_description: "UK jurisdiction and law verification"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:uk-counsel to apply UK jurisdiction, procedure and verification rules to this matter."
+
+policy:
+  allow_implicit_invocation: true

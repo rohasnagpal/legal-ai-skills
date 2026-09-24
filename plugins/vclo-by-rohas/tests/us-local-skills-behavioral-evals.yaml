@@ -1,0 +1,46 @@
+version: 1
+plugin: vclo-by-rohas
+risk_tier: high
+cases:
+  - id: us-local-us-federal-state-issue-mapper
+    prompt: "A contract dispute has federal antitrust and Texas contract claims. Separate the governing law and forum issues."
+    expected_skill: us-federal-state-issue-mapper
+    expected_behavior: "Route to us-federal-state-issue-mapper, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: us-local-us-state-law-research-planner
+    prompt: "Build a current official-source research plan for a New York fiduciary-duty issue in state court."
+    expected_skill: us-state-law-research-planner
+    expected_behavior: "Route to us-state-law-research-planner, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: us-local-us-federal-civil-procedure-checker
+    prompt: "Check the response deadline and filing requirements in a specified US federal district case."
+    expected_skill: us-federal-civil-procedure-checker
+    expected_behavior: "Route to us-federal-civil-procedure-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: us-local-us-sec-reporting-checker
+    prompt: "Determine the SEC reporting and form questions raised by this issuer event."
+    expected_skill: us-sec-reporting-checker
+    expected_behavior: "Route to us-sec-reporting-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: us-local-us-employment-law-applicability-checker
+    prompt: "Map the federal, California and San Francisco employment rules potentially covering this remote worker."
+    expected_skill: us-employment-law-applicability-checker
+    expected_behavior: "Route to us-employment-law-applicability-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: us-local-us-privacy-law-applicability-checker
+    prompt: "Map potentially applicable US federal and State privacy laws for this multistate data activity."
+    expected_skill: us-privacy-law-applicability-checker
+    expected_behavior: "Route to us-privacy-law-applicability-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: us-local-foreign-negative
+    prompt: "Apply US State law to a dispute governed only by French law."
+    expected_skill:
+    expected_behavior: "Reject the local skill route and return the matter to the applicable jurisdiction counsel or neutral intake."
+    must_include: ["foreign jurisdiction", "scope mismatch"]
+    must_not_include: ["local law applied", "assumed jurisdiction"]

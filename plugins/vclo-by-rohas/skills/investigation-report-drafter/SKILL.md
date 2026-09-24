@@ -1,6 +1,6 @@
 ---
 name: investigation-report-drafter
-description: Drafts neutral, evidence-led investigation reports — internal, regulatory, workplace, fraud, compliance, or other — that separate allegation, evidence, credibility, finding, limitations, and recommendation, written for a reviewer who was not present. Use after interviews and document review, for "write up this misconduct investigation", "draft the fraud investigation report", "prepare the findings report from these interviews", or "turn this workplace grievance investigation into a report". Includes a workplace-investigation mode for misconduct, grievance, discrimination, retaliation, bullying, or policy investigations. Does not perform statutory POSH compliance analysis (Internal Committee constitution, POSH procedure, annual reporting) — use vclo-india:posh-compliance-advisor for that; this skill only writes up the findings once an investigation, POSH or otherwise, has gathered its evidence. Fires for any investigation report once evidence-gathering is complete, in any sector or jurisdiction.
+description: Drafts neutral, evidence-led investigation reports — internal, regulatory, workplace, fraud, compliance, or other — that separate allegation, evidence, credibility, finding, limitations, and recommendation, written for a reviewer who was not present. Use after interviews and document review, for "write up this misconduct investigation", "draft the fraud investigation report", "prepare the findings report from these interviews", or "turn this workplace grievance investigation into a report". Includes a workplace-investigation mode for misconduct, grievance, discrimination, retaliation, bullying, or policy investigations. Does not perform statutory POSH compliance analysis (Internal Committee constitution, POSH procedure, annual reporting) — use vclo-by-rohas:posh-compliance-advisor for that; this skill only writes up the findings once an investigation, POSH or otherwise, has gathered its evidence. Fires for any investigation report once evidence-gathering is complete, in any sector or jurisdiction.
 ---
 
 # Investigation Report Drafter
@@ -9,7 +9,7 @@ I am using the **Investigation Report Drafter** skill from Rohas Legal AI: neutr
 
 ## Purpose
 
-Write for a reviewer who was not present. Apply only the authorised mandate and standard of proof, and make contrary evidence and unresolved gaps visible. Do not turn a general investigation into a statutory inquiry or disciplinary decision without the required authority and procedure — and, for workplace matters specifically, do not turn a general workplace investigation into a statutory POSH inquiry without the required authority and procedure (use `vclo-india:posh-compliance-advisor` for the POSH-specific compliance framework itself).
+Write for a reviewer who was not present. Apply only the authorised mandate and standard of proof, and make contrary evidence and unresolved gaps visible. Do not turn a general investigation into a statutory inquiry or disciplinary decision without the required authority and procedure — and, for workplace matters specifically, do not turn a general workplace investigation into a statutory POSH inquiry without the required authority and procedure (use `vclo-by-rohas:posh-compliance-advisor` for the POSH-specific compliance framework itself).
 
 ## Required inputs
 
@@ -37,7 +37,7 @@ List missing evidence, access limits, and unresolved procedural objections.
 
 Where the matter is a workplace misconduct, grievance, discrimination, retaliation, bullying, or policy investigation, apply the method above with this in view:
 
-- Confirm the mandate explicitly excludes or includes statutory POSH proceedings — if it is a POSH matter, hand off the compliance framework (Internal Committee constitution, procedure, timelines) to `vclo-india:posh-compliance-advisor`; this skill still writes up the findings once that process has gathered its evidence.
+- Confirm the mandate explicitly excludes or includes statutory POSH proceedings — if it is a POSH matter, hand off the compliance framework (Internal Committee constitution, procedure, timelines) to `vclo-by-rohas:posh-compliance-advisor`; this skill still writes up the findings once that process has gathered its evidence.
 - Escalate imminent safety, safeguarding, criminal-reporting, regulator, and conflict issues through lawful channels as they are identified — do not hold them for the final report.
 - Take particular care that evidence-reliability assessment (step 6) does not lean on stereotype or demeanour-only credibility judgments, given the heightened risk of this in misconduct and harassment matters.
 - Require legal review before finalising for statutory inquiries, privilege, compelled disclosure, or high-consequence findings.

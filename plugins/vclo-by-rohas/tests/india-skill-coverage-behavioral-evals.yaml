@@ -1,0 +1,142 @@
+version: 1
+plugin: vclo-by-rohas
+risk_tier: high
+cases:
+  - id: india-coverage-encumbrance-analyst
+    prompt: "For this confirmed Indian matter, use the encumbrance analyst capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: encumbrance-analyst
+    expected_behavior: "Route to encumbrance-analyst, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-labour-compliance-checker
+    prompt: "For this confirmed Indian matter, use the labour compliance checker capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: labour-compliance-checker
+    expected_behavior: "Route to labour-compliance-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-listing-obligations-checker
+    prompt: "For this confirmed Indian matter, use the listing obligations checker capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: listing-obligations-checker
+    expected_behavior: "Route to listing-obligations-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-matrimonial-petition-drafter
+    prompt: "For this confirmed Indian matter, use the matrimonial petition drafter capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: matrimonial-petition-drafter
+    expected_behavior: "Route to matrimonial-petition-drafter, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-pil-drafter
+    prompt: "For this confirmed Indian matter, use the pil drafter capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: pil-drafter
+    expected_behavior: "Route to pil-drafter, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-posh-compliance-advisor
+    prompt: "For this confirmed Indian matter, use the posh compliance advisor capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: posh-compliance-advisor
+    expected_behavior: "Route to posh-compliance-advisor, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-pre-institution-mediation-advisor
+    prompt: "For this confirmed Indian matter, use the pre institution mediation advisor capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: pre-institution-mediation-advisor
+    expected_behavior: "Route to pre-institution-mediation-advisor, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-related-party-analyst
+    prompt: "For this confirmed Indian matter, use the related party analyst capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: related-party-analyst
+    expected_behavior: "Route to related-party-analyst, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-rera-compliance-checker
+    prompt: "For this confirmed Indian matter, use the rera compliance checker capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: rera-compliance-checker
+    expected_behavior: "Route to rera-compliance-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-rti-appeal-drafter
+    prompt: "For this confirmed Indian matter, use the rti appeal drafter capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: rti-appeal-drafter
+    expected_behavior: "Route to rti-appeal-drafter, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-rti-application-drafter
+    prompt: "For this confirmed Indian matter, use the rti application drafter capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: rti-application-drafter
+    expected_behavior: "Route to rti-application-drafter, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-sarfaesi-advisor
+    prompt: "For this confirmed Indian matter, use the sarfaesi advisor capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: sarfaesi-advisor
+    expected_behavior: "Route to sarfaesi-advisor, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-secretarial-compliance-checker
+    prompt: "For this confirmed Indian matter, use the secretarial compliance checker capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: secretarial-compliance-checker
+    expected_behavior: "Route to secretarial-compliance-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-securities-compliance-checker
+    prompt: "For this confirmed Indian matter, use the securities compliance checker capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: securities-compliance-checker
+    expected_behavior: "Route to securities-compliance-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-stamp-duty-analyst
+    prompt: "For this confirmed Indian matter, use the stamp duty analyst capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: stamp-duty-analyst
+    expected_behavior: "Route to stamp-duty-analyst, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-startup-compliance-checker
+    prompt: "For this confirmed Indian matter, use the startup compliance checker capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: startup-compliance-checker
+    expected_behavior: "Route to startup-compliance-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-succession-advisor
+    prompt: "For this confirmed Indian matter, use the succession advisor capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: succession-advisor
+    expected_behavior: "Route to succession-advisor, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-title-diligence-analyst
+    prompt: "For this confirmed Indian matter, use the title diligence analyst capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: title-diligence-analyst
+    expected_behavior: "Route to title-diligence-analyst, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-trademark-opposition-drafter
+    prompt: "For this confirmed Indian matter, use the trademark opposition drafter capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: trademark-opposition-drafter
+    expected_behavior: "Route to trademark-opposition-drafter, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-arbitral-award-enforcement-advisor
+    prompt: "For this confirmed Indian matter, use the arbitral award enforcement advisor capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: arbitral-award-enforcement-advisor
+    expected_behavior: "Route to arbitral-award-enforcement-advisor, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-commercial-suit-filing-checker
+    prompt: "For this confirmed Indian matter, use the commercial suit filing checker capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: commercial-suit-filing-checker
+    expected_behavior: "Route to commercial-suit-filing-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-india-legal-notice-response-strategist
+    prompt: "For this confirmed Indian matter, use the india legal notice response strategist capability on the supplied facts and identify missing authority or procedure."
+    expected_skill: india-legal-notice-response-strategist
+    expected_behavior: "Route to india-legal-notice-response-strategist, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: india-coverage-foreign-negative
+    prompt: "Apply an India-specific filing skill to a California-only proceeding."
+    expected_skill:
+    expected_behavior: "Reject the local skill route and return the matter to the applicable jurisdiction counsel or neutral intake."
+    must_include: ["foreign jurisdiction", "scope mismatch"]
+    must_not_include: ["local law applied", "assumed jurisdiction"]

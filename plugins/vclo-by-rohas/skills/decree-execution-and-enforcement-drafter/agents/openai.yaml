@@ -1,0 +1,4 @@
+interface:
+  display_name: "Decree Execution and Enforcement Drafter"
+  short_description: "Draft Indian decree execution applications"
+  default_prompt: "Use $vclo-by-rohas:decree-execution-and-enforcement-drafter to select an enforcement mode and draft execution papers for this decree."

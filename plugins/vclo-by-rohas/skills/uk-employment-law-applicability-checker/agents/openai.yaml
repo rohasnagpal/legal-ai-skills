@@ -1,0 +1,8 @@
+interface:
+  display_name: "UK Employment-Law Applicability Checker"
+  short_description: "UK: Employment-Law Applicability Checker"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:uk-employment-law-applicability-checker to determines which uk employment rules may apply to a worker, employer and workplace, distinguishing england and wales, scotland and northern ireland where law or procedure differs."
+
+policy:
+  allow_implicit_invocation: true

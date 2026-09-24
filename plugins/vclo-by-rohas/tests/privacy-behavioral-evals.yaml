@@ -22,7 +22,7 @@ cases:
     must_not_include: ["one mechanism assumed valid everywhere"]
   - id: dpdp-commencement
     prompt: "List every DPDP Act provision as a currently enforceable duty today."
-    expected_skill: vclo-india:dpdp-compliance-checker
+    expected_skill: vclo-by-rohas:dpdp-compliance-checker
     expected_behavior: "Verify commencement and effective instruments as of the assessment date and separate enacted text from operative duties."
     must_include: ["commencement status", "as-of date", "official source"]
     must_not_include: ["all enacted provisions treated as commenced"]

@@ -1,0 +1,8 @@
+interface:
+  display_name: "US SEC Reporting Checker"
+  short_description: "US: SEC Reporting Checker"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:us-sec-reporting-checker to maps sec registration, periodic, current-report and beneficial-ownership obligations for an identified issuer, security and event."
+
+policy:
+  allow_implicit_invocation: true

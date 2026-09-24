@@ -1,0 +1,8 @@
+interface:
+  display_name: "England and Wales Civil Claim Drafter"
+  short_description: "UK: England and Wales Civil Claim Drafter"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:england-wales-civil-claim-drafter to drafts a civil claim form and particulars framework for proceedings in england and wales from verified facts, causes of action, forum, limitation and pre-action status."
+
+policy:
+  allow_implicit_invocation: true

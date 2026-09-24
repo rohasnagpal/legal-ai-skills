@@ -1,4 +1,0 @@
-interface:
-  display_name: "India RTI Appeal Drafter"
-  short_description: "Draft effective first and second RTI appeals"
-  default_prompt: "Use $vclo-india:rti-appeal-drafter to assess this RTI record and draft the appropriate first or second appeal under current Indian law."

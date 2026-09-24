@@ -1,0 +1,8 @@
+interface:
+  display_name: "Arbitral Award Enforcement Advisor"
+  short_description: "India: Arbitral Award Enforcement Advisor"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:arbitral-award-enforcement-advisor to advises on recognition, challenge resistance and enforcement of an arbitral award in india, distinguishing domestic, india-seated international commercial and foreign awards."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,8 @@
+interface:
+  display_name: "US Employment-Law Applicability Checker"
+  short_description: "US: Employment-Law Applicability Checker"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:us-employment-law-applicability-checker to determines which us federal, state and local employment regimes may apply to a worker, employer and workplace."
+
+policy:
+  allow_implicit_invocation: true

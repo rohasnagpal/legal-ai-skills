@@ -1,0 +1,8 @@
+interface:
+  display_name: "US State-Law Research Planner"
+  short_description: "US: State-Law Research Planner"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:us-state-law-research-planner to builds an official-source-first research plan for a specified us state, issue, court and material date."
+
+policy:
+  allow_implicit_invocation: true

@@ -18,9 +18,9 @@ For past events, determine the version in force at the relevant time. Record lat
 
 Load only the guide relevant to the matter:
 
-- **India** — invoke `vclo-india:india-counsel` and use the India pack's maintained authoritative-source guide
-- [United States](legal-research-sources/united-states.md)
-- [United Kingdom](legal-research-sources/united-kingdom.md)
+- **[India](../jurisdictions/india/authoritative-sources.md)** — invoke `vclo-by-rohas:india-counsel`
+- **[United States](../jurisdictions/us/authoritative-sources.md)** — invoke `vclo-by-rohas:us-counsel`
+- **[United Kingdom](../jurisdictions/uk/authoritative-sources.md)** — invoke `vclo-by-rohas:uk-counsel`
 
 These are maintained starting points, not guarantees of completeness or availability. For another jurisdiction, identify the official legislature, gazette, courts and regulators; disclose that vCLO has no maintained registry for it; and limit conclusions if primary law cannot be verified.
 

@@ -1,0 +1,8 @@
+interface:
+  display_name: "US Federal Civil Procedure Checker"
+  short_description: "US: Federal Civil Procedure Checker"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:us-federal-civil-procedure-checker to checks procedural requirements for a specified us federal civil case, including jurisdiction, removal, service, pleadings, motions, discovery and deadlines."
+
+policy:
+  allow_implicit_invocation: true

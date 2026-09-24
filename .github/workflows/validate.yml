@@ -35,14 +35,21 @@ jobs:
       - name: Build plugin zips
         run: ./scripts/build-plugin-zips.sh
 
-      - name: Verify India jurisdiction pack contents
+      - name: Verify jurisdiction modules are bundled in the single vCLO plugin
         run: |
-          india_zip=$(find dist/openai-submission -name 'vclo-india-*.zip' -print -quit)
-          test -n "$india_zip"
-          unzip -Z1 "$india_zip" | grep -qx 'agents/india-counsel.md'
-          unzip -Z1 "$india_zip" | grep -qx 'jurisdiction/operating-rules.md'
-          unzip -Z1 "$india_zip" | grep -qx 'jurisdiction/authoritative-sources.md'
-          unzip -Z1 "$india_zip" | grep -qx 'jurisdiction/skill-map.yaml'
+          vclo_zip=$(find dist/openai-submission -name 'vclo-by-rohas-*.zip' -print -quit)
+          test -n "$vclo_zip"
+          unzip -Z1 "$vclo_zip" | grep -qx 'agents/india-counsel.md'
+          unzip -Z1 "$vclo_zip" | grep -qx 'agents/us-counsel.md'
+          unzip -Z1 "$vclo_zip" | grep -qx 'agents/uk-counsel.md'
+          unzip -Z1 "$vclo_zip" | grep -qx 'jurisdictions/india/README.md'
+          unzip -Z1 "$vclo_zip" | grep -qx 'jurisdictions/india/operating-rules.md'
+          unzip -Z1 "$vclo_zip" | grep -qx 'jurisdictions/india/authoritative-sources.md'
+          unzip -Z1 "$vclo_zip" | grep -qx 'jurisdictions/india/skill-map.yaml'
+          unzip -Z1 "$vclo_zip" | grep -qx 'jurisdictions/us/authoritative-sources.md'
+          unzip -Z1 "$vclo_zip" | grep -qx 'jurisdictions/us/skill-map.yaml'
+          unzip -Z1 "$vclo_zip" | grep -qx 'jurisdictions/uk/authoritative-sources.md'
+          unzip -Z1 "$vclo_zip" | grep -qx 'jurisdictions/uk/skill-map.yaml'
 
       - name: Verify zip count matches skill count
         run: |

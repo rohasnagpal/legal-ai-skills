@@ -1,4 +1,0 @@
-interface:
-  display_name: "Securities Compliance Checker"
-  short_description: "Map India securities duties and filings"
-  default_prompt: "Use $vclo-india:securities-compliance-checker to identify the current SEBI, SCRA, Companies Act, exchange, approval, disclosure, and filing duties for this transaction."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pre-Institution Mediation Advisor"
+  short_description: "Assess India pre-suit mediation requirements"
+  default_prompt: "Use $vclo-by-rohas:pre-institution-mediation-advisor to assess whether pre-institution mediation is required before this Indian commercial suit."

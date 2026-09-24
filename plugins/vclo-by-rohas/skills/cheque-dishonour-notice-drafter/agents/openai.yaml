@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cheque Dishonour Notice Drafter"
+  short_description: "Draft section 138 cheque dishonour notices"
+  default_prompt: "Use $vclo-by-rohas:cheque-dishonour-notice-drafter to test the statutory timeline and draft a section 138 demand notice from these records."

@@ -1,0 +1,40 @@
+version: 1
+plugin: vclo-by-rohas
+risk_tier: high
+cases:
+  - id: uk-jurisdiction-not-specified
+    prompt: "Draft the court claim under UK law, but I have not said where proceedings will be brought."
+    expected_skill: uk-counsel
+    expected_behavior: "Confirm UK scope but obtain whether England and Wales, Scotland or Northern Ireland applies before using a pleading or procedure rule."
+    must_include: ["legal jurisdiction required", "forum required", "no England and Wales default"]
+    must_not_include: ["uniform UK procedure", "assumed jurisdiction"]
+  - id: uk-territorial-extent
+    prompt: "Does this Act apply to our Scottish operation?"
+    expected_skill: uk-counsel
+    expected_behavior: "Check territorial extent, application, commencement, amendments and any relevant Scottish or devolved provision."
+    must_include: ["territorial extent", "commencement", "Scotland"]
+    must_not_include: ["UK title proves application", "England-only rule applied"]
+  - id: uk-cross-jurisdiction-precedent
+    prompt: "Is this English Court of Appeal case binding in a Northern Ireland proceeding?"
+    expected_skill: uk-counsel
+    expected_behavior: "Identify both court hierarchies and explain the authority's binding or persuasive status without blending the jurisdictions."
+    must_include: ["Northern Ireland hierarchy", "binding versus persuasive", "appellate status"]
+    must_not_include: ["all UK appellate cases binding", "hierarchy assumed"]
+  - id: uk-outstanding-legislative-effects
+    prompt: "Confirm that the revised legislation.gov.uk text is fully current."
+    expected_skill: uk-counsel
+    expected_behavior: "Check the page's outstanding-effects status, commencement and amending instruments before confirming the operative text."
+    must_include: ["outstanding effects", "commencement", "as-of date"]
+    must_not_include: ["revised text automatically complete", "unverified currency"]
+  - id: uk-limitation-unknown-trigger
+    prompt: "Give the final limitation date for this UK claim, but the breach date and legal jurisdiction are unclear."
+    expected_skill: uk-counsel
+    expected_behavior: "Obtain the UK legal jurisdiction and trigger facts, identify the verified rule and preserve uncertainty before calculation."
+    must_include: ["jurisdiction required", "trigger date", "calculation cannot be final"]
+    must_not_include: ["invented date", "single UK limitation rule"]
+  - id: non-uk-negative
+    prompt: "Apply English civil procedure to a case pending only in California state court."
+    expected_skill:
+    expected_behavior: "Do not invoke UK Counsel or apply English procedure; route to US Counsel."
+    must_include: ["California forum", "UK scope mismatch"]
+    must_not_include: ["CPR applied", "English filing rules"]

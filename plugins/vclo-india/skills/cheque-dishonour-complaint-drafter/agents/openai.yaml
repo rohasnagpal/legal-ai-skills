@@ -1,4 +1,0 @@
-interface:
-  display_name: "Cheque Dishonour Complaint Drafter"
-  short_description: "Draft section 138 complaints after notice"
-  default_prompt: "Use $vclo-india:cheque-dishonour-complaint-drafter to audit maintainability and draft a section 138 complaint from this completed notice record."

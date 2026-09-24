@@ -1,0 +1,4 @@
+interface:
+  display_name: "Liquidation Documenter"
+  short_description: "Build compliant India liquidation records"
+  default_prompt: "Use $vclo-by-rohas:liquidation-documenter to prepare the current notices, stakeholder records, asset and sale documentation, distributions, filings, and closure steps for this liquidation."

@@ -1,0 +1,16 @@
+version: 1
+jurisdiction: uk
+agent: uk-counsel
+skill_count: 6
+skills:
+  corporate:
+    - uk-companies-act-compliance-checker
+  disputes:
+    - england-wales-pre-action-protocol-checker
+    - england-wales-civil-claim-drafter
+  employment:
+    - uk-employment-law-applicability-checker
+  privacy:
+    - uk-data-protection-compliance-checker
+  insolvency:
+    - uk-insolvency-applicability-checker

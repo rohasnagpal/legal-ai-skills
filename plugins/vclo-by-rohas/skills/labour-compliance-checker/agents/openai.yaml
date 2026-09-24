@@ -1,0 +1,4 @@
+interface:
+  display_name: "Labour Compliance Checker"
+  short_description: "Check India labour-law duties and evidence"
+  default_prompt: "Use $vclo-by-rohas:labour-compliance-checker to map this Indian establishment’s current labour obligations, gaps, owners, and deadlines."

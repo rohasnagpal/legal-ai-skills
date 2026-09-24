@@ -1,0 +1,4 @@
+interface:
+  display_name: "India DPDP Compliance Checker"
+  short_description: "Check processing against India's DPDP framework"
+  default_prompt: "Use $vclo-by-rohas:dpdp-compliance-checker to assess this processing activity against the currently commenced provisions of India's DPDP Act and Rules, with evidence and remediation priorities."

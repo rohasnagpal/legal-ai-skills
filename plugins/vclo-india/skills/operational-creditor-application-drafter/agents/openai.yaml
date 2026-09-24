@@ -1,4 +1,0 @@
-interface:
-  display_name: "Operational Creditor Application Drafter"
-  short_description: "Draft India operational-creditor IBC filings"
-  default_prompt: "Use $vclo-india:operational-creditor-application-drafter to test eligibility and draft the demand and section 9 application from this operational debt record."

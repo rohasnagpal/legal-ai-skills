@@ -1,0 +1,8 @@
+interface:
+  display_name: "UK Companies Act Compliance Checker"
+  short_description: "UK: Companies Act Compliance Checker"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:uk-companies-act-compliance-checker to checks companies act and related uk corporate compliance for an identified company, transaction and reporting period."
+
+policy:
+  allow_implicit_invocation: true

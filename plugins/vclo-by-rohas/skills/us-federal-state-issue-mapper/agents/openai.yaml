@@ -1,0 +1,8 @@
+interface:
+  display_name: "US Federal–State Issue Mapper"
+  short_description: "US: Federal–State Issue Mapper"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:us-federal-state-issue-mapper to separates federal, state, territorial, tribal and local issues in a us matter, identifies the relevant sovereign and forum, and flags choice-of-law, pre-emption, erie and concurrent-jurisdiction questions."
+
+policy:
+  allow_implicit_invocation: true

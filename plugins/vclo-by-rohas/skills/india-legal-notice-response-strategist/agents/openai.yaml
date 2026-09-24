@@ -1,0 +1,8 @@
+interface:
+  display_name: "India Legal-Notice Response Strategist"
+  short_description: "India: Legal-Notice Response Strategist"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:india-legal-notice-response-strategist to builds a response strategy for a legal notice governed by indian law before drafting the reply."
+
+policy:
+  allow_implicit_invocation: true

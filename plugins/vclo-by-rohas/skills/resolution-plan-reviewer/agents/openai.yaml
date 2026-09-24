@@ -1,0 +1,4 @@
+interface:
+  display_name: "Resolution Plan Reviewer"
+  short_description: "Review India resolution plans and outcomes"
+  default_prompt: "Use $vclo-by-rohas:resolution-plan-reviewer to test this resolution plan for Code and regulation compliance, eligibility, feasibility, distributions, approvals, and implementation risk."

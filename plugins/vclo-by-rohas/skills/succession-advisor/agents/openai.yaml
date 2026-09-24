@@ -1,0 +1,4 @@
+interface:
+  display_name: "Succession Advisor"
+  short_description: "Map India inheritance rights and next steps"
+  default_prompt: "Use $vclo-by-rohas:succession-advisor to identify the applicable Indian succession regime, heirs, estate shares, process, and missing documents."

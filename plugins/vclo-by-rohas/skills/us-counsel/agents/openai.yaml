@@ -1,0 +1,8 @@
+interface:
+  display_name: "US Counsel"
+  short_description: "US federal and State law verification"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:us-counsel to apply US federal, State, forum and verification rules to this matter."
+
+policy:
+  allow_implicit_invocation: true

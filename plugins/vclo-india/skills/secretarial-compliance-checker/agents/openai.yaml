@@ -1,4 +1,0 @@
-interface:
-  display_name: "Secretarial Compliance Checker"
-  short_description: "Check India company-law filings and governance"
-  default_prompt: "Use $vclo-india:secretarial-compliance-checker to build a current compliance calendar and identify missed company-law actions."

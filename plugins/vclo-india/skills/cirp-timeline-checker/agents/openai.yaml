@@ -1,4 +1,0 @@
-interface:
-  display_name: "CIRP Timeline Checker"
-  short_description: "Build current India CIRP deadlines and owners"
-  default_prompt: "Use $vclo-india:cirp-timeline-checker to build an as-of-date CIRP calendar from the admission order, exclusions, extensions, filings, meetings, and plan milestones."

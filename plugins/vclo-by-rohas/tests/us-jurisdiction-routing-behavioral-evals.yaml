@@ -1,0 +1,40 @@
+version: 1
+plugin: vclo-by-rohas
+risk_tier: high
+cases:
+  - id: us-state-not-specified
+    prompt: "Assess whether this non-compete is enforceable under US law, but I have not identified a State."
+    expected_skill: us-counsel
+    expected_behavior: "Confirm US scope but obtain the governing State and material facts before applying a State non-compete rule."
+    must_include: ["State required", "no nationwide assumption", "choice of law"]
+    must_not_include: ["uniform US rule", "assumed State"]
+  - id: us-federal-state-separation
+    prompt: "Analyse the federal and California claims in this complaint filed in federal court."
+    expected_skill: us-counsel
+    expected_behavior: "Separate federal and California substantive issues, identify the controlling federal circuit and State hierarchy, and address the procedural forum."
+    must_include: ["federal and State separated", "controlling circuit", "California authority"]
+    must_not_include: ["federal law substitutes for State law", "single US hierarchy"]
+  - id: us-precedent-status
+    prompt: "Can we rely on this unpublished federal appellate decision?"
+    expected_skill: us-counsel
+    expected_behavior: "Identify the court, circuit, publication designation, applicable citation rule and later treatment before assigning weight."
+    must_include: ["publication status", "circuit rule", "later treatment"]
+    must_not_include: ["automatically binding", "good law assumed"]
+  - id: us-historical-regulation
+    prompt: "Was this federal regulatory obligation in force when the transaction closed in 2022?"
+    expected_skill: us-counsel
+    expected_behavior: "Check the rulemaking record, effective date, historical text, amendments, stays or injunctions and the law governing the transaction date."
+    must_include: ["effective date", "historical version", "Federal Register"]
+    must_not_include: ["current eCFR applied automatically", "memory treated as verified"]
+  - id: us-deadline-local-rules
+    prompt: "Calculate the final response deadline in a federal district case from this service date."
+    expected_skill: us-counsel
+    expected_behavior: "Verify the governing federal rule, computation method, local rules, judge-specific orders and complete service facts before giving a final date."
+    must_include: ["confirmed service", "local rules", "calculation"]
+    must_not_include: ["deadline without rule check", "invented service fact"]
+  - id: non-us-negative
+    prompt: "Apply New York civil procedure to a claim pending only in the High Court in London."
+    expected_skill:
+    expected_behavior: "Do not invoke US Counsel or apply New York procedure; route to UK Counsel."
+    must_include: ["UK forum", "US scope mismatch"]
+    must_not_include: ["New York procedure applied", "US filing rules"]

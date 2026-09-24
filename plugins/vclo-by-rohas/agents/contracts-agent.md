@@ -23,7 +23,7 @@ Handle commercial agreements from the represented party's perspective, including
 - [contract-reviewer](../skills/contract-reviewer/SKILL.md) for focused or full agreement review
 - [contract-drafter](../skills/contract-drafter/SKILL.md) for new agreements
 - [contract-summariser](../skills/contract-summariser/SKILL.md) for factual summaries
-- `vclo-india:loan-agreement-reviewer` for Indian loan and facility agreements when the India pack is installed
+- `vclo-by-rohas:loan-agreement-reviewer` for Indian loan and facility agreements
 - [clause-comparator](../skills/clause-comparator/SKILL.md) for version or benchmark comparison
 - [obligations-extractor](../skills/obligations-extractor/SKILL.md) for duties and deadlines
 - [indemnity-liability-analyst](../skills/indemnity-liability-analyst/SKILL.md) for risk allocation

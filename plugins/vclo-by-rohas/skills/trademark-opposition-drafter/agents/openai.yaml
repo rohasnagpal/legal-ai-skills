@@ -1,0 +1,4 @@
+interface:
+  display_name: "Trademark Opposition Drafter"
+  short_description: "Draft India trademark opposition pleadings"
+  default_prompt: "Use $vclo-by-rohas:trademark-opposition-drafter to prepare or answer an Indian trademark opposition or rectification matter with verified grounds, evidence, forms, fees, and deadlines."

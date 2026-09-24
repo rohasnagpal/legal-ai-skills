@@ -1,0 +1,8 @@
+interface:
+  display_name: "UK Insolvency Applicability Checker"
+  short_description: "UK: Insolvency Applicability Checker"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:uk-insolvency-applicability-checker to maps potentially applicable uk corporate insolvency and restructuring routes for an identified entity and objective."
+
+policy:
+  allow_implicit_invocation: true

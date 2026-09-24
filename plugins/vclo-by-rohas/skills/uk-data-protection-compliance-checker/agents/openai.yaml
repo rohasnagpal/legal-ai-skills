@@ -1,0 +1,8 @@
+interface:
+  display_name: "UK Data-Protection Compliance Checker"
+  short_description: "UK: Data-Protection Compliance Checker"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:uk-data-protection-compliance-checker to assesses uk gdpr, data protection act 2018 and pecr applicability and compliance for identified processing."
+
+policy:
+  allow_implicit_invocation: true

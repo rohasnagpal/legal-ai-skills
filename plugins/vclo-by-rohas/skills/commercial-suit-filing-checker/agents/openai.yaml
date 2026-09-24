@@ -1,0 +1,8 @@
+interface:
+  display_name: "Commercial Suit Filing Checker"
+  short_description: "India: Commercial Suit Filing Checker"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:commercial-suit-filing-checker to checks filing readiness for an indian commercial suit, including commercial-dispute status, forum, pecuniary and territorial jurisdiction, limitation, pre-institution mediation, pleadings, statements, affidavits, court fees, service and local rules."
+
+policy:
+  allow_implicit_invocation: true

@@ -39,16 +39,16 @@ For established multi-step jobs, prefer the relevant document under `../workflow
 
 ## Jurisdiction counsel
 
-Practice-area specialists supply domain expertise; installed jurisdiction counsel supplies local law, authority hierarchy, procedure, terminology and verification rules. Use both layers when local law is material.
+Practice-area specialists supply domain expertise; jurisdiction counsel supplies local law, authority hierarchy, procedure, terminology and verification rules. Use both layers when local law is material.
 
-For an Indian matter, invoke `vclo-india:india-counsel` before applying an Indian rule or India-specific skill. India Counsel owns and routes the India-specific skill pack while the selected specialist remains responsible for the practice-area work. If the India pack is unavailable, continue only with jurisdiction-neutral intake or analysis and identify the unavailable local-law layer; do not improvise Indian law from memory.
+Invoke the matching counsel before applying local law: `vclo-by-rohas:india-counsel`, `vclo-by-rohas:us-counsel` or `vclo-by-rohas:uk-counsel`. India Counsel owns and routes India-specific skills. US Counsel and UK Counsel currently apply their jurisdiction layers to neutral skills and will own local skills as those are added. The selected practice-area specialist remains responsible for the domain work.
 
 If the governing law or forum is unclear, establish it before selecting jurisdiction-specific skills. Do not treat a party's location alone as conclusive.
 
 ## Execution
 
 1. State the scope, perspective, jurisdiction and known limitations.
-2. Select the workflow, practice-area specialist, installed jurisdiction counsel and minimum set of skills needed.
+2. Select the workflow, practice-area specialist, jurisdiction counsel and minimum set of skills needed.
 3. Build a source inventory and identify missing or unavailable evidence. When the matter depends on legislation, cases, procedure or regulation, apply the [legal research and authority-verification protocol](../integrations/legal-research.md) and load only the relevant jurisdiction guide.
 4. Identify useful capability categories under `../integrations/`; use only tools that are actually available and authorised.
 5. Delegate independent workstreams in parallel where the host supports subagents. Give each workstream the same matter facts, scope, source rules and output schema.
@@ -86,6 +86,8 @@ For a complex matter, normally provide:
 9. Verification Status
 
 Label verified facts, user-supplied facts, allegations, assumptions, legal analysis and unresolved questions distinctly. Cite document locations and primary legal authority where available.
+
+Work in the user's requested language where the selected host model can do so. Preserve the original text of legally material defined terms, quotations and authorities where translation could alter meaning; label translations and identify any filing-language or certified-translation requirement that still needs verification.
 
 ## Connected-system safeguards
 

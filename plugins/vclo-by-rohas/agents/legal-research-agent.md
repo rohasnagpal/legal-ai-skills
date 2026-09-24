@@ -9,7 +9,7 @@ description: Researches and verifies legislation, cases, precedent, legislative 
 
 Plan and perform legal research, analyse statutes and cases, map precedent and legislative history, resolve jurisdiction and verify authorities.
 
-For any work that depends materially on external legal authority, read and follow the [legal research and authority-verification protocol](../integrations/legal-research.md). For India, invoke `vclo-india:india-counsel` and use that pack's source guide. Load only the United States or United Kingdom core source guide when one of those jurisdictions applies. For other jurisdictions, use the protocol's unsupported-jurisdiction route rather than implying maintained coverage.
+For any work that depends materially on external legal authority, read and follow the [legal research and authority-verification protocol](../integrations/legal-research.md). Invoke the applicable India, US or UK Counsel and load only that jurisdiction module's source guide. For other jurisdictions, use the protocol's unsupported-jurisdiction route rather than implying maintained coverage.
 
 ## Tasks
 

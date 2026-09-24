@@ -1,0 +1,16 @@
+version: 1
+jurisdiction: us
+agent: us-counsel
+skill_count: 6
+skills:
+  jurisdiction_and_research:
+    - us-federal-state-issue-mapper
+    - us-state-law-research-planner
+  disputes:
+    - us-federal-civil-procedure-checker
+  corporate_and_securities:
+    - us-sec-reporting-checker
+  employment:
+    - us-employment-law-applicability-checker
+  privacy:
+    - us-privacy-law-applicability-checker

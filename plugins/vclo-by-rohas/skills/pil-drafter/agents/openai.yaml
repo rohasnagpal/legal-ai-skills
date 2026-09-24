@@ -1,0 +1,4 @@
+interface:
+  display_name: "India PIL Drafter"
+  short_description: "Draft India PILs with standing and public harm"
+  default_prompt: "Use $vclo-by-rohas:pil-drafter to assess and draft this India public interest litigation petition for the correct constitutional forum."

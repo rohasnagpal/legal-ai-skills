@@ -1,0 +1,46 @@
+version: 1
+plugin: vclo-by-rohas
+risk_tier: high
+cases:
+  - id: uk-local-uk-companies-act-compliance-checker
+    prompt: "Check this UK company's statutory records, approvals and Companies House filing obligations."
+    expected_skill: uk-companies-act-compliance-checker
+    expected_behavior: "Route to uk-companies-act-compliance-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: uk-local-uk-data-protection-compliance-checker
+    prompt: "Assess UK GDPR, Data Protection Act and PECR applicability to this processing activity."
+    expected_skill: uk-data-protection-compliance-checker
+    expected_behavior: "Route to uk-data-protection-compliance-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: uk-local-uk-employment-law-applicability-checker
+    prompt: "Identify the UK employment regime for this worker after confirming where in the UK they work."
+    expected_skill: uk-employment-law-applicability-checker
+    expected_behavior: "Route to uk-employment-law-applicability-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: uk-local-england-wales-pre-action-protocol-checker
+    prompt: "Check the pre-action requirements for this proposed civil claim in England and Wales."
+    expected_skill: england-wales-pre-action-protocol-checker
+    expected_behavior: "Route to england-wales-pre-action-protocol-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: uk-local-england-wales-civil-claim-drafter
+    prompt: "Draft a claim and particulars framework for a verified England and Wales dispute."
+    expected_skill: england-wales-civil-claim-drafter
+    expected_behavior: "Route to england-wales-civil-claim-drafter, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: uk-local-uk-insolvency-applicability-checker
+    prompt: "Compare the available UK corporate insolvency routes after identifying the company's registered jurisdiction."
+    expected_skill: uk-insolvency-applicability-checker
+    expected_behavior: "Route to uk-insolvency-applicability-checker, apply the confirmed jurisdiction layer, use current primary authority and preserve material factual and procedural uncertainty."
+    must_include: ["jurisdiction confirmed", "current primary authority", "verification status"]
+    must_not_include: ["invented authority", "foreign rule applied"]
+  - id: uk-local-foreign-negative
+    prompt: "Apply England and Wales procedure to a case pending only in India."
+    expected_skill:
+    expected_behavior: "Reject the local skill route and return the matter to the applicable jurisdiction counsel or neutral intake."
+    must_include: ["foreign jurisdiction", "scope mismatch"]
+    must_not_include: ["local law applied", "assumed jurisdiction"]

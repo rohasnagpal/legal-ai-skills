@@ -1,0 +1,8 @@
+interface:
+  display_name: "England and Wales Pre-Action Protocol Checker"
+  short_description: "UK: England and Wales Pre-Action Protocol Checker"
+  brand_color: "#B45309"
+  default_prompt: "Use $vclo-by-rohas:england-wales-pre-action-protocol-checker to checks the applicable pre-action protocol or practice direction requirements before civil proceedings in england and wales."
+
+policy:
+  allow_implicit_invocation: true
