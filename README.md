@@ -29,11 +29,27 @@ Install it once and describe the legal task in plain language. For a simple task
 
 ## Install vCLO
 
+### Codex
+
 Tell Codex: 
 
 `Install vCLO from https://github.com/rohasnagpal/legal-ai-skills. Register the repository as a plugin source and install vclo-by-rohas@rohas-legal.`
 
 Approve the installation, start a new task, and say 
+
+`Hello vCLO`.
+
+### Claude Code
+
+In Claude Code, run:
+
+`/plugin marketplace add rohasnagpal/legal-ai-skills`
+
+Then run:
+
+`/plugin install vclo-by-rohas@rohas-legal`
+
+Approve the installation, start a new session, and say:
 
 `Hello vCLO`.
 
