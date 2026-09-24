@@ -8,7 +8,7 @@ You get:
 - 185 Specialist Legal Skills
 - 10 workflows
 - 8 official legal research sources and connectors
-
+---
 **Virtual Chief Legal Officer (vCLO):** Coordinates specialist virtual lawyers, jurisdiction-specific counsel, legal skills and end-to-end workflows to handle each matter.
 
 **9 Specialist Virtual Lawyers:** Dedicated expertise across contracts, corporate, dispute resolution, litigation, compliance, employment, IP, investigations and legal research.
@@ -21,16 +21,18 @@ You get:
 
 **8 official legal research sources and connectors:** Connecting vCLO to US, UK and Indian legislation, case law, court records and regulatory materials.
 
-### How long does setup take?
+---
+
+### 1. How long does setup take?
 Less than 60 seconds.
 
-### Where does it run?
+### 2. Where does it run?
 Inside your Codex or Claude.
 
-### What does it cost?
+### 3. What does it cost?
 $0 + your ChatGPT or Claude subscription.
 
-### What can it handle?
+### 4. What can it handle?
 
 - Arbitration
 - Commercial contracts
@@ -53,7 +55,7 @@ $0 + your ChatGPT or Claude subscription.
 - Regulatory compliance
 - Tax and cross-border regulatory matters
 
-### The coordinated legal workflows
+### 5. The coordinated legal workflows
 
 1. Contract review and negotiation
 2. M&A due diligence
@@ -66,6 +68,14 @@ $0 + your ChatGPT or Claude subscription.
 9. Financing transaction
 10. Dispute Viability Assessment
 
+### 6. Who this is for
+Practising lawyers, in-house counsel, startups, businesses and law students.
+
+### 7. Jurisdiction:
+vCLO includes jurisdiction-neutral skills plus jurisdiction specific agents in the same installation. Each jurisdiction lawyer confirms that its law applies before using local rules and checks the relevant territory or State, forum, authority, effective date and procedure.
+
+### 8. Languages:
+vCLO can accept instructions and produce work in languages supported by the selected Codex or Claude model. The maintained skill instructions and legal-source guides are primarily in English, and quality can vary by language. For legal work, verify translations, defined terms, quotations, citations and court or regulator filing-language requirements against authoritative sources or qualified local counsel.
 
 ## Install vCLO
 
@@ -92,12 +102,6 @@ Then run:
 Approve the installation, start a new session, and say:
 
 `Hello vCLO`.
-
-**Who this is for:** Practising lawyers, in-house counsel, startups, businesses and law students.
-
-**Jurisdiction:** vCLO includes jurisdiction-neutral skills plus India, US and UK Counsel in the same installation. Each jurisdiction lawyer confirms that its law applies before using local rules and checks the relevant territory or State, forum, authority, effective date and procedure.
-
-**Languages:** vCLO can accept instructions and produce work in languages supported by the selected Codex or Claude model. The maintained skill instructions and legal-source guides are primarily in English, and quality can vary by language. For legal work, verify translations, defined terms, quotations, citations and court or regulator filing-language requirements against authoritative sources or qualified local counsel.
 
 ## How vCLO works
 
