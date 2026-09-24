@@ -8,8 +8,10 @@ test("toolchain status distinguishes bundled adapter from installed engines", as
   assert.equal(status.local_only, true);
   assert.equal(status.capabilities.bundled_templates, true);
   assert.equal(status.capabilities.docx_and_pdf_conversion, false);
+  assert.equal(status.capabilities.markdown_to_pdf, false);
   assert.equal(status.capabilities.ocr, false);
   assert.equal(status.capabilities.pdf_assembly, false);
+  assert.match(status.notice, /LaTeX engine/);
 });
 
 test("bundled legal templates are discoverable", async () => {

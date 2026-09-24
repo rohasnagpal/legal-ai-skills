@@ -21,7 +21,7 @@ for plugin_json in plugins/*/.codex-plugin/plugin.json; do
     package_entries=(.codex-plugin skills assets)
     [[ -f LICENSE ]] && package_entries+=(LICENSE)
     [[ -f .mcp.json ]] && package_entries+=(.mcp.json)
-    for optional_entry in agents workflows integrations jurisdictions mcp; do
+    for optional_entry in agents workflows integrations jurisdictions mcp hooks; do
       if [[ -d "$optional_entry" ]]; then
         package_entries+=("$optional_entry")
       fi

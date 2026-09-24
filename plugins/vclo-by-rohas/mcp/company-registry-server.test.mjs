@@ -57,10 +57,10 @@ test("SEC search treats numeric input as an exact CIK and deduplicates issuers",
   assert.equal(alternateTicker.results[0].cik, "0000000001");
 });
 
-test("SEC user agent has no hardcoded personal email and permits an override", () => {
-  assert.match(secUserAgent(""), /^vCLO-by-Rohas\/2\.1\.3/);
+test("SEC user agent identifies the project, supplies contact details and permits an override", () => {
+  assert.match(secUserAgent(""), /^vCLO-by-Rohas\/3\.3\.1/);
+  assert.match(secUserAgent(""), /\S+@\S+/);
   assert.equal(secUserAgent("Example Legal legal@example.test"), "Example Legal legal@example.test");
-  assert.doesNotMatch(secUserAgent(""), /rohasnagpal@gmail\.com/);
 });
 
 test("GLEIF records retain verification fields", () => {

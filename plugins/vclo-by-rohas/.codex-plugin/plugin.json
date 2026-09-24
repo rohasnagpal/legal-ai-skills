@@ -1,6 +1,6 @@
 {
   "name": "vclo-by-rohas",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "vCLO is a free, open-source AI legal team with one virtual Chief Legal Officer, nine specialist virtual lawyers, India Counsel, MVP US and UK Counsel, 185 specialist legal skills, ten coordinated workflows, company registries, official legal-research connectors and local document production.",
   "author": {
     "name": "Rohas Nagpal",
@@ -52,6 +52,7 @@
       "env_vars": [
         "CODEX_MCP_NODE_PATH",
         "VCLO_PANDOC_PATH",
+        "VCLO_LATEX_PATH",
         "VCLO_SOFFICE_PATH",
         "VCLO_OCRMYPDF_PATH",
         "VCLO_PDFUNITE_PATH",

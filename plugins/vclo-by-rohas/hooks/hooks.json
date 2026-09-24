@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^mcp__.*courtlistener.*__(create_search_alert|delete_search_alert|subscribe_to_docket_alert|unsubscribe_from_docket_alert)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/hooks/block-courtlistener-alerts.mjs"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

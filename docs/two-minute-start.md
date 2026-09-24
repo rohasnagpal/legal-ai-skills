@@ -1,5 +1,7 @@
 # Start using vCLO in two minutes
 
+The installation itself normally takes less than 60 seconds when Node.js 18 or later is already installed. Node.js is required for the bundled company-registry, legal-research and document-production tools; the legal skills remain usable without those tools.
+
 ## 1. Install once
 
 Tell Codex:
@@ -12,6 +14,8 @@ For Claude Code:
 /plugin marketplace add rohasnagpal/legal-ai-skills
 /plugin install vclo-by-rohas@rohas-legal
 ```
+
+For normal GovInfo use, obtain a free api.data.gov key and set `GOVINFO_API_KEY` before starting Codex or Claude Code. The shared `DEMO_KEY` is intended only for limited initial testing.
 
 ## 2. Start a new task or session
 

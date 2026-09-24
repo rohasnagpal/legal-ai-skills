@@ -591,6 +591,21 @@ if claude_mp && agents_mp
     count = Dir.glob(File.join(path, 'skills', '*', 'SKILL.md')).length
     errors << "plugin '#{p['name']}': source '#{path}' has zero SKILL.md files" if count.zero?
   end
+
+  core_manifest_path = "plugins/#{CORE_PLUGIN}/.codex-plugin/plugin.json"
+  core_manifest = load_json(core_manifest_path, errors)
+  if core_manifest
+    expected_version = core_manifest['version']
+    claude_entry = claude_mp['plugins'].find { |plugin| plugin['name'] == CORE_PLUGIN }
+    errors << ".claude-plugin/marketplace.json: #{CORE_PLUGIN} version must match #{expected_version}" unless claude_entry && claude_entry['version'] == expected_version
+
+    %w[company-registry-server.mjs document-production-server.mjs legal-research-server.mjs].each do |server_file|
+      path = "plugins/#{CORE_PLUGIN}/mcp/#{server_file}"
+      source = File.read(path, encoding: 'UTF-8')
+      server_version = source[/const VERSION = "([^"]+)";/, 1]
+      errors << "#{path}: VERSION '#{server_version}' must match plugin version '#{expected_version}'" unless server_version == expected_version
+    end
+  end
 end
 
 # ---- 6. vCLO orchestration structure and links ----
@@ -632,6 +647,9 @@ vclo_required_files = %w[
   plugins/vclo-by-rohas/mcp/legal-research-server.mjs
   plugins/vclo-by-rohas/mcp/legal-research-server.test.mjs
   plugins/vclo-by-rohas/mcp/README.md
+  plugins/vclo-by-rohas/hooks/hooks.json
+  plugins/vclo-by-rohas/hooks/block-courtlistener-alerts.mjs
+  plugins/vclo-by-rohas/hooks/block-courtlistener-alerts.test.mjs
   plugins/vclo-by-rohas/assets/vclo/due-diligence-report-template.md
   plugins/vclo-by-rohas/assets/vclo/issue-register-template.md
   plugins/vclo-by-rohas/assets/vclo/legal-matter-summary-template.md
@@ -673,6 +691,20 @@ vclo_required_files = %w[
 
 vclo_required_files.each do |f|
   errors << "vCLO: required file is missing: #{f}" unless File.file?(f)
+end
+
+claude_hooks_path = 'plugins/vclo-by-rohas/hooks/hooks.json'
+if File.file?(claude_hooks_path)
+  begin
+    claude_hooks = JSON.parse(File.read(claude_hooks_path, encoding: 'UTF-8'))
+    pre_tool_hooks = claude_hooks.dig('hooks', 'PreToolUse')
+    matcher = pre_tool_hooks.is_a?(Array) ? pre_tool_hooks.first&.fetch('matcher', '') : ''
+    %w[create_search_alert delete_search_alert subscribe_to_docket_alert unsubscribe_from_docket_alert].each do |tool|
+      errors << "#{claude_hooks_path}: CourtListener write tool '#{tool}' is not blocked" unless matcher.include?(tool)
+    end
+  rescue => e
+    errors << "#{claude_hooks_path}: invalid hook configuration -- #{e.message}"
+  end
 end
 
 # The legal-source registry is maintained product behavior, not a loose list of

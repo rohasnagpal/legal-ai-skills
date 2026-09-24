@@ -3,7 +3,7 @@
 import readline from "node:readline";
 import { pathToFileURL } from "node:url";
 
-const VERSION = "2.1.3";
+const VERSION = "3.3.1";
 const REQUEST_TIMEOUT_MS = 30_000;
 const SEC_BASE = "https://data.sec.gov";
 const SEC_WWW = "https://www.sec.gov";
@@ -154,7 +154,7 @@ function normalizeCompanyNumber(value) {
 }
 
 export function secUserAgent(override = process.env.VCLO_SEC_USER_AGENT) {
-  return override?.trim() || `vCLO-by-Rohas/${VERSION} (+https://github.com/rohasnagpal/legal-ai-skills)`;
+  return override?.trim() || `vCLO-by-Rohas/${VERSION} rohasnagpal@gmail.com`;
 }
 
 function secHeaders() {

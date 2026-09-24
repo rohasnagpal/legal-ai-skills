@@ -8,11 +8,12 @@ import readline from "node:readline";
 import { spawn } from "node:child_process";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-const VERSION = "1.0.0";
+const VERSION = "3.3.1";
 const SERVER_DIR = path.dirname(fileURLToPath(import.meta.url));
 const TEMPLATE_DIR = path.resolve(SERVER_DIR, "../assets/vclo");
 const TOOL_CONFIG = {
   pandoc: { env: "VCLO_PANDOC_PATH", names: ["pandoc"] },
+  latex: { env: "VCLO_LATEX_PATH", names: ["pdflatex", "xelatex", "lualatex"] },
   soffice: { env: "VCLO_SOFFICE_PATH", names: ["soffice", "libreoffice"] },
   ocrmypdf: { env: "VCLO_OCRMYPDF_PATH", names: ["ocrmypdf"] },
   pdfunite: { env: "VCLO_PDFUNITE_PATH", names: ["pdfunite"] },
@@ -119,12 +120,13 @@ export async function resolveToolchain(env = process.env) {
     tools,
     capabilities: {
       docx_and_pdf_conversion: tools.pandoc.available || tools.soffice.available,
+      markdown_to_pdf: tools.pandoc.available && tools.latex.available,
       docx_style_reference: tools.pandoc.available,
       ocr: tools.ocrmypdf.available,
       pdf_assembly: tools.pdfunite.available || tools.qpdf.available,
       bundled_templates: true
     },
-    notice: "The MCP adapter is bundled and free. Operations require the corresponding free local executable; no document is uploaded by this server."
+    notice: "The MCP adapter is bundled and free. Operations require the corresponding free local executable; Markdown-to-PDF through Pandoc also requires a LaTeX engine. No document is uploaded by this server."
   };
 }
 
@@ -208,6 +210,12 @@ export async function convertDocument(args) {
     if (toolchain.tools.pandoc.available && (path.extname(input).toLowerCase() === ".md" || reference)) {
       const commandArgs = [input, "-o", temporaryOutput];
       if (reference) commandArgs.push(`--reference-doc=${reference}`);
+      if (format === "pdf") {
+        if (!toolchain.tools.latex.available) {
+          throw new Error("Markdown-to-PDF through Pandoc requires a LaTeX engine. Install pdflatex, xelatex or lualatex, or set VCLO_LATEX_PATH.");
+        }
+        commandArgs.push(`--pdf-engine=${toolchain.tools.latex.executable}`);
+      }
       await run(toolchain.tools.pandoc.executable, commandArgs);
       await copyProducedFile(temporaryOutput, output, Boolean(args.overwrite));
       return { operation: "convert", engine: "pandoc", input_path: input, output_path: output, local_only: true };
@@ -217,7 +225,11 @@ export async function convertDocument(args) {
     }
     await run(toolchain.tools.soffice.executable, ["--headless", "--convert-to", format, "--outdir", temporaryDirectory, input]);
     const produced = path.join(temporaryDirectory, `${path.basename(input, path.extname(input))}.${format}`);
-    await requireInput(produced);
+    try {
+      await requireInput(produced);
+    } catch {
+      throw new Error("LibreOffice reported success but produced no output. Close any open LibreOffice process, then retry; if it persists, use a separate LibreOffice user profile or convert manually.");
+    }
     await copyProducedFile(produced, output, Boolean(args.overwrite));
     return { operation: "convert", engine: "libreoffice", input_path: input, output_path: output, local_only: true };
   } finally {

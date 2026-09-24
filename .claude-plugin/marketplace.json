@@ -8,6 +8,7 @@
   "plugins": [
     {
       "name": "vclo-by-rohas",
+      "version": "3.3.1",
       "source": "./plugins/vclo-by-rohas",
       "description": "vCLO is one installable AI legal team with a virtual Chief Legal Officer, nine specialist virtual lawyers, India Counsel, MVP US and UK Counsel, 185 specialist legal skills, ten coordinated workflows, company registries, official legal-research connectors and local document production.",
       "author": {
