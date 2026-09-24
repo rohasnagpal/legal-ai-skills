@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{MATTER_TITLE}} — Litigation Viability Report</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5e6879;
+      --line: #d8dee8;
+      --soft: #f5f7fa;
+      --accent: #8a3f13;
+      --urgent: #9b1c1c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #fff;
+      font: 10.5pt/1.55 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    }
+    main, header, footer { max-width: 190mm; margin: 0 auto; }
+    header { padding: 24mm 0 12mm; border-bottom: 2px solid var(--ink); }
+    main { padding: 10mm 0 20mm; }
+    footer { padding: 8mm 0 14mm; border-top: 1px solid var(--line); color: var(--muted); font-size: 8.5pt; }
+    h1 { margin: 0 0 4mm; font-size: 25pt; line-height: 1.15; letter-spacing: -.02em; }
+    h2 { margin: 10mm 0 3mm; padding-bottom: 2mm; border-bottom: 1px solid var(--line); font-size: 15pt; }
+    h3 { margin: 6mm 0 2mm; font-size: 11.5pt; }
+    p, ul, ol { margin: 0 0 3mm; }
+    a { color: var(--accent); overflow-wrap: anywhere; }
+    .eyebrow { margin-bottom: 3mm; color: var(--accent); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .meta-table { margin-top: 8mm; border-collapse: collapse; }
+    .meta-table td { width: 50%; padding: 2mm 8mm 2mm 0; border: 0; border-top: 1px solid var(--line); }
+    .label { display: block; color: var(--muted); font-size: 8pt; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+    .card, .notice { margin: 4mm 0; padding: 4mm; border: 1px solid var(--line); border-radius: 2mm; background: var(--soft); }
+    .urgent { border-color: #e1aaaa; background: #fff3f3; color: var(--urgent); }
+    table { width: 100%; margin: 3mm 0 5mm; border-collapse: collapse; font-size: 9pt; }
+    th, td { padding: 2.2mm; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { background: var(--soft); font-weight: 700; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .status { display: inline-block; padding: .5mm 1.5mm; border: 1px solid var(--line); border-radius: 99px; font-size: 8pt; font-weight: 700; }
+    .page-break { break-before: page; }
+    @page { size: A4; margin: 18mm; }
+    @media print {
+      body { font-size: 10pt; }
+      header, main, footer { max-width: none; }
+      header { padding-top: 0; }
+      a { color: inherit; text-decoration: none; }
+      .no-print { display: none; }
+      h1, h2, h3 { break-after: avoid; }
+      table, figure, .card, .notice { break-inside: avoid; }
+      tr { break-inside: avoid; }
+    }
+    @media (max-width: 760px) {
+      header, main, footer { padding-left: 18px; padding-right: 18px; }
+      .meta-table td { display: block; width: 100%; }
+      table { display: block; overflow-x: auto; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "product": "vCLO",
+    "report_type": "Litigation Viability Report",
+    "jurisdiction": "{{JURISDICTION}}",
+    "matter": "{{MATTER_TITLE}}",
+    "prepared_at": "{{PREPARED_AT}}",
+    "report_version": "{{REPORT_VERSION}}",
+    "sources_verified": {{SOURCES_VERIFIED}},
+    "source_registry": "vclo-jurisdiction-module",
+    "record_cutoff": "{{RECORD_CUTOFF}}"
+  }
+  </script>
+</head>
+<body>
+  <!-- Replace placeholders with context-appropriate HTML- or JSON-escaped, source-backed content. Remove unused optional rows and sections. -->
+  <header>
+    <div class="eyebrow">vCLO · Litigation Viability Report</div>
+    <h1>{{MATTER_TITLE}}</h1>
+    <p>{{MATTER_SUBTITLE}}</p>
+    <table class="meta-table" aria-label="Report metadata">
+      <tbody>
+        <tr>
+          <td><span class="label">Jurisdiction</span> {{JURISDICTION}}</td>
+          <td><span class="label">Prepared</span> {{PREPARED_AT}}</td>
+        </tr>
+        <tr>
+          <td><span class="label">Record cutoff</span> {{RECORD_CUTOFF}}</td>
+          <td><span class="label">Version</span> {{REPORT_VERSION}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="notice">{{CONFIDENTIALITY_NOTE}}</div>
+  </header>
+
+  <main>
+    {{URGENT_FLAGS}}
+
+    <section>
+      <h2>1. Executive Summary</h2>
+      {{EXECUTIVE_SUMMARY}}
+    </section>
+
+    <section>
+      <h2>2. Scope, Record and Assumptions</h2>
+      {{SCOPE_RECORD_ASSUMPTIONS}}
+    </section>
+
+    <section>
+      <h2>3. Parties</h2>
+      {{PARTIES}}
+    </section>
+
+    <section>
+      <h2>4. Chronology</h2>
+      {{CHRONOLOGY_TABLE}}
+    </section>
+
+    <section>
+      <h2>5. Jurisdiction, Governing Law and Forum</h2>
+      {{JURISDICTION_FORUM_ANALYSIS}}
+    </section>
+
+    <section class="page-break">
+      <h2>6. Claims, Defences and Counterclaims</h2>
+      {{CLAIMS_ANALYSIS}}
+    </section>
+
+    <section>
+      <h2>7. Applicable Law</h2>
+      {{APPLICABLE_LAW_TABLE}}
+    </section>
+
+    <section>
+      <h2>8. Relevant Case Law</h2>
+      {{CASE_LAW_TABLE}}
+    </section>
+
+    <section>
+      <h2>9. Fact-to-Law Analysis</h2>
+      {{FACT_TO_LAW_ANALYSIS}}
+    </section>
+
+    <section class="page-break">
+      <h2>10. Evidence Matrix</h2>
+      {{EVIDENCE_MATRIX}}
+    </section>
+
+    <section>
+      <h2>11. Strongest Opposing Case</h2>
+      {{OPPOSING_CASE}}
+    </section>
+
+    <section>
+      <h2>12. Limitation and Urgent Deadlines</h2>
+      {{LIMITATION_TABLE}}
+    </section>
+
+    <section>
+      <h2>13. Procedure and Preconditions</h2>
+      {{PROCEDURE}}
+    </section>
+
+    <section>
+      <h2>14. Remedies, Quantum and Mitigation</h2>
+      {{REMEDIES_AND_QUANTUM}}
+    </section>
+
+    <section>
+      <h2>15. Practicality, Recovery and Enforcement</h2>
+      {{PRACTICALITY_AND_ENFORCEMENT}}
+    </section>
+
+    <section>
+      <h2>16. Route Comparison and Settlement</h2>
+      {{ROUTE_COMPARISON}}
+    </section>
+
+    <section>
+      <h2>17. Critical Missing Information</h2>
+      {{MISSING_INFORMATION}}
+    </section>
+
+    <section>
+      <h2>18. Prioritised Next Steps</h2>
+      {{NEXT_STEPS}}
+    </section>
+
+    <section class="page-break">
+      <h2>19. Lawyer Briefing Note</h2>
+      {{LAWYER_BRIEFING_NOTE}}
+    </section>
+
+    <section>
+      <h2>20. Sources and Verification Status</h2>
+      {{SOURCES_AND_VERIFICATION}}
+    </section>
+
+    <section>
+      <h2>21. Methodology</h2>
+      {{METHODOLOGY}}
+    </section>
+
+    <section>
+      <h2>22. Important Notice</h2>
+      <p>This report is generated for legal information, issue spotting, research support and decision support. It is based only on the facts, documents, sources and assumptions identified in the report. It does not constitute legal advice or create a lawyer-client relationship. Laws, procedures and limitation periods may change or depend on facts not available to vCLO. Important decisions should be reviewed with a qualified lawyer in the relevant jurisdiction.</p>
+    </section>
+  </main>
+
+  <footer>
+    vCLO · {{MATTER_TITLE}} · {{REPORT_VERSION}} · Record cutoff {{RECORD_CUTOFF}}
+  </footer>
+</body>
+</html>

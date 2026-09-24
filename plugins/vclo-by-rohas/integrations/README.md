@@ -1,13 +1,14 @@
 # Integrations and research sources
 
-vCLO works from uploaded or local files and does not require a proprietary backend. It bundles free read-only company-registry connectors and maintained legal-source guides; other connected systems remain optional capability providers, not prerequisites.
+vCLO works from uploaded or local files and does not require a proprietary backend. It bundles free read-only company-registry and legal-research connectors plus maintained legal-source guides; other connected systems remain optional capability providers, not prerequisites.
 
 ## Capability categories
 
 - [Document sources](document-sources.md)
+- [Document production and delivery systems](document-production.md) — local DOCX/PDF, templates, conversion, OCR and assembly; optional Google, Microsoft, iManage and NetDocuments connections
 - [Email and calendar](email-and-calendar.md)
 - [Company registries](company-registries.md) — bundled SEC EDGAR, GLEIF and optional-key Companies House tools
-- [Legal research](legal-research.md) — official-source-first protocol routed through the India, US and UK Counsel modules
+- [Legal research](legal-research.md) — CourtListener, GovInfo, Federal Register, Regulations.gov, legislation.gov.uk and Find Case Law, routed through the India, US and UK Counsel modules
 - [GitHub](github.md)
 
 An agent or workflow should request a capability, such as “search authorised matter documents,” rather than require a named vendor. A provider may be used only when the host exposes an executable tool and the user has authorised the relevant scope.

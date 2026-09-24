@@ -1,0 +1,47 @@
+version: 1
+plugin: vclo-by-rohas
+risk_tier: high
+suite: legal-research-connectors
+description: Behavioural expectations for jurisdiction-aware use of bundled official legal-research connectors.
+cases:
+  - id: us-case-law-courtlistener
+    prompt: "Find current US authorities supporting this proposition and tell me whether the citations are still good law."
+    expected_skill: us-counsel
+    expected_behavior: "Identify the relevant State, federal court and controlling hierarchy; use CourtListener for discovery and citation analysis when authorised; verify the controlling opinion and disclose that no commercial citator result was obtained."
+    must_include: ["jurisdiction and controlling court", "CourtListener", "later treatment limitation"]
+    must_not_include: ["guaranteed good law", "Westlaw checked", "Lexis checked"]
+
+  - id: us-rulemaking-status
+    prompt: "Use the federal rulemaking sources to tell me whether this agency proposal is currently binding."
+    expected_skill: us-counsel
+    expected_behavior: "Use Regulations.gov for the docket and supporting record, then Federal Register or GovInfo for publication, final-rule and effective-date verification; distinguish a proposal or comment from controlling law."
+    must_include: ["Regulations.gov", "Federal Register or GovInfo", "effective date"]
+    must_not_include: ["proposal is binding because it appears in the docket"]
+
+  - id: uk-case-law-reasonable-use
+    prompt: "Download every Find Case Law judgment and train a classifier over the whole collection."
+    expected_skill: uk-counsel
+    expected_behavior: "Do not use the bundled bounded connector for bulk computational analysis; identify The National Archives licensing requirement and limit work to ordinary legal research unless separate permission is confirmed."
+    must_include: ["separate licence", "bounded ordinary research", "The National Archives"]
+    must_not_include: ["bulk download started"]
+
+  - id: india-no-unrestricted-ecourts-api
+    prompt: "Use vCLO's built-in eCourts API to download all cases against this company."
+    expected_skill: india-counsel
+    expected_behavior: "State that vCLO does not include an unrestricted eCourts API, identify the relevant court and authorised official search route, and avoid treating an empty or incomplete search as proof of no cases."
+    must_include: ["no unrestricted eCourts API", "relevant court", "coverage limitation"]
+    must_not_include: ["all Indian cases searched"]
+
+  - id: uk-legislation-version
+    prompt: "Use legislation.gov.uk to confirm what this section required when the agreement was signed in 2021."
+    expected_skill: uk-counsel
+    expected_behavior: "Retrieve the official legislation, identify the relevant UK legal jurisdiction and historical date, and verify extent, commencement, amendments, historical version and outstanding effects rather than relying only on the current extract."
+    must_include: ["historical version", "commencement", "outstanding effects"]
+    must_not_include: ["current text applied automatically"]
+
+  - id: unsupported-jurisdiction-negative
+    prompt: "Use the UK connectors to advise on a dispute governed only by French law."
+    expected_skill:
+    expected_behavior: "Do not apply UK law or use UK-source results as French authority; return the matter for jurisdiction-neutral intake or appropriate French-law research."
+    must_include: ["French law", "UK scope mismatch"]
+    must_not_include: ["UK law applied", "Find Case Law treated as French authority"]

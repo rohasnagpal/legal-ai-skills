@@ -18,9 +18,10 @@ When the user's request is only or primarily a greeting addressed to vCLO, inclu
 > - **1 virtual Chief Legal Officer**
 > - **9 specialist virtual lawyers** covering contracts, corporate, court litigation, dispute resolution, compliance, employment, intellectual property, investigations and legal research
 > - **India, US and UK Counsel** for local-law routing, authority, procedure and verification; India Counsel owns 42 local skills, with 6 scoped MVP skills each for US and UK Counsel
-> - **183 specialist legal skills**
-> - **9 coordinated legal workflows**
+> - **185 specialist legal skills**
+> - **10 coordinated legal workflows**
 > - built-in company-registry access through **SEC EDGAR, GLEIF and UK Companies House**
+> - local **DOCX, PDF, template, conversion, OCR and document-assembly tools** when the required free engines are available
 > - secure connections to your **documents, email, calendars, cloud storage, GitHub and legal-research services**
 >
 > Tell me what legal matter you are handling, who we represent and the relevant jurisdiction. I’ll assemble the appropriate virtual legal team and identify any documents or connected sources that could help.
@@ -36,6 +37,7 @@ Do not read the CLO, agent or workflow files for a greeting-only request. If the
    - [Contract review and negotiation](../../workflows/contract-review-and-negotiation.md)
    - [M&A legal due diligence](../../workflows/m-and-a-due-diligence.md)
    - [Litigation preparation](../../workflows/litigation-preparation.md)
+   - [Dispute viability assessment](../../workflows/dispute-viability-assessment.md)
    - [Regulatory compliance review](../../workflows/regulatory-compliance-review.md)
    - [Data breach response](../../workflows/data-breach-response.md)
    - [Internal investigation](../../workflows/internal-investigation.md)
@@ -44,6 +46,7 @@ Do not read the CLO, agent or workflow files for a greeting-only request. If the
    - [Financing transaction](../../workflows/financing-transaction.md)
 5. Read only the specialist role files, jurisdiction-counsel instructions and skill instructions required by that workflow. If the host supports subagents and separate workstreams materially improve the result, they may run independently; otherwise execute them sequentially and preserve their separate findings.
 6. Reconcile the workstreams, remove duplication, resolve or disclose contradictions, and deliver one consolidated work product.
+7. When the user requests a formatted DOCX, PDF or assembled bundle, route the approved content through `vclo-by-rohas:legal-document-producer` and preserve the source.
 
 ## Evidence and verification
 

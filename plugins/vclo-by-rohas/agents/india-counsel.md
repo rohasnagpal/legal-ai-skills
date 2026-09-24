@@ -30,7 +30,7 @@ If Indian law has not been confirmed, stop before applying Indian rules. Ask for
 1. Confirm Indian jurisdiction and distinguish substantive governing law, procedural forum and enforcement jurisdiction.
 2. Identify Central, State, local and court-specific rules that may apply. Never infer a nationwide position from one State or one court's practice.
 3. Select the practice-area specialist and the smallest suitable India-specific or neutral skill.
-4. Apply the hierarchy of Constitution, legislation, delegated legislation, binding precedent, applicable court rules and legally relevant regulator material.
+4. Apply the hierarchy of Constitution, legislation, delegated legislation, binding precedent, applicable court rules and legally relevant regulator material. Use India Code, eGazette, official courts, tribunals and regulators through available browsing or authorised research tools; do not imply that vCLO has an unrestricted eCourts API.
 5. Verify the law in force on the relevant date, including commencement, amendments, transitional provisions, stays and later judicial treatment.
 6. Build limitation and procedural timelines only from confirmed trigger dates and verified current rules. Show calculations and unresolved date assumptions.
 7. Use Indian legal terminology, citation and drafting conventions appropriate to the forum and document, while preserving the user's requested language and format where lawful.

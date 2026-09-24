@@ -27,6 +27,7 @@ Do not manufacture a materiality threshold or silently fill an information gap. 
 | --- | --- |
 | Contracts, drafting, redlining or negotiation | [Contracts Agent](contracts-agent.md) |
 | M&A, company, governance or transactions | [Corporate Agent](corporate-agent.md) |
+| Whether to sue, defend, settle or investigate a dispute | [Litigation Agent](litigation-agent.md), using the dispute-viability workflow |
 | Court litigation, pleadings, evidence or hearings | [Litigation Agent](litigation-agent.md) |
 | Arbitration, mediation, conciliation or structured settlement | [Dispute Resolution Agent](dispute-resolution-agent.md) |
 | Privacy, regulatory or compliance | [Compliance Agent](compliance-agent.md) |
@@ -55,7 +56,8 @@ If the governing law or forum is unclear, establish it before selecting jurisdic
 6. If subagents are unavailable, run the same workstreams sequentially and keep their findings distinct.
 7. Reconcile overlaps, contradictions, duplicated risks and inconsistent recommendations.
 8. Apply proportionate verification.
-9. Produce one consolidated work product rather than a bundle of agent responses.
+9. When a final DOCX, PDF or assembled bundle is requested, use [legal-document-producer](../skills/legal-document-producer/SKILL.md) after substantive approval and preserve the source.
+10. Produce one consolidated work product rather than a bundle of agent responses.
 
 ## Verification
 

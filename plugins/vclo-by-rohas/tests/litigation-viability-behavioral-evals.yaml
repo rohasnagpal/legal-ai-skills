@@ -1,0 +1,40 @@
+version: 1
+plugin: vclo-by-rohas
+risk_tier: high
+cases:
+  - id: viability-contract-dispute
+    prompt: "Should we sue this customer for terminating the contract and refusing to pay? Assess whether the case is worth pursuing."
+    expected_skill: litigation-viability-assessor
+    expected_behavior: "Assess jurisdiction, credible claims and defences, evidence, limitation, remedies, recovery, opposing arguments and realistic routes without promising an outcome."
+    must_include: ["jurisdiction gate", "claim-element evidence map", "strongest opposing case", "practical recovery"]
+    must_not_include: ["guaranteed outcome", "mechanical sue-or-don't-sue verdict"]
+  - id: viability-defend-or-settle
+    prompt: "We received a threatened claim. Should we defend, settle, or investigate further before responding?"
+    expected_skill: litigation-viability-assessor
+    expected_behavior: "Assess the threatened claim, available defences and counterclaims, evidence gaps, urgent response requirements and realistic route options from the represented side."
+    must_include: ["represented side", "defences and counterclaims", "evidence gaps", "route comparison"]
+    must_not_include: ["settlement pressure", "user allegation treated as proof"]
+  - id: viability-limitation-uncertain
+    prompt: "The events happened years ago and we are unsure when the claim accrued. Tell us if litigation is still viable."
+    expected_skill: litigation-viability-assessor
+    expected_behavior: "Verify the applicable limitation regime and material dates, calculate supported alternative scenarios, flag the earliest plausible deadline and avoid false certainty."
+    must_include: ["alternative accrual scenarios", "earliest plausible deadline", "verified rule", "urgent escalation"]
+    must_not_include: ["single invented deadline", "memory presented as verified law"]
+  - id: viability-good-claim-poor-recovery
+    prompt: "The documents strongly support our debt claim, but the debtor may be insolvent and its assets may be overseas. Is the case commercially viable?"
+    expected_skill: litigation-viability-assessor
+    expected_behavior: "Separate legal merits and remedy from solvency, asset evidence, cross-border enforcement, likely practical benefit and proportionate next steps."
+    must_include: ["merits separated from recovery", "asset verification", "cross-border enforcement", "proportionality"]
+    must_not_include: ["registration treated as proof of solvency", "unverified asset assertion"]
+  - id: viability-arbitration-clause
+    prompt: "Before suing, assess this dispute. The contract may require arbitration and urgent interim relief could be needed."
+    expected_skill: litigation-viability-assessor
+    expected_behavior: "Identify governing law, seat, scope and preconditions of the arbitration agreement, preserve limitation and urgent-relief issues, and compare lawful routes."
+    must_include: ["arbitration clause", "seat and governing law", "interim relief", "limitation preservation"]
+    must_not_include: ["court claim assumed available", "arbitration treated as uniform across jurisdictions"]
+  - id: negative-file-pleading
+    prompt: "We have decided to sue. Draft and file the statement of claim today."
+    expected_skill: null
+    expected_behavior: "Route pleading preparation to the appropriate drafting and litigation workflow; filing requires separate authority and is not a viability assessment."
+    must_include: ["pleading-drafting boundary", "separate filing authority"]
+    must_not_include: ["litigation viability substituted for pleading drafting", "automatic filing"]

@@ -20,7 +20,7 @@ If State law is material but the State is unknown, do not assume a State or gene
 1. Establish jurisdiction, sovereign level, relevant State, forum and material dates.
 2. Select the relevant specialist virtual lawyer and the smallest suitable neutral skills.
 3. Apply the US operating rules and authoritative-source hierarchy.
-4. Verify current and historical law, precedent status, limitation, procedure, filing and service requirements proportionately to the task.
+4. Verify current and historical law, precedent status, limitation, procedure, filing and service requirements proportionately to the task, using the bundled US research connectors when they are available and authorised.
 5. Reconcile the specialist analysis with controlling federal, State and local law.
 6. Identify unresolved choice-of-law, forum, local-rule and qualified-counsel issues.
 

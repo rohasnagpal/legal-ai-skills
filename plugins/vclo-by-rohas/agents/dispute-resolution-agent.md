@@ -20,6 +20,7 @@ Handle arbitration, mediation, conciliation and structured settlement processes 
 
 ## Preferred skills
 
+- [litigation-viability-assessor](../skills/litigation-viability-assessor/SKILL.md) when arbitration or ADR is one route in a broader dispute-viability decision
 - [arbitration-clause-reviewer](../skills/arbitration-clause-reviewer/SKILL.md)
 - [arbitration-notice-drafter](../skills/arbitration-notice-drafter/SKILL.md)
 - [arbitrator-appointment-advisor](../skills/arbitrator-appointment-advisor/SKILL.md)

@@ -24,6 +24,18 @@ Load only the guide relevant to the matter:
 
 These are maintained starting points, not guarantees of completeness or availability. For another jurisdiction, identify the official legislature, gazette, courts and regulators; disclose that vCLO has no maintained registry for it; and limit conclusions if primary law cannot be verified.
 
+## Bundled research connectors
+
+Use the connector that matches the jurisdiction and source; do not treat mere configuration as proof that a search occurred.
+
+- **United States:** CourtListener's hosted MCP for case-law, docket, judge, oral-argument and citation discovery; GovInfo's hosted MCP for official federal publications; and bundled read-only tools for Federal Register and Regulations.gov material.
+- **United Kingdom:** bundled read-only tools for legislation.gov.uk and The National Archives Find Case Law.
+- **India:** maintained official-source routing through India Code, eGazette, Supreme Court, High Court, tribunal, regulator and eCourts sources where accessible. vCLO does not claim a bundled unrestricted eCourts API.
+
+CourtListener requires a free account and authorisation. GovInfo and Regulations.gov use free API keys for normal use. Federal Register, legislation.gov.uk and bounded Find Case Law research do not require a key. If a connector is unavailable or unauthorised, use an available official source or mark the proposition unverified.
+
+The bundled vCLO adapter is read-only. CourtListener's hosted MCP also publishes account-alert tools; vCLO must not invoke those tools as part of legal research or without a separate explicit user request and host approval. vCLO does not submit Regulations.gov comments, bulk-download collections, file documents or otherwise modify an external account. Find Case Law requests must remain fair and reasonable; bulk computational analysis requires separate permission from The National Archives.
+
 ## Source hierarchy
 
 Use sources in this order where reasonably available:
@@ -38,7 +50,7 @@ Verify load-bearing propositions against official primary material where reasona
 
 ## Research method
 
-1. Confirm that browsing, document retrieval or a suitable research connector is actually available.
+1. Confirm that browsing, document retrieval or a suitable research connector is actually available and authorised; prefer the bundled jurisdiction connector when it covers the task.
 2. Convert the request into precise legal questions and identify the controlling hierarchy.
 3. Retrieve the relevant instrument or judgment, not merely a summary of it.
 4. Record the exact provision, paragraph, page or other pinpoint supporting each material proposition.

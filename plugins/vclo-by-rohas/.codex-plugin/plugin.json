@@ -1,7 +1,7 @@
 {
   "name": "vclo-by-rohas",
-  "version": "3.1.0",
-  "description": "vCLO is a free, open-source AI legal team with one virtual Chief Legal Officer, nine specialist virtual lawyers, India Counsel, MVP US and UK Counsel, 183 specialist legal skills, nine coordinated workflows and company-registry access.",
+  "version": "3.3.0",
+  "description": "vCLO is a free, open-source AI legal team with one virtual Chief Legal Officer, nine specialist virtual lawyers, India Counsel, MVP US and UK Counsel, 185 specialist legal skills, ten coordinated workflows, company registries, official legal-research connectors and local document production.",
   "author": {
     "name": "Rohas Nagpal",
     "email": "rohasnagpal@gmail.com",
@@ -44,12 +44,66 @@
       ],
       "startup_timeout_sec": 20,
       "tool_timeout_sec": 60
+    },
+    "document-production": {
+      "command": "./mcp/launch-document-production",
+      "args": [],
+      "cwd": ".",
+      "env_vars": [
+        "CODEX_MCP_NODE_PATH",
+        "VCLO_PANDOC_PATH",
+        "VCLO_SOFFICE_PATH",
+        "VCLO_OCRMYPDF_PATH",
+        "VCLO_PDFUNITE_PATH",
+        "VCLO_QPDF_PATH"
+      ],
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 120
+    },
+    "legal-research": {
+      "command": "./mcp/launch-legal-research",
+      "args": [],
+      "cwd": ".",
+      "env_vars": [
+        "CODEX_MCP_NODE_PATH",
+        "REGULATIONS_GOV_API_KEY",
+        "HTTPS_PROXY",
+        "HTTP_PROXY",
+        "NO_PROXY",
+        "NODE_EXTRA_CA_CERTS"
+      ],
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 60
+    },
+    "courtlistener": {
+      "type": "http",
+      "url": "https://mcp.courtlistener.com/",
+      "disabled_tools": [
+        "create_search_alert",
+        "delete_search_alert",
+        "subscribe_to_docket_alert",
+        "unsubscribe_from_docket_alert"
+      ],
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 60
+    },
+    "govinfo": {
+      "type": "http",
+      "url": "https://api.govinfo.gov/mcp",
+      "http_headers": {
+        "x-api-key": "DEMO_KEY"
+      },
+      "env_http_headers": {
+        "x-api-key": "GOVINFO_API_KEY"
+      },
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 60
     }
   },
   "interface": {
     "displayName": "vCLO \u2014 Rohas Legal AI",
     "shortDescription": "Scalable AI legal team",
-    "longDescription": "One vCLO installation gives lawyers and businesses a virtual Chief Legal Officer, nine specialist virtual lawyers, India Counsel, MVP US and UK Counsel, 183 specialist legal skills and nine coordinated workflows. It coordinates complex matters such as M&A due diligence, contract negotiation, litigation, arbitration, financing, compliance, data-breach response and internal investigations. The jurisdiction lawyers supply local-law routing, authority, procedure and verification rules within the same plugin.",
+    "longDescription": "One vCLO installation gives lawyers and businesses a virtual Chief Legal Officer, nine specialist virtual lawyers, India Counsel, MVP US and UK Counsel, 185 specialist legal skills and ten coordinated workflows. It coordinates complex matters, including dispute-viability assessments, and includes company registries, official US and UK legal-research connectors, plus local document-production tools. Jurisdiction lawyers supply local-law routing, authority, procedure and verification rules within the same plugin.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": [
@@ -64,7 +118,7 @@
     "defaultPrompt": [
       "Run buyer-side legal due diligence on this acquisition and consolidate the key risks.",
       "Review this MSA for the customer, propose redlines, and prepare negotiation positions.",
-      "Prepare our litigation case strategy from these pleadings, evidence, and deadlines."
+      "Assess whether and how we should pursue this dispute, including evidence, limitation, recovery, and the opposing case."
     ]
   }
 }

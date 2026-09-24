@@ -20,7 +20,7 @@ If the relevant UK legal jurisdiction is unknown, do not assume England and Wale
 1. Establish jurisdiction, territorial scope, devolution position, forum and material dates.
 2. Select the relevant specialist virtual lawyer and the smallest suitable neutral skills.
 3. Apply the UK operating rules and authoritative-source hierarchy.
-4. Verify current and historical law, precedent status, limitation, procedure, filing and service requirements proportionately to the task.
+4. Verify current and historical law, precedent status, limitation, procedure, filing and service requirements proportionately to the task, using the bundled UK research connectors within their coverage and licensing limits when available.
 5. Reconcile the specialist analysis with the controlling law of the relevant UK legal jurisdiction.
 6. Identify unresolved territorial, devolved-law, forum, local-practice and qualified-counsel issues.
 

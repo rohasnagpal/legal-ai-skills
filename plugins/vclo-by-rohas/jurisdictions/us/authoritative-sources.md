@@ -9,9 +9,9 @@ Never treat “US law” as a single body of law. Identify whether the issue is 
 - **[Constitution Annotated](https://constitution.congress.gov/)** — Congressional Research Service analysis linked to constitutional text and Supreme Court authority; verify the underlying provisions and opinions.
 - **[United States Code](https://uscode.house.gov/)** — codified federal statutes from the Office of the Law Revision Counsel.
 - **[Congress.gov](https://www.congress.gov/)** — bills, public laws, legislative actions, committee material and legislative history.
-- **[GovInfo](https://www.govinfo.gov/)** — authenticated or official federal publications, including Statutes at Large, the Code of Federal Regulations and Federal Register collections.
+- **[GovInfo](https://www.govinfo.gov/)** — authenticated or official federal publications, including Statutes at Large, the Code of Federal Regulations and Federal Register collections. vCLO can use GovInfo's hosted MCP when a free API key is configured.
 - **[eCFR](https://www.ecfr.gov/)** — current editorial presentation of federal regulations. Check status and recent amendments against Federal Register or GovInfo material where legal effect or timing matters.
-- **[Federal Register](https://www.federalregister.gov/)** — rules, proposed rules, notices and presidential documents; use publication and effective-date information rather than search snippets.
+- **[Federal Register](https://www.federalregister.gov/)** — rules, proposed rules, notices and presidential documents; vCLO includes bounded read-only API tools, but the full publication and effective-date history remain controlling over a search result.
 
 ## Federal courts and procedure — official
 
@@ -24,7 +24,7 @@ Never treat “US law” as a single body of law. Identify whether the issue is 
 ## Agencies and executive material — official
 
 - **Relevant federal or State agency website** — statutes administered, regulations, adjudications, enforcement releases, forms and guidance. Distinguish binding instruments and adjudications from manuals, FAQs, speeches and other guidance.
-- **[Regulations.gov](https://www.regulations.gov/)** — federal rulemaking dockets, comments and supporting material; verify final legal text and effective dates through official publication.
+- **[Regulations.gov](https://www.regulations.gov/)** — federal rulemaking dockets, comments and supporting material; vCLO includes read-only API tools when a free key is configured. Verify final legal text and effective dates through official publication.
 - **[White House presidential actions](https://www.whitehouse.gov/presidential-actions/)** — current administration materials; verify publication and legal status through the Federal Register where relevant.
 
 ## State law — official-first route
@@ -41,7 +41,7 @@ Do not use federal sources as a substitute for State law, and do not assume that
 
 ## Reputable free discovery sources
 
-- **[CourtListener](https://www.courtlistener.com/)** — case-law and citation discovery, opinion text and RECAP documents where available.
+- **[CourtListener](https://www.courtlistener.com/)** — case-law and citation discovery, opinion text and RECAP documents where available. vCLO connects to CourtListener's hosted MCP after the user authorises a free account.
 - **[Cornell Legal Information Institute](https://www.law.cornell.edu/)** — readable federal materials, Supreme Court resources and discovery links.
 - **[Justia Law](https://law.justia.com/)** — federal and State case and code discovery.
 

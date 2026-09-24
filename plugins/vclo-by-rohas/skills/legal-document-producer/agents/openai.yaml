@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Document Producer"
+  short_description: "Produce polished legal DOCX and PDF deliverables"
+  default_prompt: "Use $legal-document-producer to format and produce this legal document as a polished DOCX or PDF."

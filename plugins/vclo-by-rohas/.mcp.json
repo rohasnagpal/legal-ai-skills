@@ -5,6 +5,32 @@
       "args": [
         "${CLAUDE_PLUGIN_ROOT}/mcp/company-registry-server.mjs"
       ]
+    },
+    "document-production": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/mcp/document-production-server.mjs"
+      ]
+    },
+    "legal-research": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/mcp/legal-research-server.mjs"
+      ],
+      "env": {
+        "REGULATIONS_GOV_API_KEY": "${REGULATIONS_GOV_API_KEY:-}"
+      }
+    },
+    "courtlistener": {
+      "type": "http",
+      "url": "https://mcp.courtlistener.com/"
+    },
+    "govinfo": {
+      "type": "http",
+      "url": "https://api.govinfo.gov/mcp",
+      "headers": {
+        "x-api-key": "${GOVINFO_API_KEY:-DEMO_KEY}"
+      }
     }
   }
 }

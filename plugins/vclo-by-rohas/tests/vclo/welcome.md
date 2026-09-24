@@ -15,7 +15,7 @@ Implicitly activate the vCLO skill and use Welcome mode. Do not start a substant
 ## Behaviour assertions
 
 - Identifies vCLO as the user's AI legal team by Rohas.
-- States that vCLO includes one virtual Chief Legal Officer, nine specialist virtual lawyers, India, US and UK Counsel, 42 India-specific skills, 183 specialist legal skills and nine coordinated legal workflows.
+- States that vCLO includes one virtual Chief Legal Officer, nine specialist virtual lawyers, India, US and UK Counsel, 42 India-specific skills, 185 specialist legal skills and ten coordinated legal workflows.
 - Identifies the built-in SEC EDGAR, GLEIF and UK Companies House registry sources.
 - Mentions secure connections for documents, email, calendars, cloud storage, GitHub and legal research without claiming that an account is already connected.
 - Asks for the legal matter, represented party and relevant jurisdiction, and offers to assemble the appropriate virtual legal team.

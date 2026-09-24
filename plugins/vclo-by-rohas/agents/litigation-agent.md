@@ -19,6 +19,7 @@ Handle civil and criminal court disputes, pleadings, chronology, evidence, discl
 
 ## Preferred skills
 
+- [litigation-viability-assessor](../skills/litigation-viability-assessor/SKILL.md) for pre-action or decision-stage assessment of whether and how to pursue, defend, settle or investigate
 - [pleadings-analyst](../skills/pleadings-analyst/SKILL.md)
 - `vclo-by-rohas:plaint-drafter` for Indian civil and commercial plaints
 - `vclo-by-rohas:written-statement-drafter` for Indian civil and commercial defences

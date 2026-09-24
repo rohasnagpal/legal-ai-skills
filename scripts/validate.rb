@@ -442,14 +442,19 @@ begin
       end
       unsupported = server.keys & %w[cwd env_vars startup_timeout_sec tool_timeout_sec]
       errors << "#{claude_mcp_path}: server '#{server_name}' uses Codex-only keys: #{unsupported.join(', ')}" unless unsupported.empty?
-      errors << "#{claude_mcp_path}: server '#{server_name}' must use command 'node' for cross-platform startup" unless server['command'] == 'node'
-      args = server['args']
-      script_arg = args.is_a?(Array) && args.find { |arg| arg.is_a?(String) && arg.start_with?('${CLAUDE_PLUGIN_ROOT}/') }
-      if script_arg.nil?
-        errors << "#{claude_mcp_path}: server '#{server_name}' needs a ${CLAUDE_PLUGIN_ROOT}/... script argument"
+      if server['url']
+        errors << "#{claude_mcp_path}: remote server '#{server_name}' must use type 'http'" unless server['type'] == 'http'
+        errors << "#{claude_mcp_path}: remote server '#{server_name}' must use an HTTPS URL" unless server['url'].to_s.start_with?('https://')
       else
-        resolved_script = script_arg.sub('${CLAUDE_PLUGIN_ROOT}', File.expand_path('plugins/vclo-by-rohas'))
-        errors << "#{claude_mcp_path}: server '#{server_name}' script does not exist" unless File.file?(resolved_script)
+        errors << "#{claude_mcp_path}: server '#{server_name}' must use command 'node' for cross-platform startup" unless server['command'] == 'node'
+        args = server['args']
+        script_arg = args.is_a?(Array) && args.find { |arg| arg.is_a?(String) && arg.start_with?('${CLAUDE_PLUGIN_ROOT}/') }
+        if script_arg.nil?
+          errors << "#{claude_mcp_path}: server '#{server_name}' needs a ${CLAUDE_PLUGIN_ROOT}/... script argument"
+        else
+          resolved_script = script_arg.sub('${CLAUDE_PLUGIN_ROOT}', File.expand_path('plugins/vclo-by-rohas'))
+          errors << "#{claude_mcp_path}: server '#{server_name}' script does not exist" unless File.file?(resolved_script)
+        end
       end
     end
   end
@@ -605,11 +610,13 @@ vclo_required_files = %w[
   plugins/vclo-by-rohas/workflows/m-and-a-due-diligence.md
   plugins/vclo-by-rohas/workflows/contract-review-and-negotiation.md
   plugins/vclo-by-rohas/workflows/litigation-preparation.md
+  plugins/vclo-by-rohas/workflows/dispute-viability-assessment.md
   plugins/vclo-by-rohas/workflows/regulatory-compliance-review.md
   plugins/vclo-by-rohas/workflows/data-breach-response.md
   plugins/vclo-by-rohas/workflows/internal-investigation.md
   plugins/vclo-by-rohas/integrations/README.md
   plugins/vclo-by-rohas/integrations/document-sources.md
+  plugins/vclo-by-rohas/integrations/document-production.md
   plugins/vclo-by-rohas/integrations/email-and-calendar.md
   plugins/vclo-by-rohas/integrations/company-registries.md
   plugins/vclo-by-rohas/integrations/legal-research.md
@@ -618,10 +625,17 @@ vclo_required_files = %w[
   plugins/vclo-by-rohas/mcp/launch-company-registry
   plugins/vclo-by-rohas/mcp/company-registry-server.mjs
   plugins/vclo-by-rohas/mcp/company-registry-server.test.mjs
+  plugins/vclo-by-rohas/mcp/launch-document-production
+  plugins/vclo-by-rohas/mcp/document-production-server.mjs
+  plugins/vclo-by-rohas/mcp/document-production-server.test.mjs
+  plugins/vclo-by-rohas/mcp/launch-legal-research
+  plugins/vclo-by-rohas/mcp/legal-research-server.mjs
+  plugins/vclo-by-rohas/mcp/legal-research-server.test.mjs
   plugins/vclo-by-rohas/mcp/README.md
   plugins/vclo-by-rohas/assets/vclo/due-diligence-report-template.md
   plugins/vclo-by-rohas/assets/vclo/issue-register-template.md
   plugins/vclo-by-rohas/assets/vclo/legal-matter-summary-template.md
+  plugins/vclo-by-rohas/assets/vclo/litigation-viability-report-template.html
   plugins/vclo-by-rohas/assets/vclo/verification-status-template.md
   plugins/vclo-by-rohas/tests/vclo/m-and-a-due-diligence.md
   plugins/vclo-by-rohas/tests/vclo/contract-review.md
@@ -711,6 +725,26 @@ legal_source_requirements.each do |path, required_urls|
   end
 end
 
+litigation_report_template_path = 'plugins/vclo-by-rohas/assets/vclo/litigation-viability-report-template.html'
+if File.file?(litigation_report_template_path)
+  litigation_report_template = File.read(litigation_report_template_path, encoding: 'UTF-8')
+  [
+    '@page',
+    'application/ld+json',
+    '{{SOURCES_VERIFIED}}',
+    '{{CLAIMS_ANALYSIS}}',
+    '{{EVIDENCE_MATRIX}}',
+    '{{OPPOSING_CASE}}',
+    '{{LIMITATION_TABLE}}',
+    '{{PRACTICALITY_AND_ENFORCEMENT}}',
+    '{{LAWYER_BRIEFING_NOTE}}',
+    '{{SOURCES_AND_VERIFICATION}}'
+  ].each do |requirement|
+    errors << "#{litigation_report_template_path}: missing required report feature '#{requirement}'" unless litigation_report_template.include?(requirement)
+  end
+  errors << "#{litigation_report_template_path}: must not load external JavaScript" if litigation_report_template.match?(%r{<script\b[^>]+src=}i)
+end
+
 vclo_markdown_files = Dir.glob('plugins/*/{agents,workflows,integrations,jurisdictions,assets/vclo,tests/vclo}/**/*.md').sort
 vclo_markdown_files.each do |f|
   content = File.read(f, encoding: 'UTF-8')
@@ -747,7 +781,7 @@ end
 
 workflow_headings = ['## Trigger', '## Required inputs', '## Verification', '## Deliverable', '## Fallback behaviour']
 workflow_files = Dir.glob('plugins/vclo-by-rohas/workflows/*.md').sort
-errors << "vCLO: expected 9 coordinated workflows, found #{workflow_files.length}" unless workflow_files.length == 9
+errors << "vCLO: expected 10 coordinated workflows, found #{workflow_files.length}" unless workflow_files.length == 10
 workflow_files.each do |f|
   content = File.read(f, encoding: 'UTF-8')
   workflow_headings.each do |heading|

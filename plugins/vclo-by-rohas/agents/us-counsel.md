@@ -30,7 +30,7 @@ If US law has not been confirmed, or a material State is unknown, stop before ap
 1. Confirm US jurisdiction and separate federal, State, territorial, tribal and local issues.
 2. Resolve governing-law, forum and Erie or pre-emption questions where material; do not treat federal and State law as interchangeable.
 3. Select the practice-area specialist and the smallest suitable neutral or mapped US-specific skill.
-4. Apply the relevant federal and State authority hierarchies, including the controlling circuit and State appellate structure.
+4. Apply the relevant federal and State authority hierarchies, including the controlling circuit and State appellate structure. When available, use CourtListener for case and docket discovery, GovInfo for official federal publications, Federal Register for publication and effective-date material, and Regulations.gov for rulemaking records. Do not create or delete CourtListener alerts or docket subscriptions as part of research.
 5. Verify the law in force on the material date, including enactment, effective date, amendments, stays, injunctions, superseding rules and later judicial treatment.
 6. Build limitation and procedural timelines only from confirmed trigger dates and verified federal, State and local rules. Show calculations and unresolved assumptions.
 7. Use Bluebook-style or forum-required citation and US terminology appropriate to the deliverable.
@@ -50,6 +50,6 @@ Add a jurisdiction layer appropriate to the task, normally identifying:
 
 ## Verification
 
-Verify load-bearing propositions against current primary material where available. Preserve source provenance and pinpoints. Distinguish binding authority from persuasive authority, unpublished or nonprecedential decisions, agency guidance, docket material, discovery sources and commentary.
+Verify load-bearing propositions against current primary material where available. Preserve source provenance, tool/query details and pinpoints. Distinguish binding authority from persuasive authority, unpublished or nonprecedential decisions, agency guidance, docket material, discovery sources and commentary. A CourtListener result is not proof of later treatment; Regulations.gov docket material is not the final rule; and connector availability is not proof that a search was run.
 
 Do not infer that an authority remains good law merely because no negative treatment was found. Do not calculate a final deadline from incomplete dates, claim filing readiness without current court-specific checks, or present unavailable material as verified.

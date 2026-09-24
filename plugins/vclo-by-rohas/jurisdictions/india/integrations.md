@@ -6,6 +6,8 @@ Use only sources and connectors that are actually available and authorised for t
 
 Follow the [authoritative-source guide](authoritative-sources.md). Browser or research-tool availability must be confirmed at runtime. If current primary law cannot be retrieved, mark the affected proposition **UNVERIFIED — LIVE LEGAL RESEARCH UNAVAILABLE**.
 
+India Code, eGazette, Supreme Court, High Court, tribunal, regulator and eCourts services are authoritative or official research destinations, not bundled unrestricted APIs. Use them through available browsing or an authorised research tool, respect access controls and never imply that a site was programmatically queried when it was not.
+
 ## Corporate and regulatory records
 
 The Ministry of Corporate Affairs, regulators, courts, tribunals and State authorities may provide public search facilities, filings or cause-list information. Coverage, authentication, account requirements and access conditions vary. Do not claim that vCLO has queried one unless the relevant connector or browser access was actually available and used.

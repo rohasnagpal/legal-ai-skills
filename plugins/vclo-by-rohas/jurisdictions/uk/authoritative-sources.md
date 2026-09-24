@@ -6,7 +6,7 @@ Identify whether the matter concerns England and Wales, Scotland, Northern Irela
 
 ## Legislation — official
 
-- **[legislation.gov.uk](https://www.legislation.gov.uk/)** — UK Public General Acts, statutory instruments, devolved legislation and historical or revised versions where available.
+- **[legislation.gov.uk](https://www.legislation.gov.uk/)** — UK Public General Acts, statutory instruments, devolved legislation and historical or revised versions where available. vCLO includes bounded read-only search and retrieval tools.
 - **Relevant legislature** — [UK Parliament](https://www.parliament.uk/), [Scottish Parliament](https://www.parliament.scot/), [Senedd Cymru](https://senedd.wales/) or [Northern Ireland Assembly](https://www.niassembly.gov.uk/) for bills, legislative history and official parliamentary material.
 - **Relevant government or regulator** — commencement orders, statutory guidance, rules and official instruments within that body's remit.
 
@@ -14,7 +14,7 @@ Check territorial extent, application, commencement provisions, amendment histor
 
 ## Courts and tribunals — official
 
-- **[The National Archives — Find Case Law](https://caselaw.nationalarchives.gov.uk/)** — official judgments and tribunal decisions, principally England and Wales plus UK-wide Supreme Court and Privy Council material.
+- **[The National Archives — Find Case Law](https://caselaw.nationalarchives.gov.uk/)** — official judgments and tribunal decisions, principally England and Wales plus UK-wide Supreme Court and Privy Council material. vCLO includes bounded read-only search and retrieval tools subject to the service's reasonable-use and licensing terms.
 - **[UK Supreme Court cases](https://www.supremecourt.uk/cases)** — case information, judgments and linked materials.
 - **[Courts and Tribunals Judiciary](https://www.judiciary.uk/)** — England and Wales judgments, rules, practice directions and judicial material.
 - **[Civil Procedure Rules](https://www.justice.gov.uk/courts/procedure-rules/civil)** — rules and practice directions for civil proceedings in England and Wales; verify the current update and any court-specific requirements.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Litigation Viability Assessor"
+  short_description: "Assess whether and how to pursue a dispute"
+  default_prompt: "Use $litigation-viability-assessor to assess this dispute, test both sides, and prepare a source-backed viability report."

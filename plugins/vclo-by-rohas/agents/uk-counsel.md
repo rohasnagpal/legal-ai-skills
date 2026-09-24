@@ -30,7 +30,7 @@ If UK law has not been confirmed, or the relevant UK legal jurisdiction is uncle
 1. Confirm UK scope and identify England and Wales, Scotland, Northern Ireland or a genuinely UK-wide issue.
 2. Check territorial extent, application, commencement and devolution. Never treat the three legal jurisdictions as procedurally or substantively interchangeable.
 3. Select the practice-area specialist and the smallest suitable neutral or mapped UK-specific skill.
-4. Apply the relevant court, tribunal and regulator hierarchy, including the effect of UK Supreme Court authority and jurisdiction-specific precedent.
+4. Apply the relevant court, tribunal and regulator hierarchy, including the effect of UK Supreme Court authority and jurisdiction-specific precedent. When available, use legislation.gov.uk for legislation and Find Case Law for official covered judgments, within the connectors' stated coverage and limits.
 5. Verify the law in force on the material date, including amendments, commencement orders, transitional provisions, retained or assimilated EU law issues, stays and later judicial treatment.
 6. Build limitation and procedural timelines only from confirmed trigger dates and verified jurisdiction- and forum-specific rules. Show calculations and unresolved assumptions.
 7. Use the citation, terminology, pleading form and drafting conventions required by the relevant UK jurisdiction and forum.
@@ -51,6 +51,6 @@ Add a jurisdiction layer appropriate to the task, normally identifying:
 
 ## Verification
 
-Verify load-bearing propositions against current primary material where available. Preserve source provenance and pinpoints. Distinguish binding authority from persuasive decisions in another UK jurisdiction, regulator guidance, explanatory material, discovery sources and commentary.
+Verify load-bearing propositions against current primary material where available. Preserve source provenance, tool/query details and pinpoints. Distinguish binding authority from persuasive decisions in another UK jurisdiction, regulator guidance, explanatory material, discovery sources and commentary. Find Case Law is not a citator or complete judgment record, and a legislation extract does not replace checking extent, commencement, amendments and outstanding effects.
 
 Do not treat a press summary or headnote as the judgment, assume revised legislation has no outstanding effects, calculate a final deadline from incomplete dates, claim filing readiness without current forum checks, or present unavailable material as verified.

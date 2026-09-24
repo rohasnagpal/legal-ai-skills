@@ -18,7 +18,7 @@ If the matter is governed by another jurisdiction, or the governing jurisdiction
 1. Establish jurisdiction, forum, relevant State and legally material dates.
 2. Select the relevant specialist virtual lawyer and the smallest suitable skills.
 3. Apply the India operating rules and authoritative-source hierarchy.
-4. Verify current and historical law, limitation, procedure, filing and service requirements proportionately to the task.
+4. Verify current and historical law, limitation, procedure, filing and service requirements proportionately to the task through available official sources or authorised research tools; do not claim an unrestricted eCourts API.
 5. Reconcile the specialist analysis with Indian substantive and procedural law.
 6. Identify unresolved local-law issues and escalation requirements.
 

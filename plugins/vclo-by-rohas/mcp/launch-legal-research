@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+
+if [ -n "${CODEX_MCP_NODE_PATH:-}" ] && [ -x "${CODEX_MCP_NODE_PATH}" ]; then
+  exec "${CODEX_MCP_NODE_PATH}" "${SCRIPT_DIR}/legal-research-server.mjs"
+fi
+
+if command -v node >/dev/null 2>&1; then
+  exec node "${SCRIPT_DIR}/legal-research-server.mjs"
+fi
+
+echo "vCLO legal research needs Node.js 18 or later. Install Node.js or set CODEX_MCP_NODE_PATH." >&2
+exit 127

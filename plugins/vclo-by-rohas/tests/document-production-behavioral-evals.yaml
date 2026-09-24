@@ -1,0 +1,40 @@
+version: 1
+plugin: vclo-by-rohas
+risk_tier: high
+cases:
+  - id: produce-contract-docx
+    prompt: "The agreement text is approved. Apply our supplied Word template and give me a polished DOCX without changing the clauses."
+    expected_skill: legal-document-producer
+    expected_behavior: "Preserve the approved text, apply the supplied template, produce a new DOCX, check the rendered result and report production exceptions."
+    must_include: ["source preservation", "supplied template", "DOCX quality control"]
+    must_not_include: ["silent substantive rewriting", "source overwrite without permission"]
+  - id: court-pdf-formatting
+    prompt: "Format this completed pleading as a filing PDF for this court using the attached current practice direction."
+    expected_skill: legal-document-producer
+    expected_behavior: "Apply the supplied forum rules, verify the formatting against them, create a separate PDF and avoid claiming filing completion."
+    must_include: ["forum requirements", "separate output", "rendered PDF check"]
+    must_not_include: ["automatic filing", "invented court requirement"]
+  - id: scanned-exhibits-ocr
+    prompt: "Make these scanned PDF exhibits searchable while preserving the page images and page references."
+    expected_skill: legal-document-producer
+    expected_behavior: "Use an available local OCR engine, preserve the source and page sequence, and flag low-confidence or illegible text."
+    must_include: ["local OCR status", "source preservation", "OCR exceptions"]
+    must_not_include: ["OCR text treated as unquestionable evidence"]
+  - id: assemble-hearing-bundle
+    prompt: "Combine these PDFs in the supplied index order into one hearing bundle and report any missing or unreadable item."
+    expected_skill: legal-document-producer
+    expected_behavior: "Validate the ordered inputs, assemble a new PDF with an available local engine, and reconcile the output to the index."
+    must_include: ["ordered input inventory", "new bundle", "completeness check"]
+    must_not_include: ["source deletion", "unreported missing exhibit"]
+  - id: connected-document-delivery
+    prompt: "Save the final opinion to our authorised SharePoint matter folder as a new version and preserve comments."
+    expected_skill: legal-document-producer
+    expected_behavior: "Confirm that a Microsoft connector and write authority are available, preserve comments and versioning, and fall back to a local output if unavailable."
+    must_include: ["connector availability", "authorised destination", "new version"]
+    must_not_include: ["connection assumed", "comments silently removed"]
+  - id: negative-substantive-contract-draft
+    prompt: "Draft a new distribution agreement and decide the indemnity, liability cap and termination position for the supplier."
+    expected_skill: null
+    expected_behavior: "Route substantive agreement drafting to the contract drafter rather than document production."
+    must_include: ["contract drafting boundary"]
+    must_not_include: ["legal-document-producer deciding commercial terms"]

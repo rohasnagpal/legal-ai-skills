@@ -1,6 +1,6 @@
 # vCLO: Virtual Chief Legal Officer
 
-**AI legal team with 9 specialist virtual lawyers and 183 legal skills, built to handle real legal work 24×7.**
+**AI legal team with 9 specialist virtual lawyers and 185 legal skills, built to handle real legal work 24×7.**
 
 Imagine having a team of 9 specialist lawyers.
 Available 24 × 7 × 365.
@@ -12,9 +12,9 @@ Contracts. Corporate. Litigation. Compliance. Employment. IP. Investigations. Le
 
 Give vCLO a legal matter. It brings in the relevant specialists, works through the documents and issues, checks the work, and brings everything together into one coherent output.
 
-Under the hood are 160+ Legal AI Skills covering everyday legal work as well as complex matters such as M&A due diligence, contract negotiations, litigation preparation and internal investigations.
+Under the hood are 185 Legal AI Skills covering everyday legal work as well as complex matters such as M&A due diligence, contract negotiations, litigation viability, litigation preparation and internal investigations.
 
-vCLO helps lawyers, in-house teams, startups and businesses handle legal work using specialist virtual lawyers, coordinated workflows, official company registries and authorised documents and services.
+vCLO helps lawyers, in-house teams, startups and businesses handle legal work using specialist virtual lawyers, coordinated workflows, official company registries, legal-research sources and authorised documents and services.
 
 It can help with:
 
@@ -69,19 +69,25 @@ vCLO
 │   ├── India Counsel owns 42 India-specific skills
 │   ├── US Counsel owns 6 scoped MVP skills
 │   └── UK Counsel owns 6 scoped MVP skills
-├── 183 Specialist Legal Skills
-└── 9 Coordinated Legal Workflows
+├── 185 Specialist Legal Skills
+└── 10 Coordinated Legal Workflows
 ```
 
 A request for M&A legal due diligence, for example, can be divided among corporate, contracts, employment, IP, litigation and compliance specialists, then consolidated into one issue register and report.
 
 The specialist virtual lawyers cover contracts, corporate, court litigation, dispute resolution, compliance, employment, intellectual property, investigations and legal research. India, US and UK Counsel supply the local-law layer. Future jurisdiction modules can use the same internal architecture without creating additional user installations.
 
-The nine coordinated workflows cover [contract review and negotiation](plugins/vclo-by-rohas/workflows/contract-review-and-negotiation.md), [M&A legal due diligence](plugins/vclo-by-rohas/workflows/m-and-a-due-diligence.md), [litigation preparation](plugins/vclo-by-rohas/workflows/litigation-preparation.md), [commercial disputes](plugins/vclo-by-rohas/workflows/commercial-dispute-lifecycle.md), [arbitration](plugins/vclo-by-rohas/workflows/arbitration-lifecycle.md), [financing transactions](plugins/vclo-by-rohas/workflows/financing-transaction.md), [regulatory compliance](plugins/vclo-by-rohas/workflows/regulatory-compliance-review.md), [data-breach response](plugins/vclo-by-rohas/workflows/data-breach-response.md) and [internal investigations](plugins/vclo-by-rohas/workflows/internal-investigation.md).
+The ten coordinated workflows cover [contract review and negotiation](plugins/vclo-by-rohas/workflows/contract-review-and-negotiation.md), [M&A legal due diligence](plugins/vclo-by-rohas/workflows/m-and-a-due-diligence.md), [dispute viability assessment](plugins/vclo-by-rohas/workflows/dispute-viability-assessment.md), [litigation preparation](plugins/vclo-by-rohas/workflows/litigation-preparation.md), [commercial disputes](plugins/vclo-by-rohas/workflows/commercial-dispute-lifecycle.md), [arbitration](plugins/vclo-by-rohas/workflows/arbitration-lifecycle.md), [financing transactions](plugins/vclo-by-rohas/workflows/financing-transaction.md), [regulatory compliance](plugins/vclo-by-rohas/workflows/regulatory-compliance-review.md), [data-breach response](plugins/vclo-by-rohas/workflows/data-breach-response.md) and [internal investigations](plugins/vclo-by-rohas/workflows/internal-investigation.md).
 
 ## Documents and connected services
 
-vCLO can work with documents you provide and, where you authorise access in the host, services such as Google Drive and Docs, Gmail, Google Calendar, SharePoint, OneDrive, Outlook, GitHub and legal-research tools. Its India, US and UK Counsel modules include maintained official-source-first guides and local verification rules. If a source is unavailable, vCLO will identify what remains to be checked instead of presenting it as verified.
+vCLO can work with documents you provide and includes a local document-production adapter for templates, DOCX and PDF creation or conversion, OCR and PDF assembly using available free local engines.
+
+- **Free built-in core:** DOCX, PDF, templates, conversion, OCR and document assembly through the bundled local adapter. It reports which free engines are available before using them and does not upload documents.
+- **Optional user-connected services:** Google Drive and Docs, plus Microsoft 365 services such as OneDrive and SharePoint, when the user connects and authorises them in the host.
+- **Optional enterprise integrations:** iManage and NetDocuments for firms that configure and authorise their existing document-management systems.
+
+vCLO can also use authorised email, calendar and GitHub services exposed by the host. Its India, US and UK Counsel modules include maintained official-source-first guides and local verification rules. If a tool or source is unavailable, vCLO identifies what remains to be done instead of presenting it as completed or verified.
 
 ## Company registries
 
@@ -92,6 +98,16 @@ vCLO includes read-only access to three official sources:
 - **UK Companies House** — UK company profiles, filings, officers, persons with significant control and charges. Companies House may require a free access key.
 
 Ask vCLO to “search the available official registries for *company name* in *jurisdiction*.” Registry coverage is not universal, and an empty result is not proof that an entity does not exist or is in good standing.
+
+## Legal research sources
+
+vCLO includes read-only connections to:
+
+- **United States:** CourtListener, GovInfo, Federal Register and Regulations.gov, alongside SEC EDGAR.
+- **United Kingdom:** legislation.gov.uk and The National Archives Find Case Law, alongside Companies House.
+- **India:** official-source routing through India Code, eGazette, the Supreme Court, High Courts, tribunals, regulators and eCourts services where accessible.
+
+CourtListener requires a free account. GovInfo, Regulations.gov and Companies House may require free user keys. vCLO does not include unrestricted eCourts access, paid databases or a commercial citator, and it does not submit filings or regulatory comments.
 
 ## See it in action
 
@@ -277,6 +293,7 @@ For a one-off plain-language explanation instead of a structured course, see **l
 - **[interim-application-drafter](plugins/vclo-by-rohas/skills/interim-application-drafter/SKILL.md)**: evidence-backed urgent relief, candour, undertakings and workable orders
 - **[legal-hold-planner](plugins/vclo-by-rohas/skills/legal-hold-planner/SKILL.md)**: preservation triggers, custodians, sources, notices, monitoring and release controls
 - **[limitation-checker](plugins/vclo-by-rohas/skills/limitation-checker/SKILL.md)**: competing deadline scenarios, accrual, exclusions, extensions and forum issues
+- **[litigation-viability-assessor](plugins/vclo-by-rohas/skills/litigation-viability-assessor/SKILL.md)**: source-backed “should we sue, defend, settle or investigate?” assessment covering merits, evidence, procedure, remedies, recovery and enforcement
 - **[litigation-strategy-planner](plugins/vclo-by-rohas/skills/litigation-strategy-planner/SKILL.md)**: integrates claims, evidence, limitation, forum, interim relief and cost into one sequenced strategy
 - **[pleadings-analyst](plugins/vclo-by-rohas/skills/pleadings-analyst/SKILL.md)**: claims, defences, admissions, inconsistencies, particulars and live issues
 - **[privilege-log-builder](plugins/vclo-by-rohas/skills/privilege-log-builder/SKILL.md)**: supportable privilege entries, family reconciliation, waiver flags and challenges
@@ -291,6 +308,7 @@ For a one-off plain-language explanation instead of a structured course, see **l
 - **[closure-report-drafter](plugins/vclo-by-rohas/skills/closure-report-drafter/SKILL.md)**: controlled closure, client handoff, obligations, finances and retention
 - **[conflict-checker](plugins/vclo-by-rohas/skills/conflict-checker/SKILL.md)**: confidential party mapping, searches, escalation and clearance records
 - **[costing-estimator](plugins/vclo-by-rohas/skills/costing-estimator/SKILL.md)**: transparent stage budgets, scenarios, assumptions and change controls
+- **[legal-document-producer](plugins/vclo-by-rohas/skills/legal-document-producer/SKILL.md)**: template-aware DOCX and PDF production, conversion, OCR, assembly and final-format quality control
 - **[time-narrative-drafter](plugins/vclo-by-rohas/skills/time-narrative-drafter/SKILL.md)**: accurate, specific and privilege-aware legal time entries
 
 ### privacy
