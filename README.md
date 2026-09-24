@@ -8,6 +8,9 @@ You get:
 - 185 Specialist Legal Skills
 - 10 workflows
 - 8 official legal research sources and connectors
+
+Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com).
+
 ---
 **Virtual Chief Legal Officer (vCLO):** Coordinates specialist virtual lawyers, jurisdiction-specific counsel, legal skills and end-to-end workflows to handle each matter.
 
@@ -77,7 +80,7 @@ vCLO includes jurisdiction-neutral skills plus jurisdiction specific agents in t
 ### 8. Languages:
 vCLO can accept instructions and produce work in languages supported by the selected Codex or Claude model. The maintained skill instructions and legal-source guides are primarily in English, and quality can vary by language. For legal work, verify translations, defined terms, quotations, citations and court or regulator filing-language requirements against authoritative sources or qualified local counsel.
 
-## Install vCLO
+# Install vCLO
 
 ### Codex
 
@@ -103,7 +106,7 @@ Approve the installation, start a new session, and say:
 
 `Hello vCLO`.
 
-## How vCLO works
+# How vCLO works
 
 ```text
 vCLO
@@ -123,7 +126,7 @@ The specialist virtual lawyers cover contracts, corporate, court litigation, dis
 
 The ten coordinated workflows cover [contract review and negotiation](plugins/vclo-by-rohas/workflows/contract-review-and-negotiation.md), [M&A legal due diligence](plugins/vclo-by-rohas/workflows/m-and-a-due-diligence.md), [dispute viability assessment](plugins/vclo-by-rohas/workflows/dispute-viability-assessment.md), [litigation preparation](plugins/vclo-by-rohas/workflows/litigation-preparation.md), [commercial disputes](plugins/vclo-by-rohas/workflows/commercial-dispute-lifecycle.md), [arbitration](plugins/vclo-by-rohas/workflows/arbitration-lifecycle.md), [financing transactions](plugins/vclo-by-rohas/workflows/financing-transaction.md), [regulatory compliance](plugins/vclo-by-rohas/workflows/regulatory-compliance-review.md), [data-breach response](plugins/vclo-by-rohas/workflows/data-breach-response.md) and [internal investigations](plugins/vclo-by-rohas/workflows/internal-investigation.md).
 
-## Documents and connected services
+# Documents and connected services
 
 vCLO can work with documents you provide and includes a local document-production adapter for templates, DOCX and PDF creation or conversion, OCR and PDF assembly using available free local engines.
 
@@ -133,7 +136,7 @@ vCLO can work with documents you provide and includes a local document-productio
 
 vCLO can also use authorised email, calendar and GitHub services exposed by the host. Its India, US and UK Counsel modules include maintained official-source-first guides and local verification rules. If a tool or source is unavailable, vCLO identifies what remains to be done instead of presenting it as completed or verified.
 
-## Company registries
+# Company registries
 
 vCLO includes read-only access to three official sources:
 
@@ -143,7 +146,7 @@ vCLO includes read-only access to three official sources:
 
 Ask vCLO to “search the available official registries for *company name* in *jurisdiction*.” Registry coverage is not universal, and an empty result is not proof that an entity does not exist or is in good standing.
 
-## Legal research sources
+# Legal research sources
 
 vCLO includes read-only connections to:
 
@@ -153,26 +156,17 @@ vCLO includes read-only connections to:
 
 CourtListener requires a free account. GovInfo, Regulations.gov and Companies House may require free user keys. vCLO does not include unrestricted eCourts access, paid databases or a commercial citator, and it does not submit filings or regulatory comments.
 
-## See it in action
+# See it in action
 
 Start with the [two-minute guide](docs/two-minute-start.md), then see fictional demonstrations for [contract negotiation](examples/contract-review-and-negotiation.md), [M&A due diligence](examples/m-and-a-due-diligence.md), an [Indian commercial dispute](examples/india-commercial-dispute.md), [US privacy applicability](examples/us-privacy-applicability.md) and a [UK employment issue](examples/uk-employment-issue.md).
 
-## Important limits
+# Important limits
 
 vCLO works from the facts, documents and access actually available. It identifies missing evidence and unverified law, but it cannot guarantee that a source is complete, an authority remains current, a filing will be accepted or a predicted outcome will occur. Court filing, legal representation, regulated professional advice and consequential external actions require the appropriate authorised human professional. Confidential material should be shared only through systems you are authorised to use.
 
-Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com).
-
 ---
-**Table of Contents**
 
-1. [The Legal AI Skills](#1-the-legal-ai-skills)
-2. [Before you use these](#2-before-you-use-these)
-3. [Contributing](#3-contributing)
-4. [Licence](#4-licence)
-
-# 1. The Legal AI skills
-
+# The Legal AI skills
 
 [advisory](#advisory) ·
 [arbitration](#arbitration) ·
@@ -422,20 +416,7 @@ Formal tax opinions now live in **legal-opinion-drafter** (Advisory) — see abo
 
 ---
 
-# 2. Before you use these
-
-These skills are drafting and analysis aids. They do not give legal advice and
-they are not a substitute for professional judgment.
-
-AI models can be wrong about the law, and can produce citations, section
-numbers and quotations that look correct and are not. Every skill here is
-written to mark what it has verified and what it has not: but that marking is
-itself generated text. **Check every output against primary sources before
-relying on it.**
-
----
-
-# 3. Contributing
+# Contributing
 
 Corrections, bug reports and suggestions are welcome: please open an issue.
 
@@ -448,6 +429,6 @@ Contributions are accepted under the MIT licence.
 
 ---
 
-# 4. Licence
+# Licence
 
 MIT. See [LICENSE](LICENSE).
