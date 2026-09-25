@@ -87,6 +87,19 @@ vCLO can accept instructions and produce work in languages supported by the sele
 ### 9. For law firms
 Need help setting up or customising vCLO? Contact [Rohas Nagpal](https://rohasnagpal.com) at rohasnagpal@gmail.com.
 
+### 10. Sample prompts
+1. Two founders are splitting equity 60/40. Draft a founders' agreement with four-year vesting, a one-year cliff and IP assignment to the company.
+
+2. A UK employer wants to dismiss a remote worker after a failed performance review. What must be established before we can give advice?
+
+3. A customer bought a defective laptop online and the seller refuses to replace it. Can they file a consumer complaint in India, and what compensation can they claim?
+
+4. An employee has reported that her manager is harassing her. As the company, what should we do under India's POSH Act, step by step?
+
+5. We want to launch an online marketplace for customers in California, Texas and New York. Which US state privacy laws might apply, and what facts do we need to confirm?
+
+6. Draft a mutual NDA between two Indian companies exploring a joint venture, with a two-year confidentiality period and arbitration in Mumbai.
+
 # Install vCLO
 
 To install, open Codex / Claude and paste this prompt:
