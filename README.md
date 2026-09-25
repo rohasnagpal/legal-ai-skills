@@ -11,6 +11,10 @@ Install this into your Codex or Claude and you get:
 
 Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com).
 
+To install, open Codex / Claude and paste this prompt:
+
+`Install vCLO from https://github.com/rohasnagpal/legal-ai-skills and say hello vCLO.`
+
 ---
 **Virtual Chief Legal Officer (vCLO):** Coordinates specialist virtual lawyers, jurisdiction-specific counsel, legal skills and end-to-end workflows to handle each matter.
 
@@ -85,29 +89,9 @@ Need help setting up or customising vCLO? Contact [Rohas Nagpal](https://rohasna
 
 # Install vCLO
 
-### Codex
+To install, open Codex / Claude and paste this prompt:
 
-Tell Codex: 
-
-`Install vCLO from https://github.com/rohasnagpal/legal-ai-skills. Register the repository as a plugin source and install vclo-by-rohas@rohas-legal.`
-
-Approve the installation, start a new task, and say 
-
-`Hello vCLO`.
-
-### Claude Code
-
-In Claude Code, run:
-
-`/plugin marketplace add rohasnagpal/legal-ai-skills`
-
-Then run:
-
-`/plugin install vclo-by-rohas@rohas-legal`
-
-Approve the installation, start a new session, and say:
-
-`Hello vCLO`.
+`Install vCLO from https://github.com/rohasnagpal/legal-ai-skills and say hello vCLO.`
 
 # How vCLO works
 
