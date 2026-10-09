@@ -2,14 +2,11 @@
 set -eu
 
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+. "${SCRIPT_DIR}/node-locator.sh"
 
-if [ -n "${CODEX_MCP_NODE_PATH:-}" ] && [ -x "${CODEX_MCP_NODE_PATH}" ]; then
-  exec "${CODEX_MCP_NODE_PATH}" "${SCRIPT_DIR}/document-production-server.mjs"
+if NODE_BIN=$(find_node); then
+  exec "${NODE_BIN}" "${SCRIPT_DIR}/document-production-server.mjs"
 fi
 
-if command -v node >/dev/null 2>&1; then
-  exec node "${SCRIPT_DIR}/document-production-server.mjs"
-fi
-
-echo "Legal AI Skills document-production tools require Node.js or CODEX_MCP_NODE_PATH." >&2
+echo "Legal AI Skills document-production tools needs Node.js 18 or later. Install Node.js or set CODEX_MCP_NODE_PATH." >&2
 exit 127

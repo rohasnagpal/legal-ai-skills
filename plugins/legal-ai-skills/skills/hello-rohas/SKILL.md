@@ -29,9 +29,10 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
 > | **Managing Partner** | Takes your matter, picks the right lawyer, reviews the final work |
 > | **17 Specialist Lawyers** | Corporate · Contracts · Litigation · Dispute Resolution · Criminal Defence · Family · Real Estate · Tax · Insolvency · Banking & Finance · Employment · IP · Compliance · Consumer Protection · Public Law & Regulatory · Investigations · Legal Research |
 > | **3 Jurisdiction Counsel** | 🇮🇳 India · 🇺🇸 US · 🇬🇧 UK |
-> | **226 Legal Skills · 20 Workflows** | Review, drafting, research, due diligence, evidence, filings |
+> | **226 Legal Skills** | Review, drafting, research, due diligence, evidence, filings |
+> | **20 Workflows** | Divorce, RERA, M&A, litigation, insolvency, tax and more |
 >
-> **Research sources:** <k> of 14 connected [; not available: name (reason), …]. Indian sources are reached through official websites where accessible.
+> **Research sources:** <status line — see below>. Indian sources are reached through official websites where accessible.
 >
 > **To start, tell me:**
 > 1. What happened, or what you need done
@@ -44,7 +45,13 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
 >
 > Before sharing client documents, confirm your AI setup meets your confidentiality obligations. Outputs need review by a qualified lawyer before you rely on them.
 
-Reasons to use in the status line: "sign-in needed", "not started", "rate-limited" where an error says so, or "not installed".
+**Status line.** Use exactly one of these:
+
+- **All connected:** `all 14 connected`
+- **Some connected:** `<k> of 14 connected; not available: <names> (<reason>)`. Group sources that share a reason, for example "SEC EDGAR, GLEIF, Companies House (connector not started)".
+- **None connected:** `none connected in this session. Quit and reopen the app, or start a new session, to load them. The connectors need Node.js 18 or later; you can still work from documents you upload`
+
+Reasons: "sign-in needed" (only authentication tools are listed), "API key not set", "rate-limited" (only where an error says so), or "connector not started" (the plugin's tools are not listed at all). Never say "not installed": if this skill is running, the plugin is installed.
 
 ## Mode 2: Open a matter
 

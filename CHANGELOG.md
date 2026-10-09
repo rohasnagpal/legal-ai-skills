@@ -1,5 +1,14 @@
 # Changelog
 
+## 4.0.1
+
+### Fixed
+
+- **Connectors now start in desktop apps.** macOS desktop apps start with a minimal PATH, so the connectors could not find Node.js and none of them started. The launchers now also look in common install locations (Homebrew, nvm, Volta, fnm) and in the Node.js runtimes bundled with Codex and the ChatGPT app.
+- **Hello Rohas welcome:** Legal Skills and Workflows are on separate rows so the table no longer wraps. The research-source line is shorter: when nothing is connected it says so in one line, with restart and Node.js guidance. It groups unavailable sources by reason and never says "not installed".
+- **eCFR search:** new `part` filter, and guidance for popular names such as "Safeguards Rule" that do not appear in the regulation's own text.
+- **Upgrade notes:** remove all older Rohas plugins (`vclo-by-rohas`, `rohas-legal-ai`, `navigator`, `privacy`) to avoid duplicate skills and connectors, and restart the Codex desktop app after installing.
+
 ## 4.0.0 — Legal AI Skills (formerly vCLO)
 
 vCLO is now **Legal AI Skills by Rohas Nagpal**, organised as an AI law firm.

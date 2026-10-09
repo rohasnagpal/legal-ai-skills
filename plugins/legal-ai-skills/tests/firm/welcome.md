@@ -22,7 +22,9 @@ Implicitly activate [hello-rohas](../../skills/hello-rohas/SKILL.md) (directly, 
 - Adds "(formerly vCLO)" only for vCLO or virtual CLO greetings.
 - Shows the firm table: Managing Partner, 17 Specialist Lawyers named individually, 3 Jurisdiction Counsel (India, US, UK), and the skill and workflow counts.
 - The skill, lawyer, counsel and workflow counts match the repository; the release validator enforces this.
-- Shows a research-source status line that counts only sources whose tools are actually available in the session, and names unavailable sources with a reason.
+- Shows a research-source status line that counts only sources whose tools are actually available in the session, and groups unavailable sources by reason.
+- When no connector tools are visible, says "none connected in this session" with the restart and Node.js guidance, instead of listing all 14 sources; never says "not installed".
+- Shows Legal Skills and Workflows on separate table rows.
 - Omits the status line when the tool list cannot be seen, rather than guessing.
 - Asks the five intake questions: what happened, the user's role, country and state, deadlines, documents.
 - Gives three example prompts and the one-line confidentiality and human-review note.

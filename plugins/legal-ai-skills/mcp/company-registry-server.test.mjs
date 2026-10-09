@@ -58,7 +58,7 @@ test("SEC search treats numeric input as an exact CIK and deduplicates issuers",
 });
 
 test("SEC user agent identifies the project, supplies contact details and permits an override", () => {
-  assert.match(secUserAgent(""), /^Legal-AI-Skills-by-Rohas\/4\.0\.0/);
+  assert.match(secUserAgent(""), /^Legal-AI-Skills-by-Rohas\/4\.0\.1/);
   assert.match(secUserAgent(""), /\S+@\S+/);
   assert.equal(secUserAgent("Example Legal legal@example.test"), "Example Legal legal@example.test");
 });

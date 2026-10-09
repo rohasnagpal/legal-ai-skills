@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "legal-ai-skills",
-      "version": "4.0.0",
+      "version": "4.0.1",
       "source": "./plugins/legal-ai-skills",
       "description": "One installable AI law firm: a Managing Partner, 17 Specialist Lawyers, India, US and UK Jurisdiction Counsel, 226 legal skills, 20 workflows, company registries, official legal-research connectors and local document production. Say Hello Rohas to begin.",
       "author": {

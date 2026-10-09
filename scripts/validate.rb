@@ -753,7 +753,8 @@ if File.file?(welcome_path)
   {
     "**#{counts['specialist_lawyers']} Specialist Lawyers**" => 'specialist lawyer count',
     "**#{counts['jurisdiction_counsel']} Jurisdiction Counsel**" => 'jurisdiction counsel count',
-    "**#{counts['legal_skills']} Legal Skills · #{counts['workflows']} Workflows**" => 'skill and workflow counts'
+    "**#{counts['legal_skills']} Legal Skills**" => 'legal skill count',
+    "**#{counts['workflows']} Workflows**" => 'workflow count'
   }.each do |expected, label|
     errors << "#{welcome_path}: welcome #{label} must read #{expected}" unless welcome.include?(expected)
   end
