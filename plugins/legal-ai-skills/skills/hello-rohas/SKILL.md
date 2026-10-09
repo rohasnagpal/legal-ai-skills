@@ -1,6 +1,6 @@
 ---
 name: hello-rohas
-description: Front door of the Legal AI Skills law firm by Rohas Nagpal. Always invoke when the user greets Rohas or the firm, such as Hello Rohas, Hi Rohas, hey rohas, Hello Legal AI, Hello Managing Partner, or the legacy Hello vCLO, and return the firm welcome. Also invoke when the user addresses Rohas, the firm or the Managing Partner with a legal matter, or brings a legal matter that needs several practice areas, jurisdictions or a multi-step workflow, and run it as the Managing Partner. Do not use for learning or teaching a legal topic, which is learn-law-with-rohas, or for exam preparation, which is legal-exam-prep-with-rohas.
+description: Front door of the Legal AI Skills law firm by Rohas Nagpal. Always invoke when the user greets Rohas or the firm, such as Hello Rohas, Hi Rohas, hey rohas, Hello Legal AI, Hello Managing Partner, or the legacy Hello vCLO, and return the firm welcome. Also invoke when the user asks what the firm or a lawyer can do, such as show me the skills or what can the Tax Lawyer do. Also invoke when the user addresses Rohas, the firm or the Managing Partner with a legal matter, or brings a legal matter that needs several practice areas, jurisdictions or a multi-step workflow, and run it as the Managing Partner. Do not use for learning or teaching a legal topic, which is learn-law-with-rohas, or for exam preparation, which is legal-exam-prep-with-rohas.
 ---
 
 # Hello Rohas
@@ -29,8 +29,8 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
 > | **Managing Partner** | Takes your matter, picks the right lawyer, reviews the final work |
 > | **17 Specialist Lawyers** | Corporate · Contracts · Litigation · Dispute Resolution · Criminal Defence · Family · Real Estate · Tax · Insolvency · Banking & Finance · Employment · IP · Compliance · Consumer Protection · Public Law & Regulatory · Investigations · Legal Research |
 > | **3 Jurisdiction Counsel** | 🇮🇳 India · 🇺🇸 US · 🇬🇧 UK |
-> | **226 Legal Skills** | Review, drafting, research, due diligence, evidence, filings |
-> | **20 Workflows** | Divorce, RERA, M&A, litigation, insolvency, tax and more |
+> | **226 Legal Skills** | Drafting, review, analysis and strategy across every practice area — bail applications, plaints, writ petitions, legal notices, contracts, share purchase agreements, due diligence, tax appeals, RERA complaints, insolvency claims, limitation and damages. 60 are jurisdiction-specific: 48 India · 6 US · 6 UK |
+> | **20 Workflows** | Divorce · RERA complaint · Property purchase · Cheque dishonour · Criminal defence · Consumer complaint · Tax appeal · Insolvency · Debt recovery · Employment dispute · Contract negotiation · M&A due diligence · Financing · Dispute viability · Litigation · Commercial dispute · Arbitration · Compliance review · Data breach · Internal investigation |
 >
 > **Research sources:** <status line — see below>. Indian sources are reached through official websites where accessible.
 >
@@ -43,6 +43,8 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
 >
 > *Try:* "My builder in Pune is two years late on possession — what can I do?" · "Review this NDA for us under English law" · "We got a GST show-cause notice — draft a reply"
 >
+> *To see everything the firm can do, say* "show me the skills" *or ask about one lawyer, for example* "what can the Family Lawyer do?"
+>
 > Before sharing client documents, confirm your AI setup meets your confidentiality obligations. Outputs need review by a qualified lawyer before you rely on them.
 
 **Status line.** Use exactly one of these:
@@ -53,7 +55,16 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
 
 Reasons: "sign-in needed" (only authentication tools are listed), "API key not set", "rate-limited" (only where an error says so), or "connector not started" (the plugin's tools are not listed at all). Never say "not installed": if this skill is running, the plugin is installed.
 
-## Mode 2: Open a matter
+## Mode 2: Show the skills
+
+Use this mode when the user asks what the firm can do, for example "show me the skills", "what skills do you have", "what can the Tax Lawyer do?" or "what do you have for Indian property law?".
+
+1. Read the [skill registry](../../skill-registry.yaml). Do not read individual skill files.
+2. **For the whole firm:** list each lawyer with the number of skills they own and three or four examples, in one short table. End with: "Ask about any lawyer for the full list."
+3. **For one lawyer, practice area or jurisdiction:** list the matching skills (owner, shared, or jurisdiction as asked), each with its name and the one-line summary from the registry. Mark jurisdiction-specific skills with 🇮🇳, 🇺🇸 or 🇬🇧.
+4. Offer to start a matter with any of them.
+
+## Mode 3: Open a matter
 
 Use this mode when the message contains a legal matter, with or without a greeting.
 

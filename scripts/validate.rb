@@ -758,6 +758,12 @@ if File.file?(welcome_path)
   }.each do |expected, label|
     errors << "#{welcome_path}: welcome #{label} must read #{expected}" unless welcome.include?(expected)
   end
+  by_jurisdiction = registry['skills'].select { |skill| skill['counts_as_legal_skill'] }.group_by { |skill| skill['jurisdiction'] }.transform_values(&:length)
+  split = "#{counts['jurisdiction_specific_skills']} are jurisdiction-specific: #{by_jurisdiction['india'].to_i} India · #{by_jurisdiction['us'].to_i} US · #{by_jurisdiction['uk'].to_i} UK"
+  errors << "#{welcome_path}: welcome jurisdiction split must read '#{split}'" unless welcome.include?(split)
+  welcome_workflow_row = welcome[/^> \| \*\*\d+ Workflows\*\* \| (.+) \|$/, 1].to_s
+  listed = welcome_workflow_row.split(' · ').length
+  errors << "#{welcome_path}: welcome lists #{listed} workflows; expected #{counts['workflows']}" unless listed == counts['workflows']
 end
 published_count_files = %w[README.md AGENTS.md]
 published_count_files.each do |path|
