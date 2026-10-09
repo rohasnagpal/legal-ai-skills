@@ -6,7 +6,8 @@ To install **Legal AI Skills by Rohas Nagpal**, open Codex or Claude and run thi
 Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and say "Hello Rohas".
 ```
 
-<img width="1552" height="949" alt="Legal AI Skills in Codex" src="https://github.com/user-attachments/assets/99efec5e-b82c-4a23-adb4-9fddf1581f1c" />
+<img width="949" height="799" alt="image" src="https://github.com/user-attachments/assets/1ab803f3-7578-4e67-85f2-a8dead314202" />
+
 
 ## Here's What You Get
 
