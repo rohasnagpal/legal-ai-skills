@@ -6,6 +6,8 @@ To install **Legal AI Skills by Rohas Nagpal**, open Codex or Claude and run thi
 Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and say "Hello Rohas".
 ```
 
+<img width="1552" height="949" alt="Legal AI Skills in Codex" src="https://github.com/user-attachments/assets/99efec5e-b82c-4a23-adb4-9fddf1581f1c" />
+
 ## Here's What You Get
 
 - **1 Managing Partner:** Receives matters, assigns specialist lawyers, coordinates work and reviews final outputs.
@@ -181,6 +183,22 @@ The firm also includes a local document-production adapter for DOCX and PDF crea
 ## See It in Action
 
 Start with the [two-minute guide](docs/two-minute-start.md), then see fictional demonstrations for an [Indian divorce](examples/india-divorce.md), a [RERA complaint](examples/rera-complaint.md), [contract negotiation](examples/contract-review-and-negotiation.md), [M&A due diligence](examples/m-and-a-due-diligence.md), an [Indian commercial dispute](examples/india-commercial-dispute.md), [US privacy applicability](examples/us-privacy-applicability.md) and a [UK employment issue](examples/uk-employment-issue.md).
+
+---
+
+## Sample Prompts
+
+1. Two founders are splitting equity 60/40. Draft a founders' agreement with four-year vesting, a one-year cliff and IP assignment to the company.
+
+2. A UK employer wants to dismiss a remote worker after a failed performance review. What must be established before we can give advice?
+
+3. A customer bought a defective laptop online and the seller refuses to replace it. Can they file a consumer complaint in India, and what compensation can they claim?
+
+4. An employee has reported that her manager is harassing her. As the company, what should we do under India's POSH Act, step by step?
+
+5. We want to launch an online marketplace for customers in California, Texas and New York. Which US state privacy laws might apply, and what facts do we need to confirm?
+
+6. Draft a mutual NDA between two Indian companies exploring a joint venture, with a two-year confidentiality period and arbitration in Mumbai.
 
 ---
 
