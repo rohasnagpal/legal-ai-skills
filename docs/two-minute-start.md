@@ -17,7 +17,12 @@ Or install manually in Claude Code:
 /plugin install legal-ai-skills@rohas-legal
 ```
 
-In Codex, register the repository as a plugin source and install `legal-ai-skills@rohas-legal`.
+Or from a terminal:
+
+```bash
+claude plugin marketplace add rohasnagpal/legal-ai-skills && claude plugin install legal-ai-skills@rohas-legal
+codex plugin marketplace add rohasnagpal/legal-ai-skills && codex plugin add legal-ai-skills@rohas-legal
+```
 
 For regular GovInfo use, get a free api.data.gov key and set `GOVINFO_API_KEY` before starting Codex or Claude Code.
 

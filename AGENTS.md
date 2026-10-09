@@ -12,20 +12,33 @@ The user's prompt is usually: *Install Legal AI Skills from https://github.com/r
 
 **Claude Code**
 
-```text
-/plugin marketplace add rohasnagpal/legal-ai-skills
-/plugin install legal-ai-skills@rohas-legal
+Run these in the terminal yourself; do not ask the user to type them:
+
+```bash
+claude plugin marketplace add rohasnagpal/legal-ai-skills
+claude plugin install legal-ai-skills@rohas-legal
 ```
+
+If the first command says the `rohas-legal` marketplace already exists, run `claude plugin marketplace update rohas-legal` instead, then the install command. Check the result with `claude plugin list`.
+
+Only if you cannot run terminal commands, ask the user to type `/plugin marketplace add rohasnagpal/legal-ai-skills` and then `/plugin install legal-ai-skills@rohas-legal`.
 
 **Codex**
 
-Register this repository as a plugin marketplace source, then install `legal-ai-skills` from the `rohas-legal` marketplace using Codex's plugin installer.
+Run these in the terminal yourself:
+
+```bash
+codex plugin marketplace add rohasnagpal/legal-ai-skills
+codex plugin add legal-ai-skills@rohas-legal
+```
+
+If the marketplace is already registered, skip the first command. Check the result with `codex plugin list`.
 
 If older Rohas plugins are installed (`vclo-by-rohas`, `rohas-legal-ai`, `navigator` or `privacy`), uninstall them first. Otherwise their skills and MCP servers load twice, which causes duplicate-name warnings and an oversized skill catalogue.
 
 ### 2. Verify
 
-- Confirm that `legal-ai-skills` appears in the installed plugins list.
+- Confirm that `legal-ai-skills` appears in `claude plugin list` or `codex plugin list`.
 - Check whether Node.js 18 or later is available (`node --version`). Without it, the legal skills still work, but the bundled registry, research and document tools will not start.
 
 Do not claim success if either the marketplace step or the install step failed.

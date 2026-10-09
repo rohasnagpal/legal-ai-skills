@@ -118,8 +118,8 @@ AI Managing Partner
 
 If you are Codex or Claude running the install prompt above, follow [AGENTS.md](AGENTS.md). In short:
 
-- **Claude Code:** run `/plugin marketplace add rohasnagpal/legal-ai-skills`, then `/plugin install legal-ai-skills@rohas-legal`.
-- **Codex:** register this repository as a plugin source and install `legal-ai-skills@rohas-legal`.
+- **Claude Code:** run `claude plugin marketplace add rohasnagpal/legal-ai-skills`, then `claude plugin install legal-ai-skills@rohas-legal` in the terminal yourself. (A person can type `/plugin marketplace add …` and `/plugin install …` instead.)
+- **Codex:** run `codex plugin marketplace add rohasnagpal/legal-ai-skills`, then `codex plugin add legal-ai-skills@rohas-legal`.
 - Confirm the plugin appears in the installed plugins list, then print the post-install message in [AGENTS.md](AGENTS.md). The new skills load in a new session or after `/reload-plugins`, so tell the user to do that and then type **Hello Rohas**.
 
 Node.js 18 or later is needed for the bundled registry, research and document tools. The legal skills work without it.
