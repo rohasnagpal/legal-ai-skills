@@ -89,11 +89,17 @@ AI Managing Partner
 │   ├── RERA Complaints
 │   └── ...
 │
-└── Official Legal Research Sources & Connectors
-    ├── Legislation & Regulations
-    ├── Case Law & Judgments
-    ├── Court & Tribunal Records
-    └── Company & Regulatory Registries
+├── Official Legal Research Sources & Connectors (14)
+│   ├── Legislation & Regulations — legislation.gov.uk, eCFR, Federal Register, GovInfo
+│   ├── Case Law & Judgments — CourtListener, Find Case Law
+│   ├── Court, Rulemaking & Official Notices — CourtListener dockets, Regulations.gov, The Gazette
+│   ├── Company Registries — SEC EDGAR, GLEIF, UK Companies House
+│   └── Sanctions Lists — US OFAC, UK Sanctions List, UN Consolidated List
+│
+└── Built-in Legal Tools (run on your machine)
+    ├── Deadline & Interest Calculators — deadlines, periods between dates, simple & compound interest
+    ├── Sanctions Screening — private, alias-aware name screening
+    └── Document Production — DOCX, PDF, conversion, OCR & bundle assembly
 ```
 
 ---
