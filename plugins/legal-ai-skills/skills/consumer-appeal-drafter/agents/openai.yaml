@@ -1,0 +1,4 @@
+interface:
+  display_name: "Consumer Appeal Drafter"
+  short_description: "Appeal a consumer forum order"
+  default_prompt: "Use $legal-ai-skills:consumer-appeal-drafter to draft an appeal against this consumer commission order."

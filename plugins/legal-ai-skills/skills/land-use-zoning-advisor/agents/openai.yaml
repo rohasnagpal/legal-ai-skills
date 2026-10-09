@@ -1,0 +1,4 @@
+interface:
+  display_name: "Land Use and Zoning Advisor"
+  short_description: "Permitted land use, zoning and approvals"
+  default_prompt: "Use $legal-ai-skills:land-use-zoning-advisor to check whether this land can be used as we intend."

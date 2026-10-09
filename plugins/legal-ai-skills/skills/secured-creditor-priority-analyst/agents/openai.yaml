@@ -1,0 +1,4 @@
+interface:
+  display_name: "Secured Creditor Priority Analyst"
+  short_description: "Ranking of creditors over assets"
+  default_prompt: "Use $legal-ai-skills:secured-creditor-priority-analyst to work out priority between the creditors on these assets."

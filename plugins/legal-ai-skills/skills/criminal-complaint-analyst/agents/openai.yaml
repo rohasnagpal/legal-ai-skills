@@ -1,0 +1,4 @@
+interface:
+  display_name: "Criminal Complaint Analyst"
+  short_description: "Analyse an FIR or criminal complaint for the defence"
+  default_prompt: "Use $legal-ai-skills:criminal-complaint-analyst to analyse this FIR for the accused."

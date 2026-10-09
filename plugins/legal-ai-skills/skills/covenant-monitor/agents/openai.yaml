@@ -1,0 +1,4 @@
+interface:
+  display_name: "Covenant Monitor"
+  short_description: "Covenant compliance tracking and testing"
+  default_prompt: "Use $legal-ai-skills:covenant-monitor to test our loan covenant compliance this quarter."

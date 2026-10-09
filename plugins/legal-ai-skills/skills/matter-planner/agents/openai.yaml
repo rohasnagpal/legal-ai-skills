@@ -1,0 +1,4 @@
+interface:
+  display_name: "Matter Planner"
+  short_description: "Plan a matter, owners and delegation"
+  default_prompt: "Use $legal-ai-skills:matter-planner to plan this matter and who works on what."

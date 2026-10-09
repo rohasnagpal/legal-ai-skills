@@ -1,0 +1,4 @@
+interface:
+  display_name: "Closing Checklist Builder"
+  short_description: "Conditions precedent and closing checklist"
+  default_prompt: "Use $legal-ai-skills:closing-checklist-builder to build the closing checklist for this financing."

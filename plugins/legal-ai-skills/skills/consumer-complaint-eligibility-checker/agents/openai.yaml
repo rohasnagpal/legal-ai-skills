@@ -1,0 +1,4 @@
+interface:
+  display_name: "Consumer Complaint Eligibility Checker"
+  short_description: "Whether and where a consumer complaint lies"
+  default_prompt: "Use $legal-ai-skills:consumer-complaint-eligibility-checker to check whether I can file a consumer complaint and where."

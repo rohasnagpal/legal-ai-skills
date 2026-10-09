@@ -1,0 +1,4 @@
+interface:
+  display_name: "Matrimonial Property Analyst"
+  short_description: "Map and divide property on marriage breakdown"
+  default_prompt: "Use $legal-ai-skills:matrimonial-property-analyst to map our assets and the division position on divorce."

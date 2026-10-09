@@ -1,0 +1,4 @@
+interface:
+  display_name: "Criminal Appeal Planner"
+  short_description: "Plan a criminal appeal or revision"
+  default_prompt: "Use $legal-ai-skills:criminal-appeal-planner to plan an appeal against this conviction."

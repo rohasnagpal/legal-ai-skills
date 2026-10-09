@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tax Notice Analyst"
+  short_description: "Understand a tax notice, exposure and options"
+  default_prompt: "Use $legal-ai-skills:tax-notice-analyst to analyse this tax notice and our exposure."

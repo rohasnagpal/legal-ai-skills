@@ -1,0 +1,4 @@
+interface:
+  display_name: "Constitutional Rights Analyst"
+  short_description: "Whether State action infringes constitutional rights"
+  default_prompt: "Use $legal-ai-skills:constitutional-rights-analyst to analyse whether this rule violates constitutional rights."

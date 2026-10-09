@@ -1,0 +1,4 @@
+interface:
+  display_name: "Administrative Action Challenge Analyst"
+  short_description: "Grounds to challenge a public decision"
+  default_prompt: "Use $legal-ai-skills:administrative-action-challenge-analyst to analyse whether this government order can be challenged."

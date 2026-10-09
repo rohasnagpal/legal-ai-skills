@@ -1,0 +1,4 @@
+interface:
+  display_name: "Input Tax Credit Dispute Analyst"
+  short_description: "GST input tax credit disputes (India)"
+  default_prompt: "Use $legal-ai-skills:input-tax-credit-dispute-analyst to analyse this input tax credit denial."

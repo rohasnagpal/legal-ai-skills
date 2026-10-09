@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tenancy Dispute Analyst"
+  short_description: "Landlord-tenant disputes and eviction strategy"
+  default_prompt: "Use $legal-ai-skills:tenancy-dispute-analyst to analyse this landlord-tenant dispute and the lawful route."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Construction Delay and Defect Analyst"
+  short_description: "Construction delay, extension and defect claims"
+  default_prompt: "Use $legal-ai-skills:construction-delay-defect-analyst to analyse responsibility for these construction delays and defects."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "E-commerce Consumer Compliance Checker"
+  short_description: "Consumer-law compliance for online selling"
+  default_prompt: "Use $legal-ai-skills:ecommerce-consumer-compliance-checker to check our e-commerce site against consumer rules."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Facility Agreement Drafter"
+  short_description: "Draft a facility agreement from a term sheet"
+  default_prompt: "Use $legal-ai-skills:facility-agreement-drafter to draft a facility agreement from this term sheet."

@@ -4,11 +4,12 @@
 # `ruby scripts/validate.rb` before pushing, or let CI run it on every
 # push and pull request (see .github/workflows/validate.yml).
 #
-# The repository ships one installable vCLO plugin. Jurisdiction modules live
+# The repository ships one installable Legal AI Skills plugin. Jurisdiction modules live
 # inside that plugin so users get the complete legal team in one installation.
 require 'yaml'
 require 'json'
 require 'set'
+require_relative 'skill_registry'
 
 Dir.chdir(File.expand_path('..', __dir__))
 
@@ -16,7 +17,7 @@ errors = []
 warnings = []
 
 NAME_RE = /\A[a-z0-9]+(-[a-z0-9]+)*\z/
-CORE_PLUGIN = 'vclo-by-rohas'
+CORE_PLUGIN = 'legal-ai-skills'
 EXPECTED_PLUGINS = [CORE_PLUGIN].freeze
 
 # ---- 0. Expected plugin directories ----
@@ -428,7 +429,7 @@ rescue => e
 end
 
 # ---- 3a. Claude Code MCP manifest ----
-claude_mcp_path = 'plugins/vclo-by-rohas/.mcp.json'
+claude_mcp_path = 'plugins/legal-ai-skills/.mcp.json'
 begin
   claude_mcp = JSON.parse(File.read(claude_mcp_path, encoding: 'UTF-8'))
   claude_servers = claude_mcp['mcpServers']
@@ -452,7 +453,7 @@ begin
         if script_arg.nil?
           errors << "#{claude_mcp_path}: server '#{server_name}' needs a ${CLAUDE_PLUGIN_ROOT}/... script argument"
         else
-          resolved_script = script_arg.sub('${CLAUDE_PLUGIN_ROOT}', File.expand_path('plugins/vclo-by-rohas'))
+          resolved_script = script_arg.sub('${CLAUDE_PLUGIN_ROOT}', File.expand_path('plugins/legal-ai-skills'))
           errors << "#{claude_mcp_path}: server '#{server_name}' script does not exist" unless File.file?(resolved_script)
         end
       end
@@ -599,7 +600,7 @@ if claude_mp && agents_mp
     claude_entry = claude_mp['plugins'].find { |plugin| plugin['name'] == CORE_PLUGIN }
     errors << ".claude-plugin/marketplace.json: #{CORE_PLUGIN} version must match #{expected_version}" unless claude_entry && claude_entry['version'] == expected_version
 
-    %w[company-registry-server.mjs document-production-server.mjs legal-research-server.mjs].each do |server_file|
+    %w[company-registry-server.mjs document-production-server.mjs legal-research-server.mjs legal-calculators-server.mjs sanctions-screening-server.mjs].each do |server_file|
       path = "plugins/#{CORE_PLUGIN}/mcp/#{server_file}"
       source = File.read(path, encoding: 'UTF-8')
       server_version = source[/const VERSION = "([^"]+)";/, 1]
@@ -608,92 +609,193 @@ if claude_mp && agents_mp
   end
 end
 
-# ---- 6. vCLO orchestration structure and links ----
-vclo_required_files = %w[
-  plugins/vclo-by-rohas/skills/ask-vclo/SKILL.md
-  plugins/vclo-by-rohas/skills/ask-vclo/agents/openai.yaml
-  plugins/vclo-by-rohas/agents/chief-legal-officer.md
-  plugins/vclo-by-rohas/agents/contracts-agent.md
-  plugins/vclo-by-rohas/agents/corporate-agent.md
-  plugins/vclo-by-rohas/agents/dispute-resolution-agent.md
-  plugins/vclo-by-rohas/agents/litigation-agent.md
-  plugins/vclo-by-rohas/agents/compliance-agent.md
-  plugins/vclo-by-rohas/agents/employment-agent.md
-  plugins/vclo-by-rohas/agents/ip-agent.md
-  plugins/vclo-by-rohas/agents/investigations-agent.md
-  plugins/vclo-by-rohas/agents/legal-research-agent.md
-  plugins/vclo-by-rohas/workflows/m-and-a-due-diligence.md
-  plugins/vclo-by-rohas/workflows/contract-review-and-negotiation.md
-  plugins/vclo-by-rohas/workflows/litigation-preparation.md
-  plugins/vclo-by-rohas/workflows/dispute-viability-assessment.md
-  plugins/vclo-by-rohas/workflows/regulatory-compliance-review.md
-  plugins/vclo-by-rohas/workflows/data-breach-response.md
-  plugins/vclo-by-rohas/workflows/internal-investigation.md
-  plugins/vclo-by-rohas/integrations/README.md
-  plugins/vclo-by-rohas/integrations/document-sources.md
-  plugins/vclo-by-rohas/integrations/document-production.md
-  plugins/vclo-by-rohas/integrations/email-and-calendar.md
-  plugins/vclo-by-rohas/integrations/company-registries.md
-  plugins/vclo-by-rohas/integrations/legal-research.md
-  plugins/vclo-by-rohas/integrations/github.md
-  plugins/vclo-by-rohas/.mcp.json
-  plugins/vclo-by-rohas/mcp/launch-company-registry
-  plugins/vclo-by-rohas/mcp/company-registry-server.mjs
-  plugins/vclo-by-rohas/mcp/company-registry-server.test.mjs
-  plugins/vclo-by-rohas/mcp/launch-document-production
-  plugins/vclo-by-rohas/mcp/document-production-server.mjs
-  plugins/vclo-by-rohas/mcp/document-production-server.test.mjs
-  plugins/vclo-by-rohas/mcp/launch-legal-research
-  plugins/vclo-by-rohas/mcp/legal-research-server.mjs
-  plugins/vclo-by-rohas/mcp/legal-research-server.test.mjs
-  plugins/vclo-by-rohas/mcp/README.md
-  plugins/vclo-by-rohas/hooks/hooks.json
-  plugins/vclo-by-rohas/hooks/block-courtlistener-alerts.mjs
-  plugins/vclo-by-rohas/hooks/block-courtlistener-alerts.test.mjs
-  plugins/vclo-by-rohas/assets/vclo/due-diligence-report-template.md
-  plugins/vclo-by-rohas/assets/vclo/issue-register-template.md
-  plugins/vclo-by-rohas/assets/vclo/legal-matter-summary-template.md
-  plugins/vclo-by-rohas/assets/vclo/litigation-viability-report-template.html
-  plugins/vclo-by-rohas/assets/vclo/verification-status-template.md
-  plugins/vclo-by-rohas/tests/vclo/m-and-a-due-diligence.md
-  plugins/vclo-by-rohas/tests/vclo/contract-review.md
-  plugins/vclo-by-rohas/tests/vclo/litigation-preparation.md
-  plugins/vclo-by-rohas/tests/vclo/graceful-degradation.md
-  plugins/vclo-by-rohas/tests/vclo/welcome.md
-  plugins/vclo-by-rohas/agents/india-counsel.md
-  plugins/vclo-by-rohas/skills/india-counsel/SKILL.md
-  plugins/vclo-by-rohas/skills/india-counsel/agents/openai.yaml
-  plugins/vclo-by-rohas/jurisdictions/india/README.md
-  plugins/vclo-by-rohas/jurisdictions/india/operating-rules.md
-  plugins/vclo-by-rohas/jurisdictions/india/authoritative-sources.md
-  plugins/vclo-by-rohas/jurisdictions/india/integrations.md
-  plugins/vclo-by-rohas/jurisdictions/india/skill-map.yaml
-  plugins/vclo-by-rohas/tests/jurisdiction-routing-behavioral-evals.yaml
-  plugins/vclo-by-rohas/agents/us-counsel.md
-  plugins/vclo-by-rohas/skills/us-counsel/SKILL.md
-  plugins/vclo-by-rohas/skills/us-counsel/agents/openai.yaml
-  plugins/vclo-by-rohas/jurisdictions/us/README.md
-  plugins/vclo-by-rohas/jurisdictions/us/operating-rules.md
-  plugins/vclo-by-rohas/jurisdictions/us/authoritative-sources.md
-  plugins/vclo-by-rohas/jurisdictions/us/integrations.md
-  plugins/vclo-by-rohas/jurisdictions/us/skill-map.yaml
-  plugins/vclo-by-rohas/tests/us-jurisdiction-routing-behavioral-evals.yaml
-  plugins/vclo-by-rohas/agents/uk-counsel.md
-  plugins/vclo-by-rohas/skills/uk-counsel/SKILL.md
-  plugins/vclo-by-rohas/skills/uk-counsel/agents/openai.yaml
-  plugins/vclo-by-rohas/jurisdictions/uk/README.md
-  plugins/vclo-by-rohas/jurisdictions/uk/operating-rules.md
-  plugins/vclo-by-rohas/jurisdictions/uk/authoritative-sources.md
-  plugins/vclo-by-rohas/jurisdictions/uk/integrations.md
-  plugins/vclo-by-rohas/jurisdictions/uk/skill-map.yaml
-  plugins/vclo-by-rohas/tests/uk-jurisdiction-routing-behavioral-evals.yaml
+# ---- 6. Firm structure and links ----
+firm_required_files = %w[
+  AGENTS.md
+  plugins/legal-ai-skills/skill-registry.yaml
+  plugins/legal-ai-skills/skills/hello-rohas/SKILL.md
+  plugins/legal-ai-skills/skills/hello-rohas/agents/openai.yaml
+  plugins/legal-ai-skills/skills/matter-planner/SKILL.md
+  plugins/legal-ai-skills/assets/firm/lawyer-operating-model.md
+  plugins/legal-ai-skills/assets/firm/contribution-template.md
+  plugins/legal-ai-skills/assets/firm/matter-record-template.yaml
+  plugins/legal-ai-skills/tests/firm/delegation-and-review.md
+  plugins/legal-ai-skills/tests/firm-practice-areas-behavioral-evals.yaml
+  plugins/legal-ai-skills/skills/ask-vclo/SKILL.md
+  plugins/legal-ai-skills/skills/ask-vclo/agents/openai.yaml
+  plugins/legal-ai-skills/agents/managing-partner.md
+  plugins/legal-ai-skills/agents/contracts-lawyer.md
+  plugins/legal-ai-skills/agents/corporate-lawyer.md
+  plugins/legal-ai-skills/agents/dispute-resolution-lawyer.md
+  plugins/legal-ai-skills/agents/litigation-lawyer.md
+  plugins/legal-ai-skills/agents/compliance-lawyer.md
+  plugins/legal-ai-skills/agents/employment-lawyer.md
+  plugins/legal-ai-skills/agents/ip-lawyer.md
+  plugins/legal-ai-skills/agents/investigations-lawyer.md
+  plugins/legal-ai-skills/agents/legal-research-lawyer.md
+  plugins/legal-ai-skills/agents/family-lawyer.md
+  plugins/legal-ai-skills/agents/real-estate-lawyer.md
+  plugins/legal-ai-skills/agents/criminal-defence-lawyer.md
+  plugins/legal-ai-skills/agents/tax-lawyer.md
+  plugins/legal-ai-skills/agents/insolvency-lawyer.md
+  plugins/legal-ai-skills/agents/banking-finance-lawyer.md
+  plugins/legal-ai-skills/agents/consumer-protection-lawyer.md
+  plugins/legal-ai-skills/agents/public-law-lawyer.md
+  plugins/legal-ai-skills/agents/india-counsel.md
+  plugins/legal-ai-skills/agents/us-counsel.md
+  plugins/legal-ai-skills/agents/uk-counsel.md
+  plugins/legal-ai-skills/workflows/m-and-a-due-diligence.md
+  plugins/legal-ai-skills/workflows/contract-review-and-negotiation.md
+  plugins/legal-ai-skills/workflows/litigation-preparation.md
+  plugins/legal-ai-skills/workflows/dispute-viability-assessment.md
+  plugins/legal-ai-skills/workflows/regulatory-compliance-review.md
+  plugins/legal-ai-skills/workflows/data-breach-response.md
+  plugins/legal-ai-skills/workflows/internal-investigation.md
+  plugins/legal-ai-skills/integrations/README.md
+  plugins/legal-ai-skills/integrations/document-sources.md
+  plugins/legal-ai-skills/integrations/document-production.md
+  plugins/legal-ai-skills/integrations/email-and-calendar.md
+  plugins/legal-ai-skills/integrations/company-registries.md
+  plugins/legal-ai-skills/integrations/legal-research.md
+  plugins/legal-ai-skills/integrations/github.md
+  plugins/legal-ai-skills/.mcp.json
+  plugins/legal-ai-skills/mcp/launch-company-registry
+  plugins/legal-ai-skills/mcp/company-registry-server.mjs
+  plugins/legal-ai-skills/mcp/company-registry-server.test.mjs
+  plugins/legal-ai-skills/mcp/launch-document-production
+  plugins/legal-ai-skills/mcp/document-production-server.mjs
+  plugins/legal-ai-skills/mcp/document-production-server.test.mjs
+  plugins/legal-ai-skills/mcp/launch-legal-research
+  plugins/legal-ai-skills/mcp/legal-research-server.mjs
+  plugins/legal-ai-skills/mcp/legal-research-server.test.mjs
+  plugins/legal-ai-skills/mcp/launch-legal-calculators
+  plugins/legal-ai-skills/mcp/legal-calculators-server.mjs
+  plugins/legal-ai-skills/mcp/legal-calculators-server.test.mjs
+  plugins/legal-ai-skills/integrations/legal-calculators.md
+  plugins/legal-ai-skills/mcp/launch-sanctions-screening
+  plugins/legal-ai-skills/mcp/sanctions-screening-server.mjs
+  plugins/legal-ai-skills/mcp/sanctions-screening-server.test.mjs
+  plugins/legal-ai-skills/integrations/sanctions-screening.md
+  plugins/legal-ai-skills/mcp/README.md
+  plugins/legal-ai-skills/hooks/hooks.json
+  plugins/legal-ai-skills/hooks/block-courtlistener-alerts.mjs
+  plugins/legal-ai-skills/hooks/block-courtlistener-alerts.test.mjs
+  plugins/legal-ai-skills/assets/firm/due-diligence-report-template.md
+  plugins/legal-ai-skills/assets/firm/issue-register-template.md
+  plugins/legal-ai-skills/assets/firm/legal-matter-summary-template.md
+  plugins/legal-ai-skills/assets/firm/litigation-viability-report-template.html
+  plugins/legal-ai-skills/assets/firm/verification-status-template.md
+  plugins/legal-ai-skills/tests/firm/m-and-a-due-diligence.md
+  plugins/legal-ai-skills/tests/firm/contract-review.md
+  plugins/legal-ai-skills/tests/firm/litigation-preparation.md
+  plugins/legal-ai-skills/tests/firm/graceful-degradation.md
+  plugins/legal-ai-skills/tests/firm/welcome.md
+  plugins/legal-ai-skills/skills/india-counsel/SKILL.md
+  plugins/legal-ai-skills/skills/india-counsel/agents/openai.yaml
+  plugins/legal-ai-skills/jurisdictions/india/README.md
+  plugins/legal-ai-skills/jurisdictions/india/operating-rules.md
+  plugins/legal-ai-skills/jurisdictions/india/authoritative-sources.md
+  plugins/legal-ai-skills/jurisdictions/india/integrations.md
+  plugins/legal-ai-skills/jurisdictions/india/skill-map.yaml
+  plugins/legal-ai-skills/tests/jurisdiction-routing-behavioral-evals.yaml
+  plugins/legal-ai-skills/skills/us-counsel/SKILL.md
+  plugins/legal-ai-skills/skills/us-counsel/agents/openai.yaml
+  plugins/legal-ai-skills/jurisdictions/us/README.md
+  plugins/legal-ai-skills/jurisdictions/us/operating-rules.md
+  plugins/legal-ai-skills/jurisdictions/us/authoritative-sources.md
+  plugins/legal-ai-skills/jurisdictions/us/integrations.md
+  plugins/legal-ai-skills/jurisdictions/us/skill-map.yaml
+  plugins/legal-ai-skills/tests/us-jurisdiction-routing-behavioral-evals.yaml
+  plugins/legal-ai-skills/skills/uk-counsel/SKILL.md
+  plugins/legal-ai-skills/skills/uk-counsel/agents/openai.yaml
+  plugins/legal-ai-skills/jurisdictions/uk/README.md
+  plugins/legal-ai-skills/jurisdictions/uk/operating-rules.md
+  plugins/legal-ai-skills/jurisdictions/uk/authoritative-sources.md
+  plugins/legal-ai-skills/jurisdictions/uk/integrations.md
+  plugins/legal-ai-skills/jurisdictions/uk/skill-map.yaml
+  plugins/legal-ai-skills/tests/uk-jurisdiction-routing-behavioral-evals.yaml
 ]
 
-vclo_required_files.each do |f|
-  errors << "vCLO: required file is missing: #{f}" unless File.file?(f)
+firm_required_files.each do |f|
+  errors << "firm: required file is missing: #{f}" unless File.file?(f)
 end
 
-claude_hooks_path = 'plugins/vclo-by-rohas/hooks/hooks.json'
+# ---- 6a. Firm operating model ----
+# Every Specialist Lawyer follows the shared operating model, and no lawyer or
+# workflow tells one lawyer to start another: only the Managing Partner
+# dispatches work, which keeps delegation identical across hosts.
+Dir.glob('plugins/legal-ai-skills/agents/*-lawyer.md').sort.each do |f|
+  content = File.read(f, encoding: 'UTF-8')
+  errors << "#{f}: missing '## Firm role' section" unless content.include?('## Firm role')
+  errors << "#{f}: does not link the lawyer operating model" unless content.include?('../assets/firm/lawyer-operating-model.md')
+end
+Dir.glob('plugins/legal-ai-skills/{agents,workflows}/*.md').sort.each do |f|
+  next if f.end_with?('managing-partner.md')
+
+  content = File.read(f, encoding: 'UTF-8')
+  if content.match?(/\b(?:spawn|start|invoke)s? the [A-Z][A-Za-z& ]+ Lawyer\b/)
+    errors << "#{f}: lawyers must request other lawyers through the Managing Partner, not start them"
+  end
+end
+
+# ---- 6b. Skill registry, ownership and published counts ----
+registry = SkillRegistry.build
+committed_registry = File.file?(SkillRegistry::REGISTRY_PATH) ? File.read(SkillRegistry::REGISTRY_PATH, encoding: 'UTF-8') : ''
+errors << "#{SkillRegistry::REGISTRY_PATH}: out of date; run ruby scripts/build-skill-registry.rb" unless committed_registry == SkillRegistry.render(registry)
+registry['skills'].each do |skill|
+  errors << "skill '#{skill['skill_id']}' has no owning lawyer, counsel or Managing Partner reference" if skill['owner'].nil?
+end
+
+counts = registry['counts']
+welcome_path = 'plugins/legal-ai-skills/skills/hello-rohas/SKILL.md'
+if File.file?(welcome_path)
+  welcome = File.read(welcome_path, encoding: 'UTF-8')
+  {
+    "**#{counts['specialist_lawyers']} Specialist Lawyers**" => 'specialist lawyer count',
+    "**#{counts['jurisdiction_counsel']} Jurisdiction Counsel**" => 'jurisdiction counsel count',
+    "**#{counts['legal_skills']} Legal Skills · #{counts['workflows']} Workflows**" => 'skill and workflow counts'
+  }.each do |expected, label|
+    errors << "#{welcome_path}: welcome #{label} must read #{expected}" unless welcome.include?(expected)
+  end
+end
+published_count_files = %w[README.md AGENTS.md]
+published_count_files.each do |path|
+  next unless File.file?(path)
+
+  text = File.read(path, encoding: 'UTF-8')
+  {
+    "#{counts['specialist_lawyers']} Specialist Lawyers" => 'specialist lawyer count',
+    "#{counts['legal_skills']} Legal Skills" => 'legal skill count',
+    "#{counts['workflows']} Workflows" => 'workflow count'
+  }.each do |expected, label|
+    errors << "#{path}: #{label} must read '#{expected}'" unless text.include?(expected)
+  end
+end
+
+# ---- 6c. Retired names ----
+retired_allowed = %w[
+  plugins/legal-ai-skills/skills/ask-vclo/SKILL.md
+  plugins/legal-ai-skills/skills/ask-vclo/agents/openai.yaml
+  plugins/legal-ai-skills/skills/hello-rohas/SKILL.md
+  plugins/legal-ai-skills/tests/firm/welcome.md
+  plugins/legal-ai-skills/tests/firm-practice-areas-behavioral-evals.yaml
+  plugins/legal-ai-skills/skill-registry.yaml
+  plugins/legal-ai-skills/.codex-plugin/plugin.json
+  CHANGELOG.md
+  README.md
+  AGENTS.md
+  docs/upgrade-plan.md
+  docs/two-minute-start.md
+]
+Dir.glob('{plugins/legal-ai-skills/**/*,docs/*,examples/*,*.md}', File::FNM_DOTMATCH).sort.each do |f|
+  next unless File.file?(f) && f.match?(/\.(md|ya?ml|json|mjs|html)\z/)
+  next if retired_allowed.include?(f)
+
+  content = File.read(f, encoding: 'UTF-8')
+  errors << "#{f}: uses the retired name vCLO or Chief Legal Officer" if content.match?(/\bvCLO\b|Chief Legal Officer|chief-legal-officer/)
+end
+
+claude_hooks_path = 'plugins/legal-ai-skills/hooks/hooks.json'
 if File.file?(claude_hooks_path)
   begin
     claude_hooks = JSON.parse(File.read(claude_hooks_path, encoding: 'UTF-8'))
@@ -710,7 +812,7 @@ end
 # The legal-source registry is maintained product behavior, not a loose list of
 # links. Keep the core safeguards and authoritative starting points from being
 # accidentally removed in later edits.
-legal_research_policy_path = 'plugins/vclo-by-rohas/integrations/legal-research.md'
+legal_research_policy_path = 'plugins/legal-ai-skills/integrations/legal-research.md'
 if File.file?(legal_research_policy_path)
   legal_research_policy = File.read(legal_research_policy_path, encoding: 'UTF-8')
   [
@@ -726,14 +828,14 @@ if File.file?(legal_research_policy_path)
 end
 
 legal_source_requirements = {
-  'plugins/vclo-by-rohas/jurisdictions/india/authoritative-sources.md' => %w[
+  'plugins/legal-ai-skills/jurisdictions/india/authoritative-sources.md' => %w[
     https://indiacode.gov.in/
     https://egazette.gov.in/
     https://www.sci.gov.in/
     https://scr.sci.gov.in/scrsearch/
     https://indiankanoon.org/
   ],
-  'plugins/vclo-by-rohas/jurisdictions/us/authoritative-sources.md' => %w[
+  'plugins/legal-ai-skills/jurisdictions/us/authoritative-sources.md' => %w[
     https://uscode.house.gov/
     https://www.congress.gov/
     https://www.govinfo.gov/
@@ -741,7 +843,7 @@ legal_source_requirements = {
     https://www.supremecourt.gov/opinions/opinions.aspx
     https://www.courtlistener.com/
   ],
-  'plugins/vclo-by-rohas/jurisdictions/uk/authoritative-sources.md' => %w[
+  'plugins/legal-ai-skills/jurisdictions/uk/authoritative-sources.md' => %w[
     https://www.legislation.gov.uk/
     https://caselaw.nationalarchives.gov.uk/
     https://www.supremecourt.uk/cases
@@ -757,7 +859,7 @@ legal_source_requirements.each do |path, required_urls|
   end
 end
 
-litigation_report_template_path = 'plugins/vclo-by-rohas/assets/vclo/litigation-viability-report-template.html'
+litigation_report_template_path = 'plugins/legal-ai-skills/assets/firm/litigation-viability-report-template.html'
 if File.file?(litigation_report_template_path)
   litigation_report_template = File.read(litigation_report_template_path, encoding: 'UTF-8')
   [
@@ -777,8 +879,8 @@ if File.file?(litigation_report_template_path)
   errors << "#{litigation_report_template_path}: must not load external JavaScript" if litigation_report_template.match?(%r{<script\b[^>]+src=}i)
 end
 
-vclo_markdown_files = Dir.glob('plugins/*/{agents,workflows,integrations,jurisdictions,assets/vclo,tests/vclo}/**/*.md').sort
-vclo_markdown_files.each do |f|
+firm_markdown_files = Dir.glob('plugins/*/{agents,workflows,integrations,jurisdictions,assets/firm,tests/firm}/**/*.md').sort
+firm_markdown_files.each do |f|
   content = File.read(f, encoding: 'UTF-8')
   errors << "#{f}: empty Markdown document" if content.strip.empty?
 
@@ -811,9 +913,9 @@ Dir.glob('plugins/*/agents/*.md').sort.each do |f|
   end
 end
 
-workflow_headings = ['## Trigger', '## Required inputs', '## Verification', '## Deliverable', '## Fallback behaviour']
-workflow_files = Dir.glob('plugins/vclo-by-rohas/workflows/*.md').sort
-errors << "vCLO: expected 10 coordinated workflows, found #{workflow_files.length}" unless workflow_files.length == 10
+workflow_headings = ['## Trigger', '## Required inputs', '## Branches', '## Matter Owner and team', '## Review checkpoints', '## Verification', '## Escalation to human review', '## Deliverable', '## Fallback behaviour']
+workflow_files = Dir.glob('plugins/legal-ai-skills/workflows/*.md').sort
+errors << "firm: expected 20 workflows, found #{workflow_files.length}" unless workflow_files.length == 20
 workflow_files.each do |f|
   content = File.read(f, encoding: 'UTF-8')
   workflow_headings.each do |heading|
@@ -827,7 +929,7 @@ workflow_test_names = {
 workflow_files.each do |workflow|
   workflow_name = File.basename(workflow, '.md')
   test_name = workflow_test_names.fetch(workflow_name, workflow_name)
-  test_path = "plugins/vclo-by-rohas/tests/vclo/#{test_name}.md"
+  test_path = "plugins/legal-ai-skills/tests/firm/#{test_name}.md"
   unless File.file?(test_path)
     errors << "#{workflow}: missing end-to-end scenario test #{test_path}"
     next
@@ -839,7 +941,7 @@ end
 
 # Every jurisdiction-owned local skill needs at least one positive behavioural
 # routing case. This prevents high-risk local skills from shipping untested.
-covered_behavioral_skills = Dir.glob('plugins/vclo-by-rohas/tests/*-behavioral-evals.yaml').flat_map do |path|
+covered_behavioral_skills = Dir.glob('plugins/legal-ai-skills/tests/*-behavioral-evals.yaml').flat_map do |path|
   data = YAML.safe_load(File.read(path, encoding: 'UTF-8'))
   Array(data['cases']).map { |test_case| test_case['expected_skill']&.split(':')&.last }.compact
 end.to_set

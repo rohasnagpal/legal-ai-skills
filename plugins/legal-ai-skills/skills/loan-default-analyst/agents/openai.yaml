@@ -1,0 +1,4 @@
+interface:
+  display_name: "Loan Default Analyst"
+  short_description: "Events of default and acceleration"
+  default_prompt: "Use $legal-ai-skills:loan-default-analyst to analyse whether the borrower is in default."

@@ -1,0 +1,26 @@
+# Matter record. Kept in the conversation by default. Write it to
+# matters/<matter_id>/matter.yaml only when the user asks to keep a matter file.
+matter_id: MAT-YYYY-NNN
+title: ""
+represented_party: ""
+client_role: ""            # e.g. buyer, employee, accused, tenant, creditor
+opposing_parties: []
+jurisdiction:
+  country: ""
+  state: ""                # State, province or sub-national unit where material
+  forum: ""
+size: standard             # quick | standard | complex
+matter_owner: ""           # e.g. real-estate-lawyer
+workflow: ""               # workflow file name, or none
+workflow_branch: ""
+counsel: []                # e.g. [india-counsel]
+conflict_check: pending    # pending | clear | issue-found | not-run (say why)
+key_dates: []              # - { event: "", date: "", source: "" }
+deadlines: []              # - { item: "", date: "", basis: "", verified: false }
+documents: []              # - { name: "", status: supplied | missing | partial }
+tasks: []                  # - { id: T1, owner: "", task: "", status: open | done | returned }
+delegation_requests: []    # see assets/firm/lawyer-operating-model.md
+outputs: []
+open_issues: []
+review: pending            # pending | returned | approved
+human_review_required: []  # decisions or actions needing a qualified lawyer or the client

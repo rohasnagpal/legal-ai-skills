@@ -1,0 +1,4 @@
+interface:
+  display_name: "Creditor Claim Preparer"
+  short_description: "Prepare a proof of claim in insolvency"
+  default_prompt: "Use $legal-ai-skills:creditor-claim-preparer to prepare our claim in this insolvency."

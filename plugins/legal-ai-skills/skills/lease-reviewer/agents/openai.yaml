@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lease Reviewer"
+  short_description: "Review leases, tenancies and licences"
+  default_prompt: "Use $legal-ai-skills:lease-reviewer to review this lease for the tenant."

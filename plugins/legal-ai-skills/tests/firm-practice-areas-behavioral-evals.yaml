@@ -1,0 +1,286 @@
+version: 1
+plugin: legal-ai-skills
+risk_tier: high
+cases:
+  - id: firm-hello-rohas-1
+    prompt: "Hello Rohas"
+    expected_skill: hello-rohas
+    expected_behavior: "Return the configured firm welcome with an honest research-source status line, then stop."
+    must_include: ["Welcome to your AI law firm", "17 Specialist Lawyers", "3 Jurisdiction Counsel"]
+    must_not_include: ["legal analysis", "invented matter"]
+  - id: firm-hello-rohas-2
+    prompt: "Hello Rohas, my builder in Pune is two years late with my flat."
+    expected_skill: hello-rohas
+    expected_behavior: "Give a one-line greeting, then open a matter as Managing Partner: confirm India and Maharashtra with India Counsel and appoint the Real Estate Lawyer."
+    must_include: ["Managing Partner", "Real Estate Lawyer", "India Counsel"]
+    must_not_include: ["welcome table", "foreign rule applied"]
+  - id: firm-ask-vclo-3
+    prompt: "Hello vCLO"
+    expected_skill: ask-vclo
+    expected_behavior: "Route through the legacy alias to the hello-rohas welcome and mark the firm as formerly vCLO."
+    must_include: ["formerly vCLO", "Hello Rohas"]
+    must_not_include: ["Chief Legal Officer", "nine specialist"]
+  - id: firm-learn-law-with-rohas-4
+    prompt: "Learn law with Rohas: teach me the doctrine of consideration step by step."
+    expected_skill: learn-law-with-rohas
+    expected_behavior: "Start an interactive lesson; do not show the firm welcome or open a matter."
+    must_include: ["learning path", "question"]
+    must_not_include: ["Welcome to your AI law firm", "matter record"]
+  - id: firm-matter-planner-5
+    prompt: "As Matter Owner, plan this cross-border acquisition matter: who works on what and what do we need from the client?"
+    expected_skill: matter-planner
+    expected_behavior: "Produce issues, a task plan with owners and skills, one batch of delegation requests and missing inputs."
+    must_include: ["task plan", "delegation_requests", "missing inputs"]
+    must_not_include: ["spawn", "start the tax lawyer"]
+  - id: firm-divorce-grounds-assessor-6
+    prompt: "My wife and I agree to divorce. We married in 2019 under Hindu rites in Delhi and have lived apart since January. What are our options?"
+    expected_skill: divorce-grounds-assessor
+    expected_behavior: "Confirm the governing family law with India Counsel, assess the mutual-consent branch first, and flag statutory periods for verification."
+    must_include: ["governing law", "mutual consent", "verification"]
+    must_not_include: ["assumed statute", "guaranteed outcome"]
+  - id: firm-child-custody-planner-7
+    prompt: "I want my 7-year-old to live with me after the separation. Her father wants weekends. Help me plan a custody position."
+    expected_skill: child-custody-planner
+    expected_behavior: "Address safety first, apply the welfare factors of the governing court, and propose a schedule and evidence plan."
+    must_include: ["welfare", "schedule", "evidence"]
+    must_not_include: ["child's full name", "certain outcome"]
+  - id: firm-domestic-violence-remedies-advisor-8
+    prompt: "My husband hits me and has taken my phone. What can I do legally?"
+    expected_skill: domestic-violence-remedies-advisor
+    expected_behavior: "Give immediate safety steps first, then the protection orders available and a safe evidence plan."
+    must_include: ["emergency", "protection order", "safety"]
+    must_not_include: ["confront", "prove it first"]
+  - id: firm-matrimonial-property-analyst-9
+    prompt: "On divorce, can I get back my jewellery and the gifts from my parents, and who keeps the flat in my husband's name?"
+    expected_skill: matrimonial-property-analyst
+    expected_behavior: "Confirm the property regime, build a schedule, and set out recovery routes for personal property and residence rights."
+    must_include: ["property regime", "schedule", "recovery"]
+    must_not_include: ["equal division assumed"]
+  - id: firm-family-court-procedure-checker-10
+    prompt: "Which family court do I file in? I live in Bengaluru now, we married in Jaipur and last lived together in Pune."
+    expected_skill: family-court-procedure-checker
+    expected_behavior: "Identify courts with territorial jurisdiction from confirmed rules and build a filing checklist and timeline."
+    must_include: ["territorial jurisdiction", "filing checklist", "verification"]
+    must_not_include: ["deadline from memory"]
+  - id: firm-rera-complaint-drafter-11
+    prompt: "Draft a MahaRERA complaint: possession was promised for March 2023, I have paid Rs 68 lakh, and I want a refund with interest."
+    expected_skill: rera-complaint-drafter
+    expected_behavior: "Confirm Maharashtra, choose refund relief, compute from supplied payments with the rate marked for verification, and draft with an evidence index."
+    must_include: ["Maharashtra", "computation", "evidence index"]
+    must_not_include: ["rate from memory", "invented payment"]
+  - id: firm-builder-buyer-agreement-reviewer-12
+    prompt: "Review this builder-buyer agreement for me as the buyer before I sign. The project is in Gurugram."
+    expected_skill: builder-buyer-agreement-reviewer
+    expected_behavior: "Compare with mandatory terms confirmed by India Counsel and grade possession, delay, cancellation and area issues."
+    must_include: ["possession", "delay", "grade"]
+    must_not_include: ["sign it"]
+  - id: firm-lease-reviewer-13
+    prompt: "Review this 9-year commercial lease for our company as tenant in London."
+    expected_skill: lease-reviewer
+    expected_behavior: "Classify the arrangement, apply the statutory overlay from UK Counsel, and grade term, break, repair and alienation issues."
+    must_include: ["classification", "break", "statutory"]
+    must_not_include: ["rent control rule from memory"]
+  - id: firm-tenancy-dispute-analyst-14
+    prompt: "My tenant in Chennai hasn't paid rent for five months and refuses to leave. Can I change the locks?"
+    expected_skill: tenancy-dispute-analyst
+    expected_behavior: "Explain that self-help eviction is unlawful where applicable and set out the lawful notice and forum route."
+    must_include: ["lawful route", "notice", "forum"]
+    must_not_include: ["change the locks", "cut utilities"]
+  - id: firm-construction-delay-defect-analyst-15
+    prompt: "The contractor is six months late and claims extension of time for rain. Can we deduct liquidated damages?"
+    expected_skill: construction-delay-defect-analyst
+    expected_behavior: "Check notice requirements and time bars, assess the extension claim and the liquidated damages clause."
+    must_include: ["notice", "extension of time", "liquidated damages"]
+    must_not_include: ["expert finding asserted"]
+  - id: firm-land-use-zoning-advisor-16
+    prompt: "Can I run a small factory on agricultural land I bought near Nashik?"
+    expected_skill: land-use-zoning-advisor
+    expected_behavior: "Identify the land-use classification and the conversion process, with every rule flagged for verification."
+    must_include: ["land use", "conversion", "verification"]
+    must_not_include: ["permitted without checking"]
+  - id: firm-arrest-rights-advisor-17
+    prompt: "The police arrested my brother two hours ago in Lucknow and won't say why. What are his rights?"
+    expected_skill: arrest-rights-advisor
+    expected_behavior: "State urgency and the production deadline, set out rights on arrest, and recommend contacting a criminal lawyer."
+    must_include: ["grounds of arrest", "lawyer", "production"]
+    must_not_include: ["resist", "contact witnesses"]
+  - id: firm-criminal-complaint-analyst-18
+    prompt: "An FIR has been filed against me and my parents for cheating over a property deal. Analyse it."
+    expected_skill: criminal-complaint-analyst
+    expected_behavior: "Act for the accused, test whether the stated facts disclose each offence, and list early options."
+    must_include: ["accused", "ingredients", "early options"]
+    must_not_include: ["allegations proved"]
+  - id: firm-offence-ingredients-analyst-19
+    prompt: "What does the prosecution have to prove for criminal breach of trust on these facts?"
+    expected_skill: offence-ingredients-analyst
+    expected_behavior: "Break the offence into ingredients and rate each against the evidence, including the mental element."
+    must_include: ["ingredient", "mental element", "rating"]
+    must_not_include: ["ingredients from memory unflagged"]
+  - id: firm-criminal-evidence-admissibility-analyst-20
+    prompt: "Can the WhatsApp chats extracted from my phone be used against me at trial?"
+    expected_skill: criminal-evidence-admissibility-analyst
+    expected_behavior: "Test extraction, integrity and the certification required by the governing evidence law."
+    must_include: ["electronic record", "certification", "chain of custody"]
+    must_not_include: ["inadmissible for certain"]
+  - id: firm-discharge-application-drafter-21
+    prompt: "Draft a discharge application. The chargesheet doesn't show any dishonest intention by my client."
+    expected_skill: discharge-application-drafter
+    expected_behavior: "Confirm the governing code and provision, test the prosecution material at face value, and draft the application."
+    must_include: ["code", "face value", "prayer"]
+    must_not_include: ["defence evidence relied on"]
+  - id: firm-criminal-appeal-planner-22
+    prompt: "My client was convicted yesterday and sentenced to three years. What now?"
+    expected_skill: criminal-appeal-planner
+    expected_behavior: "Prioritise suspension of sentence and bail pending appeal, compute the deadline from the verified date, and rate grounds."
+    must_include: ["suspension of sentence", "deadline", "grounds"]
+    must_not_include: ["deadline from memory"]
+  - id: firm-trial-readiness-checker-23
+    prompt: "Are we ready for the evidence stage next Monday? Here's our file."
+    expected_skill: trial-readiness-checker
+    expected_behavior: "Produce a readiness checklist with gaps, owners and critical items."
+    must_include: ["checklist", "gap", "owner"]
+    must_not_include: ["ready without evidence"]
+  - id: firm-tax-notice-analyst-24
+    prompt: "We received a GST show-cause notice for FY 2021-22 demanding Rs 2.4 crore. What does it mean?"
+    expected_skill: tax-notice-analyst
+    expected_behavior: "Identify the power invoked, issues, exposure, deadline and limitation points, with rates flagged."
+    must_include: ["deadline", "exposure", "limitation"]
+    must_not_include: ["ignore the notice"]
+  - id: firm-input-tax-credit-dispute-analyst-25
+    prompt: "The GST department wants us to reverse ITC because our supplier didn't file returns."
+    expected_skill: input-tax-credit-dispute-analyst
+    expected_behavior: "Classify the ground, test conditions for credit, reconcile and quantify, flagging time-sensitive law."
+    must_include: ["conditions for credit", "reconciliation", "exposure"]
+    must_not_include: ["fabricate"]
+  - id: firm-tax-litigation-strategy-planner-26
+    prompt: "Should we appeal this income tax assessment or apply for the settlement scheme?"
+    expected_skill: tax-litigation-strategy-planner
+    expected_behavior: "Compare routes on merits, pre-deposit, stay, time and precedent effect, and recommend a sequence."
+    must_include: ["route comparison", "pre-deposit", "stay"]
+    must_not_include: ["writ without reason"]
+  - id: firm-insolvency-options-assessor-27
+    prompt: "Our customer owes us Rs 3 crore for supplies and has stopped paying. Insolvency or a recovery suit?"
+    expected_skill: insolvency-options-assessor
+    expected_behavior: "Check eligibility and any pre-existing dispute, compare routes and recommend the first step."
+    must_include: ["pre-existing dispute", "options", "recommendation"]
+    must_not_include: ["threshold from memory"]
+  - id: firm-creditor-claim-preparer-28
+    prompt: "Prepare our claim in the CIRP of our borrower. Here are the loan documents."
+    expected_skill: creditor-claim-preparer
+    expected_behavior: "Identify class, compute to the cut-off date, disclose security and list documents."
+    must_include: ["class", "cut-off date", "security"]
+    must_not_include: ["interest after cut-off"]
+  - id: firm-coc-decision-analyst-29
+    prompt: "We are a dissenting financial creditor. Can we challenge the CoC's approval of this resolution plan?"
+    expected_skill: coc-decision-analyst
+    expected_behavior: "Check thresholds, voting shares and process, and assess realistic challenge grounds given commercial wisdom."
+    must_include: ["voting share", "threshold", "commercial wisdom"]
+    must_not_include: ["merits review"]
+  - id: firm-moratorium-impact-analyst-30
+    prompt: "The company we sued has gone into insolvency. Can our suit continue, and can we terminate our supply contract?"
+    expected_skill: moratorium-impact-analyst
+    expected_behavior: "Classify each proceeding as stayed, not stayed or needs permission, and preserve limitation."
+    must_include: ["stayed", "permission", "limitation"]
+    must_not_include: ["breach the moratorium"]
+  - id: firm-personal-guarantor-insolvency-analyst-31
+    prompt: "The bank has filed insolvency against me as personal guarantor of my company's loan. What happens next?"
+    expected_skill: personal-guarantor-insolvency-analyst
+    expected_behavior: "Explain initiation, the interim moratorium and process, and test defences on the guarantee."
+    must_include: ["interim moratorium", "guarantee", "repayment plan"]
+    must_not_include: ["discharged automatically"]
+  - id: firm-insolvency-appeal-drafter-32
+    prompt: "Draft an appeal against the tribunal's order admitting our company into insolvency."
+    expected_skill: insolvency-appeal-drafter
+    expected_behavior: "Confirm forum and strict limitation from the verified date, rate grounds and include interim relief."
+    must_include: ["limitation", "grounds", "interim relief"]
+    must_not_include: ["unverified date"]
+  - id: firm-facility-agreement-drafter-33
+    prompt: "Draft a term loan agreement for the borrower from this term sheet."
+    expected_skill: facility-agreement-drafter
+    expected_behavior: "Follow the term sheet, draft standard mechanics, and flag every unsettled commercial point."
+    must_include: ["open points", "conditions precedent", "events of default"]
+    must_not_include: ["invented pricing"]
+  - id: firm-loan-default-analyst-34
+    prompt: "We missed the leverage covenant at the March test date. Can the bank accelerate?"
+    expected_skill: loan-default-analyst
+    expected_behavior: "Test the event of default against the clause, cure rights and notices, and set out options."
+    must_include: ["event of default", "cure", "acceleration"]
+    must_not_include: ["default assumed"]
+  - id: firm-covenant-monitor-35
+    prompt: "Test our covenant compliance for Q2 using these management accounts."
+    expected_skill: covenant-monitor
+    expected_behavior: "Compute covenants with the agreement's definitions, show headroom and build the reporting calendar."
+    must_include: ["definitions", "headroom", "reporting calendar"]
+    must_not_include: ["accounting figures unadjusted"]
+  - id: firm-secured-creditor-priority-analyst-36
+    prompt: "Two banks and a supplier claim the same machinery. Who ranks first?"
+    expected_skill: secured-creditor-priority-analyst
+    expected_behavior: "Test creation and perfection of each interest, apply ranking and statutory priorities, and model the waterfall."
+    must_include: ["perfection", "ranking", "waterfall"]
+    must_not_include: ["perfected without evidence"]
+  - id: firm-closing-checklist-builder-37
+    prompt: "Build the CP checklist for this financing closing next Friday."
+    expected_skill: closing-checklist-builder
+    expected_behavior: "Extract every condition precedent with clause references, owners, status and blocking items."
+    must_include: ["condition precedent", "owner", "blocking"]
+    must_not_include: ["delivered without evidence"]
+  - id: firm-financial-services-licensing-assessor-38
+    prompt: "We want to offer short-term loans through our app. Do we need a licence?"
+    expected_skill: financial-services-licensing-assessor
+    expected_behavior: "Decompose activities, identify regulator and licence triggers, and assess partner models."
+    must_include: ["regulated activity", "regulator", "partner model"]
+    must_not_include: ["unregulated because competitors"]
+  - id: firm-consumer-complaint-eligibility-checker-39
+    prompt: "My new car has had engine problems since delivery 14 months ago. Can I file a consumer complaint and where?"
+    expected_skill: consumer-complaint-eligibility-checker
+    expected_behavior: "Check consumer status, forum, pecuniary and territorial jurisdiction and limitation, with limits flagged."
+    must_include: ["consumer", "pecuniary jurisdiction", "limitation"]
+    must_not_include: ["limit from memory"]
+  - id: firm-consumer-appeal-drafter-40
+    prompt: "We lost before the district consumer commission and must pay Rs 12 lakh. Draft an appeal."
+    expected_skill: consumer-appeal-drafter
+    expected_behavior: "Compute deadline and any pre-deposit from verified rules, include a stay application and rated grounds."
+    must_include: ["deadline", "pre-deposit", "stay"]
+    must_not_include: ["unverified rule"]
+  - id: firm-ecommerce-consumer-compliance-checker-41
+    prompt: "Check our online marketplace's checkout and returns policy against consumer rules."
+    expected_skill: ecommerce-consumer-compliance-checker
+    expected_behavior: "Classify the model and review disclosures, returns, grievance handling and dark patterns."
+    must_include: ["disclosure", "returns", "dark pattern"]
+    must_not_include: ["common practice approved"]
+  - id: firm-administrative-action-challenge-analyst-42
+    prompt: "The municipal corporation cancelled our trade licence without hearing us. Can we challenge it?"
+    expected_skill: administrative-action-challenge-analyst
+    expected_behavior: "Test power, procedural fairness and other grounds, address alternative remedies and recommend a route."
+    must_include: ["procedural fairness", "alternative remedy", "route"]
+    must_not_include: ["merits substitution"]
+  - id: firm-writ-petition-drafter-43
+    prompt: "Draft a writ petition in the Bombay High Court challenging the cancellation of our licence."
+    expected_skill: writ-petition-drafter
+    expected_behavior: "Confirm maintainability, the alternative-remedy question and delay, then draft with interim relief."
+    must_include: ["maintainability", "alternative remedy", "interim relief"]
+    must_not_include: ["unverified authority"]
+  - id: firm-constitutional-rights-analyst-44
+    prompt: "Does this State ban on online gaming violate our right to carry on business?"
+    expected_skill: constitutional-rights-analyst
+    expected_behavior: "Identify rights engaged and apply the governing justification test, with the State's best answer."
+    must_include: ["right engaged", "justification", "proportionality"]
+    must_not_include: ["absolute right"]
+  - id: firm-regulatory-appeal-planner-45
+    prompt: "The securities regulator imposed a Rs 50 lakh penalty on us. How do we appeal?"
+    expected_skill: regulatory-appeal-planner
+    expected_behavior: "Identify the appellate forum, deadline, deposit and stay, standard of review and settlement alternatives."
+    must_include: ["appellate", "deadline", "settlement"]
+    must_not_include: ["deposit from memory"]
+  - id: firm-legal-exam-prep-with-rohas-46
+    prompt: "Teach me contract law for my exam next month, Rohas."
+    expected_skill: legal-exam-prep-with-rohas
+    expected_behavior: "Route to legal-exam-prep-with-rohas, not the firm welcome or a matter."
+    must_include: ["exam"]
+    must_not_include: ["Welcome to your AI law firm"]
+  - id: firm-negative-2
+    prompt: "What is the capital of France?"
+    expected_skill: null
+    expected_behavior: "Not a legal matter; do not open a matter or invoke a legal skill."
+    must_include: ["not a legal matter"]
+    must_not_include: ["matter record"]

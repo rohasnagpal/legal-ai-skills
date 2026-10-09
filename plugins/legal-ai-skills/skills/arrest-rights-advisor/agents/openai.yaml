@@ -1,0 +1,4 @@
+interface:
+  display_name: "Arrest Rights Advisor"
+  short_description: "Rights and urgent steps on arrest or questioning"
+  default_prompt: "Use $legal-ai-skills:arrest-rights-advisor to explain the rights and urgent steps after this arrest."

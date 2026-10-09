@@ -1,0 +1,4 @@
+interface:
+  display_name: "Family Court Procedure Checker"
+  short_description: "Forum, filing and steps in a family case"
+  default_prompt: "Use $legal-ai-skills:family-court-procedure-checker to check which family court to file in and the steps."

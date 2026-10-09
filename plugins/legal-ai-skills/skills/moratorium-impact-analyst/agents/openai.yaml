@@ -1,0 +1,4 @@
+interface:
+  display_name: "Moratorium Impact Analyst"
+  short_description: "What an insolvency moratorium stays"
+  default_prompt: "Use $legal-ai-skills:moratorium-impact-analyst to analyse how the moratorium affects our case and contract."

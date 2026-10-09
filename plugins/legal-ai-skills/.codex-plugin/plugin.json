@@ -1,0 +1,163 @@
+{
+  "name": "legal-ai-skills",
+  "version": "4.0.0",
+  "description": "Legal AI Skills by Rohas Nagpal is a free, open-source AI law firm: a Managing Partner, 17 Specialist Lawyers, India, US and UK Jurisdiction Counsel, 226 legal skills, 20 workflows, official legal-research connectors, company registries, deadline and interest calculators, sanctions-list screening, and local document production.",
+  "author": {
+    "name": "Rohas Nagpal",
+    "email": "rohasnagpal@gmail.com",
+    "url": "https://rohasnagpal.com"
+  },
+  "homepage": "https://www.rohasnagpal.com/legal-ai-skills.php",
+  "repository": "https://github.com/rohasnagpal/legal-ai-skills",
+  "license": "MIT",
+  "keywords": [
+    "legal",
+    "law",
+    "law-firm",
+    "legal-ai",
+    "managing-partner",
+    "contracts",
+    "litigation",
+    "arbitration",
+    "corporate",
+    "family-law",
+    "real-estate",
+    "criminal-defence",
+    "tax",
+    "insolvency",
+    "banking",
+    "consumer",
+    "public-law",
+    "regulatory",
+    "privacy",
+    "employment",
+    "ip",
+    "investigations",
+    "compliance",
+    "research",
+    "india",
+    "uk",
+    "us",
+    "vclo"
+  ],
+  "skills": "./skills/",
+  "mcpServers": {
+    "company-registries": {
+      "command": "./mcp/launch-company-registry",
+      "args": [],
+      "cwd": ".",
+      "env_vars": [
+        "COMPANIES_HOUSE_API_KEY",
+        "VCLO_SEC_USER_AGENT",
+        "CODEX_MCP_NODE_PATH",
+        "HTTPS_PROXY",
+        "HTTP_PROXY",
+        "NO_PROXY",
+        "NODE_EXTRA_CA_CERTS"
+      ],
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 60
+    },
+    "document-production": {
+      "command": "./mcp/launch-document-production",
+      "args": [],
+      "cwd": ".",
+      "env_vars": [
+        "CODEX_MCP_NODE_PATH",
+        "VCLO_PANDOC_PATH",
+        "VCLO_LATEX_PATH",
+        "VCLO_SOFFICE_PATH",
+        "VCLO_OCRMYPDF_PATH",
+        "VCLO_PDFUNITE_PATH",
+        "VCLO_QPDF_PATH"
+      ],
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 120
+    },
+    "legal-research": {
+      "command": "./mcp/launch-legal-research",
+      "args": [],
+      "cwd": ".",
+      "env_vars": [
+        "CODEX_MCP_NODE_PATH",
+        "REGULATIONS_GOV_API_KEY",
+        "HTTPS_PROXY",
+        "HTTP_PROXY",
+        "NO_PROXY",
+        "NODE_EXTRA_CA_CERTS"
+      ],
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 60
+    },
+    "legal-calculators": {
+      "command": "./mcp/launch-legal-calculators",
+      "args": [],
+      "cwd": ".",
+      "env_vars": [
+        "CODEX_MCP_NODE_PATH"
+      ],
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 30
+    },
+    "sanctions-screening": {
+      "command": "./mcp/launch-sanctions-screening",
+      "args": [],
+      "cwd": ".",
+      "env_vars": [
+        "CODEX_MCP_NODE_PATH",
+        "LEGAL_AI_SANCTIONS_CACHE",
+        "HTTPS_PROXY",
+        "HTTP_PROXY",
+        "NO_PROXY",
+        "NODE_EXTRA_CA_CERTS"
+      ],
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 180
+    },
+    "courtlistener": {
+      "type": "http",
+      "url": "https://mcp.courtlistener.com/",
+      "disabled_tools": [
+        "create_search_alert",
+        "delete_search_alert",
+        "subscribe_to_docket_alert",
+        "unsubscribe_from_docket_alert"
+      ],
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 60
+    },
+    "govinfo": {
+      "type": "http",
+      "url": "https://api.govinfo.gov/mcp",
+      "http_headers": {
+        "x-api-key": "DEMO_KEY"
+      },
+      "env_http_headers": {
+        "x-api-key": "GOVINFO_API_KEY"
+      },
+      "startup_timeout_sec": 20,
+      "tool_timeout_sec": 60
+    }
+  },
+  "interface": {
+    "displayName": "Legal AI Skills by Rohas",
+    "shortDescription": "Your AI law firm",
+    "longDescription": "Legal AI Skills sets up an AI law firm inside Codex or Claude. A Managing Partner receives each matter, consults India, US or UK Jurisdiction Counsel, appoints one of 17 Specialist Lawyers as Matter Owner, coordinates other lawyers and reviews the final work. The firm covers corporate, contracts, litigation, dispute resolution, criminal defence, family, real estate, tax, insolvency, banking and finance, employment, IP, compliance, consumer protection, public law, investigations and legal research, with 226 legal skills, 20 workflows, official legal-research connectors, company registries, sanctions-list screening, deadline and interest calculators and local document production. Say Hello Rohas to begin.",
+    "developerName": "Rohas Nagpal",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://www.rohasnagpal.com/legal-ai-skills.php",
+    "privacyPolicyURL": "https://www.rohasnagpal.com/privacy-policy.php",
+    "brandColor": "#B45309",
+    "composerIcon": "./assets/composer-icon.svg",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "Hello Rohas",
+      "My builder is two years late with my flat in Pune. What can I do?",
+      "Review this MSA for the customer, propose redlines and prepare negotiation positions."
+    ]
+  }
+}

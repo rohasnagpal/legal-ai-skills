@@ -1,0 +1,8 @@
+interface:
+  display_name: "Hello Rohas"
+  short_description: "Your AI law firm: Managing Partner, specialist lawyers and counsel"
+  brand_color: "#B45309"
+  default_prompt: "Use $legal-ai-skills:hello-rohas to take on this legal matter as my Managing Partner."
+
+policy:
+  allow_implicit_invocation: true

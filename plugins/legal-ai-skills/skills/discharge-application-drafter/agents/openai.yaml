@@ -1,0 +1,4 @@
+interface:
+  display_name: "Discharge Application Drafter"
+  short_description: "Draft a discharge application (India)"
+  default_prompt: "Use $legal-ai-skills:discharge-application-drafter to draft a discharge application on this chargesheet."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Builder-Buyer Agreement Reviewer"
+  short_description: "Review off-plan and builder-buyer agreements"
+  default_prompt: "Use $legal-ai-skills:builder-buyer-agreement-reviewer to review this builder-buyer agreement before I sign."

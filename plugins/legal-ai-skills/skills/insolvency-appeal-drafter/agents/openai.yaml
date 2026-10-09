@@ -1,0 +1,4 @@
+interface:
+  display_name: "Insolvency Appeal Drafter"
+  short_description: "Appeal an insolvency order"
+  default_prompt: "Use $legal-ai-skills:insolvency-appeal-drafter to draft an appeal against this insolvency order."

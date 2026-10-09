@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writ Petition Drafter"
+  short_description: "Draft a writ petition (India)"
+  default_prompt: "Use $legal-ai-skills:writ-petition-drafter to draft a writ petition challenging this order."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Domestic Violence Remedies Advisor"
+  short_description: "Safety steps and protection orders for domestic abuse"
+  default_prompt: "Use $legal-ai-skills:domestic-violence-remedies-advisor to set out my safety steps and protection options."

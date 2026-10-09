@@ -1,38 +1,50 @@
-# Start using vCLO in two minutes
+# Start using Legal AI Skills in two minutes
 
-The installation itself normally takes less than 60 seconds when Node.js 18 or later is already installed. Node.js is required for the bundled company-registry, legal-research and document-production tools; the legal skills remain usable without those tools.
+Installation normally takes less than 90 seconds. Node.js 18 or later is needed for the bundled company-registry, legal-research and document-production tools; the legal skills work without it.
 
 ## 1. Install once
 
-Tell Codex:
+Paste this into Codex or Claude:
 
-`Install vCLO from https://github.com/rohasnagpal/legal-ai-skills. Register the repository as a plugin source and install vclo-by-rohas@rohas-legal.`
+```text
+Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and say "Hello Rohas".
+```
 
-For Claude Code:
+Or install manually in Claude Code:
 
 ```text
 /plugin marketplace add rohasnagpal/legal-ai-skills
-/plugin install vclo-by-rohas@rohas-legal
+/plugin install legal-ai-skills@rohas-legal
 ```
 
-For normal GovInfo use, obtain a free api.data.gov key and set `GOVINFO_API_KEY` before starting Codex or Claude Code. The shared `DEMO_KEY` is intended only for limited initial testing.
+In Codex, register the repository as a plugin source and install `legal-ai-skills@rohas-legal`.
 
-## 2. Start a new task or session
+For regular GovInfo use, get a free api.data.gov key and set `GOVINFO_API_KEY` before starting Codex or Claude Code.
 
-Say `Hello vCLO` to confirm the legal team is available.
+**Upgrading?** Uninstall the older Rohas plugins first (`vclo-by-rohas`, `rohas-legal-ai`, `navigator`, `privacy`), so skills and connectors don't load twice.
 
-## 3. Give a useful instruction
+## 2. Meet your firm
 
-Include:
+Start a new session (in Claude Code you can run `/reload-plugins` instead; in the Codex desktop app, quit and reopen the app so the connectors load) and type:
 
-- what you want done;
-- who vCLO represents;
-- the relevant jurisdiction or forum;
-- material dates and deadlines; and
-- the documents or evidence available.
+```text
+Hello Rohas
+```
+
+You'll see your firm: the Managing Partner, 17 Specialist Lawyers, India, US and UK Counsel, the skill and workflow counts, and which research sources are connected in this session.
+
+## 3. Bring a matter
+
+Tell the firm:
+
+- what happened, or what you need done;
+- who you are in the matter (for example buyer, employee, accused or tenant);
+- the country, and the state if relevant;
+- any deadlines or dates; and
+- the documents you have.
 
 Example:
 
 > We represent the customer under Indian law. Review this SaaS agreement, rank the five most important risks, draft replacement wording and prepare fallback negotiation positions. The agreement and security schedule are attached.
 
-vCLO will select the practice specialist, applicable jurisdiction counsel and the smallest suitable skills or workflow, then return one consolidated work product with gaps and verification status.
+The Managing Partner checks the jurisdiction with the relevant counsel, appoints a Specialist Lawyer as Matter Owner, brings in other lawyers where needed, reviews the result and returns one work product, with gaps and verification status marked. Simple questions go straight to the one skill that answers them.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Child Custody Planner"
+  short_description: "Plan custody, access and parenting arrangements"
+  default_prompt: "Use $legal-ai-skills:child-custody-planner to plan a custody and visitation position for my child."

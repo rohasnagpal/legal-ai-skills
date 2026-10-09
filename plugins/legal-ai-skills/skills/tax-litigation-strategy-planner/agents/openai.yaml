@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tax Litigation Strategy Planner"
+  short_description: "Choose and sequence the route in a tax dispute"
+  default_prompt: "Use $legal-ai-skills:tax-litigation-strategy-planner to plan the route for this tax demand."

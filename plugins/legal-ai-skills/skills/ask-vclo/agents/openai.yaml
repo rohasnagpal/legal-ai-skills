@@ -1,0 +1,8 @@
+interface:
+  display_name: "vCLO (legacy)"
+  short_description: "Legacy name for Legal AI Skills by Rohas Nagpal"
+  brand_color: "#B45309"
+  default_prompt: "Use $legal-ai-skills:ask-vclo to coordinate this legal matter."
+
+policy:
+  allow_implicit_invocation: true

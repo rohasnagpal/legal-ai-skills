@@ -1,0 +1,4 @@
+interface:
+  display_name: "Financial Services Licensing Assessor"
+  short_description: "Whether a financial activity needs a licence"
+  default_prompt: "Use $legal-ai-skills:financial-services-licensing-assessor to assess whether our product needs a financial-services licence."

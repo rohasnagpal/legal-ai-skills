@@ -1,0 +1,4 @@
+interface:
+  display_name: "Regulatory Appeal Planner"
+  short_description: "Appeal a regulator's decision or penalty"
+  default_prompt: "Use $legal-ai-skills:regulatory-appeal-planner to plan an appeal against this regulator's penalty."

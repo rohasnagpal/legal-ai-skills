@@ -1,0 +1,4 @@
+interface:
+  display_name: "Criminal Evidence Admissibility Analyst"
+  short_description: "Admissibility and weight of criminal evidence"
+  default_prompt: "Use $legal-ai-skills:criminal-evidence-admissibility-analyst to test the admissibility of the prosecution's evidence."

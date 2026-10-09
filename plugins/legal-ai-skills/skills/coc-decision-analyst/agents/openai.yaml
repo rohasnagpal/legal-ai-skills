@@ -1,0 +1,4 @@
+interface:
+  display_name: "CoC Decision Analyst"
+  short_description: "Committee of creditors decisions (India)"
+  default_prompt: "Use $legal-ai-skills:coc-decision-analyst to analyse whether this CoC decision is valid."

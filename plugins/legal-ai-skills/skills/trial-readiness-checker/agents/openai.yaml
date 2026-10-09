@@ -1,0 +1,4 @@
+interface:
+  display_name: "Trial Readiness Checker"
+  short_description: "Defence readiness checklist for trial"
+  default_prompt: "Use $legal-ai-skills:trial-readiness-checker to check whether the defence is ready for trial."

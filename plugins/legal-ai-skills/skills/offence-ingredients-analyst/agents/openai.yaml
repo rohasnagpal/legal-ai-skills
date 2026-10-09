@@ -1,0 +1,4 @@
+interface:
+  display_name: "Offence Ingredients Analyst"
+  short_description: "Element-by-element analysis of an offence"
+  default_prompt: "Use $legal-ai-skills:offence-ingredients-analyst to test each ingredient of this offence against the evidence."

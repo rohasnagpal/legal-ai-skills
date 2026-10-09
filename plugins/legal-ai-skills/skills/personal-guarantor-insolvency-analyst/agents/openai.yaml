@@ -1,0 +1,4 @@
+interface:
+  display_name: "Personal Guarantor Insolvency Analyst"
+  short_description: "Personal guarantor insolvency (India)"
+  default_prompt: "Use $legal-ai-skills:personal-guarantor-insolvency-analyst to analyse the insolvency proceedings against this personal guarantor."

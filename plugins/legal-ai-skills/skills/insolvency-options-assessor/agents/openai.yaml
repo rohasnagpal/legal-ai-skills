@@ -1,0 +1,4 @@
+interface:
+  display_name: "Insolvency Options Assessor"
+  short_description: "Choose between insolvency and alternatives"
+  default_prompt: "Use $legal-ai-skills:insolvency-options-assessor to assess our options against this defaulting debtor."

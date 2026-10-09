@@ -1,0 +1,4 @@
+interface:
+  display_name: "RERA Complaint Drafter"
+  short_description: "Draft an allottee's RERA complaint (India)"
+  default_prompt: "Use $legal-ai-skills:rera-complaint-drafter to draft a RERA complaint for delayed possession."

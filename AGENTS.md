@@ -1,0 +1,70 @@
+# Instructions for AI Assistants
+
+This repository is **Legal AI Skills by Rohas Nagpal**, an AI law firm packaged as one plugin: a Managing Partner, 17 Specialist Lawyers, 3 Jurisdiction Counsel, 226 Legal Skills and 20 Workflows.
+
+Use the section that matches your task.
+
+## A. You were asked to install Legal AI Skills
+
+The user's prompt is usually: *Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and say "Hello Rohas".*
+
+### 1. Install
+
+**Claude Code**
+
+```text
+/plugin marketplace add rohasnagpal/legal-ai-skills
+/plugin install legal-ai-skills@rohas-legal
+```
+
+**Codex**
+
+Register this repository as a plugin marketplace source, then install `legal-ai-skills` from the `rohas-legal` marketplace using Codex's plugin installer.
+
+If older Rohas plugins are installed (`vclo-by-rohas`, `rohas-legal-ai`, `navigator` or `privacy`), uninstall them first. Otherwise their skills and MCP servers load twice, which causes duplicate-name warnings and an oversized skill catalogue.
+
+### 2. Verify
+
+- Confirm that `legal-ai-skills` appears in the installed plugins list.
+- Check whether Node.js 18 or later is available (`node --version`). Without it, the legal skills still work, but the bundled registry, research and document tools will not start.
+
+Do not claim success if either the marketplace step or the install step failed.
+
+### 3. Report
+
+**If installation succeeded**, print this message, keeping the text and counts unchanged. Replace the Node.js line only if Node.js is missing.
+
+```text
+Hello Rohas 👋
+
+Legal AI Skills by Rohas Nagpal is installed.
+
+Your AI law firm is ready: 1 Managing Partner, 17 Specialist Lawyers,
+3 Jurisdiction Counsel (India, US, UK), 226 Legal Skills and 20 Workflows.
+
+To meet your firm:
+  • Claude Code: run /reload-plugins (or start a new session)
+  • Codex: start a new chat (in the Codex desktop app, quit and reopen the app)
+Then type: Hello Rohas
+```
+
+If Node.js is missing, add one line before "To meet your firm": `Note: install Node.js 18+ to enable the research connectors and document tools. The legal skills work without it.`
+
+**If installation failed**, do not print the message above. Say which step failed, quote the error briefly, and give the one next step most likely to fix it.
+
+The new skills normally load only in a new session or after a reload, so do not try to run the firm's welcome in the same session as the install.
+
+## B. You are working on this repository
+
+- Skills live in `plugins/legal-ai-skills/skills/<name>/SKILL.md`, each with `agents/openai.yaml`.
+- Lawyers and counsel live in `plugins/legal-ai-skills/agents/`. All lawyers follow `plugins/legal-ai-skills/assets/firm/lawyer-operating-model.md`: only the Managing Partner starts lawyers; lawyers send delegation requests.
+- Workflows live in `plugins/legal-ai-skills/workflows/` and must keep the standard section headings.
+- India, US and UK local skills must be listed in `plugins/legal-ai-skills/jurisdictions/<code>/skill-map.yaml` and carry the jurisdiction gate.
+- After any change to skills, lawyers or skill maps, run:
+
+```text
+ruby scripts/build-skill-registry.rb
+ruby scripts/validate.rb
+```
+
+The validator checks that the counts in the README, this file and the Hello Rohas welcome match the repository.

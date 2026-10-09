@@ -1,0 +1,4 @@
+interface:
+  display_name: "Divorce Grounds Assessor"
+  short_description: "Assess grounds and route for divorce"
+  default_prompt: "Use $legal-ai-skills:divorce-grounds-assessor to assess whether I can get a divorce and by which route."
