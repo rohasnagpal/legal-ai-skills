@@ -10,7 +10,7 @@ The user's prompt is usually: *Install Legal AI Skills from https://github.com/r
 
 ### 0. Check which app you are running in
 
-Legal AI Skills installs only in **Claude Code** (the CLI, the desktop app's Code tab or an IDE extension) and **Codex**. If you are any other app or assistant (for example Cursor, OpenCode, Windsurf or a web chat):
+Legal AI Skills installs only in **Claude Code** (the CLI, the desktop app's Code tab or an IDE extension) and **Codex** (the desktop app, CLI or IDE extension). If you are any other app or assistant (for example Codex on the web at chatgpt.com/codex, a claude.ai or ChatGPT chat, Cursor, OpenCode or Windsurf):
 
 - do not install it into Claude Code or Codex on the user's behalf;
 - do not print the success message below;

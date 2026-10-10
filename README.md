@@ -1,6 +1,6 @@
 # Set Up an AI-Powered Full-Service Law Firm in 90 Seconds
 
-To install **Legal AI Skills by Rohas Nagpal**, open Codex or Claude and run this prompt:
+To install **Legal AI Skills by Rohas Nagpal**, open **Claude Code** or the **Codex** app or CLI on your computer and run this prompt. It does not install in Codex on the web (chatgpt.com/codex) or in a claude.ai chat.
 
 ```text
 Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and say "Hello Rohas".
