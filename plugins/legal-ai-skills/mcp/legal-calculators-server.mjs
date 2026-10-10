@@ -8,7 +8,7 @@
 import readline from "node:readline";
 import { pathToFileURL } from "node:url";
 
-const VERSION = "4.0.1";
+const VERSION = "4.0.2";
 const DAY_MS = 86400000;
 const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const RATE_SCALE = 1000000n;

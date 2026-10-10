@@ -4,9 +4,33 @@ This repository is **Legal AI Skills by Rohas Nagpal**, an AI law firm packaged 
 
 Use the section that matches your task.
 
-## A. You were asked to install Legal AI Skills
+## A. You were asked to install or update Legal AI Skills
 
-The user's prompt is usually: *Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and say "Hello Rohas".*
+The user's prompt is usually: *Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and say "Hello Rohas".* It may instead ask you to *update* or *upgrade* Legal AI Skills.
+
+### 0. Check which app you are running in
+
+Legal AI Skills installs only in **Claude Code** (the CLI, the desktop app's Code tab or an IDE extension) and **Codex**. If you are any other app or assistant (for example Cursor, OpenCode, Windsurf or a web chat):
+
+- do not install it into Claude Code or Codex on the user's behalf;
+- do not print the success message below;
+- tell the user: "Legal AI Skills runs in Claude Code and Codex. Open one of them and paste the same prompt there."
+
+### Updating an existing installation
+
+If `legal-ai-skills` is already installed, or the user asked to update or upgrade, update instead of installing:
+
+```bash
+# Claude Code
+claude plugin marketplace update rohas-legal
+claude plugin update legal-ai-skills@rohas-legal
+
+# Codex
+codex plugin marketplace upgrade rohas-legal
+codex plugin add legal-ai-skills@rohas-legal
+```
+
+Then report the installed version from `claude plugin list` or `codex plugin list` and tell the user to restart: in Claude Code run `/reload-plugins` or start a new session; in Codex start a new chat, and in the Codex desktop app quit and reopen it.
 
 ### 1. Install
 

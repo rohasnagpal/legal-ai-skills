@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.0.2
+
+### Added
+
+- **One-line updates.** Paste `Update Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills` into Claude Code or Codex, or use the documented commands (`claude plugin update`, `codex plugin marketplace upgrade` with `codex plugin add`). The README has a new "Updating to a New Version" section.
+
+### Fixed
+
+- **No false success messages in other apps.** The installer instructions now check which app is running them. Cursor, OpenCode and other apps are told that Legal AI Skills runs in Claude Code and Codex. They no longer install it into those apps on the user's behalf or announce a success that didn't happen.
+
 ## 4.0.1
 
 ### Fixed

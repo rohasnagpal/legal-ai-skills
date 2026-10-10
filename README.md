@@ -128,6 +128,30 @@ Node.js 18 or later is needed for the bundled registry, research and document to
 
 ---
 
+## Updating to a New Version
+
+Paste this into Claude Code or Codex:
+
+```text
+Update Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills
+```
+
+Or run the commands yourself:
+
+```bash
+# Claude Code
+claude plugin marketplace update rohas-legal
+claude plugin update legal-ai-skills@rohas-legal
+
+# Codex
+codex plugin marketplace upgrade rohas-legal
+codex plugin add legal-ai-skills@rohas-legal
+```
+
+Then restart: in Claude Code run `/reload-plugins` or start a new session; in Codex start a new chat, and in the Codex desktop app quit and reopen it. Say **Hello Rohas** to check the version is working. See the [changelog](CHANGELOG.md) for what changed.
+
+---
+
 ## The 20 Workflows
 
 | Workflow | Matter Owner |

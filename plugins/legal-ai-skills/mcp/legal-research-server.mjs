@@ -3,7 +3,7 @@
 import readline from "node:readline";
 import { pathToFileURL } from "node:url";
 
-const VERSION = "4.0.1";
+const VERSION = "4.0.2";
 const REQUEST_TIMEOUT_MS = 30_000;
 const MAX_TEXT_CHARS = 20_000;
 const FEDERAL_REGISTER_BASE = "https://www.federalregister.gov/api/v1";

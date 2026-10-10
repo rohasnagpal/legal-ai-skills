@@ -26,7 +26,9 @@ codex plugin marketplace add rohasnagpal/legal-ai-skills && codex plugin add leg
 
 For regular GovInfo use, get a free api.data.gov key and set `GOVINFO_API_KEY` before starting Codex or Claude Code.
 
-**Upgrading?** Uninstall the older Rohas plugins first (`vclo-by-rohas`, `rohas-legal-ai`, `navigator`, `privacy`), so skills and connectors don't load twice.
+**Coming from vCLO?** Uninstall the older Rohas plugins first (`vclo-by-rohas`, `rohas-legal-ai`, `navigator`, `privacy`), so skills and connectors don't load twice.
+
+**Updating later?** Paste `Update Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills` into Claude Code or Codex, or see [Updating to a New Version](../README.md#updating-to-a-new-version).
 
 ## 2. Meet your firm
 
