@@ -3,7 +3,7 @@
 import readline from "node:readline";
 import { pathToFileURL } from "node:url";
 
-const VERSION = "4.1.0";
+const VERSION = "4.1.1";
 const REQUEST_TIMEOUT_MS = 30_000;
 const SEC_BASE = "https://data.sec.gov";
 const SEC_WWW = "https://www.sec.gov";

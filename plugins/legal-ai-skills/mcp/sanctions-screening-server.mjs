@@ -12,7 +12,7 @@ import path from "node:path";
 import readline from "node:readline";
 import { pathToFileURL } from "node:url";
 
-const VERSION = "4.1.0";
+const VERSION = "4.1.1";
 const USER_AGENT = `Legal-AI-Skills-by-Rohas/${VERSION} (+https://github.com/rohasnagpal/legal-ai-skills)`;
 const CACHE_DIR = process.env.LEGAL_AI_SANCTIONS_CACHE || path.join(os.tmpdir(), "legal-ai-skills-sanctions");
 const DEFAULT_MAX_AGE_HOURS = 24;

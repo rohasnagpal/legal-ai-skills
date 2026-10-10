@@ -1,5 +1,26 @@
 # Changelog
 
+## 4.1.1
+
+Fixes from full dry runs in Claude Code and Codex.
+
+### Fixed
+
+- **"Should I sue?" always reaches Should I Sue.** When Codex hides skill descriptions (see below), it picked `litigation-viability-assessor` instead. That skill and Hello Rohas now hand "should I sue" questions to `should-i-sue`.
+- **Hello Rohas prints the welcome as normal text**, not as a quoted block.
+- **Installers never copy skills into personal skills folders.** Loose copies in `~/.codex/skills` or `~/.claude/skills` override the plugin with old versions and push Codex over its skills budget.
+
+### Added
+
+- **Check my setup:** say "check my setup" to see the installed version, which connectors are working, whether Node.js is working, a live calculator test, and any duplicate Rohas plugins.
+- **Demo matters** in `examples/demo-matters/`: a Pune builder delay and a London unpaid invoice, with realistic documents including a WhatsApp screenshot.
+- **Live session checklist** in `docs/live-session-checklist.md`: attendee setup and a safe demo script.
+
+### Known issues
+
+- **Codex skills budget.** With many plugins installed, Codex may warn that it "exceeded skills context budget" and hide skill descriptions. Hello Rohas and Should I Sue still work. Other narrow skills may be harder for Codex to select by name alone.
+- **legislation.gov.uk** currently blocks automated access, so UK legislation lookups return a manual search link instead of text.
+
 ## 4.1.0
 
 ### Added

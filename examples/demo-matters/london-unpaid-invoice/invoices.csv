@@ -1,0 +1,7 @@
+invoice_no,issued,description,amount_gbp,due,status
+BA-2025-031,2025-05-02,Phase 1 dashboard,18000,2025-06-01,Paid 2025-06-20
+BA-2025-044,2025-06-02,Analytics report May,10000,2025-07-02,Unpaid
+BA-2025-052,2025-07-01,Analytics report June,10000,2025-07-31,Unpaid
+BA-2025-061,2025-08-01,Analytics report July,10000,2025-08-31,Unpaid
+BA-2025-070,2025-09-01,Analytics report August,10000,2025-10-01,Unpaid
+BA-2025-071,2025-09-01,Change request CR-3 (store heatmaps),8000,2025-10-01,Unpaid - no signed change order

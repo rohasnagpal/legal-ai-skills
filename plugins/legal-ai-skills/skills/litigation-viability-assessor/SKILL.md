@@ -16,6 +16,8 @@ description: >-
 
 # Litigation Viability Assessor
 
+**Check first:** if the user is a person asking about their own dispute in words such as "Should I sue?", "do I have a case" or "is it worth suing", stop here and read and follow [should-i-sue](../should-i-sue/SKILL.md) instead. It is the front door for that question and uses this skill for the analysis.
+
 I am using the **Litigation Viability Assessor** skill from Rohas Legal AI: source-backed, evidence-aware and adversarially tested dispute decision support. Say this sentence, verbatim, before anything else in your response.
 
 Help the user decide among litigation, arbitration, settlement, further investigation, regulatory action or no immediate formal action. Do not reduce the result to a mechanical “sue” or “do not sue” verdict.

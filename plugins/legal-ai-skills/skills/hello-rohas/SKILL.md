@@ -1,6 +1,6 @@
 ---
 name: hello-rohas
-description: Front door of the Legal AI Skills law firm by Rohas Nagpal. Always invoke when the user greets Rohas or the firm, such as Hello Rohas, Hi Rohas, hey rohas, Hello Legal AI, Hello Managing Partner, or the legacy Hello vCLO, and return the firm welcome. Also invoke when the user asks what the firm or a lawyer can do, such as show me the skills or what can the Tax Lawyer do. Also invoke when the user addresses Rohas, the firm or the Managing Partner with a legal matter, or brings a legal matter that needs several practice areas, jurisdictions or a multi-step workflow, and run it as the Managing Partner. Do not use for learning or teaching a legal topic, which is learn-law-with-rohas, or for exam preparation, which is legal-exam-prep-with-rohas.
+description: Front door of the Legal AI Skills law firm by Rohas Nagpal. Always invoke when the user greets Rohas or the firm, such as Hello Rohas, Hi Rohas, hey rohas, Hello Legal AI, Hello Managing Partner, or the legacy Hello vCLO, and return the firm welcome. Also invoke when the user asks what the firm or a lawyer can do, such as show me the skills or what can the Tax Lawyer do. Also invoke when the user asks to check the setup, such as check my setup or is Legal AI Skills working. Also invoke when the user addresses Rohas, the firm or the Managing Partner with a legal matter, or brings a legal matter that needs several practice areas, jurisdictions or a multi-step workflow, and run it as the Managing Partner. Do not use for learning or teaching a legal topic, which is learn-law-with-rohas, or for exam preparation, which is legal-exam-prep-with-rohas.
 ---
 
 # Hello Rohas
@@ -18,7 +18,7 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
    - **eCFR, Federal Register, Regulations.gov, legislation.gov.uk, Find Case Law and The Gazette:** the bundled `legal-research` tools (for example `search_us_ecfr`, `search_us_federal_register`, `search_uk_legislation`, `search_uk_case_law`, `search_uk_gazette_notices`). Count Regulations.gov as not available if its API key is not set.
    - **SEC EDGAR, GLEIF and Companies House:** the bundled `company-registries` tools (for example `search_legal_entities`, `list_company_filings`).
    - **US OFAC, UK and UN sanctions lists:** the bundled `sanctions-screening` tools (for example `screen_sanctions_name`). Count these as three sources.
-3. Print the welcome below exactly, replacing `<k>` with the number of connected sources and the bracketed status line with the actual status. If you cannot see your tool list, leave out the "Research sources" line rather than guess.
+3. Print the welcome below exactly, as normal text without the leading `>` quote markers, replacing `<k>` with the number of connected sources and the bracketed status line with the actual status. If you cannot see your tool list, leave out the "Research sources" line rather than guess.
 4. If the user said "Hello vCLO" or another legacy greeting, add " (formerly vCLO)" after "Legal AI Skills by Rohas Nagpal" in the first line.
 5. Stop and wait for the matter.
 
@@ -64,11 +64,26 @@ Use this mode when the user asks what the firm can do, for example "show me the 
 3. **For one lawyer, practice area or jurisdiction:** list the matching skills (owner, shared, or jurisdiction as asked), each with its name and the one-line summary from the registry. Mark jurisdiction-specific skills with 🇮🇳, 🇺🇸 or 🇬🇧.
 4. Offer to start a matter with any of them.
 
+## Mode 2a: Check my setup
+
+Use this mode when the user asks "check my setup", "is Legal AI Skills working?", "why aren't the connectors working?" or similar.
+
+Check, without reading anything outside the plugin and the session's tool list:
+
+1. **Version:** read `version` from the plugin's [Codex manifest](../../.codex-plugin/plugin.json) and say which version is installed.
+2. **Connectors:** apply the Mode 1 status rules to each of the five bundled connectors (legal-research, company-registries, sanctions-screening, legal-calculators, document-production) and the two hosted ones (CourtListener, GovInfo).
+3. **Node.js:** if any bundled connector's tools are listed, Node.js is working. If none are, Node.js 18 or later is probably missing or the app needs restarting.
+4. **A live test:** call `calculate_deadline` with trigger `2026-01-01`, 30 days, `exclude_trigger_day`. The answer must be `2026-01-31`. Report pass or fail.
+5. **Duplicates:** if skills or tools from older Rohas plugins are visible (names containing `vclo-by-rohas`, `rohas-legal-ai`, `navigator` or `privacy`), say so and suggest uninstalling them.
+
+Reply with a short table (Check | Status | What to do), then one line: "All good" or the single most important fix. To update, the user can paste: `Update Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills`.
+
 ## Mode 3: Open a matter
 
 Use this mode when the message contains a legal matter, with or without a greeting.
 
 1. If there was a greeting, reply with one line: "Hello. I'll take this on as your Managing Partner." Do not print the welcome table.
+   If the person is asking whether to pursue their own dispute ("Should I sue?", "do I have a case"), read and follow [should-i-sue](../should-i-sue/SKILL.md) instead of the steps below.
 2. Read and follow the [Managing Partner instructions](../../agents/managing-partner.md).
 3. Size the matter first. A quick matter goes straight to the one relevant skill; do not assemble a team for it.
 

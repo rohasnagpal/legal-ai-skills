@@ -1,0 +1,12 @@
+receipt_no,date,stage,amount_inr,mode
+SH-0412,2020-03-14,Booking and agreement,820000,NEFT
+SH-0533,2020-06-10,Plinth,820000,NEFT
+SH-0701,2020-11-05,1st slab,820000,NEFT
+SH-0866,2021-02-18,4th slab,820000,Cheque
+SH-0990,2021-06-22,8th slab,820000,NEFT
+SH-1104,2021-10-30,12th slab,820000,NEFT
+SH-1219,2022-02-14,Brickwork,820000,NEFT
+SH-1356,2022-06-09,Plaster,820000,NEFT
+SH-1480,2022-10-21,Flooring,410000,NEFT
+SH-1622,2023-04-03,Lift and fittings,410000,NEFT
+SH-1734,2023-09-12,Stamp and registration reimbursement (excluded from consideration),0,NA

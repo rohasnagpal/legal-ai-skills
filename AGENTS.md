@@ -58,6 +58,8 @@ codex plugin add legal-ai-skills@rohas-legal
 
 If the marketplace is already registered, skip the first command. Check the result with `codex plugin list`.
 
+Install only as a plugin. **Never copy skills into `~/.codex/skills`, `~/.claude/skills` or any other personal skills folder.** Loose copies load alongside the plugin, override it with old versions, and push Codex over its skills budget.
+
 If older Rohas plugins are installed (`vclo-by-rohas`, `rohas-legal-ai`, `navigator` or `privacy`), uninstall them first. Otherwise their skills and MCP servers load twice, which causes duplicate-name warnings and an oversized skill catalogue.
 
 ### 2. Verify
