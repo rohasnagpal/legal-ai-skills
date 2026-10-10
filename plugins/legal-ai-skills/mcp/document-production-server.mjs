@@ -8,7 +8,7 @@ import readline from "node:readline";
 import { spawn } from "node:child_process";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-const VERSION = "4.0.2";
+const VERSION = "4.1.0";
 const SERVER_DIR = path.dirname(fileURLToPath(import.meta.url));
 const TEMPLATE_DIR = path.resolve(SERVER_DIR, "../assets/firm");
 const TOOL_CONFIG = {
