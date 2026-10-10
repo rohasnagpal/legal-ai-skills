@@ -5,9 +5,11 @@ description: >-
   civil, commercial, regulatory or arbitral dispute. Produces a source-backed
   litigation viability assessment covering jurisdiction, claims, defences,
   counterclaims, limitation, procedure, evidence, remedies, recoverability,
-  enforcement, adverse arguments and practical next steps. Use for “should I
-  sue?”, “is this case worth pursuing?”, “should we defend or settle?”,
+  enforcement, adverse arguments and practical next steps. Use for lawyers'
+  and clients' “is this case worth pursuing?”, “should we defend or settle?”,
   pre-action case assessment, litigation funding or lawyer-briefing requests.
+  When a person asks “should I sue?” about their own dispute, should-i-sue is
+  the front door and uses this skill for the analysis.
   Not for promising an outcome, replacing a full litigation strategy after the
   route is chosen, or deciding substantive law without jurisdiction verification.
 ---

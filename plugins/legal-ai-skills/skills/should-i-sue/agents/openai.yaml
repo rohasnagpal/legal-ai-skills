@@ -1,0 +1,8 @@
+interface:
+  display_name: "Should I Sue?"
+  short_description: "AI legal team helps decide whether a dispute is worth pursuing"
+  brand_color: "#B45309"
+  default_prompt: "Use $legal-ai-skills:should-i-sue to tell me whether I should sue, using the documents in this folder."
+
+policy:
+  allow_implicit_invocation: true

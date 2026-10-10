@@ -41,7 +41,7 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
 > 4. Any deadlines or dates
 > 5. Documents you have (you can attach them)
 >
-> *Try:* "My builder in Pune is two years late on possession — what can I do?" · "Review this NDA for us under English law" · "We got a GST show-cause notice — draft a reply"
+> *Try:* "My builder in Pune is two years late on possession — what can I do?" · "Review this NDA for us under English law" · "We got a GST show-cause notice — draft a reply" · "Should I sue?"
 >
 > *To see everything the firm can do, say* "show me the skills" *or ask about one lawyer, for example* "what can the Family Lawyer do?"
 >

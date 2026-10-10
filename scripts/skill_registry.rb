@@ -35,7 +35,7 @@ module SkillRegistry
   }.freeze
 
   # Entry points and gateways: not counted as legal skills.
-  ENTRY_SKILLS = %w[hello-rohas ask-vclo india-counsel us-counsel uk-counsel].freeze
+  ENTRY_SKILLS = %w[hello-rohas should-i-sue ask-vclo india-counsel us-counsel uk-counsel].freeze
 
   CATEGORY_BY_SUFFIX = [
     [/-(drafter|documenter|builder|preparer)\z/, 'drafting'],

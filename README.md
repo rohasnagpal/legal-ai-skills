@@ -28,6 +28,18 @@ Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com/
 
 ---
 
+## Should I Sue?
+
+Facing a dispute and not sure whether to pursue it? Install with this prompt instead:
+
+```text
+Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and say "Should I Sue".
+```
+
+Put your contracts, emails, messages, screenshots and notices in one folder, open a new session in that folder, and ask **"Should I sue?"** A team of AI lawyers reads every document, examines the claims, evidence, risks, costs, chances and alternatives, and recommends litigation, arbitration, mediation, negotiation, a regulatory or consumer complaint, or walking away, with any urgent deadline first. It reads only the folder you open, and the final decision is yours. More at [docs/should-i-sue.md](docs/should-i-sue.md).
+
+---
+
 ## How It Works
 
 1. **Managing Partner** receives the matter and consults Jurisdiction Counsel to identify applicable laws, jurisdiction, relevant procedures and required expertise.
@@ -277,6 +289,7 @@ Instructions: [managing-partner.md](plugins/legal-ai-skills/agents/managing-part
 - **[legal-explainer](plugins/legal-ai-skills/skills/legal-explainer/SKILL.md)**: explains a law, clause, judgment, or legal concept in clear plain language, adapted to the reader's level
 - **[legal-opinion-drafter](plugins/legal-ai-skills/skills/legal-opinion-drafter/SKILL.md)**: structured written legal or tax opinion with question, analysis, conclusion and caveats — tax opinions add a risk-characterisation and exposure step
 - **[legal-risk-assessor](plugins/legal-ai-skills/skills/legal-risk-assessor/SKILL.md)**: sets out the options on a decision, with the risk and likely outcome of each
+- **[should-i-sue](plugins/legal-ai-skills/skills/should-i-sue/SKILL.md)**: front door for people deciding whether to pursue their own dispute — reads every document in the folder and recommends the best route, including walking away
 - **[time-narrative-drafter](plugins/legal-ai-skills/skills/time-narrative-drafter/SKILL.md)**: accurate, specific and privilege-aware legal time entries
 
 ### Corporate Lawyer

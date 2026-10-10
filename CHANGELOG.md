@@ -1,5 +1,17 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- **Should I Sue?** A new front door, `should-i-sue`, for people deciding whether to pursue their own dispute. It gives an urgent-deadline warning first, then:
+  - asks a short plain-language interview;
+  - reads every document in the opened folder (including screenshots, and scans via OCR), and only that folder;
+  - has the firm assess the dispute through a new "Should I Sue" branch of the dispute viability workflow;
+  - recommends one of six routes: walk away, negotiate, mediation, arbitration, regulatory or consumer complaint, or litigation.
+
+  Chances are rated without percentages. The install prompt ending *say "Should I Sue"* prints its own post-install message. Website copy is in `docs/should-i-sue.md`.
+
 ## 4.0.2
 
 ### Added

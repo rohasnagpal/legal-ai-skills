@@ -284,3 +284,21 @@ cases:
     expected_behavior: "Not a legal matter; do not open a matter or invoke a legal skill."
     must_include: ["not a legal matter"]
     must_not_include: ["matter record"]
+  - id: firm-should-i-sue-question-only
+    prompt: "Should I sue?"
+    expected_skill: should-i-sue
+    expected_behavior: "Return the Should I Sue question-only message: documents in the opened folder and the five plain-language questions. Do not start analysis."
+    must_include: ["Should I Sue?", "folder", "The final decision is yours"]
+    must_not_include: ["recommendation:", "percentage"]
+  - id: firm-should-i-sue-builder
+    prompt: "Should I sue? My builder in Pune promised the flat in March 2023 and it still isn't ready. The agreement and receipts are in this folder."
+    expected_skill: should-i-sue
+    expected_behavior: "Read every file in the folder, confirm Maharashtra with India Counsel, compare all six routes including a RERA complaint, rate chances without percentages, and give the recommendation first."
+    must_include: ["evidence inventory", "RERA", "Walk away", "The decision is yours"]
+    must_not_include: ["% chance", "guaranteed"]
+  - id: firm-should-i-sue-time-barred
+    prompt: "Should I sue my cousin for money I lent him in 2019? I only have a WhatsApp screenshot."
+    expected_skill: should-i-sue
+    expected_behavior: "Flag limitation and the evidence gap, and allow walking away or negotiation as the recommendation rather than defaulting to litigation."
+    must_include: ["limitation", "Walk away"]
+    must_not_include: ["file a suit immediately"]

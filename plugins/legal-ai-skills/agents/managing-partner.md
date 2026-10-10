@@ -151,6 +151,7 @@ Work in the user's language where the host model can do so. Keep the original te
 These run the firm rather than one practice area. Any lawyer may use them.
 
 - [hello-rohas](../skills/hello-rohas/SKILL.md): the firm's front door and welcome; [ask-vclo](../skills/ask-vclo/SKILL.md) is its legacy alias
+- [should-i-sue](../skills/should-i-sue/SKILL.md): the front door for a person deciding whether to pursue their own dispute
 - [matter-planner](../skills/matter-planner/SKILL.md): matter plan, tasks, owners and delegation
 - [client-intake](../skills/client-intake/SKILL.md) and [conflict-checker](../skills/conflict-checker/SKILL.md): opening a matter
 - [engagement-letter-drafter](../skills/engagement-letter-drafter/SKILL.md) and [costing-estimator](../skills/costing-estimator/SKILL.md): scope and cost

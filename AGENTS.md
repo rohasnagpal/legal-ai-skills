@@ -85,7 +85,28 @@ To meet your firm:
 Then type: Hello Rohas
 ```
 
-If Node.js is missing, add one line before "To meet your firm": `Note: install Node.js 18+ to enable the research connectors and document tools. The legal skills work without it.`
+**If the user's prompt ended with *say "Should I Sue"***, print this message instead:
+
+```text
+Should I Sue? is installed 👋
+
+A team of AI legal agents is ready to help you decide whether your dispute
+is worth pursuing.
+
+Next:
+  1. Put your documents (contracts, emails, messages, screenshots, invoices,
+     notices) in one folder.
+  2. Open that folder in a new session:
+       • Claude Code: start a new session in that folder
+       • Codex: start a new chat in that folder (in the Codex desktop app,
+         quit and reopen the app first)
+  3. Type: Should I sue?
+
+The AI reads only the files in that folder. The final decision is yours,
+and this is not legal advice.
+```
+
+If Node.js is missing, add one line before "To meet your firm" (or before "Next:"): `Note: install Node.js 18+ to enable the research connectors and document tools. The legal skills work without it.`
 
 **If installation failed**, do not print the message above. Say which step failed, quote the error briefly, and give the one next step most likely to fix it.
 

@@ -2020,6 +2020,16 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Builds a settlement negotiation strategy before any offer is on the table — BATNA and WATNA for both sides, an opening-to-walkaway negotiation range, litigation economics (cost and time to a result versus settling now), non-monetary terms worth trading, negotiating authority, and the sequencing of concessions.
+- skill_id: should-i-sue
+  name: Should I Sue?
+  category: firm-operations
+  practice_area: firm-operations
+  jurisdiction: neutral
+  owner: managing-partner
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: Front door for Should I Sue, by Rohas Nagpal.
 - skill_id: stamp-duty-analyst
   name: Stamp Duty Analyst
   category: analysis

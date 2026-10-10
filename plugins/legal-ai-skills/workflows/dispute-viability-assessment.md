@@ -15,6 +15,7 @@ Begin on the available record. Request only missing information that could mater
 - **Pursue:** the client is considering a claim.
 - **Defend:** the client faces a claim or threat.
 - **Settle or investigate first:** the facts are not yet clear enough to decide.
+- **Should I Sue:** a person, usually not a lawyer, asks whether to pursue their own dispute through [should-i-sue](../skills/should-i-sue/SKILL.md). Read every document in the opened folder, compare all six routes (walk away, negotiate, mediation, arbitration, regulatory or consumer complaint, litigation), rate chances as Strong, Reasonable, Uncertain or Weak without percentages, and deliver the plain-language report defined in that skill.
 
 The Matter Owner chooses the branch and records it in the matter record.
 
