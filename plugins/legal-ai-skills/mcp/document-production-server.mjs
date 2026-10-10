@@ -145,8 +145,13 @@ export async function listTemplates() {
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
+const WORKING_DIR = path.resolve(process.env.VCLO_DOCUMENT_ROOT || process.cwd());
+
 async function requireInput(filePath, extension) {
   const resolved = path.resolve(String(filePath || ""));
+  if (resolved !== WORKING_DIR && !resolved.startsWith(WORKING_DIR + path.sep)) {
+    throw new Error(`Input path must be within the working directory (${WORKING_DIR}): ${resolved}`);
+  }
   let details;
   try {
     details = await stat(resolved);
