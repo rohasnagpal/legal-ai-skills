@@ -1,0 +1,7 @@
+interface:
+  display_name: "Singapore Civil Procedure Checker"
+  short_description: "Singapore litigation law and verification"
+  default_prompt: "Use $legal-ai-skills:singapore-civil-procedure-checker for this Singapore matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

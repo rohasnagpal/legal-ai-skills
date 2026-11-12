@@ -21,6 +21,7 @@ Load only the guide relevant to the matter:
 - **[India](../jurisdictions/india/authoritative-sources.md)** — invoke `legal-ai-skills:india-counsel`
 - **[United States](../jurisdictions/us/authoritative-sources.md)** — invoke `legal-ai-skills:us-counsel`
 - **[United Kingdom](../jurisdictions/uk/authoritative-sources.md)** — invoke `legal-ai-skills:uk-counsel`
+- **[Singapore](../jurisdictions/singapore/authoritative-sources.md)** — invoke `legal-ai-skills:singapore-counsel`; covers every specialist practice area through official websites and authorised supplied records, not a dedicated bundled connector
 
 These are maintained starting points, not guarantees of completeness or availability. For another jurisdiction, identify the official legislature, gazette, courts and regulators; disclose that Legal AI Skills has no maintained registry for it; and limit conclusions if primary law cannot be verified.
 
@@ -30,6 +31,7 @@ Use the connector that matches the jurisdiction and source; do not treat mere co
 
 - **United States:** CourtListener's hosted MCP for case-law, docket, judge, oral-argument and citation discovery; GovInfo's hosted MCP for official federal publications; and bundled read-only tools for the eCFR (point-in-time federal regulations), Federal Register and Regulations.gov material.
 - **United Kingdom:** bundled read-only tools for legislation.gov.uk, The National Archives Find Case Law, and The Gazette (insolvency, company and probate notices).
+- **Singapore:** maintained official-source routing across all practice areas through SSO, SG Courts Judgments, the Government Gazette and the responsible regulators. There is no dedicated Singapore MCP connector; source access and private registry entitlements must be checked.
 - **India:** maintained official-source routing through India Code, eGazette, Supreme Court, High Court, tribunal, regulator and eCourts sources where accessible. Legal AI Skills does not claim a bundled unrestricted eCourts API.
 
 CourtListener requires a free account and authorisation. GovInfo and Regulations.gov use free API keys for normal use. The eCFR, Federal Register, legislation.gov.uk, The Gazette and bounded Find Case Law research do not require a key. The Gazette rate-limits automated requests; the connector spaces its requests and reports a rate limit rather than retrying aggressively. If a connector is unavailable or unauthorised, use an available official source or mark the proposition unverified.

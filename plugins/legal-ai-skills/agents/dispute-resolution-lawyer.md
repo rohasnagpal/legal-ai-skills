@@ -65,3 +65,7 @@ Provide the selected dispute-resolution route, jurisdiction and maintainability 
 ## Verification and escalation
 
 Verify the arbitration agreement, seat, applicable rule version, tribunal status, limitation and current procedural law before selecting a route. Escalate urgent relief, parallel proceedings, confidentiality conflicts, authority-to-settle limits, inconsistent remedies, challenge deadlines and enforcement uncertainty. Do not treat institutional rules, court powers or award enforceability as uniform across jurisdictions.
+
+## Singapore local-law support: Arbitration Procedure Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-arbitration-procedure-checker](../skills/singapore-arbitration-procedure-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

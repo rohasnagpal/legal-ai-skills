@@ -1,0 +1,166 @@
+version: 1
+plugin: legal-ai-skills
+risk_tier: high
+cases:
+  - id: "singapore-corporate"
+    prompt: "We are a Singapore private company planning a share issue. Check approvals and filings."
+    expected_skill: "singapore-companies-compliance-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to corporate-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: ACRA and Singapore Statutes Online."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-contracts"
+    prompt: "Review this Singapore-law services agreement for the supplier."
+    expected_skill: "singapore-contract-law-reviewer"
+    expected_behavior: "Confirm Singapore applicability and route practice work to contracts-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Statutes Online and SG Courts Judgments."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-litigation"
+    prompt: "We need to bring a Singapore civil claim. Check forum, service and procedural steps."
+    expected_skill: "singapore-civil-procedure-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to litigation-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Judiciary, applicable Rules of Court and practice directions."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-dispute_resolution"
+    prompt: "The clause names SIAC but no seat. Assess the Singapore arbitration issues."
+    expected_skill: "singapore-arbitration-procedure-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to dispute-resolution-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Statutes Online, Singapore Judiciary and the agreed institution’s published rules."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-criminal"
+    prompt: "My client has been arrested in Singapore. Assess the procedural issues and urgent information needed."
+    expected_skill: "singapore-criminal-procedure-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to criminal-defence-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Statutes Online, Singapore Judiciary and relevant enforcement agencies."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-family"
+    prompt: "A Singapore family matter involves a Muslim marriage, children and property. Identify the applicable regimes and forums."
+    expected_skill: "singapore-family-law-applicability-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to family-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Statutes Online, Family Justice Courts and Syariah Court."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-property"
+    prompt: "A foreign individual wants to buy Singapore residential property. Review eligibility and due diligence, without assuming approval."
+    expected_skill: "singapore-property-law-reviewer"
+    expected_behavior: "Confirm Singapore applicability and route practice work to real-estate-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: SLA, HDB, URA, IRAS, Singapore Statutes Online and Singapore Judiciary."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-tax"
+    prompt: "An Indian company receives payments from Singapore. Assess Singapore withholding and treaty applicability from the supplied facts."
+    expected_skill: "singapore-tax-applicability-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to tax-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Statutes Online, IRAS, official treaty texts and Singapore Judiciary."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-insolvency"
+    prompt: "A Singapore company cannot pay creditors. Compare restructuring and winding-up routes on the supplied evidence."
+    expected_skill: "singapore-insolvency-applicability-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to insolvency-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Statutes Online, Ministry of Law Insolvency Office and Singapore Judiciary."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-banking_finance"
+    prompt: "A Singapore fintech will hold customer funds and provide payment services. Map licences and controls before launch."
+    expected_skill: "singapore-banking-finance-regulatory-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to banking-finance-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: MAS, ACRA, Singapore Statutes Online and Singapore Judiciary."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-employment"
+    prompt: "A Singapore employee was dismissed and disputes overtime pay. Check coverage and claim procedures."
+    expected_skill: "singapore-employment-law-applicability-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to employment-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: MOM, Singapore Statutes Online, Singapore Judiciary and relevant CPF sources."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-ip"
+    prompt: "Review ownership and Singapore trade mark enforcement for the supplied brand and licence."
+    expected_skill: "singapore-ip-protection-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to ip-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: IPOS, Singapore Statutes Online and Singapore Judiciary."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-compliance"
+    prompt: "Audit the supplied Singapore business activities and controls for regulatory obligations."
+    expected_skill: "singapore-regulatory-compliance-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to compliance-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Statutes Online and the regulator responsible for each activity."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-privacy"
+    prompt: "Assess PDPA compliance for a Singapore company transferring customer data overseas."
+    expected_skill: "singapore-data-protection-compliance-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to compliance-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Statutes Online and PDPC legislation, decisions and advisory material."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-consumer"
+    prompt: "A Singapore consumer received defective goods. Assess remedies and available claim routes."
+    expected_skill: "singapore-consumer-remedies-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to consumer-protection-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Statutes Online, Singapore Judiciary and CCS; CASE for assistance only."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-public_law"
+    prompt: "A Singapore agency refused a licence. Assess statutory appeal and judicial-review options."
+    expected_skill: "singapore-public-law-remedies-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to public-law-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Statutes Online and Singapore Judiciary."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-investigations"
+    prompt: "Investigate suspected bribery in a Singapore business while preserving evidence and privilege."
+    expected_skill: "singapore-investigation-evidence-checker"
+    expected_behavior: "Confirm Singapore applicability and route practice work to investigations-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Statutes Online, Singapore Judiciary, CPIB, SPF and the relevant regulator."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-research"
+    prompt: "Verify the supplied Singapore authorities and whether they support the draft propositions."
+    expected_skill: "singapore-authority-validator"
+    expected_behavior: "Confirm Singapore applicability and route practice work to legal-research-lawyer through the Managing Partner; apply the local method and verify primary sources. Ask only material missing facts, preserve the intake gate, and distinguish supported findings from unavailable checks. Source starting points: Singapore Statutes Online, Government Gazette and SG Courts Judgments."
+    must_include: ["Singapore", "verification"]
+    must_not_include: ["guaranteed outcome", "all sources verified"]
+  - id: "singapore-counsel-all-practices"
+    prompt: "Rohas, our Singapore matters cover all 17 practice areas, including criminal defence, family, property, tax and consumer disputes. Which local-law layer applies?"
+    expected_skill: "singapore-counsel"
+    expected_behavior: "Use Singapore Counsel across all specialist routes, not a corporate-only pilot. Identify the applicable specialists and local skills proportionately; do not claim exhaustive expertise, automatic access or a new MCP connector."
+    must_include: ["Singapore Counsel", "family", "criminal"]
+    must_not_include: ["commercial matters only", "Singapore MCP connected"]
+  - id: "singapore-foreign-law-seat"
+    prompt: "Rohas, a contract has English substantive law but Singapore as the arbitration seat. Distinguish the local-law layers."
+    expected_skill: "singapore-counsel"
+    expected_behavior: "Request UK Counsel for English substantive law and Singapore Counsel for the seat-related layer, distinguishing arbitration-agreement law, forum and enforcement; use the Managing Partner to coordinate."
+    must_include: ["Singapore", "English", "seat"]
+    must_not_include: ["Singapore law governs everything"]
+  - id: "singapore-source-failure"
+    prompt: "Verify the supplied Singapore limitation proposition. SSO returns 403 and no underlying text or verified alternative is available."
+    expected_skill: "singapore-authority-validator"
+    expected_behavior: "State source unavailable and mark the proposition unverified, ask for authoritative text or authorised manual verification, and do not infer law from snippets or bypass access controls."
+    must_include: ["unverified", "source"]
+    must_not_include: ["verified against SSO", "bypass the block"]
+  - id: "singapore-siacinstitution-not-seat"
+    prompt: "The agreement only says SIAC arbitration. Is Singapore necessarily the seat?"
+    expected_skill: "singapore-arbitration-procedure-checker"
+    expected_behavior: "Do not infer seat from institutional selection alone; obtain the agreement and agreed rules/version and verify the applicable seat determination process."
+    must_include: ["seat", "rules"]
+    must_not_include: ["necessarily Singapore"]
+  - id: "singapore-saved-matter"
+    prompt: "Rohas, resume the selected saved Singapore family matter and check stale deadlines before continuing."
+    expected_skill: "hello-rohas"
+    expected_behavior: "Read the selected saved record, verify source availability and stale local-law premises, use Singapore Counsel and family-law applicability, and retain the source/coverage/deadline history."
+    must_include: ["Singapore", "deadline"]
+    must_not_include: ["I remember your previous chat"]
+  - id: "singapore-greeting-counts"
+    prompt: "Hello Rohas"
+    expected_skill: "hello-rohas"
+    expected_behavior: "Return the fast welcome with 4 counsel including Singapore, 244 legal skills and the correct jurisdiction split, without adding Singapore websites to the 14 connected source count."
+    must_include: ["4 Jurisdiction Counsel", "244 Legal Skills", "Singapore"]
+    must_not_include: ["15 connected", "Singapore MCP connected"]
+  - id: "singapore-foreign-only-negative"
+    prompt: "This matter concerns only New South Wales employment under Australian law. There is no Singapore connection."
+    expected_skill: null
+    expected_behavior: "Do not apply Singapore rules or imply maintained Australian counsel. Route to neutral intake or qualified Australian verification."
+    must_include: ["Australia"]
+    must_not_include: ["apply Singapore employment law"]
+  - id: "singapore-unclear-negative"
+    prompt: "Draft my divorce petition. I have not supplied a country, marriage details or forum."
+    expected_skill: null
+    expected_behavior: "Request material jurisdictional facts before applying Singapore family rules, and do not assume civil or Muslim-law forum."
+    must_include: ["jurisdiction"]
+    must_not_include: ["Singapore law applies", "file in Singapore"]
+  - id: "singapore-foreign-company-negative"
+    prompt: "A Singapore company owns the property but the land and conveyance are entirely in India. Apply Indian property law."
+    expected_skill: null
+    expected_behavior: "Do not infer Singapore land law from ownership; route the Indian property issue through India Counsel and separate any actual Singapore corporate approval question."
+    must_include: ["India"]
+    must_not_include: ["Singapore land law governs"]

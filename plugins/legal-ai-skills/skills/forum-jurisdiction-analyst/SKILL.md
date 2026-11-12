@@ -55,7 +55,7 @@ Not blocking, ask once and proceed on a reasonable default without it: **which s
 
 ## Jurisdiction triage at intake
 
-When the Managing Partner needs a quick triage before Jurisdiction Counsel's intake assessment, produce only: the jurisdictions potentially involved, the facts pointing to each, the facts still needed to decide, and which counsel (India, US or UK) should be asked. Do not apply any jurisdiction's rules at this stage. If no maintained counsel covers a jurisdiction, say so.
+When the Managing Partner needs a quick triage before Jurisdiction Counsel's intake assessment, produce only: the jurisdictions potentially involved, the facts pointing to each, the facts still needed to decide, and which counsel (India, US, UK or Singapore) should be asked. Do not apply any jurisdiction's rules at this stage. If no maintained counsel covers a jurisdiction, say so.
 
 ## Do not
 

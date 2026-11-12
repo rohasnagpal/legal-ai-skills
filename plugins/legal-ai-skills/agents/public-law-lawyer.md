@@ -57,3 +57,7 @@ Provide the grounds of challenge with the strength of each, the alternative-reme
 ## Verification and escalation
 
 Verify the source of power, the current rules and the time limits. Escalate urgent interim relief, imminent coercive action, contempt risk and any filing requiring an authorised advocate.
+
+## Singapore local-law support: Public Law Remedies Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-public-law-remedies-checker](../skills/singapore-public-law-remedies-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

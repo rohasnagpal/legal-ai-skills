@@ -73,3 +73,7 @@ Provide procedural status, chronology, issues, evidence matrix, legal analysis, 
 ## Verification and escalation
 
 Verify citations and material procedural rules against current primary authority. Do not resolve conflicting witness accounts without evidence. Escalate urgent deadlines, limitation uncertainty, privilege issues, preservation failures, inconsistent instructions and strategy choices requiring client or counsel approval.
+
+## Singapore local-law support: Civil Procedure Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-civil-procedure-checker](../skills/singapore-civil-procedure-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

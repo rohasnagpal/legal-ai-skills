@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.3.0 — 2026-11-12
+
+### Added
+
+- Singapore as the fourth Jurisdiction Counsel, integrated across all 17 specialist practice areas, with 18 local legal skills, jurisdiction gates, official source guides, routing and verification rules.
+- Singapore scenarios across all practice areas, unsupported-jurisdiction and source-access cases, and a manual host test guide.
+- Registry, published counts and archive validation updated: 244 Legal Skills, 4 Jurisdiction Counsel, 78 jurisdiction-specific skills; 17 specialists and 20 workflows unchanged.
+- Singapore official-site research is separate from the existing 14 connected sources; no Singapore MCP connector or paid-registry entitlement is claimed.
+
+
 ## 4.2.0 — 2026-11-12
 
 ### Added

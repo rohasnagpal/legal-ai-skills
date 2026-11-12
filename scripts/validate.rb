@@ -198,11 +198,11 @@ Dir.glob("plugins/#{CORE_PLUGIN}/jurisdictions/*/skill-map.yaml").sort.each do |
       errors << "#{map_path}: missing jurisdiction resource #{required}" unless File.file?(path)
     end
 
-    local_rule_names = { 'india' => 'Indian', 'us' => 'US', 'uk' => 'UK' }
+    local_rule_names = { 'india' => 'Indian', 'us' => 'US', 'uk' => 'UK', 'singapore' => 'Singapore' }
     local_rule_name = local_rule_names[jurisdiction]
     if local_rule_name
       stop_rule = "If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply #{local_rule_name} rules."
-      counsel_link = "[#{jurisdiction == 'us' ? 'US' : jurisdiction.upcase == 'UK' ? 'UK' : 'India'} Counsel instructions](../../agents/#{expected_agent}.md)"
+      counsel_link = "[#{ { 'india' => 'India', 'us' => 'US', 'uk' => 'UK', 'singapore' => 'Singapore' }.fetch(jurisdiction) } Counsel instructions](../../agents/#{expected_agent}.md)"
       if File.file?(counsel_skill_path)
         counsel_content = File.read(counsel_skill_path, encoding: 'UTF-8')
         errors << "#{counsel_skill_path}: missing jurisdiction gate" unless counsel_content.include?('## Jurisdiction gate')
@@ -716,6 +716,18 @@ firm_required_files = %w[
   plugins/legal-ai-skills/tests/uk-jurisdiction-routing-behavioral-evals.yaml
 ]
 
+firm_required_files += %w[
+  plugins/legal-ai-skills/agents/singapore-counsel.md
+  plugins/legal-ai-skills/skills/singapore-counsel/SKILL.md
+  plugins/legal-ai-skills/skills/singapore-counsel/agents/openai.yaml
+  plugins/legal-ai-skills/jurisdictions/singapore/README.md
+  plugins/legal-ai-skills/jurisdictions/singapore/operating-rules.md
+  plugins/legal-ai-skills/jurisdictions/singapore/authoritative-sources.md
+  plugins/legal-ai-skills/jurisdictions/singapore/integrations.md
+  plugins/legal-ai-skills/jurisdictions/singapore/skill-map.yaml
+  plugins/legal-ai-skills/tests/singapore-jurisdiction-routing-behavioral-evals.yaml
+]
+
 firm_required_files.each do |f|
   errors << "firm: required file is missing: #{f}" unless File.file?(f)
 end
@@ -759,7 +771,7 @@ if File.file?(welcome_path)
     errors << "#{welcome_path}: welcome #{label} must read #{expected}" unless welcome.include?(expected)
   end
   by_jurisdiction = registry['skills'].select { |skill| skill['counts_as_legal_skill'] }.group_by { |skill| skill['jurisdiction'] }.transform_values(&:length)
-  split = "#{counts['jurisdiction_specific_skills']} are jurisdiction-specific: #{by_jurisdiction['india'].to_i} India · #{by_jurisdiction['us'].to_i} US · #{by_jurisdiction['uk'].to_i} UK"
+  split = "#{counts['jurisdiction_specific_skills']} are jurisdiction-specific: #{by_jurisdiction['india'].to_i} India · #{by_jurisdiction['us'].to_i} US · #{by_jurisdiction['uk'].to_i} UK · #{by_jurisdiction['singapore'].to_i} Singapore"
   errors << "#{welcome_path}: welcome jurisdiction split must read '#{split}'" unless welcome.include?(split)
   welcome_workflow_row = welcome[/^> \| \*\*\d+ Workflows\*\* \| (.+) \|$/, 1].to_s
   listed = welcome_workflow_row.split(' · ').length
@@ -772,6 +784,7 @@ published_count_files.each do |path|
   text = File.read(path, encoding: 'UTF-8')
   {
     "#{counts['specialist_lawyers']} Specialist Lawyers" => 'specialist lawyer count',
+    "#{counts['jurisdiction_counsel']} Jurisdiction Counsel" => 'jurisdiction counsel count',
     "#{counts['legal_skills']} Legal Skills" => 'legal skill count',
     "#{counts['workflows']} Workflows" => 'workflow count'
   }.each do |expected, label|
@@ -956,6 +969,28 @@ Dir.glob("plugins/#{CORE_PLUGIN}/jurisdictions/*/skill-map.yaml").sort.each do |
   jurisdiction_map = YAML.safe_load(File.read(map_path, encoding: 'UTF-8'))
   jurisdiction_map.fetch('skills').values.flatten.each do |skill|
     errors << "#{map_path}: mapped skill '#{skill}' has no positive behavioural routing case" unless covered_behavioral_skills.include?(skill)
+  end
+end
+
+# Singapore is a full practice-area route; prevent loss of a specialist or privacy
+# route while preserving the existing gateway/count and jurisdiction-gate checks.
+singapore_map_path = "plugins/#{CORE_PLUGIN}/jurisdictions/singapore/skill-map.yaml"
+if File.file?(singapore_map_path)
+  singapore_map = YAML.safe_load(File.read(singapore_map_path, encoding: 'UTF-8'))
+  singapore_ids = singapore_map.fetch('skills').values.flatten
+  singapore_rows = registry['skills'].select { |skill| singapore_ids.include?(skill['skill_id']) }
+  expected_owners = Dir.glob("plugins/#{CORE_PLUGIN}/agents/*-lawyer.md").map { |path| File.basename(path, '.md') }.sort
+  missing_owners = expected_owners - singapore_rows.map { |skill| skill['owner'] }.uniq
+  errors << "#{singapore_map_path}: missing Singapore practice-area owners: #{missing_owners.join(', ')}" unless missing_owners.empty?
+  errors << "#{singapore_map_path}: missing dedicated privacy route" unless singapore_ids.include?('singapore-data-protection-compliance-checker')
+  gateway = registry['skills'].find { |skill| skill['skill_id'] == 'singapore-counsel' }
+  errors << "Singapore gateway must be a jurisdiction-owned entry point, not a counted legal skill" unless gateway && gateway['owner'] == 'singapore-counsel' && gateway['jurisdiction'] == 'singapore' && !gateway['counts_as_legal_skill']
+  singapore_rows.each do |skill|
+    errors << "#{skill['skill_id']}: must retain Singapore Counsel in ownership" unless ([skill['owner']] + skill['shared_with']).include?('singapore-counsel')
+  end
+  catalogue = File.read(File.join(File.dirname(singapore_map_path), 'README.md'), encoding: 'UTF-8')
+  singapore_ids.each do |id|
+    errors << "Singapore catalogue: missing mapped skill #{id}" unless catalogue.include?("(../../skills/#{id}/SKILL.md)")
   end
 end
 

@@ -54,3 +54,7 @@ Provide scope and mandate, allegation matrix, evidence inventory, chronology, hy
 ## Verification and escalation
 
 Preserve originals and provenance; identify authenticity or completeness limits. Escalate imminent harm, evidence destruction, conflicts, senior-management allegations, criminal or regulatory exposure, privilege decisions and any request for unauthorised surveillance or access.
+
+## Singapore local-law support: Investigation and Evidence Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-investigation-evidence-checker](../skills/singapore-investigation-evidence-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

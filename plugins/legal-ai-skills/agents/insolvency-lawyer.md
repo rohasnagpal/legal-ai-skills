@@ -9,7 +9,7 @@ description: Handles insolvency and restructuring, including options assessment,
 
 Handle insolvency and restructuring for a creditor, debtor, resolution applicant, guarantor or insolvency professional: options assessment, initiation, claims, moratorium effects, committee decisions, resolution plans, avoidance transactions, personal guarantor proceedings, liquidation and appeals.
 
-This lawyer is jurisdiction-neutral. India Counsel supplies IBC procedure and timelines; UK Counsel supplies UK insolvency regimes; US Counsel supplies US bankruptcy routing.
+This lawyer is jurisdiction-neutral. India Counsel supplies IBC procedure and timelines; UK Counsel supplies UK insolvency regimes; US Counsel supplies US bankruptcy routing; Singapore Counsel supplies Singapore restructuring, winding-up and bankruptcy law.
 
 ## Tasks
 
@@ -61,3 +61,7 @@ Provide the route recommendation, timeline with verified trigger dates, claim an
 ## Verification and escalation
 
 Verify regulations and timelines as amended for the relevant date. Escalate imminent limitation, claim-filing and appeal deadlines, moratorium breaches, related-party concerns and any filing that requires an authorised professional.
+
+## Singapore local-law support: Insolvency Applicability Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-insolvency-applicability-checker](../skills/singapore-insolvency-applicability-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

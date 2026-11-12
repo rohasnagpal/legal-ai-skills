@@ -1,0 +1,7 @@
+interface:
+  display_name: "Singapore Criminal Procedure Checker"
+  short_description: "Singapore criminal law and verification"
+  default_prompt: "Use $legal-ai-skills:singapore-criminal-procedure-checker for this Singapore matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

@@ -38,7 +38,7 @@ Start a new session (in Claude Code you can run `/reload-plugins` instead; in th
 Hello Rohas
 ```
 
-You'll see your firm: the Managing Partner, 17 Specialist Lawyers, India, US and UK Counsel, the skill and workflow counts, and which research sources are connected in this session.
+You'll see your firm: the Managing Partner, 17 Specialist Lawyers, India, US, UK and Singapore Counsel, the skill and workflow counts, and which research sources are connected in this session.
 
 ## 3. Bring a matter
 

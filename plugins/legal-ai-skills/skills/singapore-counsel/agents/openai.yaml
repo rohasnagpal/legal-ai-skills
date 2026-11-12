@@ -1,0 +1,7 @@
+interface:
+  display_name: "Singapore Counsel"
+  short_description: "Singapore law and procedure across every practice area"
+  default_prompt: "Use $legal-ai-skills:singapore-counsel to confirm and verify the Singapore-law layer of this matter."
+
+policy:
+  allow_implicit_invocation: true

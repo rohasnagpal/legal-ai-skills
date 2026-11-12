@@ -6,7 +6,7 @@ cases:
     prompt: "Hello Rohas"
     expected_skill: hello-rohas
     expected_behavior: "Return the configured firm welcome with an honest research-source status line, then stop."
-    must_include: ["Welcome to your AI law firm", "17 Specialist Lawyers", "3 Jurisdiction Counsel"]
+    must_include: ["Welcome to your AI law firm", "17 Specialist Lawyers", "4 Jurisdiction Counsel"]
     must_not_include: ["legal analysis", "invented matter"]
   - id: firm-hello-rohas-2
     prompt: "Hello Rohas, my builder in Pune is two years late with my flat."

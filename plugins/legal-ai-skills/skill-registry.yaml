@@ -3,11 +3,11 @@
 version: 1
 generated_by: scripts/build-skill-registry.rb
 counts:
-  legal_skills: 226
+  legal_skills: 244
   specialist_lawyers: 17
-  jurisdiction_counsel: 3
+  jurisdiction_counsel: 4
   workflows: 20
-  jurisdiction_specific_skills: 60
+  jurisdiction_specific_skills: 78
 skills:
 - skill_id: administrative-action-challenge-analyst
   name: Administrative Action Challenge Analyst
@@ -2030,6 +2030,214 @@ skills:
   counts_as_legal_skill: false
   review_required: true
   summary: Front door for Should I Sue, by Rohas Nagpal.
+- skill_id: singapore-arbitration-procedure-checker
+  name: Singapore Arbitration Procedure Checker
+  category: review
+  practice_area: dispute-resolution
+  jurisdiction: singapore
+  owner: dispute-resolution-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore-seated arbitration, mediation, court support and award enforcement.
+- skill_id: singapore-authority-validator
+  name: Singapore Authority Validator
+  category: review
+  practice_area: research
+  jurisdiction: singapore
+  owner: legal-research-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore legislation, judgments, hierarchy, temporal validity and citation verification.
+- skill_id: singapore-banking-finance-regulatory-checker
+  name: Singapore Banking and Finance Regulatory Checker
+  category: review
+  practice_area: banking-finance
+  jurisdiction: singapore
+  owner: banking-finance-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore financing, security, guarantees, regulated activities and financial-services obligations.
+- skill_id: singapore-civil-procedure-checker
+  name: Singapore Civil Procedure Checker
+  category: review
+  practice_area: litigation
+  jurisdiction: singapore
+  owner: litigation-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore civil jurisdiction, pre-action steps, claims, service, case management and enforcement.
+- skill_id: singapore-companies-compliance-checker
+  name: Singapore Companies Compliance Checker
+  category: review
+  practice_area: corporate
+  jurisdiction: singapore
+  owner: corporate-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore company formation, governance, beneficial ownership, transactions and filings.
+- skill_id: singapore-consumer-remedies-checker
+  name: Singapore Consumer Remedies Checker
+  category: review
+  practice_area: consumer
+  jurisdiction: singapore
+  owner: consumer-protection-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore consumer transactions, unfair practices, defective goods and dispute routes.
+- skill_id: singapore-contract-law-reviewer
+  name: Singapore Contract Law Reviewer
+  category: review
+  practice_area: contracts
+  jurisdiction: singapore
+  owner: contracts-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore-governed commercial contracts, remedies and negotiation positions.
+- skill_id: singapore-counsel
+  name: Singapore Counsel
+  category: firm-operations
+  practice_area: jurisdiction
+  jurisdiction: singapore
+  owner: singapore-counsel
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: Applies the firm's Singapore jurisdiction layer across all practice areas, including corporate, contracts, civil disputes, arbitration, criminal, family, property, tax, insolvency, banking, employment, IP, compliance, privacy, consumer, public law, investigations and legal research.
+- skill_id: singapore-criminal-procedure-checker
+  name: Singapore Criminal Procedure Checker
+  category: review
+  practice_area: criminal
+  jurisdiction: singapore
+  owner: criminal-defence-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore investigations, arrest, bail, charges, trial, sentencing and appeals.
+- skill_id: singapore-data-protection-compliance-checker
+  name: Singapore Data Protection Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: singapore
+  owner: compliance-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore PDPA scope, processing, transfers, incidents and compliance evidence.
+- skill_id: singapore-employment-law-applicability-checker
+  name: Singapore Employment Law Applicability Checker
+  category: review
+  practice_area: employment
+  jurisdiction: singapore
+  owner: employment-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore employment coverage, contracts, dismissal, wages, work passes and workplace claims.
+- skill_id: singapore-family-law-applicability-checker
+  name: Singapore Family Law Applicability Checker
+  category: review
+  practice_area: family
+  jurisdiction: singapore
+  owner: family-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore marriage, divorce, children, maintenance, protection, adoption, succession and probate.
+- skill_id: singapore-insolvency-applicability-checker
+  name: Singapore Insolvency Applicability Checker
+  category: review
+  practice_area: insolvency
+  jurisdiction: singapore
+  owner: insolvency-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore corporate restructuring, winding up, personal bankruptcy and cross-border insolvency.
+- skill_id: singapore-investigation-evidence-checker
+  name: Singapore Investigation and Evidence Checker
+  category: review
+  practice_area: investigations
+  jurisdiction: singapore
+  owner: investigations-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore investigations, corruption, digital evidence, preservation, privilege and admissibility.
+- skill_id: singapore-ip-protection-checker
+  name: Singapore IP Protection Checker
+  category: review
+  practice_area: ip
+  jurisdiction: singapore
+  owner: ip-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore IP ownership, registration, licensing, infringement, opposition and remedies.
+- skill_id: singapore-property-law-reviewer
+  name: Singapore Property Law Reviewer
+  category: review
+  practice_area: real-estate
+  jurisdiction: singapore
+  owner: real-estate-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore title, conveyancing, tenancies, development, strata and property disputes.
+- skill_id: singapore-public-law-remedies-checker
+  name: Singapore Public Law Remedies Checker
+  category: review
+  practice_area: public-law
+  jurisdiction: singapore
+  owner: public-law-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore administrative decisions, constitutional issues, statutory appeals and public procurement.
+- skill_id: singapore-regulatory-compliance-checker
+  name: Singapore Regulatory Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: singapore
+  owner: compliance-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore business regulation, licensing, competition, AML/CFT and sector obligations.
+- skill_id: singapore-tax-applicability-checker
+  name: Singapore Tax Applicability Checker
+  category: review
+  practice_area: tax
+  jurisdiction: singapore
+  owner: tax-lawyer
+  shared_with:
+  - singapore-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Singapore singapore income tax, GST, withholding, stamp duties, treaties, assessments and appeals.
 - skill_id: stamp-duty-analyst
   name: Stamp Duty Analyst
   category: analysis

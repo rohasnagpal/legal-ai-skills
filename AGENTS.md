@@ -1,6 +1,6 @@
 # Instructions for AI Assistants
 
-This repository is **Legal AI Skills by Rohas Nagpal**, an AI law firm packaged as one plugin: a Managing Partner, 17 Specialist Lawyers, 3 Jurisdiction Counsel, 226 Legal Skills and 20 Workflows.
+This repository is **Legal AI Skills by Rohas Nagpal**, an AI law firm packaged as one plugin: a Managing Partner, 17 Specialist Lawyers, 4 Jurisdiction Counsel, 244 Legal Skills and 20 Workflows.
 
 Use the section that matches your task.
 
@@ -79,7 +79,7 @@ Hello Rohas 👋
 Legal AI Skills by Rohas Nagpal is installed.
 
 Your AI law firm is ready: 1 Managing Partner, 17 Specialist Lawyers,
-3 Jurisdiction Counsel (India, US, UK), 226 Legal Skills and 20 Workflows.
+4 Jurisdiction Counsel (India, US, UK, Singapore), 244 Legal Skills and 20 Workflows.
 
 To meet your firm:
   • Claude Code: run /reload-plugins (or start a new session)
@@ -119,7 +119,7 @@ The new skills normally load only in a new session or after a reload, so do not 
 - Skills live in `plugins/legal-ai-skills/skills/<name>/SKILL.md`, each with `agents/openai.yaml`.
 - Lawyers and counsel live in `plugins/legal-ai-skills/agents/`. All lawyers follow `plugins/legal-ai-skills/assets/firm/lawyer-operating-model.md`: only the Managing Partner starts lawyers; lawyers send delegation requests.
 - Workflows live in `plugins/legal-ai-skills/workflows/` and must keep the standard section headings.
-- India, US and UK local skills must be listed in `plugins/legal-ai-skills/jurisdictions/<code>/skill-map.yaml` and carry the jurisdiction gate.
+- India, US, UK and Singapore local skills must be listed in `plugins/legal-ai-skills/jurisdictions/<code>/skill-map.yaml` and carry the jurisdiction gate.
 - After any change to skills, lawyers or skill maps, run:
 
 ```text

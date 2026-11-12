@@ -17,7 +17,7 @@ module SkillRegistry
     public-law-lawyer employment-lawyer ip-lawyer compliance-lawyer
     investigations-lawyer dispute-resolution-lawyer litigation-lawyer
     corporate-lawyer contracts-lawyer legal-research-lawyer
-    india-counsel us-counsel uk-counsel managing-partner
+    india-counsel us-counsel uk-counsel singapore-counsel managing-partner
   ].freeze
 
   PRACTICE_AREAS = {
@@ -31,11 +31,12 @@ module SkillRegistry
     'corporate-lawyer' => 'corporate', 'contracts-lawyer' => 'contracts',
     'legal-research-lawyer' => 'research', 'india-counsel' => 'jurisdiction',
     'us-counsel' => 'jurisdiction', 'uk-counsel' => 'jurisdiction',
+    'singapore-counsel' => 'jurisdiction',
     'managing-partner' => 'firm-operations'
   }.freeze
 
   # Entry points and gateways: not counted as legal skills.
-  ENTRY_SKILLS = %w[hello-rohas should-i-sue ask-vclo india-counsel us-counsel uk-counsel].freeze
+  ENTRY_SKILLS = %w[hello-rohas should-i-sue ask-vclo india-counsel us-counsel uk-counsel singapore-counsel].freeze
 
   CATEGORY_BY_SUFFIX = [
     [/-(drafter|documenter|builder|preparer)\z/, 'drafting'],
@@ -84,7 +85,7 @@ module SkillRegistry
   def build
     refs = references_by_agent
     jurisdictions = jurisdiction_of
-    counsel_by_jurisdiction = { 'india' => 'india-counsel', 'us' => 'us-counsel', 'uk' => 'uk-counsel' }
+    counsel_by_jurisdiction = { 'india' => 'india-counsel', 'us' => 'us-counsel', 'uk' => 'uk-counsel', 'singapore' => 'singapore-counsel' }
 
     skills = skill_names.map do |name|
       meta, title = frontmatter(name)

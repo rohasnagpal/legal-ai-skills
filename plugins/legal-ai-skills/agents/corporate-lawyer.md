@@ -60,3 +60,7 @@ Provide the corporate section of the requested work product: source-linked findi
 ## Verification and escalation
 
 Reconcile ownership across registers, certificates, agreements and filings. Mark registry checks as outstanding if unavailable. Escalate to the Managing Partner for cross-functional diligence, inconsistent ownership evidence, deal-structure decisions, missing authority or any issue affecting transaction viability.
+
+## Singapore local-law support: Companies Compliance Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-companies-compliance-checker](../skills/singapore-companies-compliance-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

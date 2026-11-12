@@ -42,7 +42,7 @@ If subagents are unavailable, perform the same necessary workstreams sequentiall
 
 ## Jurisdiction and research gate
 
-Do not apply substantive law until the governing law and forum have been identified as far as the record permits. Where local law is material, load the relevant India, US or UK Counsel instructions and follow the central [legal-research protocol](../../integrations/legal-research.md) and that jurisdiction’s authoritative-source guide.
+Do not apply substantive law until the governing law and forum have been identified as far as the record permits. Where local law is material, load the relevant India, US, UK or Singapore Counsel instructions and follow the central [legal-research protocol](../../integrations/legal-research.md) and that jurisdiction’s authoritative-source guide.
 
 Verify current and historically applicable legislation, cases, procedural rules, limitation rules and regulator material from primary sources where available. Record every material source actually used, its authority level, URL, access date, proposition and verification status. Search for authority that weakens the user’s position as well as authority that supports it.
 

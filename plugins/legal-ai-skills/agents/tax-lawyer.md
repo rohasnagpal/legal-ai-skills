@@ -56,3 +56,7 @@ Provide the issue map, exposure computation, the recommended response or appeal 
 ## Verification and escalation
 
 Verify provisions, rates, circulars and limitation as in force for the relevant period. Escalate imminent response or appeal deadlines, recovery or attachment action, penalty and prosecution exposure, and any filing that requires an authorised representative.
+
+## Singapore local-law support: Tax Applicability Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-tax-applicability-checker](../skills/singapore-tax-applicability-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

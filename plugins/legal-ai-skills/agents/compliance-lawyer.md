@@ -60,3 +60,11 @@ Provide applicability, obligation, control, evidence, gap, risk, remediation, ow
 ## Verification and escalation
 
 Use current official sources for material requirements. Distinguish a missing control from missing evidence of a control. Escalate reportable incidents, imminent deadlines, uncertain applicability, cross-border issues, enforcement exposure and decisions requiring risk acceptance.
+
+## Singapore local-law support: Regulatory Compliance Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-regulatory-compliance-checker](../skills/singapore-regulatory-compliance-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Singapore local-law support: Data Protection Compliance Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-data-protection-compliance-checker](../skills/singapore-data-protection-compliance-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

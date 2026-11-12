@@ -1,7 +1,7 @@
 {
   "name": "legal-ai-skills",
-  "version": "4.2.0",
-  "description": "Legal AI Skills by Rohas Nagpal is a free, open-source AI law firm: a Managing Partner, 17 Specialist Lawyers, India, US and UK Jurisdiction Counsel, 226 legal skills, 20 workflows, official legal-research connectors, company registries, deadline and interest calculators, sanctions-list screening, and local document production.",
+  "version": "4.3.0",
+  "description": "Legal AI Skills by Rohas Nagpal is a free, open-source AI law firm: a Managing Partner, 17 Specialist Lawyers, India, US, UK and Singapore Jurisdiction Counsel, 244 legal skills, 20 workflows, official legal-research connectors, company registries, deadline and interest calculators, sanctions-list screening, and local document production.",
   "author": {
     "name": "Rohas Nagpal",
     "email": "rohasnagpal@gmail.com",
@@ -142,7 +142,7 @@
   "interface": {
     "displayName": "Legal AI Skills by Rohas",
     "shortDescription": "Your AI law firm",
-    "longDescription": "Legal AI Skills sets up an AI law firm inside Codex or Claude. A Managing Partner receives each matter, consults India, US or UK Jurisdiction Counsel, appoints one of 17 Specialist Lawyers as Matter Owner, coordinates other lawyers and reviews the final work. The firm covers corporate, contracts, litigation, dispute resolution, criminal defence, family, real estate, tax, insolvency, banking and finance, employment, IP, compliance, consumer protection, public law, investigations and legal research, with 226 legal skills, 20 workflows, official legal-research connectors, company registries, sanctions-list screening, deadline and interest calculators and local document production. Say Hello Rohas to begin.",
+    "longDescription": "Legal AI Skills sets up an AI law firm inside Codex or Claude. A Managing Partner receives each matter, consults India, US, UK or Singapore Jurisdiction Counsel, appoints one of 17 Specialist Lawyers as Matter Owner, coordinates other lawyers and reviews the final work. The firm covers corporate, contracts, litigation, dispute resolution, criminal defence, family, real estate, tax, insolvency, banking and finance, employment, IP, compliance, consumer protection, public law, investigations and legal research, with 244 legal skills, 20 workflows, official legal-research connectors, company registries, sanctions-list screening, deadline and interest calculators and local document production. Say Hello Rohas to begin.",
     "developerName": "Rohas Nagpal",
     "category": "Productivity",
     "capabilities": [

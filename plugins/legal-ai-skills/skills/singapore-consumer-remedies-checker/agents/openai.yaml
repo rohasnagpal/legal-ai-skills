@@ -1,0 +1,7 @@
+interface:
+  display_name: "Singapore Consumer Remedies Checker"
+  short_description: "Singapore consumer law and verification"
+  default_prompt: "Use $legal-ai-skills:singapore-consumer-remedies-checker for this Singapore matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

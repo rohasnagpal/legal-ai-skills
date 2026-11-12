@@ -64,7 +64,7 @@ Ask only for what is missing and would change the answer: what happened and when
 
 Follow the [Managing Partner instructions](../../agents/managing-partner.md) and run the [dispute viability assessment](../../workflows/dispute-viability-assessment.md), "Should I Sue" branch:
 
-- **Jurisdiction Counsel** (India, US or UK) confirms which law and forum apply. If the jurisdiction is not covered or is unclear, say so and limit the advice.
+- **Jurisdiction Counsel** (India, US, UK or Singapore) confirms which law and forum apply. If the jurisdiction is not covered or is unclear, say so and limit the advice.
 - **The Litigation Lawyer** is Matter Owner and uses [litigation-viability-assessor](../litigation-viability-assessor/SKILL.md) for the core analysis.
 - **The Dispute Resolution Lawyer** assesses negotiation, mediation and arbitration, including any arbitration or mediation clause in the documents.
 - **The relevant specialist** joins: for example, the Real Estate Lawyer for a builder or landlord, the Consumer Protection Lawyer for a defective product or service, the Employment Lawyer for a workplace dispute, or the Banking & Finance Lawyer for an unpaid loan.

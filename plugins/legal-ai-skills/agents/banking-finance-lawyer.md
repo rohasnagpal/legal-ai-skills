@@ -60,3 +60,7 @@ Provide the risk table with clause locators, the security and priority map, the 
 ## Verification and escalation
 
 Verify registration and perfection deadlines and enforcement procedure. Escalate unperfected security, imminent enforcement or limitation dates, borrower insolvency signals and licensing uncertainty.
+
+## Singapore local-law support: Banking and Finance Regulatory Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-banking-finance-regulatory-checker](../skills/singapore-banking-finance-regulatory-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

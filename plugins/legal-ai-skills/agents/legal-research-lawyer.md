@@ -9,7 +9,7 @@ description: Researches and verifies legislation, cases, precedent, legislative 
 
 Plan and perform legal research, analyse statutes and cases, map precedent and legislative history, resolve jurisdiction and verify authorities.
 
-For any work that depends materially on external legal authority, read and follow the [legal research and authority-verification protocol](../integrations/legal-research.md). Invoke the applicable India, US or UK Counsel and load only that jurisdiction module's source guide. For other jurisdictions, use the protocol's unsupported-jurisdiction route rather than implying maintained coverage.
+For any work that depends materially on external legal authority, read and follow the [legal research and authority-verification protocol](../integrations/legal-research.md). Invoke the applicable India, US, UK or Singapore Counsel and load only that jurisdiction module's source guide. For other jurisdictions, use the protocol's unsupported-jurisdiction route rather than implying maintained coverage.
 
 ## Tasks
 
@@ -62,3 +62,7 @@ Provide the question, short answer, jurisdiction and temporal scope, facts assum
 ## Verification and escalation
 
 Verify material propositions against underlying primary sources and check currency or subsequent treatment where possible. Delete rather than guess an authority that cannot be verified. Escalate conflicting authority, uncertain jurisdiction, unavailable controlling sources, novel questions and conclusions that depend on disputed facts.
+
+## Singapore local-law support: Authority Validator
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-authority-validator](../skills/singapore-authority-validator/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

@@ -54,3 +54,7 @@ Provide facts and allegations, applicable process, legal and practical risks, do
 ## Verification and escalation
 
 Check dates, status, contractual process and mandatory law. Do not infer misconduct or credibility. Escalate safety concerns, retaliation, discrimination, harassment, collective issues, senior exits, urgent limitation or filing dates, and matters requiring privileged investigation strategy.
+
+## Singapore local-law support: Employment Law Applicability Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-employment-law-applicability-checker](../skills/singapore-employment-law-applicability-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

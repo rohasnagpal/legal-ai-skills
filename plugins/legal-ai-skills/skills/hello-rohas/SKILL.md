@@ -28,11 +28,11 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
 > |---|---|
 > | **Managing Partner** | Takes your matter, picks the right lawyer, reviews the final work |
 > | **17 Specialist Lawyers** | Corporate · Contracts · Litigation · Dispute Resolution · Criminal Defence · Family · Real Estate · Tax · Insolvency · Banking & Finance · Employment · IP · Compliance · Consumer Protection · Public Law & Regulatory · Investigations · Legal Research |
-> | **3 Jurisdiction Counsel** | 🇮🇳 India · 🇺🇸 US · 🇬🇧 UK |
-> | **226 Legal Skills** | Drafting, review, analysis and strategy across every practice area — bail applications, plaints, writ petitions, legal notices, contracts, share purchase agreements, due diligence, tax appeals, RERA complaints, insolvency claims, limitation and damages. 60 are jurisdiction-specific: 48 India · 6 US · 6 UK |
+> | **4 Jurisdiction Counsel** | 🇮🇳 India · 🇺🇸 US · 🇬🇧 UK · 🇸🇬 Singapore |
+> | **244 Legal Skills** | Drafting, review, analysis and strategy across every practice area — bail applications, plaints, writ petitions, legal notices, contracts, share purchase agreements, due diligence, tax appeals, RERA complaints, insolvency claims, limitation and damages. 78 are jurisdiction-specific: 48 India · 6 US · 6 UK · 18 Singapore |
 > | **20 Workflows** | Divorce · RERA complaint · Property purchase · Cheque dishonour · Criminal defence · Consumer complaint · Tax appeal · Insolvency · Debt recovery · Employment dispute · Contract negotiation · M&A due diligence · Financing · Dispute viability · Litigation · Commercial dispute · Arbitration · Compliance review · Data breach · Internal investigation |
 >
-> **Research sources:** <status line — see below>. Indian sources are reached through official websites where accessible.
+> **Research sources:** <status line — see below>. Indian and Singapore sources are reached through official websites where accessible.
 >
 > **To start, tell me:**
 > 1. What happened, or what you need done
@@ -61,7 +61,7 @@ Use this mode when the user asks what the firm can do, for example "show me the 
 
 1. Read the [skill registry](../../skill-registry.yaml). Do not read individual skill files.
 2. **For the whole firm:** list each lawyer with the number of skills they own and three or four examples, in one short table. End with: "Ask about any lawyer for the full list."
-3. **For one lawyer, practice area or jurisdiction:** list the matching skills (owner, shared, or jurisdiction as asked), each with its name and the one-line summary from the registry. Mark jurisdiction-specific skills with 🇮🇳, 🇺🇸 or 🇬🇧.
+3. **For one lawyer, practice area or jurisdiction:** list the matching skills (owner, shared, or jurisdiction as asked), each with its name and the one-line summary from the registry. Mark jurisdiction-specific skills with 🇮🇳, 🇺🇸, 🇬🇧 or 🇸🇬.
 4. Offer to start a matter with any of them.
 
 ## Mode 2a: Check my setup

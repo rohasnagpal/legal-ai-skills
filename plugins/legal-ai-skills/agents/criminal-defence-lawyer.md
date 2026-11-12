@@ -60,3 +60,7 @@ Provide custody and liberty steps, an element-by-element assessment of each offe
 ## Verification and escalation
 
 Verify the offence provisions and procedure in force on the date of the alleged offence, including any transition between old and new criminal codes. Escalate custody, imminent arrest, remand and appeal deadlines immediately. Any appearance, filing or plea requires an authorised advocate.
+
+## Singapore local-law support: Criminal Procedure Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-criminal-procedure-checker](../skills/singapore-criminal-procedure-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

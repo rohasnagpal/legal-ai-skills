@@ -24,7 +24,7 @@ The AI reads only the files in the folder you open. Your documents stay on your 
 
 ## Not legal advice
 
-Should I Sue? gives an informed assessment, not legal advice. It covers India, the US and the UK in depth; other countries get general guidance only. Talk to a qualified lawyer before filing, signing or sending anything, especially if a deadline is close.
+Should I Sue? gives an informed assessment, not legal advice. It covers India, the US, the UK and Singapore in depth; other countries get general guidance only. Talk to a qualified lawyer before filing, signing or sending anything, especially if a deadline is close.
 
 ## Already installed?
 

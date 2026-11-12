@@ -1,0 +1,7 @@
+interface:
+  display_name: "Singapore Regulatory Compliance Checker"
+  short_description: "Singapore compliance law and verification"
+  default_prompt: "Use $legal-ai-skills:singapore-regulatory-compliance-checker for this Singapore matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

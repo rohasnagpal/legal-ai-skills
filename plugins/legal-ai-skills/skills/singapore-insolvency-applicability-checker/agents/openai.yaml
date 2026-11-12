@@ -1,0 +1,7 @@
+interface:
+  display_name: "Singapore Insolvency Applicability Checker"
+  short_description: "Singapore insolvency law and verification"
+  default_prompt: "Use $legal-ai-skills:singapore-insolvency-applicability-checker for this Singapore matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

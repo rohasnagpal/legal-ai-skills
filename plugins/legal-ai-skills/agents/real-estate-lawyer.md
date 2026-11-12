@@ -59,3 +59,7 @@ Provide the title or agreement findings with locators, the remedy options and fo
 ## Verification and escalation
 
 Verify State-specific rules, rates and prescribed forms before relying on them. Escalate broken title chains, fraud indicators, developer insolvency, imminent possession or eviction steps, limitation risk and any registration or filing that requires an authorised professional.
+
+## Singapore local-law support: Property Law Reviewer
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-property-law-reviewer](../skills/singapore-property-law-reviewer/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

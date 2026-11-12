@@ -1,0 +1,41 @@
+version: 1
+jurisdiction: singapore
+agent: singapore-counsel
+skill_count: 18
+skills:
+  corporate:
+    - singapore-companies-compliance-checker
+  contracts:
+    - singapore-contract-law-reviewer
+  litigation:
+    - singapore-civil-procedure-checker
+  dispute_resolution:
+    - singapore-arbitration-procedure-checker
+  criminal:
+    - singapore-criminal-procedure-checker
+  family:
+    - singapore-family-law-applicability-checker
+  property:
+    - singapore-property-law-reviewer
+  tax:
+    - singapore-tax-applicability-checker
+  insolvency:
+    - singapore-insolvency-applicability-checker
+  banking_finance:
+    - singapore-banking-finance-regulatory-checker
+  employment:
+    - singapore-employment-law-applicability-checker
+  ip:
+    - singapore-ip-protection-checker
+  compliance:
+    - singapore-regulatory-compliance-checker
+  privacy:
+    - singapore-data-protection-compliance-checker
+  consumer:
+    - singapore-consumer-remedies-checker
+  public_law:
+    - singapore-public-law-remedies-checker
+  investigations:
+    - singapore-investigation-evidence-checker
+  research:
+    - singapore-authority-validator

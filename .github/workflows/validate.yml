@@ -54,6 +54,7 @@ jobs:
           unzip -Z1 "$plugin_zip" | grep -qx 'agents/india-counsel.md'
           unzip -Z1 "$plugin_zip" | grep -qx 'agents/us-counsel.md'
           unzip -Z1 "$plugin_zip" | grep -qx 'agents/uk-counsel.md'
+          unzip -Z1 "$plugin_zip" | grep -qx 'agents/singapore-counsel.md'
           unzip -Z1 "$plugin_zip" | grep -qx 'jurisdictions/india/README.md'
           unzip -Z1 "$plugin_zip" | grep -qx 'jurisdictions/india/operating-rules.md'
           unzip -Z1 "$plugin_zip" | grep -qx 'jurisdictions/india/authoritative-sources.md'
@@ -62,6 +63,9 @@ jobs:
           unzip -Z1 "$plugin_zip" | grep -qx 'jurisdictions/us/skill-map.yaml'
           unzip -Z1 "$plugin_zip" | grep -qx 'jurisdictions/uk/authoritative-sources.md'
           unzip -Z1 "$plugin_zip" | grep -qx 'jurisdictions/uk/skill-map.yaml'
+          unzip -Z1 "$plugin_zip" | grep -qx 'jurisdictions/singapore/skill-map.yaml'
+          unzip -Z1 "$plugin_zip" | grep -qx 'jurisdictions/singapore/authoritative-sources.md'
+          unzip -Z1 "$plugin_zip" | grep -qx 'skills/singapore-counsel/SKILL.md'
 
       - name: Verify only complete plugin archives are published
         run: |

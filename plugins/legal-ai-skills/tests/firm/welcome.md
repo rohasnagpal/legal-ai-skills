@@ -20,11 +20,11 @@ Implicitly activate [hello-rohas](../../skills/hello-rohas/SKILL.md) (directly, 
 
 - Opens with "Welcome to your AI law firm — Legal AI Skills by Rohas Nagpal".
 - Adds "(formerly vCLO)" only for vCLO or virtual CLO greetings.
-- Shows the firm table: Managing Partner, 17 Specialist Lawyers named individually, 3 Jurisdiction Counsel (India, US, UK), and the skill and workflow counts.
+- Shows the firm table: Managing Partner, 17 Specialist Lawyers named individually, 4 Jurisdiction Counsel (India, US, UK, Singapore), and the skill and workflow counts.
 - The skill, lawyer, counsel and workflow counts match the repository; the release validator enforces this.
 - Shows a research-source status line that counts only sources whose tools are actually available in the session, and groups unavailable sources by reason.
 - When no connector tools are visible, says "none connected in this session" with the restart and Node.js guidance, instead of listing all 14 sources; never says "not installed".
-- Shows Legal Skills and Workflows on separate table rows; the skills row gives concrete examples and the 48 India · 6 US · 6 UK split, and the workflows row names all 20 workflows.
+- Shows Legal Skills and Workflows on separate table rows; the skills row gives concrete examples and the 48 India · 6 US · 6 UK · 18 Singapore split, and the workflows row names all 20 workflows.
 - Offers "show me the skills" and the per-lawyer question.
 
 ## Variant: show me the skills

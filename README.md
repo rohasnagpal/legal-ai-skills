@@ -8,15 +8,17 @@ Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and 
 ---
 <img width="949" height="799" alt="image" src="https://github.com/user-attachments/assets/1ab803f3-7578-4e67-85f2-a8dead314202" />
 
+**New in [4.3.0](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/v4.3.0):** Singapore joins India, the US and the UK as the fourth Jurisdiction Counsel, with 18 local skills across all 17 specialist practice areas. [Test Singapore coverage](docs/testing-singapore.md).
+
 ## Here's What You Get
 
 - **1 Managing Partner:** Receives matters, assigns specialist lawyers, coordinates work and reviews final outputs.
 
 - **17 Specialist Lawyers:** Handle matters across practice areas such as corporate, criminal defence, contracts, family law, real estate, tax and litigation.
 
-- **3 Jurisdiction Counsel:** Identify and verify applicable laws, legal authorities and procedures in India, the US and the UK.
+- **4 Jurisdiction Counsel:** Identify and verify applicable laws, legal authorities and procedures in India, the US, the UK and Singapore.
 
-- **226 Legal Skills:** Reusable capabilities such as contract review, legal research, due diligence, evidence analysis and legal drafting, including jurisdiction-specific skills for RERA and Section 138 NI Act.
+- **244 Legal Skills:** Reusable capabilities such as contract review, legal research, due diligence, evidence analysis and legal drafting, including jurisdiction-specific skills for RERA and Section 138 NI Act.
 
 - **20 Workflows:** Step-by-step processes for matters such as M&A due diligence, divorce proceedings, contract negotiation and litigation preparation.
 
@@ -68,7 +70,8 @@ AI Managing Partner
 ├── Jurisdiction Counsel
 │   ├── India Counsel
 │   ├── US Counsel
-│   └── UK Counsel
+│   ├── UK Counsel
+│   └── Singapore Counsel
 │
 ├── Specialist Lawyers
 │   ├── Corporate Lawyer
@@ -294,7 +297,7 @@ Start with the [two-minute guide](docs/two-minute-start.md), then see fictional 
 
 Each skill is listed under the lawyer who owns it. Many are shared: any lawyer can use any skill, and the [skill registry](plugins/legal-ai-skills/skill-registry.yaml) records the owner, shared users and jurisdiction of every skill. Jurisdiction-specific skills are marked 🇮🇳, 🇺🇸 or 🇬🇧.
 
-[Managing Partner and firm operations](#managing-partner-and-firm-operations) · [Corporate Lawyer](#corporate-lawyer) · [Contracts Lawyer](#contracts-lawyer) · [Litigation Lawyer](#litigation-lawyer) · [Dispute Resolution Lawyer](#dispute-resolution-lawyer) · [Criminal Defence Lawyer](#criminal-defence-lawyer) · [Family Lawyer](#family-lawyer) · [Real Estate Lawyer](#real-estate-lawyer) · [Tax Lawyer](#tax-lawyer) · [Insolvency Lawyer](#insolvency-lawyer) · [Banking and Finance Lawyer](#banking-and-finance-lawyer) · [Employment Lawyer](#employment-lawyer) · [IP Lawyer](#ip-lawyer) · [Compliance Lawyer](#compliance-lawyer) · [Consumer Protection Lawyer](#consumer-protection-lawyer) · [Public Law and Regulatory Lawyer](#public-law-and-regulatory-lawyer) · [Investigations Lawyer](#investigations-lawyer) · [Legal Research Lawyer](#legal-research-lawyer) · [India Counsel](#india-counsel) · [US Counsel](#us-counsel) · [UK Counsel](#uk-counsel)
+[Managing Partner and firm operations](#managing-partner-and-firm-operations) · [Corporate Lawyer](#corporate-lawyer) · [Contracts Lawyer](#contracts-lawyer) · [Litigation Lawyer](#litigation-lawyer) · [Dispute Resolution Lawyer](#dispute-resolution-lawyer) · [Criminal Defence Lawyer](#criminal-defence-lawyer) · [Family Lawyer](#family-lawyer) · [Real Estate Lawyer](#real-estate-lawyer) · [Tax Lawyer](#tax-lawyer) · [Insolvency Lawyer](#insolvency-lawyer) · [Banking and Finance Lawyer](#banking-and-finance-lawyer) · [Employment Lawyer](#employment-lawyer) · [IP Lawyer](#ip-lawyer) · [Compliance Lawyer](#compliance-lawyer) · [Consumer Protection Lawyer](#consumer-protection-lawyer) · [Public Law and Regulatory Lawyer](#public-law-and-regulatory-lawyer) · [Investigations Lawyer](#investigations-lawyer) · [Legal Research Lawyer](#legal-research-lawyer) · [India Counsel](#india-counsel) · [US Counsel](#us-counsel) · [UK Counsel](#uk-counsel) · [Singapore Counsel](#singapore-counsel)
 
 ### Managing Partner and firm operations
 
@@ -632,6 +635,15 @@ Instructions: [us-counsel.md](plugins/legal-ai-skills/agents/us-counsel.md)
 Instructions: [uk-counsel.md](plugins/legal-ai-skills/agents/uk-counsel.md)
 
 - **[uk-counsel](plugins/legal-ai-skills/skills/uk-counsel/SKILL.md)** 🇬🇧: UK jurisdiction and law verification
+
+### Singapore Counsel
+
+Instructions: [singapore-counsel.md](plugins/legal-ai-skills/agents/singapore-counsel.md)
+
+- **[singapore-counsel](plugins/legal-ai-skills/skills/singapore-counsel/SKILL.md)** 🇸🇬: Singapore law, forum, procedure and verification across all 17 practice areas.
+- **[18 Singapore-specific skills and practice-area routes](plugins/legal-ai-skills/jurisdictions/singapore/README.md)** cover corporate, contracts, civil litigation, arbitration, criminal, family, property, tax, insolvency, banking, employment, IP, compliance, privacy, consumer, public law, investigations and legal research.
+
+Singapore research uses authoritative websites and authorised supplied records; no dedicated Singapore connector or paid registry access is implied. See [test prompts and expected results](docs/testing-singapore.md).
 
 ---
 

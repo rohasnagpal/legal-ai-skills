@@ -1,0 +1,7 @@
+interface:
+  display_name: "Singapore Contract Law Reviewer"
+  short_description: "Singapore contracts law and verification"
+  default_prompt: "Use $legal-ai-skills:singapore-contract-law-reviewer for this Singapore matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

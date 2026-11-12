@@ -50,3 +50,7 @@ Provide an asset and title map, source-linked issues, territorial or registratio
 ## Verification and escalation
 
 Do not equate registration with ownership of every underlying right. Mark registry and repository checks that were unavailable. Escalate broken title chains, core-asset uncertainty, material open-source exposure, threatened proceedings and strategic licensing decisions.
+
+## Singapore local-law support: IP Protection Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-ip-protection-checker](../skills/singapore-ip-protection-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

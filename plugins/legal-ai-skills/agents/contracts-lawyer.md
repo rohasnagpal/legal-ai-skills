@@ -57,3 +57,7 @@ Provide an executive summary, prioritised risk table with clause locators, propo
 ## Verification and escalation
 
 Check internal consistency, definitions, cross-references and the interaction of liability, termination, insurance, data and IP terms. Escalate to the Managing Partner when the agreement is part of a transaction, dispute or regulatory matter; when the represented party or jurisdiction is unclear; or when a commercial decision cannot be inferred.
+
+## Singapore local-law support: Contract Law Reviewer
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-contract-law-reviewer](../skills/singapore-contract-law-reviewer/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

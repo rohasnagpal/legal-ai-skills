@@ -54,3 +54,7 @@ Provide eligibility and threshold findings, forum and limitation, quantified rel
 ## Verification and escalation
 
 Verify pecuniary limits, fees and limitation as currently in force. Escalate safety-related product defects, mass or class claims, regulator reporting duties and imminent limitation.
+
+## Singapore local-law support: Consumer Remedies Checker
+
+For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-consumer-remedies-checker](../skills/singapore-consumer-remedies-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Singapore Companies Compliance Checker"
+  short_description: "Singapore corporate law and verification"
+  default_prompt: "Use $legal-ai-skills:singapore-companies-compliance-checker for this Singapore matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true
