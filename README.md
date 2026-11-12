@@ -116,6 +116,36 @@ AI Managing Partner
 
 ---
 
+## Continue and update your work
+
+**New in [4.2.0](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/v4.2.0):** keep matters moving across chats, see exactly what was reviewed, and reassess advice when documents change.
+
+- **“Save my matter”** saves a compact handover on request; **“resume my matter”** loads a selected saved record in a new chat and flags checks that need refreshing.
+- **“What changed?”** compares a revised contract or new evidence with an identified baseline and revisits affected conclusions.
+- Document-based work identifies actual file coverage and material reading gaps. Substantial reports start with the action, nearest deadline, biggest uncertainty and decision required.
+- Deadline records retain trigger and rule sources, calculation details, responsibility and verification status.
+
+Try this sequence after a review:
+
+```text
+Save my matter and maintain its record.
+```
+
+In a new chat with access to that folder:
+
+```text
+Resume my matter from matters/<actual-matter-id>/matter.yaml.
+```
+
+Then supply a revised document or new evidence:
+
+```text
+What changed against the earlier version? Reassess your conclusions
+and update my matter record, preserving the earlier conclusions.
+```
+
+See [test prompts and expected results](docs/testing-matter-upgrades.md). Saved records need to remain available to the new chat; this is not automatic cross-chat memory. To get these features, [update the plugin and restart](#updating-to-a-new-version).
+
 ## Important Considerations
 
 **Confidentiality:** Before uploading client documents or confidential information, ensure that your AI environment and connected services comply with applicable confidentiality, privacy and professional obligations.

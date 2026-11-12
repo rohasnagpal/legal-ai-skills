@@ -21,6 +21,10 @@ Covers general commercial contracts directly. For four agreement types with genu
 
 For shareholders'/investment agreements, government contracts, and data-processing agreements, use the dedicated specialist skill instead — they involve a materially different legal framework, not just a different reference.
 
+## Coverage and updates
+
+Follow [matter continuity](../../assets/firm/matter-continuity.md) for actual file/version coverage, source locations, updates to prior conclusions, deadline records and action-first substantial reports. Keep this skill's existing scope and missing-input gates: qualify affected conclusions and never infer missing text. For a revised contract use clause-comparator to establish changes before reassessing risk; for new evidence distinguish allegations from proof. Save or maintain records only on the user's request. Put a report's action brief in the covering response when the requested deliverable is a standalone instrument.
+
 ## Before you start
 
 **Which side we act for.** This is the only blocking input. Nearly every clause in a contract is favourable to someone: a cap on liability at fees paid is a win for the supplier and a problem for the customer, and the same words get opposite treatment. Do not guess from the file name or from which party is named first. Ask, and do not generate any part of the review until you have the answer.

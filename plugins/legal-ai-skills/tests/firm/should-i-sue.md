@@ -20,6 +20,18 @@ Each scenario runs in a session opened in a folder that holds only the fixture d
 
 - Returns the Mode 1 message (documents in the folder, five questions) and stops. No analysis.
 
+## 1A. First-contact voice note
+
+Folder: empty.
+
+> [Voice note transcript] My employer removed me from work last month after an argument with my manager. They say I resigned, but I did not. I want to know what I should do.
+
+- Treats the voice note as intake material, not documentary proof.
+- Briefly confirms the issue understood without adopting the employer's or employee's account as established fact.
+- Requests the employment contract, policies, resignation or termination communications, relevant messages and any notice or proceeding documents.
+- Asks one consolidated set of only unanswered material questions, including jurisdiction, dates or deadlines and desired outcome, then stops.
+- Gives no recommendation, preferred route, merits view, chances rating or action plan unless a genuine urgent protective warning is required.
+
 ## 2. Builder delay (India)
 
 Folder: `allotment-letter.pdf`, `agreement-for-sale.pdf`, 11 payment receipts as screenshots, `builder-emails.pdf`.

@@ -22,6 +22,10 @@ I am using the **Litigation Viability Assessor** skill from Rohas Legal AI: sour
 
 Help the user decide among litigation, arbitration, settlement, further investigation, regulatory action or no immediate formal action. Do not reduce the result to a mechanical “sue” or “do not sue” verdict.
 
+## Coverage and updates
+
+Follow [matter continuity](../../assets/firm/matter-continuity.md) for actual file/version coverage, source locations, updates to prior conclusions, deadline records and action-first substantial reports. Keep this skill's existing scope and missing-input gates: qualify affected conclusions and never infer missing text. For a revised contract use clause-comparator to establish changes before reassessing risk; for new evidence distinguish allegations from proof. Save or maintain records only on the user's request. Put a report's action brief in the covering response when the requested deliverable is a standalone instrument.
+
 ## Intake and scope
 
 Start with the information already available. Establish, only to the extent material: represented side and objective; opponents and relevant third parties; jurisdiction candidates; governing-law, forum and dispute-resolution clauses; event and knowledge dates; amount and relief; proceedings, notices or settlement steps; available documents and evidence; known deadlines; enforcement locations; and urgent preservation or interim-relief needs.

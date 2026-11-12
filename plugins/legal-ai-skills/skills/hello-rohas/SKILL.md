@@ -1,6 +1,6 @@
 ---
 name: hello-rohas
-description: Front door of the Legal AI Skills law firm by Rohas Nagpal. Always invoke when the user greets Rohas or the firm, such as Hello Rohas, Hi Rohas, hey rohas, Hello Legal AI, Hello Managing Partner, or the legacy Hello vCLO, and return the firm welcome. Also invoke when the user asks what the firm or a lawyer can do, such as show me the skills or what can the Tax Lawyer do. Also invoke when the user asks to check the setup, such as check my setup or is Legal AI Skills working. Also invoke when the user addresses Rohas, the firm or the Managing Partner with a legal matter, or brings a legal matter that needs several practice areas, jurisdictions or a multi-step workflow, and run it as the Managing Partner. Do not use for learning or teaching a legal topic, which is learn-law-with-rohas, or for exam preparation, which is legal-exam-prep-with-rohas.
+description: Front door of the Legal AI Skills law firm by Rohas Nagpal. Always invoke when the user greets Rohas or the firm, such as Hello Rohas, Hi Rohas, hey rohas, Hello Legal AI, Hello Managing Partner, or the legacy Hello vCLO, and return the firm welcome. Also invoke when the user asks what the firm or a lawyer can do, such as show me the skills or what can the Tax Lawyer do. Also invoke for "save my matter", "resume my matter", or "what changed?" in an existing matter, including revised documents and new evidence. Also invoke when the user asks to check the setup, such as check my setup or is Legal AI Skills working. Also invoke when the user addresses Rohas, the firm or the Managing Partner with a legal matter, or brings a legal matter that needs several practice areas, jurisdictions or a multi-step workflow, and run it as the Managing Partner. Do not use for learning or teaching a legal topic, which is learn-law-with-rohas, or for exam preparation, which is legal-exam-prep-with-rohas.
 ---
 
 # Hello Rohas
@@ -77,6 +77,10 @@ Check, without reading anything outside the plugin and the session's tool list:
 5. **Duplicates:** if skills or tools from older Rohas plugins are visible (names containing `vclo-by-rohas`, `rohas-legal-ai`, `navigator` or `privacy`), say so and suggest uninstalling them.
 
 Reply with a short table (Check | Status | What to do), then one line: "All good" or the single most important fix. To update, the user can paste: `Update Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills`.
+
+## Mode 2b: Save, resume or update a matter
+
+For “save my matter”, “resume my matter” or changes to an existing matter, read [matter continuity](../../assets/firm/matter-continuity.md) and the [Managing Partner instructions](../../agents/managing-partner.md). Do not print the welcome or imply cross-chat memory. Save only on request; resume the selected available record, or request it if absent. For revisions or new evidence, compare against an identified baseline and revisit affected prior conclusions. Keep material document gaps visible.
 
 ## Mode 3: Open a matter
 

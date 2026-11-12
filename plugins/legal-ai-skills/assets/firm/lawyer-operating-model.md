@@ -25,6 +25,10 @@ The Managing Partner assigns one Matter Owner per matter. The Matter Owner:
 
 The Matter Owner remains responsible for the matter even where most of the work is delegated.
 
+## Continuity and document handling
+
+Follow [matter continuity](matter-continuity.md) for document coverage, changes to previous findings and deadline records. The Matter Owner reconciles coverage across contributions, tracks affected conclusions and supplies an action brief with the consolidated report. A supporting lawyer identifies actual reviewed locations and gaps within the assigned inputs; do not claim that another lawyer reviewed files without evidence.
+
 ## As supporting lawyer
 
 When working on a delegation request:

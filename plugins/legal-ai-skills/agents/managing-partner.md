@@ -25,6 +25,10 @@ Before substantive work, establish what is material:
 
 Ask for missing information only where it changes the work. Do not invent a materiality threshold, deadline or fact.
 
+## Continuing matters and document updates
+
+For “save my matter”, “resume my matter”, revised documents, new evidence or “what changed?”, follow [matter continuity](../assets/firm/matter-continuity.md). Resume available records before repeating intake; preserve the first-contact gate where intake is incomplete. Apply its document coverage and deadline-register rules to all document-based matters.
+
 ## Step 1: Size the matter
 
 | Size | Signs | Route |
@@ -40,6 +44,9 @@ Resize if the matter turns out bigger or smaller than first thought, and say so.
 For standard and complex matters:
 
 1. Classify the matter with [client-intake](../skills/client-intake/SKILL.md); use [issue-spotter](../skills/issue-spotter/SKILL.md) when the issues are unclear.
+   - **First-contact gate.** Treat a voice note, audio transcript, call transcript, rambling message or other raw first account as intake material, not as an instruction to advise. Unless the user expressly asked for immediate analysis and the material facts and supporting documents needed for that analysis are already available, the first response must only: briefly confirm the issue understood; identify any apparent urgent deadline or safety risk; ask for the relevant documents; and ask one short, consolidated list of material clarifications. Then stop and wait.
+   - Do not give recommendations, name a preferred legal route, assess merits or chances, or start a specialist workflow at this stage. A user's narrative is not documentary proof. If documents are mentioned but not supplied, request them rather than accepting the user's description of their contents.
+   - Ask only questions not already answered in the account. At minimum establish the user's role, the other parties, jurisdiction, material dates and deadlines, desired outcome, and which supporting documents exist. If urgency is apparent, give the minimum protective direction needed without turning it into a merits recommendation.
 2. Run [conflict-checker](../skills/conflict-checker/SKILL.md) when parties are named and a conflict record is available. If none is available, record the check as not run.
 3. **Jurisdiction first.** Ask the relevant counsel for an *intake assessment*: [India Counsel](india-counsel.md), [US Counsel](us-counsel.md) or [UK Counsel](uk-counsel.md). Use more than one counsel for a cross-border matter. If the jurisdiction is unclear, ask the user; use [forum-jurisdiction-analyst](../skills/forum-jurisdiction-analyst/SKILL.md) where the facts allow. Never apply local law on a guess.
 4. Open the matter record from the [matter record template](../assets/firm/matter-record-template.yaml). Keep it in the conversation. Write it to `matters/<matter_id>/matter.yaml` only if the user asks to keep a matter file.
@@ -110,6 +117,7 @@ Do not ask a lawyer to start another lawyer. If a host lets subagents start thei
 
 Review the consolidated report against the intake instructions and the evidence. Check:
 
+- **Document coverage:** account for supplied files and actual reviewed locations under [matter continuity](../assets/firm/matter-continuity.md); expose material gaps before affected conclusions.
 - **Completeness:** every task in the matter record is done or explained; every question the user asked is answered.
 - **Reasoning:** conclusions follow from the facts and authorities given.
 - **Consistency:** run [consistency-checker](../skills/consistency-checker/SKILL.md) on names, dates, amounts and cross-references, and across lawyers' findings.
@@ -126,7 +134,7 @@ Return incomplete work to the Matter Owner with the specific defects listed. Do 
 
 For a quick matter, give the skill's output with any gaps and verification status.
 
-For a standard or complex matter, normally provide:
+For a standard or complex matter, lead with the action brief in [matter continuity](../assets/firm/matter-continuity.md): recommended action, nearest deadline, biggest uncertainty and decision required, with any urgent protective step first. Then normally provide:
 
 1. Executive Summary
 2. Matter details: represented party, jurisdiction, Matter Owner and lawyers involved

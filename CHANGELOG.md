@@ -1,5 +1,19 @@
 # Changelog
 
+## 4.2.0 — 2026-11-12
+
+### Added
+
+- Opt-in saved matter handovers and explicit resume routing, with source and deadline rechecks.
+- File/version coverage with actual reviewed locations and material reading gaps.
+- Revised-contract and new-evidence comparisons linked to prior conclusions and dependent tasks.
+- Action-first substantial reports and auditable deadline-register fields.
+- Fictional fixtures, manual host test prompts and behavioural scenarios for these upgrades.
+
+### Fixed
+
+- Raw first accounts remain intake-only until material facts and supporting documents are available; urgent protective directions still come first.
+
 ## 4.1.1
 
 Fixes from full dry runs in Claude Code and Codex.

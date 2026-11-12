@@ -13,6 +13,10 @@ I am using the **Evidence Organizer** skill from Rohas Legal AI: evidence mapped
 Build an issue-to-proof system in which every item retains provenance, custody,
 authenticity, admissibility, privilege, and source locators.
 
+## Coverage and updates
+
+Follow [matter continuity](../../assets/firm/matter-continuity.md) for actual file/version coverage, source locations, updates to prior conclusions, deadline records and action-first substantial reports. Keep this skill's existing scope and missing-input gates: qualify affected conclusions and never infer missing text. For a revised contract use clause-comparator to establish changes before reassessing risk; for new evidence distinguish allegations from proof. Save or maintain records only on the user's request. Put a report's action brief in the covering response when the requested deliverable is a standalone instrument.
+
 ## Intake
 
 Obtain the jurisdiction and forum, pleadings and issues, elements and burdens,

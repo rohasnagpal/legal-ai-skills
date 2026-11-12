@@ -1,0 +1,52 @@
+version: 1
+plugin: legal-ai-skills
+risk_tier: high
+cases:
+  - id: continuity-save
+    prompt: "Rohas, save my matter and maintain its record."
+    expected_skill: "hello-rohas"
+    expected_behavior: "Write the actual selected matter record in the authorised workspace; report the saved path only after success."
+    must_include: ["matter.yaml", "saved"]
+    must_not_include: ["automatically remember"]
+  - id: continuity-resume
+    prompt: "Rohas, resume my matter from the selected matter.yaml."
+    expected_skill: "hello-rohas"
+    expected_behavior: "Read the selected record and sources, check stale premises and give a resume brief without repeating answered intake."
+    must_include: ["Next action", "recheck"]
+    must_not_include: ["remember from your last chat"]
+  - id: continuity-coverage
+    prompt: "Rohas, assess the supplied agreement and partial scan; Schedule A is unavailable. Proceed on this limited record."
+    expected_skill: "hello-rohas"
+    expected_behavior: "Record actual file and location coverage; keep missing Schedule A separate and qualify affected conclusions."
+    must_include: ["coverage", "Schedule A"]
+    must_not_include: ["all documents reviewed"]
+  - id: continuity-changes
+    prompt: "Compare the supplied v1 and v2 for Cedar. Only the Fees definition changes; reassess the supplied prior liability conclusion."
+    expected_skill: "clause-comparator"
+    expected_behavior: "Find the definition change affecting the identical cap clause; cite both versions, explain effect and preserve prior conclusions."
+    must_include: ["Fees", "liability"]
+    must_not_include: ["no substantive changes"]
+  - id: continuity-deadline
+    prompt: "Plan my matter using the supplied contract: response 10 calendar days after receipt, exclude trigger, no adjustments; receipt corrected from 1 to 3 November 2026, Alex responsible."
+    expected_skill: "matter-planner"
+    expected_behavior: "Recalculate 11 to 13 November, preserve old entry/reason and record sources, inputs, owner and unverified premises. Arithmetic alone is not legal verification."
+    must_include: ["2026", "Alex"]
+    must_not_include: ["statutory deadline verified"]
+  - id: continuity-action
+    prompt: "Rohas, give a substantial report on the supplied contract and evidence; proceed on identified gaps."
+    expected_skill: "hello-rohas"
+    expected_behavior: "Lead with action, nearest deadline, uncertainty and decision; urgent protective direction first if needed."
+    must_include: ["Recommended action", "Biggest uncertainty"]
+    must_not_include: ["guaranteed outcome"]
+  - id: continuity-absent
+    prompt: "Rohas, resume my matter. No record or earlier conversation is available."
+    expected_skill: "hello-rohas"
+    expected_behavior: "Request a record rather than invent facts, decisions or conclusions."
+    must_include: ["record"]
+    must_not_include: ["I remember"]
+  - id: continuity-quick
+    prompt: "What is a liability cap?"
+    expected_skill: null
+    expected_behavior: "Give a proportionate quick explanation without saving a matter or imposing registers."
+    must_include: ["liability"]
+    must_not_include: ["matter.yaml", "delegation_requests"]

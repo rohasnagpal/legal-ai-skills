@@ -11,6 +11,10 @@ I am using the **Clause Comparator** skill from Rohas Legal AI: compares the sam
 
 Takes the same clause, or the same clause type, as it appears in two or more places and reports what is different — mechanically, in the wording, and substantively, in what the clause now does. It is a comparison tool, not a review: it does not grade an agreement's overall risk, and it does not draft new wording for a clause that has no comparator (that is redline-proposer). It compares what it is given; it does not supply a "market standard" from memory to compare against.
 
+## Updates to an existing matter
+
+For revised contracts or “what changed?” follow [matter continuity](../../assets/firm/matter-continuity.md): establish the baseline, show actual document coverage, link substantive changes to available prior conclusions, and flag affected decisions and deadlines. Preserve this skill's neutral stance unless a represented side is supplied. Do not invent previous advice or silently replace it. Lead a substantial comparison with the relevant action brief, without obscuring the exact diff supporting the interpretation.
+
 ## Before you start
 
 **What is being compared, and against what.** At minimum this means whether the comparator is another draft, a supplied precedent or an external portfolio. For user-supplied material, identify each document, version or date and clause number before diffing. For an external portfolio benchmark, the user need only identify the clause type and target population, such as public SaaS agreements; discover the documents using the default sample and source rules in [references/public-contract-sources.md](references/public-contract-sources.md) rather than asking the user to name them.

@@ -290,6 +290,12 @@ cases:
     expected_behavior: "Return the Should I Sue question-only message: documents in the opened folder and the five plain-language questions. Do not start analysis."
     must_include: ["Should I Sue?", "folder", "The final decision is yours"]
     must_not_include: ["recommendation:", "percentage"]
+  - id: firm-should-i-sue-first-voice-note
+    prompt: "[Voice note transcript] My employer removed me from work last month after an argument with my manager. They say I resigned, but I did not. I want to know what I should do."
+    expected_skill: should-i-sue
+    expected_behavior: "Treat the voice note as first-contact intake. Briefly confirm the issue, request the employment and separation documents and relevant messages, ask only unanswered material clarifications in one list, and stop before analysis."
+    must_include: ["documents", "country", "deadline"]
+    must_not_include: ["Our recommendation", "chances of success", "file a claim", "strong case"]
   - id: firm-should-i-sue-builder
     prompt: "Should I sue? My builder in Pune promised the flat in March 2023 and it still isn't ready. The agreement and receipts are in this folder."
     expected_skill: should-i-sue

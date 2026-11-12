@@ -33,9 +33,11 @@ Turns an opened matter into a plan the firm can execute: the issues, the tasks t
 
 **7. Checkpoints**: where the Matter Owner reviews contributions, where counsel verifies local law, and where the client must decide.
 
-**8. Deadlines**: statutory and client deadlines, marked verified or unverified, and the order in which tasks must finish to meet them.
+**8. Deadlines**: follow the [deadline-register rules](../../assets/firm/matter-continuity.md): trigger and source, rule and source, calculation inputs/result, responsible person, verification status/date/verifier and missing premises. Distinguish legal, contractual and client deadlines; order tasks to meet them. A calculated date alone is not a verified deadline.
 
-**9. Missing inputs**: what to ask the client for, and which tasks wait on it.
+**9. Missing inputs**: what to ask the client for, and which tasks wait on it. Account for actual document coverage under [matter continuity](../../assets/firm/matter-continuity.md).
+
+**10. Continuity**: use the same rules for saving/resuming a matter and revising tasks or prior conclusions after new evidence. Lead a substantial plan with the action brief; retain the first-contact intake gate.
 
 ## Output
 
