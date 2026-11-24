@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.1 — 2026-11-24
+
+- Remove the blanket instruction prohibiting the firm's welcome in the installation session.
+
 ## 4.3.0 — 2026-11-12
 
 ### Added

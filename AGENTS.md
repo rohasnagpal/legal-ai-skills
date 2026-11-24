@@ -112,8 +112,6 @@ If Node.js is missing, add one line before "To meet your firm" (or before "Next:
 
 **If installation failed**, do not print the message above. Say which step failed, quote the error briefly, and give the one next step most likely to fix it.
 
-The new skills normally load only in a new session or after a reload, so do not try to run the firm's welcome in the same session as the install.
-
 ## B. You are working on this repository
 
 - Skills live in `plugins/legal-ai-skills/skills/<name>/SKILL.md`, each with `agents/openai.yaml`.
