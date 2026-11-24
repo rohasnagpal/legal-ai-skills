@@ -1,0 +1,52 @@
+version: 1
+plugin: legal-ai-skills
+risk_tier: high
+cases:
+  - id: "civil-local-framework"
+    prompt: "Assess civil liability for property damage under the supplied civil-law jurisdiction and evidence."
+    expected_skill: "civil-liability-analyst"
+    expected_behavior: "Apply the assigned skill using verified local law, evidence and the required safeguards."
+    must_include: ["local liability framework", "elements-to-evidence matrix", "contrary evidence"]
+    must_not_include: ["automatic import of common-law duty test"]
+  - id: "negligence-no-breach-inference"
+    prompt: "Our customer was injured after our service. Assess negligence for the defendant under the stated jurisdiction."
+    expected_skill: "negligence-analyst"
+    expected_behavior: "Apply the assigned skill using verified local law, evidence and the required safeguards."
+    must_include: ["sourced standard", "breach distinct from harm", "alternative causes"]
+    must_not_include: ["injury proves negligence"]
+  - id: "professional-adverse-outcome"
+    prompt: "Our client alleges a surgeon was negligent because treatment failed. Assess the records and identify proof needed."
+    expected_skill: "professional-negligence-analyst"
+    expected_behavior: "Apply the assigned skill using verified local law, evidence and the required safeguards."
+    must_include: ["expert evidence", "applicable professional standard", "causation"]
+    must_not_include: ["treatment failure proves breach"]
+  - id: "defamation-context"
+    prompt: "A customer posted a harsh review. Assess our civil defamation options using the full supplied post and jurisdiction."
+    expected_skill: "defamation-analyst"
+    expected_behavior: "Apply the assigned skill using verified local law, evidence and the required safeguards."
+    must_include: ["exact words and context", "local elements and defences", "speech protections where relevant"]
+    must_not_include: ["criticism automatically defamatory"]
+  - id: "land-standing"
+    prompt: "We occupy leased premises and allege neighbouring noise and encroachment. Assess our civil remedies."
+    expected_skill: "nuisance-trespass-analyst"
+    expected_behavior: "Apply the assigned skill using verified local law, evidence and the required safeguards."
+    must_include: ["standing and possession", "local causes and defences", "lawful remedies"]
+    must_not_include: ["unverified self-help removal"]
+  - id: "deceit-no-fraud-presumption"
+    prompt: "A supplier made an inaccurate assurance and we lost money. Assess civil misrepresentation and deceit."
+    expected_skill: "misrepresentation-deceit-analyst"
+    expected_behavior: "Apply the assigned skill using verified local law, evidence and the required safeguards."
+    must_include: ["distinct local routes", "reliance and causation", "alternative explanation"]
+    must_not_include: ["loss establishes dishonesty"]
+  - id: "vicarious-contractor"
+    prompt: "A contractor caused injury during work. Assess the company’s direct and attributed liability."
+    expected_skill: "vicarious-liability-analyst"
+    expected_behavior: "Apply the assigned skill using verified local law, evidence and the required safeguards."
+    must_include: ["actual relationship", "primary wrong and attribution", "direct fault separately"]
+    must_not_include: ["contractor label decides all liability"]
+  - id: "negative-pure-contract"
+    prompt: "Quantify the loss for this admitted contractual non-payment; do not assess civil wrongs."
+    expected_skill: null
+    expected_behavior: "Apply the assigned skill using verified local law, evidence and the required safeguards."
+    must_include: ["route to existing damages and contract skills"]
+    must_not_include: ["unnecessary tort workflow"]

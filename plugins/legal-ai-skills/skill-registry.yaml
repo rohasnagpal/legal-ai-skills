@@ -3,10 +3,10 @@
 version: 1
 generated_by: scripts/build-skill-registry.rb
 counts:
-  legal_skills: 409
+  legal_skills: 416
   specialist_lawyers: 17
   jurisdiction_counsel: 13
-  workflows: 20
+  workflows: 24
   jurisdiction_specific_skills: 241
 skills:
 - skill_id: activity-decision-logger
@@ -1198,6 +1198,16 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Extracts every citation in a document — statute, case, rule, regulation, quotation, or cross-reference — and states exactly what needs verifying about it and how, attempting live verification where research tools are available this session and producing a structured checklist where they are not.
+- skill_id: civil-liability-analyst
+  name: Civil Liability Analyst
+  category: analysis
+  practice_area: litigation
+  jurisdiction: neutral
+  owner: litigation-lawyer
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Assess non-contractual civil liability, candidate causes, elements, evidence, defences and remedies under the verified local regime.
 - skill_id: claim-verification-analyst
   name: Claim Verification Analyst
   category: analysis
@@ -1556,6 +1566,16 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Plans and drafts Indian civil decree execution and enforcement applications, selecting a lawful mode against identified assets or obligations and accounting for limitation, stays, satisfaction, transfer and objections.
+- skill_id: defamation-analyst
+  name: Defamation Analyst
+  category: analysis
+  practice_area: litigation
+  jurisdiction: neutral
+  owner: litigation-lawyer
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Assess civil defamation exposure or claims from identified statements, publication context, evidence, defences and remedies.
 - skill_id: defence-strategy-planner
   name: Defence Strategy Planner
   category: advice-and-planning
@@ -2573,6 +2593,16 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Drafts accurate minutes of board, committee, shareholder, member, and other corporate meetings from notices, agendas, attendance records, meeting notes, papers, decisions, votes, dissent, and action items.
+- skill_id: misrepresentation-deceit-analyst
+  name: Misrepresentation and Deceit Analyst
+  category: analysis
+  practice_area: litigation
+  jurisdiction: neutral
+  owner: litigation-lawyer
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Assess civil claims arising from misleading statements or omissions, reliance and loss without presuming fraud.
 - skill_id: moratorium-impact-analyst
   name: Moratorium Impact Analyst
   category: analysis
@@ -2583,6 +2613,16 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Analyses the effect of an insolvency moratorium or automatic stay on a client's rights — pending suits, arbitrations and enforcement, security enforcement, termination of contracts, set-off, recovery of property, criminal proceedings, guarantor liability and essential supplies — and identifies what may continue, what is stayed and what needs the court's permission.
+- skill_id: negligence-analyst
+  name: Negligence Analyst
+  category: analysis
+  practice_area: litigation
+  jurisdiction: neutral
+  owner: litigation-lawyer
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Assess alleged negligent conduct, duty, standard, breach, causation, damage and defences under verified local law.
 - skill_id: negotiation-position-planner
   name: Negotiation Position Planner
   category: advice-and-planning
@@ -2811,6 +2851,16 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Drafts a reply to a legal notice received from another party — a demand notice, a cease and desist, a regulatory notice — dealing with each allegation in turn — admitted, denied with the client's own account, denied for insufficient knowledge, or qualified.
+- skill_id: nuisance-trespass-analyst
+  name: Nuisance and Trespass Analyst
+  category: analysis
+  practice_area: litigation
+  jurisdiction: neutral
+  owner: litigation-lawyer
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Assess land interference, nuisance and trespass claims or local equivalents, with possession, attribution, evidence and remedies.
 - skill_id: obligations-extractor
   name: Obligations Extractor
   category: analysis
@@ -2997,6 +3047,16 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Audits document productions before or after disclosure for scope, completeness, format, metadata, numbering, document families, redactions, privilege, confidentiality, technical integrity, exceptions, and delivery records.
+- skill_id: professional-negligence-analyst
+  name: Professional Negligence Analyst
+  category: analysis
+  practice_area: litigation
+  jurisdiction: neutral
+  owner: litigation-lawyer
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Assess civil claims against professional advisers and practitioners, including engagement scope, standard, causation and expert evidence.
 - skill_id: quashing-petition-drafter
   name: Quashing Petition Drafter
   category: drafting
@@ -4467,6 +4527,16 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Builds an official-source-first research plan for a specified US State, issue, court and material date.
+- skill_id: vicarious-liability-analyst
+  name: Vicarious Liability Analyst
+  category: analysis
+  practice_area: litigation
+  jurisdiction: neutral
+  owner: litigation-lawyer
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Assess responsibility for another person’s wrong, distinguishing attributed liability from direct organisational fault.
 - skill_id: whistleblower-report-analyst
   name: Whistleblower Report Analyst
   category: analysis

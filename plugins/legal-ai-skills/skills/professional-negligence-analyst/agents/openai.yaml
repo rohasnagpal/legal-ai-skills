@@ -1,0 +1,4 @@
+interface:
+  display_name: "Professional Negligence Analyst"
+  short_description: "Professional Negligence Analyst: evidence, defences and local law"
+  default_prompt: "Use $legal-ai-skills:professional-negligence-analyst to assess this civil-liability issue for our represented party with verified local authority and an element-to-evidence matrix."

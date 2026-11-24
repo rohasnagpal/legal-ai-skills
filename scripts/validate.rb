@@ -499,6 +499,20 @@ Dir.glob('plugins/*/tests/*.{yaml,yml}').sort.each do |f|
   end
   ids.group_by { |id| id }.each { |id, occ| errors << "#{f}: duplicate case id '#{id}'" if occ.length > 1 }
 
+  if File.basename(f) == 'delegation-evaluations.yaml'
+    errors << "#{f}: version must be 1" unless data['version'] == 1
+    errors << "#{f}: plugin must be legal-ai-skills" unless data['plugin'] == CORE_PLUGIN
+    errors << "#{f}: must cover native and sequential modes" unless cases.map { |c| c['mode'] }.uniq.sort == %w[native sequential]
+    cases.each do |test_case|
+      criteria = test_case['criteria']
+      unless criteria.is_a?(Array) && !criteria.empty? && criteria.all? { |c| c.is_a?(Hash) && !c['id'].to_s.strip.empty? && !c['description'].to_s.strip.empty? && c['critical'] == true }
+        errors << "#{f}: #{test_case['id']} needs nonempty, required observable criteria"
+        next
+      end
+      errors << "#{f}: #{test_case['id']} has duplicate criterion IDs" unless criteria.map { |c| c['id'] }.uniq.length == criteria.length
+    end
+  end
+
   current_plugin = f.split('/')[1]
 
   if File.basename(f).end_with?('-behavioral-evals.yaml')
@@ -737,6 +751,7 @@ firm_required_files += %w[
   plugins/legal-ai-skills/tests/australia-jurisdiction-routing-behavioral-evals.yaml
 ]
 
+firm_required_files += %w[plugins/legal-ai-skills/tests/delegation-evaluations.yaml plugins/legal-ai-skills/tests/torts-behavioral-evals.yaml scripts/score-delegation-evaluations.rb scripts/test-delegation-scorer.rb docs/testing-delegation.md]
 firm_required_files.each do |f|
   errors << "firm: required file is missing: #{f}" unless File.file?(f)
 end
@@ -944,7 +959,7 @@ end
 
 workflow_headings = ['## Trigger', '## Required inputs', '## Branches', '## Matter Owner and team', '## Review checkpoints', '## Verification', '## Escalation to human review', '## Deliverable', '## Fallback behaviour']
 workflow_files = Dir.glob('plugins/legal-ai-skills/workflows/*.md').sort
-errors << "firm: expected 20 workflows, found #{workflow_files.length}" unless workflow_files.length == 20
+errors << "firm: expected 24 workflows, found #{workflow_files.length}" unless workflow_files.length == 24
 workflow_files.each do |f|
   content = File.read(f, encoding: 'UTF-8')
   workflow_headings.each do |heading|

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Civil Liability Analyst"
+  short_description: "Civil Liability Analyst: evidence, defences and local law"
+  default_prompt: "Use $legal-ai-skills:civil-liability-analyst to assess this civil-liability issue for our represented party with verified local authority and an element-to-evidence matrix."

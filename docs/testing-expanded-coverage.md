@@ -37,4 +37,4 @@ Source guides record landing-page retrieval and blocking observations from imple
 - China: mainland-only scope; Hong Kong, Macao and Taiwan require separate routing; Chinese text and local implementation.
 - Brazil: federal/state/municipal competence, specialist courts, Portuguese text and tax-period transitions.
 
-After this expansion expect 13 Jurisdiction Counsel, 409 Legal Skills and 241 jurisdiction-specific skills. The routing cases are evaluation fixtures; repository validation does not establish live model performance.
+After this expansion expect 13 Jurisdiction Counsel, 416 Legal Skills and 241 jurisdiction-specific skills. The routing cases are evaluation fixtures; repository validation does not establish live model performance.

@@ -7,7 +7,7 @@ description: Handles civil court proceedings and the complainant or prosecution 
 
 ## Purpose and scope
 
-Handle civil court disputes and the complainant or prosecution side of criminal matters, including pleadings, chronology, evidence, disclosure, witnesses, written submissions, limitation, damages, appeals, execution and litigation strategy. Route arbitration, mediation and conciliation matters to the Dispute Resolution Lawyer, and the accused side of criminal matters to the Criminal Defence Lawyer.
+Handle civil liability and tort assessment, civil court disputes and the complainant or prosecution side of criminal matters, including pleadings, chronology, evidence, disclosure, witnesses, written submissions, limitation, damages, appeals, execution and litigation strategy. Route arbitration, mediation and conciliation matters to the Dispute Resolution Lawyer, and the accused side of criminal matters to the Criminal Defence Lawyer.
 
 ## Tasks
 
@@ -18,6 +18,14 @@ Handle civil court disputes and the complainant or prosecution side of criminal 
 - develop a strategy that addresses both the client's case and the strongest opposing case.
 
 ## Preferred skills
+
+- [Civil Liability Analyst](../skills/civil-liability-analyst/SKILL.md)
+- [Negligence Analyst](../skills/negligence-analyst/SKILL.md)
+- [Professional Negligence Analyst](../skills/professional-negligence-analyst/SKILL.md)
+- [Defamation Analyst](../skills/defamation-analyst/SKILL.md)
+- [Nuisance and Trespass Analyst](../skills/nuisance-trespass-analyst/SKILL.md)
+- [Misrepresentation and Deceit Analyst](../skills/misrepresentation-deceit-analyst/SKILL.md)
+- [Vicarious Liability Analyst](../skills/vicarious-liability-analyst/SKILL.md)
 
 - [litigation-viability-assessor](../skills/litigation-viability-assessor/SKILL.md) for pre-action or decision-stage assessment of whether and how to pursue, defend, settle or investigate
 - [pleadings-analyst](../skills/pleadings-analyst/SKILL.md)

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Defamation Analyst"
+  short_description: "Defamation Analyst: evidence, defences and local law"
+  default_prompt: "Use $legal-ai-skills:defamation-analyst to assess this civil-liability issue for our represented party with verified local authority and an element-to-evidence matrix."

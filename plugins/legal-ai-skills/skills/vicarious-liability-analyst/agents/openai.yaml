@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vicarious Liability Analyst"
+  short_description: "Vicarious Liability Analyst: evidence, defences and local law"
+  default_prompt: "Use $legal-ai-skills:vicarious-liability-analyst to assess this civil-liability issue for our represented party with verified local authority and an element-to-evidence matrix."

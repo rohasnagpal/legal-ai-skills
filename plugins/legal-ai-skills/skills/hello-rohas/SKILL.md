@@ -20,7 +20,8 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
    - **US OFAC, UK and UN sanctions lists:** the bundled `sanctions-screening` tools (for example `screen_sanctions_name`). Count these as three sources.
 3. Use the user’s language for the welcome and subsequent interaction, preserving names, counts and capability limits. Translate the welcome when appropriate; language does not establish jurisdiction. Print the welcome below exactly for English greetings, as normal text without the leading `>` quote markers, replacing `<k>` with the number of connected sources and the bracketed status line with the actual status. If you cannot see your tool list, leave out the "Research sources" line rather than guess.
 4. If the user said "Hello vCLO" or another legacy greeting, add " (formerly vCLO)" after "Legal AI Skills by Rohas Nagpal" in the first line.
-5. Stop and wait for the matter.
+5. The optional-tool recommendation below is a mention only: do not give installation steps, make network calls, install tools or claim TinyFish or Parallel is connected. They do not change the 14-source count.
+6. Stop and wait for the matter.
 
 > **Hello! Welcome to your AI law firm — Legal AI Skills by Rohas Nagpal.**
 >
@@ -29,10 +30,14 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
 > | **Managing Partner** | Takes your matter, picks the right lawyer, reviews the final work |
 > | **17 Specialist Lawyers** | Corporate · Contracts · Litigation · Dispute Resolution · Criminal Defence · Family · Real Estate · Tax · Insolvency · Banking & Finance · Employment · IP · Compliance · Consumer Protection · Public Law & Regulatory · Investigations · Legal Research |
 > | **13 Jurisdiction Counsel** | 🇮🇳 India · 🇺🇸 US · 🇬🇧 UK · 🇸🇬 Singapore · 🇦🇺 Australia · 🇨🇦 Canada · 🇦🇪 UAE · 🇳🇿 New Zealand · 🇿🇦 South Africa · 🇮🇪 Ireland · 🇷🇺 Russia · 🇨🇳 China · 🇧🇷 Brazil |
-> | **409 Legal Skills** | Drafting, review, analysis and strategy across every practice area — bail applications, plaints, writ petitions, legal notices, contracts, share purchase agreements, due diligence, tax appeals, RERA complaints, insolvency claims, limitation and damages. 241 are jurisdiction-specific: 49 India · 6 US · 6 UK · 18 Singapore · 18 Australia · 18 Canada · 18 UAE · 18 New Zealand · 18 South Africa · 18 Ireland · 18 Russia · 18 China · 18 Brazil |
-> | **20 Workflows** | Divorce · RERA complaint · Property purchase · Cheque dishonour · Criminal defence · Consumer complaint · Tax appeal · Insolvency · Debt recovery · Employment dispute · Contract negotiation · M&A due diligence · Financing · Dispute viability · Litigation · Commercial dispute · Arbitration · Compliance review · Data breach · Internal investigation |
+> | **416 Legal Skills** | Drafting, review, analysis and strategy across every practice area — bail applications, plaints, writ petitions, legal notices, contracts, share purchase agreements, due diligence, tax appeals, RERA complaints, insolvency claims, limitation, damages and civil liability/torts. 241 are jurisdiction-specific: 49 India · 6 US · 6 UK · 18 Singapore · 18 Australia · 18 Canada · 18 UAE · 18 New Zealand · 18 South Africa · 18 Ireland · 18 Russia · 18 China · 18 Brazil |
+> | **24 Workflows** | Divorce · RERA complaint · Property purchase · Cheque dishonour · Criminal defence · Consumer complaint · Tax appeal · Insolvency · Debt recovery · Employment dispute · Contract negotiation · M&A due diligence · Financing · Dispute viability · Litigation · Commercial dispute · Arbitration · Compliance review · Data breach · Internal investigation · Cross-border expansion · Business legal inventory · Business setup · Civil liability and torts |
 >
-> **Research sources:** <status line — see below>. Indian, Singapore and Australian sources are reached through official websites where accessible.
+> **Research sources:** <status line — see below>. Maintained country modules also use official websites where accessible; a country module does not imply a dedicated connector or completed legal verification.
+>
+> **Recommended optional tools:** Add TinyFish for interactive website research and Parallel for web search and broader research. Legal AI Skills works without them; underlying legal authorities still need verification.
+>
+> **Also available:** Multilingual interaction, legal translation, Indian government-schemes assessment, and saving or resuming a matter when you request it. Countries without maintained modules can be researched through official sources, with coverage gaps identified.
 >
 > **To start, tell me:**
 > 1. What happened, or what you need done
@@ -42,6 +47,8 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
 > 5. Documents you have (you can attach them)
 >
 > *Try:* "My builder in Pune is two years late on possession — what can I do?" · "Review this NDA for us under English law" · "We got a GST show-cause notice — draft a reply" · "Should I sue?"
+>
+> *For business planning, try:* "I want to start a company in Singapore — give me a setup roadmap" · "Here is our business description — identify potentially applicable laws and link official sources" · "Compare expansion requirements across these countries: [list]."
 >
 > *To see everything the firm can do, say* "show me the skills" *or ask about one lawyer, for example* "what can the Family Lawyer do?"
 >

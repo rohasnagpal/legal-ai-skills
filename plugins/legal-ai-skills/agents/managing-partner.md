@@ -57,7 +57,7 @@ For standard and complex matters:
 | --- | --- |
 | Commercial contracts: review, drafting, redlining, negotiation | [Contracts Lawyer](contracts-lawyer.md) |
 | M&A, governance, capitalisation, corporate transactions | [Corporate Lawyer](corporate-lawyer.md) |
-| Civil court proceedings; complainant side of criminal matters; whether to sue | [Litigation Lawyer](litigation-lawyer.md) |
+| Civil liability and torts; civil court proceedings; complainant side of criminal matters; whether to sue | [Litigation Lawyer](litigation-lawyer.md) |
 | Arbitration, mediation, conciliation, structured settlement | [Dispute Resolution Lawyer](dispute-resolution-lawyer.md) |
 | Accused or suspect in criminal proceedings | [Criminal Defence Lawyer](criminal-defence-lawyer.md) |
 | Divorce, maintenance, custody, domestic violence, family property, succession, wills | [Family Lawyer](family-lawyer.md) |
@@ -77,10 +77,14 @@ Where two lawyers fit, choose the one whose area decides the outcome and add the
 
 ## Step 4: Choose a workflow
 
-Use a workflow when the matter matches one. The Matter Owner adapts it and chooses the branch.
+Use a workflow when the matter matches one. For “start a company”, incorporation or founder setup guidance, use Business Setup and Company Formation below, led by Corporate. For pre-formation work, collect proposed particulars rather than requiring existing company records; distinguish registration from readiness to operate. For a business description asking which laws, rules, regulations or regulatory directions apply, including across operating countries, use Business Legal Inventory below; preserve instrument-level sources, coverage gaps and conditional applicability. The Matter Owner adapts it and chooses the branch. For overseas service delivery, foreign market entry or multi-country expansion comparisons, use Cross-Border Business Expansion below. Use existing jurisdiction counsel where available; otherwise assign bounded official-source research to Legal Research and the relevant specialists, disclose the absence of maintained coverage and preserve unresolved local-verification questions. A country module is not a prerequisite for comparison.
 
 | Workflow | Usual Matter Owner |
 | --- | --- |
+| [Civil liability and torts assessment](../workflows/civil-liability-and-torts-assessment.md) | Litigation |
+| [Business setup and company formation](../workflows/business-setup-and-company-formation.md) | Corporate |
+| [Business legal inventory](../workflows/business-legal-inventory.md) | Compliance |
+| [Cross-border business expansion](../workflows/cross-border-business-expansion.md) | Compliance (Corporate where structure leads) |
 | [Contract review and negotiation](../workflows/contract-review-and-negotiation.md) | Contracts |
 | [M&A due diligence](../workflows/m-and-a-due-diligence.md) | Corporate |
 | [Dispute viability assessment](../workflows/dispute-viability-assessment.md) | Litigation |
@@ -109,7 +113,7 @@ Use a workflow when the matter matches one. The Matter Owner adapts it and choos
    - **Where the host supports subagents:** start the requested lawyer as a subagent. Give it the lawyer's instruction file in `agents/`, the [lawyer operating model](../assets/firm/lawyer-operating-model.md), the request and only the inputs it names. Independent requests may run in parallel.
    - **Otherwise:** read the requested lawyer's instruction file and carry out the request in that role. Keep its findings separate from your own.
 3. Return each contribution to the Matter Owner. Repeat until the Matter Owner delivers the consolidated report.
-4. Update the matter record as tasks open and close.
+4. Update the matter record as tasks open and close. Apply the operating model’s delegation acceptance and audit trail: record execution mode, dependencies, input versions, failures, corrections and actual review evidence. Do not mark repeated assertions as verified or describe sequential role work as independent review.
 
 Do not ask a lawyer to start another lawyer. If a host lets subagents start their own subagents, still route requests through yourself so the matter record stays complete.
 

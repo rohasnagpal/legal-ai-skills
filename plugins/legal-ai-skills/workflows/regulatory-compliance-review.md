@@ -4,6 +4,8 @@
 
 Use to assess whether an entity, product, activity or control environment meets applicable regulatory requirements. Convert current legal duties into operational obligations, evidence, gaps and remediation.
 
+For systematic discovery from a business description, start with [Business Legal Inventory](business-legal-inventory.md), then use its sourced findings for control and remediation review.
+
 ## Required inputs
 
 Entity and group structure, jurisdictions, activities, sector, products or services, relevant data flows, review period and intended scope. Optional inputs include policies, licences, filings, control evidence, audits, regulator correspondence, incidents, risk appetite and target completion dates.

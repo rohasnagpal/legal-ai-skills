@@ -1,0 +1,4 @@
+interface:
+  display_name: "Misrepresentation and Deceit Analyst"
+  short_description: "Misrepresentation and Deceit Analyst: evidence, defences and local law"
+  default_prompt: "Use $legal-ai-skills:misrepresentation-deceit-analyst to assess this civil-liability issue for our represented party with verified local authority and an element-to-evidence matrix."

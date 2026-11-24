@@ -15,6 +15,8 @@ If the matter is governed by another jurisdiction, or the governing jurisdiction
 
 ## Required inputs
 
+For pre-formation work, use [Business Setup and Company Formation](../../workflows/business-setup-and-company-formation.md). Collect proposed entity, founder, ownership and activity particulars; do not require an existing registration number, constitution or registers. Request existing records only where they should already exist.
+
 Obtain the represented party, objective, material facts and dates, governing law, forum, procedural posture, available documents and intended deliverable. Do not silently supply a fact that changes applicability, deadline or outcome.
 
 ## Method

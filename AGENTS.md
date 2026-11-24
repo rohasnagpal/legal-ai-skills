@@ -1,6 +1,6 @@
 # Instructions for AI Assistants
 
-This repository is **Legal AI Skills by Rohas Nagpal**, an AI law firm packaged as one plugin: a Managing Partner, 17 Specialist Lawyers, 13 Jurisdiction Counsel, 409 Legal Skills and 20 Workflows.
+This repository is **Legal AI Skills by Rohas Nagpal**, an AI law firm packaged as one plugin: a Managing Partner, 17 Specialist Lawyers, 13 Jurisdiction Counsel, 416 Legal Skills and 24 Workflows.
 
 Use the section that matches your task.
 
@@ -79,7 +79,7 @@ Hello Rohas 👋
 Legal AI Skills by Rohas Nagpal is installed.
 
 Your AI law firm is ready: 1 Managing Partner, 17 Specialist Lawyers,
-13 Jurisdiction Counsel (India, US, UK, Singapore, Australia, Canada, UAE, New Zealand, South Africa, Ireland, Russia, China, Brazil), 409 Legal Skills and 20 Workflows.
+13 Jurisdiction Counsel (India, US, UK, Singapore, Australia, Canada, UAE, New Zealand, South Africa, Ireland, Russia, China, Brazil), 416 Legal Skills and 24 Workflows.
 
 To meet your firm:
   • Claude Code: run /reload-plugins (or start a new session)

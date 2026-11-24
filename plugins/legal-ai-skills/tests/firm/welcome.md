@@ -24,8 +24,11 @@ Implicitly activate [hello-rohas](../../skills/hello-rohas/SKILL.md) (directly, 
 - The skill, lawyer, counsel and workflow counts match the repository; the release validator enforces this.
 - Shows a research-source status line that counts only sources whose tools are actually available in the session, and groups unavailable sources by reason.
 - When no connector tools are visible, says "none connected in this session" with the restart and Node.js guidance, instead of listing all 14 sources; never says "not installed".
-- Shows Legal Skills and Workflows on separate table rows; the skills row gives concrete examples and the 48 India · 6 US · 6 UK · 18 Singapore split, and the workflows row names all 20 workflows.
+- Shows Legal Skills and Workflows on separate table rows; the skills row gives concrete examples and the repository-derived jurisdiction split (49 India, 6 US, 6 UK and 18 each for the other ten maintained jurisdictions), and the workflows row names all 24 workflows.
 - Offers "show me the skills" and the per-lawyer question.
+- Mentions TinyFish and Parallel as recommended optional tools with their respective roles, without setup steps, network calls, installation or claims that they are connected. They do not increase the 14-source count.
+- Includes business setup, legal inventory and cross-border expansion examples, and multilingual, translation, government-schemes and requested matter-continuity capabilities.
+- Distinguishes maintained country modules and official-source research from dedicated connectors and completed verification; does not imply cross-chat memory.
 
 ## Variant: show me the skills
 
@@ -36,7 +39,7 @@ Implicitly activate [hello-rohas](../../skills/hello-rohas/SKILL.md) (directly, 
 - Reads only the skill registry; lists lawyers with counts and examples, or the named lawyer's skills with one-line summaries and jurisdiction flags; offers to start a matter.
 - Omits the status line when the tool list cannot be seen, rather than guessing.
 - Asks the five intake questions: what happened, the user's role, country and state, deadlines, documents.
-- Gives three example prompts and the one-line confidentiality and human-review note.
+- Gives the dispute/document examples and three business-planning examples, plus the confidentiality and human-review note.
 - Does not read agent, workflow or skill files for a greeting-only request.
 - Does not claim that a connector is signed in or working when it is not.
 

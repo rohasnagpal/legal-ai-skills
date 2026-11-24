@@ -8,7 +8,7 @@ Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and 
 ---
 <img width="949" height="799" alt="image" src="https://github.com/user-attachments/assets/1ab803f3-7578-4e67-85f2-a8dead314202" />
 
-**New in [4.4.0](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/v4.4.0):** Expanded to **13 Jurisdiction Counsel and 409 Legal Skills**, adding Australia, Canada, UAE, New Zealand, South Africa, Ireland, Russia, China and Brazil. Each new module includes 18 local skills across all 17 specialist areas and privacy, jurisdiction gates, source guides and routing evaluation cases. Also added Indian government-schemes assessment, legal translation, multilingual interaction and activity/decision records. [Coverage test guide](docs/testing-expanded-coverage.md).
+**New in [4.5.0](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/v4.5.0):** **416 Legal Skills and 24 Workflows**, including business setup, business legal inventories, cross-border expansion and civil liability/torts. Seven new civil-liability skills add negligence, professional negligence, defamation, nuisance/trespass, misrepresentation/deceit and vicarious liability analysis. Trace-based delegation evaluation cases and scoring tools support native subagents and sequential fallback; live model performance remains unevaluated. The firm retains 13 Jurisdiction Counsel and 17 Specialist Lawyers. [Evaluation guide](docs/testing-delegation.md).
 
 ## Here's What You Get
 
@@ -18,13 +18,17 @@ Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and 
 
 - **13 Jurisdiction Counsel:** Identify and verify applicable laws, legal authorities and procedures in 🇮🇳 India, the 🇺🇸 US, the 🇬🇧 UK, 🇸🇬 Singapore, 🇦🇺 Australia, 🇨🇦 Canada, 🇦🇪 UAE, 🇳🇿 New Zealand, 🇿🇦 South Africa, 🇮🇪 Ireland, 🇷🇺 Russia, 🇨🇳 China and 🇧🇷 Brazil.
 
-- **409 Legal Skills:** Reusable capabilities such as contract review, legal research, due diligence, evidence analysis and legal drafting, including jurisdiction-specific skills for RERA and Section 138 NI Act.
+- **416 Legal Skills:** Reusable capabilities such as contract review, legal research, due diligence, evidence analysis and legal drafting, including jurisdiction-specific skills for RERA and Section 138 NI Act.
 
-- **20 Workflows:** Step-by-step processes for matters such as M&A due diligence, divorce proceedings, contract negotiation and litigation preparation.
+- **24 Workflows:** Step-by-step processes for matters such as M&A due diligence, divorce proceedings, contract negotiation and litigation preparation, plus business setup and company formation, business legal inventories and cross-border expansion.
 
 - **14 Official Legal Research Sources and Connectors:** Provide access to legislation, regulations, judgments, court records, official notices, company registries and sanctions lists through official and authoritative legal sources.
 
 - **Built-in Legal Tools:** Exact deadline and interest calculators, and private sanctions screening against the 🇺🇸 US, 🇬🇧 UK and UN lists, all running on your own machine.
+
+**Recommended optional tools:** Add **TinyFish** for interactive website research and **Parallel** for web search and broader research. Legal AI Skills works without them. These are separate optional services, not bundled connections or part of the 14-source count; underlying legal authorities still need verification.
+
+Say **“Hello Rohas”** for the firm overview, current research-connector availability and examples of matters you can start. The welcome includes business setup, legal inventories and cross-border expansion, as well as multilingual interaction, legal translation and saving or resuming matters on request.
 
 Built in 🇮🇳 India for the world by [Rohas Nagpal](https://rohasnagpal.com/).
 
@@ -57,6 +61,8 @@ Put your contracts, emails, messages, screenshots and notices in one folder, ope
 6. **Managing Partner** reviews the completed work for completeness, legal reasoning, consistency, supporting evidence, verified authorities and legal risks. Jurisdiction Counsel assists with final local-law verification where required. The Managing Partner requests revisions when necessary.
 
 7. **Final output** is delivered to the user, clearly identifying any unresolved issues, unverified information and required human legal review or approval.
+
+Delegation has [trace-based evaluation cases and a scoring guide](docs/testing-delegation.md) for native subagents and sequential fallback, including source checks, conflicting findings, task failures and input isolation. These fixtures do not establish live host performance.
 
 Simple questions skip the team: the Managing Partner uses the one relevant skill directly.
 
@@ -206,7 +212,15 @@ Then restart: in Claude Code run `/reload-plugins` or start a new session; in Co
 
 ---
 
-## The 20 Workflows
+To compare expansion requirements, ask: “Assess our [business and delivery model] expanding from [home jurisdiction] into [target jurisdictions]. Compare market access, licensing, regulatory restrictions, privacy, tax and contracts; provide a sourced matrix and prioritised compliance plan.” Countries without maintained modules use bounded official-source research with explicit coverage and verification gaps.
+
+To identify business obligations, ask: “Here is our business description: [activities, entities, locations, customers, workforce and data flows]. Identify potentially applicable laws, rules, regulations and regulatory directions in [jurisdictions]. Give one paragraph per instrument explaining why it applies, cite relevant provisions and link its official source. Include obligations, missing facts, coverage gaps and verification status.” The inventory records its research scope and unresolved completeness checks.
+
+To plan a new business, ask: “I want to start a business in [jurisdiction]. Here are my founder details and business plan: [details]. Compare suitable structures and explain formation, licences, tax, banking, hiring, immigration, costs, timelines and continuing obligations. Give a sourced setup roadmap and identify missing facts and local checks.” Registration and readiness to trade are assessed separately.
+
+Civil liability coverage includes general liability assessment, negligence, professional negligence, defamation, nuisance/trespass, misrepresentation/deceit and vicarious liability, with jurisdiction-specific source verification. Existing product liability, evidence, limitation and damages skills support these assessments.
+
+## The 24 Workflows
 
 | Workflow | Matter Owner |
 |---|---|
@@ -222,6 +236,10 @@ Then restart: in Claude Code run `/reload-plugins` or start a new session; in Co
 | [Employment dispute](plugins/legal-ai-skills/workflows/employment-dispute.md) | Employment Lawyer |
 | [Contract review and negotiation](plugins/legal-ai-skills/workflows/contract-review-and-negotiation.md) | Contracts Lawyer |
 | [M&A due diligence](plugins/legal-ai-skills/workflows/m-and-a-due-diligence.md) | Corporate Lawyer |
+| [Civil liability and torts assessment](plugins/legal-ai-skills/workflows/civil-liability-and-torts-assessment.md) | Litigation Lawyer |
+| [Business setup and company formation](plugins/legal-ai-skills/workflows/business-setup-and-company-formation.md) | Corporate Lawyer |
+| [Business legal inventory](plugins/legal-ai-skills/workflows/business-legal-inventory.md) | Compliance Lawyer |
+| [Cross-border business expansion](plugins/legal-ai-skills/workflows/cross-border-business-expansion.md) | Compliance Lawyer (Corporate where structure leads) |
 | [Financing transaction](plugins/legal-ai-skills/workflows/financing-transaction.md) | Banking & Finance Lawyer |
 | [Dispute viability assessment](plugins/legal-ai-skills/workflows/dispute-viability-assessment.md) | Litigation Lawyer |
 | [Litigation preparation](plugins/legal-ai-skills/workflows/litigation-preparation.md) | Litigation Lawyer |
@@ -370,6 +388,14 @@ Instructions: [contracts-lawyer.md](plugins/legal-ai-skills/agents/contracts-law
 ### Litigation Lawyer
 
 Instructions: [litigation-lawyer.md](plugins/legal-ai-skills/agents/litigation-lawyer.md)
+
+- **[civil-liability-analyst](plugins/legal-ai-skills/skills/civil-liability-analyst/SKILL.md)**: local civil-liability causes, evidence, defences and remedies
+- **[negligence-analyst](plugins/legal-ai-skills/skills/negligence-analyst/SKILL.md)**: duty or local equivalent, breach, causation and harm
+- **[professional-negligence-analyst](plugins/legal-ai-skills/skills/professional-negligence-analyst/SKILL.md)**: professional standards, engagement scope and expert evidence
+- **[defamation-analyst](plugins/legal-ai-skills/skills/defamation-analyst/SKILL.md)**: publication, meaning, harm, defences and civil remedies
+- **[nuisance-trespass-analyst](plugins/legal-ai-skills/skills/nuisance-trespass-analyst/SKILL.md)**: land interference, standing, attribution and lawful relief
+- **[misrepresentation-deceit-analyst](plugins/legal-ai-skills/skills/misrepresentation-deceit-analyst/SKILL.md)**: statements, omissions, reliance and civil remedies
+- **[vicarious-liability-analyst](plugins/legal-ai-skills/skills/vicarious-liability-analyst/SKILL.md)**: responsibility for another actor, separate from direct fault
 
 - **[appeal-grounds-drafter](plugins/legal-ai-skills/skills/appeal-grounds-drafter/SKILL.md)**: record-linked grounds, preserved errors, standards of review and relief
 - **[cheque-dishonour-complaint-drafter](plugins/legal-ai-skills/skills/cheque-dishonour-complaint-drafter/SKILL.md)** 🇮🇳: Draft section 138 complaints after notice

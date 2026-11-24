@@ -22,7 +22,7 @@ for plugin_json in plugins/*/.codex-plugin/plugin.json; do
     [[ -f LICENSE ]] && package_entries+=(LICENSE)
     [[ -f .mcp.json ]] && package_entries+=(.mcp.json)
     [[ -f skill-registry.yaml ]] && package_entries+=(skill-registry.yaml)
-    for optional_entry in agents workflows integrations jurisdictions mcp hooks; do
+    for optional_entry in agents workflows integrations jurisdictions mcp hooks tests; do
       if [[ -d "$optional_entry" ]]; then
         package_entries+=("$optional_entry")
       fi

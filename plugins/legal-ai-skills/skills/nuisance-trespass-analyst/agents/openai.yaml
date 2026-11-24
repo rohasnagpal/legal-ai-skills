@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nuisance and Trespass Analyst"
+  short_description: "Nuisance and Trespass Analyst: evidence, defences and local law"
+  default_prompt: "Use $legal-ai-skills:nuisance-trespass-analyst to assess this civil-liability issue for our represented party with verified local authority and an element-to-evidence matrix."

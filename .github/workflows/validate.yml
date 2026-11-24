@@ -21,6 +21,9 @@ jobs:
       - name: Validate skills, manifests, and README links
         run: ruby scripts/validate.rb
 
+      - name: Test delegation evaluation scorer
+        run: ruby scripts/test-delegation-scorer.rb
+
       - name: Set up Node.js
         uses: actions/setup-node@v7
         with:

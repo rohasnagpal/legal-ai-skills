@@ -2,9 +2,13 @@
 
 **From:** {{LAWYER}} · **To:** {{MATTER_OWNER_OR_MANAGING_PARTNER}} · **Matter:** {{MATTER_ID}} · **Date:** {{DATE}}
 
+**Execution:** {{NATIVE SUBAGENT / SEQUENTIAL ROLE}} · **Request ID:** {{REQUEST_ID}} · **Status:** {{COMPLETE / PARTIAL / BLOCKED}}
+
 ## 1. Assigned task
 
 {{THE QUESTION AS ASKED, OR "Consolidated report"}}
+
+Dependencies and input versions: {{DEPENDENCIES, ACTUAL INPUT VERSIONS, AND UNRESOLVED ITEMS}}
 
 ## 2. Represented party and role
 

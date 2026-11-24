@@ -1,5 +1,23 @@
 # Changelog
 
+## 4.5.0 — 2026-11-24
+
+### Added
+
+- Four workflows: Cross-Border Business Expansion, Business Legal Inventory, Business Setup and Company Formation, and Civil Liability and Torts Assessment.
+- Seven civil-liability skills: general liability, negligence, professional negligence, defamation, nuisance/trespass, misrepresentation/deceit and vicarious liability. Local-law gates, evidence mapping, contrary analysis and verification requirements apply throughout.
+- Twelve trace-based delegation evaluation cases, reviewer scoring tooling, scorer tests and an evaluation guide covering native subagents and sequential fallback.
+
+### Updated
+
+- Managing Partner and Litigation routing, pre-formation intake in local companies skills, contribution records and delegation acceptance rules.
+- Hello Rohas, README, manifests and registry: 416 Legal Skills, 24 Workflows, 17 Specialist Lawyers and 13 Jurisdiction Counsel. TinyFish and Parallel are mention-only optional recommendations, not bundled connections or additional official sources.
+- Country-agnostic research paths support countries without maintained modules with explicit source and coverage gaps; no new country modules or connectors added.
+
+### Validation
+
+- Repository validation, delegation scorer tests, bundled MCP/hook tests and release archive checks. Behavioural scenarios are evaluation fixtures; live model delegation and legal performance have not been established.
+
 ## 4.4.0 — 2026-11-24
 
 ### Added
