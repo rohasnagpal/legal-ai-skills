@@ -1,5 +1,22 @@
 # Changelog
 
+## 4.4.0 — 2026-11-24
+
+### Added
+
+- Nine jurisdiction modules: Australia, Canada, UAE, New Zealand, South Africa, Ireland, Russia, China and Brazil. Each includes a counsel gateway, 18 local legal skills, source and integration guides, jurisdiction gates, specialist ownership and routing evaluation cases.
+- Indian government-schemes assessment, legal translation, multilingual interaction and activity/decision records.
+- Website directory data exporter and expanded coverage test guides.
+
+### Updated
+
+- Managing Partner and specialist routing, jurisdiction maps, registry, welcome, documentation and plugin descriptions: 13 Jurisdiction Counsel, 409 Legal Skills, 241 jurisdiction-specific skills, 17 Specialist Lawyers and 20 Workflows.
+- Preserves the 4.3.1 welcome-instruction fix. Official-source directories do not add dedicated connectors or establish completed legal verification; mainland China coverage does not extend to separate legal systems.
+
+### Validation
+
+- Repository validation, bundled MCP/hook tests and release archive checks. Behavioural routing cases are evaluation fixtures; live host/model performance has not been verified for this expansion.
+
 ## 4.3.1 — 2026-11-24
 
 - Remove the blanket instruction prohibiting the firm's welcome in the installation session.

@@ -67,6 +67,19 @@ jobs:
           unzip -Z1 "$plugin_zip" | grep -qx 'jurisdictions/singapore/authoritative-sources.md'
           unzip -Z1 "$plugin_zip" | grep -qx 'skills/singapore-counsel/SKILL.md'
 
+      - name: Verify all jurisdiction modules are bundled
+        run: |
+          ruby -e '
+            archive = Dir["dist/openai-submission/legal-ai-skills-*.zip"].fetch(0)
+            entries = IO.popen(["unzip", "-Z1", archive], &:read).lines.map(&:chomp)
+            Dir["plugins/legal-ai-skills/jurisdictions/*/skill-map.yaml"].each do |map|
+              code = File.basename(File.dirname(map))
+              ["agents/#{code}-counsel.md", "skills/#{code}-counsel/SKILL.md", "jurisdictions/#{code}/skill-map.yaml", "jurisdictions/#{code}/authoritative-sources.md"].each do |entry|
+                abort "Missing #{entry}" unless entries.include?(entry)
+              end
+            end
+          '
+
       - name: Verify only complete plugin archives are published
         run: |
           test -z "$(find dist -maxdepth 1 -name '*.zip' -print -quit)"

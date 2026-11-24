@@ -8,11 +8,7 @@ Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and 
 ---
 <img width="949" height="799" alt="image" src="https://github.com/user-attachments/assets/1ab803f3-7578-4e67-85f2-a8dead314202" />
 
-**New in [4.3.0](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/v4.3.0):** 🇸🇬 Singapore joins 🇮🇳 India, the 🇺🇸 US and the 🇬🇧 UK as the fourth Jurisdiction Counsel, with 18 local skills across all 17 specialist practice areas. [Test 🇸🇬 Singapore coverage](docs/testing-singapore.md).
-
-**🇦🇺 Australia coverage:** 🇦🇺 Australia Counsel supplies 18 local skills across all 17 specialist practice areas, with Commonwealth, state and territory applicability checks. [Test 🇦🇺 Australia coverage](docs/testing-australia.md).
-
-**Added in this working tree:** Canada, UAE, New Zealand, South Africa, Ireland, Russia, China and Brazil Counsel; Indian government schemes; legal translation; multilingual interaction; and activity/decision records.
+**New in [4.4.0](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/v4.4.0):** Expanded to **13 Jurisdiction Counsel and 409 Legal Skills**, adding Australia, Canada, UAE, New Zealand, South Africa, Ireland, Russia, China and Brazil. Each new module includes 18 local skills across all 17 specialist areas and privacy, jurisdiction gates, source guides and routing evaluation cases. Also added Indian government-schemes assessment, legal translation, multilingual interaction and activity/decision records. [Coverage test guide](docs/testing-expanded-coverage.md).
 
 ## Here's What You Get
 
@@ -20,7 +16,7 @@ Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and 
 
 - **17 Specialist Lawyers:** Handle matters across practice areas such as corporate, criminal defence, contracts, family law, real estate, tax and litigation.
 
-- **13 Jurisdiction Counsel:** Identify and verify applicable laws, legal authorities and procedures in 🇮🇳 India, the 🇺🇸 US, the 🇬🇧 UK, 🇸🇬 Singapore, 🇦🇺 Australia, 🇨🇦 Canada, 🇦🇪 UAE, 🇳🇿 New Zealand, 🇿🇦 South Africa 🇮🇪 Ireland, 🇷🇺 Russia, 🇨🇳 China and 🇧🇷 Brazil.
+- **13 Jurisdiction Counsel:** Identify and verify applicable laws, legal authorities and procedures in 🇮🇳 India, the 🇺🇸 US, the 🇬🇧 UK, 🇸🇬 Singapore, 🇦🇺 Australia, 🇨🇦 Canada, 🇦🇪 UAE, 🇳🇿 New Zealand, 🇿🇦 South Africa, 🇮🇪 Ireland, 🇷🇺 Russia, 🇨🇳 China and 🇧🇷 Brazil.
 
 - **409 Legal Skills:** Reusable capabilities such as contract review, legal research, due diligence, evidence analysis and legal drafting, including jurisdiction-specific skills for RERA and Section 138 NI Act.
 
