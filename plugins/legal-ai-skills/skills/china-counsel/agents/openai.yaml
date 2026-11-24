@@ -1,0 +1,4 @@
+interface:
+  display_name: "China Counsel"
+  short_description: "Verify china counsel"
+  default_prompt: "Use $china-counsel for this matter, identifying applicable law, missing evidence and verification status."

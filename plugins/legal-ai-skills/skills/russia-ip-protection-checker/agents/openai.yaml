@@ -1,0 +1,4 @@
+interface:
+  display_name: "Russian IP Protection Checker"
+  short_description: "Verify irish ip protection checker"
+  default_prompt: "Use $russia-ip-protection-checker for this matter, identifying applicable law, missing evidence and verification status."

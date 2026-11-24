@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Insolvency Applicability Checker"
+  short_description: "Verify canadian insolvency applicability checker"
+  default_prompt: "Use $canada-insolvency-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

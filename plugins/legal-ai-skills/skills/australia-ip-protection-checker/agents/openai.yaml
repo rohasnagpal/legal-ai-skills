@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australian IP Protection Checker"
+  short_description: "Australian ip law and verification"
+  default_prompt: "Use $legal-ai-skills:australia-ip-protection-checker for this Australian matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

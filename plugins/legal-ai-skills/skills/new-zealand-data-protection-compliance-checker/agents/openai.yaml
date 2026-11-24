@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Data Protection Compliance Checker"
+  short_description: "Verify new zealand data protection compliance checker"
+  default_prompt: "Use $new-zealand-data-protection-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

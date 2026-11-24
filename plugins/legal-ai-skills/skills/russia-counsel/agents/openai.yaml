@@ -1,0 +1,4 @@
+interface:
+  display_name: "Russia Counsel"
+  short_description: "Verify russia counsel"
+  default_prompt: "Use $russia-counsel for this matter, identifying applicable law, missing evidence and verification status."

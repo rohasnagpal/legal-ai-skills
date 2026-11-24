@@ -1,0 +1,4 @@
+interface:
+  display_name: "South African Data Protection Compliance Checker"
+  short_description: "Verify south african data protection compliance checker"
+  default_prompt: "Use $south-africa-data-protection-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

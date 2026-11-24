@@ -1,0 +1,4 @@
+interface:
+  display_name: "Irish Regulatory Compliance Checker"
+  short_description: "Verify irish regulatory compliance checker"
+  default_prompt: "Use $ireland-regulatory-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

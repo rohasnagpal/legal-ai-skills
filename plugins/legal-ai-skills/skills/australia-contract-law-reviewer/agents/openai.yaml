@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australian Contract Law Reviewer"
+  short_description: "Australian contracts law and verification"
+  default_prompt: "Use $legal-ai-skills:australia-contract-law-reviewer for this Australian matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

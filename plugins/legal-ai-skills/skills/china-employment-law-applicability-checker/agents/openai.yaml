@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Employment Law Applicability Checker"
+  short_description: "Verify irish employment law applicability checker"
+  default_prompt: "Use $china-employment-law-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

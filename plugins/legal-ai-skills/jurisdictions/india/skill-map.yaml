@@ -1,7 +1,7 @@
 version: 1
 jurisdiction: india
 agent: india-counsel
-skill_count: 48
+skill_count: 49
 skills:
   corporate:
     - listing-obligations-checker
@@ -60,3 +60,5 @@ skills:
     - tax-appeal-grounds-drafter
     - tax-assessment-reply-drafter
     - input-tax-credit-dispute-analyst
+  government_schemes:
+    - india-government-schemes-assessor

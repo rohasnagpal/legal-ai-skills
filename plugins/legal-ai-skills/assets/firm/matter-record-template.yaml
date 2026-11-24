@@ -2,6 +2,9 @@
 # matters/<matter_id>/matter.yaml only when the user asks to keep a matter file.
 matter_id: MAT-YYYY-NNN
 saved_at: ""              # ISO 8601 timestamp with offset; only after an actual save
+working_language: ""       # user interaction; establish separately from jurisdiction
+output_language: ""        # requested deliverable language
+logging: { requested: false, activity_log: "", decision_log: "", coverage_gaps: [] }
 objective: ""
 next_action: { task: "", owner: "", due: "" }
 client_decisions: []

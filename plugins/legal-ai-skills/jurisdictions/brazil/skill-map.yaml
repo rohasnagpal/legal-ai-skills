@@ -1,0 +1,41 @@
+version: 1
+jurisdiction: brazil
+agent: brazil-counsel
+skill_count: 18
+skills:
+  corporate:
+    - brazil-companies-compliance-checker
+  contracts:
+    - brazil-contract-law-reviewer
+  litigation:
+    - brazil-civil-procedure-checker
+  dispute_resolution:
+    - brazil-arbitration-procedure-checker
+  criminal:
+    - brazil-criminal-procedure-checker
+  family:
+    - brazil-family-law-applicability-checker
+  property:
+    - brazil-property-law-reviewer
+  insolvency:
+    - brazil-insolvency-applicability-checker
+  banking_finance:
+    - brazil-banking-finance-regulatory-checker
+  employment:
+    - brazil-employment-law-applicability-checker
+  ip:
+    - brazil-ip-protection-checker
+  compliance:
+    - brazil-regulatory-compliance-checker
+  privacy:
+    - brazil-data-protection-compliance-checker
+  consumer:
+    - brazil-consumer-remedies-checker
+  public_law:
+    - brazil-public-law-remedies-checker
+  investigations:
+    - brazil-investigation-evidence-checker
+  research:
+    - brazil-authority-validator
+  tax:
+    - brazil-tax-applicability-checker

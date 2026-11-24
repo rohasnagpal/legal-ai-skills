@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian IP Protection Checker"
+  short_description: "Verify canadian ip protection checker"
+  default_prompt: "Use $canada-ip-protection-checker for this matter, identifying applicable law, missing evidence and verification status."

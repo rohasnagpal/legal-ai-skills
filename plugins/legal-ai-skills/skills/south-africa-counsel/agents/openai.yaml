@@ -1,0 +1,4 @@
+interface:
+  display_name: "South Africa Counsel"
+  short_description: "Verify south africa counsel"
+  default_prompt: "Use $south-africa-counsel for this matter, identifying applicable law, missing evidence and verification status."

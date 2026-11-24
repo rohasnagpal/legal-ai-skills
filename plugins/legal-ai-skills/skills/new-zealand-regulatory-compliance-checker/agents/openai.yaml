@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Regulatory Compliance Checker"
+  short_description: "Verify new zealand regulatory compliance checker"
+  default_prompt: "Use $new-zealand-regulatory-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

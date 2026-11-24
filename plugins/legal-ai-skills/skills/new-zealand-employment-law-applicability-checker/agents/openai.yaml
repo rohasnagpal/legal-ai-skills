@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Employment Law Applicability Checker"
+  short_description: "Verify new zealand employment law applicability checker"
+  default_prompt: "Use $new-zealand-employment-law-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

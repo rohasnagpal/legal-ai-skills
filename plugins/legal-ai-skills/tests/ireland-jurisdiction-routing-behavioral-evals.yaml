@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "plugin": "legal-ai-skills",
+  "risk_tier": "high",
+  "cases": [
+    {
+      "id": "ireland-companies-compliance-checker",
+      "prompt": "We need Ireland corporate advice. Identify the facts and documents needed to resolve this issue: Verify Companies Act entity form, CRO filings, directors’ duties, beneficial ownership and transaction approvals; consider EU and competition overlays.",
+      "expected_skill": "ireland-companies-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify Companies Act entity form, CRO filings, directors’ duties, beneficial ownership and transaction approvals; consider EU and competition overlays. Identify entity form and records; map duties, approvals, capital changes, filings, sector and ownership restrictions. Produce an approvals and filing checklist. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-contract-law-reviewer",
+      "prompt": "We need Ireland contracts advice. Identify the facts and documents needed to resolve this issue: Verify Irish contract law, statutory consumer protections and applicable EU instruments; assess choice of law and forum separately.",
+      "expected_skill": "ireland-contract-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify Irish contract law, statutory consumer protections and applicable EU instruments; assess choice of law and forum separately. Review formation, authority, mandatory terms, payment, liability, IP, data, termination and remedies from the represented side. Use contract-reviewer and redline-proposer for exact replacement clauses. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-civil-procedure-checker",
+      "prompt": "We need Ireland litigation advice. Identify the facts and documents needed to resolve this issue: Identify District, Circuit, High or specialist jurisdiction, current rules and forms, limitation and Irish/EU cross-border service routes.",
+      "expected_skill": "ireland-civil-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify District, Circuit, High or specialist jurisdiction, current rules and forms, limitation and Irish/EU cross-border service routes. Identify competent court, prerequisites, cause of action, limitation trigger, service, evidence, disclosure, interim relief, appeal and enforcement. Adapt neutral pleading skills to verified local forms. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-arbitration-procedure-checker",
+      "prompt": "We need Ireland dispute resolution advice. Identify the facts and documents needed to resolve this issue: Verify Irish arbitration framework, seat, agreement, court support and recognition/enforcement; separate mediation obligations.",
+      "expected_skill": "ireland-arbitration-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify Irish arbitration framework, seat, agreement, court support and recognition/enforcement; separate mediation obligations. Separate governing law, seat, institution and enforcement. Verify arbitrability, appointment, interim relief, objections, challenge and recognition; use the existing arbitration workflow. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-criminal-procedure-checker",
+      "prompt": "We need Ireland criminal advice. Identify the facts and documents needed to resolve this issue: Identify Garda investigation and competent criminal court; verify detention authority, legal assistance, bail, disclosure and evidentiary challenges.",
+      "expected_skill": "ireland-criminal-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify Garda investigation and competent criminal court; verify detention authority, legal assistance, bail, disclosure and evidentiary challenges. Prioritise custody and representation. Map offence elements, investigation powers, bail, disclosure, admissibility, youth protections and procedural applications without assuming guilt. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-family-law-applicability-checker",
+      "prompt": "We need Ireland family advice. Identify the facts and documents needed to resolve this issue: Separate divorce, judicial separation, civil partnership/cohabitation, guardianship, maintenance and succession; verify Irish/EU jurisdiction and recognition.",
+      "expected_skill": "ireland-family-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Separate divorce, judicial separation, civil partnership/cohabitation, guardianship, maintenance and succession; verify Irish/EU jurisdiction and recognition. Establish relationship, residence, children, assets and safety facts. Separate parenting, protection, financial relief, divorce and succession; verify jurisdiction, prerequisites and deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-property-law-reviewer",
+      "prompt": "We need Ireland property advice. Identify the facts and documents needed to resolve this issue: Check title registration, conveyancing, tenancy, planning, security and taxes through current Irish sources and authorised records.",
+      "expected_skill": "ireland-property-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check title registration, conveyancing, tenancy, planning, security and taxes through current Irish sources and authorised records. Identify tenure, registry, encumbrances, planning, leasing, disclosure, foreign ownership, taxes and settlement conditions. Distinguish record findings from seller representations. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-insolvency-applicability-checker",
+      "prompt": "We need Ireland insolvency advice. Identify the facts and documents needed to resolve this issue: Distinguish examinership, SCARP, liquidation, receivership and personal insolvency; verify debtor eligibility, creditor protections and EU recognition issues.",
+      "expected_skill": "ireland-insolvency-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish examinership, SCARP, liquidation, receivership and personal insolvency; verify debtor eligibility, creditor protections and EU recognition issues. Identify debtor type, solvency evidence and corporate/personal regime; verify commencement thresholds, moratoria, claim admission, priorities, restructuring, avoidance and cross-border recognition. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-banking-finance-regulatory-checker",
+      "prompt": "We need Ireland banking finance advice. Identify the facts and documents needed to resolve this issue: Identify Central Bank and EU authorisation, regulated credit/consumer protections, security registration and enforcement; distinguish passporting from domestic permissions.",
+      "expected_skill": "ireland-banking-finance-regulatory-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify Central Bank and EU authorisation, regulated credit/consumer protections, security registration and enforcement; distinguish passporting from domestic permissions. Identify lender, borrower, activity and regulator; verify licensing, lending/consumer credit rules, guarantees, security creation/perfection, priority, enforcement and insolvency interaction. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-employment-law-applicability-checker",
+      "prompt": "We need Ireland employment advice. Identify the facts and documents needed to resolve this issue: Verify employment status, statutory/EU protections, collective context and WRC/Labour Court/court routes, including time limits and remedies.",
+      "expected_skill": "ireland-employment-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify employment status, statutory/EU protections, collective context and WRC/Labour Court/court routes, including time limits and remedies. Identify status, workplace, sector, collective instruments and protected characteristics. Verify minimum terms, termination, remedies and competent dispute gateway with trigger-based deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-ip-protection-checker",
+      "prompt": "We need Ireland ip advice. Identify the facts and documents needed to resolve this issue: Separate Irish IPOI registrations, EUIPO/EPO routes and copyright; verify territorial effect, ownership and Irish/EU enforcement rather than assuming UK coverage.",
+      "expected_skill": "ireland-ip-protection-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Separate Irish IPOI registrations, EUIPO/EPO routes and copyright; verify territorial effect, ownership and Irish/EU enforcement rather than assuming UK coverage. Identify right, ownership chain, territory, registration and use. Verify validity, infringement, defences, licensing, remedies, office procedure and enforcement deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-regulatory-compliance-checker",
+      "prompt": "We need Ireland compliance advice. Identify the facts and documents needed to resolve this issue: Map Irish licensing, AML, sanctions, competition and applicable EU obligations; identify responsible national authority and binding versus guidance status.",
+      "expected_skill": "ireland-regulatory-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Map Irish licensing, AML, sanctions, competition and applicable EU obligations; identify responsible national authority and binding versus guidance status. Map actual activities to regulator, licences, mandatory duties, reporting, sanctions/AML and inspections. Produce obligations, controls, evidence, owners and verified deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-data-protection-compliance-checker",
+      "prompt": "We need Ireland privacy advice. Identify the facts and documents needed to resolve this issue: Assess GDPR, Irish implementing law and ePrivacy rules, controller/processor duties, DPC competence, transfers and breach notifications.",
+      "expected_skill": "ireland-data-protection-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Assess GDPR, Irish implementing law and ePrivacy rules, controller/processor duties, DPC competence, transfers and breach notifications. Map data, subjects, roles, purposes and locations. Verify applicable law, justification, notices, rights, processors, security, breach reporting, transfers and regulator powers. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-consumer-remedies-checker",
+      "prompt": "We need Ireland consumer advice. Identify the facts and documents needed to resolve this issue: Verify Irish/EU consumer contracts, unfair practices, digital goods/services and product-safety coverage; identify CCPC and court/redress routes.",
+      "expected_skill": "ireland-consumer-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify Irish/EU consumer contracts, unfair practices, digital goods/services and product-safety coverage; identify CCPC and court/redress routes. Verify protected consumer/transaction scope, unfair terms/practices, product and service standards, exclusions, complaint gateway, evidence, remedies and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-public-law-remedies-checker",
+      "prompt": "We need Ireland public law advice. Identify the facts and documents needed to resolve this issue: Distinguish Irish judicial review, statutory appeal, constitutional challenge and EU-law remedies; verify leave, standing, time limits and required notices.",
+      "expected_skill": "ireland-public-law-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish Irish judicial review, statutory appeal, constitutional challenge and EU-law remedies; verify leave, standing, time limits and required notices. Identify decision, legal power, reasons, standing and relief. Distinguish statutory appeal, merits review, judicial review and constitutional challenge; verify exhaustion, urgency and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-investigation-evidence-checker",
+      "prompt": "We need Ireland investigations advice. Identify the facts and documents needed to resolve this issue: Assess Irish/EU data protection, workplace procedure, privilege and protected-disclosure rules; distinguish internal findings from Garda or regulator powers.",
+      "expected_skill": "ireland-investigation-evidence-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Assess Irish/EU data protection, workplace procedure, privilege and protected-disclosure rules; distinguish internal findings from Garda or regulator powers. Define mandate, lawful collection and privilege. Preserve provenance, custody, interviews and competing explanations; verify privacy, surveillance, disclosure and regulator-reporting restrictions. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-authority-validator",
+      "prompt": "We need Ireland research advice. Identify the facts and documents needed to resolve this issue: Retrieve Irish legislation with amendment/commencement checks and Irish/CJEU judgments; distinguish domestic, EU and persuasive English authority and consolidation status.",
+      "expected_skill": "ireland-authority-validator",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Retrieve Irish legislation with amendment/commencement checks and Irish/CJEU judgments; distinguish domestic, EU and persuasive English authority and consolidation status. Verify primary text, proposition support, temporal version, court hierarchy and adverse/later treatment. Distinguish binding authority, guidance, submissions and secondary material; report access gaps. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-tax-applicability-checker",
+      "prompt": "We need Ireland tax advice. Identify the facts and documents needed to resolve this issue: Verify Irish Revenue treatment, residence, income/corporation tax, VAT and treaty/EU overlays; identify assessment, appeal and collection rules by tax period.",
+      "expected_skill": "ireland-tax-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify Irish Revenue treatment, residence, income/corporation tax, VAT and treaty/EU overlays; identify assessment, appeal and collection rules by tax period. Establish taxpayer, residence, source, transaction and period. Verify national/local taxes, treaty application, rates, exemptions, filing, objections, appeals and evidential requirements; calculate only from verified premises. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "ireland-foreign-gate",
+      "prompt": "Use Ireland law for this clearly Indian-law dispute solely because our parent company is in Ireland.",
+      "expected_skill": "ireland-authority-validator",
+      "expected_behavior": "Do not infer governing law from incorporation. State scope mismatch and route to India Counsel through the Managing Partner.",
+      "must_not_include": [
+        "guaranteed outcome"
+      ],
+      "must_include": [
+        "jurisdiction"
+      ]
+    },
+    {
+      "id": "ireland-blocked-source",
+      "prompt": "The official Ireland source is blocked. Confirm this AI summary as current authority.",
+      "expected_skill": "ireland-authority-validator",
+      "expected_behavior": "Mark source unavailable; do not certify a summary. Request authorised primary text and identify affected propositions.",
+      "must_include": [
+        "source"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "ireland-nonlegal",
+      "prompt": "Translate this restaurant menu into French.",
+      "expected_skill": null,
+      "expected_behavior": "Do not invoke local legal counsel for ordinary nonlegal translation.",
+      "must_include": [
+        "translation"
+      ],
+      "must_not_include": [
+        "legal opinion"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australian Regulatory Compliance Checker"
+  short_description: "Australian compliance law and verification"
+  default_prompt: "Use $legal-ai-skills:australia-regulatory-compliance-checker for this Australian matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

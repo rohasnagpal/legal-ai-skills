@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Authority Validator"
+  short_description: "Verify new zealand authority validator"
+  default_prompt: "Use $new-zealand-authority-validator for this matter, identifying applicable law, missing evidence and verification status."

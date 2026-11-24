@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "plugin": "legal-ai-skills",
+  "risk_tier": "high",
+  "cases": [
+    {
+      "id": "south-africa-companies-compliance-checker",
+      "prompt": "We need South Africa corporate advice. Identify the facts and documents needed to resolve this issue: Verify Companies Act entity form, CIPC records, directors’ duties, beneficial ownership and transaction approvals; check takeover and competition rules where relevant.",
+      "expected_skill": "south-africa-companies-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify Companies Act entity form, CIPC records, directors’ duties, beneficial ownership and transaction approvals; check takeover and competition rules where relevant. Identify entity form and records; map duties, approvals, capital changes, filings, sector and ownership restrictions. Produce an approvals and filing checklist. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-contract-law-reviewer",
+      "prompt": "We need South Africa contracts advice. Identify the facts and documents needed to resolve this issue: Assess common-law requirements, constitutional/public-policy constraints, consumer and credit applicability, penalties and enforceability.",
+      "expected_skill": "south-africa-contract-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Assess common-law requirements, constitutional/public-policy constraints, consumer and credit applicability, penalties and enforceability. Review formation, authority, mandatory terms, payment, liability, IP, data, termination and remedies from the represented side. Use contract-reviewer and redline-proposer for exact replacement clauses. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-civil-procedure-checker",
+      "prompt": "We need South Africa litigation advice. Identify the facts and documents needed to resolve this issue: Distinguish Magistrates’ Courts, High Court divisions and specialist/constitutional jurisdiction; verify rules, prescription, service and pre-action notices.",
+      "expected_skill": "south-africa-civil-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish Magistrates’ Courts, High Court divisions and specialist/constitutional jurisdiction; verify rules, prescription, service and pre-action notices. Identify competent court, prerequisites, cause of action, limitation trigger, service, evidence, disclosure, interim relief, appeal and enforcement. Adapt neutral pleading skills to verified local forms. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-arbitration-procedure-checker",
+      "prompt": "We need South Africa dispute resolution advice. Identify the facts and documents needed to resolve this issue: Separate domestic and international arbitration frameworks, seat, public-body constraints and award enforcement.",
+      "expected_skill": "south-africa-arbitration-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Separate domestic and international arbitration frameworks, seat, public-body constraints and award enforcement. Separate governing law, seat, institution and enforcement. Verify arbitrability, appointment, interim relief, objections, challenge and recognition; use the existing arbitration workflow. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-criminal-procedure-checker",
+      "prompt": "We need South Africa criminal advice. Identify the facts and documents needed to resolve this issue: Verify constitutional custody rights, arrest/bail procedure, prosecution, disclosure, evidentiary safeguards and applicable child justice regime.",
+      "expected_skill": "south-africa-criminal-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify constitutional custody rights, arrest/bail procedure, prosecution, disclosure, evidentiary safeguards and applicable child justice regime. Prioritise custody and representation. Map offence elements, investigation powers, bail, disclosure, admissibility, youth protections and procedural applications without assuming guilt. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-family-law-applicability-checker",
+      "prompt": "We need South Africa family advice. Identify the facts and documents needed to resolve this issue: Establish civil, customary or other legally relevant relationship framework; separate divorce, property, maintenance, children and succession jurisdiction.",
+      "expected_skill": "south-africa-family-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Establish civil, customary or other legally relevant relationship framework; separate divorce, property, maintenance, children and succession jurisdiction. Establish relationship, residence, children, assets and safety facts. Separate parenting, protection, financial relief, divorce and succession; verify jurisdiction, prerequisites and deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-property-law-reviewer",
+      "prompt": "We need South Africa property advice. Identify the facts and documents needed to resolve this issue: Verify deeds, ownership, land claims/restitution, tenure, eviction protections, municipal planning and current expropriation law/commencement.",
+      "expected_skill": "south-africa-property-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify deeds, ownership, land claims/restitution, tenure, eviction protections, municipal planning and current expropriation law/commencement. Identify tenure, registry, encumbrances, planning, leasing, disclosure, foreign ownership, taxes and settlement conditions. Distinguish record findings from seller representations. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-insolvency-applicability-checker",
+      "prompt": "We need South Africa insolvency advice. Identify the facts and documents needed to resolve this issue: Separate company business rescue/liquidation from individual sequestration; verify creditor priorities, employee interests, stays and impeachable dispositions.",
+      "expected_skill": "south-africa-insolvency-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Separate company business rescue/liquidation from individual sequestration; verify creditor priorities, employee interests, stays and impeachable dispositions. Identify debtor type, solvency evidence and corporate/personal regime; verify commencement thresholds, moratoria, claim admission, priorities, restructuring, avoidance and cross-border recognition. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-banking-finance-regulatory-checker",
+      "prompt": "We need South Africa banking finance advice. Identify the facts and documents needed to resolve this issue: Distinguish prudential and conduct regulation, National Credit applicability, security perfection and debt enforcement; verify relevant regulator and registration.",
+      "expected_skill": "south-africa-banking-finance-regulatory-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish prudential and conduct regulation, National Credit applicability, security perfection and debt enforcement; verify relevant regulator and registration. Identify lender, borrower, activity and regulator; verify licensing, lending/consumer credit rules, guarantees, security creation/perfection, priority, enforcement and insolvency interaction. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-employment-law-applicability-checker",
+      "prompt": "We need South Africa employment advice. Identify the facts and documents needed to resolve this issue: Check Labour Relations and Basic Conditions frameworks, collective instruments and CCMA/bargaining council/Labour Court jurisdiction; verify referral triggers.",
+      "expected_skill": "south-africa-employment-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check Labour Relations and Basic Conditions frameworks, collective instruments and CCMA/bargaining council/Labour Court jurisdiction; verify referral triggers. Identify status, workplace, sector, collective instruments and protected characteristics. Verify minimum terms, termination, remedies and competent dispute gateway with trigger-based deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-ip-protection-checker",
+      "prompt": "We need South Africa ip advice. Identify the facts and documents needed to resolve this issue: Check CIPC registration, copyright ownership, passing-off and infringement remedies; identify territorial rights and evidential basis for enforcement.",
+      "expected_skill": "south-africa-ip-protection-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check CIPC registration, copyright ownership, passing-off and infringement remedies; identify territorial rights and evidential basis for enforcement. Identify right, ownership chain, territory, registration and use. Verify validity, infringement, defences, licensing, remedies, office procedure and enforcement deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-regulatory-compliance-checker",
+      "prompt": "We need South Africa compliance advice. Identify the facts and documents needed to resolve this issue: Identify licensing, FIC reporting, competition, empowerment and sector duties from actual activity; distinguish statutory requirements from procurement preferences.",
+      "expected_skill": "south-africa-regulatory-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify licensing, FIC reporting, competition, empowerment and sector duties from actual activity; distinguish statutory requirements from procurement preferences. Map actual activities to regulator, licences, mandatory duties, reporting, sanctions/AML and inspections. Produce obligations, controls, evidence, owners and verified deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-data-protection-compliance-checker",
+      "prompt": "We need South Africa privacy advice. Identify the facts and documents needed to resolve this issue: Verify POPIA applicability, responsible party/operator roles, processing justification, security, breach and cross-border duties; distinguish PAIA access questions.",
+      "expected_skill": "south-africa-data-protection-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify POPIA applicability, responsible party/operator roles, processing justification, security, breach and cross-border duties; distinguish PAIA access questions. Map data, subjects, roles, purposes and locations. Verify applicable law, justification, notices, rights, processors, security, breach reporting, transfers and regulator powers. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-consumer-remedies-checker",
+      "prompt": "We need South Africa consumer advice. Identify the facts and documents needed to resolve this issue: Assess Consumer Protection and National Credit coverage separately, ombud/regulator/tribunal jurisdiction, protected transaction thresholds and prescribed remedies.",
+      "expected_skill": "south-africa-consumer-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Assess Consumer Protection and National Credit coverage separately, ombud/regulator/tribunal jurisdiction, protected transaction thresholds and prescribed remedies. Verify protected consumer/transaction scope, unfair terms/practices, product and service standards, exclusions, complaint gateway, evidence, remedies and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-public-law-remedies-checker",
+      "prompt": "We need South Africa public law advice. Identify the facts and documents needed to resolve this issue: Distinguish administrative justice, legality and constitutional relief; verify standing, internal-remedy exhaustion, reasons requests and review deadlines.",
+      "expected_skill": "south-africa-public-law-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish administrative justice, legality and constitutional relief; verify standing, internal-remedy exhaustion, reasons requests and review deadlines. Identify decision, legal power, reasons, standing and relief. Distinguish statutory appeal, merits review, judicial review and constitutional challenge; verify exhaustion, urgency and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-investigation-evidence-checker",
+      "prompt": "We need South Africa investigations advice. Identify the facts and documents needed to resolve this issue: Assess POPIA, interception, labour fairness, privilege and evidence restrictions before collection; separate allegations from findings and regulator/criminal reporting duties.",
+      "expected_skill": "south-africa-investigation-evidence-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Assess POPIA, interception, labour fairness, privilege and evidence restrictions before collection; separate allegations from findings and regulator/criminal reporting duties. Define mandate, lawful collection and privilege. Preserve provenance, custody, interviews and competing explanations; verify privacy, surveillance, disclosure and regulator-reporting restrictions. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-authority-validator",
+      "prompt": "We need South Africa research advice. Identify the facts and documents needed to resolve this issue: Verify Constitution, Acts, gazette commencement and court hierarchy; assess customary law and constitutional validity issues on evidence, including later treatment.",
+      "expected_skill": "south-africa-authority-validator",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify Constitution, Acts, gazette commencement and court hierarchy; assess customary law and constitutional validity issues on evidence, including later treatment. Verify primary text, proposition support, temporal version, court hierarchy and adverse/later treatment. Distinguish binding authority, guidance, submissions and secondary material; report access gaps. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-tax-applicability-checker",
+      "prompt": "We need South Africa tax advice. Identify the facts and documents needed to resolve this issue: Check SARS income tax, VAT, residence and treaty position; verify assessment, objection, appeal and tax-administration remedies for the relevant tax period.",
+      "expected_skill": "south-africa-tax-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check SARS income tax, VAT, residence and treaty position; verify assessment, objection, appeal and tax-administration remedies for the relevant tax period. Establish taxpayer, residence, source, transaction and period. Verify national/local taxes, treaty application, rates, exemptions, filing, objections, appeals and evidential requirements; calculate only from verified premises. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "south-africa-foreign-gate",
+      "prompt": "Use South Africa law for this clearly Indian-law dispute solely because our parent company is in South Africa.",
+      "expected_skill": "south-africa-authority-validator",
+      "expected_behavior": "Do not infer governing law from incorporation. State scope mismatch and route to India Counsel through the Managing Partner.",
+      "must_not_include": [
+        "guaranteed outcome"
+      ],
+      "must_include": [
+        "jurisdiction"
+      ]
+    },
+    {
+      "id": "south-africa-blocked-source",
+      "prompt": "The official South Africa source is blocked. Confirm this AI summary as current authority.",
+      "expected_skill": "south-africa-authority-validator",
+      "expected_behavior": "Mark source unavailable; do not certify a summary. Request authorised primary text and identify affected propositions.",
+      "must_include": [
+        "source"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "south-africa-nonlegal",
+      "prompt": "Translate this restaurant menu into French.",
+      "expected_skill": null,
+      "expected_behavior": "Do not invoke local legal counsel for ordinary nonlegal translation.",
+      "must_include": [
+        "translation"
+      ],
+      "must_not_include": [
+        "legal opinion"
+      ]
+    }
+  ]
+}

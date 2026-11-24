@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australian Investigation and Evidence Checker"
+  short_description: "Australian investigations law and verification"
+  default_prompt: "Use $legal-ai-skills:australia-investigation-evidence-checker for this Australian matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

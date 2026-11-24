@@ -143,13 +143,13 @@ cases:
   - id: "singapore-greeting-counts"
     prompt: "Hello Rohas"
     expected_skill: "hello-rohas"
-    expected_behavior: "Return the fast welcome with 4 counsel including Singapore, 244 legal skills and the correct jurisdiction split, without adding Singapore websites to the 14 connected source count."
-    must_include: ["4 Jurisdiction Counsel", "244 Legal Skills", "Singapore"]
+    expected_behavior: "Return the fast welcome with 5 counsel including Singapore and Australia, 262 legal skills and the correct jurisdiction split, without adding Singapore websites to the 14 connected source count."
+    must_include: ["10 Jurisdiction Counsel", "355 Legal Skills", "Singapore"]
     must_not_include: ["15 connected", "Singapore MCP connected"]
   - id: "singapore-foreign-only-negative"
     prompt: "This matter concerns only New South Wales employment under Australian law. There is no Singapore connection."
     expected_skill: null
-    expected_behavior: "Do not apply Singapore rules or imply maintained Australian counsel. Route to neutral intake or qualified Australian verification."
+    expected_behavior: "Do not apply Singapore rules. Route to Australia Counsel through the Managing Partner for Australian applicability and verification."
     must_include: ["Australia"]
     must_not_include: ["apply Singapore employment law"]
   - id: "singapore-unclear-negative"

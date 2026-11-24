@@ -1,0 +1,41 @@
+version: 1
+jurisdiction: canada
+agent: canada-counsel
+skill_count: 18
+skills:
+  corporate:
+    - canada-companies-compliance-checker
+  contracts:
+    - canada-contract-law-reviewer
+  litigation:
+    - canada-civil-procedure-checker
+  dispute_resolution:
+    - canada-arbitration-procedure-checker
+  criminal:
+    - canada-criminal-procedure-checker
+  family:
+    - canada-family-law-applicability-checker
+  property:
+    - canada-property-law-reviewer
+  insolvency:
+    - canada-insolvency-applicability-checker
+  banking_finance:
+    - canada-banking-finance-regulatory-checker
+  employment:
+    - canada-employment-law-applicability-checker
+  ip:
+    - canada-ip-protection-checker
+  compliance:
+    - canada-regulatory-compliance-checker
+  privacy:
+    - canada-data-protection-compliance-checker
+  consumer:
+    - canada-consumer-remedies-checker
+  public_law:
+    - canada-public-law-remedies-checker
+  investigations:
+    - canada-investigation-evidence-checker
+  research:
+    - canada-authority-validator
+  tax:
+    - canada-tax-applicability-checker

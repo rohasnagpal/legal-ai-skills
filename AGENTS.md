@@ -1,6 +1,6 @@
 # Instructions for AI Assistants
 
-This repository is **Legal AI Skills by Rohas Nagpal**, an AI law firm packaged as one plugin: a Managing Partner, 17 Specialist Lawyers, 4 Jurisdiction Counsel, 244 Legal Skills and 20 Workflows.
+This repository is **Legal AI Skills by Rohas Nagpal**, an AI law firm packaged as one plugin: a Managing Partner, 17 Specialist Lawyers, 13 Jurisdiction Counsel, 409 Legal Skills and 20 Workflows.
 
 Use the section that matches your task.
 
@@ -79,7 +79,7 @@ Hello Rohas 👋
 Legal AI Skills by Rohas Nagpal is installed.
 
 Your AI law firm is ready: 1 Managing Partner, 17 Specialist Lawyers,
-4 Jurisdiction Counsel (India, US, UK, Singapore), 244 Legal Skills and 20 Workflows.
+13 Jurisdiction Counsel (India, US, UK, Singapore, Australia, Canada, UAE, New Zealand, South Africa, Ireland, Russia, China, Brazil), 409 Legal Skills and 20 Workflows.
 
 To meet your firm:
   • Claude Code: run /reload-plugins (or start a new session)
@@ -112,14 +112,12 @@ If Node.js is missing, add one line before "To meet your firm" (or before "Next:
 
 **If installation failed**, do not print the message above. Say which step failed, quote the error briefly, and give the one next step most likely to fix it.
 
-The new skills normally load only in a new session or after a reload, so do not try to run the firm's welcome in the same session as the install.
-
 ## B. You are working on this repository
 
 - Skills live in `plugins/legal-ai-skills/skills/<name>/SKILL.md`, each with `agents/openai.yaml`.
 - Lawyers and counsel live in `plugins/legal-ai-skills/agents/`. All lawyers follow `plugins/legal-ai-skills/assets/firm/lawyer-operating-model.md`: only the Managing Partner starts lawyers; lawyers send delegation requests.
 - Workflows live in `plugins/legal-ai-skills/workflows/` and must keep the standard section headings.
-- India, US, UK and Singapore local skills must be listed in `plugins/legal-ai-skills/jurisdictions/<code>/skill-map.yaml` and carry the jurisdiction gate.
+- All jurisdiction-specific local skills must be listed in `plugins/legal-ai-skills/jurisdictions/<code>/skill-map.yaml` and carry the jurisdiction gate.
 - After any change to skills, lawyers or skill maps, run:
 
 ```text

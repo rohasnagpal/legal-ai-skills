@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australian Criminal Procedure Checker"
+  short_description: "Australian criminal law and verification"
+  default_prompt: "Use $legal-ai-skills:australia-criminal-procedure-checker for this Australian matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

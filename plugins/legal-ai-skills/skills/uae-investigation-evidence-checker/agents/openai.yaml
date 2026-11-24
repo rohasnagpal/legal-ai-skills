@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Investigation and Evidence Checker"
+  short_description: "Verify uae investigation and evidence checker"
+  default_prompt: "Use $uae-investigation-evidence-checker for this matter, identifying applicable law, missing evidence and verification status."

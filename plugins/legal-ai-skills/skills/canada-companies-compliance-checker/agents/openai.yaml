@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Companies Compliance Checker"
+  short_description: "Verify canadian companies compliance checker"
+  default_prompt: "Use $canada-companies-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

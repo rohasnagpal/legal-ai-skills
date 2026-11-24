@@ -1,0 +1,4 @@
+interface:
+  display_name: "South African Family Law Applicability Checker"
+  short_description: "Verify south african family law applicability checker"
+  default_prompt: "Use $south-africa-family-law-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand IP Protection Checker"
+  short_description: "Verify new zealand ip protection checker"
+  default_prompt: "Use $new-zealand-ip-protection-checker for this matter, identifying applicable law, missing evidence and verification status."

@@ -1,0 +1,41 @@
+version: 1
+jurisdiction: new-zealand
+agent: new-zealand-counsel
+skill_count: 18
+skills:
+  corporate:
+    - new-zealand-companies-compliance-checker
+  contracts:
+    - new-zealand-contract-law-reviewer
+  litigation:
+    - new-zealand-civil-procedure-checker
+  dispute_resolution:
+    - new-zealand-arbitration-procedure-checker
+  criminal:
+    - new-zealand-criminal-procedure-checker
+  family:
+    - new-zealand-family-law-applicability-checker
+  property:
+    - new-zealand-property-law-reviewer
+  insolvency:
+    - new-zealand-insolvency-applicability-checker
+  banking_finance:
+    - new-zealand-banking-finance-regulatory-checker
+  employment:
+    - new-zealand-employment-law-applicability-checker
+  ip:
+    - new-zealand-ip-protection-checker
+  compliance:
+    - new-zealand-regulatory-compliance-checker
+  privacy:
+    - new-zealand-data-protection-compliance-checker
+  consumer:
+    - new-zealand-consumer-remedies-checker
+  public_law:
+    - new-zealand-public-law-remedies-checker
+  investigations:
+    - new-zealand-investigation-evidence-checker
+  research:
+    - new-zealand-authority-validator
+  tax:
+    - new-zealand-tax-applicability-checker

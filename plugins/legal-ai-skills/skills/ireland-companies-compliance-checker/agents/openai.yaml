@@ -1,0 +1,4 @@
+interface:
+  display_name: "Irish Companies Compliance Checker"
+  short_description: "Verify irish companies compliance checker"
+  default_prompt: "Use $ireland-companies-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

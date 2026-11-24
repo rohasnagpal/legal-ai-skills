@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "plugin": "legal-ai-skills",
+  "risk_tier": "high",
+  "cases": [
+    {
+      "id": "russia-companies-compliance-checker",
+      "prompt": "We need Russia corporate advice. Identify the facts and documents needed to resolve this issue: Check entity form, registration, beneficial ownership, corporate approvals and foreign investment restrictions.",
+      "expected_skill": "russia-companies-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check entity form, registration, beneficial ownership, corporate approvals and foreign investment restrictions. Identify entity form and records; map duties, approvals, capital changes, filings, sector and ownership restrictions. Produce an approvals and filing checklist. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-contract-law-reviewer",
+      "prompt": "We need Russia contracts advice. Identify the facts and documents needed to resolve this issue: Check Civil Code formation, mandatory terms, performance, liability, termination and choice-of-law rules; verify sanctions and countermeasure effects separately.",
+      "expected_skill": "russia-contract-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check Civil Code formation, mandatory terms, performance, liability, termination and choice-of-law rules; verify sanctions and countermeasure effects separately. Review formation, authority, mandatory terms, payment, liability, IP, data, termination and remedies from the represented side. Use contract-reviewer and redline-proposer for exact replacement clauses. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-civil-procedure-checker",
+      "prompt": "We need Russia litigation advice. Identify the facts and documents needed to resolve this issue: Distinguish commercial arbitrazh courts from general-jurisdiction courts; verify procedure, service, limitation and enforcement.",
+      "expected_skill": "russia-civil-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish commercial arbitrazh courts from general-jurisdiction courts; verify procedure, service, limitation and enforcement. Identify competent court, prerequisites, cause of action, limitation trigger, service, evidence, disclosure, interim relief, appeal and enforcement. Adapt neutral pleading skills to verified local forms. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-arbitration-procedure-checker",
+      "prompt": "We need Russia dispute resolution advice. Identify the facts and documents needed to resolve this issue: Distinguish private arbitration from state arbitrazh courts; verify seat, arbitrability, court support and current recognition restrictions.",
+      "expected_skill": "russia-arbitration-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish private arbitration from state arbitrazh courts; verify seat, arbitrability, court support and current recognition restrictions. Separate governing law, seat, institution and enforcement. Verify arbitrability, appointment, interim relief, objections, challenge and recognition; use the existing arbitration workflow. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-criminal-procedure-checker",
+      "prompt": "We need Russia criminal advice. Identify the facts and documents needed to resolve this issue: Check criminal offence elements, investigation powers, detention, defence access, bail or other restraint and admissibility against current codes.",
+      "expected_skill": "russia-criminal-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check criminal offence elements, investigation powers, detention, defence access, bail or other restraint and admissibility against current codes. Prioritise custody and representation. Map offence elements, investigation powers, bail, disclosure, admissibility, youth protections and procedural applications without assuming guilt. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-family-law-applicability-checker",
+      "prompt": "We need Russia family advice. Identify the facts and documents needed to resolve this issue: Check marriage, divorce, parenting, maintenance and succession nexus; verify recognition of foreign orders.",
+      "expected_skill": "russia-family-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check marriage, divorce, parenting, maintenance and succession nexus; verify recognition of foreign orders. Establish relationship, residence, children, assets and safety facts. Separate parenting, protection, financial relief, divorce and succession; verify jurisdiction, prerequisites and deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-property-law-reviewer",
+      "prompt": "We need Russia property advice. Identify the facts and documents needed to resolve this issue: Check land category, title, encumbrances, registration, leases and foreign ownership restrictions using authorised records.",
+      "expected_skill": "russia-property-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check land category, title, encumbrances, registration, leases and foreign ownership restrictions using authorised records. Identify tenure, registry, encumbrances, planning, leasing, disclosure, foreign ownership, taxes and settlement conditions. Distinguish record findings from seller representations. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-insolvency-applicability-checker",
+      "prompt": "We need Russia insolvency advice. Identify the facts and documents needed to resolve this issue: Check corporate versus individual insolvency, debtor eligibility, moratoria, priorities, avoidance and cross-border recognition.",
+      "expected_skill": "russia-insolvency-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check corporate versus individual insolvency, debtor eligibility, moratoria, priorities, avoidance and cross-border recognition. Identify debtor type, solvency evidence and corporate/personal regime; verify commencement thresholds, moratoria, claim admission, priorities, restructuring, avoidance and cross-border recognition. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-banking-finance-regulatory-checker",
+      "prompt": "We need Russia banking finance advice. Identify the facts and documents needed to resolve this issue: Identify Bank of Russia supervision, activity permissions, security, currency controls and cross-border payment restrictions.",
+      "expected_skill": "russia-banking-finance-regulatory-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify Bank of Russia supervision, activity permissions, security, currency controls and cross-border payment restrictions. Identify lender, borrower, activity and regulator; verify licensing, lending/consumer credit rules, guarantees, security creation/perfection, priority, enforcement and insolvency interaction. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-employment-law-applicability-checker",
+      "prompt": "We need Russia employment advice. Identify the facts and documents needed to resolve this issue: Check Labour Code coverage, worker status, collective instruments, termination, protected categories and dispute forum.",
+      "expected_skill": "russia-employment-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check Labour Code coverage, worker status, collective instruments, termination, protected categories and dispute forum. Identify status, workplace, sector, collective instruments and protected characteristics. Verify minimum terms, termination, remedies and competent dispute gateway with trigger-based deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-ip-protection-checker",
+      "prompt": "We need Russia ip advice. Identify the facts and documents needed to resolve this issue: Check territorial rights, Rospatent procedures, ownership, licensing and enforcement; verify any current special measures.",
+      "expected_skill": "russia-ip-protection-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check territorial rights, Rospatent procedures, ownership, licensing and enforcement; verify any current special measures. Identify right, ownership chain, territory, registration and use. Verify validity, infringement, defences, licensing, remedies, office procedure and enforcement deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-regulatory-compliance-checker",
+      "prompt": "We need Russia compliance advice. Identify the facts and documents needed to resolve this issue: Map sector permissions, competition, AML, domestic countermeasures and separately applicable foreign sanctions to verified instruments.",
+      "expected_skill": "russia-regulatory-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Map sector permissions, competition, AML, domestic countermeasures and separately applicable foreign sanctions to verified instruments. Map actual activities to regulator, licences, mandatory duties, reporting, sanctions/AML and inspections. Produce obligations, controls, evidence, owners and verified deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-data-protection-compliance-checker",
+      "prompt": "We need Russia privacy advice. Identify the facts and documents needed to resolve this issue: Check personal-data processing, localisation, cross-border transfer, security, notification and Roskomnadzor requirements.",
+      "expected_skill": "russia-data-protection-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check personal-data processing, localisation, cross-border transfer, security, notification and Roskomnadzor requirements. Map data, subjects, roles, purposes and locations. Verify applicable law, justification, notices, rights, processors, security, breach reporting, transfers and regulator powers. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-consumer-remedies-checker",
+      "prompt": "We need Russia consumer advice. Identify the facts and documents needed to resolve this issue: Check consumer status, mandatory protections, product safety, complaint forum and remedies.",
+      "expected_skill": "russia-consumer-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check consumer status, mandatory protections, product safety, complaint forum and remedies. Verify protected consumer/transaction scope, unfair terms/practices, product and service standards, exclusions, complaint gateway, evidence, remedies and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-public-law-remedies-checker",
+      "prompt": "We need Russia public law advice. Identify the facts and documents needed to resolve this issue: Distinguish administrative challenge, statutory appeal and constitutional review; verify standing, forum and deadlines.",
+      "expected_skill": "russia-public-law-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish administrative challenge, statutory appeal and constitutional review; verify standing, forum and deadlines. Identify decision, legal power, reasons, standing and relief. Distinguish statutory appeal, merits review, judicial review and constitutional challenge; verify exhaustion, urgency and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-investigation-evidence-checker",
+      "prompt": "We need Russia investigations advice. Identify the facts and documents needed to resolve this issue: Check lawful evidence collection, privacy, employment procedure, privilege, reporting and state-secret restrictions.",
+      "expected_skill": "russia-investigation-evidence-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check lawful evidence collection, privacy, employment procedure, privilege, reporting and state-secret restrictions. Define mandate, lawful collection and privilege. Preserve provenance, custody, interviews and competing explanations; verify privacy, surveillance, disclosure and regulator-reporting restrictions. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-authority-validator",
+      "prompt": "We need Russia research advice. Identify the facts and documents needed to resolve this issue: Retrieve official Russian publication and applicable versions; distinguish codes, subordinate instruments and court explanations from individual decisions.",
+      "expected_skill": "russia-authority-validator",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Retrieve official Russian publication and applicable versions; distinguish codes, subordinate instruments and court explanations from individual decisions. Verify primary text, proposition support, temporal version, court hierarchy and adverse/later treatment. Distinguish binding authority, guidance, submissions and secondary material; report access gaps. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-tax-applicability-checker",
+      "prompt": "We need Russia tax advice. Identify the facts and documents needed to resolve this issue: Check taxpayer status, residence, source, tax period, federal/regional/local taxes, treaty status and current restrictions.",
+      "expected_skill": "russia-tax-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check taxpayer status, residence, source, tax period, federal/regional/local taxes, treaty status and current restrictions. Establish taxpayer, residence, source, transaction and period. Verify national/local taxes, treaty application, rates, exemptions, filing, objections, appeals and evidential requirements; calculate only from verified premises. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "russia-foreign-gate",
+      "prompt": "Use Russia law for this clearly Indian-law dispute solely because our parent company is in Russia.",
+      "expected_skill": "russia-authority-validator",
+      "expected_behavior": "Do not infer governing law from incorporation. State scope mismatch and route to India Counsel through the Managing Partner.",
+      "must_not_include": [
+        "guaranteed outcome"
+      ],
+      "must_include": [
+        "jurisdiction"
+      ]
+    },
+    {
+      "id": "russia-blocked-source",
+      "prompt": "The official Russia source is blocked. Confirm this AI summary as current authority.",
+      "expected_skill": "russia-authority-validator",
+      "expected_behavior": "Mark source unavailable; do not certify a summary. Request authorised primary text and identify affected propositions.",
+      "must_include": [
+        "source"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "russia-nonlegal",
+      "prompt": "Translate this restaurant menu into French.",
+      "expected_skill": null,
+      "expected_behavior": "Do not invoke local legal counsel for ordinary nonlegal translation.",
+      "must_include": [
+        "translation"
+      ],
+      "must_not_include": [
+        "legal opinion"
+      ]
+    },
+    {
+      "id": "russia-scope-boundary",
+      "prompt": "The Russian legal portal is unavailable. Confirm our proposed cross-border payment is permitted under every applicable sanctions regime.",
+      "expected_skill": "russia-authority-validator",
+      "expected_behavior": "Do not certify clearance. Separate Russian domestic rules and countermeasures from each applicable foreign sanctions regime, identify parties, ownership, transaction nexus and date, and request other counsel through the Managing Partner. Mark unverified propositions.",
+      "must_include": [
+        "jurisdiction"
+      ],
+      "must_not_include": [
+        "all sources verified",
+        "guaranteed outcome"
+      ]
+    }
+  ]
+}

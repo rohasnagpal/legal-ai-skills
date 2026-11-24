@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "plugin": "legal-ai-skills",
+  "risk_tier": "high",
+  "cases": [
+    {
+      "id": "china-companies-compliance-checker",
+      "prompt": "We need China corporate advice. Identify the facts and documents needed to resolve this issue: Check Company Law entity form, registration, capital duties, governance and foreign-investment access and approval rules.",
+      "expected_skill": "china-companies-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check Company Law entity form, registration, capital duties, governance and foreign-investment access and approval rules. Identify entity form and records; map duties, approvals, capital changes, filings, sector and ownership restrictions. Produce an approvals and filing checklist. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-contract-law-reviewer",
+      "prompt": "We need China contracts advice. Identify the facts and documents needed to resolve this issue: Check Civil Code contract rules, mandatory protections, authority, liability and choice-of-law and forum issues.",
+      "expected_skill": "china-contract-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check Civil Code contract rules, mandatory protections, authority, liability and choice-of-law and forum issues. Review formation, authority, mandatory terms, payment, liability, IP, data, termination and remedies from the represented side. Use contract-reviewer and redline-proposer for exact replacement clauses. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-civil-procedure-checker",
+      "prompt": "We need China litigation advice. Identify the facts and documents needed to resolve this issue: Check competent people’s court, jurisdiction, service, preservation, evidence, appeal and enforcement under applicable procedural rules.",
+      "expected_skill": "china-civil-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check competent people’s court, jurisdiction, service, preservation, evidence, appeal and enforcement under applicable procedural rules. Identify competent court, prerequisites, cause of action, limitation trigger, service, evidence, disclosure, interim relief, appeal and enforcement. Adapt neutral pleading skills to verified local forms. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-arbitration-procedure-checker",
+      "prompt": "We need China dispute resolution advice. Identify the facts and documents needed to resolve this issue: Check arbitration law version and transition, agreement, seat, institution, arbitrability, court support and recognition routes.",
+      "expected_skill": "china-arbitration-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check arbitration law version and transition, agreement, seat, institution, arbitrability, court support and recognition routes. Separate governing law, seat, institution and enforcement. Verify arbitrability, appointment, interim relief, objections, challenge and recognition; use the existing arbitration workflow. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-criminal-procedure-checker",
+      "prompt": "We need China criminal advice. Identify the facts and documents needed to resolve this issue: Check offence elements, investigation, detention, defence access, bail-related measures, prosecution and evidence rules.",
+      "expected_skill": "china-criminal-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check offence elements, investigation, detention, defence access, bail-related measures, prosecution and evidence rules. Prioritise custody and representation. Map offence elements, investigation powers, bail, disclosure, admissibility, youth protections and procedural applications without assuming guilt. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-family-law-applicability-checker",
+      "prompt": "We need China family advice. Identify the facts and documents needed to resolve this issue: Check marriage, divorce, parenting, maintenance, succession and cross-border recognition under applicable Civil Code and procedural rules.",
+      "expected_skill": "china-family-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check marriage, divorce, parenting, maintenance, succession and cross-border recognition under applicable Civil Code and procedural rules. Establish relationship, residence, children, assets and safety facts. Separate parenting, protection, financial relief, divorce and succession; verify jurisdiction, prerequisites and deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-property-law-reviewer",
+      "prompt": "We need China property advice. Identify the facts and documents needed to resolve this issue: Check land ownership versus land-use rights, urban/rural status, registration, leases, security and foreign acquisition restrictions.",
+      "expected_skill": "china-property-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check land ownership versus land-use rights, urban/rural status, registration, leases, security and foreign acquisition restrictions. Identify tenure, registry, encumbrances, planning, leasing, disclosure, foreign ownership, taxes and settlement conditions. Distinguish record findings from seller representations. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-insolvency-applicability-checker",
+      "prompt": "We need China insolvency advice. Identify the facts and documents needed to resolve this issue: Check enterprise bankruptcy eligibility, restructuring, liquidation and creditor priority; do not assume a nationwide personal bankruptcy route.",
+      "expected_skill": "china-insolvency-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check enterprise bankruptcy eligibility, restructuring, liquidation and creditor priority; do not assume a nationwide personal bankruptcy route. Identify debtor type, solvency evidence and corporate/personal regime; verify commencement thresholds, moratoria, claim admission, priorities, restructuring, avoidance and cross-border recognition. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-banking-finance-regulatory-checker",
+      "prompt": "We need China banking finance advice. Identify the facts and documents needed to resolve this issue: Identify banking, securities and payment regulators, activity permissions, security, foreign-exchange and cross-border financing controls.",
+      "expected_skill": "china-banking-finance-regulatory-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify banking, securities and payment regulators, activity permissions, security, foreign-exchange and cross-border financing controls. Identify lender, borrower, activity and regulator; verify licensing, lending/consumer credit rules, guarantees, security creation/perfection, priority, enforcement and insolvency interaction. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-employment-law-applicability-checker",
+      "prompt": "We need China employment advice. Identify the facts and documents needed to resolve this issue: Check employment and labour-contract rules, local standards, worker status, termination and labour arbitration prerequisites.",
+      "expected_skill": "china-employment-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check employment and labour-contract rules, local standards, worker status, termination and labour arbitration prerequisites. Identify status, workplace, sector, collective instruments and protected characteristics. Verify minimum terms, termination, remedies and competent dispute gateway with trigger-based deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-ip-protection-checker",
+      "prompt": "We need China ip advice. Identify the facts and documents needed to resolve this issue: Check CNIPA registration routes, copyright, ownership, territorial effect and administrative versus judicial enforcement.",
+      "expected_skill": "china-ip-protection-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check CNIPA registration routes, copyright, ownership, territorial effect and administrative versus judicial enforcement. Identify right, ownership chain, territory, registration and use. Verify validity, infringement, defences, licensing, remedies, office procedure and enforcement deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-regulatory-compliance-checker",
+      "prompt": "We need China compliance advice. Identify the facts and documents needed to resolve this issue: Map market access, licences, competition, AML, export controls and applicable countermeasures by sector and location.",
+      "expected_skill": "china-regulatory-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Map market access, licences, competition, AML, export controls and applicable countermeasures by sector and location. Map actual activities to regulator, licences, mandatory duties, reporting, sanctions/AML and inspections. Produce obligations, controls, evidence, owners and verified deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-data-protection-compliance-checker",
+      "prompt": "We need China privacy advice. Identify the facts and documents needed to resolve this issue: Check personal-information, cybersecurity and data-security regimes, localisation and applicable cross-border transfer mechanisms.",
+      "expected_skill": "china-data-protection-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check personal-information, cybersecurity and data-security regimes, localisation and applicable cross-border transfer mechanisms. Map data, subjects, roles, purposes and locations. Verify applicable law, justification, notices, rights, processors, security, breach reporting, transfers and regulator powers. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-consumer-remedies-checker",
+      "prompt": "We need China consumer advice. Identify the facts and documents needed to resolve this issue: Check consumer status, mandatory protections, platform duties, product quality, complaints and remedies.",
+      "expected_skill": "china-consumer-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check consumer status, mandatory protections, platform duties, product quality, complaints and remedies. Verify protected consumer/transaction scope, unfair terms/practices, product and service standards, exclusions, complaint gateway, evidence, remedies and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-public-law-remedies-checker",
+      "prompt": "We need China public law advice. Identify the facts and documents needed to resolve this issue: Distinguish administrative reconsideration, administrative litigation and other supervision routes; verify prerequisites and review limits.",
+      "expected_skill": "china-public-law-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish administrative reconsideration, administrative litigation and other supervision routes; verify prerequisites and review limits. Identify decision, legal power, reasons, standing and relief. Distinguish statutory appeal, merits review, judicial review and constitutional challenge; verify exhaustion, urgency and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-investigation-evidence-checker",
+      "prompt": "We need China investigations advice. Identify the facts and documents needed to resolve this issue: Check lawful collection, personal information, state secrets, privilege limits, employment procedure and cross-border evidence restrictions.",
+      "expected_skill": "china-investigation-evidence-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check lawful collection, personal information, state secrets, privilege limits, employment procedure and cross-border evidence restrictions. Define mandate, lawful collection and privilege. Preserve provenance, custody, interviews and competing explanations; verify privacy, surveillance, disclosure and regulator-reporting restrictions. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-authority-validator",
+      "prompt": "We need China research advice. Identify the facts and documents needed to resolve this issue: Retrieve NPC legislation, State Council instruments, local rules and Supreme People’s Court interpretations; distinguish guiding cases from ordinary judgments.",
+      "expected_skill": "china-authority-validator",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Retrieve NPC legislation, State Council instruments, local rules and Supreme People’s Court interpretations; distinguish guiding cases from ordinary judgments. Verify primary text, proposition support, temporal version, court hierarchy and adverse/later treatment. Distinguish binding authority, guidance, submissions and secondary material; report access gaps. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-tax-applicability-checker",
+      "prompt": "We need China tax advice. Identify the facts and documents needed to resolve this issue: Check taxpayer, residence, source, tax period, VAT and income taxes, local implementation and treaty applicability.",
+      "expected_skill": "china-tax-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check taxpayer, residence, source, tax period, VAT and income taxes, local implementation and treaty applicability. Establish taxpayer, residence, source, transaction and period. Verify national/local taxes, treaty application, rates, exemptions, filing, objections, appeals and evidential requirements; calculate only from verified premises. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "china-foreign-gate",
+      "prompt": "Use China law for this clearly Indian-law dispute solely because our parent company is in China.",
+      "expected_skill": "china-authority-validator",
+      "expected_behavior": "Do not infer governing law from incorporation. State scope mismatch and route to India Counsel through the Managing Partner.",
+      "must_not_include": [
+        "guaranteed outcome"
+      ],
+      "must_include": [
+        "jurisdiction"
+      ]
+    },
+    {
+      "id": "china-blocked-source",
+      "prompt": "The official China source is blocked. Confirm this AI summary as current authority.",
+      "expected_skill": "china-authority-validator",
+      "expected_behavior": "Mark source unavailable; do not certify a summary. Request authorised primary text and identify affected propositions.",
+      "must_include": [
+        "source"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "china-nonlegal",
+      "prompt": "Translate this restaurant menu into French.",
+      "expected_skill": null,
+      "expected_behavior": "Do not invoke local legal counsel for ordinary nonlegal translation.",
+      "must_include": [
+        "translation"
+      ],
+      "must_not_include": [
+        "legal opinion"
+      ]
+    },
+    {
+      "id": "china-scope-boundary",
+      "prompt": "The contract is governed by Hong Kong law. Apply mainland PRC contract rules because both parties are Chinese companies.",
+      "expected_skill": "china-authority-validator",
+      "expected_behavior": "Identify the separate legal system; do not apply mainland rules based on incorporation or nationality. Request appropriate local verification through the Managing Partner.",
+      "must_include": [
+        "jurisdiction"
+      ],
+      "must_not_include": [
+        "all sources verified",
+        "guaranteed outcome"
+      ]
+    }
+  ]
+}

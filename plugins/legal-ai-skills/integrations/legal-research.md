@@ -22,6 +22,7 @@ Load only the guide relevant to the matter:
 - **[United States](../jurisdictions/us/authoritative-sources.md)** — invoke `legal-ai-skills:us-counsel`
 - **[United Kingdom](../jurisdictions/uk/authoritative-sources.md)** — invoke `legal-ai-skills:uk-counsel`
 - **[Singapore](../jurisdictions/singapore/authoritative-sources.md)** — invoke `legal-ai-skills:singapore-counsel`; covers every specialist practice area through official websites and authorised supplied records, not a dedicated bundled connector
+- **[Australia](../jurisdictions/australia/authoritative-sources.md)** — invoke `legal-ai-skills:australia-counsel` for Commonwealth and state or territory applicability and official-source verification across all specialist practice areas.
 
 These are maintained starting points, not guarantees of completeness or availability. For another jurisdiction, identify the official legislature, gazette, courts and regulators; disclose that Legal AI Skills has no maintained registry for it; and limit conclusions if primary law cannot be verified.
 
@@ -98,3 +99,23 @@ Before relying on material legal research, confirm that:
 - inaccessible sources and unresolved questions are disclosed.
 
 Delete an authority that cannot be verified rather than replacing it with a guessed citation.
+
+## Canada
+
+Use [Canada Counsel](../agents/canada-counsel.md) and the [official-source guide](../jurisdictions/canada/authoritative-sources.md) across all specialist areas. This is a maintained jurisdiction module; it uses authorised website research and supplied records, not a dedicated bundled connector.
+
+## UAE
+
+Use [UAE Counsel](../agents/uae-counsel.md) and the [official-source guide](../jurisdictions/uae/authoritative-sources.md) across all specialist areas. This is a maintained jurisdiction module; it uses authorised website research and supplied records, not a dedicated bundled connector.
+
+## New Zealand
+
+Use [New Zealand Counsel](../agents/new-zealand-counsel.md) and the [official-source guide](../jurisdictions/new-zealand/authoritative-sources.md) across all specialist areas. This is a maintained jurisdiction module; it uses authorised website research and supplied records, not a dedicated bundled connector.
+
+## South Africa
+
+Use [South Africa Counsel](../agents/south-africa-counsel.md) and the [official-source guide](../jurisdictions/south-africa/authoritative-sources.md) across all specialist areas. This is a maintained jurisdiction module; it uses authorised website research and supplied records, not a dedicated bundled connector.
+
+## Ireland
+
+Use [Ireland Counsel](../agents/ireland-counsel.md) and the [official-source guide](../jurisdictions/ireland/authoritative-sources.md) across all specialist areas. This is a maintained jurisdiction module; it uses authorised website research and supplied records, not a dedicated bundled connector.

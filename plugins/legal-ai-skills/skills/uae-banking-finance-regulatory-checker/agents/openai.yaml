@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Banking and Finance Regulatory Checker"
+  short_description: "Verify uae banking and finance regulatory checker"
+  default_prompt: "Use $uae-banking-finance-regulatory-checker for this matter, identifying applicable law, missing evidence and verification status."

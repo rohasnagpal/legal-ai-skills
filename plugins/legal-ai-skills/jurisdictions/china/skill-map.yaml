@@ -1,0 +1,41 @@
+version: 1
+jurisdiction: china
+agent: china-counsel
+skill_count: 18
+skills:
+  corporate:
+    - china-companies-compliance-checker
+  contracts:
+    - china-contract-law-reviewer
+  litigation:
+    - china-civil-procedure-checker
+  dispute_resolution:
+    - china-arbitration-procedure-checker
+  criminal:
+    - china-criminal-procedure-checker
+  family:
+    - china-family-law-applicability-checker
+  property:
+    - china-property-law-reviewer
+  insolvency:
+    - china-insolvency-applicability-checker
+  banking_finance:
+    - china-banking-finance-regulatory-checker
+  employment:
+    - china-employment-law-applicability-checker
+  ip:
+    - china-ip-protection-checker
+  compliance:
+    - china-regulatory-compliance-checker
+  privacy:
+    - china-data-protection-compliance-checker
+  consumer:
+    - china-consumer-remedies-checker
+  public_law:
+    - china-public-law-remedies-checker
+  investigations:
+    - china-investigation-evidence-checker
+  research:
+    - china-authority-validator
+  tax:
+    - china-tax-applicability-checker

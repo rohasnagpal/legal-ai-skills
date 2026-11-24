@@ -1,0 +1,4 @@
+interface:
+  display_name: "Russian Banking and Finance Regulatory Checker"
+  short_description: "Verify irish banking and finance regulatory checker"
+  default_prompt: "Use $russia-banking-finance-regulatory-checker for this matter, identifying applicable law, missing evidence and verification status."

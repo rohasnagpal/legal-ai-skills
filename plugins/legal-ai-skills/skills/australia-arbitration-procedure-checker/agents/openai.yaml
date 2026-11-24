@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australian Arbitration Procedure Checker"
+  short_description: "Australian dispute resolution law and verification"
+  default_prompt: "Use $legal-ai-skills:australia-arbitration-procedure-checker for this Australian matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

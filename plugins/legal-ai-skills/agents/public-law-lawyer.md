@@ -61,3 +61,41 @@ Verify the source of power, the current rules and the time limits. Escalate urge
 ## Singapore local-law support: Public Law Remedies Checker
 
 For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-public-law-remedies-checker](../skills/singapore-public-law-remedies-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Australian local-law support: Public Law Remedies Checker
+
+For Australian matters, request [Australia Counsel](australia-counsel.md) through the Managing Partner and use [australia-public-law-remedies-checker](../skills/australia-public-law-remedies-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Canada local-law support
+
+For Canada matters request [Canada Counsel](canada-counsel.md) through the Managing Partner and use [canada-public-law-remedies-checker](../skills/canada-public-law-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## UAE local-law support
+
+For UAE matters request [UAE Counsel](uae-counsel.md) through the Managing Partner and use [uae-public-law-remedies-checker](../skills/uae-public-law-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## New Zealand local-law support
+
+For New Zealand matters request [New Zealand Counsel](new-zealand-counsel.md) through the Managing Partner and use [new-zealand-public-law-remedies-checker](../skills/new-zealand-public-law-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## South Africa local-law support
+
+For South Africa matters request [South Africa Counsel](south-africa-counsel.md) through the Managing Partner and use [south-africa-public-law-remedies-checker](../skills/south-africa-public-law-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Ireland local-law support
+
+For Ireland matters request [Ireland Counsel](ireland-counsel.md) through the Managing Partner and use [ireland-public-law-remedies-checker](../skills/ireland-public-law-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+Use [india-government-schemes-assessor](../skills/india-government-schemes-assessor/SKILL.md) for Indian scheme rejection, cancellation and recovery issues, with India Counsel and verified remedy/deadline sources.
+
+## Russia local-law support
+
+For Russia matters request [Russia Counsel](russia-counsel.md) through the Managing Partner and use [russia-public-law-remedies-checker](../skills/russia-public-law-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## China local-law support
+
+For China matters request [China Counsel](china-counsel.md) through the Managing Partner and use [china-public-law-remedies-checker](../skills/china-public-law-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Brazil local-law support
+
+For Brazil matters request [Brazil Counsel](brazil-counsel.md) through the Managing Partner and use [brazil-public-law-remedies-checker](../skills/brazil-public-law-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.

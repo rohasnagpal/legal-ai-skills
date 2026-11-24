@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "plugin": "legal-ai-skills",
+  "risk_tier": "high",
+  "cases": [
+    {
+      "id": "uae-companies-compliance-checker",
+      "prompt": "We need UAE corporate advice. Identify the facts and documents needed to resolve this issue: Identify mainland/free-zone licensing authority, entity form, ownership and activity restrictions; distinguish DIFC/ADGM company regimes from federal rules.",
+      "expected_skill": "uae-companies-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify mainland/free-zone licensing authority, entity form, ownership and activity restrictions; distinguish DIFC/ADGM company regimes from federal rules. Identify entity form and records; map duties, approvals, capital changes, filings, sector and ownership restrictions. Produce an approvals and filing checklist. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-contract-law-reviewer",
+      "prompt": "We need UAE contracts advice. Identify the facts and documents needed to resolve this issue: Identify applicable civil/commercial code, mandatory rules, Arabic text and DIFC/ADGM contract regime where applicable; verify execution and authority.",
+      "expected_skill": "uae-contract-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify applicable civil/commercial code, mandatory rules, Arabic text and DIFC/ADGM contract regime where applicable; verify execution and authority. Review formation, authority, mandatory terms, payment, liability, IP, data, termination and remedies from the represented side. Use contract-reviewer and redline-proposer for exact replacement clauses. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-civil-procedure-checker",
+      "prompt": "We need UAE litigation advice. Identify the facts and documents needed to resolve this issue: Distinguish federal, emirate-local, DIFC and ADGM courts, jurisdiction agreements, language, translation, service and cross-system enforcement.",
+      "expected_skill": "uae-civil-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish federal, emirate-local, DIFC and ADGM courts, jurisdiction agreements, language, translation, service and cross-system enforcement. Identify competent court, prerequisites, cause of action, limitation trigger, service, evidence, disclosure, interim relief, appeal and enforcement. Adapt neutral pleading skills to verified local forms. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-arbitration-procedure-checker",
+      "prompt": "We need UAE dispute resolution advice. Identify the facts and documents needed to resolve this issue: Verify federal versus DIFC/ADGM arbitration regime, seat, arbitration agreement authority, institutional rules and enforcement court.",
+      "expected_skill": "uae-arbitration-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify federal versus DIFC/ADGM arbitration regime, seat, arbitration agreement authority, institutional rules and enforcement court. Separate governing law, seat, institution and enforcement. Verify arbitrability, appointment, interim relief, objections, challenge and recognition; use the existing arbitration workflow. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-criminal-procedure-checker",
+      "prompt": "We need UAE criminal advice. Identify the facts and documents needed to resolve this issue: Identify police, public prosecution and competent criminal court; verify custody, bail, interpreter, representation, immigration consequences and procedural stage.",
+      "expected_skill": "uae-criminal-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify police, public prosecution and competent criminal court; verify custody, bail, interpreter, representation, immigration consequences and procedural stage. Prioritise custody and representation. Map offence elements, investigation powers, bail, disclosure, admissibility, youth protections and procedural applications without assuming guilt. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-family-law-applicability-checker",
+      "prompt": "We need UAE family advice. Identify the facts and documents needed to resolve this issue: Establish religion only where legally relevant, nationality, domicile and applicable personal-status or civil family regime; distinguish Abu Dhabi and federal routes.",
+      "expected_skill": "uae-family-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Establish religion only where legally relevant, nationality, domicile and applicable personal-status or civil family regime; distinguish Abu Dhabi and federal routes. Establish relationship, residence, children, assets and safety facts. Separate parenting, protection, financial relief, divorce and succession; verify jurisdiction, prerequisites and deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-property-law-reviewer",
+      "prompt": "We need UAE property advice. Identify the facts and documents needed to resolve this issue: Identify emirate, designated ownership area, registry, developer/project status, escrow and off-plan rules; do not assume national uniformity.",
+      "expected_skill": "uae-property-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify emirate, designated ownership area, registry, developer/project status, escrow and off-plan rules; do not assume national uniformity. Identify tenure, registry, encumbrances, planning, leasing, disclosure, foreign ownership, taxes and settlement conditions. Distinguish record findings from seller representations. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-insolvency-applicability-checker",
+      "prompt": "We need UAE insolvency advice. Identify the facts and documents needed to resolve this issue: Distinguish federal corporate restructuring/bankruptcy, personal insolvency and DIFC/ADGM regimes; verify exclusions, filing gateway and stay effects.",
+      "expected_skill": "uae-insolvency-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish federal corporate restructuring/bankruptcy, personal insolvency and DIFC/ADGM regimes; verify exclusions, filing gateway and stay effects. Identify debtor type, solvency evidence and corporate/personal regime; verify commencement thresholds, moratoria, claim admission, priorities, restructuring, avoidance and cross-border recognition. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-banking-finance-regulatory-checker",
+      "prompt": "We need UAE banking finance advice. Identify the facts and documents needed to resolve this issue: Separate Central Bank, federal securities, DIFC DFSA and ADGM FSRA licensing; verify mainland/free-zone lending, security registration and enforcement.",
+      "expected_skill": "uae-banking-finance-regulatory-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Separate Central Bank, federal securities, DIFC DFSA and ADGM FSRA licensing; verify mainland/free-zone lending, security registration and enforcement. Identify lender, borrower, activity and regulator; verify licensing, lending/consumer credit rules, guarantees, security creation/perfection, priority, enforcement and insolvency interaction. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-employment-law-applicability-checker",
+      "prompt": "We need UAE employment advice. Identify the facts and documents needed to resolve this issue: Distinguish federal private-sector labour, government employment, domestic-worker and DIFC/ADGM regimes, including dispute gateway and end-of-service rules.",
+      "expected_skill": "uae-employment-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish federal private-sector labour, government employment, domestic-worker and DIFC/ADGM regimes, including dispute gateway and end-of-service rules. Identify status, workplace, sector, collective instruments and protected characteristics. Verify minimum terms, termination, remedies and competent dispute gateway with trigger-based deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-ip-protection-checker",
+      "prompt": "We need UAE ip advice. Identify the facts and documents needed to resolve this issue: Verify federal IP registration and enforcement, copyright ownership and licensing; distinguish free-zone contract forums from territorial IP rights.",
+      "expected_skill": "uae-ip-protection-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify federal IP registration and enforcement, copyright ownership and licensing; distinguish free-zone contract forums from territorial IP rights. Identify right, ownership chain, territory, registration and use. Verify validity, infringement, defences, licensing, remedies, office procedure and enforcement deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-regulatory-compliance-checker",
+      "prompt": "We need UAE compliance advice. Identify the facts and documents needed to resolve this issue: Identify emirate/free-zone licensing body, federal AML/sanctions duties and sector supervision; distinguish commercial licence from permission for a regulated activity.",
+      "expected_skill": "uae-regulatory-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify emirate/free-zone licensing body, federal AML/sanctions duties and sector supervision; distinguish commercial licence from permission for a regulated activity. Map actual activities to regulator, licences, mandatory duties, reporting, sanctions/AML and inspections. Produce obligations, controls, evidence, owners and verified deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-data-protection-compliance-checker",
+      "prompt": "We need UAE privacy advice. Identify the facts and documents needed to resolve this issue: Distinguish federal data protection, DIFC, ADGM and sector-specific regimes; verify territorial scope, exclusions and transfer conditions.",
+      "expected_skill": "uae-data-protection-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish federal data protection, DIFC, ADGM and sector-specific regimes; verify territorial scope, exclusions and transfer conditions. Map data, subjects, roles, purposes and locations. Verify applicable law, justification, notices, rights, processors, security, breach reporting, transfers and regulator powers. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-consumer-remedies-checker",
+      "prompt": "We need UAE consumer advice. Identify the facts and documents needed to resolve this issue: Check federal consumer scope, competent emirate authority, online transactions, warranties, language and complaint procedure; verify any special-zone exclusions.",
+      "expected_skill": "uae-consumer-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check federal consumer scope, competent emirate authority, online transactions, warranties, language and complaint procedure; verify any special-zone exclusions. Verify protected consumer/transaction scope, unfair terms/practices, product and service standards, exclusions, complaint gateway, evidence, remedies and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-public-law-remedies-checker",
+      "prompt": "We need UAE public law advice. Identify the facts and documents needed to resolve this issue: Identify federal/emirate public body, administrative challenge route, standing, immunity and required notices; distinguish DIFC/ADGM supervisory jurisdiction.",
+      "expected_skill": "uae-public-law-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify federal/emirate public body, administrative challenge route, standing, immunity and required notices; distinguish DIFC/ADGM supervisory jurisdiction. Identify decision, legal power, reasons, standing and relief. Distinguish statutory appeal, merits review, judicial review and constitutional challenge; verify exhaustion, urgency and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-investigation-evidence-checker",
+      "prompt": "We need UAE investigations advice. Identify the facts and documents needed to resolve this issue: Verify UAE restrictions on recordings, communications access, privacy, privilege and cross-border data handling; separate internal interviews from police/prosecution powers.",
+      "expected_skill": "uae-investigation-evidence-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify UAE restrictions on recordings, communications access, privacy, privilege and cross-border data handling; separate internal interviews from police/prosecution powers. Define mandate, lawful collection and privilege. Preserve provenance, custody, interviews and competing explanations; verify privacy, surveillance, disclosure and regulator-reporting restrictions. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-authority-validator",
+      "prompt": "We need UAE research advice. Identify the facts and documents needed to resolve this issue: Retrieve operative Arabic legislation, verify English translation status and federal/emirate/DIFC/ADGM hierarchy; do not treat a portal translation as authoritative by default.",
+      "expected_skill": "uae-authority-validator",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Retrieve operative Arabic legislation, verify English translation status and federal/emirate/DIFC/ADGM hierarchy; do not treat a portal translation as authoritative by default. Verify primary text, proposition support, temporal version, court hierarchy and adverse/later treatment. Distinguish binding authority, guidance, submissions and secondary material; report access gaps. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-tax-applicability-checker",
+      "prompt": "We need UAE tax advice. Identify the facts and documents needed to resolve this issue: Verify federal corporate tax, VAT and excise scope, residence, free-zone treatment and FTA dispute channels; do not equate free-zone status with exemption.",
+      "expected_skill": "uae-tax-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify federal corporate tax, VAT and excise scope, residence, free-zone treatment and FTA dispute channels; do not equate free-zone status with exemption. Establish taxpayer, residence, source, transaction and period. Verify national/local taxes, treaty application, rates, exemptions, filing, objections, appeals and evidential requirements; calculate only from verified premises. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "uae-foreign-gate",
+      "prompt": "Use UAE law for this clearly Indian-law dispute solely because our parent company is in UAE.",
+      "expected_skill": "uae-authority-validator",
+      "expected_behavior": "Do not infer governing law from incorporation. State scope mismatch and route to India Counsel through the Managing Partner.",
+      "must_not_include": [
+        "guaranteed outcome"
+      ],
+      "must_include": [
+        "jurisdiction"
+      ]
+    },
+    {
+      "id": "uae-blocked-source",
+      "prompt": "The official UAE source is blocked. Confirm this AI summary as current authority.",
+      "expected_skill": "uae-authority-validator",
+      "expected_behavior": "Mark source unavailable; do not certify a summary. Request authorised primary text and identify affected propositions.",
+      "must_include": [
+        "source"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "uae-nonlegal",
+      "prompt": "Translate this restaurant menu into French.",
+      "expected_skill": null,
+      "expected_behavior": "Do not invoke local legal counsel for ordinary nonlegal translation.",
+      "must_include": [
+        "translation"
+      ],
+      "must_not_include": [
+        "legal opinion"
+      ]
+    }
+  ]
+}

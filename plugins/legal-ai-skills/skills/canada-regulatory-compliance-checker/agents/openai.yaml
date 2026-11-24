@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Regulatory Compliance Checker"
+  short_description: "Verify canadian regulatory compliance checker"
+  default_prompt: "Use $canada-regulatory-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

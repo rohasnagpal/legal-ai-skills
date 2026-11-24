@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Property Law Reviewer"
+  short_description: "Verify canadian property law reviewer"
+  default_prompt: "Use $canada-property-law-reviewer for this matter, identifying applicable law, missing evidence and verification status."

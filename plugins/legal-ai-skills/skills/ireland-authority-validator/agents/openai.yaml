@@ -1,0 +1,4 @@
+interface:
+  display_name: "Irish Authority Validator"
+  short_description: "Verify irish authority validator"
+  default_prompt: "Use $ireland-authority-validator for this matter, identifying applicable law, missing evidence and verification status."

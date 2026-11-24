@@ -1,0 +1,4 @@
+interface:
+  display_name: "Irish Criminal Procedure Checker"
+  short_description: "Verify irish criminal procedure checker"
+  default_prompt: "Use $ireland-criminal-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."

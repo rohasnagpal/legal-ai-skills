@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Banking and Finance Regulatory Checker"
+  short_description: "Verify canadian banking and finance regulatory checker"
+  default_prompt: "Use $canada-banking-finance-regulatory-checker for this matter, identifying applicable law, missing evidence and verification status."

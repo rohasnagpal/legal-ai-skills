@@ -1,0 +1,399 @@
+---
+version: 1
+plugin: legal-ai-skills
+risk_tier: high
+cases:
+- id: australia-companies-compliance-checker
+  prompt: Our Australian private company proposes a share issue. Check approvals,
+    duties and ASIC filings.
+  expected_skill: australia-companies-compliance-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Confirm entity type, registration, corporate group and applicable Commonwealth
+    and state or territory obligations. Verify the Corporations Act framework, constitution,
+    directors’ duties, share issue or transfer approvals, registers and ASIC lodgements
+    for the transaction. Check foreign investment, beneficial ownership, fundraising
+    and sector restrictions where material, including commencement and exemptions.
+    Use the corporate due diligence and board-resolution skills to produce approvals,
+    filings, owners and verified deadlines. Verify primary sources and disclose unavailable
+    checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-contract-law-reviewer
+  prompt: Review this NSW-law services agreement for the supplier and propose replacement
+    liability clauses.
+  expected_skill: australia-contract-law-reviewer
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Confirm formation, authority, governing law, dispute forum and mandatory Commonwealth
+    and state or territory rules separately. Use contract-reviewer and redline-proposer
+    for clause-level findings and exact replacements supported by Australian authority.
+    Check consumer guarantees, unfair terms, exclusions, penalties, indemnities and
+    remedies against the actual parties and transaction, verifying statutory coverage.
+    Trace liability, payment, IP, data, performance, breach and termination through
+    definitions and schedules, and verify notice and limitation rules. Verify primary
+    sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-civil-procedure-checker
+  prompt: We have a Victorian civil claim with interstate service. Check forum, procedure
+    and deadlines.
+  expected_skill: australia-civil-procedure-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Identify federal or state or territory subject-matter jurisdiction, territorial
+    connection and the competent court or tribunal. Verify limitation, pre-action
+    requirements, originating process, service, disclosure, evidence and current practice
+    directions for that forum. Check cross-vesting, transfer, interstate service,
+    appeals and enforcement only where relevant to the actual claim. Use litigation
+    planning and pleading skills with verified local forms, fees, filing channels
+    and deadline triggers. Verify primary sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-arbitration-procedure-checker
+  prompt: The clause names an Australian arbitration institution but omits the seat.
+    Assess applicable arbitration law.
+  expected_skill: australia-arbitration-procedure-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Separate governing law, arbitration seat, institution and enforcement location,
+    and identify any missing seat agreement. Determine whether the International Arbitration
+    Act or relevant state or territory commercial arbitration legislation applies,
+    verifying scope and exclusions. Verify agreed institutional rules, appointment,
+    interim relief, court support, jurisdiction objections and procedural requirements.
+    Check challenge, recognition and enforcement grounds and periods from primary
+    sources, and use the existing arbitration workflow with the verified local branch.
+    Verify primary sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-criminal-procedure-checker
+  prompt: My client was arrested in Queensland. Identify custody, bail and procedural
+    questions.
+  expected_skill: australia-criminal-procedure-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Prioritise custody, safety, access to representation and urgent verified deadlines.
+    Identify Commonwealth or state or territory offences and the applicable investigation,
+    arrest, bail, evidence and prosecution procedure. Verify the competent court,
+    charge elements, available procedural applications and applicable youth or specialist
+    regimes. Organise disclosure, admissibility, competing evidence and defence options
+    without importing foreign arrest, bail or sentencing rules. Verify primary sources
+    and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-family-law-applicability-checker
+  prompt: A separating unmarried couple in Western Australia has children and property.
+    Identify applicable law and forum.
+  expected_skill: australia-family-law-applicability-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Identify the issue, territorial nexus, relationship status and applicable Commonwealth
+    and state or territory frameworks separately. Verify the competent family forum,
+    including Western Australian arrangements, and distinguish parenting, property,
+    divorce, child support and protection proceedings. Check family violence, child
+    safety, child protection, disclosure, dispute resolution and procedural prerequisites
+    for the actual relief. Treat succession, probate and adoption as separate applicability
+    questions, and verify current reforms, transitions and limitation triggers. Verify
+    primary sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-property-law-reviewer
+  prompt: A foreign individual proposes to buy NSW residential property. Check title,
+    approvals and contract risks.
+  expected_skill: australia-property-law-reviewer
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Identify the state or territory, tenure, land registry and applicable conveyancing,
+    leasing and planning regime. Verify title, encumbrances, easements, strata, searches,
+    disclosure and settlement requirements from authorised records. Check foreign
+    investment, native title, heritage, land use, duties and taxes where facts make
+    them relevant. Use title diligence and contract skills to produce clause-linked
+    issues and conditions, identifying unavailable official searches and local professional
+    requirements. Verify primary sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-tax-applicability-checker
+  prompt: An Australian company receives cross-border payments and buys Victorian
+    land. Map tax and treaty questions.
+  expected_skill: australia-tax-applicability-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Classify Commonwealth and state or territory taxes, taxable nexus and material
+    tax periods. Verify income tax, GST, withholding, payroll tax, duties and land
+    tax only as relevant, using legislation and responsible revenue authorities. Check
+    treaty text, residency, source, permanent establishment, relief and anti-avoidance
+    questions on established facts. Distinguish legislation, binding rulings, guidance
+    and proposals, and verify objections, review forums, payment and appeal deadlines.
+    Verify primary sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-insolvency-applicability-checker
+  prompt: An Australian company and its director cannot pay debts. Compare corporate
+    and personal options.
+  expected_skill: australia-insolvency-applicability-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Separate corporate insolvency from personal bankruptcy and identify the applicable
+    legislation, forum and regulator. Assess restructuring, administration, liquidation
+    or bankruptcy routes against eligibility and evidence, verifying current thresholds
+    and notices. Check secured-creditor rights, priorities, stays, director exposure,
+    voidable transactions and cross-border recognition where material. Use creditor
+    claim and restructuring skills to build options, evidence and verified deadlines,
+    without importing Indian CIRP procedure. Verify primary sources and disclose unavailable
+    checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-banking-finance-regulatory-checker
+  prompt: An Australian fintech proposes customer funds and consumer credit products.
+    Map licences and controls.
+  expected_skill: australia-banking-finance-regulatory-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Map each actual financial service, credit, deposit, payment or other regulated
+    activity and the responsible authority. Verify licensing, exemptions and conditions
+    using legislation and ASIC, APRA, AUSTRAC or other relevant official material.
+    Review prudential, conduct, consumer credit, disclosure, AML/CTF and complaint
+    obligations according to the activity and commencement date. For financing transactions
+    verify security creation, perfection and priority, including PPSR applicability,
+    and allocate controls, evidence and deadlines. Verify primary sources and disclose
+    unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-employment-law-applicability-checker
+  prompt: A WA sole trader dismissed a worker who disputes unpaid wages. Determine
+    national or state coverage and forum.
+  expected_skill: australia-employment-law-applicability-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Determine national or state industrial relations coverage using employer structure,
+    location and employment facts, including Western Australia. Verify employee or
+    contractor status, applicable award or enterprise agreement, minimum standards
+    and contractual entitlements. Check dismissal, general protections, discrimination,
+    wages, superannuation, safety, workers compensation and long service leave under
+    the applicable regimes. Identify the proper commission, tribunal, court or regulator
+    and verify eligibility, conciliation prerequisites and urgent filing periods.
+    Verify primary sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-ip-protection-checker
+  prompt: An Australian business alleges infringement of its registered trade mark.
+    Check ownership, evidence and remedies.
+  expected_skill: australia-ip-protection-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Identify copyright, trade mark, patent, design, plant variety, confidential information
+    or other rights and the applicable Australian nexus. Verify ownership, assignments,
+    licences, registration status and relevant IP Australia or other authorised records.
+    Assess validity, infringement, defences and remedies using legislation and judgments,
+    distinguishing allegations from established evidence. Check opposition, renewal,
+    enforcement and appeal routes and periods, and use existing infringement and IP
+    assignment skills. Verify primary sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-regulatory-compliance-checker
+  prompt: Map applicable Australian regulatory duties for our business operating in
+    NSW and Queensland.
+  expected_skill: australia-regulatory-compliance-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Map Commonwealth and state or territory obligations to the actual entity, activity
+    and sector. Verify legislation, instruments, licences, exemptions, commencement
+    and regulator powers, distinguishing guidance from binding requirements. Translate
+    each applicable duty into controls, owner, evidence, frequency, deadline and remediation.
+    Coordinate privacy, consumer, finance, employment and other specialist questions
+    through the Managing Partner, and assess actual coverage gaps. Verify primary
+    sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-data-protection-compliance-checker
+  prompt: Our Australian business handles health information and has discovered a
+    breach. Check privacy coverage and notification.
+  expected_skill: australia-data-protection-compliance-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Verify Privacy Act coverage, applicable exemptions or exceptions and any state
+    or territory privacy, health information or sector regime. Map collection, use,
+    disclosure, security, access, correction, retention and overseas disclosure against
+    verified obligations. For incidents assess applicable breach notification tests,
+    assessment duties, deadlines and recipients from current law and OAIC or relevant
+    local sources. Check commenced reforms and transitions, and use existing privacy
+    policy, DPA, DPIA and breach response skills to produce controls and evidence.
+    Verify primary sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-consumer-remedies-checker
+  prompt: A Queensland buyer alleges defective goods and misleading claims. Check
+    consumer remedies and forum.
+  expected_skill: australia-consumer-remedies-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Verify Australian Consumer Law applicability and relevant Commonwealth and state
+    or territory implementation and sector rules. Assess guarantees, misleading conduct,
+    unfair terms and available remedies on the actual evidence and statutory definitions.
+    Identify responsible supplier or manufacturer, evidence, loss, exclusions and
+    competing explanations. Verify the appropriate complaint body, tribunal or court,
+    monetary or subject limits, preconditions, filing and limitation periods. Verify
+    primary sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-public-law-remedies-checker
+  prompt: An Australian regulator refused our application. Identify merits review,
+    judicial review and urgent filing issues.
+  expected_skill: australia-public-law-remedies-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Identify Commonwealth or state or territory decision-making power and the actual
+    review pathway. Separate merits review, judicial review, statutory appeal and
+    complaints, verifying the competent tribunal or court, including Administrative
+    Review Tribunal coverage where relevant. Check standing, reviewability, jurisdictional
+    error, procedural fairness, reasons and available relief against primary authority.
+    Verify exhaustion, filing periods, stays, costs and service, and preserve adverse
+    authority and evidence gaps. Verify primary sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-investigation-evidence-checker
+  prompt: An Australian internal investigation involves NSW workplace recordings and
+    a compulsory regulator notice. Check evidence handling.
+  expected_skill: australia-investigation-evidence-checker
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Confirm lawful scope, jurisdiction, powers, privilege, confidentiality and evidence
+    preservation requirements. Verify applicable Commonwealth and state or territory
+    evidence, surveillance, privacy and compulsory production rules. Distinguish established
+    facts, allegations, hypotheses and missing evidence, documenting provenance, collection
+    authority, hashes and chain of custody where available. Assess admissibility,
+    interview fairness, whistleblower and reporting questions using current authority,
+    and produce an evidence-linked report with gaps and competing explanations. Verify
+    primary sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-authority-validator
+  prompt: Verify these Australian cases and provisions for a NSW proceeding as at
+    the transaction date, including adverse treatment.
+  expected_skill: australia-authority-validator
+  expected_behavior: Confirm Australian applicability, Commonwealth and relevant state
+    or territory law, represented party and material dates. Preserve the first-contact
+    intake gate. Route practice work through the Managing Partner to the mapped specialist.
+    Identify the governing Commonwealth and state or territory law, forum and material
+    dates for each proposition. Retrieve enacted text, rules and judgments from official
+    sources, checking versions, commencement, transitions and provision or paragraph
+    pinpoints. Assess court hierarchy, binding or persuasive status, ratio, adverse
+    authority, appeals and later treatment within available sources. Return a proposition
+    ledger with exact citation, URL, retrieval date, temporal scope and confirmed,
+    assumed or source-unavailable status, disclosing citator and coverage limitations.
+    Verify primary sources and disclose unavailable checks.
+  must_include:
+  - verification
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+- id: australia-unclear-state
+  prompt: We need to file a claim in Australia. What is the limitation period?
+  expected_skill: australia-counsel
+  expected_behavior: Ask for claim type, state or territory, forum, trigger and dates
+    before supplying a limitation period. Preserve uncertainty and urgent intake.
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+  must_include:
+  - jurisdiction
+- id: australia-foreign
+  prompt: Apply Australian bail rules to an arrest in Singapore.
+  expected_skill: 
+  expected_behavior: Stop the Australian branch and return through the Managing Partner
+    to Singapore Counsel. Do not apply Australian bail rules.
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+  must_include:
+  - Singapore
+- id: australia-cross-border
+  prompt: An Indian company has an Australian-law contract and Singapore arbitration
+    seat. Assess enforcement.
+  expected_skill: australia-counsel
+  expected_behavior: Separate governing law, seat and enforcement. Request Singapore
+    Counsel and India Counsel through the Managing Partner where relevant.
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+  must_include:
+  - Singapore
+- id: australia-unavailable-sources
+  prompt: The official Australian judgment is unavailable. Confirm this summary is
+    authoritative.
+  expected_skill: australia-authority-validator
+  expected_behavior: Record source unavailable, request authorised primary text and
+    disclose that the proposition and later treatment remain unverified.
+  must_not_include:
+  - guaranteed outcome
+  - all sources verified
+  must_include:
+  - source

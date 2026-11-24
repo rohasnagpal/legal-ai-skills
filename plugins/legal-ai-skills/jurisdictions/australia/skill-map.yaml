@@ -1,0 +1,41 @@
+version: 1
+jurisdiction: australia
+agent: australia-counsel
+skill_count: 18
+skills:
+  corporate:
+    - australia-companies-compliance-checker
+  contracts:
+    - australia-contract-law-reviewer
+  litigation:
+    - australia-civil-procedure-checker
+  dispute_resolution:
+    - australia-arbitration-procedure-checker
+  criminal:
+    - australia-criminal-procedure-checker
+  family:
+    - australia-family-law-applicability-checker
+  property:
+    - australia-property-law-reviewer
+  tax:
+    - australia-tax-applicability-checker
+  insolvency:
+    - australia-insolvency-applicability-checker
+  banking_finance:
+    - australia-banking-finance-regulatory-checker
+  employment:
+    - australia-employment-law-applicability-checker
+  ip:
+    - australia-ip-protection-checker
+  compliance:
+    - australia-regulatory-compliance-checker
+  privacy:
+    - australia-data-protection-compliance-checker
+  consumer:
+    - australia-consumer-remedies-checker
+  public_law:
+    - australia-public-law-remedies-checker
+  investigations:
+    - australia-investigation-evidence-checker
+  research:
+    - australia-authority-validator

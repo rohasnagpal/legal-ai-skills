@@ -1,0 +1,4 @@
+interface:
+  display_name: "South African Contract Law Reviewer"
+  short_description: "Verify south african contract law reviewer"
+  default_prompt: "Use $south-africa-contract-law-reviewer for this matter, identifying applicable law, missing evidence and verification status."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Public Law Remedies Checker"
+  short_description: "Verify canadian public law remedies checker"
+  default_prompt: "Use $canada-public-law-remedies-checker for this matter, identifying applicable law, missing evidence and verification status."

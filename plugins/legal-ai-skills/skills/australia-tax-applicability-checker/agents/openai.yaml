@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australian Tax Applicability Checker"
+  short_description: "Australian tax law and verification"
+  default_prompt: "Use $legal-ai-skills:australia-tax-applicability-checker for this Australian matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

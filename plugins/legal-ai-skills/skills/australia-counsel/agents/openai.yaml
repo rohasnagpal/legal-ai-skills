@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australia Counsel"
+  short_description: "Australian law and procedure across every practice area"
+  default_prompt: "Use $legal-ai-skills:australia-counsel to confirm and verify the Australian-law layer of this matter."
+
+policy:
+  allow_implicit_invocation: true

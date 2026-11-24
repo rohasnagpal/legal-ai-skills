@@ -1,0 +1,4 @@
+interface:
+  display_name: "Russian Property Law Reviewer"
+  short_description: "Verify irish property law reviewer"
+  default_prompt: "Use $russia-property-law-reviewer for this matter, identifying applicable law, missing evidence and verification status."

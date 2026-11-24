@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Criminal Procedure Checker"
+  short_description: "Verify new zealand criminal procedure checker"
+  default_prompt: "Use $new-zealand-criminal-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."

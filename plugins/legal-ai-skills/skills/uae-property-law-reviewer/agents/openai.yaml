@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Property Law Reviewer"
+  short_description: "Verify uae property law reviewer"
+  default_prompt: "Use $uae-property-law-reviewer for this matter, identifying applicable law, missing evidence and verification status."

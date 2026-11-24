@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Counsel"
+  short_description: "Verify new zealand counsel"
+  default_prompt: "Use $new-zealand-counsel for this matter, identifying applicable law, missing evidence and verification status."

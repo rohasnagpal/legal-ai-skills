@@ -48,7 +48,7 @@ For standard and complex matters:
    - Do not give recommendations, name a preferred legal route, assess merits or chances, or start a specialist workflow at this stage. A user's narrative is not documentary proof. If documents are mentioned but not supplied, request them rather than accepting the user's description of their contents.
    - Ask only questions not already answered in the account. At minimum establish the user's role, the other parties, jurisdiction, material dates and deadlines, desired outcome, and which supporting documents exist. If urgency is apparent, give the minimum protective direction needed without turning it into a merits recommendation.
 2. Run [conflict-checker](../skills/conflict-checker/SKILL.md) when parties are named and a conflict record is available. If none is available, record the check as not run.
-3. **Jurisdiction first.** Ask the relevant counsel for an *intake assessment*: [India Counsel](india-counsel.md), [US Counsel](us-counsel.md), [UK Counsel](uk-counsel.md) or [Singapore Counsel](singapore-counsel.md). Use more than one counsel for a cross-border matter. If the jurisdiction is unclear, ask the user; use [forum-jurisdiction-analyst](../skills/forum-jurisdiction-analyst/SKILL.md) where the facts allow. Never apply local law on a guess.
+3. **Jurisdiction first.** Ask the relevant counsel for an *intake assessment*: [India Counsel](india-counsel.md), [US Counsel](us-counsel.md), [UK Counsel](uk-counsel.md), [Singapore Counsel](singapore-counsel.md), [Australia Counsel](australia-counsel.md), [Canada Counsel](canada-counsel.md), [UAE Counsel](uae-counsel.md), [New Zealand Counsel](new-zealand-counsel.md), [South Africa Counsel](south-africa-counsel.md), [Ireland Counsel](ireland-counsel.md), [Russia Counsel](russia-counsel.md), [China Counsel](china-counsel.md), [Brazil Counsel](brazil-counsel.md). Use more than one counsel for a cross-border matter. If the jurisdiction is unclear, ask the user; use [forum-jurisdiction-analyst](../skills/forum-jurisdiction-analyst/SKILL.md) where the facts allow. Never apply local law on a guess.
 4. Open the matter record from the [matter record template](../assets/firm/matter-record-template.yaml). Keep it in the conversation. Write it to `matters/<matter_id>/matter.yaml` only if the user asks to keep a matter file.
 
 ## Step 3: Appoint the Matter Owner
@@ -186,3 +186,40 @@ Never present an unavailable authority, source or registry check as verified. Wh
 ## Human review
 
 Name the decisions that need the client's instruction or a qualified lawyer's judgment, and any filing, appearance or signature that requires an authorised professional. Do not bury unresolved legal, evidential or commercial issues in a general disclaimer.
+
+## Canada jurisdiction route
+
+For Canada issues use [Canada Counsel](canada-counsel.md) for intake and final local-law verification, with the existing specialist owner and workflows. Read the [local practice routes](../jurisdictions/canada/README.md). Confirm the province or territory and federal nexus; distinguish Quebec civil law from common-law private law elsewhere, English/French authoritative texts and Indigenous legal interests. Never infer provincial law from a federal source.
+
+## UAE jurisdiction route
+
+For UAE issues use [UAE Counsel](uae-counsel.md) for intake and final local-law verification, with the existing specialist owner and workflows. Read the [local practice routes](../jurisdictions/uae/README.md). Identify the emirate, mainland or particular free zone, federal/local forum, DIFC or ADGM nexus and governing language. Do not treat all free zones as DIFC or ADGM. Determine the authoritative Arabic text and status of any English translation.
+
+## New Zealand jurisdiction route
+
+For New Zealand issues use [New Zealand Counsel](new-zealand-counsel.md) for intake and final local-law verification, with the existing specialist owner and workflows. Read the [local practice routes](../jurisdictions/new-zealand/README.md). Confirm New Zealand applicability, forum and material dates. Treat Te Tiriti o Waitangi/Treaty of Waitangi, tikanga Māori and Māori land issues as distinct questions where relevant; do not import Australian law or assume Cook Islands, Niue or Tokelau share the same regime.
+
+## South Africa jurisdiction route
+
+For South Africa issues use [South Africa Counsel](south-africa-counsel.md) for intake and final local-law verification, with the existing specialist owner and workflows. Read the [local practice routes](../jurisdictions/south-africa/README.md). Identify national, provincial and municipal rules, competent court/division and material dates. Consider constitutional rights, customary law and personal-law applicability on evidence; do not assume either from name or ethnicity.
+
+## Ireland jurisdiction route
+
+For Ireland issues use [Ireland Counsel](ireland-counsel.md) for intake and final local-law verification, with the existing specialist owner and workflows. Read the [local practice routes](../jurisdictions/ireland/README.md). Confirm Republic of Ireland applicability; Northern Ireland belongs to the UK route. Identify Irish and applicable EU law, transposition, direct applicability and CJEU authority. Do not treat post-independence English law or UK reforms as automatically Irish law.
+
+- [activity-decision-logger](../skills/activity-decision-logger/SKILL.md): maintain requested or saved matter activity and decision records.
+- [legal-translator](../skills/legal-translator/SKILL.md): faithful legal translation with separate local-law review where needed.
+
+Apply the shared [language and logging protocol](../assets/firm/language-and-logging.md) to intake, delegation, progress and final review.
+
+## Russia jurisdiction route
+
+For Russia matters request [Russia Counsel](russia-counsel.md) for intake and final local-law verification. Retain specialist ownership and use the [local practice routes](../jurisdictions/russia/README.md). Confirm the Russian Federation nexus, federal subject, competent forum and material dates. Separate Russian domestic law from foreign sanctions, export controls and countermeasures; request other counsel through the Managing Partner. Verify authoritative Russian text and translation status; identify disputed-territory applicability without assuming recognition.
+
+## China jurisdiction route
+
+For China matters request [China Counsel](china-counsel.md) for intake and final local-law verification. Retain specialist ownership and use the [local practice routes](../jurisdictions/china/README.md). Confirm whether the matter concerns mainland PRC, Hong Kong, Macao or Taiwan; this module covers mainland PRC only. Identify province, municipality, special-zone rules and material dates. Route separate legal systems through the Managing Partner without importing mainland law. Verify authoritative Chinese text and translation status.
+
+## Brazil jurisdiction route
+
+For Brazil matters request [Brazil Counsel](brazil-counsel.md) for intake and final local-law verification. Retain specialist ownership and use the [local practice routes](../jurisdictions/brazil/README.md). Confirm Brazil applicability, state, municipality, competent forum and material dates. Distinguish federal, state and municipal competence and specialist justice branches. Verify authoritative Portuguese text, amendments and translation status; do not import Portuguese or other Lusophone law.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Investigation and Evidence Checker"
+  short_description: "Verify irish investigation and evidence checker"
+  default_prompt: "Use $china-investigation-evidence-checker for this matter, identifying applicable law, missing evidence and verification status."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brazilian Authority Validator"
+  short_description: "Verify irish authority validator"
+  default_prompt: "Use $brazil-authority-validator for this matter, identifying applicable law, missing evidence and verification status."

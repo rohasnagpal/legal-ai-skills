@@ -1,0 +1,41 @@
+version: 1
+jurisdiction: uae
+agent: uae-counsel
+skill_count: 18
+skills:
+  corporate:
+    - uae-companies-compliance-checker
+  contracts:
+    - uae-contract-law-reviewer
+  litigation:
+    - uae-civil-procedure-checker
+  dispute_resolution:
+    - uae-arbitration-procedure-checker
+  criminal:
+    - uae-criminal-procedure-checker
+  family:
+    - uae-family-law-applicability-checker
+  property:
+    - uae-property-law-reviewer
+  insolvency:
+    - uae-insolvency-applicability-checker
+  banking_finance:
+    - uae-banking-finance-regulatory-checker
+  employment:
+    - uae-employment-law-applicability-checker
+  ip:
+    - uae-ip-protection-checker
+  compliance:
+    - uae-regulatory-compliance-checker
+  privacy:
+    - uae-data-protection-compliance-checker
+  consumer:
+    - uae-consumer-remedies-checker
+  public_law:
+    - uae-public-law-remedies-checker
+  investigations:
+    - uae-investigation-evidence-checker
+  research:
+    - uae-authority-validator
+  tax:
+    - uae-tax-applicability-checker

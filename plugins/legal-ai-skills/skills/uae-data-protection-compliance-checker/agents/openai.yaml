@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Data Protection Compliance Checker"
+  short_description: "Verify uae data protection compliance checker"
+  default_prompt: "Use $uae-data-protection-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Legal Translator"
+  short_description: "Verify legal translator"
+  default_prompt: "Use $legal-translator for this matter, identifying applicable law, missing evidence and verification status."

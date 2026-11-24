@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Regulatory Compliance Checker"
+  short_description: "Verify irish regulatory compliance checker"
+  default_prompt: "Use $china-regulatory-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

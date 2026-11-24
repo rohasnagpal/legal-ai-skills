@@ -1,0 +1,4 @@
+interface:
+  display_name: "South African Arbitration Procedure Checker"
+  short_description: "Verify south african arbitration procedure checker"
+  default_prompt: "Use $south-africa-arbitration-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."

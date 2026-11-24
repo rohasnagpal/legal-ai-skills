@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Insolvency Applicability Checker"
+  short_description: "Verify new zealand insolvency applicability checker"
+  default_prompt: "Use $new-zealand-insolvency-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

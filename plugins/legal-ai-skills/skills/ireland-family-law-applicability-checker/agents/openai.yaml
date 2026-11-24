@@ -1,0 +1,4 @@
+interface:
+  display_name: "Irish Family Law Applicability Checker"
+  short_description: "Verify irish family law applicability checker"
+  default_prompt: "Use $ireland-family-law-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

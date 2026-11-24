@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "plugin": "legal-ai-skills",
+  "risk_tier": "high",
+  "cases": [
+    {
+      "id": "new-zealand-companies-compliance-checker",
+      "prompt": "We need New Zealand corporate advice. Identify the facts and documents needed to resolve this issue: Check Companies Office entity status, constitution, directors’ duties, share transactions and overseas-company or investment requirements.",
+      "expected_skill": "new-zealand-companies-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check Companies Office entity status, constitution, directors’ duties, share transactions and overseas-company or investment requirements. Identify entity form and records; map duties, approvals, capital changes, filings, sector and ownership restrictions. Produce an approvals and filing checklist. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-contract-law-reviewer",
+      "prompt": "We need New Zealand contracts advice. Identify the facts and documents needed to resolve this issue: Verify contract formation and statutory remedies, fair trading and consumer guarantees, unfair terms and contracting-out conditions.",
+      "expected_skill": "new-zealand-contract-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify contract formation and statutory remedies, fair trading and consumer guarantees, unfair terms and contracting-out conditions. Review formation, authority, mandatory terms, payment, liability, IP, data, termination and remedies from the represented side. Use contract-reviewer and redline-proposer for exact replacement clauses. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-civil-procedure-checker",
+      "prompt": "We need New Zealand litigation advice. Identify the facts and documents needed to resolve this issue: Distinguish District Court, High Court and specialist tribunals; verify jurisdiction, procedural rules, limitation and service abroad.",
+      "expected_skill": "new-zealand-civil-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish District Court, High Court and specialist tribunals; verify jurisdiction, procedural rules, limitation and service abroad. Identify competent court, prerequisites, cause of action, limitation trigger, service, evidence, disclosure, interim relief, appeal and enforcement. Adapt neutral pleading skills to verified local forms. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-arbitration-procedure-checker",
+      "prompt": "We need New Zealand dispute resolution advice. Identify the facts and documents needed to resolve this issue: Verify Arbitration Act applicability, seat, arbitration agreement, schedules, court support and award challenge/enforcement rules.",
+      "expected_skill": "new-zealand-arbitration-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify Arbitration Act applicability, seat, arbitration agreement, schedules, court support and award challenge/enforcement rules. Separate governing law, seat, institution and enforcement. Verify arbitrability, appointment, interim relief, objections, challenge and recognition; use the existing arbitration workflow. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-criminal-procedure-checker",
+      "prompt": "We need New Zealand criminal advice. Identify the facts and documents needed to resolve this issue: Verify New Zealand criminal procedure, offence category, bail, disclosure, youth forum and evidence; identify urgent custody safeguards.",
+      "expected_skill": "new-zealand-criminal-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify New Zealand criminal procedure, offence category, bail, disclosure, youth forum and evidence; identify urgent custody safeguards. Prioritise custody and representation. Map offence elements, investigation powers, bail, disclosure, admissibility, youth protections and procedural applications without assuming guilt. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-family-law-applicability-checker",
+      "prompt": "We need New Zealand family advice. Identify the facts and documents needed to resolve this issue: Separate dissolution, parenting, relationship property, family violence and succession; verify Family Court jurisdiction and cross-border child issues.",
+      "expected_skill": "new-zealand-family-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Separate dissolution, parenting, relationship property, family violence and succession; verify Family Court jurisdiction and cross-border child issues. Establish relationship, residence, children, assets and safety facts. Separate parenting, protection, financial relief, divorce and succession; verify jurisdiction, prerequisites and deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-property-law-reviewer",
+      "prompt": "We need New Zealand property advice. Identify the facts and documents needed to resolve this issue: Verify land title, Māori land status, unit titles, tenancy, planning and overseas investment consent where applicable.",
+      "expected_skill": "new-zealand-property-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify land title, Māori land status, unit titles, tenancy, planning and overseas investment consent where applicable. Identify tenure, registry, encumbrances, planning, leasing, disclosure, foreign ownership, taxes and settlement conditions. Distinguish record findings from seller representations. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-insolvency-applicability-checker",
+      "prompt": "We need New Zealand insolvency advice. Identify the facts and documents needed to resolve this issue: Distinguish corporate liquidation, voluntary administration, receivership and individual insolvency; verify statutory demands, voidable transactions and security priorities.",
+      "expected_skill": "new-zealand-insolvency-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish corporate liquidation, voluntary administration, receivership and individual insolvency; verify statutory demands, voidable transactions and security priorities. Identify debtor type, solvency evidence and corporate/personal regime; verify commencement thresholds, moratoria, claim admission, priorities, restructuring, avoidance and cross-border recognition. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-banking-finance-regulatory-checker",
+      "prompt": "We need New Zealand banking finance advice. Identify the facts and documents needed to resolve this issue: Identify Reserve Bank, FMA and consumer-credit supervision, lender obligations and PPSR security perfection; verify commencement of regulatory changes.",
+      "expected_skill": "new-zealand-banking-finance-regulatory-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify Reserve Bank, FMA and consumer-credit supervision, lender obligations and PPSR security perfection; verify commencement of regulatory changes. Identify lender, borrower, activity and regulator; verify licensing, lending/consumer credit rules, guarantees, security creation/perfection, priority, enforcement and insolvency interaction. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-employment-law-applicability-checker",
+      "prompt": "We need New Zealand employment advice. Identify the facts and documents needed to resolve this issue: Distinguish employee/contractor status, good-faith duties, personal grievance and bargaining questions; identify mediation, Authority or Court routes.",
+      "expected_skill": "new-zealand-employment-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish employee/contractor status, good-faith duties, personal grievance and bargaining questions; identify mediation, Authority or Court routes. Identify status, workplace, sector, collective instruments and protected characteristics. Verify minimum terms, termination, remedies and competent dispute gateway with trigger-based deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-ip-protection-checker",
+      "prompt": "We need New Zealand ip advice. Identify the facts and documents needed to resolve this issue: Check IPONZ registrations, copyright and moral rights, employee/commissioned ownership and Māori cultural interests where relevant; distinguish registry and court remedies.",
+      "expected_skill": "new-zealand-ip-protection-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check IPONZ registrations, copyright and moral rights, employee/commissioned ownership and Māori cultural interests where relevant; distinguish registry and court remedies. Identify right, ownership chain, territory, registration and use. Verify validity, infringement, defences, licensing, remedies, office procedure and enforcement deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-regulatory-compliance-checker",
+      "prompt": "We need New Zealand compliance advice. Identify the facts and documents needed to resolve this issue: Identify responsible NZ regulator and activity licensing, AML/CFT supervisor, sanctions and reporting duties; verify sector-specific commencement and exemptions.",
+      "expected_skill": "new-zealand-regulatory-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify responsible NZ regulator and activity licensing, AML/CFT supervisor, sanctions and reporting duties; verify sector-specific commencement and exemptions. Map actual activities to regulator, licences, mandatory duties, reporting, sanctions/AML and inspections. Produce obligations, controls, evidence, owners and verified deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-data-protection-compliance-checker",
+      "prompt": "We need New Zealand privacy advice. Identify the facts and documents needed to resolve this issue: Verify Privacy Act scope, agency duties, information privacy principles, overseas disclosures and notifiable breach conditions.",
+      "expected_skill": "new-zealand-data-protection-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify Privacy Act scope, agency duties, information privacy principles, overseas disclosures and notifiable breach conditions. Map data, subjects, roles, purposes and locations. Verify applicable law, justification, notices, rights, processors, security, breach reporting, transfers and regulator powers. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-consumer-remedies-checker",
+      "prompt": "We need New Zealand consumer advice. Identify the facts and documents needed to resolve this issue: Assess Consumer Guarantees/Fair Trading scope, contracting-out conditions, product safety and Commerce Commission or Disputes Tribunal pathways.",
+      "expected_skill": "new-zealand-consumer-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Assess Consumer Guarantees/Fair Trading scope, contracting-out conditions, product safety and Commerce Commission or Disputes Tribunal pathways. Verify protected consumer/transaction scope, unfair terms/practices, product and service standards, exclusions, complaint gateway, evidence, remedies and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-public-law-remedies-checker",
+      "prompt": "We need New Zealand public law advice. Identify the facts and documents needed to resolve this issue: Separate judicial review, statutory appeal, Ombudsman and information-access routes; assess natural justice, rights and Treaty/tikanga relevance to the particular power.",
+      "expected_skill": "new-zealand-public-law-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Separate judicial review, statutory appeal, Ombudsman and information-access routes; assess natural justice, rights and Treaty/tikanga relevance to the particular power. Identify decision, legal power, reasons, standing and relief. Distinguish statutory appeal, merits review, judicial review and constitutional challenge; verify exhaustion, urgency and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-investigation-evidence-checker",
+      "prompt": "We need New Zealand investigations advice. Identify the facts and documents needed to resolve this issue: Verify NZ privacy, surveillance, evidence and employment good-faith constraints; document lawful collection, privilege and regulator disclosure obligations.",
+      "expected_skill": "new-zealand-investigation-evidence-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify NZ privacy, surveillance, evidence and employment good-faith constraints; document lawful collection, privilege and regulator disclosure obligations. Define mandate, lawful collection and privilege. Preserve provenance, custody, interviews and competing explanations; verify privacy, surveillance, disclosure and regulator-reporting restrictions. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-authority-validator",
+      "prompt": "We need New Zealand research advice. Identify the facts and documents needed to resolve this issue: Check NZ legislation versions, commencement and court hierarchy, including Treaty/tikanga authority where relevant; distinguish NZ judgments from Australian persuasive material.",
+      "expected_skill": "new-zealand-authority-validator",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check NZ legislation versions, commencement and court hierarchy, including Treaty/tikanga authority where relevant; distinguish NZ judgments from Australian persuasive material. Verify primary text, proposition support, temporal version, court hierarchy and adverse/later treatment. Distinguish binding authority, guidance, submissions and secondary material; report access gaps. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-tax-applicability-checker",
+      "prompt": "We need New Zealand tax advice. Identify the facts and documents needed to resolve this issue: Check Inland Revenue treatment of income, GST, residence and treaties, with period-specific positions and verified disputes/challenge procedure.",
+      "expected_skill": "new-zealand-tax-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check Inland Revenue treatment of income, GST, residence and treaties, with period-specific positions and verified disputes/challenge procedure. Establish taxpayer, residence, source, transaction and period. Verify national/local taxes, treaty application, rates, exemptions, filing, objections, appeals and evidential requirements; calculate only from verified premises. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "new-zealand-foreign-gate",
+      "prompt": "Use New Zealand law for this clearly Indian-law dispute solely because our parent company is in New Zealand.",
+      "expected_skill": "new-zealand-authority-validator",
+      "expected_behavior": "Do not infer governing law from incorporation. State scope mismatch and route to India Counsel through the Managing Partner.",
+      "must_not_include": [
+        "guaranteed outcome"
+      ],
+      "must_include": [
+        "jurisdiction"
+      ]
+    },
+    {
+      "id": "new-zealand-blocked-source",
+      "prompt": "The official New Zealand source is blocked. Confirm this AI summary as current authority.",
+      "expected_skill": "new-zealand-authority-validator",
+      "expected_behavior": "Mark source unavailable; do not certify a summary. Request authorised primary text and identify affected propositions.",
+      "must_include": [
+        "source"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "new-zealand-nonlegal",
+      "prompt": "Translate this restaurant menu into French.",
+      "expected_skill": null,
+      "expected_behavior": "Do not invoke local legal counsel for ordinary nonlegal translation.",
+      "must_include": [
+        "translation"
+      ],
+      "must_not_include": [
+        "legal opinion"
+      ]
+    }
+  ]
+}

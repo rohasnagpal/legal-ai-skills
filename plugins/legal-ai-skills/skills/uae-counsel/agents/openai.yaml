@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Counsel"
+  short_description: "Verify uae counsel"
+  default_prompt: "Use $uae-counsel for this matter, identifying applicable law, missing evidence and verification status."

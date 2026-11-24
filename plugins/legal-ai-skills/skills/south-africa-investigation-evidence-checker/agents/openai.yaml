@@ -1,0 +1,4 @@
+interface:
+  display_name: "South African Investigation and Evidence Checker"
+  short_description: "Verify south african investigation and evidence checker"
+  default_prompt: "Use $south-africa-investigation-evidence-checker for this matter, identifying applicable law, missing evidence and verification status."

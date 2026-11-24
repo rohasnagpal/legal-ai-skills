@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Arbitration Procedure Checker"
+  short_description: "Verify canadian arbitration procedure checker"
+  default_prompt: "Use $canada-arbitration-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."

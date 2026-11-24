@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Authority Validator"
+  short_description: "Verify canadian authority validator"
+  default_prompt: "Use $canada-authority-validator for this matter, identifying applicable law, missing evidence and verification status."

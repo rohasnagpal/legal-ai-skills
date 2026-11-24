@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Employment Law Applicability Checker"
+  short_description: "Verify canadian employment law applicability checker"
+  default_prompt: "Use $canada-employment-law-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

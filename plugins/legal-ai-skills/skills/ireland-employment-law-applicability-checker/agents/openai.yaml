@@ -1,0 +1,4 @@
+interface:
+  display_name: "Irish Employment Law Applicability Checker"
+  short_description: "Verify irish employment law applicability checker"
+  default_prompt: "Use $ireland-employment-law-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

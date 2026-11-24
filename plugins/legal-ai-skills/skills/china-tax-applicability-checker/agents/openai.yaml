@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Tax Applicability Checker"
+  short_description: "Verify irish tax applicability checker"
+  default_prompt: "Use $china-tax-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

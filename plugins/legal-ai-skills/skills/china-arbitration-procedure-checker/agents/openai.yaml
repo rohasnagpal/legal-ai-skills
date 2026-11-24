@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Arbitration Procedure Checker"
+  short_description: "Verify irish arbitration procedure checker"
+  default_prompt: "Use $china-arbitration-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."

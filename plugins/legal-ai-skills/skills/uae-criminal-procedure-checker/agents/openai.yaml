@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Criminal Procedure Checker"
+  short_description: "Verify uae criminal procedure checker"
+  default_prompt: "Use $uae-criminal-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."

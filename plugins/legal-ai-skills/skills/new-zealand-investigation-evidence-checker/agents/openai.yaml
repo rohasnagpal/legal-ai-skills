@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Investigation and Evidence Checker"
+  short_description: "Verify new zealand investigation and evidence checker"
+  default_prompt: "Use $new-zealand-investigation-evidence-checker for this matter, identifying applicable law, missing evidence and verification status."

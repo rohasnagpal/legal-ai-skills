@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Family Law Applicability Checker"
+  short_description: "Verify uae family law applicability checker"
+  default_prompt: "Use $uae-family-law-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

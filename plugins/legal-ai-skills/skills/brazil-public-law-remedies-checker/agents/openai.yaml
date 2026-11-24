@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brazilian Public Law Remedies Checker"
+  short_description: "Verify irish public law remedies checker"
+  default_prompt: "Use $brazil-public-law-remedies-checker for this matter, identifying applicable law, missing evidence and verification status."

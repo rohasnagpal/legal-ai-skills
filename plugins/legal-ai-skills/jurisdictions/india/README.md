@@ -84,3 +84,7 @@ Before Indian law is applied, [India Counsel](../../skills/india-counsel/SKILL.m
 - [Authoritative sources](authoritative-sources.md)
 - [Integrations and registries](integrations.md)
 - [Skill ownership map](skill-map.yaml)
+
+## Government schemes
+
+- [Indian Government Schemes Assessor](../../skills/india-government-schemes-assessor/SKILL.md): central/State/UT discovery, eligibility, applications, compliance and rejection/recovery remedies.

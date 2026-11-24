@@ -10,7 +10,7 @@ Legal AI Skills works from uploaded or local files and does not require a propri
 - [Company registries](company-registries.md) — bundled SEC EDGAR, GLEIF and optional-key Companies House tools
 - [Sanctions screening](sanctions-screening.md) — local screening against the US OFAC, UK and UN sanctions lists
 - [Legal calculators](legal-calculators.md) — local, exact deadline, period and interest calculations
-- [Legal research](legal-research.md) — CourtListener, GovInfo, Federal Register, Regulations.gov, legislation.gov.uk and Find Case Law, routed through the India, US, UK and Singapore Counsel modules
+- [Legal research](legal-research.md) — CourtListener, GovInfo, Federal Register, Regulations.gov, legislation.gov.uk and Find Case Law, routed through the India, US, UK, Singapore and Australia Counsel modules
 - [GitHub](github.md)
 
 An agent or workflow should request a capability, such as “search authorised matter documents,” rather than require a named vendor. A provider may be used only when the host exposes an executable tool and the user has authorised the relevant scope.
@@ -39,3 +39,11 @@ If a capability is unavailable, do not claim that a search or verification occur
 ## Provider implementation contract
 
 A concrete adapter should document supported actions, authentication method, permission model, data transmitted, limits, error behaviour and audit evidence. Documentation alone is not an executable integration.
+
+## Additional jurisdiction modules
+
+- [Canada official-source and integration guide](../jurisdictions/canada/integrations.md)
+- [UAE official-source and integration guide](../jurisdictions/uae/integrations.md)
+- [New Zealand official-source and integration guide](../jurisdictions/new-zealand/integrations.md)
+- [South Africa official-source and integration guide](../jurisdictions/south-africa/integrations.md)
+- [Ireland official-source and integration guide](../jurisdictions/ireland/integrations.md)

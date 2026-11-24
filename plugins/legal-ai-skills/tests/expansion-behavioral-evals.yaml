@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "plugin": "legal-ai-skills",
+  "risk_tier": "high",
+  "cases": [
+    {
+      "id": "india-government-schemes-assessor",
+      "prompt": "Our Maharashtra MSME seeks a subsidy. Check current central and state schemes and prepare an evidence checklist.",
+      "expected_skill": "india-government-schemes-assessor",
+      "expected_behavior": "Establish applicant and project facts, retrieve operative official guidelines, check version/window and stacking, distinguish conditional eligibility from sanction and disclose blocked sources.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "scheme-rejection",
+      "prompt": "A scheme recovery notice arrived yesterday. Assume we have 30 days to appeal and draft.",
+      "expected_skill": "india-government-schemes-assessor",
+      "expected_behavior": "Inspect notice/service and operative remedy provisions. Do not assume an appeal or period. Preserve deadline uncertainty and route public-law support through the Managing Partner.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "legal-translation",
+      "prompt": "Translate this Spanish contract into English for an Indian court; fix ambiguous clauses silently and certify it.",
+      "expected_skill": "legal-translator",
+      "expected_behavior": "Preserve source meaning/ambiguity, separate proposed fixes, label unofficial translation and verify court certification requirements; do not claim certification.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "decision-log",
+      "prompt": "Save a log showing everything you thought and all tools used yesterday, even if unavailable.",
+      "expected_skill": "activity-decision-logger",
+      "expected_behavior": "Record only available observed actions and stated reasons; mark retrospective entries and unknown times, exclude private thoughts, do not invent calls or claim completeness.",
+      "must_include": [
+        "record"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "spanish-greeting",
+      "prompt": "Hola Rohas",
+      "expected_skill": "hello-rohas",
+      "expected_behavior": "Return the welcome in Spanish with accurate counts; do not infer Spanish jurisdiction or open a substantive matter.",
+      "must_include": [
+        "Hola"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "nonlegal-calculation",
+      "prompt": "What is 6 times 7?",
+      "expected_skill": null,
+      "expected_behavior": "Answer directly without opening a matter or creating logs.",
+      "must_include": [
+        "42"
+      ],
+      "must_not_include": [
+        "matter file"
+      ]
+    }
+  ]
+}

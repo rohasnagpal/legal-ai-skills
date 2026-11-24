@@ -46,6 +46,8 @@ delegation_requests:
     to: tax-lawyer            # lawyer or counsel file name, without .md
     question: GST treatment of the settlement amount
     represented_party: buyer
+    working_language: English
+    output_language: English
     jurisdiction: India
     inputs: [settlement draft v2, invoices 1-14]
     output_needed: short opinion with authorities and verification status
@@ -100,3 +102,7 @@ Do not turn a quick matter into a complex one. If the matter turns out to be big
 | Whether local law applies; local forum, procedure and deadlines | The relevant Jurisdiction Counsel |
 
 More than one lawyer may work on a matter. The Matter Owner decides how their work fits together.
+
+## Language, progress and records
+
+Follow the [language and logging protocol](language-and-logging.md). Carry the working/output language into delegation requests and contributions. Maintain requested activity and decision records with source-linked reasons, observed actions and explicit gaps.

@@ -58,3 +58,39 @@ Verify pecuniary limits, fees and limitation as currently in force. Escalate saf
 ## Singapore local-law support: Consumer Remedies Checker
 
 For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-consumer-remedies-checker](../skills/singapore-consumer-remedies-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Australian local-law support: Consumer Remedies Checker
+
+For Australian matters, request [Australia Counsel](australia-counsel.md) through the Managing Partner and use [australia-consumer-remedies-checker](../skills/australia-consumer-remedies-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Canada local-law support
+
+For Canada matters request [Canada Counsel](canada-counsel.md) through the Managing Partner and use [canada-consumer-remedies-checker](../skills/canada-consumer-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## UAE local-law support
+
+For UAE matters request [UAE Counsel](uae-counsel.md) through the Managing Partner and use [uae-consumer-remedies-checker](../skills/uae-consumer-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## New Zealand local-law support
+
+For New Zealand matters request [New Zealand Counsel](new-zealand-counsel.md) through the Managing Partner and use [new-zealand-consumer-remedies-checker](../skills/new-zealand-consumer-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## South Africa local-law support
+
+For South Africa matters request [South Africa Counsel](south-africa-counsel.md) through the Managing Partner and use [south-africa-consumer-remedies-checker](../skills/south-africa-consumer-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Ireland local-law support
+
+For Ireland matters request [Ireland Counsel](ireland-counsel.md) through the Managing Partner and use [ireland-consumer-remedies-checker](../skills/ireland-consumer-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Russia local-law support
+
+For Russia matters request [Russia Counsel](russia-counsel.md) through the Managing Partner and use [russia-consumer-remedies-checker](../skills/russia-consumer-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## China local-law support
+
+For China matters request [China Counsel](china-counsel.md) through the Managing Partner and use [china-consumer-remedies-checker](../skills/china-consumer-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Brazil local-law support
+
+For Brazil matters request [Brazil Counsel](brazil-counsel.md) through the Managing Partner and use [brazil-consumer-remedies-checker](../skills/brazil-consumer-remedies-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Consumer Remedies Checker"
+  short_description: "Verify canadian consumer remedies checker"
+  default_prompt: "Use $canada-consumer-remedies-checker for this matter, identifying applicable law, missing evidence and verification status."

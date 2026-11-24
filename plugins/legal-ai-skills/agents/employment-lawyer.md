@@ -58,3 +58,39 @@ Check dates, status, contractual process and mandatory law. Do not infer miscond
 ## Singapore local-law support: Employment Law Applicability Checker
 
 For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-employment-law-applicability-checker](../skills/singapore-employment-law-applicability-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Australian local-law support: Employment Law Applicability Checker
+
+For Australian matters, request [Australia Counsel](australia-counsel.md) through the Managing Partner and use [australia-employment-law-applicability-checker](../skills/australia-employment-law-applicability-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Canada local-law support
+
+For Canada matters request [Canada Counsel](canada-counsel.md) through the Managing Partner and use [canada-employment-law-applicability-checker](../skills/canada-employment-law-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## UAE local-law support
+
+For UAE matters request [UAE Counsel](uae-counsel.md) through the Managing Partner and use [uae-employment-law-applicability-checker](../skills/uae-employment-law-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## New Zealand local-law support
+
+For New Zealand matters request [New Zealand Counsel](new-zealand-counsel.md) through the Managing Partner and use [new-zealand-employment-law-applicability-checker](../skills/new-zealand-employment-law-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## South Africa local-law support
+
+For South Africa matters request [South Africa Counsel](south-africa-counsel.md) through the Managing Partner and use [south-africa-employment-law-applicability-checker](../skills/south-africa-employment-law-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Ireland local-law support
+
+For Ireland matters request [Ireland Counsel](ireland-counsel.md) through the Managing Partner and use [ireland-employment-law-applicability-checker](../skills/ireland-employment-law-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Russia local-law support
+
+For Russia matters request [Russia Counsel](russia-counsel.md) through the Managing Partner and use [russia-employment-law-applicability-checker](../skills/russia-employment-law-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## China local-law support
+
+For China matters request [China Counsel](china-counsel.md) through the Managing Partner and use [china-employment-law-applicability-checker](../skills/china-employment-law-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Brazil local-law support
+
+For Brazil matters request [Brazil Counsel](brazil-counsel.md) through the Managing Partner and use [brazil-employment-law-applicability-checker](../skills/brazil-employment-law-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.

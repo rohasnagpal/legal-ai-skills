@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australian Family Law Applicability Checker"
+  short_description: "Australian family law and verification"
+  default_prompt: "Use $legal-ai-skills:australia-family-law-applicability-checker for this Australian matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

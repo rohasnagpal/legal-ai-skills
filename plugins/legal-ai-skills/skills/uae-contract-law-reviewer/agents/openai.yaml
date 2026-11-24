@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Contract Law Reviewer"
+  short_description: "Verify uae contract law reviewer"
+  default_prompt: "Use $uae-contract-law-reviewer for this matter, identifying applicable law, missing evidence and verification status."

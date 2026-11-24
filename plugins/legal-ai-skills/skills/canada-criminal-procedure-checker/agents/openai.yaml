@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Criminal Procedure Checker"
+  short_description: "Verify canadian criminal procedure checker"
+  default_prompt: "Use $canada-criminal-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."

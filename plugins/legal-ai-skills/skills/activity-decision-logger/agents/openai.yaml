@@ -1,0 +1,4 @@
+interface:
+  display_name: "Activity and Decision Logger"
+  short_description: "Verify activity and decision logger"
+  default_prompt: "Use $activity-decision-logger for this matter, identifying applicable law, missing evidence and verification status."

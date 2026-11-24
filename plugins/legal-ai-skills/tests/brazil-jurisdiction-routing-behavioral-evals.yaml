@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "plugin": "legal-ai-skills",
+  "risk_tier": "high",
+  "cases": [
+    {
+      "id": "brazil-companies-compliance-checker",
+      "prompt": "We need Brazil corporate advice. Identify the facts and documents needed to resolve this issue: Check entity form, Civil Code or corporations framework, commercial registration, governance, capital and foreign-investment requirements.",
+      "expected_skill": "brazil-companies-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check entity form, Civil Code or corporations framework, commercial registration, governance, capital and foreign-investment requirements. Identify entity form and records; map duties, approvals, capital changes, filings, sector and ownership restrictions. Produce an approvals and filing checklist. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-contract-law-reviewer",
+      "prompt": "We need Brazil contracts advice. Identify the facts and documents needed to resolve this issue: Check Civil Code, mandatory consumer rules, good faith, authority, remedies and choice-of-law and forum treatment.",
+      "expected_skill": "brazil-contract-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check Civil Code, mandatory consumer rules, good faith, authority, remedies and choice-of-law and forum treatment. Review formation, authority, mandatory terms, payment, liability, IP, data, termination and remedies from the represented side. Use contract-reviewer and redline-proposer for exact replacement clauses. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-civil-procedure-checker",
+      "prompt": "We need Brazil litigation advice. Identify the facts and documents needed to resolve this issue: Identify federal or state court and specialist jurisdiction; verify Civil Procedure Code, local rules, service, deadlines and enforcement.",
+      "expected_skill": "brazil-civil-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify federal or state court and specialist jurisdiction; verify Civil Procedure Code, local rules, service, deadlines and enforcement. Identify competent court, prerequisites, cause of action, limitation trigger, service, evidence, disclosure, interim relief, appeal and enforcement. Adapt neutral pleading skills to verified local forms. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-arbitration-procedure-checker",
+      "prompt": "We need Brazil dispute resolution advice. Identify the facts and documents needed to resolve this issue: Check arbitration agreement, arbitrability, seat, court support, challenge and foreign-award recognition; separate mediation.",
+      "expected_skill": "brazil-arbitration-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check arbitration agreement, arbitrability, seat, court support, challenge and foreign-award recognition; separate mediation. Separate governing law, seat, institution and enforcement. Verify arbitrability, appointment, interim relief, objections, challenge and recognition; use the existing arbitration workflow. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-criminal-procedure-checker",
+      "prompt": "We need Brazil criminal advice. Identify the facts and documents needed to resolve this issue: Check offence elements, police investigation, detention, defence rights, pretrial release, prosecution and admissibility.",
+      "expected_skill": "brazil-criminal-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check offence elements, police investigation, detention, defence rights, pretrial release, prosecution and admissibility. Prioritise custody and representation. Map offence elements, investigation powers, bail, disclosure, admissibility, youth protections and procedural applications without assuming guilt. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-family-law-applicability-checker",
+      "prompt": "We need Brazil family advice. Identify the facts and documents needed to resolve this issue: Check marriage or stable union, divorce, parenting, maintenance, succession and cross-border recognition.",
+      "expected_skill": "brazil-family-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check marriage or stable union, divorce, parenting, maintenance, succession and cross-border recognition. Establish relationship, residence, children, assets and safety facts. Separate parenting, protection, financial relief, divorce and succession; verify jurisdiction, prerequisites and deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-property-law-reviewer",
+      "prompt": "We need Brazil property advice. Identify the facts and documents needed to resolve this issue: Check title and property registry, encumbrances, urban/rural rules, environmental restrictions, leases and foreign rural acquisition.",
+      "expected_skill": "brazil-property-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check title and property registry, encumbrances, urban/rural rules, environmental restrictions, leases and foreign rural acquisition. Identify tenure, registry, encumbrances, planning, leasing, disclosure, foreign ownership, taxes and settlement conditions. Distinguish record findings from seller representations. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-insolvency-applicability-checker",
+      "prompt": "We need Brazil insolvency advice. Identify the facts and documents needed to resolve this issue: Check judicial or extrajudicial reorganisation, bankruptcy eligibility, exclusions, priorities and cross-border procedure.",
+      "expected_skill": "brazil-insolvency-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check judicial or extrajudicial reorganisation, bankruptcy eligibility, exclusions, priorities and cross-border procedure. Identify debtor type, solvency evidence and corporate/personal regime; verify commencement thresholds, moratoria, claim admission, priorities, restructuring, avoidance and cross-border recognition. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-banking-finance-regulatory-checker",
+      "prompt": "We need Brazil banking finance advice. Identify the facts and documents needed to resolve this issue: Identify Banco Central and CVM permissions, lending rules, security, payment/foreign-exchange requirements and consumer overlays.",
+      "expected_skill": "brazil-banking-finance-regulatory-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify Banco Central and CVM permissions, lending rules, security, payment/foreign-exchange requirements and consumer overlays. Identify lender, borrower, activity and regulator; verify licensing, lending/consumer credit rules, guarantees, security creation/perfection, priority, enforcement and insolvency interaction. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-employment-law-applicability-checker",
+      "prompt": "We need Brazil employment advice. Identify the facts and documents needed to resolve this issue: Check CLT coverage, worker status, collective agreements, termination, employment rights and labour-court competence.",
+      "expected_skill": "brazil-employment-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check CLT coverage, worker status, collective agreements, termination, employment rights and labour-court competence. Identify status, workplace, sector, collective instruments and protected characteristics. Verify minimum terms, termination, remedies and competent dispute gateway with trigger-based deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-ip-protection-checker",
+      "prompt": "We need Brazil ip advice. Identify the facts and documents needed to resolve this issue: Check INPI registration, copyright, ownership, territorial effect, licensing and judicial/administrative enforcement.",
+      "expected_skill": "brazil-ip-protection-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check INPI registration, copyright, ownership, territorial effect, licensing and judicial/administrative enforcement. Identify right, ownership chain, territory, registration and use. Verify validity, infringement, defences, licensing, remedies, office procedure and enforcement deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-regulatory-compliance-checker",
+      "prompt": "We need Brazil compliance advice. Identify the facts and documents needed to resolve this issue: Map federal/state/municipal permits, competition, AML, anti-corruption and sector supervision to actual activities.",
+      "expected_skill": "brazil-regulatory-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Map federal/state/municipal permits, competition, AML, anti-corruption and sector supervision to actual activities. Map actual activities to regulator, licences, mandatory duties, reporting, sanctions/AML and inspections. Produce obligations, controls, evidence, owners and verified deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-data-protection-compliance-checker",
+      "prompt": "We need Brazil privacy advice. Identify the facts and documents needed to resolve this issue: Check LGPD coverage, roles, lawful bases, rights, ANPD rules, security, breach notification and international transfers.",
+      "expected_skill": "brazil-data-protection-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check LGPD coverage, roles, lawful bases, rights, ANPD rules, security, breach notification and international transfers. Map data, subjects, roles, purposes and locations. Verify applicable law, justification, notices, rights, processors, security, breach reporting, transfers and regulator powers. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-consumer-remedies-checker",
+      "prompt": "We need Brazil consumer advice. Identify the facts and documents needed to resolve this issue: Check Consumer Defence Code coverage, unfair terms/practices, product liability, administrative complaints and court remedies.",
+      "expected_skill": "brazil-consumer-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check Consumer Defence Code coverage, unfair terms/practices, product liability, administrative complaints and court remedies. Verify protected consumer/transaction scope, unfair terms/practices, product and service standards, exclusions, complaint gateway, evidence, remedies and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-public-law-remedies-checker",
+      "prompt": "We need Brazil public law advice. Identify the facts and documents needed to resolve this issue: Distinguish administrative remedies, ordinary review, mandado de segurança and constitutional routes; verify standing and prerequisites.",
+      "expected_skill": "brazil-public-law-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish administrative remedies, ordinary review, mandado de segurança and constitutional routes; verify standing and prerequisites. Identify decision, legal power, reasons, standing and relief. Distinguish statutory appeal, merits review, judicial review and constitutional challenge; verify exhaustion, urgency and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-investigation-evidence-checker",
+      "prompt": "We need Brazil investigations advice. Identify the facts and documents needed to resolve this issue: Check lawful evidence collection, LGPD, employment procedure, privilege, anti-corruption reporting and chain of custody.",
+      "expected_skill": "brazil-investigation-evidence-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check lawful evidence collection, LGPD, employment procedure, privilege, anti-corruption reporting and chain of custody. Define mandate, lawful collection and privilege. Preserve provenance, custody, interviews and competing explanations; verify privacy, surveillance, disclosure and regulator-reporting restrictions. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-authority-validator",
+      "prompt": "We need Brazil research advice. Identify the facts and documents needed to resolve this issue: Retrieve official legislation and STF/STJ or competent specialist court decisions; verify binding effect, themes, later treatment and applicable version.",
+      "expected_skill": "brazil-authority-validator",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Retrieve official legislation and STF/STJ or competent specialist court decisions; verify binding effect, themes, later treatment and applicable version. Verify primary text, proposition support, temporal version, court hierarchy and adverse/later treatment. Distinguish binding authority, guidance, submissions and secondary material; report access gaps. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-tax-applicability-checker",
+      "prompt": "We need Brazil tax advice. Identify the facts and documents needed to resolve this issue: Check federal/state/municipal tax competence, tax period and reform transitions; verify rates, credits, filings and administrative/judicial challenge.",
+      "expected_skill": "brazil-tax-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check federal/state/municipal tax competence, tax period and reform transitions; verify rates, credits, filings and administrative/judicial challenge. Establish taxpayer, residence, source, transaction and period. Verify national/local taxes, treaty application, rates, exemptions, filing, objections, appeals and evidential requirements; calculate only from verified premises. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "brazil-foreign-gate",
+      "prompt": "Use Brazil law for this clearly Indian-law dispute solely because our parent company is in Brazil.",
+      "expected_skill": "brazil-authority-validator",
+      "expected_behavior": "Do not infer governing law from incorporation. State scope mismatch and route to India Counsel through the Managing Partner.",
+      "must_not_include": [
+        "guaranteed outcome"
+      ],
+      "must_include": [
+        "jurisdiction"
+      ]
+    },
+    {
+      "id": "brazil-blocked-source",
+      "prompt": "The official Brazil source is blocked. Confirm this AI summary as current authority.",
+      "expected_skill": "brazil-authority-validator",
+      "expected_behavior": "Mark source unavailable; do not certify a summary. Request authorised primary text and identify affected propositions.",
+      "must_include": [
+        "source"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "brazil-nonlegal",
+      "prompt": "Translate this restaurant menu into French.",
+      "expected_skill": null,
+      "expected_behavior": "Do not invoke local legal counsel for ordinary nonlegal translation.",
+      "must_include": [
+        "translation"
+      ],
+      "must_not_include": [
+        "legal opinion"
+      ]
+    },
+    {
+      "id": "brazil-scope-boundary",
+      "prompt": "Use the federal tax rule to calculate every state and municipal tax for this transaction without knowing its location or date.",
+      "expected_skill": "brazil-authority-validator",
+      "expected_behavior": "Establish state, municipality, transaction, tax period and applicable reform transitions. Do not infer local taxes from federal rules or calculate from unverified premises.",
+      "must_include": [
+        "jurisdiction"
+      ],
+      "must_not_include": [
+        "all sources verified",
+        "guaranteed outcome"
+      ]
+    }
+  ]
+}

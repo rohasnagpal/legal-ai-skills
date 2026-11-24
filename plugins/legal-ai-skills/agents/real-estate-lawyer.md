@@ -63,3 +63,39 @@ Verify State-specific rules, rates and prescribed forms before relying on them. 
 ## Singapore local-law support: Property Law Reviewer
 
 For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-property-law-reviewer](../skills/singapore-property-law-reviewer/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Australian local-law support: Property Law Reviewer
+
+For Australian matters, request [Australia Counsel](australia-counsel.md) through the Managing Partner and use [australia-property-law-reviewer](../skills/australia-property-law-reviewer/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Canada local-law support
+
+For Canada matters request [Canada Counsel](canada-counsel.md) through the Managing Partner and use [canada-property-law-reviewer](../skills/canada-property-law-reviewer/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## UAE local-law support
+
+For UAE matters request [UAE Counsel](uae-counsel.md) through the Managing Partner and use [uae-property-law-reviewer](../skills/uae-property-law-reviewer/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## New Zealand local-law support
+
+For New Zealand matters request [New Zealand Counsel](new-zealand-counsel.md) through the Managing Partner and use [new-zealand-property-law-reviewer](../skills/new-zealand-property-law-reviewer/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## South Africa local-law support
+
+For South Africa matters request [South Africa Counsel](south-africa-counsel.md) through the Managing Partner and use [south-africa-property-law-reviewer](../skills/south-africa-property-law-reviewer/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Ireland local-law support
+
+For Ireland matters request [Ireland Counsel](ireland-counsel.md) through the Managing Partner and use [ireland-property-law-reviewer](../skills/ireland-property-law-reviewer/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Russia local-law support
+
+For Russia matters request [Russia Counsel](russia-counsel.md) through the Managing Partner and use [russia-property-law-reviewer](../skills/russia-property-law-reviewer/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## China local-law support
+
+For China matters request [China Counsel](china-counsel.md) through the Managing Partner and use [china-property-law-reviewer](../skills/china-property-law-reviewer/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Brazil local-law support
+
+For Brazil matters request [Brazil Counsel](brazil-counsel.md) through the Managing Partner and use [brazil-property-law-reviewer](../skills/brazil-property-law-reviewer/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.

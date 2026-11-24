@@ -1,0 +1,4 @@
+interface:
+  display_name: "Russian Insolvency Applicability Checker"
+  short_description: "Verify irish insolvency applicability checker"
+  default_prompt: "Use $russia-insolvency-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

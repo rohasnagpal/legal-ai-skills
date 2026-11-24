@@ -1,0 +1,4 @@
+interface:
+  display_name: "South African Civil Procedure Checker"
+  short_description: "Verify south african civil procedure checker"
+  default_prompt: "Use $south-africa-civil-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."

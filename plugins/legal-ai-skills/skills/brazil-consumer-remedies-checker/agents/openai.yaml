@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brazilian Consumer Remedies Checker"
+  short_description: "Verify irish consumer remedies checker"
+  default_prompt: "Use $brazil-consumer-remedies-checker for this matter, identifying applicable law, missing evidence and verification status."

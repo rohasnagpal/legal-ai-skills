@@ -1,0 +1,4 @@
+interface:
+  display_name: "Russian Companies Compliance Checker"
+  short_description: "Verify irish companies compliance checker"
+  default_prompt: "Use $russia-companies-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

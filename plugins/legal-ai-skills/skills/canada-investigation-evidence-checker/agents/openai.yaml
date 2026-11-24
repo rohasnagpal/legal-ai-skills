@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Investigation and Evidence Checker"
+  short_description: "Verify canadian investigation and evidence checker"
+  default_prompt: "Use $canada-investigation-evidence-checker for this matter, identifying applicable law, missing evidence and verification status."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Tax Applicability Checker"
+  short_description: "Verify canadian tax applicability checker"
+  default_prompt: "Use $canada-tax-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

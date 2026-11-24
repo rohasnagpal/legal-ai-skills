@@ -1,0 +1,4 @@
+interface:
+  display_name: "Irish Contract Law Reviewer"
+  short_description: "Verify irish contract law reviewer"
+  default_prompt: "Use $ireland-contract-law-reviewer for this matter, identifying applicable law, missing evidence and verification status."

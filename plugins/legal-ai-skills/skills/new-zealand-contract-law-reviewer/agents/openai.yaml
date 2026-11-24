@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Contract Law Reviewer"
+  short_description: "Verify new zealand contract law reviewer"
+  default_prompt: "Use $new-zealand-contract-law-reviewer for this matter, identifying applicable law, missing evidence and verification status."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Public Law Remedies Checker"
+  short_description: "Verify new zealand public law remedies checker"
+  default_prompt: "Use $new-zealand-public-law-remedies-checker for this matter, identifying applicable law, missing evidence and verification status."

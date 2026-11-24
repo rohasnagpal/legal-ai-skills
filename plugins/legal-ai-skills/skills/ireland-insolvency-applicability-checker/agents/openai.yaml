@@ -1,0 +1,4 @@
+interface:
+  display_name: "Irish Insolvency Applicability Checker"
+  short_description: "Verify irish insolvency applicability checker"
+  default_prompt: "Use $ireland-insolvency-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

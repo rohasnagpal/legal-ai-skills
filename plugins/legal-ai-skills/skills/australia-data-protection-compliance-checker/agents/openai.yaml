@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australian Data Protection Compliance Checker"
+  short_description: "Australian privacy law and verification"
+  default_prompt: "Use $legal-ai-skills:australia-data-protection-compliance-checker for this Australian matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

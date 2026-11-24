@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Public Law Remedies Checker"
+  short_description: "Verify uae public law remedies checker"
+  default_prompt: "Use $uae-public-law-remedies-checker for this matter, identifying applicable law, missing evidence and verification status."

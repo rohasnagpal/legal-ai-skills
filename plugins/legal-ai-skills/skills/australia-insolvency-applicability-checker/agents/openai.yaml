@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australian Insolvency Applicability Checker"
+  short_description: "Australian insolvency law and verification"
+  default_prompt: "Use $legal-ai-skills:australia-insolvency-applicability-checker for this Australian matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

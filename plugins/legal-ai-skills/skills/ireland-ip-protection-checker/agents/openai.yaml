@@ -1,0 +1,4 @@
+interface:
+  display_name: "Irish IP Protection Checker"
+  short_description: "Verify irish ip protection checker"
+  default_prompt: "Use $ireland-ip-protection-checker for this matter, identifying applicable law, missing evidence and verification status."

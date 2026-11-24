@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ireland Counsel"
+  short_description: "Verify ireland counsel"
+  default_prompt: "Use $ireland-counsel for this matter, identifying applicable law, missing evidence and verification status."

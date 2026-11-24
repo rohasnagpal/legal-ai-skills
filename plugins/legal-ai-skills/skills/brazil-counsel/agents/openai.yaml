@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brazil Counsel"
+  short_description: "Verify brazil counsel"
+  default_prompt: "Use $brazil-counsel for this matter, identifying applicable law, missing evidence and verification status."

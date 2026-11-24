@@ -1,0 +1,4 @@
+interface:
+  display_name: "South African Property Law Reviewer"
+  short_description: "Verify south african property law reviewer"
+  default_prompt: "Use $south-africa-property-law-reviewer for this matter, identifying applicable law, missing evidence and verification status."

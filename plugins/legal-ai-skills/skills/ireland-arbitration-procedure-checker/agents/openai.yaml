@@ -1,0 +1,4 @@
+interface:
+  display_name: "Irish Arbitration Procedure Checker"
+  short_description: "Verify irish arbitration procedure checker"
+  default_prompt: "Use $ireland-arbitration-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."

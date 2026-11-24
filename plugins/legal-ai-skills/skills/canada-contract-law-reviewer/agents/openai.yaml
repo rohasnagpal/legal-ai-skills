@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Contract Law Reviewer"
+  short_description: "Verify canadian contract law reviewer"
+  default_prompt: "Use $canada-contract-law-reviewer for this matter, identifying applicable law, missing evidence and verification status."

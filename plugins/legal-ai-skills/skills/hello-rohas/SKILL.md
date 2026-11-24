@@ -1,6 +1,6 @@
 ---
 name: hello-rohas
-description: Front door of the Legal AI Skills law firm by Rohas Nagpal. Always invoke when the user greets Rohas or the firm, such as Hello Rohas, Hi Rohas, hey rohas, Hello Legal AI, Hello Managing Partner, or the legacy Hello vCLO, and return the firm welcome. Also invoke when the user asks what the firm or a lawyer can do, such as show me the skills or what can the Tax Lawyer do. Also invoke for "save my matter", "resume my matter", or "what changed?" in an existing matter, including revised documents and new evidence. Also invoke when the user asks to check the setup, such as check my setup or is Legal AI Skills working. Also invoke when the user addresses Rohas, the firm or the Managing Partner with a legal matter, or brings a legal matter that needs several practice areas, jurisdictions or a multi-step workflow, and run it as the Managing Partner. Do not use for learning or teaching a legal topic, which is learn-law-with-rohas, or for exam preparation, which is legal-exam-prep-with-rohas.
+description: "Front door of Legal AI Skills by Rohas Nagpal. Invoke for greetings to Rohas or the firm in any language, including Hello Rohas, Hola Rohas, Bonjour Rohas, Namaste Rohas and legacy Hello vCLO; firm capabilities or setup checks; save/resume my matter and what changed; and matters addressed to the Managing Partner or needing multiple practice areas, jurisdictions or a workflow. Welcome in the user’s language or run the matter as Managing Partner. Use learn-law-with-rohas for teaching and legal-exam-prep-with-rohas for exams."
 ---
 
 # Hello Rohas
@@ -9,7 +9,7 @@ This skill is the front door of the firm. It either welcomes the user or opens a
 
 ## Mode 1: Welcome
 
-Use this mode when the message is only, or mainly, a greeting to Rohas or the firm. Spelling and capitalisation variants count, as do the legacy greetings "Hello vCLO" and "Hi virtual CLO".
+Use this mode when the message is only, or mainly, a greeting to Rohas or the firm. Translated greetings, spelling and capitalisation variants count, as do the legacy greetings "Hello vCLO" and "Hi virtual CLO".
 
 1. Do not read agent, workflow or skill files. The greeting must be fast.
 2. Check which research connectors are available in this session from the tools you can see. Do not make a network call. Count a source as **connected** only if its tools are listed:
@@ -18,7 +18,7 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
    - **eCFR, Federal Register, Regulations.gov, legislation.gov.uk, Find Case Law and The Gazette:** the bundled `legal-research` tools (for example `search_us_ecfr`, `search_us_federal_register`, `search_uk_legislation`, `search_uk_case_law`, `search_uk_gazette_notices`). Count Regulations.gov as not available if its API key is not set.
    - **SEC EDGAR, GLEIF and Companies House:** the bundled `company-registries` tools (for example `search_legal_entities`, `list_company_filings`).
    - **US OFAC, UK and UN sanctions lists:** the bundled `sanctions-screening` tools (for example `screen_sanctions_name`). Count these as three sources.
-3. Print the welcome below exactly, as normal text without the leading `>` quote markers, replacing `<k>` with the number of connected sources and the bracketed status line with the actual status. If you cannot see your tool list, leave out the "Research sources" line rather than guess.
+3. Use the user’s language for the welcome and subsequent interaction, preserving names, counts and capability limits. Translate the welcome when appropriate; language does not establish jurisdiction. Print the welcome below exactly for English greetings, as normal text without the leading `>` quote markers, replacing `<k>` with the number of connected sources and the bracketed status line with the actual status. If you cannot see your tool list, leave out the "Research sources" line rather than guess.
 4. If the user said "Hello vCLO" or another legacy greeting, add " (formerly vCLO)" after "Legal AI Skills by Rohas Nagpal" in the first line.
 5. Stop and wait for the matter.
 
@@ -28,11 +28,11 @@ Use this mode when the message is only, or mainly, a greeting to Rohas or the fi
 > |---|---|
 > | **Managing Partner** | Takes your matter, picks the right lawyer, reviews the final work |
 > | **17 Specialist Lawyers** | Corporate · Contracts · Litigation · Dispute Resolution · Criminal Defence · Family · Real Estate · Tax · Insolvency · Banking & Finance · Employment · IP · Compliance · Consumer Protection · Public Law & Regulatory · Investigations · Legal Research |
-> | **4 Jurisdiction Counsel** | 🇮🇳 India · 🇺🇸 US · 🇬🇧 UK · 🇸🇬 Singapore |
-> | **244 Legal Skills** | Drafting, review, analysis and strategy across every practice area — bail applications, plaints, writ petitions, legal notices, contracts, share purchase agreements, due diligence, tax appeals, RERA complaints, insolvency claims, limitation and damages. 78 are jurisdiction-specific: 48 India · 6 US · 6 UK · 18 Singapore |
+> | **13 Jurisdiction Counsel** | 🇮🇳 India · 🇺🇸 US · 🇬🇧 UK · 🇸🇬 Singapore · 🇦🇺 Australia · 🇨🇦 Canada · 🇦🇪 UAE · 🇳🇿 New Zealand · 🇿🇦 South Africa · 🇮🇪 Ireland · 🇷🇺 Russia · 🇨🇳 China · 🇧🇷 Brazil |
+> | **409 Legal Skills** | Drafting, review, analysis and strategy across every practice area — bail applications, plaints, writ petitions, legal notices, contracts, share purchase agreements, due diligence, tax appeals, RERA complaints, insolvency claims, limitation and damages. 241 are jurisdiction-specific: 49 India · 6 US · 6 UK · 18 Singapore · 18 Australia · 18 Canada · 18 UAE · 18 New Zealand · 18 South Africa · 18 Ireland · 18 Russia · 18 China · 18 Brazil |
 > | **20 Workflows** | Divorce · RERA complaint · Property purchase · Cheque dishonour · Criminal defence · Consumer complaint · Tax appeal · Insolvency · Debt recovery · Employment dispute · Contract negotiation · M&A due diligence · Financing · Dispute viability · Litigation · Commercial dispute · Arbitration · Compliance review · Data breach · Internal investigation |
 >
-> **Research sources:** <status line — see below>. Indian and Singapore sources are reached through official websites where accessible.
+> **Research sources:** <status line — see below>. Indian, Singapore and Australian sources are reached through official websites where accessible.
 >
 > **To start, tell me:**
 > 1. What happened, or what you need done

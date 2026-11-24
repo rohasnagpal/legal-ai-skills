@@ -68,3 +68,67 @@ For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through
 ## Singapore local-law support: Data Protection Compliance Checker
 
 For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-data-protection-compliance-checker](../skills/singapore-data-protection-compliance-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Australian local-law support: Regulatory Compliance Checker
+
+For Australian matters, request [Australia Counsel](australia-counsel.md) through the Managing Partner and use [australia-regulatory-compliance-checker](../skills/australia-regulatory-compliance-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Australian local-law support: Data Protection Compliance Checker
+
+For Australian matters, request [Australia Counsel](australia-counsel.md) through the Managing Partner and use [australia-data-protection-compliance-checker](../skills/australia-data-protection-compliance-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Canada local-law support
+
+For Canada matters request [Canada Counsel](canada-counsel.md) through the Managing Partner and use [canada-regulatory-compliance-checker](../skills/canada-regulatory-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Canada local-law support
+
+For Canada matters request [Canada Counsel](canada-counsel.md) through the Managing Partner and use [canada-data-protection-compliance-checker](../skills/canada-data-protection-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## UAE local-law support
+
+For UAE matters request [UAE Counsel](uae-counsel.md) through the Managing Partner and use [uae-regulatory-compliance-checker](../skills/uae-regulatory-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## UAE local-law support
+
+For UAE matters request [UAE Counsel](uae-counsel.md) through the Managing Partner and use [uae-data-protection-compliance-checker](../skills/uae-data-protection-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## New Zealand local-law support
+
+For New Zealand matters request [New Zealand Counsel](new-zealand-counsel.md) through the Managing Partner and use [new-zealand-regulatory-compliance-checker](../skills/new-zealand-regulatory-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## New Zealand local-law support
+
+For New Zealand matters request [New Zealand Counsel](new-zealand-counsel.md) through the Managing Partner and use [new-zealand-data-protection-compliance-checker](../skills/new-zealand-data-protection-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## South Africa local-law support
+
+For South Africa matters request [South Africa Counsel](south-africa-counsel.md) through the Managing Partner and use [south-africa-regulatory-compliance-checker](../skills/south-africa-regulatory-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## South Africa local-law support
+
+For South Africa matters request [South Africa Counsel](south-africa-counsel.md) through the Managing Partner and use [south-africa-data-protection-compliance-checker](../skills/south-africa-data-protection-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Ireland local-law support
+
+For Ireland matters request [Ireland Counsel](ireland-counsel.md) through the Managing Partner and use [ireland-regulatory-compliance-checker](../skills/ireland-regulatory-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Ireland local-law support
+
+For Ireland matters request [Ireland Counsel](ireland-counsel.md) through the Managing Partner and use [ireland-data-protection-compliance-checker](../skills/ireland-data-protection-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Indian government schemes
+
+Use [india-government-schemes-assessor](../skills/india-government-schemes-assessor/SKILL.md) for eligibility, applications and continuing conditions, with India Counsel. Request Public Law support through the Managing Partner for rejection or recovery challenges.
+
+## Russia local-law support
+
+For Russia matters request [Russia Counsel](russia-counsel.md) through the Managing Partner and use [russia-regulatory-compliance-checker](../skills/russia-regulatory-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## China local-law support
+
+For China matters request [China Counsel](china-counsel.md) through the Managing Partner and use [china-regulatory-compliance-checker](../skills/china-regulatory-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Brazil local-law support
+
+For Brazil matters request [Brazil Counsel](brazil-counsel.md) through the Managing Partner and use [brazil-regulatory-compliance-checker](../skills/brazil-regulatory-compliance-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.

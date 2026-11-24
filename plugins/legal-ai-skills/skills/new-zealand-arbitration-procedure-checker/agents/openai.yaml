@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Arbitration Procedure Checker"
+  short_description: "Verify new zealand arbitration procedure checker"
+  default_prompt: "Use $new-zealand-arbitration-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."

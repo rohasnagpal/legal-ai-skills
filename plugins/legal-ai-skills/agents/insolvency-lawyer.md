@@ -65,3 +65,39 @@ Verify regulations and timelines as amended for the relevant date. Escalate immi
 ## Singapore local-law support: Insolvency Applicability Checker
 
 For Singapore matters, request [Singapore Counsel](singapore-counsel.md) through the Managing Partner and use [singapore-insolvency-applicability-checker](../skills/singapore-insolvency-applicability-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Australian local-law support: Insolvency Applicability Checker
+
+For Australian matters, request [Australia Counsel](australia-counsel.md) through the Managing Partner and use [australia-insolvency-applicability-checker](../skills/australia-insolvency-applicability-checker/SKILL.md) for the local-law layer. Keep the practice work within this lawyer’s role and verify source access and current law.
+
+## Canada local-law support
+
+For Canada matters request [Canada Counsel](canada-counsel.md) through the Managing Partner and use [canada-insolvency-applicability-checker](../skills/canada-insolvency-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## UAE local-law support
+
+For UAE matters request [UAE Counsel](uae-counsel.md) through the Managing Partner and use [uae-insolvency-applicability-checker](../skills/uae-insolvency-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## New Zealand local-law support
+
+For New Zealand matters request [New Zealand Counsel](new-zealand-counsel.md) through the Managing Partner and use [new-zealand-insolvency-applicability-checker](../skills/new-zealand-insolvency-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## South Africa local-law support
+
+For South Africa matters request [South Africa Counsel](south-africa-counsel.md) through the Managing Partner and use [south-africa-insolvency-applicability-checker](../skills/south-africa-insolvency-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Ireland local-law support
+
+For Ireland matters request [Ireland Counsel](ireland-counsel.md) through the Managing Partner and use [ireland-insolvency-applicability-checker](../skills/ireland-insolvency-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Russia local-law support
+
+For Russia matters request [Russia Counsel](russia-counsel.md) through the Managing Partner and use [russia-insolvency-applicability-checker](../skills/russia-insolvency-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## China local-law support
+
+For China matters request [China Counsel](china-counsel.md) through the Managing Partner and use [china-insolvency-applicability-checker](../skills/china-insolvency-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Brazil local-law support
+
+For Brazil matters request [Brazil Counsel](brazil-counsel.md) through the Managing Partner and use [brazil-insolvency-applicability-checker](../skills/brazil-insolvency-applicability-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.

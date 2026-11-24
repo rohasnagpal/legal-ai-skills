@@ -1,0 +1,4 @@
+interface:
+  display_name: "Indian Government Schemes Assessor"
+  short_description: "Verify indian government schemes assessor"
+  default_prompt: "Use $india-government-schemes-assessor for this matter, identifying applicable law, missing evidence and verification status."

@@ -1,0 +1,41 @@
+version: 1
+jurisdiction: ireland
+agent: ireland-counsel
+skill_count: 18
+skills:
+  corporate:
+    - ireland-companies-compliance-checker
+  contracts:
+    - ireland-contract-law-reviewer
+  litigation:
+    - ireland-civil-procedure-checker
+  dispute_resolution:
+    - ireland-arbitration-procedure-checker
+  criminal:
+    - ireland-criminal-procedure-checker
+  family:
+    - ireland-family-law-applicability-checker
+  property:
+    - ireland-property-law-reviewer
+  insolvency:
+    - ireland-insolvency-applicability-checker
+  banking_finance:
+    - ireland-banking-finance-regulatory-checker
+  employment:
+    - ireland-employment-law-applicability-checker
+  ip:
+    - ireland-ip-protection-checker
+  compliance:
+    - ireland-regulatory-compliance-checker
+  privacy:
+    - ireland-data-protection-compliance-checker
+  consumer:
+    - ireland-consumer-remedies-checker
+  public_law:
+    - ireland-public-law-remedies-checker
+  investigations:
+    - ireland-investigation-evidence-checker
+  research:
+    - ireland-authority-validator
+  tax:
+    - ireland-tax-applicability-checker

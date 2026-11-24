@@ -1,0 +1,4 @@
+interface:
+  display_name: "Russian Data Protection Compliance Checker"
+  short_description: "Verify irish data protection compliance checker"
+  default_prompt: "Use $russia-data-protection-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

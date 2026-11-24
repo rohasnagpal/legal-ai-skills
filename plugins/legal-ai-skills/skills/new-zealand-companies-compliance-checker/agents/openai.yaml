@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Companies Compliance Checker"
+  short_description: "Verify new zealand companies compliance checker"
+  default_prompt: "Use $new-zealand-companies-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

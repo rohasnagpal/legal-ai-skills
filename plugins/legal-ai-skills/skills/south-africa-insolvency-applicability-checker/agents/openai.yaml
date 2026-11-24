@@ -1,0 +1,4 @@
+interface:
+  display_name: "South African Insolvency Applicability Checker"
+  short_description: "Verify south african insolvency applicability checker"
+  default_prompt: "Use $south-africa-insolvency-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

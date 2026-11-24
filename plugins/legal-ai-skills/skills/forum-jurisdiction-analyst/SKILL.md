@@ -55,7 +55,7 @@ Not blocking, ask once and proceed on a reasonable default without it: **which s
 
 ## Jurisdiction triage at intake
 
-When the Managing Partner needs a quick triage before Jurisdiction Counsel's intake assessment, produce only: the jurisdictions potentially involved, the facts pointing to each, the facts still needed to decide, and which counsel (India, US, UK or Singapore) should be asked. Do not apply any jurisdiction's rules at this stage. If no maintained counsel covers a jurisdiction, say so.
+When the Managing Partner needs a quick triage before Jurisdiction Counsel's intake assessment, produce only: the jurisdictions potentially involved, the facts pointing to each, the facts still needed to decide, and which counsel (India, US, UK, Singapore or Australia) should be asked. Do not apply any jurisdiction's rules at this stage. If no maintained counsel covers a jurisdiction, say so.
 
 ## Do not
 
@@ -68,3 +68,17 @@ Do not assume a procedural or remedy difference between forums exists without so
 Do not recommend a forum unless the analysis actually supports it.
 
 Do not omit an obviously plausible forum from the initial list.
+
+## Additional maintained jurisdiction routes
+
+- [Canada Counsel](../../agents/canada-counsel.md): local-law assessment across all specialist practice areas.
+- [UAE Counsel](../../agents/uae-counsel.md): local-law assessment across all specialist practice areas.
+- [New Zealand Counsel](../../agents/new-zealand-counsel.md): local-law assessment across all specialist practice areas.
+- [South Africa Counsel](../../agents/south-africa-counsel.md): local-law assessment across all specialist practice areas.
+- [Ireland Counsel](../../agents/ireland-counsel.md): local-law assessment across all specialist practice areas.
+
+- [Russia Counsel](../../agents/russia-counsel.md): local-law assessment across all specialist practice areas.
+
+- [China Counsel](../../agents/china-counsel.md): local-law assessment across all specialist practice areas.
+
+- [Brazil Counsel](../../agents/brazil-counsel.md): local-law assessment across all specialist practice areas.

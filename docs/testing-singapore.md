@@ -8,7 +8,7 @@ Singapore follows the same counsel/specialist architecture as India, US and UK. 
 
 > Hello Rohas
 
-Pass: 4 Jurisdiction Counsel including Singapore; 244 Legal Skills; 78 jurisdiction-specific skills (48 India, 6 US, 6 UK, 18 Singapore); 17 specialists and 20 workflows. Singapore websites are not added to the 14 connected-source count.
+Pass: 13 Jurisdiction Counsel including Singapore and Australia; 409 Legal Skills; 241 jurisdiction-specific skills (49 India, 6 US, 6 UK and 18 each for Singapore, Australia, Canada, UAE, New Zealand, South Africa, Ireland, Russia, China and Brazil); 17 specialists and 20 workflows. Singapore websites are not added to the 14 connected-source count.
 
 > What can Singapore Counsel do?
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Regulatory Compliance Checker"
+  short_description: "Verify uae regulatory compliance checker"
+  default_prompt: "Use $uae-regulatory-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Civil Procedure Checker"
+  short_description: "Verify canadian civil procedure checker"
+  default_prompt: "Use $canada-civil-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."

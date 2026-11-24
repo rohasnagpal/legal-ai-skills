@@ -1,0 +1,4 @@
+interface:
+  display_name: "South African Consumer Remedies Checker"
+  short_description: "Verify south african consumer remedies checker"
+  default_prompt: "Use $south-africa-consumer-remedies-checker for this matter, identifying applicable law, missing evidence and verification status."

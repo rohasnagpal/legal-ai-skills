@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Property Law Reviewer"
+  short_description: "Verify irish property law reviewer"
+  default_prompt: "Use $china-property-law-reviewer for this matter, identifying applicable law, missing evidence and verification status."

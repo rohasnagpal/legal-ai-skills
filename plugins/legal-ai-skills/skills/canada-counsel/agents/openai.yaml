@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canada Counsel"
+  short_description: "Verify canada counsel"
+  default_prompt: "Use $canada-counsel for this matter, identifying applicable law, missing evidence and verification status."

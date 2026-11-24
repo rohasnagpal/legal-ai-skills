@@ -8,7 +8,11 @@ Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and 
 ---
 <img width="949" height="799" alt="image" src="https://github.com/user-attachments/assets/1ab803f3-7578-4e67-85f2-a8dead314202" />
 
-**New in [4.3.0](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/v4.3.0):** Singapore joins India, the US and the UK as the fourth Jurisdiction Counsel, with 18 local skills across all 17 specialist practice areas. [Test Singapore coverage](docs/testing-singapore.md).
+**New in [4.3.0](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/v4.3.0):** 🇸🇬 Singapore joins 🇮🇳 India, the 🇺🇸 US and the 🇬🇧 UK as the fourth Jurisdiction Counsel, with 18 local skills across all 17 specialist practice areas. [Test 🇸🇬 Singapore coverage](docs/testing-singapore.md).
+
+**🇦🇺 Australia coverage:** 🇦🇺 Australia Counsel supplies 18 local skills across all 17 specialist practice areas, with Commonwealth, state and territory applicability checks. [Test 🇦🇺 Australia coverage](docs/testing-australia.md).
+
+**Added in this working tree:** Canada, UAE, New Zealand, South Africa, Ireland, Russia, China and Brazil Counsel; Indian government schemes; legal translation; multilingual interaction; and activity/decision records.
 
 ## Here's What You Get
 
@@ -16,17 +20,17 @@ Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and 
 
 - **17 Specialist Lawyers:** Handle matters across practice areas such as corporate, criminal defence, contracts, family law, real estate, tax and litigation.
 
-- **4 Jurisdiction Counsel:** Identify and verify applicable laws, legal authorities and procedures in India, the US, the UK and Singapore.
+- **13 Jurisdiction Counsel:** Identify and verify applicable laws, legal authorities and procedures in 🇮🇳 India, the 🇺🇸 US, the 🇬🇧 UK, 🇸🇬 Singapore, 🇦🇺 Australia, 🇨🇦 Canada, 🇦🇪 UAE, 🇳🇿 New Zealand, 🇿🇦 South Africa 🇮🇪 Ireland, 🇷🇺 Russia, 🇨🇳 China and 🇧🇷 Brazil.
 
-- **244 Legal Skills:** Reusable capabilities such as contract review, legal research, due diligence, evidence analysis and legal drafting, including jurisdiction-specific skills for RERA and Section 138 NI Act.
+- **409 Legal Skills:** Reusable capabilities such as contract review, legal research, due diligence, evidence analysis and legal drafting, including jurisdiction-specific skills for RERA and Section 138 NI Act.
 
 - **20 Workflows:** Step-by-step processes for matters such as M&A due diligence, divorce proceedings, contract negotiation and litigation preparation.
 
 - **14 Official Legal Research Sources and Connectors:** Provide access to legislation, regulations, judgments, court records, official notices, company registries and sanctions lists through official and authoritative legal sources.
 
-- **Built-in Legal Tools:** Exact deadline and interest calculators, and private sanctions screening against the US, UK and UN lists, all running on your own machine.
+- **Built-in Legal Tools:** Exact deadline and interest calculators, and private sanctions screening against the 🇺🇸 US, 🇬🇧 UK and UN lists, all running on your own machine.
 
-Built in India 🇮🇳 for the world by [Rohas Nagpal](https://rohasnagpal.com/).
+Built in 🇮🇳 India for the world by [Rohas Nagpal](https://rohasnagpal.com/).
 
 ---
 
@@ -68,10 +72,19 @@ Simple questions skip the team: the Managing Partner uses the one relevant skill
 AI Managing Partner
 │
 ├── Jurisdiction Counsel
-│   ├── India Counsel
-│   ├── US Counsel
-│   ├── UK Counsel
-│   └── Singapore Counsel
+│   ├── 🇮🇳 India Counsel
+│   ├── 🇺🇸 US Counsel
+│   ├── 🇬🇧 UK Counsel
+│   ├── 🇸🇬 Singapore Counsel
+│   ├── 🇦🇺 Australia Counsel
+│   ├── 🇨🇦 Canada Counsel
+│   ├── 🇦🇪 UAE Counsel
+│   ├── 🇳🇿 New Zealand Counsel
+│   ├── 🇿🇦 South Africa Counsel
+│   ├── 🇮🇪 Ireland Counsel
+│   ├── 🇷🇺 Russia Counsel
+│   ├── 🇨🇳 China Counsel
+│   └── 🇧🇷 Brazil Counsel
 │
 ├── Specialist Lawyers
 │   ├── Corporate Lawyer
@@ -230,24 +243,24 @@ Each workflow names its Matter Owner, supporting lawyers, branches, review check
 
 | Source | Coverage | Access |
 |---|---|---|
-| CourtListener | US case law and court records | Free account |
-| GovInfo | US federal statutes, regulations and records | Free API key recommended |
-| eCFR (Code of Federal Regulations) | US federal regulations, current or as at a date | No account |
-| Federal Register | US rules and notices | No account |
-| Regulations.gov | US rulemaking dockets | Free API key |
-| legislation.gov.uk | UK legislation | No account |
-| Find Case Law (The National Archives) | UK judgments | No account |
-| The Gazette | UK insolvency, company and probate notices | No account; rate-limited |
-| SEC EDGAR | US company filings | No account |
+| CourtListener | 🇺🇸 US case law and court records | Free account |
+| GovInfo | 🇺🇸 US federal statutes, regulations and records | Free API key recommended |
+| eCFR (Code of Federal Regulations) | 🇺🇸 US federal regulations, current or as at a date | No account |
+| Federal Register | 🇺🇸 US rules and notices | No account |
+| Regulations.gov | 🇺🇸 US rulemaking dockets | Free API key |
+| legislation.gov.uk | 🇬🇧 UK legislation | No account |
+| Find Case Law (The National Archives) | 🇬🇧 UK judgments | No account |
+| The Gazette | 🇬🇧 UK insolvency, company and probate notices | No account; rate-limited |
+| SEC EDGAR | 🇺🇸 US company filings | No account |
 | GLEIF | Global legal entity identifiers | No account |
-| UK Companies House | UK company records | Free key may be needed |
-| US OFAC sanctions lists (SDN and consolidated) | US sanctions designations and aliases | No account; screened locally |
-| UK Sanctions List | UK sanctions designations and aliases | No account; screened locally |
+| 🇬🇧 UK Companies House | 🇬🇧 UK company records | Free key may be needed |
+| 🇺🇸 US OFAC sanctions lists (SDN and consolidated) | 🇺🇸 US sanctions designations and aliases | No account; screened locally |
+| 🇬🇧 UK Sanctions List | 🇬🇧 UK sanctions designations and aliases | No account; screened locally |
 | UN Security Council Consolidated List | UN sanctions designations and aliases | No account; screened locally |
 
-India Counsel routes Indian research through official sources such as India Code, eGazette, the Supreme Court, High Courts, tribunals and regulators where accessible. There is no unrestricted eCourts access, paid database or commercial citator. When a source is unavailable, the firm says what it could not check.
+🇮🇳 India Counsel routes Indian research through official sources such as 🇮🇳 India Code, eGazette, the Supreme Court, High Courts, tribunals and regulators where accessible. There is no unrestricted eCourts access, paid database or commercial citator. When a source is unavailable, the firm says what it could not check.
 
-**Sanctions screening:** the firm downloads the official US, UK and UN sanctions lists, keeps them on your machine for 24 hours, and screens names there with fuzzy matching across aliases, so the names you screen are never sent to anyone. Results are potential matches for review, not clearance, and EU, Indian and other national lists are not included. See the [sanctions screening guide](plugins/legal-ai-skills/integrations/sanctions-screening.md).
+**Sanctions screening:** the firm downloads the official 🇺🇸 US, 🇬🇧 UK and UN sanctions lists, keeps them on your machine for 24 hours, and screens names there with fuzzy matching across aliases, so the names you screen are never sent to anyone. Results are potential matches for review, not clearance, and EU, Indian and other national lists are not included. See the [sanctions screening guide](plugins/legal-ai-skills/integrations/sanctions-screening.md).
 
 **Legal calculators:** a local, offline calculator ([guide](plugins/legal-ai-skills/integrations/legal-calculators.md)) computes deadlines (days, working days, months or years, with supplied holidays), periods between dates, and simple or compound interest, exactly and with the working shown. It applies only the rules it is given, so statutory periods and rates still come from Jurisdiction Counsel.
 
@@ -257,7 +270,7 @@ The firm also includes a local document-production adapter for DOCX and PDF crea
 
 ## See It in Action
 
-Start with the [two-minute guide](docs/two-minute-start.md), then see fictional demonstrations for an [Indian divorce](examples/india-divorce.md), a [RERA complaint](examples/rera-complaint.md), [contract negotiation](examples/contract-review-and-negotiation.md), [M&A due diligence](examples/m-and-a-due-diligence.md), an [Indian commercial dispute](examples/india-commercial-dispute.md), [US privacy applicability](examples/us-privacy-applicability.md) and a [UK employment issue](examples/uk-employment-issue.md).
+Start with the [two-minute guide](docs/two-minute-start.md), then see fictional demonstrations for an [Indian divorce](examples/india-divorce.md), a [RERA complaint](examples/rera-complaint.md), [contract negotiation](examples/contract-review-and-negotiation.md), [M&A due diligence](examples/m-and-a-due-diligence.md), an [Indian commercial dispute](examples/india-commercial-dispute.md), [🇺🇸 US privacy applicability](examples/us-privacy-applicability.md) and a [🇬🇧 UK employment issue](examples/uk-employment-issue.md).
 
 ---
 
@@ -265,13 +278,13 @@ Start with the [two-minute guide](docs/two-minute-start.md), then see fictional 
 
 1. Two founders are splitting equity 60/40. Draft a founders' agreement with four-year vesting, a one-year cliff and IP assignment to the company.
 
-2. A UK employer wants to dismiss a remote worker after a failed performance review. What must be established before we can give advice?
+2. A 🇬🇧 UK employer wants to dismiss a remote worker after a failed performance review. What must be established before we can give advice?
 
-3. A customer bought a defective laptop online and the seller refuses to replace it. Can they file a consumer complaint in India, and what compensation can they claim?
+3. A customer bought a defective laptop online and the seller refuses to replace it. Can they file a consumer complaint in 🇮🇳 India, and what compensation can they claim?
 
-4. An employee has reported that her manager is harassing her. As the company, what should we do under India's POSH Act, step by step?
+4. An employee has reported that her manager is harassing her. As the company, what should we do under 🇮🇳 India's POSH Act, step by step?
 
-5. We want to launch an online marketplace for customers in California, Texas and New York. Which US state privacy laws might apply, and what facts do we need to confirm?
+5. We want to launch an online marketplace for customers in California, Texas and New York. Which 🇺🇸 US state privacy laws might apply, and what facts do we need to confirm?
 
 6. Draft a mutual NDA between two Indian companies exploring a joint venture, with a two-year confidentiality period and arbitration in Mumbai.
 
@@ -297,7 +310,7 @@ Start with the [two-minute guide](docs/two-minute-start.md), then see fictional 
 
 Each skill is listed under the lawyer who owns it. Many are shared: any lawyer can use any skill, and the [skill registry](plugins/legal-ai-skills/skill-registry.yaml) records the owner, shared users and jurisdiction of every skill. Jurisdiction-specific skills are marked 🇮🇳, 🇺🇸 or 🇬🇧.
 
-[Managing Partner and firm operations](#managing-partner-and-firm-operations) · [Corporate Lawyer](#corporate-lawyer) · [Contracts Lawyer](#contracts-lawyer) · [Litigation Lawyer](#litigation-lawyer) · [Dispute Resolution Lawyer](#dispute-resolution-lawyer) · [Criminal Defence Lawyer](#criminal-defence-lawyer) · [Family Lawyer](#family-lawyer) · [Real Estate Lawyer](#real-estate-lawyer) · [Tax Lawyer](#tax-lawyer) · [Insolvency Lawyer](#insolvency-lawyer) · [Banking and Finance Lawyer](#banking-and-finance-lawyer) · [Employment Lawyer](#employment-lawyer) · [IP Lawyer](#ip-lawyer) · [Compliance Lawyer](#compliance-lawyer) · [Consumer Protection Lawyer](#consumer-protection-lawyer) · [Public Law and Regulatory Lawyer](#public-law-and-regulatory-lawyer) · [Investigations Lawyer](#investigations-lawyer) · [Legal Research Lawyer](#legal-research-lawyer) · [India Counsel](#india-counsel) · [US Counsel](#us-counsel) · [UK Counsel](#uk-counsel) · [Singapore Counsel](#singapore-counsel)
+[Managing Partner and firm operations](#managing-partner-and-firm-operations) · [Corporate Lawyer](#corporate-lawyer) · [Contracts Lawyer](#contracts-lawyer) · [Litigation Lawyer](#litigation-lawyer) · [Dispute Resolution Lawyer](#dispute-resolution-lawyer) · [Criminal Defence Lawyer](#criminal-defence-lawyer) · [Family Lawyer](#family-lawyer) · [Real Estate Lawyer](#real-estate-lawyer) · [Tax Lawyer](#tax-lawyer) · [Insolvency Lawyer](#insolvency-lawyer) · [Banking and Finance Lawyer](#banking-and-finance-lawyer) · [Employment Lawyer](#employment-lawyer) · [IP Lawyer](#ip-lawyer) · [Compliance Lawyer](#compliance-lawyer) · [Consumer Protection Lawyer](#consumer-protection-lawyer) · [Public Law and Regulatory Lawyer](#public-law-and-regulatory-lawyer) · [Investigations Lawyer](#investigations-lawyer) · [Legal Research Lawyer](#legal-research-lawyer) · [🇮🇳 India Counsel](#india-counsel) · [🇺🇸 US Counsel](#us-counsel) · [🇬🇧 UK Counsel](#uk-counsel) · [🇸🇬 Singapore Counsel](#singapore-counsel) · [🇦🇺 Australia Counsel](#australia-counsel) · [🇨🇦 Canada Counsel](#canada-counsel) · [🇦🇪 UAE Counsel](#uae-counsel) · [🇳🇿 New Zealand Counsel](#new-zealand-counsel) · [🇿🇦 South Africa Counsel](#south-africa-counsel) · [🇮🇪 Ireland Counsel](#ireland-counsel) · [🇷🇺 Russia Counsel](#russia-counsel) · [🇨🇳 China Counsel](#china-counsel) · [🇧🇷 Brazil Counsel](#brazil-counsel)
 
 ### Managing Partner and firm operations
 
@@ -334,13 +347,13 @@ Instructions: [corporate-lawyer.md](plugins/legal-ai-skills/agents/corporate-law
 - **[deal-structure-analyst](plugins/legal-ai-skills/skills/deal-structure-analyst/SKILL.md)**: compares alternative transaction structures and their legal consequences before drafting
 - **[founders-agreement-drafter](plugins/legal-ai-skills/skills/founders-agreement-drafter/SKILL.md)**: founder agreements: vesting, roles, exit, IP
 - **[investment-and-shareholder-agreement-reviewer](plugins/legal-ai-skills/skills/investment-and-shareholder-agreement-reviewer/SKILL.md)**: term sheets, SHAs, SSAs, JV and constitutional rights packages, from any party's side
-- **[listing-obligations-checker](plugins/legal-ai-skills/skills/listing-obligations-checker/SKILL.md)** 🇮🇳: Check India listed-entity disclosure obligations
+- **[listing-obligations-checker](plugins/legal-ai-skills/skills/listing-obligations-checker/SKILL.md)** 🇮🇳: Check 🇮🇳 India listed-entity disclosure obligations
 - **[m-and-a-diligence-checker](plugins/legal-ai-skills/skills/m-and-a-diligence-checker/SKILL.md)**: diligence checklist and issue log for a transaction
 - **[minutes-drafter](plugins/legal-ai-skills/skills/minutes-drafter/SKILL.md)**: minutes that record decisions and dissent properly
-- **[related-party-analyst](plugins/legal-ai-skills/skills/related-party-analyst/SKILL.md)** 🇮🇳: Assess India related-party status and approvals
-- **[secretarial-compliance-checker](plugins/legal-ai-skills/skills/secretarial-compliance-checker/SKILL.md)** 🇮🇳: Check India company-law filings and governance
-- **[securities-compliance-checker](plugins/legal-ai-skills/skills/securities-compliance-checker/SKILL.md)** 🇮🇳: Map India securities duties and filings
-- **[startup-compliance-checker](plugins/legal-ai-skills/skills/startup-compliance-checker/SKILL.md)** 🇮🇳: Check India startup compliance by stage and structure
+- **[related-party-analyst](plugins/legal-ai-skills/skills/related-party-analyst/SKILL.md)** 🇮🇳: Assess 🇮🇳 India related-party status and approvals
+- **[secretarial-compliance-checker](plugins/legal-ai-skills/skills/secretarial-compliance-checker/SKILL.md)** 🇮🇳: Check 🇮🇳 India company-law filings and governance
+- **[securities-compliance-checker](plugins/legal-ai-skills/skills/securities-compliance-checker/SKILL.md)** 🇮🇳: Map 🇮🇳 India securities duties and filings
+- **[startup-compliance-checker](plugins/legal-ai-skills/skills/startup-compliance-checker/SKILL.md)** 🇮🇳: Check 🇮🇳 India startup compliance by stage and structure
 - **[transaction-document-checker](plugins/legal-ai-skills/skills/transaction-document-checker/SKILL.md)**: checks a closing set against the term sheet and conditions-precedent checklist
 - **[uk-companies-act-compliance-checker](plugins/legal-ai-skills/skills/uk-companies-act-compliance-checker/SKILL.md)** 🇬🇧: UK: Companies Act Compliance Checker
 - **[us-sec-reporting-checker](plugins/legal-ai-skills/skills/us-sec-reporting-checker/SKILL.md)** 🇺🇸: US: SEC Reporting Checker
@@ -398,7 +411,7 @@ Instructions: [dispute-resolution-lawyer.md](plugins/legal-ai-skills/agents/disp
 - **[arbitral-award-analyst](plugins/legal-ai-skills/skills/arbitral-award-analyst/SKILL.md)**: reads an award for findings, reasoning and enforceability
 - **[arbitral-award-enforcement-advisor](plugins/legal-ai-skills/skills/arbitral-award-enforcement-advisor/SKILL.md)** 🇮🇳: India: Arbitral Award Enforcement Advisor
 - **[arbitration-clause-reviewer](plugins/legal-ai-skills/skills/arbitration-clause-reviewer/SKILL.md)**: checks a clause for seat, venue, rules, appointment and pathology
-- **[arbitration-interim-relief-drafter](plugins/legal-ai-skills/skills/arbitration-interim-relief-drafter/SKILL.md)**: chooses the route — emergency arbitrator, tribunal, or court **(India Sections 9/17)** — and drafts the application
+- **[arbitration-interim-relief-drafter](plugins/legal-ai-skills/skills/arbitration-interim-relief-drafter/SKILL.md)**: chooses the route — emergency arbitrator, tribunal, or court **(🇮🇳 India Sections 9/17)** — and drafts the application
 - **[arbitration-notice-drafter](plugins/legal-ai-skills/skills/arbitration-notice-drafter/SKILL.md)**: notice invoking arbitration, with the disputes properly framed
 - **[arbitration-pleading-drafter](plugins/legal-ai-skills/skills/arbitration-pleading-drafter/SKILL.md)**: statement of claim, statement of defence, counterclaim and reply to counterclaim
 - **[arbitrator-appointment-advisor](plugins/legal-ai-skills/skills/arbitrator-appointment-advisor/SKILL.md)**: appointment mechanics, eligibility and independence disclosure
@@ -408,7 +421,7 @@ Instructions: [dispute-resolution-lawyer.md](plugins/legal-ai-skills/agents/disp
 - **[litigation-viability-assessor](plugins/legal-ai-skills/skills/litigation-viability-assessor/SKILL.md)**: source-backed “should we sue, defend, settle or investigate?” assessment covering merits, evidence, procedure, remedies, recovery and enforcement
 - **[mediation-opening-drafter](plugins/legal-ai-skills/skills/mediation-opening-drafter/SKILL.md)**: opening statement for a mediation
 - **[party-interest-analyst](plugins/legal-ai-skills/skills/party-interest-analyst/SKILL.md)**: separates stated positions from underlying interests on both sides
-- **[pre-institution-mediation-advisor](plugins/legal-ai-skills/skills/pre-institution-mediation-advisor/SKILL.md)** 🇮🇳: Assess India pre-suit mediation requirements
+- **[pre-institution-mediation-advisor](plugins/legal-ai-skills/skills/pre-institution-mediation-advisor/SKILL.md)** 🇮🇳: Assess 🇮🇳 India pre-suit mediation requirements
 - **[procedural-order-drafter](plugins/legal-ai-skills/skills/procedural-order-drafter/SKILL.md)**: procedural orders and timetables for a tribunal
 - **[settlement-documenter](plugins/legal-ai-skills/skills/settlement-documenter/SKILL.md)**: records a session outcome, or drafts complete binding settlement terms, once agreement is reached
 - **[settlement-evaluator](plugins/legal-ai-skills/skills/settlement-evaluator/SKILL.md)**: tests a settlement offer against the litigation alternative
@@ -420,15 +433,15 @@ Instructions: [criminal-defence-lawyer.md](plugins/legal-ai-skills/agents/crimin
 
 - **[arrest-rights-advisor](plugins/legal-ai-skills/skills/arrest-rights-advisor/SKILL.md)**: Rights and urgent steps on arrest or questioning
 - **[bail-advisor-and-drafter](plugins/legal-ai-skills/skills/bail-advisor-and-drafter/SKILL.md)** 🇮🇳: Assess anticipatory or post-arrest bail strategy and draft the application
-- **[chargesheet-analyst](plugins/legal-ai-skills/skills/chargesheet-analyst/SKILL.md)** 🇮🇳: Analyse India police reports and prosecution gaps
+- **[chargesheet-analyst](plugins/legal-ai-skills/skills/chargesheet-analyst/SKILL.md)** 🇮🇳: Analyse 🇮🇳 India police reports and prosecution gaps
 - **[criminal-appeal-planner](plugins/legal-ai-skills/skills/criminal-appeal-planner/SKILL.md)**: Plan a criminal appeal or revision
 - **[criminal-complaint-analyst](plugins/legal-ai-skills/skills/criminal-complaint-analyst/SKILL.md)**: Analyse an FIR or criminal complaint for the defence
 - **[criminal-evidence-admissibility-analyst](plugins/legal-ai-skills/skills/criminal-evidence-admissibility-analyst/SKILL.md)**: Admissibility and weight of criminal evidence
 - **[cross-examination-planner](plugins/legal-ai-skills/skills/cross-examination-planner/SKILL.md)**: ethical issue-led questioning, contradictions and admissible impeachment
 - **[defence-strategy-planner](plugins/legal-ai-skills/skills/defence-strategy-planner/SKILL.md)**: defence theory, lines of attack and evidence needed
-- **[discharge-application-drafter](plugins/legal-ai-skills/skills/discharge-application-drafter/SKILL.md)** 🇮🇳: Draft a discharge application (India)
+- **[discharge-application-drafter](plugins/legal-ai-skills/skills/discharge-application-drafter/SKILL.md)** 🇮🇳: Draft a discharge application (🇮🇳 India)
 - **[offence-ingredients-analyst](plugins/legal-ai-skills/skills/offence-ingredients-analyst/SKILL.md)**: Element-by-element analysis of an offence
-- **[quashing-petition-drafter](plugins/legal-ai-skills/skills/quashing-petition-drafter/SKILL.md)** 🇮🇳: Draft India criminal quashing petitions
+- **[quashing-petition-drafter](plugins/legal-ai-skills/skills/quashing-petition-drafter/SKILL.md)** 🇮🇳: Draft 🇮🇳 India criminal quashing petitions
 - **[sentencing-analyst](plugins/legal-ai-skills/skills/sentencing-analyst/SKILL.md)**: mitigating and aggravating factors and reasoned sentencing scenarios
 - **[trial-readiness-checker](plugins/legal-ai-skills/skills/trial-readiness-checker/SKILL.md)**: Defence readiness checklist for trial
 
@@ -441,11 +454,11 @@ Instructions: [family-lawyer.md](plugins/legal-ai-skills/agents/family-lawyer.md
 - **[domestic-violence-remedies-advisor](plugins/legal-ai-skills/skills/domestic-violence-remedies-advisor/SKILL.md)**: Safety steps and protection orders for domestic abuse
 - **[family-court-procedure-checker](plugins/legal-ai-skills/skills/family-court-procedure-checker/SKILL.md)**: Forum, filing and steps in a family case
 - **[maintenance-calculator](plugins/legal-ai-skills/skills/maintenance-calculator/SKILL.md)**: works through a maintenance claim on supplied income and needs
-- **[matrimonial-petition-drafter](plugins/legal-ai-skills/skills/matrimonial-petition-drafter/SKILL.md)** 🇮🇳: Draft India matrimonial petitions and reliefs
+- **[matrimonial-petition-drafter](plugins/legal-ai-skills/skills/matrimonial-petition-drafter/SKILL.md)** 🇮🇳: Draft 🇮🇳 India matrimonial petitions and reliefs
 - **[matrimonial-property-analyst](plugins/legal-ai-skills/skills/matrimonial-property-analyst/SKILL.md)**: Map and divide property on marriage breakdown
 - **[matter-planner](plugins/legal-ai-skills/skills/matter-planner/SKILL.md)**: Plan a matter, owners and delegation
 - **[settlement-deed-drafter](plugins/legal-ai-skills/skills/settlement-deed-drafter/SKILL.md)**: family and separation settlement deeds, with child welfare and non-waivable rights preserved
-- **[succession-advisor](plugins/legal-ai-skills/skills/succession-advisor/SKILL.md)** 🇮🇳: Map India inheritance rights and next steps
+- **[succession-advisor](plugins/legal-ai-skills/skills/succession-advisor/SKILL.md)** 🇮🇳: Map 🇮🇳 India inheritance rights and next steps
 - **[will-drafter](plugins/legal-ai-skills/skills/will-drafter/SKILL.md)**: wills, with execution and attestation requirements set out
 
 ### Real Estate Lawyer
@@ -458,8 +471,8 @@ Instructions: [real-estate-lawyer.md](plugins/legal-ai-skills/agents/real-estate
 - **[encumbrance-analyst](plugins/legal-ai-skills/skills/encumbrance-analyst/SKILL.md)** 🇮🇳: Read encumbrance certificates for charges and gaps
 - **[land-use-zoning-advisor](plugins/legal-ai-skills/skills/land-use-zoning-advisor/SKILL.md)**: Permitted land use, zoning and approvals
 - **[lease-reviewer](plugins/legal-ai-skills/skills/lease-reviewer/SKILL.md)**: Review leases, tenancies and licences
-- **[rera-complaint-drafter](plugins/legal-ai-skills/skills/rera-complaint-drafter/SKILL.md)** 🇮🇳: Draft an allottee's RERA complaint (India)
-- **[rera-compliance-checker](plugins/legal-ai-skills/skills/rera-compliance-checker/SKILL.md)** 🇮🇳: Check India RERA registration and disclosure obligations
+- **[rera-complaint-drafter](plugins/legal-ai-skills/skills/rera-complaint-drafter/SKILL.md)** 🇮🇳: Draft an allottee's RERA complaint (🇮🇳 India)
+- **[rera-compliance-checker](plugins/legal-ai-skills/skills/rera-compliance-checker/SKILL.md)** 🇮🇳: Check 🇮🇳 India RERA registration and disclosure obligations
 - **[sale-deed-drafter](plugins/legal-ai-skills/skills/sale-deed-drafter/SKILL.md)**: sale deeds and conveyances
 - **[stamp-duty-analyst](plugins/legal-ai-skills/skills/stamp-duty-analyst/SKILL.md)** 🇮🇳: Calculate stamp duty and registration cost from supplied rates
 - **[tenancy-dispute-analyst](plugins/legal-ai-skills/skills/tenancy-dispute-analyst/SKILL.md)**: Landlord-tenant disputes and eviction strategy
@@ -471,7 +484,7 @@ Instructions: [tax-lawyer.md](plugins/legal-ai-skills/agents/tax-lawyer.md)
 
 - **[fema-analyst](plugins/legal-ai-skills/skills/fema-analyst/SKILL.md)** 🇮🇳: Work out the FEMA position on a cross-border transaction
 - **[gst-compliance-analyst](plugins/legal-ai-skills/skills/gst-compliance-analyst/SKILL.md)** 🇮🇳: Check GST treatment and compliance obligations
-- **[input-tax-credit-dispute-analyst](plugins/legal-ai-skills/skills/input-tax-credit-dispute-analyst/SKILL.md)** 🇮🇳: GST input tax credit disputes (India)
+- **[input-tax-credit-dispute-analyst](plugins/legal-ai-skills/skills/input-tax-credit-dispute-analyst/SKILL.md)** 🇮🇳: GST input tax credit disputes (🇮🇳 India)
 - **[tax-appeal-grounds-drafter](plugins/legal-ai-skills/skills/tax-appeal-grounds-drafter/SKILL.md)** 🇮🇳: Draft grounds of appeal against a tax order
 - **[tax-assessment-reply-drafter](plugins/legal-ai-skills/skills/tax-assessment-reply-drafter/SKILL.md)** 🇮🇳: Reply to tax assessment and scrutiny notices
 - **[tax-litigation-strategy-planner](plugins/legal-ai-skills/skills/tax-litigation-strategy-planner/SKILL.md)**: Choose and sequence the route in a tax dispute
@@ -483,18 +496,18 @@ Instructions: [tax-lawyer.md](plugins/legal-ai-skills/agents/tax-lawyer.md)
 
 Instructions: [insolvency-lawyer.md](plugins/legal-ai-skills/agents/insolvency-lawyer.md)
 
-- **[avoidance-transaction-analyst](plugins/legal-ai-skills/skills/avoidance-transaction-analyst/SKILL.md)** 🇮🇳: Analyse India insolvency avoidance exposure
-- **[cirp-timeline-checker](plugins/legal-ai-skills/skills/cirp-timeline-checker/SKILL.md)** 🇮🇳: Build current India CIRP deadlines and owners
-- **[claim-verification-analyst](plugins/legal-ai-skills/skills/claim-verification-analyst/SKILL.md)** 🇮🇳: Verify and classify India insolvency claims
-- **[coc-decision-analyst](plugins/legal-ai-skills/skills/coc-decision-analyst/SKILL.md)** 🇮🇳: Committee of creditors decisions (India)
+- **[avoidance-transaction-analyst](plugins/legal-ai-skills/skills/avoidance-transaction-analyst/SKILL.md)** 🇮🇳: Analyse 🇮🇳 India insolvency avoidance exposure
+- **[cirp-timeline-checker](plugins/legal-ai-skills/skills/cirp-timeline-checker/SKILL.md)** 🇮🇳: Build current 🇮🇳 India CIRP deadlines and owners
+- **[claim-verification-analyst](plugins/legal-ai-skills/skills/claim-verification-analyst/SKILL.md)** 🇮🇳: Verify and classify 🇮🇳 India insolvency claims
+- **[coc-decision-analyst](plugins/legal-ai-skills/skills/coc-decision-analyst/SKILL.md)** 🇮🇳: Committee of creditors decisions (🇮🇳 India)
 - **[creditor-claim-preparer](plugins/legal-ai-skills/skills/creditor-claim-preparer/SKILL.md)**: Prepare a proof of claim in insolvency
 - **[insolvency-appeal-drafter](plugins/legal-ai-skills/skills/insolvency-appeal-drafter/SKILL.md)**: Appeal an insolvency order
 - **[insolvency-options-assessor](plugins/legal-ai-skills/skills/insolvency-options-assessor/SKILL.md)**: Choose between insolvency and alternatives
-- **[liquidation-documenter](plugins/legal-ai-skills/skills/liquidation-documenter/SKILL.md)** 🇮🇳: Build compliant India liquidation records
+- **[liquidation-documenter](plugins/legal-ai-skills/skills/liquidation-documenter/SKILL.md)** 🇮🇳: Build compliant 🇮🇳 India liquidation records
 - **[moratorium-impact-analyst](plugins/legal-ai-skills/skills/moratorium-impact-analyst/SKILL.md)**: What an insolvency moratorium stays
-- **[operational-creditor-application-drafter](plugins/legal-ai-skills/skills/operational-creditor-application-drafter/SKILL.md)** 🇮🇳: Draft India operational-creditor IBC filings
-- **[personal-guarantor-insolvency-analyst](plugins/legal-ai-skills/skills/personal-guarantor-insolvency-analyst/SKILL.md)** 🇮🇳: Personal guarantor insolvency (India)
-- **[resolution-plan-reviewer](plugins/legal-ai-skills/skills/resolution-plan-reviewer/SKILL.md)** 🇮🇳: Review India resolution plans and outcomes
+- **[operational-creditor-application-drafter](plugins/legal-ai-skills/skills/operational-creditor-application-drafter/SKILL.md)** 🇮🇳: Draft 🇮🇳 India operational-creditor IBC filings
+- **[personal-guarantor-insolvency-analyst](plugins/legal-ai-skills/skills/personal-guarantor-insolvency-analyst/SKILL.md)** 🇮🇳: Personal guarantor insolvency (🇮🇳 India)
+- **[resolution-plan-reviewer](plugins/legal-ai-skills/skills/resolution-plan-reviewer/SKILL.md)** 🇮🇳: Review 🇮🇳 India resolution plans and outcomes
 - **[restructuring-documenter](plugins/legal-ai-skills/skills/restructuring-documenter/SKILL.md)**: documentation trail for a corporate restructuring
 - **[uk-insolvency-applicability-checker](plugins/legal-ai-skills/skills/uk-insolvency-applicability-checker/SKILL.md)** 🇬🇧: UK: Insolvency Applicability Checker
 
@@ -511,7 +524,7 @@ Instructions: [banking-finance-lawyer.md](plugins/legal-ai-skills/agents/banking
 - **[loan-agreement-reviewer](plugins/legal-ai-skills/skills/loan-agreement-reviewer/SKILL.md)** 🇮🇳: Review Indian loan and facility agreements
 - **[loan-default-analyst](plugins/legal-ai-skills/skills/loan-default-analyst/SKILL.md)**: Events of default and acceleration
 - **[recovery-strategy-planner](plugins/legal-ai-skills/skills/recovery-strategy-planner/SKILL.md)**: recovery routes for a defaulted exposure, with sequence and cost
-- **[sarfaesi-advisor](plugins/legal-ai-skills/skills/sarfaesi-advisor/SKILL.md)** 🇮🇳: Plan compliant India secured-asset enforcement
+- **[sarfaesi-advisor](plugins/legal-ai-skills/skills/sarfaesi-advisor/SKILL.md)** 🇮🇳: Plan compliant 🇮🇳 India secured-asset enforcement
 - **[secured-creditor-priority-analyst](plugins/legal-ai-skills/skills/secured-creditor-priority-analyst/SKILL.md)**: Ranking of creditors over assets
 - **[security-documenter](plugins/legal-ai-skills/skills/security-documenter/SKILL.md)**: security creation, perfection and registration documentation
 
@@ -523,8 +536,8 @@ Instructions: [employment-lawyer.md](plugins/legal-ai-skills/agents/employment-l
 - **[employment-contract-drafter](plugins/legal-ai-skills/skills/employment-contract-drafter/SKILL.md)**: employment contracts with restraint, IP and termination terms
 - **[esop-scheme-drafter](plugins/legal-ai-skills/skills/esop-scheme-drafter/SKILL.md)**: ESOP scheme documents and grant letters
 - **[handbook-drafter](plugins/legal-ai-skills/skills/handbook-drafter/SKILL.md)**: employee handbooks and HR policies
-- **[labour-compliance-checker](plugins/legal-ai-skills/skills/labour-compliance-checker/SKILL.md)** 🇮🇳: Check India labour-law duties and evidence
-- **[posh-compliance-advisor](plugins/legal-ai-skills/skills/posh-compliance-advisor/SKILL.md)** 🇮🇳: Check India POSH governance and procedure
+- **[labour-compliance-checker](plugins/legal-ai-skills/skills/labour-compliance-checker/SKILL.md)** 🇮🇳: Check 🇮🇳 India labour-law duties and evidence
+- **[posh-compliance-advisor](plugins/legal-ai-skills/skills/posh-compliance-advisor/SKILL.md)** 🇮🇳: Check 🇮🇳 India POSH governance and procedure
 - **[separation-documenter](plugins/legal-ai-skills/skills/separation-documenter/SKILL.md)**: resignation, termination and severance documentation
 - **[uk-employment-law-applicability-checker](plugins/legal-ai-skills/skills/uk-employment-law-applicability-checker/SKILL.md)** 🇬🇧: UK: Employment-Law Applicability Checker
 - **[us-employment-law-applicability-checker](plugins/legal-ai-skills/skills/us-employment-law-applicability-checker/SKILL.md)** 🇺🇸: US: Employment-Law Applicability Checker
@@ -538,7 +551,7 @@ Instructions: [ip-lawyer.md](plugins/legal-ai-skills/agents/ip-lawyer.md)
 - **[infringement-analyst](plugins/legal-ai-skills/skills/infringement-analyst/SKILL.md)**: right-specific infringement, defence, validity and remedy analysis
 - **[ip-assignment-drafter](plugins/legal-ai-skills/skills/ip-assignment-drafter/SKILL.md)**: precise IP ownership transfers, schedules and recordal steps
 - **[ip-portfolio-analyst](plugins/legal-ai-skills/skills/ip-portfolio-analyst/SKILL.md)**: ownership, coverage, deadlines, exploitation, encumbrance and risk audits
-- **[trademark-opposition-drafter](plugins/legal-ai-skills/skills/trademark-opposition-drafter/SKILL.md)** 🇮🇳: Draft India trademark opposition pleadings
+- **[trademark-opposition-drafter](plugins/legal-ai-skills/skills/trademark-opposition-drafter/SKILL.md)** 🇮🇳: Draft 🇮🇳 India trademark opposition pleadings
 
 ### Compliance Lawyer
 
@@ -548,7 +561,7 @@ Instructions: [compliance-lawyer.md](plugins/legal-ai-skills/agents/compliance-l
 - **[compliance-obligations-mapper](plugins/legal-ai-skills/skills/compliance-obligations-mapper/SKILL.md)**: turns a regulation's text into an owners-and-deadlines obligations register
 - **[cross-border-transfer-analyst](plugins/legal-ai-skills/skills/cross-border-transfer-analyst/SKILL.md)**: transfer maps, mechanisms, destination risk and supplementary safeguards
 - **[data-processing-agreement-reviewer](plugins/legal-ai-skills/skills/data-processing-agreement-reviewer/SKILL.md)**: roles, instructions, security, subprocessors, audits, transfers and deletion
-- **[dpdp-compliance-checker](plugins/legal-ai-skills/skills/dpdp-compliance-checker/SKILL.md)** 🇮🇳: Check processing against India's DPDP framework
+- **[dpdp-compliance-checker](plugins/legal-ai-skills/skills/dpdp-compliance-checker/SKILL.md)** 🇮🇳: Check processing against 🇮🇳 India's DPDP framework
 - **[dpia-documenter](plugins/legal-ai-skills/skills/dpia-documenter/SKILL.md)**: necessity, proportionality, individual risk, safeguards and residual approval
 - **[examination-response-drafter](plugins/legal-ai-skills/skills/examination-response-drafter/SKILL.md)**: evidence-led examination, deficiency and show-cause responses with credible remediation
 - **[licence-application-drafter](plugins/legal-ai-skills/skills/licence-application-drafter/SKILL.md)**: complete licence and registration applications with requirements, evidence and conditions
@@ -579,14 +592,14 @@ Instructions: [public-law-lawyer.md](plugins/legal-ai-skills/agents/public-law-l
 - **[administrative-action-challenge-analyst](plugins/legal-ai-skills/skills/administrative-action-challenge-analyst/SKILL.md)**: Grounds to challenge a public decision
 - **[constitutional-rights-analyst](plugins/legal-ai-skills/skills/constitutional-rights-analyst/SKILL.md)**: Whether State action infringes constitutional rights
 - **[government-contract-reviewer](plugins/legal-ai-skills/skills/government-contract-reviewer/SKILL.md)**: authority, procurement hierarchy, fiscal controls, performance, transparency and disputes
-- **[pil-drafter](plugins/legal-ai-skills/skills/pil-drafter/SKILL.md)** 🇮🇳: Draft India PILs with standing and public harm
+- **[pil-drafter](plugins/legal-ai-skills/skills/pil-drafter/SKILL.md)** 🇮🇳: Draft 🇮🇳 India PILs with standing and public harm
 - **[policy-note-drafter](plugins/legal-ai-skills/skills/policy-note-drafter/SKILL.md)**: decision-ready policy and cabinet notes with options, impacts, consultation and implementation
 - **[regulatory-appeal-planner](plugins/legal-ai-skills/skills/regulatory-appeal-planner/SKILL.md)**: Appeal a regulator's decision or penalty
 - **[regulatory-applicability-analyst](plugins/legal-ai-skills/skills/regulatory-applicability-analyst/SKILL.md)**: regulator and instrument mapping from current official text, with verification gaps reported
 - **[rti-appeal-drafter](plugins/legal-ai-skills/skills/rti-appeal-drafter/SKILL.md)** 🇮🇳: Draft effective first and second RTI appeals
-- **[rti-application-drafter](plugins/legal-ai-skills/skills/rti-application-drafter/SKILL.md)** 🇮🇳: Draft focused India RTI information requests
+- **[rti-application-drafter](plugins/legal-ai-skills/skills/rti-application-drafter/SKILL.md)** 🇮🇳: Draft focused 🇮🇳 India RTI information requests
 - **[tender-compliance-checker](plugins/legal-ai-skills/skills/tender-compliance-checker/SKILL.md)**: traceable requirements, evidence, deviations, blockers and submission control
-- **[writ-petition-drafter](plugins/legal-ai-skills/skills/writ-petition-drafter/SKILL.md)** 🇮🇳: Draft a writ petition (India)
+- **[writ-petition-drafter](plugins/legal-ai-skills/skills/writ-petition-drafter/SKILL.md)** 🇮🇳: Draft a writ petition (🇮🇳 India)
 
 ### Investigations Lawyer
 
@@ -618,32 +631,108 @@ Instructions: [legal-research-lawyer.md](plugins/legal-ai-skills/agents/legal-re
 - **[us-federal-state-issue-mapper](plugins/legal-ai-skills/skills/us-federal-state-issue-mapper/SKILL.md)** 🇺🇸: US: Federal–State Issue Mapper
 - **[us-state-law-research-planner](plugins/legal-ai-skills/skills/us-state-law-research-planner/SKILL.md)** 🇺🇸: US: State-Law Research Planner
 
-### India Counsel
+<a id="india-counsel"></a>
+
+### 🇮🇳 India Counsel
 
 Instructions: [india-counsel.md](plugins/legal-ai-skills/agents/india-counsel.md)
 
 - **[india-counsel](plugins/legal-ai-skills/skills/india-counsel/SKILL.md)** 🇮🇳: Indian law, procedure and verification
 
-### US Counsel
+<a id="us-counsel"></a>
+
+### 🇺🇸 US Counsel
 
 Instructions: [us-counsel.md](plugins/legal-ai-skills/agents/us-counsel.md)
 
 - **[us-counsel](plugins/legal-ai-skills/skills/us-counsel/SKILL.md)** 🇺🇸: US federal and State law verification
 
-### UK Counsel
+<a id="uk-counsel"></a>
+
+### 🇬🇧 UK Counsel
 
 Instructions: [uk-counsel.md](plugins/legal-ai-skills/agents/uk-counsel.md)
 
 - **[uk-counsel](plugins/legal-ai-skills/skills/uk-counsel/SKILL.md)** 🇬🇧: UK jurisdiction and law verification
 
-### Singapore Counsel
+<a id="singapore-counsel"></a>
+
+### 🇸🇬 Singapore Counsel
 
 Instructions: [singapore-counsel.md](plugins/legal-ai-skills/agents/singapore-counsel.md)
 
 - **[singapore-counsel](plugins/legal-ai-skills/skills/singapore-counsel/SKILL.md)** 🇸🇬: Singapore law, forum, procedure and verification across all 17 practice areas.
-- **[18 Singapore-specific skills and practice-area routes](plugins/legal-ai-skills/jurisdictions/singapore/README.md)** cover corporate, contracts, civil litigation, arbitration, criminal, family, property, tax, insolvency, banking, employment, IP, compliance, privacy, consumer, public law, investigations and legal research.
+- **[18 🇸🇬 Singapore-specific skills and practice-area routes](plugins/legal-ai-skills/jurisdictions/singapore/README.md)** cover corporate, contracts, civil litigation, arbitration, criminal, family, property, tax, insolvency, banking, employment, IP, compliance, privacy, consumer, public law, investigations and legal research.
 
-Singapore research uses authoritative websites and authorised supplied records; no dedicated Singapore connector or paid registry access is implied. See [test prompts and expected results](docs/testing-singapore.md).
+🇸🇬 Singapore research uses authoritative websites and authorised supplied records; no dedicated 🇸🇬 Singapore connector or paid registry access is implied. See [test prompts and expected results](docs/testing-singapore.md).
+
+
+<a id="australia-counsel"></a>
+
+### 🇦🇺 Australia Counsel
+
+Instructions: [australia-counsel.md](plugins/legal-ai-skills/agents/australia-counsel.md)
+
+- **[australia-counsel](plugins/legal-ai-skills/skills/australia-counsel/SKILL.md)**: Australian law, forum, procedure and verification across all 17 practice areas.
+- **[18 🇦🇺 Australia-specific skills and practice-area routes](plugins/legal-ai-skills/jurisdictions/australia/README.md)** cover corporate, contracts, civil litigation, arbitration, criminal, family, property, tax, insolvency, banking, employment, IP, compliance, privacy, consumer, public law, investigations and legal research.
+
+Australian research uses official websites and authorised supplied records. See [test prompts and expected results](docs/testing-australia.md).
+
+
+<a id="canada-counsel"></a>
+
+### 🇨🇦 Canada Counsel
+
+Instructions: [canada-counsel.md](plugins/legal-ai-skills/agents/canada-counsel.md)
+
+- [Canada Counsel](plugins/legal-ai-skills/skills/canada-counsel/SKILL.md): local law, forum, procedure and verification.
+- [18 local skills across all 17 specialist areas and privacy](plugins/legal-ai-skills/jurisdictions/canada/README.md), with country-specific applicability checks, official-source guidance and jurisdiction gates.
+
+<a id="uae-counsel"></a>
+
+### 🇦🇪 UAE Counsel
+
+Instructions: [uae-counsel.md](plugins/legal-ai-skills/agents/uae-counsel.md)
+
+- [UAE Counsel](plugins/legal-ai-skills/skills/uae-counsel/SKILL.md): local law, forum, procedure and verification.
+- [18 local skills across all 17 specialist areas and privacy](plugins/legal-ai-skills/jurisdictions/uae/README.md), with country-specific applicability checks, official-source guidance and jurisdiction gates.
+
+<a id="new-zealand-counsel"></a>
+
+### 🇳🇿 New Zealand Counsel
+
+Instructions: [new-zealand-counsel.md](plugins/legal-ai-skills/agents/new-zealand-counsel.md)
+
+- [New Zealand Counsel](plugins/legal-ai-skills/skills/new-zealand-counsel/SKILL.md): local law, forum, procedure and verification.
+- [18 local skills across all 17 specialist areas and privacy](plugins/legal-ai-skills/jurisdictions/new-zealand/README.md), with country-specific applicability checks, official-source guidance and jurisdiction gates.
+
+<a id="south-africa-counsel"></a>
+
+### 🇿🇦 South Africa Counsel
+
+Instructions: [south-africa-counsel.md](plugins/legal-ai-skills/agents/south-africa-counsel.md)
+
+- [South Africa Counsel](plugins/legal-ai-skills/skills/south-africa-counsel/SKILL.md): local law, forum, procedure and verification.
+- [18 local skills across all 17 specialist areas and privacy](plugins/legal-ai-skills/jurisdictions/south-africa/README.md), with country-specific applicability checks, official-source guidance and jurisdiction gates.
+
+<a id="ireland-counsel"></a>
+
+### 🇮🇪 Ireland Counsel
+
+Instructions: [ireland-counsel.md](plugins/legal-ai-skills/agents/ireland-counsel.md)
+
+- [Ireland Counsel](plugins/legal-ai-skills/skills/ireland-counsel/SKILL.md): local law, forum, procedure and verification.
+- [18 local skills across all 17 specialist areas and privacy](plugins/legal-ai-skills/jurisdictions/ireland/README.md), with country-specific applicability checks, official-source guidance and jurisdiction gates.
+
+## Schemes, translation and decision records
+
+- [Indian Government Schemes Assessor](plugins/legal-ai-skills/skills/india-government-schemes-assessor/SKILL.md): central/State/UT discovery, evidence-based eligibility, applications, continuing conditions and rejection/recovery analysis. Operative official guidelines and application windows are checked for each matter; eligibility is not a promise of approval.
+- [Legal Translator](plugins/legal-ai-skills/skills/legal-translator/SKILL.md): faithful translations, aligned bilingual clauses, consistent terminology and ambiguity notes. Translation is separate from local-law adaptation and does not confer certified status.
+- [Activity and Decision Logger](plugins/legal-ai-skills/skills/activity-decision-logger/SKILL.md): requested matter logs of observed actions, evidence, recorded reasons, uncertainty, revisions and approvals. It does not record hidden thoughts or guarantee complete automatic telemetry or tamper-resistant storage.
+- **Working language:** translated greetings such as “Hola Rohas” invoke the firm; the working language follows the user through delegation, progress updates and final work. Language and jurisdiction are established separately.
+
+New country modules use authorised official websites and supplied records. A module provides local practice instructions and routing, not a dedicated connector, exhaustive expertise or verified advice without checking the underlying law. See each country's source guide for access observations and limitations, and the [expansion testing guide](docs/testing-expanded-coverage.md) for validation scope and behavioural scenarios.
+
 
 ---
 
@@ -664,3 +753,30 @@ Contributions are accepted under the MIT licence.
 # Licence
 
 MIT. See [LICENSE](LICENSE).
+
+<a id="russia-counsel"></a>
+
+### 🇷🇺 Russia Counsel
+
+Instructions: [russia-counsel.md](plugins/legal-ai-skills/agents/russia-counsel.md)
+
+- [Russia Counsel](plugins/legal-ai-skills/skills/russia-counsel/SKILL.md): local applicability, procedure and verification.
+- [18 local skills across all 17 specialist areas and privacy](plugins/legal-ai-skills/jurisdictions/russia/README.md).
+
+<a id="china-counsel"></a>
+
+### 🇨🇳 China Counsel
+
+Instructions: [china-counsel.md](plugins/legal-ai-skills/agents/china-counsel.md)
+
+- [China Counsel](plugins/legal-ai-skills/skills/china-counsel/SKILL.md): local applicability, procedure and verification.
+- [18 local skills across all 17 specialist areas and privacy](plugins/legal-ai-skills/jurisdictions/china/README.md).
+
+<a id="brazil-counsel"></a>
+
+### 🇧🇷 Brazil Counsel
+
+Instructions: [brazil-counsel.md](plugins/legal-ai-skills/agents/brazil-counsel.md)
+
+- [Brazil Counsel](plugins/legal-ai-skills/skills/brazil-counsel/SKILL.md): local applicability, procedure and verification.
+- [18 local skills across all 17 specialist areas and privacy](plugins/legal-ai-skills/jurisdictions/brazil/README.md).

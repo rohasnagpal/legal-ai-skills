@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Insolvency Applicability Checker"
+  short_description: "Verify uae insolvency applicability checker"
+  default_prompt: "Use $uae-insolvency-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

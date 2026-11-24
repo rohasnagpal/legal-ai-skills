@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australian Consumer Remedies Checker"
+  short_description: "Australian consumer law and verification"
+  default_prompt: "Use $legal-ai-skills:australia-consumer-remedies-checker for this Australian matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

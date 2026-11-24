@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Companies Compliance Checker"
+  short_description: "Verify uae companies compliance checker"
+  default_prompt: "Use $uae-companies-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

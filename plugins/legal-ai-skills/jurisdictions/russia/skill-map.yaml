@@ -1,0 +1,41 @@
+version: 1
+jurisdiction: russia
+agent: russia-counsel
+skill_count: 18
+skills:
+  corporate:
+    - russia-companies-compliance-checker
+  contracts:
+    - russia-contract-law-reviewer
+  litigation:
+    - russia-civil-procedure-checker
+  dispute_resolution:
+    - russia-arbitration-procedure-checker
+  criminal:
+    - russia-criminal-procedure-checker
+  family:
+    - russia-family-law-applicability-checker
+  property:
+    - russia-property-law-reviewer
+  insolvency:
+    - russia-insolvency-applicability-checker
+  banking_finance:
+    - russia-banking-finance-regulatory-checker
+  employment:
+    - russia-employment-law-applicability-checker
+  ip:
+    - russia-ip-protection-checker
+  compliance:
+    - russia-regulatory-compliance-checker
+  privacy:
+    - russia-data-protection-compliance-checker
+  consumer:
+    - russia-consumer-remedies-checker
+  public_law:
+    - russia-public-law-remedies-checker
+  investigations:
+    - russia-investigation-evidence-checker
+  research:
+    - russia-authority-validator
+  tax:
+    - russia-tax-applicability-checker

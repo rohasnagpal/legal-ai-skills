@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chinese Consumer Remedies Checker"
+  short_description: "Verify irish consumer remedies checker"
+  default_prompt: "Use $china-consumer-remedies-checker for this matter, identifying applicable law, missing evidence and verification status."

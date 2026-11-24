@@ -1,0 +1,4 @@
+interface:
+  display_name: "Canadian Family Law Applicability Checker"
+  short_description: "Verify canadian family law applicability checker"
+  default_prompt: "Use $canada-family-law-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

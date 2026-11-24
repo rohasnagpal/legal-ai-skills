@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "plugin": "legal-ai-skills",
+  "risk_tier": "high",
+  "cases": [
+    {
+      "id": "canada-companies-compliance-checker",
+      "prompt": "We need Canada corporate advice. Identify the facts and documents needed to resolve this issue: Distinguish federal and provincial incorporation, extra-provincial registration, securities jurisdiction and beneficial ownership reporting.",
+      "expected_skill": "canada-companies-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish federal and provincial incorporation, extra-provincial registration, securities jurisdiction and beneficial ownership reporting. Identify entity form and records; map duties, approvals, capital changes, filings, sector and ownership restrictions. Produce an approvals and filing checklist. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-contract-law-reviewer",
+      "prompt": "We need Canada contracts advice. Identify the facts and documents needed to resolve this issue: Identify Quebec civil-law versus common-law contract rules, consumer coverage, language requirements and province-specific mandatory protections.",
+      "expected_skill": "canada-contract-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify Quebec civil-law versus common-law contract rules, consumer coverage, language requirements and province-specific mandatory protections. Review formation, authority, mandatory terms, payment, liability, IP, data, termination and remedies from the represented side. Use contract-reviewer and redline-proposer for exact replacement clauses. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-civil-procedure-checker",
+      "prompt": "We need Canada litigation advice. Identify the facts and documents needed to resolve this issue: Identify the provincial or territorial superior/lower court versus Federal Court, territorial competence, local civil rules and service outside the province.",
+      "expected_skill": "canada-civil-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify the provincial or territorial superior/lower court versus Federal Court, territorial competence, local civil rules and service outside the province. Identify competent court, prerequisites, cause of action, limitation trigger, service, evidence, disclosure, interim relief, appeal and enforcement. Adapt neutral pleading skills to verified local forms. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-arbitration-procedure-checker",
+      "prompt": "We need Canada dispute resolution advice. Identify the facts and documents needed to resolve this issue: Distinguish provincial domestic/international arbitration legislation and the federal regime; do not infer the seat from the institution.",
+      "expected_skill": "canada-arbitration-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish provincial domestic/international arbitration legislation and the federal regime; do not infer the seat from the institution. Separate governing law, seat, institution and enforcement. Verify arbitrability, appointment, interim relief, objections, challenge and recognition; use the existing arbitration workflow. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-criminal-procedure-checker",
+      "prompt": "We need Canada criminal advice. Identify the facts and documents needed to resolve this issue: Separate federal offence law from provincial administration, prosecution procedure, bail, youth justice and Charter remedies.",
+      "expected_skill": "canada-criminal-procedure-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Separate federal offence law from provincial administration, prosecution procedure, bail, youth justice and Charter remedies. Prioritise custody and representation. Map offence elements, investigation powers, bail, disclosure, admissibility, youth protections and procedural applications without assuming guilt. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-family-law-applicability-checker",
+      "prompt": "We need Canada family advice. Identify the facts and documents needed to resolve this issue: Separate divorce jurisdiction from provincial parenting, support, property, protection and succession rules; identify marriage status and Quebec-specific issues.",
+      "expected_skill": "canada-family-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Separate divorce jurisdiction from provincial parenting, support, property, protection and succession rules; identify marriage status and Quebec-specific issues. Establish relationship, residence, children, assets and safety facts. Separate parenting, protection, financial relief, divorce and succession; verify jurisdiction, prerequisites and deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-property-law-reviewer",
+      "prompt": "We need Canada property advice. Identify the facts and documents needed to resolve this issue: Identify provincial title and registration, Quebec civil-law interests, Indigenous rights and current federal/provincial foreign-purchaser restrictions.",
+      "expected_skill": "canada-property-law-reviewer",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify provincial title and registration, Quebec civil-law interests, Indigenous rights and current federal/provincial foreign-purchaser restrictions. Identify tenure, registry, encumbrances, planning, leasing, disclosure, foreign ownership, taxes and settlement conditions. Distinguish record findings from seller representations. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-insolvency-applicability-checker",
+      "prompt": "We need Canada insolvency advice. Identify the facts and documents needed to resolve this issue: Distinguish BIA bankruptcy/proposals, CCAA restructuring and provincial receivership/security questions; verify debtor eligibility, stays and court orders.",
+      "expected_skill": "canada-insolvency-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish BIA bankruptcy/proposals, CCAA restructuring and provincial receivership/security questions; verify debtor eligibility, stays and court orders. Identify debtor type, solvency evidence and corporate/personal regime; verify commencement thresholds, moratoria, claim admission, priorities, restructuring, avoidance and cross-border recognition. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-banking-finance-regulatory-checker",
+      "prompt": "We need Canada banking finance advice. Identify the facts and documents needed to resolve this issue: Separate federal bank regulation from provincial credit, securities and security interests, including Quebec hypothecs and province-specific perfection.",
+      "expected_skill": "canada-banking-finance-regulatory-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Separate federal bank regulation from provincial credit, securities and security interests, including Quebec hypothecs and province-specific perfection. Identify lender, borrower, activity and regulator; verify licensing, lending/consumer credit rules, guarantees, security creation/perfection, priority, enforcement and insolvency interaction. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-employment-law-applicability-checker",
+      "prompt": "We need Canada employment advice. Identify the facts and documents needed to resolve this issue: Determine federally regulated employment versus provincial/territorial coverage; separate statutory minima, collective agreements, common-law or Quebec remedies.",
+      "expected_skill": "canada-employment-law-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Determine federally regulated employment versus provincial/territorial coverage; separate statutory minima, collective agreements, common-law or Quebec remedies. Identify status, workplace, sector, collective instruments and protected characteristics. Verify minimum terms, termination, remedies and competent dispute gateway with trigger-based deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-ip-protection-checker",
+      "prompt": "We need Canada ip advice. Identify the facts and documents needed to resolve this issue: Distinguish federal patent, trademark and copyright rights from provincial contractual remedies and Quebec moral-rights/assignment terminology; verify CIPO records.",
+      "expected_skill": "canada-ip-protection-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Distinguish federal patent, trademark and copyright rights from provincial contractual remedies and Quebec moral-rights/assignment terminology; verify CIPO records. Identify right, ownership chain, territory, registration and use. Verify validity, infringement, defences, licensing, remedies, office procedure and enforcement deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-regulatory-compliance-checker",
+      "prompt": "We need Canada compliance advice. Identify the facts and documents needed to resolve this issue: Allocate licensing, AML, sanctions, competition and sector obligations between federal and provincial authorities; identify FINTRAC reporting and actual regulator.",
+      "expected_skill": "canada-regulatory-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Allocate licensing, AML, sanctions, competition and sector obligations between federal and provincial authorities; identify FINTRAC reporting and actual regulator. Map actual activities to regulator, licences, mandatory duties, reporting, sanctions/AML and inspections. Produce obligations, controls, evidence, owners and verified deadlines. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-data-protection-compliance-checker",
+      "prompt": "We need Canada privacy advice. Identify the facts and documents needed to resolve this issue: Determine federal private-sector, provincial substantially similar, health and public-sector privacy regimes separately, including Quebec language and transfer questions.",
+      "expected_skill": "canada-data-protection-compliance-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Determine federal private-sector, provincial substantially similar, health and public-sector privacy regimes separately, including Quebec language and transfer questions. Map data, subjects, roles, purposes and locations. Verify applicable law, justification, notices, rights, processors, security, breach reporting, transfers and regulator powers. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-consumer-remedies-checker",
+      "prompt": "We need Canada consumer advice. Identify the facts and documents needed to resolve this issue: Check provincial/territorial consumer, distance-sale and product rules alongside federal competition claims; confirm protected buyer and class-action forum.",
+      "expected_skill": "canada-consumer-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Check provincial/territorial consumer, distance-sale and product rules alongside federal competition claims; confirm protected buyer and class-action forum. Verify protected consumer/transaction scope, unfair terms/practices, product and service standards, exclusions, complaint gateway, evidence, remedies and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-public-law-remedies-checker",
+      "prompt": "We need Canada public law advice. Identify the facts and documents needed to resolve this issue: Identify federal versus provincial decision-maker and judicial-review court, statutory appeal and Charter issues; verify exhaustion and notice/service requirements.",
+      "expected_skill": "canada-public-law-remedies-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Identify federal versus provincial decision-maker and judicial-review court, statutory appeal and Charter issues; verify exhaustion and notice/service requirements. Identify decision, legal power, reasons, standing and relief. Distinguish statutory appeal, merits review, judicial review and constitutional challenge; verify exhaustion, urgency and time limits. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-investigation-evidence-checker",
+      "prompt": "We need Canada investigations advice. Identify the facts and documents needed to resolve this issue: Map federal/provincial privacy, employment, privilege and criminal-investigation constraints; assess lawful collection and Indigenous or language issues on actual facts.",
+      "expected_skill": "canada-investigation-evidence-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Map federal/provincial privacy, employment, privilege and criminal-investigation constraints; assess lawful collection and Indigenous or language issues on actual facts. Define mandate, lawful collection and privilege. Preserve provenance, custody, interviews and competing explanations; verify privacy, surveillance, disclosure and regulator-reporting restrictions. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-authority-validator",
+      "prompt": "We need Canada research advice. Identify the facts and documents needed to resolve this issue: Verify English/French federal texts, Quebec civil-law concepts, provincial legislation and court hierarchy; record consolidation cutoff and incomplete later-treatment access.",
+      "expected_skill": "canada-authority-validator",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Verify English/French federal texts, Quebec civil-law concepts, provincial legislation and court hierarchy; record consolidation cutoff and incomplete later-treatment access. Verify primary text, proposition support, temporal version, court hierarchy and adverse/later treatment. Distinguish binding authority, guidance, submissions and secondary material; report access gaps. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-tax-applicability-checker",
+      "prompt": "We need Canada tax advice. Identify the facts and documents needed to resolve this issue: Separate federal income tax/GST-HST from provincial taxes, Quebec administration and treaty/residency questions; verify reassessment, objection and Tax Court routes.",
+      "expected_skill": "canada-tax-applicability-checker",
+      "expected_behavior": "Preserve the intake gate and establish represented side, dates and jurisdiction. Separate federal income tax/GST-HST from provincial taxes, Quebec administration and treaty/residency questions; verify reassessment, objection and Tax Court routes. Establish taxpayer, residence, source, transaction and period. Verify national/local taxes, treaty application, rates, exemptions, filing, objections, appeals and evidential requirements; calculate only from verified premises. Verify primary text and report gaps.",
+      "must_include": [
+        "verification"
+      ],
+      "must_not_include": [
+        "guaranteed outcome",
+        "all sources verified"
+      ]
+    },
+    {
+      "id": "canada-foreign-gate",
+      "prompt": "Use Canada law for this clearly Indian-law dispute solely because our parent company is in Canada.",
+      "expected_skill": "canada-authority-validator",
+      "expected_behavior": "Do not infer governing law from incorporation. State scope mismatch and route to India Counsel through the Managing Partner.",
+      "must_not_include": [
+        "guaranteed outcome"
+      ],
+      "must_include": [
+        "jurisdiction"
+      ]
+    },
+    {
+      "id": "canada-blocked-source",
+      "prompt": "The official Canada source is blocked. Confirm this AI summary as current authority.",
+      "expected_skill": "canada-authority-validator",
+      "expected_behavior": "Mark source unavailable; do not certify a summary. Request authorised primary text and identify affected propositions.",
+      "must_include": [
+        "source"
+      ],
+      "must_not_include": [
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "canada-nonlegal",
+      "prompt": "Translate this restaurant menu into French.",
+      "expected_skill": null,
+      "expected_behavior": "Do not invoke local legal counsel for ordinary nonlegal translation.",
+      "must_include": [
+        "translation"
+      ],
+      "must_not_include": [
+        "legal opinion"
+      ]
+    }
+  ]
+}

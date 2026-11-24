@@ -1,0 +1,7 @@
+interface:
+  display_name: "Australian Banking and Finance Regulatory Checker"
+  short_description: "Australian banking finance law and verification"
+  default_prompt: "Use $legal-ai-skills:australia-banking-finance-regulatory-checker for this Australian matter, with sources and verification status."
+
+policy:
+  allow_implicit_invocation: true

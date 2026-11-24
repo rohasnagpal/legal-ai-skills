@@ -1,0 +1,4 @@
+interface:
+  display_name: "South African Regulatory Compliance Checker"
+  short_description: "Verify south african regulatory compliance checker"
+  default_prompt: "Use $south-africa-regulatory-compliance-checker for this matter, identifying applicable law, missing evidence and verification status."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Tax Applicability Checker"
+  short_description: "Verify new zealand tax applicability checker"
+  default_prompt: "Use $new-zealand-tax-applicability-checker for this matter, identifying applicable law, missing evidence and verification status."

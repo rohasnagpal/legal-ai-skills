@@ -1,0 +1,4 @@
+interface:
+  display_name: "South African Public Law Remedies Checker"
+  short_description: "Verify south african public law remedies checker"
+  default_prompt: "Use $south-africa-public-law-remedies-checker for this matter, identifying applicable law, missing evidence and verification status."

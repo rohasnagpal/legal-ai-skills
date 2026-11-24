@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Zealand Banking and Finance Regulatory Checker"
+  short_description: "Verify new zealand banking and finance regulatory checker"
+  default_prompt: "Use $new-zealand-banking-finance-regulatory-checker for this matter, identifying applicable law, missing evidence and verification status."

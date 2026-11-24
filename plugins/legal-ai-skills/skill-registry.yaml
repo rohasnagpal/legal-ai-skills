@@ -3,12 +3,22 @@
 version: 1
 generated_by: scripts/build-skill-registry.rb
 counts:
-  legal_skills: 244
+  legal_skills: 409
   specialist_lawyers: 17
-  jurisdiction_counsel: 4
+  jurisdiction_counsel: 13
   workflows: 20
-  jurisdiction_specific_skills: 78
+  jurisdiction_specific_skills: 241
 skills:
+- skill_id: activity-decision-logger
+  name: Activity and Decision Logger
+  category: other
+  practice_area: firm-operations
+  jurisdiction: neutral
+  owner: managing-partner
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Maintain a matter activity and decision record with source provenance, actions, recorded reasons, uncertainty, revisions and approvals; review logging gaps without claiming hidden thought capture.
 - skill_id: administrative-action-challenge-analyst
   name: Administrative Action Challenge Analyst
   category: analysis
@@ -150,6 +160,214 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Surfaces every assumption a draft depends on — factual, legal, definitional, about another party's future conduct, or about scope — whether the document states them or not, so they can be verified or challenged before anyone relies on it.
+- skill_id: australia-arbitration-procedure-checker
+  name: Australian Arbitration Procedure Checker
+  category: review
+  practice_area: dispute-resolution
+  jurisdiction: australia
+  owner: dispute-resolution-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Determine whether the International Arbitration Act or relevant state or territory commercial arbitration legislation applies, verifying scope and exclusions.
+- skill_id: australia-authority-validator
+  name: Australian Authority Validator
+  category: review
+  practice_area: research
+  jurisdiction: australia
+  owner: legal-research-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Retrieve enacted text, rules and judgments from official sources, checking versions, commencement, transitions and provision or paragraph pinpoints.
+- skill_id: australia-banking-finance-regulatory-checker
+  name: Australian Banking and Finance Regulatory Checker
+  category: review
+  practice_area: banking-finance
+  jurisdiction: australia
+  owner: banking-finance-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Verify licensing, exemptions and conditions using legislation and ASIC, APRA, AUSTRAC or other relevant official material.
+- skill_id: australia-civil-procedure-checker
+  name: Australian Civil Procedure Checker
+  category: review
+  practice_area: litigation
+  jurisdiction: australia
+  owner: litigation-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Verify limitation, pre-action requirements, originating process, service, disclosure, evidence and current practice directions for that forum.
+- skill_id: australia-companies-compliance-checker
+  name: Australian Companies Compliance Checker
+  category: review
+  practice_area: corporate
+  jurisdiction: australia
+  owner: corporate-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Verify the Corporations Act framework, constitution, directors’ duties, share issue or transfer approvals, registers and ASIC lodgements for the transaction.
+- skill_id: australia-consumer-remedies-checker
+  name: Australian Consumer Remedies Checker
+  category: review
+  practice_area: consumer
+  jurisdiction: australia
+  owner: consumer-protection-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Assess guarantees, misleading conduct, unfair terms and available remedies on the actual evidence and statutory definitions.
+- skill_id: australia-contract-law-reviewer
+  name: Australian Contract Law Reviewer
+  category: review
+  practice_area: contracts
+  jurisdiction: australia
+  owner: contracts-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Use contract-reviewer and redline-proposer for clause-level findings and exact replacements supported by Australian authority.
+- skill_id: australia-counsel
+  name: Australia Counsel
+  category: firm-operations
+  practice_area: jurisdiction
+  jurisdiction: australia
+  owner: australia-counsel
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: Confirms Australian jurisdiction and coordinates local legal verification for the Managing Partner.
+- skill_id: australia-criminal-procedure-checker
+  name: Australian Criminal Procedure Checker
+  category: review
+  practice_area: criminal
+  jurisdiction: australia
+  owner: criminal-defence-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Identify Commonwealth or state or territory offences and the applicable investigation, arrest, bail, evidence and prosecution procedure.
+- skill_id: australia-data-protection-compliance-checker
+  name: Australian Data Protection Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: australia
+  owner: compliance-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Map collection, use, disclosure, security, access, correction, retention and overseas disclosure against verified obligations.
+- skill_id: australia-employment-law-applicability-checker
+  name: Australian Employment Law Applicability Checker
+  category: review
+  practice_area: employment
+  jurisdiction: australia
+  owner: employment-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Verify employee or contractor status, applicable award or enterprise agreement, minimum standards and contractual entitlements.
+- skill_id: australia-family-law-applicability-checker
+  name: Australian Family Law Applicability Checker
+  category: review
+  practice_area: family
+  jurisdiction: australia
+  owner: family-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Verify the competent family forum, including Western Australian arrangements, and distinguish parenting, property, divorce, child support and protection proceedings.
+- skill_id: australia-insolvency-applicability-checker
+  name: Australian Insolvency Applicability Checker
+  category: review
+  practice_area: insolvency
+  jurisdiction: australia
+  owner: insolvency-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Assess restructuring, administration, liquidation or bankruptcy routes against eligibility and evidence, verifying current thresholds and notices.
+- skill_id: australia-investigation-evidence-checker
+  name: Australian Investigation and Evidence Checker
+  category: review
+  practice_area: investigations
+  jurisdiction: australia
+  owner: investigations-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Verify applicable Commonwealth and state or territory evidence, surveillance, privacy and compulsory production rules.
+- skill_id: australia-ip-protection-checker
+  name: Australian IP Protection Checker
+  category: review
+  practice_area: ip
+  jurisdiction: australia
+  owner: ip-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Verify ownership, assignments, licences, registration status and relevant IP Australia or other authorised records.
+- skill_id: australia-property-law-reviewer
+  name: Australian Property Law Reviewer
+  category: review
+  practice_area: real-estate
+  jurisdiction: australia
+  owner: real-estate-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Verify title, encumbrances, easements, strata, searches, disclosure and settlement requirements from authorised records.
+- skill_id: australia-public-law-remedies-checker
+  name: Australian Public Law Remedies Checker
+  category: review
+  practice_area: public-law
+  jurisdiction: australia
+  owner: public-law-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Separate merits review, judicial review, statutory appeal and complaints, verifying the competent tribunal or court, including Administrative Review Tribunal coverage where relevant.
+- skill_id: australia-regulatory-compliance-checker
+  name: Australian Regulatory Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: australia
+  owner: compliance-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Verify legislation, instruments, licences, exemptions, commencement and regulator powers, distinguishing guidance from binding requirements.
+- skill_id: australia-tax-applicability-checker
+  name: Australian Tax Applicability Checker
+  category: review
+  practice_area: tax
+  jurisdiction: australia
+  owner: tax-lawyer
+  shared_with:
+  - australia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Verify income tax, GST, withholding, payroll tax, duties and land tax only as relevant, using legislation and responsible revenue authorities.
 - skill_id: authority-validator
   name: Authority Validator
   category: review
@@ -203,6 +421,213 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Drafts board, committee, shareholder, member, and written-consent resolutions with correct authority, approval level, quorum, conflicts, conditions, delegations, filing actions, and certification language.
+- skill_id: brazil-arbitration-procedure-checker
+  name: Brazilian Arbitration Procedure Checker
+  category: review
+  practice_area: dispute-resolution
+  jurisdiction: brazil
+  owner: dispute-resolution-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check arbitration agreement, arbitrability, seat, court support, challenge and foreign-award recognition; separate mediation.'
+- skill_id: brazil-authority-validator
+  name: Brazilian Authority Validator
+  category: review
+  practice_area: research
+  jurisdiction: brazil
+  owner: legal-research-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Retrieve official legislation and STF/STJ or competent specialist court decisions; verify binding effect, themes, later treatment and applicable version.'
+- skill_id: brazil-banking-finance-regulatory-checker
+  name: Brazilian Banking and Finance Regulatory Checker
+  category: review
+  practice_area: banking-finance
+  jurisdiction: brazil
+  owner: banking-finance-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Identify Banco Central and CVM permissions, lending rules, security, payment/foreign-exchange requirements and consumer overlays.'
+- skill_id: brazil-civil-procedure-checker
+  name: Brazilian Civil Procedure Checker
+  category: review
+  practice_area: litigation
+  jurisdiction: brazil
+  owner: litigation-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Identify federal or state court and specialist jurisdiction; verify Civil Procedure Code, local rules, service, deadlines and enforcement.'
+- skill_id: brazil-companies-compliance-checker
+  name: Brazilian Companies Compliance Checker
+  category: review
+  practice_area: corporate
+  jurisdiction: brazil
+  owner: corporate-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check entity form, Civil Code or corporations framework, commercial registration, governance, capital and foreign-investment requirements.'
+- skill_id: brazil-consumer-remedies-checker
+  name: Brazilian Consumer Remedies Checker
+  category: review
+  practice_area: consumer
+  jurisdiction: brazil
+  owner: consumer-protection-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check Consumer Defence Code coverage, unfair terms/practices, product liability, administrative complaints and court remedies.'
+- skill_id: brazil-contract-law-reviewer
+  name: Brazilian Contract Law Reviewer
+  category: review
+  practice_area: contracts
+  jurisdiction: brazil
+  owner: contracts-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check Civil Code, mandatory consumer rules, good faith, authority, remedies and choice-of-law and forum treatment.'
+- skill_id: brazil-counsel
+  name: Brazil Counsel
+  category: firm-operations
+  practice_area: jurisdiction
+  jurisdiction: brazil
+  owner: brazil-counsel
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: Brazil jurisdiction counsel.
+- skill_id: brazil-criminal-procedure-checker
+  name: Brazilian Criminal Procedure Checker
+  category: review
+  practice_area: criminal
+  jurisdiction: brazil
+  owner: criminal-defence-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check offence elements, police investigation, detention, defence rights, pretrial release, prosecution and admissibility.'
+- skill_id: brazil-data-protection-compliance-checker
+  name: Brazilian Data Protection Compliance Checker
+  category: review
+  practice_area: jurisdiction
+  jurisdiction: brazil
+  owner: brazil-counsel
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check LGPD coverage, roles, lawful bases, rights, ANPD rules, security, breach notification and international transfers.'
+- skill_id: brazil-employment-law-applicability-checker
+  name: Brazilian Employment Law Applicability Checker
+  category: review
+  practice_area: employment
+  jurisdiction: brazil
+  owner: employment-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check CLT coverage, worker status, collective agreements, termination, employment rights and labour-court competence.'
+- skill_id: brazil-family-law-applicability-checker
+  name: Brazilian Family Law Applicability Checker
+  category: review
+  practice_area: family
+  jurisdiction: brazil
+  owner: family-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check marriage or stable union, divorce, parenting, maintenance, succession and cross-border recognition.'
+- skill_id: brazil-insolvency-applicability-checker
+  name: Brazilian Insolvency Applicability Checker
+  category: review
+  practice_area: insolvency
+  jurisdiction: brazil
+  owner: insolvency-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check judicial or extrajudicial reorganisation, bankruptcy eligibility, exclusions, priorities and cross-border procedure.'
+- skill_id: brazil-investigation-evidence-checker
+  name: Brazilian Investigation and Evidence Checker
+  category: review
+  practice_area: investigations
+  jurisdiction: brazil
+  owner: investigations-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check lawful evidence collection, LGPD, employment procedure, privilege, anti-corruption reporting and chain of custody.'
+- skill_id: brazil-ip-protection-checker
+  name: Brazilian IP Protection Checker
+  category: review
+  practice_area: ip
+  jurisdiction: brazil
+  owner: ip-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check INPI registration, copyright, ownership, territorial effect, licensing and judicial/administrative enforcement.'
+- skill_id: brazil-property-law-reviewer
+  name: Brazilian Property Law Reviewer
+  category: review
+  practice_area: real-estate
+  jurisdiction: brazil
+  owner: real-estate-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check title and property registry, encumbrances, urban/rural rules, environmental restrictions, leases and foreign rural acquisition.'
+- skill_id: brazil-public-law-remedies-checker
+  name: Brazilian Public Law Remedies Checker
+  category: review
+  practice_area: public-law
+  jurisdiction: brazil
+  owner: public-law-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Distinguish administrative remedies, ordinary review, mandado de segurança and constitutional routes; verify standing and prerequisites.'
+- skill_id: brazil-regulatory-compliance-checker
+  name: Brazilian Regulatory Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: brazil
+  owner: compliance-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Map federal/state/municipal permits, competition, AML, anti-corruption and sector supervision to actual activities.'
+- skill_id: brazil-tax-applicability-checker
+  name: Brazilian Tax Applicability Checker
+  category: review
+  practice_area: tax
+  jurisdiction: brazil
+  owner: tax-lawyer
+  shared_with:
+  - brazil-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Brazilian: Check federal/state/municipal tax competence, tax period and reform transitions; verify rates, credits, filings and administrative/judicial challenge.'
 - skill_id: breach-response-planner
   name: Breach Response Planner
   category: advice-and-planning
@@ -233,6 +658,214 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Reviews an agreement for sale, allotment letter or builder-buyer agreement for an under-construction or off-plan property from the buyer's or developer's side — possession date and extensions, payment plan, delay compensation, specifications, carpet area, cancellation and refund, transfer, defects liability and dispute terms — and compares it with any mandatory or prescribed form flagged by jurisdiction counsel.
+- skill_id: canada-arbitration-procedure-checker
+  name: Canadian Arbitration Procedure Checker
+  category: review
+  practice_area: dispute-resolution
+  jurisdiction: canada
+  owner: dispute-resolution-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Distinguish provincial domestic/international arbitration legislation and the federal regime; do not infer the seat from the institution.'
+- skill_id: canada-authority-validator
+  name: Canadian Authority Validator
+  category: review
+  practice_area: research
+  jurisdiction: canada
+  owner: legal-research-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Verify English/French federal texts, Quebec civil-law concepts, provincial legislation and court hierarchy; record consolidation cutoff and incomplete later-treatment access.'
+- skill_id: canada-banking-finance-regulatory-checker
+  name: Canadian Banking and Finance Regulatory Checker
+  category: review
+  practice_area: banking-finance
+  jurisdiction: canada
+  owner: banking-finance-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Separate federal bank regulation from provincial credit, securities and security interests, including Quebec hypothecs and province-specific perfection.'
+- skill_id: canada-civil-procedure-checker
+  name: Canadian Civil Procedure Checker
+  category: review
+  practice_area: litigation
+  jurisdiction: canada
+  owner: litigation-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Identify the provincial or territorial superior/lower court versus Federal Court, territorial competence, local civil rules and service outside the province.'
+- skill_id: canada-companies-compliance-checker
+  name: Canadian Companies Compliance Checker
+  category: review
+  practice_area: corporate
+  jurisdiction: canada
+  owner: corporate-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Distinguish federal and provincial incorporation, extra-provincial registration, securities jurisdiction and beneficial ownership reporting.'
+- skill_id: canada-consumer-remedies-checker
+  name: Canadian Consumer Remedies Checker
+  category: review
+  practice_area: consumer
+  jurisdiction: canada
+  owner: consumer-protection-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Check provincial/territorial consumer, distance-sale and product rules alongside federal competition claims; confirm protected buyer and class-action forum.'
+- skill_id: canada-contract-law-reviewer
+  name: Canadian Contract Law Reviewer
+  category: review
+  practice_area: contracts
+  jurisdiction: canada
+  owner: contracts-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Identify Quebec civil-law versus common-law contract rules, consumer coverage, language requirements and province-specific mandatory protections.'
+- skill_id: canada-counsel
+  name: Canada Counsel
+  category: firm-operations
+  practice_area: jurisdiction
+  jurisdiction: canada
+  owner: canada-counsel
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: Canada jurisdiction counsel.
+- skill_id: canada-criminal-procedure-checker
+  name: Canadian Criminal Procedure Checker
+  category: review
+  practice_area: criminal
+  jurisdiction: canada
+  owner: criminal-defence-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Separate federal offence law from provincial administration, prosecution procedure, bail, youth justice and Charter remedies.'
+- skill_id: canada-data-protection-compliance-checker
+  name: Canadian Data Protection Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: canada
+  owner: compliance-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Determine federal private-sector, provincial substantially similar, health and public-sector privacy regimes separately, including Quebec language and transfer questions.'
+- skill_id: canada-employment-law-applicability-checker
+  name: Canadian Employment Law Applicability Checker
+  category: review
+  practice_area: employment
+  jurisdiction: canada
+  owner: employment-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Determine federally regulated employment versus provincial/territorial coverage; separate statutory minima, collective agreements, common-law or Quebec remedies.'
+- skill_id: canada-family-law-applicability-checker
+  name: Canadian Family Law Applicability Checker
+  category: review
+  practice_area: family
+  jurisdiction: canada
+  owner: family-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Separate divorce jurisdiction from provincial parenting, support, property, protection and succession rules; identify marriage status and Quebec-specific issues.'
+- skill_id: canada-insolvency-applicability-checker
+  name: Canadian Insolvency Applicability Checker
+  category: review
+  practice_area: insolvency
+  jurisdiction: canada
+  owner: insolvency-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Distinguish BIA bankruptcy/proposals, CCAA restructuring and provincial receivership/security questions; verify debtor eligibility, stays and court orders.'
+- skill_id: canada-investigation-evidence-checker
+  name: Canadian Investigation and Evidence Checker
+  category: review
+  practice_area: investigations
+  jurisdiction: canada
+  owner: investigations-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Map federal/provincial privacy, employment, privilege and criminal-investigation constraints; assess lawful collection and Indigenous or language issues on actual facts.'
+- skill_id: canada-ip-protection-checker
+  name: Canadian IP Protection Checker
+  category: review
+  practice_area: ip
+  jurisdiction: canada
+  owner: ip-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Distinguish federal patent, trademark and copyright rights from provincial contractual remedies and Quebec moral-rights/assignment terminology; verify CIPO records.'
+- skill_id: canada-property-law-reviewer
+  name: Canadian Property Law Reviewer
+  category: review
+  practice_area: real-estate
+  jurisdiction: canada
+  owner: real-estate-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Identify provincial title and registration, Quebec civil-law interests, Indigenous rights and current federal/provincial foreign-purchaser restrictions.'
+- skill_id: canada-public-law-remedies-checker
+  name: Canadian Public Law Remedies Checker
+  category: review
+  practice_area: public-law
+  jurisdiction: canada
+  owner: public-law-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Identify federal versus provincial decision-maker and judicial-review court, statutory appeal and Charter issues; verify exhaustion and notice/service requirements.'
+- skill_id: canada-regulatory-compliance-checker
+  name: Canadian Regulatory Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: canada
+  owner: compliance-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Allocate licensing, AML, sanctions, competition and sector obligations between federal and provincial authorities; identify FINTRAC reporting and actual regulator.'
+- skill_id: canada-tax-applicability-checker
+  name: Canadian Tax Applicability Checker
+  category: review
+  practice_area: tax
+  jurisdiction: canada
+  owner: tax-lawyer
+  shared_with:
+  - canada-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Canadian: Separate federal income tax/GST-HST from provincial taxes, Quebec administration and treaty/residency questions; verify reassessment, objection and Tax Court routes.'
 - skill_id: cap-table-analyst
   name: Cap Table Analyst
   category: analysis
@@ -326,6 +959,213 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Plans a custody, access and parenting position centred on the child's welfare — residence, decision-making, visitation schedules, interim arrangements, relocation and international movement — using the factors the governing law and court apply, and identifies the evidence that matters.
+- skill_id: china-arbitration-procedure-checker
+  name: Chinese Arbitration Procedure Checker
+  category: review
+  practice_area: dispute-resolution
+  jurisdiction: china
+  owner: dispute-resolution-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check arbitration law version and transition, agreement, seat, institution, arbitrability, court support and recognition routes.'
+- skill_id: china-authority-validator
+  name: Chinese Authority Validator
+  category: review
+  practice_area: research
+  jurisdiction: china
+  owner: legal-research-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Retrieve NPC legislation, State Council instruments, local rules and Supreme People’s Court interpretations; distinguish guiding cases from ordinary judgments.'
+- skill_id: china-banking-finance-regulatory-checker
+  name: Chinese Banking and Finance Regulatory Checker
+  category: review
+  practice_area: banking-finance
+  jurisdiction: china
+  owner: banking-finance-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Identify banking, securities and payment regulators, activity permissions, security, foreign-exchange and cross-border financing controls.'
+- skill_id: china-civil-procedure-checker
+  name: Chinese Civil Procedure Checker
+  category: review
+  practice_area: litigation
+  jurisdiction: china
+  owner: litigation-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check competent people’s court, jurisdiction, service, preservation, evidence, appeal and enforcement under applicable procedural rules.'
+- skill_id: china-companies-compliance-checker
+  name: Chinese Companies Compliance Checker
+  category: review
+  practice_area: corporate
+  jurisdiction: china
+  owner: corporate-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check Company Law entity form, registration, capital duties, governance and foreign-investment access and approval rules.'
+- skill_id: china-consumer-remedies-checker
+  name: Chinese Consumer Remedies Checker
+  category: review
+  practice_area: consumer
+  jurisdiction: china
+  owner: consumer-protection-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check consumer status, mandatory protections, platform duties, product quality, complaints and remedies.'
+- skill_id: china-contract-law-reviewer
+  name: Chinese Contract Law Reviewer
+  category: review
+  practice_area: contracts
+  jurisdiction: china
+  owner: contracts-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check Civil Code contract rules, mandatory protections, authority, liability and choice-of-law and forum issues.'
+- skill_id: china-counsel
+  name: China Counsel
+  category: firm-operations
+  practice_area: jurisdiction
+  jurisdiction: china
+  owner: china-counsel
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: China jurisdiction counsel.
+- skill_id: china-criminal-procedure-checker
+  name: Chinese Criminal Procedure Checker
+  category: review
+  practice_area: criminal
+  jurisdiction: china
+  owner: criminal-defence-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check offence elements, investigation, detention, defence access, bail-related measures, prosecution and evidence rules.'
+- skill_id: china-data-protection-compliance-checker
+  name: Chinese Data Protection Compliance Checker
+  category: review
+  practice_area: jurisdiction
+  jurisdiction: china
+  owner: china-counsel
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check personal-information, cybersecurity and data-security regimes, localisation and applicable cross-border transfer mechanisms.'
+- skill_id: china-employment-law-applicability-checker
+  name: Chinese Employment Law Applicability Checker
+  category: review
+  practice_area: employment
+  jurisdiction: china
+  owner: employment-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check employment and labour-contract rules, local standards, worker status, termination and labour arbitration prerequisites.'
+- skill_id: china-family-law-applicability-checker
+  name: Chinese Family Law Applicability Checker
+  category: review
+  practice_area: family
+  jurisdiction: china
+  owner: family-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check marriage, divorce, parenting, maintenance, succession and cross-border recognition under applicable Civil Code and procedural rules.'
+- skill_id: china-insolvency-applicability-checker
+  name: Chinese Insolvency Applicability Checker
+  category: review
+  practice_area: insolvency
+  jurisdiction: china
+  owner: insolvency-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check enterprise bankruptcy eligibility, restructuring, liquidation and creditor priority; do not assume a nationwide personal bankruptcy route.'
+- skill_id: china-investigation-evidence-checker
+  name: Chinese Investigation and Evidence Checker
+  category: review
+  practice_area: investigations
+  jurisdiction: china
+  owner: investigations-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check lawful collection, personal information, state secrets, privilege limits, employment procedure and cross-border evidence restrictions.'
+- skill_id: china-ip-protection-checker
+  name: Chinese IP Protection Checker
+  category: review
+  practice_area: ip
+  jurisdiction: china
+  owner: ip-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check CNIPA registration routes, copyright, ownership, territorial effect and administrative versus judicial enforcement.'
+- skill_id: china-property-law-reviewer
+  name: Chinese Property Law Reviewer
+  category: review
+  practice_area: real-estate
+  jurisdiction: china
+  owner: real-estate-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check land ownership versus land-use rights, urban/rural status, registration, leases, security and foreign acquisition restrictions.'
+- skill_id: china-public-law-remedies-checker
+  name: Chinese Public Law Remedies Checker
+  category: review
+  practice_area: public-law
+  jurisdiction: china
+  owner: public-law-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Distinguish administrative reconsideration, administrative litigation and other supervision routes; verify prerequisites and review limits.'
+- skill_id: china-regulatory-compliance-checker
+  name: Chinese Regulatory Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: china
+  owner: compliance-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Map market access, licences, competition, AML, export controls and applicable countermeasures by sector and location.'
+- skill_id: china-tax-applicability-checker
+  name: Chinese Tax Applicability Checker
+  category: review
+  practice_area: tax
+  jurisdiction: china
+  owner: tax-lawyer
+  shared_with:
+  - china-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Chinese: Check taxpayer, residence, source, tax period, VAT and income taxes, local implementation and treaty applicability.'
 - skill_id: chronology-builder
   name: Chronology Builder
   category: drafting
@@ -1066,7 +1906,7 @@ skills:
   shared_with: []
   counts_as_legal_skill: false
   review_required: false
-  summary: Front door of the Legal AI Skills law firm by Rohas Nagpal.
+  summary: Front door of Legal AI Skills by Rohas Nagpal.
 - skill_id: indemnity-liability-analyst
   name: Indemnity & Liability Analyst
   category: analysis
@@ -1087,6 +1927,18 @@ skills:
   counts_as_legal_skill: false
   review_required: true
   summary: Applies the firm's India jurisdiction layer to an Indian legal matter.
+- skill_id: india-government-schemes-assessor
+  name: Indian Government Schemes Assessor
+  category: analysis
+  practice_area: public-law
+  jurisdiction: india
+  owner: public-law-lawyer
+  shared_with:
+  - compliance-lawyer
+  - india-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Discover and assess Indian central, State and UT government schemes, subsidies and incentives; prepare applications, compliance plans and rejection/recovery analysis.
 - skill_id: india-legal-notice-response-strategist
   name: India Legal-Notice Response Strategist
   category: advice-and-planning
@@ -1189,6 +2041,214 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Audit an intellectual-property portfolio for ownership, protection, scope, deadlines, territorial coverage, use, value, encumbrances, and enforcement risk.
+- skill_id: ireland-arbitration-procedure-checker
+  name: Irish Arbitration Procedure Checker
+  category: review
+  practice_area: dispute-resolution
+  jurisdiction: ireland
+  owner: dispute-resolution-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Verify Irish arbitration framework, seat, agreement, court support and recognition/enforcement; separate mediation obligations.'
+- skill_id: ireland-authority-validator
+  name: Irish Authority Validator
+  category: review
+  practice_area: research
+  jurisdiction: ireland
+  owner: legal-research-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Retrieve Irish legislation with amendment/commencement checks and Irish/CJEU judgments; distinguish domestic, EU and persuasive English authority and consolidation status.'
+- skill_id: ireland-banking-finance-regulatory-checker
+  name: Irish Banking and Finance Regulatory Checker
+  category: review
+  practice_area: banking-finance
+  jurisdiction: ireland
+  owner: banking-finance-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Identify Central Bank and EU authorisation, regulated credit/consumer protections, security registration and enforcement; distinguish passporting from domestic permissions.'
+- skill_id: ireland-civil-procedure-checker
+  name: Irish Civil Procedure Checker
+  category: review
+  practice_area: litigation
+  jurisdiction: ireland
+  owner: litigation-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Identify District, Circuit, High or specialist jurisdiction, current rules and forms, limitation and Irish/EU cross-border service routes.'
+- skill_id: ireland-companies-compliance-checker
+  name: Irish Companies Compliance Checker
+  category: review
+  practice_area: corporate
+  jurisdiction: ireland
+  owner: corporate-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Verify Companies Act entity form, CRO filings, directors’ duties, beneficial ownership and transaction approvals; consider EU and competition overlays.'
+- skill_id: ireland-consumer-remedies-checker
+  name: Irish Consumer Remedies Checker
+  category: review
+  practice_area: consumer
+  jurisdiction: ireland
+  owner: consumer-protection-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Verify Irish/EU consumer contracts, unfair practices, digital goods/services and product-safety coverage; identify CCPC and court/redress routes.'
+- skill_id: ireland-contract-law-reviewer
+  name: Irish Contract Law Reviewer
+  category: review
+  practice_area: contracts
+  jurisdiction: ireland
+  owner: contracts-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Verify Irish contract law, statutory consumer protections and applicable EU instruments; assess choice of law and forum separately.'
+- skill_id: ireland-counsel
+  name: Ireland Counsel
+  category: firm-operations
+  practice_area: jurisdiction
+  jurisdiction: ireland
+  owner: ireland-counsel
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: Ireland jurisdiction counsel.
+- skill_id: ireland-criminal-procedure-checker
+  name: Irish Criminal Procedure Checker
+  category: review
+  practice_area: criminal
+  jurisdiction: ireland
+  owner: criminal-defence-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Identify Garda investigation and competent criminal court; verify detention authority, legal assistance, bail, disclosure and evidentiary challenges.'
+- skill_id: ireland-data-protection-compliance-checker
+  name: Irish Data Protection Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: ireland
+  owner: compliance-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Assess GDPR, Irish implementing law and ePrivacy rules, controller/processor duties, DPC competence, transfers and breach notifications.'
+- skill_id: ireland-employment-law-applicability-checker
+  name: Irish Employment Law Applicability Checker
+  category: review
+  practice_area: employment
+  jurisdiction: ireland
+  owner: employment-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Verify employment status, statutory/EU protections, collective context and WRC/Labour Court/court routes, including time limits and remedies.'
+- skill_id: ireland-family-law-applicability-checker
+  name: Irish Family Law Applicability Checker
+  category: review
+  practice_area: family
+  jurisdiction: ireland
+  owner: family-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Separate divorce, judicial separation, civil partnership/cohabitation, guardianship, maintenance and succession; verify Irish/EU jurisdiction and recognition.'
+- skill_id: ireland-insolvency-applicability-checker
+  name: Irish Insolvency Applicability Checker
+  category: review
+  practice_area: insolvency
+  jurisdiction: ireland
+  owner: insolvency-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Distinguish examinership, SCARP, liquidation, receivership and personal insolvency; verify debtor eligibility, creditor protections and EU recognition issues.'
+- skill_id: ireland-investigation-evidence-checker
+  name: Irish Investigation and Evidence Checker
+  category: review
+  practice_area: investigations
+  jurisdiction: ireland
+  owner: investigations-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Assess Irish/EU data protection, workplace procedure, privilege and protected-disclosure rules; distinguish internal findings from Garda or regulator powers.'
+- skill_id: ireland-ip-protection-checker
+  name: Irish IP Protection Checker
+  category: review
+  practice_area: ip
+  jurisdiction: ireland
+  owner: ip-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Separate Irish IPOI registrations, EUIPO/EPO routes and copyright; verify territorial effect, ownership and Irish/EU enforcement rather than assuming UK coverage.'
+- skill_id: ireland-property-law-reviewer
+  name: Irish Property Law Reviewer
+  category: review
+  practice_area: real-estate
+  jurisdiction: ireland
+  owner: real-estate-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Check title registration, conveyancing, tenancy, planning, security and taxes through current Irish sources and authorised records.'
+- skill_id: ireland-public-law-remedies-checker
+  name: Irish Public Law Remedies Checker
+  category: review
+  practice_area: public-law
+  jurisdiction: ireland
+  owner: public-law-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Distinguish Irish judicial review, statutory appeal, constitutional challenge and EU-law remedies; verify leave, standing, time limits and required notices.'
+- skill_id: ireland-regulatory-compliance-checker
+  name: Irish Regulatory Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: ireland
+  owner: compliance-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Map Irish licensing, AML, sanctions, competition and applicable EU obligations; identify responsible national authority and binding versus guidance status.'
+- skill_id: ireland-tax-applicability-checker
+  name: Irish Tax Applicability Checker
+  category: review
+  practice_area: tax
+  jurisdiction: ireland
+  owner: tax-lawyer
+  shared_with:
+  - ireland-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Irish: Verify Irish Revenue treatment, residence, income/corporation tax, VAT and treaty/EU overlays; identify assessment, appeal and collection rules by tax period.'
 - skill_id: issue-spotter
   name: Issue Spotter
   category: analysis
@@ -1320,6 +2380,17 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Sets out the realistic options on a decision a client faces, with the downside risk, the likely outcome, and the best case of each — to inform the client's decision, not to make it for them.
+- skill_id: legal-translator
+  name: Legal Translator
+  category: other
+  practice_area: research
+  jurisdiction: neutral
+  owner: legal-research-lawyer
+  shared_with:
+  - managing-partner
+  counts_as_legal_skill: true
+  review_required: true
+  summary: Translate legal documents between languages with aligned clauses, consistent terminology, ambiguity flags and preserved legal meaning; distinguish translation from local-law adaptation.
 - skill_id: legislative-history-analyst
   name: Legislative History Analyst
   category: analysis
@@ -1522,6 +2593,214 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Builds an opening position, fallback, minimum acceptable position, walk-away line and concession logic for contract negotiations.
+- skill_id: new-zealand-arbitration-procedure-checker
+  name: New Zealand Arbitration Procedure Checker
+  category: review
+  practice_area: dispute-resolution
+  jurisdiction: new-zealand
+  owner: dispute-resolution-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Verify Arbitration Act applicability, seat, arbitration agreement, schedules, court support and award challenge/enforcement rules.'
+- skill_id: new-zealand-authority-validator
+  name: New Zealand Authority Validator
+  category: review
+  practice_area: research
+  jurisdiction: new-zealand
+  owner: legal-research-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Check NZ legislation versions, commencement and court hierarchy, including Treaty/tikanga authority where relevant; distinguish NZ judgments from Australian persuasive material.'
+- skill_id: new-zealand-banking-finance-regulatory-checker
+  name: New Zealand Banking and Finance Regulatory Checker
+  category: review
+  practice_area: banking-finance
+  jurisdiction: new-zealand
+  owner: banking-finance-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Identify Reserve Bank, FMA and consumer-credit supervision, lender obligations and PPSR security perfection; verify commencement of regulatory changes.'
+- skill_id: new-zealand-civil-procedure-checker
+  name: New Zealand Civil Procedure Checker
+  category: review
+  practice_area: litigation
+  jurisdiction: new-zealand
+  owner: litigation-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Distinguish District Court, High Court and specialist tribunals; verify jurisdiction, procedural rules, limitation and service abroad.'
+- skill_id: new-zealand-companies-compliance-checker
+  name: New Zealand Companies Compliance Checker
+  category: review
+  practice_area: corporate
+  jurisdiction: new-zealand
+  owner: corporate-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Check Companies Office entity status, constitution, directors’ duties, share transactions and overseas-company or investment requirements.'
+- skill_id: new-zealand-consumer-remedies-checker
+  name: New Zealand Consumer Remedies Checker
+  category: review
+  practice_area: consumer
+  jurisdiction: new-zealand
+  owner: consumer-protection-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Assess Consumer Guarantees/Fair Trading scope, contracting-out conditions, product safety and Commerce Commission or Disputes Tribunal pathways.'
+- skill_id: new-zealand-contract-law-reviewer
+  name: New Zealand Contract Law Reviewer
+  category: review
+  practice_area: contracts
+  jurisdiction: new-zealand
+  owner: contracts-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Verify contract formation and statutory remedies, fair trading and consumer guarantees, unfair terms and contracting-out conditions.'
+- skill_id: new-zealand-counsel
+  name: New Zealand Counsel
+  category: firm-operations
+  practice_area: jurisdiction
+  jurisdiction: new-zealand
+  owner: new-zealand-counsel
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: New Zealand jurisdiction counsel.
+- skill_id: new-zealand-criminal-procedure-checker
+  name: New Zealand Criminal Procedure Checker
+  category: review
+  practice_area: criminal
+  jurisdiction: new-zealand
+  owner: criminal-defence-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Verify New Zealand criminal procedure, offence category, bail, disclosure, youth forum and evidence; identify urgent custody safeguards.'
+- skill_id: new-zealand-data-protection-compliance-checker
+  name: New Zealand Data Protection Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: new-zealand
+  owner: compliance-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Verify Privacy Act scope, agency duties, information privacy principles, overseas disclosures and notifiable breach conditions.'
+- skill_id: new-zealand-employment-law-applicability-checker
+  name: New Zealand Employment Law Applicability Checker
+  category: review
+  practice_area: employment
+  jurisdiction: new-zealand
+  owner: employment-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Distinguish employee/contractor status, good-faith duties, personal grievance and bargaining questions; identify mediation, Authority or Court routes.'
+- skill_id: new-zealand-family-law-applicability-checker
+  name: New Zealand Family Law Applicability Checker
+  category: review
+  practice_area: family
+  jurisdiction: new-zealand
+  owner: family-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Separate dissolution, parenting, relationship property, family violence and succession; verify Family Court jurisdiction and cross-border child issues.'
+- skill_id: new-zealand-insolvency-applicability-checker
+  name: New Zealand Insolvency Applicability Checker
+  category: review
+  practice_area: insolvency
+  jurisdiction: new-zealand
+  owner: insolvency-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Distinguish corporate liquidation, voluntary administration, receivership and individual insolvency; verify statutory demands, voidable transactions and security priorities.'
+- skill_id: new-zealand-investigation-evidence-checker
+  name: New Zealand Investigation and Evidence Checker
+  category: review
+  practice_area: investigations
+  jurisdiction: new-zealand
+  owner: investigations-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Verify NZ privacy, surveillance, evidence and employment good-faith constraints; document lawful collection, privilege and regulator disclosure obligations.'
+- skill_id: new-zealand-ip-protection-checker
+  name: New Zealand IP Protection Checker
+  category: review
+  practice_area: ip
+  jurisdiction: new-zealand
+  owner: ip-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Check IPONZ registrations, copyright and moral rights, employee/commissioned ownership and Māori cultural interests where relevant; distinguish registry and court remedies.'
+- skill_id: new-zealand-property-law-reviewer
+  name: New Zealand Property Law Reviewer
+  category: review
+  practice_area: real-estate
+  jurisdiction: new-zealand
+  owner: real-estate-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Verify land title, Māori land status, unit titles, tenancy, planning and overseas investment consent where applicable.'
+- skill_id: new-zealand-public-law-remedies-checker
+  name: New Zealand Public Law Remedies Checker
+  category: review
+  practice_area: public-law
+  jurisdiction: new-zealand
+  owner: public-law-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Separate judicial review, statutory appeal, Ombudsman and information-access routes; assess natural justice, rights and Treaty/tikanga relevance to the particular power.'
+- skill_id: new-zealand-regulatory-compliance-checker
+  name: New Zealand Regulatory Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: new-zealand
+  owner: compliance-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Identify responsible NZ regulator and activity licensing, AML/CFT supervisor, sanctions and reporting duties; verify sector-specific commencement and exemptions.'
+- skill_id: new-zealand-tax-applicability-checker
+  name: New Zealand Tax Applicability Checker
+  category: review
+  practice_area: tax
+  jurisdiction: new-zealand
+  owner: tax-lawyer
+  shared_with:
+  - new-zealand-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'New Zealand: Check Inland Revenue treatment of income, GST, residence and treaties, with period-specific positions and verified disputes/challenge procedure.'
 - skill_id: notice-reply-drafter
   name: Notice Reply Drafter
   category: drafting
@@ -1886,6 +3165,213 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Draft focused applications under India's Right to Information Act, 2005 for identifiable existing records held or controlled by the correct public authority.
+- skill_id: russia-arbitration-procedure-checker
+  name: Russian Arbitration Procedure Checker
+  category: review
+  practice_area: dispute-resolution
+  jurisdiction: russia
+  owner: dispute-resolution-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Distinguish private arbitration from state arbitrazh courts; verify seat, arbitrability, court support and current recognition restrictions.'
+- skill_id: russia-authority-validator
+  name: Russian Authority Validator
+  category: review
+  practice_area: research
+  jurisdiction: russia
+  owner: legal-research-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Retrieve official Russian publication and applicable versions; distinguish codes, subordinate instruments and court explanations from individual decisions.'
+- skill_id: russia-banking-finance-regulatory-checker
+  name: Russian Banking and Finance Regulatory Checker
+  category: review
+  practice_area: banking-finance
+  jurisdiction: russia
+  owner: banking-finance-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Identify Bank of Russia supervision, activity permissions, security, currency controls and cross-border payment restrictions.'
+- skill_id: russia-civil-procedure-checker
+  name: Russian Civil Procedure Checker
+  category: review
+  practice_area: litigation
+  jurisdiction: russia
+  owner: litigation-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Distinguish commercial arbitrazh courts from general-jurisdiction courts; verify procedure, service, limitation and enforcement.'
+- skill_id: russia-companies-compliance-checker
+  name: Russian Companies Compliance Checker
+  category: review
+  practice_area: corporate
+  jurisdiction: russia
+  owner: corporate-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Check entity form, registration, beneficial ownership, corporate approvals and foreign investment restrictions.'
+- skill_id: russia-consumer-remedies-checker
+  name: Russian Consumer Remedies Checker
+  category: review
+  practice_area: consumer
+  jurisdiction: russia
+  owner: consumer-protection-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Check consumer status, mandatory protections, product safety, complaint forum and remedies.'
+- skill_id: russia-contract-law-reviewer
+  name: Russian Contract Law Reviewer
+  category: review
+  practice_area: contracts
+  jurisdiction: russia
+  owner: contracts-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Check Civil Code formation, mandatory terms, performance, liability, termination and choice-of-law rules; verify sanctions and countermeasure effects separately.'
+- skill_id: russia-counsel
+  name: Russia Counsel
+  category: firm-operations
+  practice_area: jurisdiction
+  jurisdiction: russia
+  owner: russia-counsel
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: Russia jurisdiction counsel.
+- skill_id: russia-criminal-procedure-checker
+  name: Russian Criminal Procedure Checker
+  category: review
+  practice_area: criminal
+  jurisdiction: russia
+  owner: criminal-defence-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Check criminal offence elements, investigation powers, detention, defence access, bail or other restraint and admissibility against current codes.'
+- skill_id: russia-data-protection-compliance-checker
+  name: Russian Data Protection Compliance Checker
+  category: review
+  practice_area: jurisdiction
+  jurisdiction: russia
+  owner: russia-counsel
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Check personal-data processing, localisation, cross-border transfer, security, notification and Roskomnadzor requirements.'
+- skill_id: russia-employment-law-applicability-checker
+  name: Russian Employment Law Applicability Checker
+  category: review
+  practice_area: employment
+  jurisdiction: russia
+  owner: employment-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Check Labour Code coverage, worker status, collective instruments, termination, protected categories and dispute forum.'
+- skill_id: russia-family-law-applicability-checker
+  name: Russian Family Law Applicability Checker
+  category: review
+  practice_area: family
+  jurisdiction: russia
+  owner: family-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Check marriage, divorce, parenting, maintenance and succession nexus; verify recognition of foreign orders.'
+- skill_id: russia-insolvency-applicability-checker
+  name: Russian Insolvency Applicability Checker
+  category: review
+  practice_area: insolvency
+  jurisdiction: russia
+  owner: insolvency-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Check corporate versus individual insolvency, debtor eligibility, moratoria, priorities, avoidance and cross-border recognition.'
+- skill_id: russia-investigation-evidence-checker
+  name: Russian Investigation and Evidence Checker
+  category: review
+  practice_area: investigations
+  jurisdiction: russia
+  owner: investigations-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Check lawful evidence collection, privacy, employment procedure, privilege, reporting and state-secret restrictions.'
+- skill_id: russia-ip-protection-checker
+  name: Russian IP Protection Checker
+  category: review
+  practice_area: ip
+  jurisdiction: russia
+  owner: ip-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Check territorial rights, Rospatent procedures, ownership, licensing and enforcement; verify any current special measures.'
+- skill_id: russia-property-law-reviewer
+  name: Russian Property Law Reviewer
+  category: review
+  practice_area: real-estate
+  jurisdiction: russia
+  owner: real-estate-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Check land category, title, encumbrances, registration, leases and foreign ownership restrictions using authorised records.'
+- skill_id: russia-public-law-remedies-checker
+  name: Russian Public Law Remedies Checker
+  category: review
+  practice_area: public-law
+  jurisdiction: russia
+  owner: public-law-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Distinguish administrative challenge, statutory appeal and constitutional review; verify standing, forum and deadlines.'
+- skill_id: russia-regulatory-compliance-checker
+  name: Russian Regulatory Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: russia
+  owner: compliance-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Map sector permissions, competition, AML, domestic countermeasures and separately applicable foreign sanctions to verified instruments.'
+- skill_id: russia-tax-applicability-checker
+  name: Russian Tax Applicability Checker
+  category: review
+  practice_area: tax
+  jurisdiction: russia
+  owner: tax-lawyer
+  shared_with:
+  - russia-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Russian: Check taxpayer status, residence, source, tax period, federal/regional/local taxes, treaty status and current restrictions.'
 - skill_id: sale-deed-drafter
   name: Sale Deed Drafter
   category: drafting
@@ -2238,6 +3724,214 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Singapore singapore income tax, GST, withholding, stamp duties, treaties, assessments and appeals.
+- skill_id: south-africa-arbitration-procedure-checker
+  name: South African Arbitration Procedure Checker
+  category: review
+  practice_area: dispute-resolution
+  jurisdiction: south-africa
+  owner: dispute-resolution-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Separate domestic and international arbitration frameworks, seat, public-body constraints and award enforcement.'
+- skill_id: south-africa-authority-validator
+  name: South African Authority Validator
+  category: review
+  practice_area: research
+  jurisdiction: south-africa
+  owner: legal-research-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Verify Constitution, Acts, gazette commencement and court hierarchy; assess customary law and constitutional validity issues on evidence, including later treatment.'
+- skill_id: south-africa-banking-finance-regulatory-checker
+  name: South African Banking and Finance Regulatory Checker
+  category: review
+  practice_area: banking-finance
+  jurisdiction: south-africa
+  owner: banking-finance-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Distinguish prudential and conduct regulation, National Credit applicability, security perfection and debt enforcement; verify relevant regulator and registration.'
+- skill_id: south-africa-civil-procedure-checker
+  name: South African Civil Procedure Checker
+  category: review
+  practice_area: litigation
+  jurisdiction: south-africa
+  owner: litigation-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Distinguish Magistrates’ Courts, High Court divisions and specialist/constitutional jurisdiction; verify rules, prescription, service and pre-action notices.'
+- skill_id: south-africa-companies-compliance-checker
+  name: South African Companies Compliance Checker
+  category: review
+  practice_area: corporate
+  jurisdiction: south-africa
+  owner: corporate-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Verify Companies Act entity form, CIPC records, directors’ duties, beneficial ownership and transaction approvals; check takeover and competition rules where relevant.'
+- skill_id: south-africa-consumer-remedies-checker
+  name: South African Consumer Remedies Checker
+  category: review
+  practice_area: consumer
+  jurisdiction: south-africa
+  owner: consumer-protection-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Assess Consumer Protection and National Credit coverage separately, ombud/regulator/tribunal jurisdiction, protected transaction thresholds and prescribed remedies.'
+- skill_id: south-africa-contract-law-reviewer
+  name: South African Contract Law Reviewer
+  category: review
+  practice_area: contracts
+  jurisdiction: south-africa
+  owner: contracts-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Assess common-law requirements, constitutional/public-policy constraints, consumer and credit applicability, penalties and enforceability.'
+- skill_id: south-africa-counsel
+  name: South Africa Counsel
+  category: firm-operations
+  practice_area: jurisdiction
+  jurisdiction: south-africa
+  owner: south-africa-counsel
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: South Africa jurisdiction counsel.
+- skill_id: south-africa-criminal-procedure-checker
+  name: South African Criminal Procedure Checker
+  category: review
+  practice_area: criminal
+  jurisdiction: south-africa
+  owner: criminal-defence-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Verify constitutional custody rights, arrest/bail procedure, prosecution, disclosure, evidentiary safeguards and applicable child justice regime.'
+- skill_id: south-africa-data-protection-compliance-checker
+  name: South African Data Protection Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: south-africa
+  owner: compliance-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Verify POPIA applicability, responsible party/operator roles, processing justification, security, breach and cross-border duties; distinguish PAIA access questions.'
+- skill_id: south-africa-employment-law-applicability-checker
+  name: South African Employment Law Applicability Checker
+  category: review
+  practice_area: employment
+  jurisdiction: south-africa
+  owner: employment-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Check Labour Relations and Basic Conditions frameworks, collective instruments and CCMA/bargaining council/Labour Court jurisdiction; verify referral triggers.'
+- skill_id: south-africa-family-law-applicability-checker
+  name: South African Family Law Applicability Checker
+  category: review
+  practice_area: family
+  jurisdiction: south-africa
+  owner: family-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Establish civil, customary or other legally relevant relationship framework; separate divorce, property, maintenance, children and succession jurisdiction.'
+- skill_id: south-africa-insolvency-applicability-checker
+  name: South African Insolvency Applicability Checker
+  category: review
+  practice_area: insolvency
+  jurisdiction: south-africa
+  owner: insolvency-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Separate company business rescue/liquidation from individual sequestration; verify creditor priorities, employee interests, stays and impeachable dispositions.'
+- skill_id: south-africa-investigation-evidence-checker
+  name: South African Investigation and Evidence Checker
+  category: review
+  practice_area: investigations
+  jurisdiction: south-africa
+  owner: investigations-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Assess POPIA, interception, labour fairness, privilege and evidence restrictions before collection; separate allegations from findings and regulator/criminal reporting duties.'
+- skill_id: south-africa-ip-protection-checker
+  name: South African IP Protection Checker
+  category: review
+  practice_area: ip
+  jurisdiction: south-africa
+  owner: ip-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Check CIPC registration, copyright ownership, passing-off and infringement remedies; identify territorial rights and evidential basis for enforcement.'
+- skill_id: south-africa-property-law-reviewer
+  name: South African Property Law Reviewer
+  category: review
+  practice_area: real-estate
+  jurisdiction: south-africa
+  owner: real-estate-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Verify deeds, ownership, land claims/restitution, tenure, eviction protections, municipal planning and current expropriation law/commencement.'
+- skill_id: south-africa-public-law-remedies-checker
+  name: South African Public Law Remedies Checker
+  category: review
+  practice_area: public-law
+  jurisdiction: south-africa
+  owner: public-law-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Distinguish administrative justice, legality and constitutional relief; verify standing, internal-remedy exhaustion, reasons requests and review deadlines.'
+- skill_id: south-africa-regulatory-compliance-checker
+  name: South African Regulatory Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: south-africa
+  owner: compliance-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Identify licensing, FIC reporting, competition, empowerment and sector duties from actual activity; distinguish statutory requirements from procurement preferences.'
+- skill_id: south-africa-tax-applicability-checker
+  name: South African Tax Applicability Checker
+  category: review
+  practice_area: tax
+  jurisdiction: south-africa
+  owner: tax-lawyer
+  shared_with:
+  - south-africa-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'South African: Check SARS income tax, VAT, residence and treaty position; verify assessment, objection, appeal and tax-administration remedies for the relevant tax period.'
 - skill_id: stamp-duty-analyst
   name: Stamp Duty Analyst
   category: analysis
@@ -2435,6 +4129,214 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Checks whether the defence is ready for a criminal trial or hearing — disclosure received, prosecution witnesses and order, defence witnesses and summons, documents and exhibits, admissions, expert evidence, legal points, applications pending, client preparation and logistics — and produces a readiness checklist with gaps and owners.
+- skill_id: uae-arbitration-procedure-checker
+  name: UAE Arbitration Procedure Checker
+  category: review
+  practice_area: dispute-resolution
+  jurisdiction: uae
+  owner: dispute-resolution-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Verify federal versus DIFC/ADGM arbitration regime, seat, arbitration agreement authority, institutional rules and enforcement court.'
+- skill_id: uae-authority-validator
+  name: UAE Authority Validator
+  category: review
+  practice_area: research
+  jurisdiction: uae
+  owner: legal-research-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Retrieve operative Arabic legislation, verify English translation status and federal/emirate/DIFC/ADGM hierarchy; do not treat a portal translation as authoritative by default.'
+- skill_id: uae-banking-finance-regulatory-checker
+  name: UAE Banking and Finance Regulatory Checker
+  category: review
+  practice_area: banking-finance
+  jurisdiction: uae
+  owner: banking-finance-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Separate Central Bank, federal securities, DIFC DFSA and ADGM FSRA licensing; verify mainland/free-zone lending, security registration and enforcement.'
+- skill_id: uae-civil-procedure-checker
+  name: UAE Civil Procedure Checker
+  category: review
+  practice_area: litigation
+  jurisdiction: uae
+  owner: litigation-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Distinguish federal, emirate-local, DIFC and ADGM courts, jurisdiction agreements, language, translation, service and cross-system enforcement.'
+- skill_id: uae-companies-compliance-checker
+  name: UAE Companies Compliance Checker
+  category: review
+  practice_area: corporate
+  jurisdiction: uae
+  owner: corporate-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Identify mainland/free-zone licensing authority, entity form, ownership and activity restrictions; distinguish DIFC/ADGM company regimes from federal rules.'
+- skill_id: uae-consumer-remedies-checker
+  name: UAE Consumer Remedies Checker
+  category: review
+  practice_area: consumer
+  jurisdiction: uae
+  owner: consumer-protection-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Check federal consumer scope, competent emirate authority, online transactions, warranties, language and complaint procedure; verify any special-zone exclusions.'
+- skill_id: uae-contract-law-reviewer
+  name: UAE Contract Law Reviewer
+  category: review
+  practice_area: contracts
+  jurisdiction: uae
+  owner: contracts-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Identify applicable civil/commercial code, mandatory rules, Arabic text and DIFC/ADGM contract regime where applicable; verify execution and authority.'
+- skill_id: uae-counsel
+  name: UAE Counsel
+  category: firm-operations
+  practice_area: jurisdiction
+  jurisdiction: uae
+  owner: uae-counsel
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: UAE jurisdiction counsel.
+- skill_id: uae-criminal-procedure-checker
+  name: UAE Criminal Procedure Checker
+  category: review
+  practice_area: criminal
+  jurisdiction: uae
+  owner: criminal-defence-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Identify police, public prosecution and competent criminal court; verify custody, bail, interpreter, representation, immigration consequences and procedural stage.'
+- skill_id: uae-data-protection-compliance-checker
+  name: UAE Data Protection Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: uae
+  owner: compliance-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Distinguish federal data protection, DIFC, ADGM and sector-specific regimes; verify territorial scope, exclusions and transfer conditions.'
+- skill_id: uae-employment-law-applicability-checker
+  name: UAE Employment Law Applicability Checker
+  category: review
+  practice_area: employment
+  jurisdiction: uae
+  owner: employment-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Distinguish federal private-sector labour, government employment, domestic-worker and DIFC/ADGM regimes, including dispute gateway and end-of-service rules.'
+- skill_id: uae-family-law-applicability-checker
+  name: UAE Family Law Applicability Checker
+  category: review
+  practice_area: family
+  jurisdiction: uae
+  owner: family-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Establish religion only where legally relevant, nationality, domicile and applicable personal-status or civil family regime; distinguish Abu Dhabi and federal routes.'
+- skill_id: uae-insolvency-applicability-checker
+  name: UAE Insolvency Applicability Checker
+  category: review
+  practice_area: insolvency
+  jurisdiction: uae
+  owner: insolvency-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Distinguish federal corporate restructuring/bankruptcy, personal insolvency and DIFC/ADGM regimes; verify exclusions, filing gateway and stay effects.'
+- skill_id: uae-investigation-evidence-checker
+  name: UAE Investigation and Evidence Checker
+  category: review
+  practice_area: investigations
+  jurisdiction: uae
+  owner: investigations-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Verify UAE restrictions on recordings, communications access, privacy, privilege and cross-border data handling; separate internal interviews from police/prosecution powers.'
+- skill_id: uae-ip-protection-checker
+  name: UAE IP Protection Checker
+  category: review
+  practice_area: ip
+  jurisdiction: uae
+  owner: ip-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Verify federal IP registration and enforcement, copyright ownership and licensing; distinguish free-zone contract forums from territorial IP rights.'
+- skill_id: uae-property-law-reviewer
+  name: UAE Property Law Reviewer
+  category: review
+  practice_area: real-estate
+  jurisdiction: uae
+  owner: real-estate-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Identify emirate, designated ownership area, registry, developer/project status, escrow and off-plan rules; do not assume national uniformity.'
+- skill_id: uae-public-law-remedies-checker
+  name: UAE Public Law Remedies Checker
+  category: review
+  practice_area: public-law
+  jurisdiction: uae
+  owner: public-law-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Identify federal/emirate public body, administrative challenge route, standing, immunity and required notices; distinguish DIFC/ADGM supervisory jurisdiction.'
+- skill_id: uae-regulatory-compliance-checker
+  name: UAE Regulatory Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: uae
+  owner: compliance-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Identify emirate/free-zone licensing body, federal AML/sanctions duties and sector supervision; distinguish commercial licence from permission for a regulated activity.'
+- skill_id: uae-tax-applicability-checker
+  name: UAE Tax Applicability Checker
+  category: review
+  practice_area: tax
+  jurisdiction: uae
+  owner: tax-lawyer
+  shared_with:
+  - uae-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'UAE: Verify federal corporate tax, VAT and excise scope, residence, free-zone treatment and FTA dispute channels; do not equate free-zone status with exemption.'
 - skill_id: uk-companies-act-compliance-checker
   name: UK Companies Act Compliance Checker
   category: review

@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Civil Procedure Checker"
+  short_description: "Verify uae civil procedure checker"
+  default_prompt: "Use $uae-civil-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."

@@ -1,0 +1,41 @@
+version: 1
+jurisdiction: south-africa
+agent: south-africa-counsel
+skill_count: 18
+skills:
+  corporate:
+    - south-africa-companies-compliance-checker
+  contracts:
+    - south-africa-contract-law-reviewer
+  litigation:
+    - south-africa-civil-procedure-checker
+  dispute_resolution:
+    - south-africa-arbitration-procedure-checker
+  criminal:
+    - south-africa-criminal-procedure-checker
+  family:
+    - south-africa-family-law-applicability-checker
+  property:
+    - south-africa-property-law-reviewer
+  insolvency:
+    - south-africa-insolvency-applicability-checker
+  banking_finance:
+    - south-africa-banking-finance-regulatory-checker
+  employment:
+    - south-africa-employment-law-applicability-checker
+  ip:
+    - south-africa-ip-protection-checker
+  compliance:
+    - south-africa-regulatory-compliance-checker
+  privacy:
+    - south-africa-data-protection-compliance-checker
+  consumer:
+    - south-africa-consumer-remedies-checker
+  public_law:
+    - south-africa-public-law-remedies-checker
+  investigations:
+    - south-africa-investigation-evidence-checker
+  research:
+    - south-africa-authority-validator
+  tax:
+    - south-africa-tax-applicability-checker

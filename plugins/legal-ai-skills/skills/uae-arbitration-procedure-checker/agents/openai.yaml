@@ -1,0 +1,4 @@
+interface:
+  display_name: "UAE Arbitration Procedure Checker"
+  short_description: "Verify uae arbitration procedure checker"
+  default_prompt: "Use $uae-arbitration-procedure-checker for this matter, identifying applicable law, missing evidence and verification status."
