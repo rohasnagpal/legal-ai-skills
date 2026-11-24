@@ -17,7 +17,7 @@ module SkillRegistry
     public-law-lawyer employment-lawyer ip-lawyer compliance-lawyer
     investigations-lawyer dispute-resolution-lawyer litigation-lawyer
     corporate-lawyer contracts-lawyer legal-research-lawyer
-    india-counsel us-counsel uk-counsel singapore-counsel australia-counsel canada-counsel uae-counsel new-zealand-counsel south-africa-counsel ireland-counsel russia-counsel china-counsel brazil-counsel managing-partner
+    india-counsel us-counsel uk-counsel singapore-counsel australia-counsel canada-counsel uae-counsel new-zealand-counsel south-africa-counsel ireland-counsel russia-counsel china-counsel brazil-counsel argentina-counsel kazakhstan-counsel managing-partner
   ].freeze
 
   PRACTICE_AREAS = {
@@ -32,11 +32,11 @@ module SkillRegistry
     'legal-research-lawyer' => 'research', 'india-counsel' => 'jurisdiction',
     'us-counsel' => 'jurisdiction', 'uk-counsel' => 'jurisdiction',
     'singapore-counsel' => 'jurisdiction', 'australia-counsel' => 'jurisdiction',
-    'canada-counsel' => 'jurisdiction', 'uae-counsel' => 'jurisdiction', 'new-zealand-counsel' => 'jurisdiction', 'south-africa-counsel' => 'jurisdiction', 'ireland-counsel' => 'jurisdiction', 'russia-counsel' => 'jurisdiction', 'china-counsel' => 'jurisdiction', 'brazil-counsel' => 'jurisdiction', 'managing-partner' => 'firm-operations'
+    'canada-counsel' => 'jurisdiction', 'uae-counsel' => 'jurisdiction', 'new-zealand-counsel' => 'jurisdiction', 'south-africa-counsel' => 'jurisdiction', 'ireland-counsel' => 'jurisdiction', 'russia-counsel' => 'jurisdiction', 'china-counsel' => 'jurisdiction', 'brazil-counsel' => 'jurisdiction', 'argentina-counsel' => 'jurisdiction', 'kazakhstan-counsel' => 'jurisdiction', 'managing-partner' => 'firm-operations'
   }.freeze
 
   # Entry points and gateways: not counted as legal skills.
-  ENTRY_SKILLS = %w[hello-rohas should-i-sue ask-vclo india-counsel us-counsel uk-counsel singapore-counsel australia-counsel canada-counsel uae-counsel new-zealand-counsel south-africa-counsel ireland-counsel russia-counsel china-counsel brazil-counsel].freeze
+  ENTRY_SKILLS = %w[hello-rohas should-i-sue ask-vclo india-counsel us-counsel uk-counsel singapore-counsel australia-counsel canada-counsel uae-counsel new-zealand-counsel south-africa-counsel ireland-counsel russia-counsel china-counsel brazil-counsel argentina-counsel kazakhstan-counsel].freeze
 
   CATEGORY_BY_SUFFIX = [
     [/-(drafter|documenter|builder|preparer)\z/, 'drafting'],
@@ -85,7 +85,7 @@ module SkillRegistry
   def build
     refs = references_by_agent
     jurisdictions = jurisdiction_of
-    counsel_by_jurisdiction = { 'india' => 'india-counsel', 'us' => 'us-counsel', 'uk' => 'uk-counsel', 'singapore' => 'singapore-counsel', 'australia' => 'australia-counsel', 'canada' => 'canada-counsel', 'uae' => 'uae-counsel', 'new-zealand' => 'new-zealand-counsel', 'south-africa' => 'south-africa-counsel', 'ireland' => 'ireland-counsel', 'russia' => 'russia-counsel', 'china' => 'china-counsel', 'brazil' => 'brazil-counsel' }
+    counsel_by_jurisdiction = { 'india' => 'india-counsel', 'us' => 'us-counsel', 'uk' => 'uk-counsel', 'singapore' => 'singapore-counsel', 'australia' => 'australia-counsel', 'canada' => 'canada-counsel', 'uae' => 'uae-counsel', 'new-zealand' => 'new-zealand-counsel', 'south-africa' => 'south-africa-counsel', 'ireland' => 'ireland-counsel', 'russia' => 'russia-counsel', 'china' => 'china-counsel', 'brazil' => 'brazil-counsel', 'argentina' => 'argentina-counsel', 'kazakhstan' => 'kazakhstan-counsel' }
 
     skills = skill_names.map do |name|
       meta, title = frontmatter(name)

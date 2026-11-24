@@ -1,5 +1,24 @@
 # Changelog
 
+## 4.6.0 — 2026-11-24
+
+### Added
+
+- Argentina followed by Kazakhstan: two jurisdiction counsel gateways, 36 mapped local skills across all 17 specialist areas and privacy, local operating rules, official-source guides and access observations.
+- Country routing and end-to-end scenario fixtures covering formation, legal inventories, cross-border expansion and civil liability; includes local-regime boundaries, historical versions, translation and source-failure checks.
+
+### Updated
+
+- Managing Partner, specialist routing, registry, manifests and published totals: 15 Jurisdiction Counsel, 452 Legal Skills, 277 jurisdiction-specific skills and 24 Workflows.
+- Hello Rohas alone returns the complete practical firm overview. Explicit activation, greeting-plus-matter routing, language preferences and quoted mentions are distinguished; follow-up prompts need no repeated prefix.
+- README explains activation, matter initiation and language selection separately from jurisdiction.
+
+### Coverage and validation
+
+- Argentina requires province/CABA and federal/local checks; Kazakhstan separates national and applicable AIFC regimes and records original-language/English-translation limitations.
+- No additional dedicated connectors. Country modules do not establish completed source verification or professional local sign-off.
+- Registry/validation, scorer tests, bundled MCP/hook tests, export and archive checks passed. Behavioural scenarios are fixtures, not verified live model runs.
+
 ## 4.5.0 — 2026-11-24
 
 ### Added

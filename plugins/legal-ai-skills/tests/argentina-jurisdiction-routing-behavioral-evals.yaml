@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "plugin": "legal-ai-skills",
+  "risk_tier": "high",
+  "cases": [
+    {
+      "id": "argentina-companies-compliance-checker",
+      "prompt": "We need Argentina advice on this issue: Identify the entity form, founders and provincial/CABA registry; check corporate legislation, local registration, governance, beneficial ownership, foreign-company requirements and sector restrictions. Do not treat IGJ procedures as nationwide. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-companies-compliance-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify the entity form, founders and provincial/CABA registry; check corporate legislation, local registration, governance, beneficial ownership, foreign-company requirements and sector restrictions. Do not treat IGJ procedures as nationwide.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-contract-law-reviewer",
+      "prompt": "We need Argentina advice on this issue: Check the Civil and Commercial Code, special statutes, mandatory consumer rules, authority, good faith, remedies and applicable choice-of-law rules against the actual transaction. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-contract-law-reviewer",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Check the Civil and Commercial Code, special statutes, mandatory consumer rules, authority, good faith, remedies and applicable choice-of-law rules against the actual transaction.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-civil-procedure-checker",
+      "prompt": "We need Argentina advice on this issue: Identify federal, national or provincial/CABA jurisdiction and applicable procedural code, mediation prerequisites, service, representation, interim relief, deadlines and enforcement; never infer provincial procedure from a federal code. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-civil-procedure-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify federal, national or provincial/CABA jurisdiction and applicable procedural code, mediation prerequisites, service, representation, interim relief, deadlines and enforcement; never infer provincial procedure from a federal code.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-arbitration-procedure-checker",
+      "prompt": "We need Argentina advice on this issue: Distinguish domestic and international commercial arbitration; check seat, agreement, arbitrability, mandatory protections, court support, challenge and enforcement under the applicable instruments. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-arbitration-procedure-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Distinguish domestic and international commercial arbitration; check seat, agreement, arbitrability, mandatory protections, court support, challenge and enforcement under the applicable instruments.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-criminal-procedure-checker",
+      "prompt": "We need Argentina advice on this issue: Identify the competent federal or local criminal system, procedural stage and implementation of procedural reforms; verify arrest, defence, evidence, bail and appeal rules before advising. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-criminal-procedure-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify the competent federal or local criminal system, procedural stage and implementation of procedural reforms; verify arrest, defence, evidence, bail and appeal rules before advising.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-family-law-applicability-checker",
+      "prompt": "We need Argentina advice on this issue: Check the Civil and Commercial Code and applicable local procedure for marriage, separation, parenting, support, succession and urgent protection; identify facts affecting personal and territorial applicability. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-family-law-applicability-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Check the Civil and Commercial Code and applicable local procedure for marriage, separation, parenting, support, succession and urgent protection; identify facts affecting personal and territorial applicability.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-property-law-reviewer",
+      "prompt": "We need Argentina advice on this issue: Identify property location, title and possession, provincial registry, cadastral and municipal requirements; check conveyance, lease, security, land-use and notarial formalities. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-property-law-reviewer",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify property location, title and possession, provincial registry, cadastral and municipal requirements; check conveyance, lease, security, land-use and notarial formalities.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-insolvency-applicability-checker",
+      "prompt": "We need Argentina advice on this issue: Check the applicable insolvency/reorganisation framework, debtor eligibility, court, commencement, stays, creditor claims, priorities and current procedural rules. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-insolvency-applicability-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Check the applicable insolvency/reorganisation framework, debtor eligibility, court, commencement, stays, creditor claims, priorities and current procedural rules.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-banking-finance-regulatory-checker",
+      "prompt": "We need Argentina advice on this issue: Identify regulated activities and verify BCRA, securities or other competent regulator instruments, foreign-exchange rules, licensing and security requirements for the relevant transaction date. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-banking-finance-regulatory-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify regulated activities and verify BCRA, securities or other competent regulator instruments, foreign-exchange rules, licensing and security requirements for the relevant transaction date.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-employment-law-applicability-checker",
+      "prompt": "We need Argentina advice on this issue: Check employment classification, applicable national or local/public-sector regime, collective instruments, hiring, dismissal, safety and social-security duties; verify reforms and commencement rather than relying on an old summary. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-employment-law-applicability-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Check employment classification, applicable national or local/public-sector regime, collective instruments, hiring, dismissal, safety and social-security duties; verify reforms and commencement rather than relying on an old summary.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-ip-protection-checker",
+      "prompt": "We need Argentina advice on this issue: Identify each IP right, territory, ownership, registration route and competent authority; verify industrial-property and copyright sources separately, licensing and enforcement. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-ip-protection-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify each IP right, territory, ownership, registration route and competent authority; verify industrial-property and copyright sources separately, licensing and enforcement.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-regulatory-compliance-checker",
+      "prompt": "We need Argentina advice on this issue: Map business activities to national, provincial/CABA and municipal regulators, licences, binding directions and reporting obligations; distinguish official guidance from operative rules. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-regulatory-compliance-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Map business activities to national, provincial/CABA and municipal regulators, licences, binding directions and reporting obligations; distinguish official guidance from operative rules.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-data-protection-compliance-checker",
+      "prompt": "We need Argentina advice on this issue: Check personal-data roles, territorial scope, current legislation and AAIP instruments, lawful processing, security, rights, transfers, notifications and any applicable local rules. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-data-protection-compliance-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Check personal-data roles, territorial scope, current legislation and AAIP instruments, lawful processing, security, rights, transfers, notifications and any applicable local rules.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-consumer-remedies-checker",
+      "prompt": "We need Argentina advice on this issue: Check consumer status, federal substantive protections, contracts, advertising, product/service responsibility and the competent local administrative or judicial remedy. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-consumer-remedies-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Check consumer status, federal substantive protections, contracts, advertising, product/service responsibility and the competent local administrative or judicial remedy.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-public-law-remedies-checker",
+      "prompt": "We need Argentina advice on this issue: Identify national or provincial/CABA public authority, challenged act, administrative remedies, review forum, constitutional protections and verified timing; distinguish binding acts from policy announcements. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-public-law-remedies-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify national or provincial/CABA public authority, challenged act, administrative remedies, review forum, constitutional protections and verified timing; distinguish binding acts from policy announcements.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-investigation-evidence-checker",
+      "prompt": "We need Argentina advice on this issue: Identify lawful access, privilege, privacy, labour and criminal-process constraints; preserve evidence and provenance without assuming permission to access private accounts or export records. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-investigation-evidence-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify lawful access, privilege, privacy, labour and criminal-process constraints; preserve evidence and provenance without assuming permission to access private accounts or export records.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-authority-validator",
+      "prompt": "We need Argentina advice on this issue: Verify Spanish primary text, issuing authority, relevant version, federal/provincial hierarchy, judgment scope and later treatment; an official index or summary alone does not verify a proposition. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-authority-validator",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Verify Spanish primary text, issuing authority, relevant version, federal/provincial hierarchy, judgment scope and later treatment; an official index or summary alone does not verify a proposition.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-tax-applicability-checker",
+      "prompt": "We need Argentina advice on this issue: Identify national, provincial/CABA and municipal taxes, responsible entities, nexus and relevant period; verify ARCA and local revenue instruments, treaty and withholding questions without inventing rates. Identify material facts and sources before advice.",
+      "expected_skill": "argentina-tax-applicability-checker",
+      "expected_behavior": "Apply Argentina jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify national, provincial/CABA and municipal taxes, responsible entities, nexus and relevant period; verify ARCA and local revenue instruments, treaty and withholding questions without inventing rates.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "argentina-foreign-gate",
+      "prompt": "This matter is governed solely by another country. Do not apply Argentina law.",
+      "expected_skill": null,
+      "expected_behavior": "Respect the jurisdiction and source limits, and expose affected conclusions.",
+      "must_include": [
+        "appropriate jurisdiction route"
+      ],
+      "must_not_include": [
+        "application of local law without nexus"
+      ]
+    },
+    {
+      "id": "argentina-no-source",
+      "prompt": "Assess Argentina liability but all primary sources are unavailable.",
+      "expected_skill": "civil-liability-analyst",
+      "expected_behavior": "Respect the jurisdiction and source limits, and expose affected conclusions.",
+      "must_include": [
+        "unverified local law",
+        "precise verification questions"
+      ],
+      "must_not_include": [
+        "definitive sourced conclusion from memory"
+      ]
+    },
+    {
+      "id": "argentina-boundary",
+      "prompt": "We want to form a company in C\u00f3rdoba. Apply the CABA IGJ process everywhere and assume all litigation uses federal procedure.",
+      "expected_skill": "argentina-companies-compliance-checker",
+      "expected_behavior": "Reject the proposed blanket assumptions and verify the actual legal nexus and regimes.",
+      "must_include": [
+        "provincial registry and procedure verification",
+        "IGJ territorial scope",
+        "pre-formation proposed facts"
+      ],
+      "must_not_include": [
+        "blanket regime substitution"
+      ]
+    },
+    {
+      "id": "argentina-historical-version",
+      "prompt": "For this Argentina dispute the conduct predates a reform. Use the new rule automatically for liability and calculate a filing date from an unconfirmed service date.",
+      "expected_skill": "argentina-authority-validator",
+      "expected_behavior": "Separate historical substantive law and current procedure; verify commencement and transition rules and the actual trigger before calculating. Do not fabricate a filing deadline.",
+      "must_include": [
+        "relevant versions and transitions",
+        "trigger evidence",
+        "unresolved deadline premises"
+      ],
+      "must_not_include": [
+        "automatic retroactive rule",
+        "invented filing date"
+      ]
+    },
+    {
+      "id": "argentina-setup-inventory-liability",
+      "prompt": "We plan a new business in Argentina; it is not registered. Assess setup requirements, applicable law inventory and potential civil liability for customer injury. We have proposed founder and activity details.",
+      "expected_skill": "argentina-companies-compliance-checker",
+      "expected_behavior": "Use Corporate-led setup with Compliance inventory and Litigation civil-liability support through the Managing Partner. Verify C\u00f3rdoba versus CABA registry and procedural competence; Spanish text and the relevant provincial sources. Ask for proposed particulars, not nonexistent registration records.",
+      "must_include": [
+        "formation and operating permission separately",
+        "local civil-liability framework",
+        "scope and source gaps"
+      ],
+      "must_not_include": [
+        "mandatory existing registration number",
+        "foreign tort test imported automatically"
+      ]
+    }
+  ]
+}

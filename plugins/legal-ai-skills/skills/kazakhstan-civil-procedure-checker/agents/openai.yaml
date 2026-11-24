@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kazakhstani Civil Procedure Checker"
+  short_description: "Kazakhstan local law: civil procedure checker"
+  default_prompt: "Use $legal-ai-skills:kazakhstan-civil-procedure-checker for this matter with source-linked findings and verification gaps."

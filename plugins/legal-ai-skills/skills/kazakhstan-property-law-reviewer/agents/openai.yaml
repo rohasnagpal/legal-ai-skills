@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kazakhstani Property Law Reviewer"
+  short_description: "Kazakhstan local law: property law reviewer"
+  default_prompt: "Use $legal-ai-skills:kazakhstan-property-law-reviewer for this matter with source-linked findings and verification gaps."

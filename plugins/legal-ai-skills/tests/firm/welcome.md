@@ -4,6 +4,10 @@
 
 > Hello Rohas
 
+> HELLO ROHAS!
+
+> Hello, Rohas
+
 > hi rohas
 
 > Hello Legal AI
@@ -18,13 +22,16 @@ Implicitly activate [hello-rohas](../../skills/hello-rohas/SKILL.md) (directly, 
 
 ## Behaviour assertions
 
+- “Hello Rohas” alone returns the complete configured overview, not merely a short greeting, intake questions or instructions to write a longer prompt.
+- Explains coordination and native/sequential delegation, practical capabilities, local document tools with engine limits, supported hosts, learning/exam support and requested matter records without claiming automatic cross-chat memory.
+- Explicit language preferences override greeting-based inference; “Hello Rohas. Use Spanish” returns the full overview in Spanish while leaving jurisdiction unspecified.
 - Opens with "Welcome to your AI law firm — Legal AI Skills by Rohas Nagpal".
 - Adds "(formerly vCLO)" only for vCLO or virtual CLO greetings.
-- Shows the firm table: Managing Partner, 17 Specialist Lawyers named individually, 13 Jurisdiction Counsel (India, US, UK, Singapore, Australia, Canada, UAE, New Zealand, South Africa, Ireland, Russia, China, Brazil), and the skill and workflow counts.
+- Shows the firm table: Managing Partner, 17 Specialist Lawyers named individually, 15 Jurisdiction Counsel (India, US, UK, Singapore, Australia, Canada, UAE, New Zealand, South Africa, Ireland, Russia, China, Brazil, Argentina, Kazakhstan), and the skill and workflow counts.
 - The skill, lawyer, counsel and workflow counts match the repository; the release validator enforces this.
 - Shows a research-source status line that counts only sources whose tools are actually available in the session, and groups unavailable sources by reason.
 - When no connector tools are visible, says "none connected in this session" with the restart and Node.js guidance, instead of listing all 14 sources; never says "not installed".
-- Shows Legal Skills and Workflows on separate table rows; the skills row gives concrete examples and the repository-derived jurisdiction split (49 India, 6 US, 6 UK and 18 each for the other ten maintained jurisdictions), and the workflows row names all 24 workflows.
+- Shows Legal Skills and Workflows on separate table rows; the skills row gives concrete examples and the repository-derived jurisdiction split (49 India, 6 US, 6 UK and 18 each for the other twelve maintained jurisdictions), and the workflows row names all 24 workflows.
 - Offers "show me the skills" and the per-lawyer question.
 - Mentions TinyFish and Parallel as recommended optional tools with their respective roles, without setup steps, network calls, installation or claims that they are connected. They do not increase the 14-source count.
 - Includes business setup, legal inventory and cross-border expansion examples, and multilingual, translation, government-schemes and requested matter-continuity capabilities.
@@ -50,7 +57,22 @@ Implicitly activate [hello-rohas](../../skills/hello-rohas/SKILL.md) (directly, 
 - Replies with one line ("Hello. I'll take this on as your Managing Partner.") and no welcome table.
 - Routes the matter as the Managing Partner: sizes it, confirms India and Delhi with India Counsel, and appoints the Real Estate Lawyer.
 
+## Variant: activation with language or continuing matter
+
+> Hello Rohas. Use Hindi.
+
+- Activates the full welcome in Hindi without inferring India jurisdiction.
+
+> Here is the contract you requested.
+
+- Continues the existing active firm matter without requiring the activation phrase again.
+
 ## Negative cases
+
+> Explain what the phrase “Hello Rohas” means in this README.
+
+- Answers the question about the phrase; does not treat quoted or discussed text as an activation command.
+
 
 > Learn law with Rohas: teach me the law of consideration.
 

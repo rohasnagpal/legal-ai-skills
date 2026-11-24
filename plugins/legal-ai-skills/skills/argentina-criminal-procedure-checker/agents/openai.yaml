@@ -1,0 +1,4 @@
+interface:
+  display_name: "Argentine Criminal Procedure Checker"
+  short_description: "Argentina local law: criminal procedure checker"
+  default_prompt: "Use $legal-ai-skills:argentina-criminal-procedure-checker for this matter with source-linked findings and verification gaps."

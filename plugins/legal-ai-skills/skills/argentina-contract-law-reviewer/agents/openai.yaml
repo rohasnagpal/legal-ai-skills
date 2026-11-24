@@ -1,0 +1,4 @@
+interface:
+  display_name: "Argentine Contract Law Reviewer"
+  short_description: "Argentina local law: contract law reviewer"
+  default_prompt: "Use $legal-ai-skills:argentina-contract-law-reviewer for this matter with source-linked findings and verification gaps."

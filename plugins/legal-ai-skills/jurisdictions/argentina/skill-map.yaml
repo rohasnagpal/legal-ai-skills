@@ -1,0 +1,41 @@
+version: 1
+jurisdiction: argentina
+agent: argentina-counsel
+skill_count: 18
+skills:
+  corporate:
+    - argentina-companies-compliance-checker
+  contracts:
+    - argentina-contract-law-reviewer
+  litigation:
+    - argentina-civil-procedure-checker
+  dispute_resolution:
+    - argentina-arbitration-procedure-checker
+  criminal:
+    - argentina-criminal-procedure-checker
+  family:
+    - argentina-family-law-applicability-checker
+  property:
+    - argentina-property-law-reviewer
+  insolvency:
+    - argentina-insolvency-applicability-checker
+  banking_finance:
+    - argentina-banking-finance-regulatory-checker
+  employment:
+    - argentina-employment-law-applicability-checker
+  ip:
+    - argentina-ip-protection-checker
+  compliance:
+    - argentina-regulatory-compliance-checker
+  privacy:
+    - argentina-data-protection-compliance-checker
+  consumer:
+    - argentina-consumer-remedies-checker
+  public_law:
+    - argentina-public-law-remedies-checker
+  investigations:
+    - argentina-investigation-evidence-checker
+  research:
+    - argentina-authority-validator
+  tax:
+    - argentina-tax-applicability-checker

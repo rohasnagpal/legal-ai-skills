@@ -99,3 +99,11 @@ For China matters request [China Counsel](china-counsel.md) through the Managing
 ## Brazil local-law support
 
 For Brazil matters request [Brazil Counsel](brazil-counsel.md) through the Managing Partner and use [brazil-property-law-reviewer](../skills/brazil-property-law-reviewer/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Argentina local-law support
+
+Request [Argentina Counsel](argentina-counsel.md) through the Managing Partner. Use [argentina-property-law-reviewer](../skills/argentina-property-law-reviewer/SKILL.md) within its jurisdiction gate; retain specialist ownership and verify primary text.
+
+## Kazakhstan local-law support
+
+Request [Kazakhstan Counsel](kazakhstan-counsel.md) through the Managing Partner. Use [kazakhstan-property-law-reviewer](../skills/kazakhstan-property-law-reviewer/SKILL.md) within its jurisdiction gate; retain specialist ownership and verify primary text.

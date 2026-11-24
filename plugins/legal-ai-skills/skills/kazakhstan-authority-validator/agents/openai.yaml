@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kazakhstani Authority Validator"
+  short_description: "Kazakhstan local law: authority validator"
+  default_prompt: "Use $legal-ai-skills:kazakhstan-authority-validator for this matter with source-linked findings and verification gaps."

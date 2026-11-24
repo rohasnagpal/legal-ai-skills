@@ -4,7 +4,7 @@ Run `ruby scripts/build-skill-registry.rb` and `ruby scripts/validate.rb` for st
 
 ## Welcome and coverage
 
-Ask `Hello Rohas`. Expect 13 Jurisdiction Counsel including Australia, 416 Legal Skills, 241 jurisdiction-specific skills (49 India, 6 US, 6 UK and 18 each for Singapore, Australia, Canada, UAE, New Zealand, South Africa, Ireland, Russia, China and Brazil), 17 specialist lawyers and 24 workflows. Australian official websites are research starting points and do not increase the connected-source count.
+Ask `Hello Rohas`. Expect 15 Jurisdiction Counsel including Australia, 452 Legal Skills, 277 jurisdiction-specific skills (49 India, 6 US, 6 UK and 18 each for Singapore, Australia, Canada, UAE, New Zealand, South Africa, Ireland, Russia, China, Brazil, Argentina and Kazakhstan), 17 specialist lawyers and 24 workflows. Australian official websites are research starting points and do not increase the connected-source count.
 
 Ask `What can Australia Counsel do?`. Expect the 17 practice areas plus dedicated privacy support, with Commonwealth and state or territory applicability checks and specific source-access limitations.
 

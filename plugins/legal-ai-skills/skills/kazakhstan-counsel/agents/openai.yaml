@@ -1,0 +1,6 @@
+interface:
+  display_name: "Kazakhstan Counsel"
+  short_description: "Kazakhstan applicability, routing and legal verification"
+  default_prompt: "Use $legal-ai-skills:kazakhstan-counsel for local-law intake and verification."
+policy:
+  allow_implicit_invocation: true

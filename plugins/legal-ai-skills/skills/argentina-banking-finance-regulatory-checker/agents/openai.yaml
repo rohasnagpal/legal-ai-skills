@@ -1,0 +1,4 @@
+interface:
+  display_name: "Argentine Banking and Finance Regulatory Checker"
+  short_description: "Argentina local law: banking finance regulatory checker"
+  default_prompt: "Use $legal-ai-skills:argentina-banking-finance-regulatory-checker for this matter with source-linked findings and verification gaps."

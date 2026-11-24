@@ -198,11 +198,11 @@ Dir.glob("plugins/#{CORE_PLUGIN}/jurisdictions/*/skill-map.yaml").sort.each do |
       errors << "#{map_path}: missing jurisdiction resource #{required}" unless File.file?(path)
     end
 
-    local_rule_names = { 'india' => 'Indian', 'us' => 'US', 'uk' => 'UK', 'singapore' => 'Singapore', 'australia' => 'Australian', 'canada' => 'Canadian', 'uae' => 'UAE', 'new-zealand' => 'New Zealand', 'south-africa' => 'South African', 'ireland' => 'Irish', 'russia' => 'Russian', 'china' => 'Chinese', 'brazil' => 'Brazilian' }
+    local_rule_names = { 'india' => 'Indian', 'us' => 'US', 'uk' => 'UK', 'singapore' => 'Singapore', 'australia' => 'Australian', 'canada' => 'Canadian', 'uae' => 'UAE', 'new-zealand' => 'New Zealand', 'south-africa' => 'South African', 'ireland' => 'Irish', 'russia' => 'Russian', 'china' => 'Chinese', 'brazil' => 'Brazilian', 'argentina' => 'Argentine', 'kazakhstan' => 'Kazakhstani' }
     local_rule_name = local_rule_names[jurisdiction]
     if local_rule_name
       stop_rule = "If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply #{local_rule_name} rules."
-      counsel_link = "[#{ { 'india' => 'India', 'us' => 'US', 'uk' => 'UK', 'singapore' => 'Singapore', 'australia' => 'Australia', 'canada' => 'Canada', 'uae' => 'UAE', 'new-zealand' => 'New Zealand', 'south-africa' => 'South Africa', 'ireland' => 'Ireland', 'russia' => 'Russia', 'china' => 'China', 'brazil' => 'Brazil' }.fetch(jurisdiction) } Counsel instructions](../../agents/#{expected_agent}.md)"
+      counsel_link = "[#{ { 'india' => 'India', 'us' => 'US', 'uk' => 'UK', 'singapore' => 'Singapore', 'australia' => 'Australia', 'canada' => 'Canada', 'uae' => 'UAE', 'new-zealand' => 'New Zealand', 'south-africa' => 'South Africa', 'ireland' => 'Ireland', 'russia' => 'Russia', 'china' => 'China', 'brazil' => 'Brazil', 'argentina' => 'Argentina', 'kazakhstan' => 'Kazakhstan' }.fetch(jurisdiction) } Counsel instructions](../../agents/#{expected_agent}.md)"
       if File.file?(counsel_skill_path)
         counsel_content = File.read(counsel_skill_path, encoding: 'UTF-8')
         errors << "#{counsel_skill_path}: missing jurisdiction gate" unless counsel_content.include?('## Jurisdiction gate')
@@ -795,7 +795,7 @@ if File.file?(welcome_path)
     errors << "#{welcome_path}: welcome #{label} must read #{expected}" unless welcome.include?(expected)
   end
   by_jurisdiction = registry['skills'].select { |skill| skill['counts_as_legal_skill'] }.group_by { |skill| skill['jurisdiction'] }.transform_values(&:length)
-  split = "#{counts['jurisdiction_specific_skills']} are jurisdiction-specific: #{by_jurisdiction['india'].to_i} India · #{by_jurisdiction['us'].to_i} US · #{by_jurisdiction['uk'].to_i} UK · #{by_jurisdiction['singapore'].to_i} Singapore · #{by_jurisdiction['australia'].to_i} Australia · #{by_jurisdiction['canada'].to_i} Canada · #{by_jurisdiction['uae'].to_i} UAE · #{by_jurisdiction['new-zealand'].to_i} New Zealand · #{by_jurisdiction['south-africa'].to_i} South Africa · #{by_jurisdiction['ireland'].to_i} Ireland · #{by_jurisdiction['russia'].to_i} Russia · #{by_jurisdiction['china'].to_i} China · #{by_jurisdiction['brazil'].to_i} Brazil"
+  split = "#{counts['jurisdiction_specific_skills']} are jurisdiction-specific: #{by_jurisdiction['india'].to_i} India · #{by_jurisdiction['us'].to_i} US · #{by_jurisdiction['uk'].to_i} UK · #{by_jurisdiction['singapore'].to_i} Singapore · #{by_jurisdiction['australia'].to_i} Australia · #{by_jurisdiction['canada'].to_i} Canada · #{by_jurisdiction['uae'].to_i} UAE · #{by_jurisdiction['new-zealand'].to_i} New Zealand · #{by_jurisdiction['south-africa'].to_i} South Africa · #{by_jurisdiction['ireland'].to_i} Ireland · #{by_jurisdiction['russia'].to_i} Russia · #{by_jurisdiction['china'].to_i} China · #{by_jurisdiction['brazil'].to_i} Brazil · #{by_jurisdiction['argentina'].to_i} Argentina · #{by_jurisdiction['kazakhstan'].to_i} Kazakhstan"
   errors << "#{welcome_path}: welcome jurisdiction split must read '#{split}'" unless welcome.include?(split)
   welcome_workflow_row = welcome[/^> \| \*\*\d+ Workflows\*\* \| (.+) \|$/, 1].to_s
   listed = welcome_workflow_row.split(' · ').length
@@ -997,7 +997,7 @@ Dir.glob("plugins/#{CORE_PLUGIN}/jurisdictions/*/skill-map.yaml").sort.each do |
 end
 
 # Full practice-area modules retain every specialist, privacy route and counsel gateway.
-{ 'singapore' => 'Singapore', 'australia' => 'Australia', 'canada' => 'Canada', 'uae' => 'UAE', 'new-zealand' => 'New Zealand', 'south-africa' => 'South Africa', 'ireland' => 'Ireland', 'russia' => 'Russia', 'china' => 'China', 'brazil' => 'Brazil' }.each do |jurisdiction, label|
+{ 'singapore' => 'Singapore', 'australia' => 'Australia', 'canada' => 'Canada', 'uae' => 'UAE', 'new-zealand' => 'New Zealand', 'south-africa' => 'South Africa', 'ireland' => 'Ireland', 'russia' => 'Russia', 'china' => 'China', 'brazil' => 'Brazil', 'argentina' => 'Argentina', 'kazakhstan' => 'Kazakhstan' }.each do |jurisdiction, label|
   map_path = "plugins/#{CORE_PLUGIN}/jurisdictions/#{jurisdiction}/skill-map.yaml"
   next unless File.file?(map_path)
   jurisdiction_map = YAML.safe_load(File.read(map_path, encoding: 'UTF-8'))

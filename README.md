@@ -8,7 +8,7 @@ Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and 
 ---
 <img width="949" height="799" alt="image" src="https://github.com/user-attachments/assets/1ab803f3-7578-4e67-85f2-a8dead314202" />
 
-**New in [4.5.0](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/v4.5.0):** **416 Legal Skills and 24 Workflows**, including business setup, business legal inventories, cross-border expansion and civil liability/torts. Seven new civil-liability skills add negligence, professional negligence, defamation, nuisance/trespass, misrepresentation/deceit and vicarious liability analysis. Trace-based delegation evaluation cases and scoring tools support native subagents and sequential fallback; live model performance remains unevaluated. The firm retains 13 Jurisdiction Counsel and 17 Specialist Lawyers. [Evaluation guide](docs/testing-delegation.md).
+**New in [4.6.0](https://github.com/rohasnagpal/legal-ai-skills/releases/tag/v4.6.0):** **15 Jurisdiction Counsel and 452 Legal Skills**, adding **Argentina**, then **Kazakhstan**, with 18 local skills each, specialist routing, official-source/access guides and evaluation scenarios. The firm retains **24 Workflows** and **17 Specialist Lawyers**. “Hello Rohas” now returns the complete practical overview and supports explicit activation and language preferences. These modules add maintained local-law routing, not dedicated connectors or completed legal verification; live model performance remains unevaluated. [Coverage test guide](docs/testing-expanded-coverage.md).
 
 ## Here's What You Get
 
@@ -16,9 +16,9 @@ Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and 
 
 - **17 Specialist Lawyers:** Handle matters across practice areas such as corporate, criminal defence, contracts, family law, real estate, tax and litigation.
 
-- **13 Jurisdiction Counsel:** Identify and verify applicable laws, legal authorities and procedures in 🇮🇳 India, the 🇺🇸 US, the 🇬🇧 UK, 🇸🇬 Singapore, 🇦🇺 Australia, 🇨🇦 Canada, 🇦🇪 UAE, 🇳🇿 New Zealand, 🇿🇦 South Africa, 🇮🇪 Ireland, 🇷🇺 Russia, 🇨🇳 China and 🇧🇷 Brazil.
+- **15 Jurisdiction Counsel:** Identify and verify applicable laws, legal authorities and procedures in 🇮🇳 India, the 🇺🇸 US, the 🇬🇧 UK, 🇸🇬 Singapore, 🇦🇺 Australia, 🇨🇦 Canada, 🇦🇪 UAE, 🇳🇿 New Zealand, 🇿🇦 South Africa, 🇮🇪 Ireland, 🇷🇺 Russia, 🇨🇳 China, 🇧🇷 Brazil, 🇦🇷 Argentina and 🇰🇿 Kazakhstan.
 
-- **416 Legal Skills:** Reusable capabilities such as contract review, legal research, due diligence, evidence analysis and legal drafting, including jurisdiction-specific skills for RERA and Section 138 NI Act.
+- **452 Legal Skills:** Reusable capabilities such as contract review, legal research, due diligence, evidence analysis and legal drafting, including jurisdiction-specific skills for RERA and Section 138 NI Act.
 
 - **24 Workflows:** Step-by-step processes for matters such as M&A due diligence, divorce proceedings, contract negotiation and litigation preparation, plus business setup and company formation, business legal inventories and cross-border expansion.
 
@@ -28,7 +28,30 @@ Install Legal AI Skills from https://github.com/rohasnagpal/legal-ai-skills and 
 
 **Recommended optional tools:** Add **TinyFish** for interactive website research and **Parallel** for web search and broader research. Legal AI Skills works without them. These are separate optional services, not bundled connections or part of the 14-source count; underlying legal authorities still need verification.
 
-Say **“Hello Rohas”** for the firm overview, current research-connector availability and examples of matters you can start. The welcome includes business setup, legal inventories and cross-border expansion, as well as multilingual interaction, legal translation and saving or resuming matters on request.
+## Start with “Hello Rohas”
+
+Type just:
+
+```text
+Hello Rohas
+```
+
+This activates the complete practical overview: the Managing Partner, Specialist Lawyers, Jurisdiction Counsel, current skill and workflow counts, research and document tools, optional integrations, example prompts and limits. No longer overview prompt is needed.
+
+To begin a matter immediately, include your request:
+
+```text
+Hello Rohas, I want to start a company in Singapore.
+```
+
+To select a response language, say:
+
+```text
+Hello Rohas. Use Spanish. I have an Australian legal matter.
+```
+
+Language and legal jurisdiction are separate. Explicit language preferences take priority; otherwise the firm follows your language. Capitalisation and punctuation variants such as `hello rohas` and `Hello, Rohas` are supported by the skill instructions. Follow-up prompts do not need the phrase again. Codex or Claude Code controls actual skill selection; this is an explicit skill entry point, not a global keyword hook.
+
 
 Built in 🇮🇳 India for the world by [Rohas Nagpal](https://rohasnagpal.com/).
 
@@ -86,7 +109,9 @@ AI Managing Partner
 │   ├── 🇮🇪 Ireland Counsel
 │   ├── 🇷🇺 Russia Counsel
 │   ├── 🇨🇳 China Counsel
-│   └── 🇧🇷 Brazil Counsel
+│   ├── 🇧🇷 Brazil Counsel
+│   ├── 🇦🇷 Argentina Counsel
+│   └── 🇰🇿 Kazakhstan Counsel
 │
 ├── Specialist Lawyers
 │   ├── Corporate Lawyer
@@ -324,7 +349,7 @@ Start with the [two-minute guide](docs/two-minute-start.md), then see fictional 
 
 Each skill is listed under the lawyer who owns it. Many are shared: any lawyer can use any skill, and the [skill registry](plugins/legal-ai-skills/skill-registry.yaml) records the owner, shared users and jurisdiction of every skill. Jurisdiction-specific skills are marked 🇮🇳, 🇺🇸 or 🇬🇧.
 
-[Managing Partner and firm operations](#managing-partner-and-firm-operations) · [Corporate Lawyer](#corporate-lawyer) · [Contracts Lawyer](#contracts-lawyer) · [Litigation Lawyer](#litigation-lawyer) · [Dispute Resolution Lawyer](#dispute-resolution-lawyer) · [Criminal Defence Lawyer](#criminal-defence-lawyer) · [Family Lawyer](#family-lawyer) · [Real Estate Lawyer](#real-estate-lawyer) · [Tax Lawyer](#tax-lawyer) · [Insolvency Lawyer](#insolvency-lawyer) · [Banking and Finance Lawyer](#banking-and-finance-lawyer) · [Employment Lawyer](#employment-lawyer) · [IP Lawyer](#ip-lawyer) · [Compliance Lawyer](#compliance-lawyer) · [Consumer Protection Lawyer](#consumer-protection-lawyer) · [Public Law and Regulatory Lawyer](#public-law-and-regulatory-lawyer) · [Investigations Lawyer](#investigations-lawyer) · [Legal Research Lawyer](#legal-research-lawyer) · [🇮🇳 India Counsel](#india-counsel) · [🇺🇸 US Counsel](#us-counsel) · [🇬🇧 UK Counsel](#uk-counsel) · [🇸🇬 Singapore Counsel](#singapore-counsel) · [🇦🇺 Australia Counsel](#australia-counsel) · [🇨🇦 Canada Counsel](#canada-counsel) · [🇦🇪 UAE Counsel](#uae-counsel) · [🇳🇿 New Zealand Counsel](#new-zealand-counsel) · [🇿🇦 South Africa Counsel](#south-africa-counsel) · [🇮🇪 Ireland Counsel](#ireland-counsel) · [🇷🇺 Russia Counsel](#russia-counsel) · [🇨🇳 China Counsel](#china-counsel) · [🇧🇷 Brazil Counsel](#brazil-counsel)
+[Managing Partner and firm operations](#managing-partner-and-firm-operations) · [Corporate Lawyer](#corporate-lawyer) · [Contracts Lawyer](#contracts-lawyer) · [Litigation Lawyer](#litigation-lawyer) · [Dispute Resolution Lawyer](#dispute-resolution-lawyer) · [Criminal Defence Lawyer](#criminal-defence-lawyer) · [Family Lawyer](#family-lawyer) · [Real Estate Lawyer](#real-estate-lawyer) · [Tax Lawyer](#tax-lawyer) · [Insolvency Lawyer](#insolvency-lawyer) · [Banking and Finance Lawyer](#banking-and-finance-lawyer) · [Employment Lawyer](#employment-lawyer) · [IP Lawyer](#ip-lawyer) · [Compliance Lawyer](#compliance-lawyer) · [Consumer Protection Lawyer](#consumer-protection-lawyer) · [Public Law and Regulatory Lawyer](#public-law-and-regulatory-lawyer) · [Investigations Lawyer](#investigations-lawyer) · [Legal Research Lawyer](#legal-research-lawyer) · [🇮🇳 India Counsel](#india-counsel) · [🇺🇸 US Counsel](#us-counsel) · [🇬🇧 UK Counsel](#uk-counsel) · [🇸🇬 Singapore Counsel](#singapore-counsel) · [🇦🇺 Australia Counsel](#australia-counsel) · [🇨🇦 Canada Counsel](#canada-counsel) · [🇦🇪 UAE Counsel](#uae-counsel) · [🇳🇿 New Zealand Counsel](#new-zealand-counsel) · [🇿🇦 South Africa Counsel](#south-africa-counsel) · [🇮🇪 Ireland Counsel](#ireland-counsel) · [🇷🇺 Russia Counsel](#russia-counsel) · [🇨🇳 China Counsel](#china-counsel) · [🇧🇷 Brazil Counsel](#brazil-counsel) · [🇦🇷 Argentina Counsel](#argentina-counsel) · [🇰🇿 Kazakhstan Counsel](#kazakhstan-counsel)
 
 ### Managing Partner and firm operations
 
@@ -802,3 +827,23 @@ Instructions: [brazil-counsel.md](plugins/legal-ai-skills/agents/brazil-counsel.
 
 - [Brazil Counsel](plugins/legal-ai-skills/skills/brazil-counsel/SKILL.md): local applicability, procedure and verification.
 - [18 local skills across all 17 specialist areas and privacy](plugins/legal-ai-skills/jurisdictions/brazil/README.md).
+
+<a id="argentina-counsel"></a>
+
+### 🇦🇷 Argentina Counsel
+
+Instructions: [argentina-counsel.md](plugins/legal-ai-skills/agents/argentina-counsel.md)
+
+- [Argentina Counsel](plugins/legal-ai-skills/skills/argentina-counsel/SKILL.md): local applicability, routing and verification.
+- [18 local skills across all 17 specialist areas and privacy](plugins/legal-ai-skills/jurisdictions/argentina/README.md).
+- [Official sources and access observations](plugins/legal-ai-skills/jurisdictions/argentina/authoritative-sources.md).
+
+<a id="kazakhstan-counsel"></a>
+
+### 🇰🇿 Kazakhstan Counsel
+
+Instructions: [kazakhstan-counsel.md](plugins/legal-ai-skills/agents/kazakhstan-counsel.md)
+
+- [Kazakhstan Counsel](plugins/legal-ai-skills/skills/kazakhstan-counsel/SKILL.md): local applicability, routing and verification.
+- [18 local skills across all 17 specialist areas and privacy](plugins/legal-ai-skills/jurisdictions/kazakhstan/README.md).
+- [Official sources and access observations](plugins/legal-ai-skills/jurisdictions/kazakhstan/authoritative-sources.md).

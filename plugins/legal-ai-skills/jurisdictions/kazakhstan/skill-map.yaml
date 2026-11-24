@@ -1,0 +1,41 @@
+version: 1
+jurisdiction: kazakhstan
+agent: kazakhstan-counsel
+skill_count: 18
+skills:
+  corporate:
+    - kazakhstan-companies-compliance-checker
+  contracts:
+    - kazakhstan-contract-law-reviewer
+  litigation:
+    - kazakhstan-civil-procedure-checker
+  dispute_resolution:
+    - kazakhstan-arbitration-procedure-checker
+  criminal:
+    - kazakhstan-criminal-procedure-checker
+  family:
+    - kazakhstan-family-law-applicability-checker
+  property:
+    - kazakhstan-property-law-reviewer
+  insolvency:
+    - kazakhstan-insolvency-applicability-checker
+  banking_finance:
+    - kazakhstan-banking-finance-regulatory-checker
+  employment:
+    - kazakhstan-employment-law-applicability-checker
+  ip:
+    - kazakhstan-ip-protection-checker
+  compliance:
+    - kazakhstan-regulatory-compliance-checker
+  privacy:
+    - kazakhstan-data-protection-compliance-checker
+  consumer:
+    - kazakhstan-consumer-remedies-checker
+  public_law:
+    - kazakhstan-public-law-remedies-checker
+  investigations:
+    - kazakhstan-investigation-evidence-checker
+  research:
+    - kazakhstan-authority-validator
+  tax:
+    - kazakhstan-tax-applicability-checker

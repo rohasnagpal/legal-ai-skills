@@ -119,3 +119,11 @@ Use [South Africa Counsel](../agents/south-africa-counsel.md) and the [official-
 ## Ireland
 
 Use [Ireland Counsel](../agents/ireland-counsel.md) and the [official-source guide](../jurisdictions/ireland/authoritative-sources.md) across all specialist areas. This is a maintained jurisdiction module; it uses authorised website research and supplied records, not a dedicated bundled connector.
+
+## Argentina
+
+Use [Argentina Counsel](../agents/argentina-counsel.md) and the [official-source guide](../jurisdictions/argentina/authoritative-sources.md) across specialist areas. This module uses authorised website research and supplied records, not a dedicated connector; source and translation limits are recorded explicitly.
+
+## Kazakhstan
+
+Use [Kazakhstan Counsel](../agents/kazakhstan-counsel.md) and the [official-source guide](../jurisdictions/kazakhstan/authoritative-sources.md) across specialist areas. This module uses authorised website research and supplied records, not a dedicated connector; source and translation limits are recorded explicitly.

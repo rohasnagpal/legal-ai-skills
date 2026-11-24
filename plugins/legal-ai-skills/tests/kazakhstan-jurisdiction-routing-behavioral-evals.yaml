@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "plugin": "legal-ai-skills",
+  "risk_tier": "high",
+  "cases": [
+    {
+      "id": "kazakhstan-companies-compliance-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Identify proposed entity, founders, location and national versus AIFC route; verify formation, governance, capital, ownership records, foreign participation and sector restrictions without mixing registry requirements. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-companies-compliance-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify proposed entity, founders, location and national versus AIFC route; verify formation, governance, capital, ownership records, foreign participation and sector restrictions without mixing registry requirements.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-contract-law-reviewer",
+      "prompt": "We need Kazakhstan advice on this issue: Verify the national Civil Code or applicable AIFC contract framework, authority, mandatory protections, terms, remedies, governing law and forum; do not assume English-law principles govern a national contract. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-contract-law-reviewer",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Verify the national Civil Code or applicable AIFC contract framework, authority, mandatory protections, terms, remedies, governing law and forum; do not assume English-law principles govern a national contract.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-civil-procedure-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Identify national court jurisdiction and procedural code or a properly established AIFC Court route; verify standing, service, fees, representation, evidence, interim relief, deadlines and enforcement. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-civil-procedure-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify national court jurisdiction and procedural code or a properly established AIFC Court route; verify standing, service, fees, representation, evidence, interim relief, deadlines and enforcement.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-arbitration-procedure-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Check domestic/international arbitration, agreement, seat, arbitrability, applicable legislation and court assistance; distinguish the AIFC Court from arbitration and verify enforcement routes. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-arbitration-procedure-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Check domestic/international arbitration, agreement, seat, arbitrability, applicable legislation and court assistance; distinguish the AIFC Court from arbitration and verify enforcement routes.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-criminal-procedure-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Check national criminal and criminal-procedure sources, offence date, arrest, defence, evidence, bail, trial and appeal; do not substitute an AIFC commercial procedure. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-criminal-procedure-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Check national criminal and criminal-procedure sources, offence date, arrest, defence, evidence, bail, trial and appeal; do not substitute an AIFC commercial procedure.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-family-law-applicability-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Check national family and succession law, parties, residence, children, assets, protective relief and competent court; do not apply an AIFC commercial regime to family status. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-family-law-applicability-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Check national family and succession law, parties, residence, children, assets, protective relief and competent court; do not apply an AIFC commercial regime to family status.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-property-law-reviewer",
+      "prompt": "We need Kazakhstan advice on this issue: Identify property and land rights, location, intended use, ownership restrictions, registry, lease, security and conveyance requirements; verify national and local permissions separately. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-property-law-reviewer",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify property and land rights, location, intended use, ownership restrictions, registry, lease, security and conveyance requirements; verify national and local permissions separately.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-insolvency-applicability-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Determine debtor eligibility and national rehabilitation/bankruptcy or applicable AIFC insolvency route; verify commencement, claims, stays, priorities, office-holder powers and cross-border issues. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-insolvency-applicability-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Determine debtor eligibility and national rehabilitation/bankruptcy or applicable AIFC insolvency route; verify commencement, claims, stays, priorities, office-holder powers and cross-border issues.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-banking-finance-regulatory-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Identify the actual regulator, activity, licence and national versus AFSA perimeter; verify banking, securities, payments, currency and security rules without treating AIFC registration as financial authorisation. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-banking-finance-regulatory-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify the actual regulator, activity, licence and national versus AFSA perimeter; verify banking, securities, payments, currency and security rules without treating AIFC registration as financial authorisation.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-employment-law-applicability-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Determine applicable national or AIFC employment rules, worker status, location, migration/work permissions, contracts, payroll, safety and termination requirements from current primary sources. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-employment-law-applicability-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Determine applicable national or AIFC employment rules, worker status, location, migration/work permissions, contracts, payroll, safety and termination requirements from current primary sources.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-ip-protection-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Identify right, territory, ownership, competent registration authority and applicable national or AIFC provisions; verify registration, licensing and enforcement rather than inferring protection from company registration. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-ip-protection-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify right, territory, ownership, competent registration authority and applicable national or AIFC provisions; verify registration, licensing and enforcement rather than inferring protection from company registration.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-regulatory-compliance-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Map activities, territory and legal entity to the competent national/local or AIFC regulator; verify licences, binding acts, reporting and sector restrictions. Do not extend AFSA permissions beyond their scope. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-regulatory-compliance-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Map activities, territory and legal entity to the competent national/local or AIFC regulator; verify licences, binding acts, reporting and sector restrictions. Do not extend AFSA permissions beyond their scope.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-data-protection-compliance-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Check national personal-data rules and any applicable AIFC data-protection regime, roles, processing, storage, security, rights, transfers and notifications; do not assume one regime excludes the other. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-data-protection-compliance-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Check national personal-data rules and any applicable AIFC data-protection regime, roles, processing, storage, security, rights, transfers and notifications; do not assume one regime excludes the other.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-consumer-remedies-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Check national consumer status, mandatory protections, advertising, product/service claims and forum; verify any relevant special regime rather than assuming AIFC terms waive national protections. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-consumer-remedies-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Check national consumer status, mandatory protections, advertising, product/service claims and forum; verify any relevant special regime rather than assuming AIFC terms waive national protections.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-public-law-remedies-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Identify challenged authority and act, applicable administrative or constitutional route, jurisdiction, admissibility, remedies and current deadlines; verify legal hierarchy and relevant court resolutions. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-public-law-remedies-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify challenged authority and act, applicable administrative or constitutional route, jurisdiction, admissibility, remedies and current deadlines; verify legal hierarchy and relevant court resolutions.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-investigation-evidence-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Identify lawful access and evidence collection, privilege, employment, privacy, criminal and cross-border constraints; preserve source integrity without assuming national/AIFC authority to access private records. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-investigation-evidence-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify lawful access and evidence collection, privilege, employment, privacy, criminal and cross-border constraints; preserve source integrity without assuming national/AIFC authority to access private records.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-authority-validator",
+      "prompt": "We need Kazakhstan advice on this issue: Check Kazakh/Russian text, hierarchy, normative court resolutions, relevant versions, amendments and translation status. Verify AIFC instruments and court materials separately; do not treat English search snippets as authoritative law. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-authority-validator",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Check Kazakh/Russian text, hierarchy, normative court resolutions, relevant versions, amendments and translation status. Verify AIFC instruments and court materials separately; do not treat English search snippets as authoritative law.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-tax-applicability-checker",
+      "prompt": "We need Kazakhstan advice on this issue: Identify taxpayer, nexus, period, national/local duties and any evidenced AIFC treatment; verify operative tax text, commencement, treaty and exemption conditions without assuming AIFC status creates a blanket exemption. Identify material facts and sources before advice.",
+      "expected_skill": "kazakhstan-tax-applicability-checker",
+      "expected_behavior": "Apply Kazakhstan jurisdiction gate and local checks, preserve intake, verify primary text and report evidence and source gaps. Local task: Identify taxpayer, nexus, period, national/local duties and any evidenced AIFC treatment; verify operative tax text, commencement, treaty and exemption conditions without assuming AIFC status creates a blanket exemption.",
+      "must_include": [
+        "local applicability",
+        "primary-source verification",
+        "missing facts and sources"
+      ],
+      "must_not_include": [
+        "foreign rules applied automatically",
+        "guaranteed outcome"
+      ]
+    },
+    {
+      "id": "kazakhstan-foreign-gate",
+      "prompt": "This matter is governed solely by another country. Do not apply Kazakhstan law.",
+      "expected_skill": null,
+      "expected_behavior": "Respect the jurisdiction and source limits, and expose affected conclusions.",
+      "must_include": [
+        "appropriate jurisdiction route"
+      ],
+      "must_not_include": [
+        "application of local law without nexus"
+      ]
+    },
+    {
+      "id": "kazakhstan-no-source",
+      "prompt": "Assess Kazakhstan liability but all primary sources are unavailable.",
+      "expected_skill": "civil-liability-analyst",
+      "expected_behavior": "Respect the jurisdiction and source limits, and expose affected conclusions.",
+      "must_include": [
+        "unverified local law",
+        "precise verification questions"
+      ],
+      "must_not_include": [
+        "definitive sourced conclusion from memory"
+      ]
+    },
+    {
+      "id": "kazakhstan-boundary",
+      "prompt": "Our company operates nationally and has an AIFC connection. Assume all tax, privacy and employment obligations use AIFC rules; treat the English Adilet translation as authoritative.",
+      "expected_skill": "kazakhstan-companies-compliance-checker",
+      "expected_behavior": "Reject the proposed blanket assumptions and verify the actual legal nexus and regimes.",
+      "must_include": [
+        "separate national and AIFC applicability",
+        "translation status",
+        "no blanket tax exemption"
+      ],
+      "must_not_include": [
+        "blanket regime substitution"
+      ]
+    },
+    {
+      "id": "kazakhstan-historical-version",
+      "prompt": "For this Kazakhstan dispute the conduct predates a reform. Use the new rule automatically for liability and calculate a filing date from an unconfirmed service date.",
+      "expected_skill": "kazakhstan-authority-validator",
+      "expected_behavior": "Separate historical substantive law and current procedure; verify commencement and transition rules and the actual trigger before calculating. Do not fabricate a filing deadline.",
+      "must_include": [
+        "relevant versions and transitions",
+        "trigger evidence",
+        "unresolved deadline premises"
+      ],
+      "must_not_include": [
+        "automatic retroactive rule",
+        "invented filing date"
+      ]
+    },
+    {
+      "id": "kazakhstan-setup-inventory-liability",
+      "prompt": "We plan a new business in Kazakhstan; it is not registered. Assess setup requirements, applicable law inventory and potential civil liability for customer injury. We have proposed founder and activity details.",
+      "expected_skill": "kazakhstan-companies-compliance-checker",
+      "expected_behavior": "Use Corporate-led setup with Compliance inventory and Litigation civil-liability support through the Managing Partner. Verify national versus AIFC applicability for each issue; Kazakh/Russian authority and unofficial English translations. Ask for proposed particulars, not nonexistent registration records.",
+      "must_include": [
+        "formation and operating permission separately",
+        "local civil-liability framework",
+        "scope and source gaps"
+      ],
+      "must_not_include": [
+        "mandatory existing registration number",
+        "foreign tort test imported automatically"
+      ]
+    }
+  ]
+}

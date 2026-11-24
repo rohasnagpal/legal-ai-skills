@@ -100,3 +100,11 @@ For China matters request [China Counsel](china-counsel.md) through the Managing
 ## Brazil local-law support
 
 For Brazil matters request [Brazil Counsel](brazil-counsel.md) through the Managing Partner and use [brazil-criminal-procedure-checker](../skills/brazil-criminal-procedure-checker/SKILL.md) for this practice area. Verify applicability, sources and procedure; retain specialist ownership.
+
+## Argentina local-law support
+
+Request [Argentina Counsel](argentina-counsel.md) through the Managing Partner. Use [argentina-criminal-procedure-checker](../skills/argentina-criminal-procedure-checker/SKILL.md) within its jurisdiction gate; retain specialist ownership and verify primary text.
+
+## Kazakhstan local-law support
+
+Request [Kazakhstan Counsel](kazakhstan-counsel.md) through the Managing Partner. Use [kazakhstan-criminal-procedure-checker](../skills/kazakhstan-criminal-procedure-checker/SKILL.md) within its jurisdiction gate; retain specialist ownership and verify primary text.

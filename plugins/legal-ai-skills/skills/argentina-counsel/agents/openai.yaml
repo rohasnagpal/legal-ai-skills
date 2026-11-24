@@ -1,0 +1,6 @@
+interface:
+  display_name: "Argentina Counsel"
+  short_description: "Argentina applicability, routing and legal verification"
+  default_prompt: "Use $legal-ai-skills:argentina-counsel for local-law intake and verification."
+policy:
+  allow_implicit_invocation: true

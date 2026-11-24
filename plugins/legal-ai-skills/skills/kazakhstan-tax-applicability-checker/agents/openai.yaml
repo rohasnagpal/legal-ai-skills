@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kazakhstani Tax Applicability Checker"
+  short_description: "Kazakhstan local law: tax applicability checker"
+  default_prompt: "Use $legal-ai-skills:kazakhstan-tax-applicability-checker for this matter with source-linked findings and verification gaps."

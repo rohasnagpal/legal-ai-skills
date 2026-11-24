@@ -1,0 +1,4 @@
+interface:
+  display_name: "Argentine Companies Compliance Checker"
+  short_description: "Argentina local law: companies compliance checker"
+  default_prompt: "Use $legal-ai-skills:argentina-companies-compliance-checker for this matter with source-linked findings and verification gaps."

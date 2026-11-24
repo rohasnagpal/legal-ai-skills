@@ -3,11 +3,11 @@
 version: 1
 generated_by: scripts/build-skill-registry.rb
 counts:
-  legal_skills: 416
+  legal_skills: 452
   specialist_lawyers: 17
-  jurisdiction_counsel: 13
+  jurisdiction_counsel: 15
   workflows: 24
-  jurisdiction_specific_skills: 241
+  jurisdiction_specific_skills: 277
 skills:
 - skill_id: activity-decision-logger
   name: Activity and Decision Logger
@@ -130,6 +130,213 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Maps the contractual, institutional, and statutory process for constituting an arbitral tribunal and assesses arbitrator qualifications, eligibility, independence, impartiality, disclosures, challenges, vacancies, and replacement.
+- skill_id: argentina-arbitration-procedure-checker
+  name: Argentine Arbitration Procedure Checker
+  category: review
+  practice_area: dispute-resolution
+  jurisdiction: argentina
+  owner: dispute-resolution-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Distinguish domestic and international commercial arbitration; check seat, agreement, arbitrability, mandatory protections, court support, challenge and enforcement under the applicable instruments.'
+- skill_id: argentina-authority-validator
+  name: Argentine Authority Validator
+  category: review
+  practice_area: research
+  jurisdiction: argentina
+  owner: legal-research-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Verify Spanish primary text, issuing authority, relevant version, federal/provincial hierarchy, judgment scope and later treatment; an official index or summary alone does not verify a proposition.'
+- skill_id: argentina-banking-finance-regulatory-checker
+  name: Argentine Banking and Finance Regulatory Checker
+  category: review
+  practice_area: banking-finance
+  jurisdiction: argentina
+  owner: banking-finance-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Identify regulated activities and verify BCRA, securities or other competent regulator instruments, foreign-exchange rules, licensing and security requirements for the relevant transaction date.'
+- skill_id: argentina-civil-procedure-checker
+  name: Argentine Civil Procedure Checker
+  category: review
+  practice_area: litigation
+  jurisdiction: argentina
+  owner: litigation-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Identify federal, national or provincial/CABA jurisdiction and applicable procedural code, mediation prerequisites, service, representation, interim relief, deadlines and enforcement; never infer provincial procedure from a federal code.'
+- skill_id: argentina-companies-compliance-checker
+  name: Argentine Companies Compliance Checker
+  category: review
+  practice_area: corporate
+  jurisdiction: argentina
+  owner: corporate-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Identify the entity form, founders and provincial/CABA registry; check corporate legislation, local registration, governance, beneficial ownership, foreign-company requirements and sector restrictions.'
+- skill_id: argentina-consumer-remedies-checker
+  name: Argentine Consumer Remedies Checker
+  category: review
+  practice_area: consumer
+  jurisdiction: argentina
+  owner: consumer-protection-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Check consumer status, federal substantive protections, contracts, advertising, product/service responsibility and the competent local administrative or judicial remedy.'
+- skill_id: argentina-contract-law-reviewer
+  name: Argentine Contract Law Reviewer
+  category: review
+  practice_area: contracts
+  jurisdiction: argentina
+  owner: contracts-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Check the Civil and Commercial Code, special statutes, mandatory consumer rules, authority, good faith, remedies and applicable choice-of-law rules against the actual transaction.'
+- skill_id: argentina-counsel
+  name: Argentina Counsel
+  category: firm-operations
+  practice_area: jurisdiction
+  jurisdiction: argentina
+  owner: argentina-counsel
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: Argentina jurisdiction counsel.
+- skill_id: argentina-criminal-procedure-checker
+  name: Argentine Criminal Procedure Checker
+  category: review
+  practice_area: criminal
+  jurisdiction: argentina
+  owner: criminal-defence-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Identify the competent federal or local criminal system, procedural stage and implementation of procedural reforms; verify arrest, defence, evidence, bail and appeal rules before advising.'
+- skill_id: argentina-data-protection-compliance-checker
+  name: Argentine Data Protection Compliance Checker
+  category: review
+  practice_area: jurisdiction
+  jurisdiction: argentina
+  owner: argentina-counsel
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Check personal-data roles, territorial scope, current legislation and AAIP instruments, lawful processing, security, rights, transfers, notifications and any applicable local rules.'
+- skill_id: argentina-employment-law-applicability-checker
+  name: Argentine Employment Law Applicability Checker
+  category: review
+  practice_area: employment
+  jurisdiction: argentina
+  owner: employment-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Check employment classification, applicable national or local/public-sector regime, collective instruments, hiring, dismissal, safety and social-security duties; verify reforms and commencement rather than relying on an old summary.'
+- skill_id: argentina-family-law-applicability-checker
+  name: Argentine Family Law Applicability Checker
+  category: review
+  practice_area: family
+  jurisdiction: argentina
+  owner: family-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Check the Civil and Commercial Code and applicable local procedure for marriage, separation, parenting, support, succession and urgent protection; identify facts affecting personal and territorial applicability.'
+- skill_id: argentina-insolvency-applicability-checker
+  name: Argentine Insolvency Applicability Checker
+  category: review
+  practice_area: insolvency
+  jurisdiction: argentina
+  owner: insolvency-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Check the applicable insolvency/reorganisation framework, debtor eligibility, court, commencement, stays, creditor claims, priorities and current procedural rules.'
+- skill_id: argentina-investigation-evidence-checker
+  name: Argentine Investigation and Evidence Checker
+  category: review
+  practice_area: investigations
+  jurisdiction: argentina
+  owner: investigations-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Identify lawful access, privilege, privacy, labour and criminal-process constraints; preserve evidence and provenance without assuming permission to access private accounts or export records.'
+- skill_id: argentina-ip-protection-checker
+  name: Argentine IP Protection Checker
+  category: review
+  practice_area: ip
+  jurisdiction: argentina
+  owner: ip-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Identify each IP right, territory, ownership, registration route and competent authority; verify industrial-property and copyright sources separately, licensing and enforcement.'
+- skill_id: argentina-property-law-reviewer
+  name: Argentine Property Law Reviewer
+  category: review
+  practice_area: real-estate
+  jurisdiction: argentina
+  owner: real-estate-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Identify property location, title and possession, provincial registry, cadastral and municipal requirements; check conveyance, lease, security, land-use and notarial formalities.'
+- skill_id: argentina-public-law-remedies-checker
+  name: Argentine Public Law Remedies Checker
+  category: review
+  practice_area: public-law
+  jurisdiction: argentina
+  owner: public-law-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Identify national or provincial/CABA public authority, challenged act, administrative remedies, review forum, constitutional protections and verified timing; distinguish binding acts from policy announcements.'
+- skill_id: argentina-regulatory-compliance-checker
+  name: Argentine Regulatory Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: argentina
+  owner: compliance-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Map business activities to national, provincial/CABA and municipal regulators, licences, binding directions and reporting obligations; distinguish official guidance from operative rules.'
+- skill_id: argentina-tax-applicability-checker
+  name: Argentine Tax Applicability Checker
+  category: review
+  practice_area: tax
+  jurisdiction: argentina
+  owner: tax-lawyer
+  shared_with:
+  - argentina-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Argentina: Identify national, provincial/CABA and municipal taxes, responsible entities, nexus and relevant period; verify ARCA and local revenue instruments, treaty and withholding questions without inventing rates.'
 - skill_id: arrest-rights-advisor
   name: Arrest Rights Advisor
   category: advice-and-planning
@@ -2279,6 +2486,213 @@ skills:
   counts_as_legal_skill: true
   review_required: true
   summary: Reads a fact pattern and spots every legally relevant issue, potential cause of action, and threshold problem — limitation, standing, jurisdiction, procedural preconditions — comprehensively rather than narrowing to the strongest-looking claim, and flags which deeper-analysis skill each issue needs next rather than analysing any of them in depth itself.
+- skill_id: kazakhstan-arbitration-procedure-checker
+  name: Kazakhstani Arbitration Procedure Checker
+  category: review
+  practice_area: dispute-resolution
+  jurisdiction: kazakhstan
+  owner: dispute-resolution-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Check domestic/international arbitration, agreement, seat, arbitrability, applicable legislation and court assistance; distinguish the AIFC Court from arbitration and verify enforcement routes.'
+- skill_id: kazakhstan-authority-validator
+  name: Kazakhstani Authority Validator
+  category: review
+  practice_area: research
+  jurisdiction: kazakhstan
+  owner: legal-research-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Check Kazakh/Russian text, hierarchy, normative court resolutions, relevant versions, amendments and translation status.'
+- skill_id: kazakhstan-banking-finance-regulatory-checker
+  name: Kazakhstani Banking and Finance Regulatory Checker
+  category: review
+  practice_area: banking-finance
+  jurisdiction: kazakhstan
+  owner: banking-finance-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Identify the actual regulator, activity, licence and national versus AFSA perimeter; verify banking, securities, payments, currency and security rules without treating AIFC registration as financial authorisation.'
+- skill_id: kazakhstan-civil-procedure-checker
+  name: Kazakhstani Civil Procedure Checker
+  category: review
+  practice_area: litigation
+  jurisdiction: kazakhstan
+  owner: litigation-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Identify national court jurisdiction and procedural code or a properly established AIFC Court route; verify standing, service, fees, representation, evidence, interim relief, deadlines and enforcement.'
+- skill_id: kazakhstan-companies-compliance-checker
+  name: Kazakhstani Companies Compliance Checker
+  category: review
+  practice_area: corporate
+  jurisdiction: kazakhstan
+  owner: corporate-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Identify proposed entity, founders, location and national versus AIFC route; verify formation, governance, capital, ownership records, foreign participation and sector restrictions without mixing registry requirements.'
+- skill_id: kazakhstan-consumer-remedies-checker
+  name: Kazakhstani Consumer Remedies Checker
+  category: review
+  practice_area: consumer
+  jurisdiction: kazakhstan
+  owner: consumer-protection-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Check national consumer status, mandatory protections, advertising, product/service claims and forum; verify any relevant special regime rather than assuming AIFC terms waive national protections.'
+- skill_id: kazakhstan-contract-law-reviewer
+  name: Kazakhstani Contract Law Reviewer
+  category: review
+  practice_area: contracts
+  jurisdiction: kazakhstan
+  owner: contracts-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Verify the national Civil Code or applicable AIFC contract framework, authority, mandatory protections, terms, remedies, governing law and forum; do not assume English-law principles govern a national contract.'
+- skill_id: kazakhstan-counsel
+  name: Kazakhstan Counsel
+  category: firm-operations
+  practice_area: jurisdiction
+  jurisdiction: kazakhstan
+  owner: kazakhstan-counsel
+  shared_with: []
+  counts_as_legal_skill: false
+  review_required: true
+  summary: Kazakhstan jurisdiction counsel.
+- skill_id: kazakhstan-criminal-procedure-checker
+  name: Kazakhstani Criminal Procedure Checker
+  category: review
+  practice_area: criminal
+  jurisdiction: kazakhstan
+  owner: criminal-defence-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Check national criminal and criminal-procedure sources, offence date, arrest, defence, evidence, bail, trial and appeal; do not substitute an AIFC commercial procedure.'
+- skill_id: kazakhstan-data-protection-compliance-checker
+  name: Kazakhstani Data Protection Compliance Checker
+  category: review
+  practice_area: jurisdiction
+  jurisdiction: kazakhstan
+  owner: kazakhstan-counsel
+  shared_with: []
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Check national personal-data rules and any applicable AIFC data-protection regime, roles, processing, storage, security, rights, transfers and notifications; do not assume one regime excludes the other.'
+- skill_id: kazakhstan-employment-law-applicability-checker
+  name: Kazakhstani Employment Law Applicability Checker
+  category: review
+  practice_area: employment
+  jurisdiction: kazakhstan
+  owner: employment-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Determine applicable national or AIFC employment rules, worker status, location, migration/work permissions, contracts, payroll, safety and termination requirements from current primary sources.'
+- skill_id: kazakhstan-family-law-applicability-checker
+  name: Kazakhstani Family Law Applicability Checker
+  category: review
+  practice_area: family
+  jurisdiction: kazakhstan
+  owner: family-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Check national family and succession law, parties, residence, children, assets, protective relief and competent court; do not apply an AIFC commercial regime to family status.'
+- skill_id: kazakhstan-insolvency-applicability-checker
+  name: Kazakhstani Insolvency Applicability Checker
+  category: review
+  practice_area: insolvency
+  jurisdiction: kazakhstan
+  owner: insolvency-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Determine debtor eligibility and national rehabilitation/bankruptcy or applicable AIFC insolvency route; verify commencement, claims, stays, priorities, office-holder powers and cross-border issues.'
+- skill_id: kazakhstan-investigation-evidence-checker
+  name: Kazakhstani Investigation and Evidence Checker
+  category: review
+  practice_area: investigations
+  jurisdiction: kazakhstan
+  owner: investigations-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Identify lawful access and evidence collection, privilege, employment, privacy, criminal and cross-border constraints; preserve source integrity without assuming national/AIFC authority to access private records.'
+- skill_id: kazakhstan-ip-protection-checker
+  name: Kazakhstani IP Protection Checker
+  category: review
+  practice_area: ip
+  jurisdiction: kazakhstan
+  owner: ip-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Identify right, territory, ownership, competent registration authority and applicable national or AIFC provisions; verify registration, licensing and enforcement rather than inferring protection from company registration.'
+- skill_id: kazakhstan-property-law-reviewer
+  name: Kazakhstani Property Law Reviewer
+  category: review
+  practice_area: real-estate
+  jurisdiction: kazakhstan
+  owner: real-estate-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Identify property and land rights, location, intended use, ownership restrictions, registry, lease, security and conveyance requirements; verify national and local permissions separately.'
+- skill_id: kazakhstan-public-law-remedies-checker
+  name: Kazakhstani Public Law Remedies Checker
+  category: review
+  practice_area: public-law
+  jurisdiction: kazakhstan
+  owner: public-law-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Identify challenged authority and act, applicable administrative or constitutional route, jurisdiction, admissibility, remedies and current deadlines; verify legal hierarchy and relevant court resolutions.'
+- skill_id: kazakhstan-regulatory-compliance-checker
+  name: Kazakhstani Regulatory Compliance Checker
+  category: review
+  practice_area: compliance
+  jurisdiction: kazakhstan
+  owner: compliance-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Map activities, territory and legal entity to the competent national/local or AIFC regulator; verify licences, binding acts, reporting and sector restrictions.'
+- skill_id: kazakhstan-tax-applicability-checker
+  name: Kazakhstani Tax Applicability Checker
+  category: review
+  practice_area: tax
+  jurisdiction: kazakhstan
+  owner: tax-lawyer
+  shared_with:
+  - kazakhstan-counsel
+  counts_as_legal_skill: true
+  review_required: true
+  summary: 'Kazakhstan: Identify taxpayer, nexus, period, national/local duties and any evidenced AIFC treatment; verify operative tax text, commencement, treaty and exemption conditions without assuming AIFC status creates a blanket exemption.'
 - skill_id: labour-compliance-checker
   name: Labour Compliance Checker
   category: review

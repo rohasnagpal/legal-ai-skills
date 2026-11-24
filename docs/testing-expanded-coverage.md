@@ -2,7 +2,7 @@
 
 ## Added capabilities
 
-Eight jurisdiction modules (Canada, UAE, New Zealand, South Africa, Ireland, Russia, China and Brazil), each with a counsel gateway, 18 local skills, all 17 specialist owners, privacy route, source guide, integration limits and jurisdiction gates. Indian government schemes, legal translation and activity/decision logging add three further skills. Language preferences travel across the firm separately from jurisdiction.
+Eight jurisdiction modules (Canada, UAE, New Zealand, South Africa, Ireland, Russia, China, Brazil, Argentina and Kazakhstan), each with a counsel gateway, 18 local skills, all 17 specialist owners, privacy route, source guide, integration limits and jurisdiction gates. Indian government schemes, legal translation and activity/decision logging add three further skills. Language preferences travel across the firm separately from jurisdiction.
 
 ## Automated checks
 
@@ -37,4 +37,8 @@ Source guides record landing-page retrieval and blocking observations from imple
 - China: mainland-only scope; Hong Kong, Macao and Taiwan require separate routing; Chinese text and local implementation.
 - Brazil: federal/state/municipal competence, specialist courts, Portuguese text and tax-period transitions.
 
-After this expansion expect 13 Jurisdiction Counsel, 416 Legal Skills and 241 jurisdiction-specific skills. The routing cases are evaluation fixtures; repository validation does not establish live model performance.
+After this expansion expect 15 Jurisdiction Counsel, 452 Legal Skills and 277 jurisdiction-specific skills. The routing cases are evaluation fixtures; repository validation does not establish live model performance.
+
+## Argentina and Kazakhstan additions
+
+Argentina is added first, then Kazakhstan, each with 18 mapped local skills, one counsel gateway and specialist routes. Review their country routing fixtures and source-access observations. Test Argentina provincial/CABA registry and procedure boundaries, pre-formation intake and Spanish-source verification. Test Kazakhstan national/AIFC scope, unofficial or stale English translations, Kazakh/Russian sources, JavaScript-only access and no-source fallback. Run company-formation, inventory, expansion and civil-liability workflows against both local modules; check that common-law tort elements are not imported. These are evaluation scenarios, not passing live runs.

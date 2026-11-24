@@ -1,0 +1,4 @@
+interface:
+  display_name: "Argentine Tax Applicability Checker"
+  short_description: "Argentina local law: tax applicability checker"
+  default_prompt: "Use $legal-ai-skills:argentina-tax-applicability-checker for this matter with source-linked findings and verification gaps."

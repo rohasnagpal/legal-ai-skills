@@ -1,0 +1,4 @@
+interface:
+  display_name: "Argentine Arbitration Procedure Checker"
+  short_description: "Argentina local law: arbitration procedure checker"
+  default_prompt: "Use $legal-ai-skills:argentina-arbitration-procedure-checker for this matter with source-linked findings and verification gaps."

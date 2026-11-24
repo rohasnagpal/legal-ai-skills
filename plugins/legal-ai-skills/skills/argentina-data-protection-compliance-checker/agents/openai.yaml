@@ -1,0 +1,4 @@
+interface:
+  display_name: "Argentine Data Protection Compliance Checker"
+  short_description: "Argentina local law: data protection compliance checker"
+  default_prompt: "Use $legal-ai-skills:argentina-data-protection-compliance-checker for this matter with source-linked findings and verification gaps."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kazakhstani Companies Compliance Checker"
+  short_description: "Kazakhstan local law: companies compliance checker"
+  default_prompt: "Use $legal-ai-skills:kazakhstan-companies-compliance-checker for this matter with source-linked findings and verification gaps."

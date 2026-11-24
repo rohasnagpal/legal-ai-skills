@@ -1,0 +1,4 @@
+interface:
+  display_name: "Argentine Consumer Remedies Checker"
+  short_description: "Argentina local law: consumer remedies checker"
+  default_prompt: "Use $legal-ai-skills:argentina-consumer-remedies-checker for this matter with source-linked findings and verification gaps."

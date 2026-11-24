@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kazakhstani Investigation and Evidence Checker"
+  short_description: "Kazakhstan local law: investigation evidence checker"
+  default_prompt: "Use $legal-ai-skills:kazakhstan-investigation-evidence-checker for this matter with source-linked findings and verification gaps."

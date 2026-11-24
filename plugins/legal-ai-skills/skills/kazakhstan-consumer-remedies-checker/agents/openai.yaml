@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kazakhstani Consumer Remedies Checker"
+  short_description: "Kazakhstan local law: consumer remedies checker"
+  default_prompt: "Use $legal-ai-skills:kazakhstan-consumer-remedies-checker for this matter with source-linked findings and verification gaps."
